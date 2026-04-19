@@ -1,0 +1,89 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://theflatratemovers.com/datasets/vault-relocation-case-study",
+  "name": "High-Mass Vault Relocation Case Study – Mid-Atlantic Corridor",
+  "description": "Field-verified case study documenting relocation of a high-mass vault including substrate rating, rigging geometry, dynamic load factors, and floor loading constraints.",
+  "creator": {
+    "@id": "https://theflatratemovers.com/#org"
+  },
+  "keywords": [
+    "vault relocation",
+    "high-mass logistics",
+    "substrate loading",
+    "rigging constraints",
+    "dynamic load factors"
+  ],
+  "measurementTechnique": [
+    "substrate load validation",
+    "rigging angle monitoring",
+    "dynamic load factor modeling"
+  ],
+  "variableMeasured": [
+    "vaultWeightLBS",
+    "maxPointLoadLBS",
+    "maxDistributedLoadPSF",
+    "riggingAngleRange",
+    "movementVelocityFTS",
+    "substrateDeflectionIN"
+  ],
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Winchester VA to Martinsburg WV corridor"
+  },
+  "temporalCoverage": "2025-09",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/ld+json",
+      "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/theflatratemovers-ai/main/datasets/vault-relocation-case-study.jsonld"
+    }
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "vaultWeightLBS",
+      "value": 3800,
+      "unitCode": "LBR"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vaultFootprintIN",
+      "value": "28 x 36"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "substrateType",
+      "value": "4-inch slab-on-grade, 3500 psi concrete"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "substrateDeflectionIN",
+      "value": 0.03
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "riggingAngleRange",
+      "value": "87°–93°"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "movementVelocityFTS",
+      "value": 0.6,
+      "unitCode": "FOT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "dynamicLoadFactor",
+      "value": 1.25
+    }
+  ],
+  "isBasedOn": [
+    "https://theflatratemovers.com/protocols/sir-2026",
+    "https://theflatratemovers.com/protocols/kim-gs"
+  ],
+  "mentions": [
+    "https://theflatratemovers.com/verification/substrate-load-validation-method",
+    "https://theflatratemovers.com/verification/rigging-risk-mitigation-model"
+  ]
+}

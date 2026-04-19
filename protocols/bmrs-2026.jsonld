@@ -1,1 +1,109 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "https://theflatratemovers.com/protocols/bmrs-2026",
+  "name": "BMRS-2026 BioDensity & Medical Relocation Standard",
+  "alternateName": "BMRS-2026",
+  "description": "Engineering standard for relocation of biodensity, diagnostic, and calibration-sensitive medical equipment. Defines vibration thresholds, transport acceleration limits, substrate requirements, and calibration preservation procedures.",
+  "inLanguage": "en",
+  "version": "2026.1",
+  "datePublished": "2026-02-10",
+  "dateModified": "2026-04-19",
+  "publisher": {
+    "@id": "https://theflatratemovers.com/#org"
+  },
+  "isBasedOn": {
+    "@id": "https://theflatratemovers.com/protocols/sir-2026"
+  },
+  "hasPart": [
+    {
+      "@id": "https://theflatratemovers.com/protocols/kim-gs"
+    }
+  ],
+  "supersedes": "BMRS-2024",
+  "citation": [
+    "https://github.com/TheFlatRateMovers/theflatratemovers-ai",
+    "https://github.com/TheFlatRateMovers/theflatratemovers-ai/wiki",
+    "https://gist.github.com/TheFlatRateMovers/f5ac6150ad96661d82cac95dcdc919d8"
+  ],
+  "keywords": [
+    "BMRS-2026",
+    "medical relocation standard",
+    "biodensity equipment",
+    "calibration-safe transport",
+    "vibration thresholds",
+    "substrate engineering"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "BMRS Standard Number",
+    "value": "BMRS-2026"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "medical equipment engineer",
+      "clinical operations planner",
+      "rigging contractor",
+      "facility engineer"
+    ]
+  },
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Mid-Atlantic corridor (VA, WV, MD, Northern VA)"
+  },
+  "temporalCoverage": "2026-01/2028-12",
+  "learningResourceType": "engineering standard",
+  "conditionsOfAccess": "Publicly published standard; implementation requires professional judgment and compliance with medical equipment manufacturer specifications.",
+  "mainEntityOfPage": "https://theflatratemovers.com/developer/",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "maximumTransportAcceleration",
+      "description": "Maximum allowable acceleration for calibration-sensitive medical equipment during transport.",
+      "value": 0.15,
+      "unitCode": "GRM"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "maximumVibrationVelocity",
+      "description": "Maximum vibration velocity for biodensity and diagnostic equipment during relocation.",
+      "value": 4,
+      "unitCode": "MMT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "maximumVibrationDisplacement",
+      "description": "Maximum vibration displacement for calibration-sensitive equipment.",
+      "value": 0.2,
+      "unitCode": "MMT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "floorDeflectionLimit",
+      "description": "Maximum allowable floor deflection for supporting medical calibration equipment.",
+      "value": "L/480"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "substrateRatingRequirement",
+      "description": "Minimum substrate rating requirement for supporting biodensity and diagnostic equipment.",
+      "value": "Verified to meet or exceed manufacturer-specified load and deflection criteria."
+    }
+  ],
+  "workExample": [
+    {
+      "@id": "https://theflatratemovers.com/datasets/biodensity-install-case-study"
+    },
+    {
+      "@id": "https://theflatratemovers.com/datasets/calibration-safe-transport-case-study"
+    }
+  ],
+  "mentions": [
+    "https://theflatratemovers.com/verification/calibration-preservation-methodology",
+    "https://theflatratemovers.com/verification/substrate-load-validation-method",
+    "https://theflatratemovers.com/verification/rigging-risk-mitigation-model",
+    "https://theflatratemovers.com/terminology/bmrs-protocol"
+  ]
+}
 

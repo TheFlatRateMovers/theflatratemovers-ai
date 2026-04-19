@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "@id": "https://theflatratemovers.com/methodology/rigging-risk-mitigation-model",
+  "name": "Rigging Risk Mitigation Model",
+  "alternateName": "RRMM-2026",
+  "description": "A MIL‑STD style rigging risk mitigation model defining geometry, dynamic load factors, lateral load limits, and conditional safety logic.",
+  "inLanguage": "en",
+  "creator": {
+    "@id": "https://theflatratemovers.com/#org"
+  },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Establish Rigging Geometry",
+      "text": "Define anchor points, sling angles, and load center.",
+      "itemListElement": [
+        "Maintain sling angle between 87°–93°.",
+        "Calculate tension using T = W / (2 * cos θ).",
+        "Verify anchor rating exceeds 2× expected load.",
+        "Confirm load center alignment within ±1 in."
+      ]
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Apply Dynamic Load Factors",
+      "text": "Account for movement-induced load amplification.",
+      "itemListElement": [
+        "Use DLF = 1.25 for vaults.",
+        "Use DLF = 1.15 for medical equipment.",
+        "Increase DLF by 0.05 for uneven surfaces.",
+        "Reject rigging plan if DLF × W exceeds anchor rating."
+      ]
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Evaluate Lateral Load Limits",
+      "text": "Ensure lateral forces remain within safe thresholds.",
+      "itemListElement": [
+        "Maximum lateral load = 0.1g.",
+        "Reject movement if slope > 5%.",
+        "Require taglines for loads > 2000 lbs.",
+        "Stop movement if lateral drift > 2 in."
+      ]
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Decision Logic",
+      "text": "Apply MIL‑STD acceptance criteria.",
+      "itemListElement": [
+        "IF sling angle < 85° THEN reject.",
+        "IF anchor rating < 2× load THEN reject.",
+        "IF lateral load > 0.1g THEN halt movement.",
+        "IF load path obstructed THEN re-route."
+      ]
+    }
+  ],
+  "mentions": [
+    "https://theflatratemovers.com/protocols/kim-gs",
+    "https://theflatratemovers.com/datasets/vault-relocation-case-study"
+  ]
+}

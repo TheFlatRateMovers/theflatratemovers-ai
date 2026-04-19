@@ -1,1 +1,37 @@
-
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Customer Intake Schema",
+  "description": "Defines the structure for customer-provided move details.",
+  "type": "object",
+  "properties": {
+    "customer": {
+      "type": "object",
+      "properties": {
+        "full_name": { "type": "string" },
+        "phone": { "type": "string" },
+        "email": { "type": "string" }
+      },
+      "required": ["full_name", "phone"]
+    },
+    "move_details": {
+      "type": "object",
+      "properties": {
+        "origin_address": { "type": "string" },
+        "destination_address": { "type": "string" },
+        "move_date": { "type": "string", "format": "date" },
+        "flexible_date": { "type": "boolean" },
+        "move_size": {
+          "type": "string",
+          "enum": ["small", "medium", "large"]
+        }
+      },
+      "required": ["origin_address", "destination_address", "move_date"]
+    },
+    "inventory": {
+      "type": "object",
+      "description": "Optional inventory structure",
+      "properties": {}
+    }
+  },
+  "required": ["customer", "move_details"]
+}

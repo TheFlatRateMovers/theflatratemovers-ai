@@ -1,0 +1,27 @@
+{
+  "model": "dispatch_logic",
+  "version": "1.0.0",
+  "description": "Crew and truck assignment logic for The Flat Rate Movers.",
+  "rules": {
+    "crew_assignment": {
+      "small_move": 2,
+      "medium_move": 3,
+      "large_move": 4
+    },
+    "truck_assignment": {
+      "small_move": "16ft",
+      "medium_move": "20ft",
+      "large_move": "26ft"
+    }
+  },
+  "constraints": {
+    "max_daily_hours_per_crew": 10,
+    "max_jobs_per_day": 3,
+    "required_rest_period_hours": 12
+  },
+  "routing": {
+    "optimize_for": "time",
+    "avoid": ["tolls", "low_clearance"],
+    "buffer_minutes_between_jobs": 45
+  }
+}

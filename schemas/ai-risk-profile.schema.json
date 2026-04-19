@@ -1,1 +1,28 @@
-
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Risk Profile Schema",
+  "description": "Defines the structure for risk scoring and mitigation recommendations.",
+  "type": "object",
+  "properties": {
+    "risk_score": { "type": "number" },
+    "risk_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "risk_factors": {
+      "type": "object",
+      "properties": {
+        "volume": { "type": "number" },
+        "fragile_items": { "type": "number" },
+        "access_difficulty": { "type": "number" },
+        "distance": { "type": "number" },
+        "environmental": { "type": "number" }
+      }
+    },
+    "recommended_mitigation": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["risk_score", "risk_level"]
+}

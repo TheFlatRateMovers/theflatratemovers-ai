@@ -1,0 +1,72 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://theflatratemovers.com/datasets/calibration-safe-transport-case-study",
+  "name": "Calibration-Safe Transport Case Study – High-Sensitivity Equipment",
+  "description": "Dataset documenting transport of calibration-sensitive equipment under controlled acceleration, vibration, and substrate constraints.",
+  "creator": {
+    "@id": "https://theflatratemovers.com/#org"
+  },
+  "keywords": [
+    "calibration-safe transport",
+    "medical equipment relocation",
+    "vibration thresholds",
+    "transport acceleration"
+  ],
+  "measurementTechnique": [
+    "accelerometer logging",
+    "vibration displacement monitoring",
+    "substrate compliance assessment"
+  ],
+  "variableMeasured": [
+    "maximumTransportAccelerationG",
+    "vibrationDisplacementMM",
+    "substrateComplianceIN",
+    "routeDistanceMI"
+  ],
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Winchester VA to Martinsburg WV corridor"
+  },
+  "temporalCoverage": "2025-11",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/ld+json",
+      "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/theflatratemovers-ai/main/datasets/calibration-safe-transport-case-study.jsonld"
+    }
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "maximumTransportAccelerationG",
+      "value": 0.12,
+      "unitCode": "GRM"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vibrationDisplacementMM",
+      "value": 0.18,
+      "unitCode": "MMT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "substrateComplianceIN",
+      "value": 0.06
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "routeDistanceMI",
+      "value": 22.4,
+      "unitCode": "SMI"
+    }
+  ],
+  "isBasedOn": [
+    "https://theflatratemovers.com/protocols/bmrs-2026",
+    "https://theflatratemovers.com/protocols/sir-2026"
+  ],
+  "mentions": [
+    "https://theflatratemovers.com/verification/calibration-preservation-methodology",
+    "https://theflatratemovers.com/verification/rigging-risk-mitigation-model"
+  ]
+}

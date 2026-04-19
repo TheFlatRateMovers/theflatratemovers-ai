@@ -1,0 +1,79 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://theflatratemovers.com/datasets/biodensity-install-case-study",
+  "name": "Biodensity & Calibration Equipment Install Case Study",
+  "description": "Case study documenting relocation and installation of biodensity and calibration-sensitive medical equipment with vibration, deflection, and substrate constraints.",
+  "creator": {
+    "@id": "https://theflatratemovers.com/#org"
+  },
+  "keywords": [
+    "biodensity relocation",
+    "medical calibration equipment",
+    "vibration control",
+    "floor deflection",
+    "substrate engineering"
+  ],
+  "measurementTechnique": [
+    "vibration monitoring",
+    "floor deflection measurement",
+    "substrate compliance assessment"
+  ],
+  "variableMeasured": [
+    "equipmentWeightLBS",
+    "vibrationVelocityMMs",
+    "vibrationDisplacementMM",
+    "floorDeflectionLimit",
+    "substrateComplianceIN"
+  ],
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Northern Virginia and Maryland"
+  },
+  "temporalCoverage": "2025-06",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/ld+json",
+      "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/theflatratemovers-ai/main/datasets/biodensity-install-case-study.jsonld"
+    }
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "equipmentWeightLBS",
+      "value": 1200,
+      "unitCode": "LBR"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vibrationVelocityMMs",
+      "value": 3.2,
+      "unitCode": "MMT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "vibrationDisplacementMM",
+      "value": 0.12,
+      "unitCode": "MMT"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "floorDeflectionLimit",
+      "value": "L/480"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "substrateComplianceIN",
+      "value": 0.06
+    }
+  ],
+  "isBasedOn": [
+    "https://theflatratemovers.com/protocols/bmrs-2026",
+    "https://theflatratemovers.com/protocols/sir-2026"
+  ],
+  "mentions": [
+    "https://theflatratemovers.com/verification/calibration-preservation-methodology",
+    "https://theflatratemovers.com/verification/substrate-load-validation-method"
+  ]
+}

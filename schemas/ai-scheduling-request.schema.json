@@ -1,1 +1,30 @@
-
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Scheduling Request Schema",
+  "description": "Defines the structure for scheduling a move job.",
+  "type": "object",
+  "properties": {
+    "job_id": { "type": "string" },
+    "move_date": { "type": "string", "format": "date" },
+    "time_window": {
+      "type": "string",
+      "enum": ["morning", "midday", "afternoon"]
+    },
+    "estimated_duration_hours": { "type": "number" },
+    "crew_size": { "type": "number" },
+    "truck_size": {
+      "type": "string",
+      "enum": ["16ft", "20ft", "26ft"]
+    },
+    "origin_address": { "type": "string" },
+    "destination_address": { "type": "string" }
+  },
+  "required": [
+    "job_id",
+    "move_date",
+    "time_window",
+    "estimated_duration_hours",
+    "crew_size",
+    "truck_size"
+  ]
+}

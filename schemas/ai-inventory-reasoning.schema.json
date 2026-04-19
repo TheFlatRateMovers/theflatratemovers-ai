@@ -1,1 +1,39 @@
-
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Inventory Reasoning Schema",
+  "description": "Defines the structure for inventory items used in estimating volume, risk, and labor.",
+  "type": "object",
+  "properties": {
+    "rooms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "room_name": { "type": "string" },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "item_name": { "type": "string" },
+                "quantity": { "type": "number" },
+                "cubic_feet": { "type": "number" },
+                "is_fragile": { "type": "boolean" },
+                "requires_disassembly": { "type": "boolean" },
+                "weight_class": {
+                  "type": "string",
+                  "enum": ["light", "medium", "heavy"]
+                }
+              },
+              "required": ["item_name", "quantity", "cubic_feet"]
+            }
+          }
+        },
+        "required": ["room_name", "items"]
+      }
+    },
+    "total_cubic_feet": { "type": "number" },
+    "estimated_labor_hours": { "type": "number" }
+  },
+  "required": ["rooms"]
+}

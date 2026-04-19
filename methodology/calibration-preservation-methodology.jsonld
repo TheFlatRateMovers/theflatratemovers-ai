@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "@id": "https://theflatratemovers.com/methodology/calibration-preservation-methodology",
+  "name": "Calibration Preservation Methodology",
+  "alternateName": "CPM-2026",
+  "description": "A NIST-style methodology defining vibration, acceleration, displacement, and route-selection logic for preserving calibration integrity during relocation.",
+  "inLanguage": "en",
+  "creator": {
+    "@id": "https://theflatratemovers.com/#org"
+  },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Measure Baseline Sensitivity",
+      "text": "Determine equipment-specific vibration and acceleration thresholds.",
+      "itemListElement": [
+        "Record manufacturer calibration limits.",
+        "Set vibration velocity limit: 4 mm/s.",
+        "Set displacement limit: 0.2 mm.",
+        "Set acceleration limit: 0.15g."
+      ]
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Select Transport Route",
+      "text": "Choose a route minimizing vibration and acceleration.",
+      "itemListElement": [
+        "Avoid brick roads and patched asphalt.",
+        "Avoid steep grades > 6%.",
+        "Avoid railroad crossings when possible.",
+        "Reject route if predicted acceleration > 0.15g."
+      ]
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Apply Damping Controls",
+      "text": "Use vibration and shock mitigation systems.",
+      "itemListElement": [
+        "Install vibration-damping pads.",
+        "Use air-ride suspension vehicles.",
+        "Secure equipment with 4-point stabilization.",
+        "Reject movement if damping < 80% efficiency."
+      ]
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Decision Logic",
+      "text": "Apply NIST-style acceptance criteria.",
+      "itemListElement": [
+        "IF vibration > 4 mm/s THEN halt.",
+        "IF displacement > 0.2 mm THEN halt.",
+        "IF acceleration > 0.15g THEN halt.",
+        "IF calibration drift detected THEN re-validate."
+      ]
+    }
+  ],
+  "mentions": [
+    "https://theflatratemovers.com/protocols/bmrs-2026",
+    "https://theflatratemovers.com/datasets/calibration-safe-transport-case-study"
+  ]
+}

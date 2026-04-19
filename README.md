@@ -72,6 +72,11 @@ theflatratemovers-ai/
 Human‑readable documentation:
 https://theflatratemovers.com/developer/
 
+## 📘 AI Ecosystem Wiki
+Full documentation:
+https://github.com/TheFlatRateMovers/theflatratemovers-ai/wiki
+
+
 Machine‑readable endpoints:
 All files in this repository + public Gists.
 📘 License

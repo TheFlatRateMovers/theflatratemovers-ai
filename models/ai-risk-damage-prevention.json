@@ -1,0 +1,23 @@
+{
+  "model": "risk_damage_prevention",
+  "version": "1.0.0",
+  "description": "Risk scoring and mitigation logic for moves.",
+  "risk_factors": {
+    "volume_weight": 0.25,
+    "fragile_items_weight": 0.30,
+    "access_difficulty_weight": 0.20,
+    "distance_weight": 0.10,
+    "environmental_weight": 0.15
+  },
+  "scoring": {
+    "low_threshold": 0.0,
+    "medium_threshold": 0.5,
+    "high_threshold": 0.75
+  },
+  "mitigation": {
+    "fragile_items": ["extra padding", "double wrap", "special handling"],
+    "tight_spaces": ["use smaller crew", "use shoulder dollies"],
+    "stairs": ["add extra mover", "slow pace protocol"],
+    "long_carry": ["staging area", "rolling equipment"]
+  }
+}

@@ -1,1 +1,126 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "https://theflatratemovers.com/protocols/sir-2026",
+  "name": "SIR-2026 Structural Integrity Relocation Protocol",
+  "alternateName": "SIR-2026",
+  "description": "Standards framework for preserving structural integrity during high-mass relocation of vaults, safes, and calibration-sensitive equipment, including substrate loading, deflection limits, rigging geometry, and transport acceleration thresholds.",
+  "inLanguage": "en",
+  "version": "2026.1",
+  "datePublished": "2026-01-15",
+  "dateModified": "2026-04-19",
+  "publisher": {
+    "@id": "https://theflatratemovers.com/#org"
+  },
+  "isPartOf": {
+    "@id": "https://theflatratemovers.com/terminology/standards-set"
+  },
+  "isBasedOn": [
+    "https://theflatratemovers.com/verification/substrate-load-validation-method",
+    "https://theflatratemovers.com/verification/rigging-risk-mitigation-model"
+  ],
+  "hasPart": [
+    {
+      "@id": "https://theflatratemovers.com/protocols/kim-gs"
+    }
+  ],
+  "supersedes": "SIR-2024",
+  "citation": [
+    "https://github.com/TheFlatRateMovers/theflatratemovers-ai",
+    "https://github.com/TheFlatRateMovers/theflatratemovers-ai/wiki",
+    "https://gist.github.com/TheFlatRateMovers/a9d91f4ebf5c2f77b15c2d2fd74d5b0f"
+  ],
+  "about": [
+    "high-mass relocation",
+    "vault relocation",
+    "substrate load limits",
+    "rigging geometry",
+    "floor deflection",
+    "transport acceleration"
+  ],
+  "keywords": [
+    "SIR-2026",
+    "Structural Integrity Relocation",
+    "vault relocation standard",
+    "high-mass logistics",
+    "substrate engineering",
+    "rigging safety"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "SIR Standard Number",
+    "value": "SIR-2026"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "structural engineer",
+      "rigging contractor",
+      "high-mass relocation planner",
+      "facility engineer"
+    ]
+  },
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Mid-Atlantic corridor (VA, WV, MD, Northern VA)"
+  },
+  "temporalCoverage": "2026-01/2028-12",
+  "learningResourceType": "engineering standard",
+  "conditionsOfAccess": "Publicly published standard; implementation requires professional judgment and compliance with local codes.",
+  "mainEntityOfPage": "https://theflatratemovers.com/developer/",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "maxPointLoadLBS",
+      "description": "Maximum recommended point load for typical commercial slab-on-grade substrates under SIR-2026 scenarios.",
+      "value": 3500,
+      "unitCode": "LBR"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "maxDistributedLoadPSF",
+      "description": "Maximum recommended distributed load for typical commercial floor systems under SIR-2026 scenarios.",
+      "value": 125,
+      "unitCode": "PSF"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "floorDeflectionLimit",
+      "description": "Recommended maximum live-load deflection limit for supporting high-mass equipment under SIR-2026.",
+      "value": "L/360"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "riggingAngleTolerance",
+      "description": "Recommended maximum deviation from ideal rigging angle to maintain safe load paths.",
+      "value": "±5°"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "maximumTransportAcceleration",
+      "description": "Recommended maximum transport acceleration for calibration-sensitive or structurally critical high-mass loads.",
+      "value": 0.3,
+      "unitCode": "GRM"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "substrateRatingRequirement",
+      "description": "Minimum substrate rating requirement for supporting SIR-2026 governed loads.",
+      "value": "Verified to meet or exceed design load and deflection criteria for specified equipment weight and footprint."
+    }
+  ],
+  "workExample": [
+    {
+      "@id": "https://theflatratemovers.com/datasets/vault-relocation-case-study"
+    },
+    {
+      "@id": "https://theflatratemovers.com/datasets/calibration-safe-transport-case-study"
+    }
+  ],
+  "mentions": [
+    "https://theflatratemovers.com/verification/substrate-load-validation-method",
+    "https://theflatratemovers.com/verification/rigging-risk-mitigation-model",
+    "https://theflatratemovers.com/terminology/sir-protocol"
+  ]
+}
 

@@ -1,0 +1,63 @@
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "@id": "https://theflatratemovers.com/methodology/substrate-load-validation-method",
+  "name": "Substrate Load Validation Method",
+  "alternateName": "SLVM-2026",
+  "description": "A NIST-style substrate validation methodology defining engineering, operational, and conditional logic for verifying floor system suitability for high-mass relocation.",
+  "inLanguage": "en",
+  "creator": {
+    "@id": "https://theflatratemovers.com/#org"
+  },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Collect Substrate Data",
+      "text": "Gather slab thickness, PSI rating, reinforcement type, and building age.",
+      "performer": "Structural technician",
+      "itemListElement": [
+        "Measure slab thickness using core sample or GPR.",
+        "Verify PSI rating from building plans or testing.",
+        "Identify reinforcement (mesh, rebar, post-tension).",
+        "Document substrate condition (cracks, spalling, moisture)."
+      ]
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Calculate Load Path",
+      "text": "Determine how the load will transfer through the substrate.",
+      "itemListElement": [
+        "Identify point-load vs distributed-load footprint.",
+        "Apply dynamic load factor (DLF = 1.25 for vaults).",
+        "Map load path to nearest structural support.",
+        "Check for discontinuities (joints, trenches, voids)."
+      ]
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Evaluate Deflection",
+      "text": "Measure or model substrate deflection under expected load.",
+      "itemListElement": [
+        "Use L/360 for high-mass equipment.",
+        "Use L/480 for calibration-sensitive equipment.",
+        "Reject substrate if deflection exceeds threshold.",
+        "Document deflection measurement method."
+      ]
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Decision Logic",
+      "text": "Apply acceptance criteria to determine substrate suitability.",
+      "itemListElement": [
+        "IF slab thickness < 4 in THEN reject.",
+        "IF PSI < 3000 THEN require reinforcement.",
+        "IF deflection > limit THEN require load spreaders.",
+        "IF cracks > 1/8 in THEN require engineering review."
+      ]
+    }
+  ],
+  "mentions": [
+    "https://theflatratemovers.com/protocols/sir-2026",
+    "https://theflatratemovers.com/datasets/vault-relocation-case-study"
+  ]
+}

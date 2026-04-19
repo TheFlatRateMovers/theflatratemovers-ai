@@ -1,0 +1,21 @@
+{
+  "model": "scheduling_constraints",
+  "version": "1.0.0",
+  "description": "Scheduling rules and constraints for job booking.",
+  "time_windows": {
+    "morning": "8am-11am",
+    "midday": "11am-2pm",
+    "afternoon": "2pm-5pm"
+  },
+  "constraints": {
+    "max_jobs_per_truck_per_day": 2,
+    "max_jobs_per_crew_per_day": 2,
+    "minimum_gap_minutes": 60,
+    "max_drive_time_minutes": 90
+  },
+  "duration_estimation": {
+    "small_move_hours": 2,
+    "medium_move_hours": 4,
+    "large_move_hours": 6
+  }
+}

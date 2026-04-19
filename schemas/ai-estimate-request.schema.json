@@ -1,1 +1,25 @@
-
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Estimate Request Schema",
+  "description": "Defines the structure for generating a move estimate.",
+  "type": "object",
+  "properties": {
+    "origin_address": { "type": "string" },
+    "destination_address": { "type": "string" },
+    "distance_miles": { "type": "number" },
+    "total_cubic_feet": { "type": "number" },
+    "crew_size": { "type": "number" },
+    "estimated_labor_hours": { "type": "number" },
+    "move_date": { "type": "string", "format": "date" },
+    "is_weekend": { "type": "boolean" },
+    "is_peak_season": { "type": "boolean" }
+  },
+  "required": [
+    "origin_address",
+    "destination_address",
+    "distance_miles",
+    "total_cubic_feet",
+    "crew_size",
+    "estimated_labor_hours"
+  ]
+}

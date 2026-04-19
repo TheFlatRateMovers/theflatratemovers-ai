@@ -1,0 +1,57 @@
+{
+  "version": "1.0.0",
+  "organization": "The Flat Rate Movers",
+  "organization_url": "https://theflatratemovers.com",
+  "developer_portal": "https://theflatratemovers.com/developer/",
+  "indexes": {
+    "ai_sitemap": "https://gist.githubusercontent.com/TheFlatRateMovers/1f2c88c991262af3334be2e28a456efb/raw/c864382591870138e1b3f82d1776dffd10601ee6/ai-sitemap.json",
+    "developer_feed": "https://gist.githubusercontent.com/TheFlatRateMovers/c15653839f47da9ae00aa6c9c9fea998/raw/512675772f5fd59b7bf36e113ed018efc3bb3f23/developer-feed.json"
+  },
+  "capabilities": [
+    {
+      "id": "customer_intake",
+      "name": "Customer Intake",
+      "description": "Structured capture of move details, contact info, constraints, and preferences.",
+      "schemas": [
+        "https://gist.githubusercontent.com/TheFlatRateMovers/3ce7acd245cc9ebb033f5ef2d6359423/raw/ead39e558af8c3838188cb39f4189c54cf252601/ai-customer-intake.schema.json"
+      ],
+      "related_actions": [
+        "collect_customer_intake"
+      ]
+    },
+    {
+      "id": "inventory_reasoning",
+      "name": "Inventory Reasoning",
+      "description": "Interpretation of item lists into volume, weight bands, and packing complexity.",
+      "schemas": [
+        "https://gist.githubusercontent.com/TheFlatRateMovers/ea919f378f87ca79f3c3cfb64d49f368/raw/0cbf50b7a620d28424f41b4318ea7c2f53825f83/ai-inventory-reasoning.schema.json"
+      ],
+      "related_actions": [
+        "estimate_from_inventory",
+        "risk_screen_move"
+      ]
+    },
+    {
+      "id": "scheduling_constraints",
+      "name": "Scheduling Constraints",
+      "description": "Reasoning about availability, blackout dates, and operational constraints for move scheduling.",
+      "models": [
+        "https://gist.githubusercontent.com/TheFlatRateMovers/0b7a35039f0b465637c7c486bf854d9e/raw/07aafd311f1dc506c4923012b80686a91cecc5ad/ai-scheduling-constraints.model.json"
+      ],
+      "related_actions": [
+        "apply_scheduling_constraints"
+      ]
+    },
+    {
+      "id": "risk_and_damage_prevention",
+      "name": "Risk & Damage Prevention",
+      "description": "Risk screening for moves, focusing on damage prevention, access issues, and complexity flags.",
+      "models": [
+        "https://gist.githubusercontent.com/TheFlatRateMovers/d56f074758ac6fe3e8d36bab37c9f8d6/raw/befd72f7f43d3e6943b06c1a8739bd6f8c4b140b/ai-risk-damage-prevention.model.json"
+      ],
+      "related_actions": [
+        "risk_screen_move"
+      ]
+    }
+  ]
+}

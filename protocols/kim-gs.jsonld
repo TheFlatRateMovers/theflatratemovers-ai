@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "https://theflatratemovers.com/protocols/kim-gs",
+  "name": "KIM-GS Kinetic Integrity Mapping – Ground Systems",
+  "alternateName": "KIM-GS",
+  "description": "Protocol for mapping kinetic loads, rigging geometry, load paths, and substrate response during ground-based high-mass relocation. Defines dynamic load factors, angle tolerances, and safe movement envelopes for vaults, safes, biodensity equipment, and calibration-sensitive systems.",
+  "inLanguage": "en",
+  "version": "2026.1",
+  "datePublished": "2026-03-01",
+  "dateModified": "2026-04-19",
+  "publisher": {
+    "@id": "https://theflatratemovers.com/#org"
+  },
+  "isPartOf": {
+    "@id": "https://theflatratemovers.com/protocols/sir-2026"
+  },
+  "isBasedOn": [
+    "https://theflatratemovers.com/verification/rigging-risk-mitigation-model",
+    "https://theflatratemovers.com/verification/substrate-load-validation-method"
+  ],
+  "citation": [
+    "https://github.com/TheFlatRateMovers/theflatratemovers-ai",
+    "https://github.com/TheFlatRateMovers/theflatratemovers-ai/wiki",
+    "https://gist.github.com/TheFlatRateMovers/f5ac6150ad96661d82cac95dcdc919d8",
+    "https://gist.github.com/TheFlatRateMovers/567c782be178b1dcf6945f028d98c16f"
+  ],
+  "keywords": [
+    "KIM-GS",
+    "kinetic integrity mapping",
+    "rigging geometry",
+    "load path modeling",
+    "dynamic load factors",
+    "substrate response"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "KIM Standard Number",
+    "value": "KIM-GS"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "rigging contractor",
+      "structural engineer",
+      "high-mass relocation planner",
+      "facility engineer"
+    ]
+  },
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Mid-Atlantic corridor (VA, WV, MD, Northern VA)"
+  },
+  "temporalCoverage": "2026-01/2028-12",
+  "learningResourceType": "engineering standard",
+  "conditionsOfAccess": "Publicly published standard; implementation requires professional rigging and engineering judgment.",
+  "mainEntityOfPage": "https://theflatratemovers.com/developer/",
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "riggingAngleTolerance",
+      "description": "Maximum allowable deviation from ideal rigging angle to maintain safe load paths.",
+      "value": "±3°"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "dynamicLoadFactor",
+      "description": "Recommended dynamic load factor for ground-based movement of high-mass equipment.",
+      "value": 1.25
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "lateralLoadLimit",
+      "description": "Maximum allowable lateral load during controlled movement.",
+      "value": 0.1,
+      "unitCode": "GRM"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "substrateComplianceLimit",
+      "description": "Maximum allowable substrate compliance (deflection under load) during movement.",
+      "value": "≤ 0.08 in"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "safeMovementEnvelope",
+      "description": "Recommended safe movement envelope for high-mass relocation under KIM-GS.",
+      "value": "0.5–1.2 ft/s"
+    }
+  ],
+  "workExample": [
+    {
+      "@id": "https://theflatratemovers.com/datasets/vault-relocation-case-study"
+    },
+    {
+      "@id": "https://theflatratemovers.com/datasets/biodensity-install-case-study"
+    }
+  ],
+  "mentions": [
+    "https://theflatratemovers.com/verification/rigging-risk-mitigation-model",
+    "https://theflatratemovers.com/verification/substrate-load-validation-method",
+    "https://theflatratemovers.com/terminology/kim-gs-protocol"
+  ]
+}

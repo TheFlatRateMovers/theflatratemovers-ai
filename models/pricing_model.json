@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pricing Model",
+  "description": "Deterministic pricing logic for The Flat Rate Movers.",
+  "type": "object",
+  "properties": {
+    "base_rate": { "type": "number", "description": "Flat base cost for any move." },
+    "per_mile_rate": { "type": "number", "description": "Cost per mile between origin and destination." },
+    "per_cubic_foot": { "type": "number", "description": "Volume-based multiplier." },
+    "labor_rate_per_hour": { "type": "number", "description": "Hourly labor cost per mover." },
+    "minimum_hours": { "type": "number", "description": "Minimum billable labor hours." },
+    "accessorials": {
+      "type": "object",
+      "properties": {
+        "stairs_fee": { "type": "number" },
+        "elevator_fee": { "type": "number" },
+        "long_carry_fee": { "type": "number" },
+        "heavy_item_fee": { "type": "number" }
+      }
+    },
+    "fuel_surcharge_rate": { "type": "number" },
+    "weekend_multiplier": { "type": "number" },
+    "peak_season_multiplier": { "type": "number" }
+  },
+  "required": [
+    "base_rate",
+    "per_mile_rate",
+    "per_cubic_foot",
+    "labor_rate_per_hour",
+    "minimum_hours"
+  ]
+}

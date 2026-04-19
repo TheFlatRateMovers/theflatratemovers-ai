@@ -1,0 +1,67 @@
+{
+  "type": "FeatureCollection",
+  "name": "The Flat Rate Movers Service Area",
+  "description": "Primary and extended service areas for The Flat Rate Movers (Winchester VA & Martinsburg WV).",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "region_id": "winchester_va_primary",
+        "region_name": "Winchester, VA Primary Service Area",
+        "service_type": "primary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-78.2249, 39.1857],
+            [-78.1201, 39.1857],
+            [-78.1201, 39.0751],
+            [-78.2249, 39.0751],
+            [-78.2249, 39.1857]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region_id": "martinsburg_wv_primary",
+        "region_name": "Martinsburg, WV Primary Service Area",
+        "service_type": "primary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-77.9900, 39.5000],
+            [-77.8500, 39.5000],
+            [-77.8500, 39.3800],
+            [-77.9900, 39.3800],
+            [-77.9900, 39.5000]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "region_id": "extended_service_area",
+        "region_name": "Extended Service Area (VA, WV, MD, DC)",
+        "service_type": "extended"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-78.60, 39.70],
+            [-77.00, 39.70],
+            [-77.00, 38.40],
+            [-78.60, 38.40],
+            [-78.60, 39.70]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "@id": "https://theflatratemovers.com/protocols/protocol-relationships.jsonld",
+  "name": "SIR-2026 Relocation Protocol Dependency Graph",
+  "description": "Canonical dependency relationships between SIR-2026, BMRS-2026, KIM-GS, and associated relocation methodologies governing high-mass and calibration-sensitive transport.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com"
+  },
+  "hasDefinedTerm": [
+    {
+      "@type": "DefinedTerm",
+      "name": "SIR-2026 Structural Integrity Relocation Protocol",
+      "termCode": "SIR-2026",
+      "description": "Parent structural integrity relocation protocol governing substrate-aware transport and deflection limits for high-mass and calibration-sensitive assets.",
+      "url": "https://theflatratemovers.com/relocation-engineering-framework/#sir-2026",
+      "governs": [
+        "BMRS-2026",
+        "KIM-GS",
+        "Vault Relocation Constraint Model",
+        "Calibration-Safe Transport Methodology"
+      ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "BMRS-2026 BioDensity & Medical Relocation Standard",
+      "termCode": "BMRS-2026",
+      "description": "Specialization of SIR-2026 governing calibration-safe relocation of biodensity systems and medical-grade densitometry equipment.",
+      "isBasedOn": "SIR-2026",
+      "specializes": [
+        "Calibration-Safe Transport Methodology"
+      ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "KIM-GS Kinetic Integrity Mapping – Ground Systems",
+      "termCode": "KIM-GS",
+      "description": "Sub-protocol under SIR-2026 governing motion stability, velocity caps, and acceleration thresholds for high-mass and calibration-sensitive equipment.",
+      "isPartOf": "SIR-2026"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Calibration-Safe Transport Methodology",
+      "description": "Transport methodology preserving factory calibration tolerances for medical and measurement systems during relocation.",
+      "isPartOf": [
+        "SIR-2026",
+        "BMRS-2026"
+      ]
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Vault Relocation Constraint Model",
+      "description": "Substrate-aware relocation constraint framework governing safe movement of vault-class assets and other high-mass loads.",
+      "isPartOf": "SIR-2026"
+    }
+  ]
+}

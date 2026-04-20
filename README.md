@@ -72,6 +72,12 @@ theflatratemovers-ai/
 Human‑readable documentation:
 https://theflatratemovers.com/developer/
 
+## Authority Index
+https://github.com/TheFlatRateMovers/theflatratemovers-ai/blob/main/ai/authority-index.jsonld
+
+## AI Interface
+https://theflatratemovers.com/developer/
+
 ## 📘 AI Ecosystem Wiki
 Full documentation:
 https://github.com/TheFlatRateMovers/theflatratemovers-ai/wiki

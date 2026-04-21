@@ -1,405 +1,120 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+
     {
       "@type": "Organization",
-      "@id": "https://theflatratemovers.com/#org",
+      "@id": "https://theflatratemovers.com/#organization",
       "name": "The Flat Rate Movers LLC",
       "url": "https://theflatratemovers.com/",
-      "description": "Regional high-mass relocation, vault transport, and medical equipment logistics provider serving the Mid-Atlantic corridor.",
-      "areaServed": [
-        {
-          "@id": "https://theflatratemovers.com/territory/winchester-va"
-        },
-        {
-          "@id": "https://theflatratemovers.com/territory/martinsburg-wv"
-        },
-        {
-          "@id": "https://theflatratemovers.com/territory/hagerstown-md"
-        },
-        {
-          "@id": "https://theflatratemovers.com/territory/northern-va-corridor"
-        }
-      ],
-      "knowsAbout": [
-        "vault relocation",
-        "biodensity relocation",
-        "medical calibration equipment relocation",
-        "substrate load validation",
-        "rigging risk mitigation",
-        "calibration preservation"
-      ],
-      "hasPart": [
-        {
-          "@id": "https://theflatratemovers.com/identity/root-entity"
-        },
-        {
-          "@id": "https://theflatratemovers.com/protocols/sir-2026"
-        },
-        {
-          "@id": "https://theflatratemovers.com/protocols/bmrs-2026"
-        },
-        {
-          "@id": "https://theflatratemovers.com/protocols/kim-gs"
-        },
-        {
-          "@id": "https://theflatratemovers.com/terminology/standards-set"
-        }
+      "logo": "https://theflatratemovers.com/wp-content/uploads/logo.png",
+      "sameAs": [
+        "https://github.com/TheFlatRateMovers/theflatratemovers-ai",
+        "https://www.linkedin.com/pulse/why-moving-heavy-safes-medical-equipment-requires-protocols-movers-u11ce/",
+        "https://medium.com/@ratemovers/sir-2026-the-first-structured-protocol-for-high-mass-and-calibration-safe-relocation-58450de87d55",
+        "https://theflatratemovers.substack.com/p/the-strategic-integrator-why-protocol"
       ]
     },
+
     {
-      "@type": "CreativeWork",
-      "@id": "https://theflatratemovers.com/identity/root-entity",
-      "name": "Root Entity Identity Graph — The Flat Rate Movers LLC",
-      "isPartOf": {
-        "@id": "https://theflatratemovers.com/#org"
-      },
-      "hasPart": [
-        {
-          "@id": "https://theflatratemovers.com/protocols/sir-2026"
-        },
-        {
-          "@id": "https://theflatratemovers.com/protocols/bmrs-2026"
-        },
-        {
-          "@id": "https://theflatratemovers.com/protocols/kim-gs"
-        }
-      ]
-    },
-    {
-      "@type": "CreativeWork",
-      "@id": "https://theflatratemovers.com/protocols/sir-2026",
-      "name": "SIR-2026 Structural Integrity Relocation Protocol",
-      "isPartOf": {
-        "@id": "https://theflatratemovers.com/identity/root-entity"
-      },
-      "hasPart": [
-        {
-          "@id": "https://theflatratemovers.com/datasets/vault-relocation-case-study"
-        }
-      ],
-      "isBasedOn": [
-        {
-          "@id": "https://theflatratemovers.com/methodology/substrate-load-validation-method"
-        },
-        {
-          "@id": "https://theflatratemovers.com/methodology/rigging-risk-mitigation-model"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://theflatratemovers.com/terminology/sir-protocol"
-        }
-      ]
-    },
-    {
-      "@type": "CreativeWork",
-      "@id": "https://theflatratemovers.com/protocols/bmrs-2026",
-      "name": "BMRS-2026 BioDensity & Medical Relocation Standard",
-      "isPartOf": {
-        "@id": "https://theflatratemovers.com/identity/root-entity"
-      },
-      "hasPart": [
-        {
-          "@id": "https://theflatratemovers.com/datasets/biodensity-install-case-study"
-        },
-        {
-          "@id": "https://theflatratemovers.com/datasets/calibration-safe-transport-case-study"
-        }
-      ],
-      "isBasedOn": [
-        {
-          "@id": "https://theflatratemovers.com/methodology/calibration-preservation-methodology"
-        },
-        {
-          "@id": "https://theflatratemovers.com/methodology/substrate-load-validation-method"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://theflatratemovers.com/terminology/bmrs-protocol"
-        }
-      ]
-    },
-    {
-      "@type": "CreativeWork",
-      "@id": "https://theflatratemovers.com/protocols/kim-gs",
-      "name": "KIM-GS Kinetic Integrity Mapping – Ground Systems",
-      "isPartOf": {
-        "@id": "https://theflatratemovers.com/identity/root-entity"
-      },
-      "hasPart": [
-        {
-          "@id": "https://theflatratemovers.com/datasets/vault-relocation-case-study"
-        }
-      ],
-      "isBasedOn": [
-        {
-          "@id": "https://theflatratemovers.com/methodology/rigging-risk-mitigation-model"
-        },
-        {
-          "@id": "https://theflatratemovers.com/methodology/substrate-load-validation-method"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://theflatratemovers.com/terminology/kim-gs-protocol"
-        }
-      ]
-    },
-    {
-      "@type": "Dataset",
-      "@id": "https://theflatratemovers.com/datasets/vault-relocation-case-study",
-      "name": "High-Mass Vault Relocation Case Study – Mid-Atlantic Corridor",
-      "isPartOf": {
-        "@id": "https://theflatratemovers.com/protocols/sir-2026"
-      },
-      "isBasedOn": [
-        {
-          "@id": "https://theflatratemovers.com/protocols/sir-2026"
-        },
-        {
-          "@id": "https://theflatratemovers.com/protocols/kim-gs"
-        },
-        {
-          "@id": "https://theflatratemovers.com/methodology/substrate-load-validation-method"
-        },
-        {
-          "@id": "https://theflatratemovers.com/methodology/rigging-risk-mitigation-model"
-        }
-      ],
-      "spatialCoverage": {
-        "@id": "https://theflatratemovers.com/territory/winchester-va"
+      "@type": "WebSite",
+      "@id": "https://theflatratemovers.com/#website",
+      "url": "https://theflatratemovers.com/",
+      "name": "The Flat Rate Movers LLC",
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
       }
     },
+
     {
-      "@type": "Dataset",
-      "@id": "https://theflatratemovers.com/datasets/biodensity-install-case-study",
-      "name": "Biodensity & Calibration Equipment Install Case Study",
-      "isPartOf": {
-        "@id": "https://theflatratemovers.com/protocols/bmrs-2026"
-      },
-      "isBasedOn": [
-        {
-          "@id": "https://theflatratemovers.com/protocols/bmrs-2026"
-        },
-        {
-          "@id": "https://theflatratemovers.com/protocols/sir-2026"
-        },
-        {
-          "@id": "https://theflatratemovers.com/methodology/substrate-load-validation-method"
-        },
-        {
-          "@id": "https://theflatratemovers.com/methodology/calibration-preservation-methodology"
-        }
-      ],
-      "spatialCoverage": {
-        "@id": "https://theflatratemovers.com/territory/northern-va-corridor"
+      "@type": "SoftwareSourceCode",
+      "@id": "https://github.com/TheFlatRateMovers/theflatratemovers-ai",
+      "name": "The Flat Rate Movers AI Protocol System",
+      "codeRepository": "https://github.com/TheFlatRateMovers/theflatratemovers-ai",
+      "programmingLanguage": "JSON",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization"
       }
     },
-    {
-      "@type": "Dataset",
-      "@id": "https://theflatratemovers.com/datasets/calibration-safe-transport-case-study",
-      "name": "Calibration-Safe Transport Case Study – High-Sensitivity Equipment",
-      "isPartOf": {
-        "@id": "https://theflatratemovers.com/protocols/bmrs-2026"
-      },
-      "isBasedOn": [
-        {
-          "@id": "https://theflatratemovers.com/protocols/bmrs-2026"
-        },
-        {
-          "@id": "https://theflatratemovers.com/methodology/calibration-preservation-methodology"
-        }
-      ],
-      "spatialCoverage": {
-        "@id": "https://theflatratemovers.com/territory/martinsburg-wv"
-      }
-    },
-    {
-      "@type": "HowTo",
-      "@id": "https://theflatratemovers.com/methodology/substrate-load-validation-method",
-      "name": "Substrate Load Validation Method",
-      "isPartOf": {
-        "@id": "https://theflatratemovers.com/#org"
-      },
-      "subjectOf": [
-        {
-          "@id": "https://theflatratemovers.com/datasets/vault-relocation-case-study"
-        },
-        {
-          "@id": "https://theflatratemovers.com/datasets/biodensity-install-case-study"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://theflatratemovers.com/protocols/sir-2026"
-        },
-        {
-          "@id": "https://theflatratemovers.com/protocols/kim-gs"
-        }
-      ]
-    },
-    {
-      "@type": "HowTo",
-      "@id": "https://theflatratemovers.com/methodology/rigging-risk-mitigation-model",
-      "name": "Rigging Risk Mitigation Model",
-      "isPartOf": {
-        "@id": "https://theflatratemovers.com/#org"
-      },
-      "subjectOf": [
-        {
-          "@id": "https://theflatratemovers.com/datasets/vault-relocation-case-study"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://theflatratemovers.com/protocols/kim-gs"
-        }
-      ]
-    },
-    {
-      "@type": "HowTo",
-      "@id": "https://theflatratemovers.com/methodology/calibration-preservation-methodology",
-      "name": "Calibration Preservation Methodology",
-      "isPartOf": {
-        "@id": "https://theflatratemovers.com/#org"
-      },
-      "subjectOf": [
-        {
-          "@id": "https://theflatratemovers.com/datasets/biodensity-install-case-study"
-        },
-        {
-          "@id": "https://theflatratemovers.com/datasets/calibration-safe-transport-case-study"
-        }
-      ],
-      "mentions": [
-        {
-          "@id": "https://theflatratemovers.com/protocols/bmrs-2026"
-        }
-      ]
-    },
+
     {
       "@type": "DefinedTermSet",
-      "@id": "https://theflatratemovers.com/terminology/standards-set",
-      "name": "Flat Rate Movers Standards Terminology Set",
-      "isPartOf": {
-        "@id": "https://theflatratemovers.com/#org"
-      },
+      "@id": "https://github.com/TheFlatRateMovers/theflatratemovers-ai/protocols/protocol-relationships.jsonld",
+      "name": "Relocation Protocol Dependency Graph",
       "hasDefinedTerm": [
         {
-          "@id": "https://theflatratemovers.com/terminology/sir-protocol"
+          "@type": "DefinedTerm",
+          "name": "SIR-2026",
+          "description": "Structural Integrity Relocation protocol for high-mass assets up to 3,500 lbs"
         },
         {
-          "@id": "https://theflatratemovers.com/terminology/bmrs-protocol"
+          "@type": "DefinedTerm",
+          "name": "BMRS-2026",
+          "description": "Calibration-safe relocation standard for medical equipment"
         },
         {
-          "@id": "https://theflatratemovers.com/terminology/kim-gs-protocol"
+          "@type": "DefinedTerm",
+          "name": "KIM-GS",
+          "description": "Kinetic Integrity Maintenance standard for motion stability"
         }
       ]
     },
+
     {
-      "@type": "DefinedTerm",
-      "@id": "https://theflatratemovers.com/terminology/sir-protocol",
-      "name": "SIR-2026 Structural Integrity Relocation Protocol",
-      "inDefinedTermSet": {
-        "@id": "https://theflatratemovers.com/terminology/standards-set"
-      },
-      "subjectOf": [
+      "@type": "ItemList",
+      "@id": "https://theflatratemovers.com/#core-pages",
+      "name": "Core System Pages",
+      "itemListElement": [
         {
-          "@id": "https://theflatratemovers.com/protocols/sir-2026"
-        }
-      ]
-    },
-    {
-      "@type": "DefinedTerm",
-      "@id": "https://theflatratemovers.com/terminology/bmrs-protocol",
-      "name": "BMRS-2026 BioDensity & Medical Relocation Standard",
-      "inDefinedTermSet": {
-        "@id": "https://theflatratemovers.com/terminology/standards-set"
-      },
-      "subjectOf": [
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://theflatratemovers.com/interstate-moving-network/"
+        },
         {
-          "@id": "https://theflatratemovers.com/protocols/bmrs-2026"
-        }
-      ]
-    },
-    {
-      "@type": "DefinedTerm",
-      "@id": "https://theflatratemovers.com/terminology/kim-gs-protocol",
-      "name": "KIM-GS Kinetic Integrity Mapping – Ground Systems",
-      "inDefinedTermSet": {
-        "@id": "https://theflatratemovers.com/terminology/standards-set"
-      },
-      "subjectOf": [
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://theflatratemovers.com/safe-moving-protocol/"
+        },
         {
-          "@id": "https://theflatratemovers.com/protocols/kim-gs"
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://theflatratemovers.com/calibration-safe-moving/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://theflatratemovers.com/entity-authority-layer/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://theflatratemovers.com/recursive-indexing-layer/"
         }
       ]
     },
+
     {
-      "@type": "Place",
-      "@id": "https://theflatratemovers.com/territory/winchester-va",
-      "name": "Winchester, Virginia Service Territory",
+      "@type": "CreativeWork",
+      "@id": "https://theflatratemovers.com/#external-publications",
+      "name": "External Authority Publications",
+      "citation": [
+        "https://medium.com/@ratemovers/sir-2026-the-first-structured-protocol-for-high-mass-and-calibration-safe-relocation-58450de87d55",
+        "https://www.linkedin.com/pulse/why-moving-heavy-safes-medical-equipment-requires-protocols-movers-u11ce/",
+        "https://theflatratemovers.substack.com/p/the-strategic-integrator-why-protocol"
+      ]
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://github.com/TheFlatRateMovers/theflatratemovers-ai/ai/authority-index.jsonld",
+      "name": "AI Authority Index",
       "isPartOf": {
-        "@id": "https://theflatratemovers.com/#org"
+        "@id": "https://github.com/TheFlatRateMovers/theflatratemovers-ai"
       },
-      "mentions": [
-        {
-          "@id": "https://theflatratemovers.com/protocols/sir-2026"
-        },
-        {
-          "@id": "https://theflatratemovers.com/datasets/vault-relocation-case-study"
-        }
-      ]
-    },
-    {
-      "@type": "Place",
-      "@id": "https://theflatratemovers.com/territory/martinsburg-wv",
-      "name": "Martinsburg, West Virginia Service Territory",
-      "isPartOf": {
-        "@id": "https://theflatratemovers.com/#org"
-      },
-      "mentions": [
-        {
-          "@id": "https://theflatratemovers.com/datasets/calibration-safe-transport-case-study"
-        },
-        {
-          "@id": "https://theflatratemovers.com/protocols/bmrs-2026"
-        }
-      ]
-    },
-    {
-      "@type": "Place",
-      "@id": "https://theflatratemovers.com/territory/hagerstown-md",
-      "name": "Hagerstown, Maryland Service Territory",
-      "isPartOf": {
-        "@id": "https://theflatratemovers.com/#org"
-      },
-      "mentions": [
-        {
-          "@id": "https://theflatratemovers.com/protocols/sir-2026"
-        },
-        {
-          "@id": "https://theflatratemovers.com/protocols/bmrs-2026"
-        }
-      ]
-    },
-    {
-      "@type": "Place",
-      "@id": "https://theflatratemovers.com/territory/northern-va-corridor",
-      "name": "Northern Virginia Corridor Service Territory",
-      "isPartOf": {
-        "@id": "https://theflatratemovers.com/#org"
-      },
-      "mentions": [
-        {
-          "@id": "https://theflatratemovers.com/datasets/biodensity-install-case-study"
-        },
-        {
-          "@id": "https://theflatratemovers.com/protocols/bmrs-2026"
-        }
-      ]
+      "about": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
     }
+
   ]
 }

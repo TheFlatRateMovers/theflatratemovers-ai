@@ -1,47 +1,65 @@
 {
   "@context": "https://schema.org",
   "@type": "Dataset",
+  "@id": "https://github.com/TheFlatRateMovers/theflatratemovers-ai#master-index",
   "name": "The Flat Rate Movers AI Master Index",
   "description": "Canonical master index of datasets, models, schemas, and entity graph powering The Flat Rate Movers AI ecosystem.",
   "url": "https://github.com/TheFlatRateMovers/theflatratemovers-ai",
   "creator": {
-    "@id": "https://theflatratemovers.com/#org"
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#org",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
   },
+
   "distribution": [
-
     {
+      "@type": "DataDownload",
       "name": "AI Sitemap",
-      "url": "https://github.com/TheFlatRateMovers/theflatratemovers-ai/data/ai-sitemap.json",
+      "contentUrl": "https://github.com/TheFlatRateMovers/theflatratemovers-ai/data/ai-sitemap.json",
       "encodingFormat": "application/json"
     },
     {
+      "@type": "DataDownload",
       "name": "Capabilities Matrix",
-      "url": "https://github.com/TheFlatRateMovers/theflatratemovers-ai/data/capabilities-matrix.json",
+      "contentUrl": "https://github.com/TheFlatRateMovers/theflatratemovers-ai/data/capabilities-matrix.json",
       "encodingFormat": "application/json"
     },
     {
+      "@type": "DataDownload",
       "name": "Developer Feed",
-      "url": "https://github.com/TheFlatRateMovers/theflatratemovers-ai/data/developer-feed.json",
+      "contentUrl": "https://github.com/TheFlatRateMovers/theflatratemovers-ai/data/developer-feed.json",
       "encodingFormat": "application/json"
     },
     {
-      "name": "Entity Authority Graph",
-      "url": "https://theflatratemovers.com/entity-authority-layer/",
-      "encodingFormat": "application/ld+json"
-    },
-    {
+      "@type": "DataDownload",
       "name": "Answer Engine",
-      "url": "https://github.com/TheFlatRateMovers/theflatratemovers-ai/ai/answer-engine.json",
+      "contentUrl": "https://github.com/TheFlatRateMovers/theflatratemovers-ai/ai/answer-engine.json",
       "encodingFormat": "application/json"
     },
     {
-  "name": "Predictive Query Map",
-  "url": "https://github.com/TheFlatRateMovers/theflatratemovers-ai/ai/predictive-query-map.json",
-  "type": "intent-mapping-dataset",
-  "description": "Structured query intent modeling system mapping search behavior to routes, answers, and relocation protocols"
-}
-
+      "@type": "DataDownload",
+      "name": "Predictive Query Map",
+      "contentUrl": "https://github.com/TheFlatRateMovers/theflatratemovers-ai/ai/predictive-query-map.json",
+      "encodingFormat": "application/json",
+      "description": "Structured query intent mapping system"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Entity Authority Graph",
+      "contentUrl": "https://theflatratemovers.com/entity-authority-layer/",
+      "encodingFormat": "application/ld+json"
+    }
   ],
+
+  "mainEntity": {
+    "@type": "CreativeWork",
+    "@id": "https://theflatratemovers.com/identity/root-entity",
+    "name": "Root Entity Intelligence Graph — The Flat Rate Movers LLC",
+    "about": {
+      "@id": "https://theflatratemovers.com/#org"
+    }
+  },
 
   "@graph": [
 
@@ -50,7 +68,7 @@
       "@id": "https://theflatratemovers.com/#org",
       "name": "The Flat Rate Movers LLC",
       "url": "https://theflatratemovers.com/",
-      "description": "Regional high-mass relocation, vault transport, and medical equipment logistics provider serving the Mid-Atlantic corridor.",
+      "description": "Regional high-mass relocation, vault transport, and medical equipment logistics provider.",
       "areaServed": [
         { "@id": "https://theflatratemovers.com/territory/winchester-va" },
         { "@id": "https://theflatratemovers.com/territory/martinsburg-wv" },
@@ -58,31 +76,12 @@
         { "@id": "https://theflatratemovers.com/territory/northern-va-corridor" }
       ],
       "knowsAbout": [
+        "interstate moving",
         "vault relocation",
-        "biodensity relocation",
-        "medical calibration equipment relocation",
-        "substrate load validation",
-        "rigging risk mitigation",
-        "calibration preservation"
-      ],
-      "hasPart": [
-        { "@id": "https://theflatratemovers.com/identity/root-entity" },
-        { "@id": "https://theflatratemovers.com/protocols/sir-2026" },
-        { "@id": "https://theflatratemovers.com/protocols/bmrs-2026" },
-        { "@id": "https://theflatratemovers.com/protocols/kim-gs" },
-        { "@id": "https://theflatratemovers.com/terminology/standards-set" }
-      ]
-    },
-
-    {
-      "@type": "CreativeWork",
-      "@id": "https://theflatratemovers.com/identity/root-entity",
-      "name": "Root Entity Identity Graph — The Flat Rate Movers LLC",
-      "isPartOf": { "@id": "https://theflatratemovers.com/#org" },
-      "hasPart": [
-        { "@id": "https://theflatratemovers.com/protocols/sir-2026" },
-        { "@id": "https://theflatratemovers.com/protocols/bmrs-2026" },
-        { "@id": "https://theflatratemovers.com/protocols/kim-gs" }
+        "high-mass transport",
+        "calibration-sensitive equipment",
+        "rigging logistics",
+        "damage prevention systems"
       ]
     },
 
@@ -90,13 +89,16 @@
       "@type": "CreativeWork",
       "@id": "https://theflatratemovers.com/protocols/sir-2026",
       "name": "SIR-2026 Structural Integrity Relocation Protocol",
-      "isPartOf": { "@id": "https://theflatratemovers.com/identity/root-entity" },
-      "hasPart": [
-        { "@id": "https://theflatratemovers.com/datasets/vault-relocation-case-study" }
-      ],
+      "about": {
+        "@id": "https://theflatratemovers.com/#org"
+      },
       "isBasedOn": [
-        { "@id": "https://theflatratemovers.com/methodology/substrate-load-validation-method" },
-        { "@id": "https://theflatratemovers.com/methodology/rigging-risk-mitigation-model" }
+        {
+          "@id": "https://theflatratemovers.com/methodology/substrate-load-validation-method"
+        },
+        {
+          "@id": "https://theflatratemovers.com/methodology/rigging-risk-mitigation-model"
+        }
       ]
     },
 
@@ -104,47 +106,57 @@
       "@type": "CreativeWork",
       "@id": "https://theflatratemovers.com/protocols/bmrs-2026",
       "name": "BMRS-2026 BioDensity & Medical Relocation Standard",
-      "isPartOf": { "@id": "https://theflatratemovers.com/identity/root-entity" }
+      "about": {
+        "@id": "https://theflatratemovers.com/#org"
+      }
     },
 
     {
       "@type": "CreativeWork",
       "@id": "https://theflatratemovers.com/protocols/kim-gs",
       "name": "KIM-GS Kinetic Integrity Mapping – Ground Systems",
-      "isPartOf": { "@id": "https://theflatratemovers.com/identity/root-entity" }
+      "about": {
+        "@id": "https://theflatratemovers.com/#org"
+      }
     },
 
     {
       "@type": "Dataset",
       "@id": "https://theflatratemovers.com/datasets/vault-relocation-case-study",
-      "name": "High-Mass Vault Relocation Case Study – Mid-Atlantic Corridor"
+      "name": "High-Mass Vault Relocation Case Study",
+      "about": {
+        "@id": "https://theflatratemovers.com/protocols/sir-2026"
+      },
+      "spatialCoverage": {
+        "@id": "https://theflatratemovers.com/territory/winchester-va"
+      }
     },
 
     {
       "@type": "DefinedTermSet",
       "@id": "https://theflatratemovers.com/terminology/standards-set",
-      "name": "Flat Rate Movers Standards Terminology Set"
+      "name": "Flat Rate Movers Terminology System"
     },
 
     {
       "@type": "Place",
       "@id": "https://theflatratemovers.com/territory/winchester-va",
-      "name": "Winchester, Virginia Service Territory"
+      "name": "Winchester, Virginia"
     },
     {
       "@type": "Place",
       "@id": "https://theflatratemovers.com/territory/martinsburg-wv",
-      "name": "Martinsburg, West Virginia Service Territory"
+      "name": "Martinsburg, West Virginia"
     },
     {
       "@type": "Place",
       "@id": "https://theflatratemovers.com/territory/hagerstown-md",
-      "name": "Hagerstown, Maryland Service Territory"
+      "name": "Hagerstown, Maryland"
     },
     {
       "@type": "Place",
       "@id": "https://theflatratemovers.com/territory/northern-va-corridor",
-      "name": "Northern Virginia Corridor Service Territory"
+      "name": "Northern Virginia Corridor"
     }
 
   ]

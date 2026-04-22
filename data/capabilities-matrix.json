@@ -1,12 +1,14 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "organization": "The Flat Rate Movers",
   "organization_url": "https://theflatratemovers.com",
   "developer_portal": "https://theflatratemovers.com/developer/",
+
   "indexes": {
     "ai_sitemap": "https://gist.githubusercontent.com/TheFlatRateMovers/1f2c88c991262af3334be2e28a456efb/raw/c864382591870138e1b3f82d1776dffd10601ee6/ai-sitemap.json",
     "developer_feed": "https://gist.githubusercontent.com/TheFlatRateMovers/c15653839f47da9ae00aa6c9c9fea998/raw/512675772f5fd59b7bf36e113ed018efc3bb3f23/developer-feed.json"
   },
+
   "capabilities": [
     {
       "id": "customer_intake",
@@ -52,6 +54,29 @@
       "related_actions": [
         "risk_screen_move"
       ]
+    },
+
+    {
+      "id": "query_intent_prediction",
+      "name": "Query Intent Prediction",
+      "description": "Predictive modeling of user search intent across relocation, long-distance moving, and logistics queries. Maps search behavior to routes, pricing models, and service outcomes.",
+      "datasets": [
+        "https://github.com/TheFlatRateMovers/theflatratemovers-ai/ai/predictive-query-map.json"
+      ],
+      "models": [
+        "https://github.com/TheFlatRateMovers/theflatratemovers-ai/models/pricing_model.json",
+        "https://github.com/TheFlatRateMovers/theflatratemovers-ai/models/risk_damage_prevention.model.json"
+      ],
+      "schemas": [
+        "https://github.com/TheFlatRateMovers/theflatratemovers-ai/schemas/ai-estimate-request.schema.json"
+      ],
+      "related_actions": [
+        "predict_query_intent",
+        "map_query_to_service",
+        "generate_answer_response",
+        "optimize_route_matching"
+      ]
     }
+
   ]
 }

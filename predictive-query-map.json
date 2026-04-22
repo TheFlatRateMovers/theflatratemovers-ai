@@ -1,0 +1,169 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-01-01",
+  "description": "Predictive query intent mapping for interstate, long-distance, and specialized relocation queries.",
+  "intent_clusters": [
+    {
+      "cluster_id": "transactional_routes",
+      "intent_type": "transactional",
+      "priority": "high",
+      "query_patterns": [
+        "virginia to texas movers",
+        "virginia to california movers",
+        "virginia to new york movers",
+        "state to state movers from virginia",
+        "cross country movers virginia"
+      ],
+      "modifiers": [
+        "hire",
+        "book",
+        "schedule",
+        "quote",
+        "company"
+      ],
+      "routes": [
+        "/virginia-to-texas-movers/",
+        "/virginia-to-california-movers/",
+        "/virginia-to-new-york-movers/",
+        "/virginia-to-nevada-movers/",
+        "/virginia-to-florida-movers/"
+      ],
+      "answer_source": "/ai/answer-engine.json"
+    },
+
+    {
+      "cluster_id": "cost_modeling",
+      "intent_type": "commercial",
+      "priority": "high",
+      "query_patterns": [
+        "cost to move from virginia to texas",
+        "how much do interstate movers cost",
+        "average cost of cross country moving",
+        "flat rate moving price vs hourly"
+      ],
+      "modifiers": [
+        "estimate",
+        "price",
+        "calculator",
+        "quote",
+        "average"
+      ],
+      "data_sources": [
+        "/models/pricing_model.json",
+        "/ai/answer-engine.json"
+      ]
+    },
+
+    {
+      "cluster_id": "logistics_process",
+      "intent_type": "informational",
+      "priority": "high",
+      "query_patterns": [
+        "how interstate moving works",
+        "how long does cross country moving take",
+        "moving timeline state to state",
+        "delivery time for long distance movers"
+      ],
+      "modifiers": [
+        "timeline",
+        "process",
+        "steps",
+        "duration"
+      ],
+      "data_sources": [
+        "/models/scheduling_constraints.model.json",
+        "/ai/answer-engine.json"
+      ]
+    },
+
+    {
+      "cluster_id": "risk_safety",
+      "intent_type": "trust",
+      "priority": "high",
+      "query_patterns": [
+        "how to move safely long distance",
+        "prevent damage during moving",
+        "protect furniture interstate move",
+        "safe moving company methods"
+      ],
+      "modifiers": [
+        "damage",
+        "protection",
+        "insurance",
+        "safe"
+      ],
+      "linked_protocols": [
+        "/safe-moving-protocol/",
+        "/calibration-safe-moving/"
+      ]
+    },
+
+    {
+      "cluster_id": "comparison",
+      "intent_type": "evaluation",
+      "priority": "medium",
+      "query_patterns": [
+        "flat rate movers vs hourly movers",
+        "moving company vs broker",
+        "pods vs full service movers",
+        "best interstate moving companies"
+      ],
+      "modifiers": [
+        "vs",
+        "compare",
+        "difference",
+        "pros and cons"
+      ],
+      "answer_source": "/ai/answer-engine.json"
+    },
+
+    {
+      "cluster_id": "high_mass_specialty",
+      "intent_type": "specialized",
+      "priority": "high",
+      "query_patterns": [
+        "move a safe across states",
+        "heavy equipment moving company",
+        "transport medical equipment long distance",
+        "move gun safe interstate"
+      ],
+      "modifiers": [
+        "heavy",
+        "specialized",
+        "equipment",
+        "rigging"
+      ],
+      "linked_protocols": [
+        "/safe-moving-protocol/",
+        "/calibration-safe-moving/"
+      ],
+      "data_sources": [
+        "/models/risk_damage_prevention.model.json"
+      ]
+    }
+  ],
+
+  "query_expansion_rules": {
+    "location_variants": [
+      "from virginia to {state}",
+      "va to {state}",
+      "moving from va to {state}"
+    ],
+    "intent_modifiers": [
+      "cost",
+      "price",
+      "how much",
+      "timeline",
+      "how long",
+      "best",
+      "reliable",
+      "safe",
+      "licensed"
+    ],
+    "semantic_equivalents": {
+      "movers": ["moving company", "relocation service"],
+      "interstate": ["state to state", "cross country"],
+      "quote": ["estimate", "price", "cost"]
+    }
+  }
+}

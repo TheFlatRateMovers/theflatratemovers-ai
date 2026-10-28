@@ -1,0 +1,83 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "The Flat Rate Movers",
+    "identifier": "did:web:theflatratemovers.com",
+    "documentationUrl": "https://theflatratemovers.com/developer/",
+    "logoUrl": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.webp"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:ai-sitemap",
+      "displayName": "The Flat Rate Movers AI Sitemap",
+      "type": "application/json",
+      "url": "https://theflatratemovers.com/ai-sitemap.json",
+      "description": "Machine-readable index of AI, developer, and operational JSON endpoints for The Flat Rate Movers: core pages, services, SIR / KIM-GS authority, and service areas, from Winchester, VA and Martinsburg, WV.",
+      "tags": [
+        "moving",
+        "sitemap",
+        "ai-sitemap",
+        "services",
+        "SIR",
+        "KIM-GS"
+      ],
+      "representativeQueries": [
+        "What services does The Flat Rate Movers offer?",
+        "Where are The Flat Rate Movers locations and what are their hours?",
+        "What is SIR Structural Integrity Relocation and the KIM-GS Protocol?"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:llms",
+      "displayName": "The Flat Rate Movers llms.txt",
+      "type": "text/plain",
+      "url": "https://theflatratemovers.com/llms.txt",
+      "description": "Plain-text summary of The Flat Rate Movers facts for AI systems: flat-rate moving, both branches with hours and Google ratings, services, corridors, and links to the full data file, GeoJSON, and entity graphs.",
+      "tags": [
+        "moving",
+        "llms.txt",
+        "facts"
+      ],
+      "representativeQueries": [
+        "Summarize The Flat Rate Movers business facts for an AI assistant",
+        "What are the Winchester and Martinsburg branch hours and ratings?"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:service-area-geojson",
+      "displayName": "The Flat Rate Movers Service Area GeoJSON",
+      "type": "application/geo+json",
+      "url": "https://theflatratemovers.com/service-area.geojson",
+      "description": "Service areas as GeoJSON: 52 features, per branch (Winchester, VA and Martinsburg, WV), with rubric scores and attestations, verified 2026-10-28.",
+      "tags": [
+        "moving",
+        "geojson",
+        "service-area",
+        "Winchester",
+        "Martinsburg"
+      ],
+      "representativeQueries": [
+        "Which areas does The Flat Rate Movers serve from Winchester, VA?",
+        "Which areas does Flat Rate Movers Martinsburg WV serve?",
+        "What is the service-area GeoJSON for The Flat Rate Movers?"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:entity-graph",
+      "displayName": "The Flat Rate Movers Entity Graph",
+      "type": "application/ld+json",
+      "url": "https://theflatratemovers.com/entity-graph.json",
+      "description": "Chained entity graph for The Flat Rate Movers: organization, both branches, services, corridors, and protocols linked by stable @id, with rubric scores and attestations.",
+      "tags": [
+        "moving",
+        "entity-graph",
+        "json-ld",
+        "knowledge-graph"
+      ],
+      "representativeQueries": [
+        "Show the entity graph for The Flat Rate Movers",
+        "How are The Flat Rate Movers services linked to their branches?"
+      ]
+    }
+  ]
+}

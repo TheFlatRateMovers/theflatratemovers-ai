@@ -1,0 +1,135 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://theflatratemovers.com/#organization",
+      "name": "The Flat Rate Movers LLC",
+      "foundingDate": "2010-06",
+      "telephone": "+1-540-422-2153",
+      "email": "ratemovers@gmail.com",
+      "url": "https://theflatratemovers.com/",
+      "slogan": "Guaranteed Flat Rate or Your Move is Free!"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://theflatratemovers.com/#service-industrial-commercial",
+      "name": "Industrial & Commercial Services \u2014 Trained, Supervised Moving and Warehouse Teams",
+      "serviceType": [
+        "Warehouse & Distribution",
+        "Commercial Relocation & Logistics",
+        "FF&E Installation & Project Support",
+        "Flexible Workforce Deployment",
+        "Ocean Container Handling",
+        "PODS Handling",
+        "Transloading",
+        "Restacking",
+        "Packing"
+      ],
+      "provider": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "url": "https://theflatratemovers.com/#/industrial-commercial-services",
+      "areaServed": {
+        "@id": "https://theflatratemovers.com/service-area.geojson"
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": [
+          "Project Managers",
+          "Operations Managers",
+          "Warehouse Managers",
+          "Logistics Coordinators",
+          "General Contractors",
+          "Commercial Furniture Dealers",
+          "Healthcare Facilities Managers",
+          "Corporate Office Managers",
+          "Educational Institution Administrators",
+          "Hospitality and Hotel Renovation Project Managers",
+          "Military HHG Coordinators",
+          "Government Project Managers"
+        ]
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Standard Job Pricing",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Unload",
+            "price": "8.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "8.00",
+              "priceCurrency": "USD",
+              "unitText": "CWT"
+            },
+            "description": "Warehouse, military or regular HHG unload."
+          },
+          {
+            "@type": "Offer",
+            "name": "Load",
+            "price": "10.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "10.00",
+              "priceCurrency": "USD",
+              "unitText": "CWT"
+            },
+            "description": "Warehouse load-out, origin service or regular HHG load."
+          },
+          {
+            "@type": "Offer",
+            "name": "APU",
+            "price": "12.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "12.00",
+              "priceCurrency": "USD",
+              "unitText": "CWT"
+            },
+            "description": "Crew provided when additional service labor is needed."
+          },
+          {
+            "@type": "Offer",
+            "name": "Residential / Driver Meet",
+            "price": "400",
+            "priceCurrency": "USD",
+            "description": "Residential job where the team meets the driver on site. $400-$425 per man, quoted per job."
+          }
+        ]
+      },
+      "termsOfService": "Rates are quoted per job and may be adjusted for unusual scope, special equipment, travel, after-hours requirements, or other conditions agreed to before dispatch. Job-by-job pricing with no required contract duration. Scope and price confirmed before dispatch.",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "How We Operate",
+          "value": "Self-managed teams \u2014 not individual temp labor; in-house trained moving and warehouse crews; crew size matched to each job; planned and overflow support."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Workflow",
+          "value": "Send the job details; confirm crew, scope and rate; team is dispatched; invoice per job."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Deployment Needs",
+          "value": "Planned Projects; Overflow Demand; Peak Season; Weekend Support; Vacation Coverage; Emergency Response."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Markets",
+          "value": "Warehousing & Distribution; Manufacturing; Transportation & Logistics; Retail Distribution; Third-Party Logistics; Healthcare Facilities; Commercial Furniture Dealers; Corporate Offices; General Contractors; Educational Institutions; Hospitality & Hotel Renovations."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Training & Crew Standards",
+          "value": "Teams are trained in-house for HHG moving, warehouse handling, property care, and jobsite conduct. Site-specific rules, equipment restrictions, and required certifications are confirmed before dispatch."
+        }
+      ]
+    }
+  ]
+}

@@ -1,294 +1,306 @@
 {
-  "@context": "https://schema.org",
-  "@type": "Dataset",
-  "@id": "https://github.com/TheFlatRateMovers/theflatratemovers-ai#master-index",
-  "name": "The Flat Rate Movers AI Master Index",
-  "description": "Canonical master index of datasets, models, schemas, and entity graph powering The Flat Rate Movers AI ecosystem.",
-  "url": "https://github.com/TheFlatRateMovers/theflatratemovers-ai",
-  "creator": {
-    "@type": "Organization",
-    "@id": "https://theflatratemovers.com/#org",
-    "name": "The Flat Rate Movers LLC",
-    "url": "https://theflatratemovers.com/"
+ "@context": "https://schema.org",
+ "@type": "Dataset",
+ "@id": "https://github.com/TheFlatRateMovers/theflatratemovers-ai#master-index",
+ "name": "The Flat Rate Movers AI Master Index",
+ "description": "Canonical master index of datasets, models, schemas, and entity graph powering The Flat Rate Movers AI ecosystem.",
+ "url": "https://github.com/TheFlatRateMovers/theflatratemovers-ai",
+ "creator": {
+  "@type": "Organization",
+  "@id": "https://theflatratemovers.com/#org",
+  "name": "The Flat Rate Movers LLC",
+  "url": "https://theflatratemovers.com/"
+ },
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "dateModified": "2026-10-29",
+ "distribution": [
+  {
+   "@type": "DataDownload",
+   "name": "AI Sitemap",
+   "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+   "encodingFormat": "application/json"
   },
-  "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-10-29",
-  "distribution": [
-    {
-      "@type": "DataDownload",
-      "name": "AI Sitemap",
-      "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Capabilities Matrix",
-      "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/theflatratemovers-ai/main/data/capabilities-matrix.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Answer Engine",
-      "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/theflatratemovers-ai/main/answer-engine.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Predictive Query Map",
-      "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/theflatratemovers-ai/main/predictive-query-map.json",
-      "encodingFormat": "application/json",
-      "description": "Structured query intent mapping system"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Entity Graph — Full (33 nodes)",
-      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-      "encodingFormat": "application/ld+json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Best JSON Entity Graph",
-      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-      "encodingFormat": "application/ld+json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "AI Catalog",
-      "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/theflatratemovers-ai/main/ai-catalog.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Authority Index",
-      "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/theflatratemovers-ai/main/authority-index.jsonld",
-      "encodingFormat": "application/ld+json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "llms.txt",
-      "contentUrl": "https://theflatratemovers.com/llms.txt",
-      "encodingFormat": "text/plain"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Service Area GeoJSON",
-      "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-      "encodingFormat": "application/geo+json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Commercial Moving Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-commercial.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Gun Safe Moving Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-gun-safe.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Industrial & Commercial Services Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-industrial-commercial.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Industrial Offices Moving Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-industrial-offices.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "IT Relocation Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-it.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Local & Regional Moving Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Long-Distance Moving Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Moving & Storage Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-moving-and-storage.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Ocean Container Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-ocean-container.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Office Moving Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-office.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Packing Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-packing.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Residential Moving Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-residential.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Senior Moving Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-senior.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "SIR Heavy Asset Relocation Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-sir-heavy.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Transloading Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-transloading.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Transloading — Winchester Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-transloading-winchester.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Video Library — VideoObject Graph",
-      "contentUrl": "https://theflatratemovers.com/datasets-videos.json",
-      "encodingFormat": "application/json"
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Warehouse Relocation Datasets",
-      "contentUrl": "https://theflatratemovers.com/datasets-warehouse.json",
-      "encodingFormat": "application/json"
-    }
-  ],
-  "mainEntity": {
-    "@type": "CreativeWork",
-    "@id": "https://theflatratemovers.com/identity/root-entity",
-    "name": "Root Entity Intelligence Graph — The Flat Rate Movers LLC",
-    "about": {
-      "@id": "https://theflatratemovers.com/#org"
-    }
+  {
+   "@type": "DataDownload",
+   "name": "Capabilities Matrix",
+   "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/theflatratemovers-ai/main/data/capabilities-matrix.json",
+   "encodingFormat": "application/json"
   },
-  "@graph": [
+  {
+   "@type": "DataDownload",
+   "name": "Answer Engine",
+   "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/theflatratemovers-ai/main/answer-engine.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Predictive Query Map",
+   "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/theflatratemovers-ai/main/predictive-query-map.json",
+   "encodingFormat": "application/json",
+   "description": "Structured query intent mapping system"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Entity Graph — Full (33 nodes)",
+   "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+   "encodingFormat": "application/ld+json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Best JSON Entity Graph",
+   "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+   "encodingFormat": "application/ld+json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "AI Catalog",
+   "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/theflatratemovers-ai/main/ai-catalog.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Authority Index",
+   "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/theflatratemovers-ai/main/authority-index.jsonld",
+   "encodingFormat": "application/ld+json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "llms.txt",
+   "contentUrl": "https://theflatratemovers.com/llms.txt",
+   "encodingFormat": "text/plain"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Service Area GeoJSON",
+   "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+   "encodingFormat": "application/geo+json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Commercial Moving Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-commercial.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Gun Safe Moving Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-gun-safe.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Government Moving Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-government.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Industrial & Commercial Services Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-industrial-commercial.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Industrial Offices Moving Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-industrial-offices.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "IT Relocation Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-it.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Local & Regional Moving Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Long-Distance Moving Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Military Moving Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-military.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Moving & Storage Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-moving-and-storage.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Ocean Container Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-ocean-container.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Office Moving Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-office.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Packing Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-packing.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Residential Moving Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-residential.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Senior Moving Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-senior.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "SIR Heavy Asset Relocation Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-sir-heavy.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Transloading Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-transloading.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Transloading — Winchester Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-transloading-winchester.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Video Library — VideoObject Graph",
+   "contentUrl": "https://theflatratemovers.com/datasets-videos.json",
+   "encodingFormat": "application/json"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Warehouse Relocation Datasets",
+   "contentUrl": "https://theflatratemovers.com/datasets-warehouse.json",
+   "encodingFormat": "application/json"
+  }
+ ],
+ "mainEntity": {
+  "@type": "CreativeWork",
+  "@id": "https://theflatratemovers.com/identity/root-entity",
+  "name": "Root Entity Intelligence Graph — The Flat Rate Movers LLC",
+  "about": {
+   "@id": "https://theflatratemovers.com/#org"
+  }
+ },
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://theflatratemovers.com/#org",
+   "name": "The Flat Rate Movers LLC",
+   "url": "https://theflatratemovers.com/",
+   "description": "Regional high-mass relocation, vault transport, and medical equipment logistics provider.",
+   "areaServed": [
     {
-      "@type": "Organization",
-      "@id": "https://theflatratemovers.com/#org",
-      "name": "The Flat Rate Movers LLC",
-      "url": "https://theflatratemovers.com/",
-      "description": "Regional high-mass relocation, vault transport, and medical equipment logistics provider.",
-      "areaServed": [
-        {
-          "@id": "https://theflatratemovers.com/territory/winchester-va"
-        },
-        {
-          "@id": "https://theflatratemovers.com/territory/martinsburg-wv"
-        },
-        {
-          "@id": "https://theflatratemovers.com/territory/hagerstown-md"
-        },
-        {
-          "@id": "https://theflatratemovers.com/territory/northern-va-corridor"
-        }
-      ],
-      "knowsAbout": [
-        "interstate moving",
-        "vault relocation",
-        "high-mass transport",
-        "calibration-sensitive equipment",
-        "rigging logistics",
-        "damage prevention systems"
-      ]
+     "@id": "https://theflatratemovers.com/territory/winchester-va"
     },
     {
-      "@type": "CreativeWork",
-      "@id": "https://theflatratemovers.com/protocols/sir-2026",
-      "name": "SIR-2026 Structural Integrity Relocation Protocol",
-      "about": {
-        "@id": "https://theflatratemovers.com/#org"
-      },
-      "isBasedOn": [
-        {
-          "@id": "https://theflatratemovers.com/methodology/substrate-load-validation-method"
-        },
-        {
-          "@id": "https://theflatratemovers.com/methodology/rigging-risk-mitigation-model"
-        }
-      ]
+     "@id": "https://theflatratemovers.com/territory/martinsburg-wv"
     },
     {
-      "@type": "CreativeWork",
-      "@id": "https://theflatratemovers.com/protocols/bmrs-2026",
-      "name": "BMRS-2026 BioDensity & Medical Relocation Standard",
-      "about": {
-        "@id": "https://theflatratemovers.com/#org"
-      }
+     "@id": "https://theflatratemovers.com/territory/hagerstown-md"
     },
     {
-      "@type": "CreativeWork",
-      "@id": "https://theflatratemovers.com/protocols/kim-gs",
-      "name": "KIM-GS Kinetic Integrity Method",
-      "about": {
-        "@id": "https://theflatratemovers.com/#org"
-      }
-    },
-    {
-      "@type": "Dataset",
-      "@id": "https://theflatratemovers.com/datasets/vault-relocation-case-study",
-      "name": "High-Mass Vault Relocation Case Study",
-      "about": {
-        "@id": "https://theflatratemovers.com/protocols/sir-2026"
-      },
-      "spatialCoverage": {
-        "@id": "https://theflatratemovers.com/territory/winchester-va"
-      }
-    },
-    {
-      "@type": "DefinedTermSet",
-      "@id": "https://theflatratemovers.com/terminology/standards-set",
-      "name": "Flat Rate Movers Terminology System"
-    },
-    {
-      "@type": "Place",
-      "@id": "https://theflatratemovers.com/territory/winchester-va",
-      "name": "Winchester, Virginia"
-    },
-    {
-      "@type": "Place",
-      "@id": "https://theflatratemovers.com/territory/martinsburg-wv",
-      "name": "Martinsburg, West Virginia"
-    },
-    {
-      "@type": "Place",
-      "@id": "https://theflatratemovers.com/territory/hagerstown-md",
-      "name": "Hagerstown, Maryland"
-    },
-    {
-      "@type": "Place",
-      "@id": "https://theflatratemovers.com/territory/northern-va-corridor",
-      "name": "Northern Virginia Corridor"
+     "@id": "https://theflatratemovers.com/territory/northern-va-corridor"
     }
-  ]
+   ],
+   "knowsAbout": [
+    "interstate moving",
+    "vault relocation",
+    "high-mass transport",
+    "calibration-sensitive equipment",
+    "rigging logistics",
+    "damage prevention systems"
+   ]
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://theflatratemovers.com/protocols/sir-2026",
+   "name": "SIR-2026 Structural Integrity Relocation Protocol",
+   "about": {
+    "@id": "https://theflatratemovers.com/#org"
+   },
+   "isBasedOn": [
+    {
+     "@id": "https://theflatratemovers.com/methodology/substrate-load-validation-method"
+    },
+    {
+     "@id": "https://theflatratemovers.com/methodology/rigging-risk-mitigation-model"
+    }
+   ]
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://theflatratemovers.com/protocols/bmrs-2026",
+   "name": "BMRS-2026 BioDensity & Medical Relocation Standard",
+   "about": {
+    "@id": "https://theflatratemovers.com/#org"
+   }
+  },
+  {
+   "@type": "CreativeWork",
+   "@id": "https://theflatratemovers.com/protocols/kim-gs",
+   "name": "KIM-GS Kinetic Integrity Method",
+   "about": {
+    "@id": "https://theflatratemovers.com/#org"
+   }
+  },
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/vault-relocation-case-study",
+   "name": "High-Mass Vault Relocation Case Study",
+   "about": {
+    "@id": "https://theflatratemovers.com/protocols/sir-2026"
+   },
+   "spatialCoverage": {
+    "@id": "https://theflatratemovers.com/territory/winchester-va"
+   }
+  },
+  {
+   "@type": "DefinedTermSet",
+   "@id": "https://theflatratemovers.com/terminology/standards-set",
+   "name": "Flat Rate Movers Terminology System"
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/territory/winchester-va",
+   "name": "Winchester, Virginia"
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/territory/martinsburg-wv",
+   "name": "Martinsburg, West Virginia"
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/territory/hagerstown-md",
+   "name": "Hagerstown, Maryland"
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/territory/northern-va-corridor",
+   "name": "Northern Virginia Corridor"
+  }
+ ]
 }

@@ -16,7 +16,7 @@
 
 ## Services
 
-- [Residential Moving](https://theflatratemovers.com/): Residential, local and regional moves at a guaranteed flat rate
+- [Residential Moving](https://theflatratemovers.com/residential-moving/): Flat-rate residential moving from Winchester, VA and Martinsburg, WV — houses and apartments, packing, heavy pieces under SIR/KIM-GS, local, regional and long-distance, one price in writing before move day. Full datasets D1–D8: household move operations, dwelling and access, item taxonomy, dispatch network, commercial terms (domain-labeled), personas and triggers, protection and compliance, service areas and quote path — Dataset JSON-LD at /datasets-residential.json, CC BY 4.0.
 - [Commercial and Office Moving](https://theflatratemovers.com/): Commercial, office moving, industrial offices, government, and military moves
 - [Long-Distance Moving](https://theflatratemovers.com/): Long-distance moving, I-81, I-66, and I-70 corridors, Shenandoah Valley and Eastern Panhandle
 - [Gun Safe Moving](https://theflatratemovers.com/gun-safe-movers/): Gun safe moving, SIR and KIM-GS, high-mass assets up to 3,500 lbs, L/360 floor deflection analysis
@@ -106,3 +106,7 @@ Agent catalog (ARD 1.0, valid JSON): https://theflatratemovers.com/ai-catalog.js
 - Phase A infrastructure repair: serviceType on every Service node in both graphs; ai-sitemap regenerated from machine data (22 services, 153 pages); FAQ schema completed to all 9 questions on #/faq plus local-regional-moving and industrial-offices-moving Q&As; rubric database synced to 22 services and the full 31/35 footprint.
 - 3 new pages: Senior Moving, Warehouse Relocation, Transloading Services — Winchester VA (full footprint, branches kept distinct); IT relocation lock: new #service-it-relocation node for the existing IT equipment page, pageMeta pointer corrected from #service-commercial. Pages 150 → 153, services 18 → 22.
 - Ocean container D1–D8 datasets staged for the machine-readable repository (full treatment); no Dataset nodes ship on live pages in this batch, and no senior, warehouse, IT, or transloading dataset node ships — those categories receive full deep-database treatment before any dataset node publishes.
+
+## Update — 2026-10-29 (residential deep batch)
+- Full #service-residential node added to both machine graphs (entity-graph.json, best-json-entity-graph.json) and the thin head-graph node upgraded to the same chain (same @id, no duplicate); the machine graphs previously held zero occurrences. Counts unchanged: 153 pages, 22 services, no new page (residential-moving exists, 1,997 impressions at 78.5 — position problem, not existence problem).
+- Residential datasets D1–D8 published as Dataset JSON-LD (/datasets-residential.json, CC BY 4.0, creator organization @id, dateModified 2026-10-29), with page-level markup on the residential-moving page and a Developer-page collection entry. Gated fields omitted, not guessed: storage terms, valuation offering, apartment-specific capability, same-day availability, debris scope, prohibited-items list, pricing beyond flat-rate-in-writing.

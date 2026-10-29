@@ -1,0 +1,497 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://theflatratemovers.com/#dataset-sir-heavy-operations",
+      "@type": "Service",
+      "name": "SIR Method Operations",
+      "description": "SIR method operations — how a high-mass move is run at The Flat Rate Movers, under SIR (Structural Integrity Relocation) executed through the KIM-GS Protocol, for assets of 1,500 to 3,500 lbs, quoted at one flat rate agreed in writing before move day. The published chain has six steps: (1) the asset — weight, dimensions, centre of mass, and value at risk are established first; (2) the structure — route and clearance survey at both ends, stairs and landings measured, and floor deflection assessed against L/360, span divided by 360, before any lift is planned; (3) the load path — load spreading and protection runs are planned where the substrate needs support, and floors, walls, and frames are protected end to end; (4) the crew and rigging are matched to the plan — dollies, straps, and equipment chosen for this asset and this route; (5) the move — controlled, strapped, and supervised along the planned path; (6) placement — the asset is set in its final position, levelled, and verified with the client, at the flat rate agreed in writing. The structural protocol compresses the same chain into three phases — assess the asset, assess the structure, move under KIM-GS — and calibration-sensitive and fragile high-mass items are flagged at the assess stage, not discovered on the day. The six published steps are the complete published method surface; the protocol's internal calculations, models, and formulas are not published here or anywhere in the company's data. Not published and not claimed: any handling rule below 1,500 lbs or above 3,500 lbs under this method, any equipment beyond the published wording, and any crew-size rule.",
+      "keywords": [
+        "SIR",
+        "KIM-GS",
+        "heavy asset moving",
+        "high-mass relocation",
+        "floor deflection L/360",
+        "gun safe movers"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-sir-heavy"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/heavy/",
+      "provider": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-sir-heavy-assessment",
+      "@type": "Dataset",
+      "name": "Asset & Structure Assessment Operations",
+      "description": "Asset and structure assessment operations — the survey that gates every SIR move. Published asset inputs: weight, dimensions, centre of mass, and value at risk, with calibration-sensitive and fragile items flagged at the assess stage. Published structure inputs: the route and clearance at both ends, stairs and landings measured, the substrate, and floor deflection assessed against L/360 — span divided by 360 — before any lift is planned; the plan outputs are the load path, the spreading and protection runs, and the crew and rigging matched to the plan. The company's published rule is that the building is assessed before the asset moves: every SIR move starts with the building, not the item. Domain education, labeled as such and never a company figure: L/360 is the standard residential floor deflection limit in the IRC framework (Table R502.3.1) — a 10-foot span may deflect about one-third of an inch, a 12-foot span 0.40 inches, a 15-foot span 0.50 inches — and tile and stone floors demand the stricter L/480. IRC design loads are 40 psf live load in living areas, 30 psf in sleeping areas, and 20 psf in uninhabitable attic storage, plus roughly 10 to 20 psf dead load, all as uniform loads; a heavy asset concentrates its weight on a small footprint, which is why the published method checks the structure first. Not published and not claimed: any PSI value, floor-load figure, or joist schedule as company engineering data, and any involvement of a licensed structural engineer.",
+      "keywords": [
+        "floor deflection L/360",
+        "heavy asset survey",
+        "high-mass relocation",
+        "SIR protocol steps"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-sir-heavy"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/heavy/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-sir-heavy-taxonomy",
+      "@type": "Dataset",
+      "name": "High-Mass Asset Taxonomy",
+      "description": "High-mass asset taxonomy — the published asset classes that move under the SIR method, each owned by its own category and cross-referenced here, never duplicated. Gun safes and high-mass safes (gun-safe category); pianos (piano and antique category); antiques and high-value pieces (piano and antique category); medical devices (medical category); cryogenic equipment (cryogenic category); industrial equipment and machinery (industrial and commercial category); vaults (technical rigging, cross-referenced to gun-safe); and calibration-sensitive items, flagged at the assess stage. The published mass band for the method is 1,500 to 3,500 lbs. Below 1,500 lbs and above 3,500 lbs are not published SIR scope: no sub-band handling rule, no maximum, and no refusal or special-handling rule is published, and none is claimed here. Asset-specific handling — safe models and weights, piano types, medical device classes, cryogenic handling — belongs to the asset categories and is not specified in this dataset.",
+      "keywords": [
+        "high-mass assets",
+        "gun safe movers",
+        "piano movers",
+        "medical equipment moving",
+        "cryogenic moving"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-sir-heavy"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/heavy/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-sir-heavy-dispatch-network",
+      "@type": "Dataset",
+      "name": "Dispatch Network & Corridor Chain",
+      "description": "Dispatch network and corridor chain for SIR heavy asset work. Two branch bases, never merged: Winchester, VA — The Flat Rate Movers, 116 W Piccadilly St Suite 11, open Mon–Fri 8–6, Sat 8–4, Sun 9–4, Google rating 5.0 from 1 review; and Martinsburg, WV — Flat Rate Movers Martinsburg WV, 736 Williamsport Pike Suite 2, open Mon–Fri 9–6, Sat 9–4, Sun 9–4, Google rating 4.7 from 6 reviews. Coverage is the published two-branch footprint: 52 GeoJSON areas — Winchester 31 (16 Google Business areas plus 15 extended), Martinsburg 35 (14 Google Business areas plus 21 extended), 14 areas shared. Dispatch runs along the I-81, I-66, and I-70 corridors from both bases; a listed area is part of the coverage pool, never a claim that a town sits on a particular highway. The Martinsburg branch carries a full-format SIR branch page; no Winchester SIR branch page exists, and none is claimed — the method hub serves both branches. Sibling categories dispatched from the same bases — gun-safe, piano and antique, long-distance, and industrial and commercial — keep their own nodes and their own claims.",
+      "keywords": [
+        "SIR heavy movers Martinsburg",
+        "heavy asset authority",
+        "high-mass logistics Winchester",
+        "industrial rigging Winchester VA"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-sir-heavy"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/heavy/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-sir-heavy-terms",
+      "@type": "Article",
+      "name": "Commercial Terms & Cost Drivers",
+      "description": "Commercial terms and cost drivers for SIR heavy asset relocation. The company's only pricing term is the published one: one flat rate agreed in writing before move day — no hourly clock, and no company price, fee, deposit, or discount stated anywhere in this dataset. The published logic of the model: the buyer is not buying muscle but the structure check, and a flat rate in writing removes the meter running on an engineering job. Everything else here is domain education, researched and labeled. Estimate types (domain): binding, non-binding, and not-to-exceed estimates are the industry forms the flat-rate model is published against. Risk transfer (domain logic): under a flat rate the mover carries the timing risk once scope is locked; under hourly pricing the customer pays for every delay. Cost drivers (domain): weight, dimensions, access (stairs, elevator, long carry), protection scope, distance, and specialty handling. Valuation (domain, FMCSA): Full Value Protection means the mover repairs, replaces, or pays the current replacement value of a lost or damaged item, with a minimum declared value of $6 per pound of shipment weight; Released Value Protection caps liability at $0.60 per pound per article and is chosen only by a signed waiver. Valuation is not insurance. Not published and not claimed: any company valuation offering for high-mass assets, and any crew-size rule or minimum job size.",
+      "keywords": [
+        "flat rate heavy moving",
+        "SIR moving quote",
+        "high-mass relocation cost"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-sir-heavy"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/heavy/",
+      "headline": "Commercial Terms & Cost Drivers",
+      "author": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-sir-heavy-personas",
+      "@type": "Article",
+      "name": "Buyer Personas & Trigger Events",
+      "description": "Buyer personas and trigger events for SIR heavy asset moving — who buys the method, and what starts the conversation. Safe owners, whose gun safe or high-mass safe has to move without the floor, the staircase, or the safe becoming a guess (the gun-safe category owns that demand). Piano and antique owners and collectors, including estate handlers settling high-value pieces, where the value at risk matters as much as the weight. Medical, museum, and industrial clients whose asset cannot be guessed with — the structural protocol page's own audience. Facility and operations buyers planning industrial rigging, warehouse, and transload work. And homeowners with one heavy piece inside a home move, where the heavy piece moves under the same method as part of the same flat-rate move. Trigger events (domain buyer logic, labeled as such): a new equipment delivery, a home move with a heavy piece, a facility install, a renovation, an estate settlement, an equipment replacement, a building move. The published booking pattern is survey-first — the assessment comes before any lift is planned — through the Short or Detailed quote form and the film-only survey room, with a human-made estimate. No client is named, no testimonial is quoted, and no seasonality or booking-window figure is published or claimed for this category.",
+      "keywords": [
+        "heavy asset moving",
+        "high-mass relocation",
+        "SIR protocol",
+        "industrial rigging"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-sir-heavy"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/heavy/",
+      "headline": "Buyer Personas & Trigger Events",
+      "author": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-sir-heavy-protection-compliance",
+      "@type": "Service",
+      "name": "Floor, Protection & Handling Compliance",
+      "description": "Floor, protection, and handling compliance for high-mass assets — the published standard, with domain context labeled. Published: floor deflection is assessed against L/360 before any lift is planned. Load spreading and protection runs are planned where the substrate needs support. Floors, walls, and frames are protected end to end. Dollies, straps, and equipment are matched to the plan, and the crew is matched to the plan. The move runs controlled, strapped, and supervised along the planned path, and placement is levelled and verified with the client. Calibration-sensitive and fragile high-mass items are flagged at the assess stage. The only named heavy equipment anywhere in the company's published record beyond dollies and straps is the warehouse forklift and track loader in the industrial hub's photo caption. Domain reference, labeled as such and never company deployment: load spreading with skids or plywood decking; a rigging inventory of safe-moving dollies, powered stair climbers, straps and tie-downs, gantries, hoists, and cribbing; stair inspection and load restraint on stairs; and structural-engineer consultation guidance for unusual loads. Not published and not claimed: any equipment deployment beyond the published wording, any structural-engineer involvement, any inspection report, warranty, or engineering stamp, and any certification, credential, or accreditation for the method or the company.",
+      "keywords": [
+        "floor deflection L/360",
+        "load spreading",
+        "high-mass rigging standards",
+        "heavy asset protection"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-sir-heavy"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/heavy/",
+      "provider": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-sir-heavy-areas-quote",
+      "@type": "Dataset",
+      "name": "Service Areas, Dispatch & Quote Path",
+      "description": "Service areas, dispatch, and quote path for SIR heavy asset relocation. Areas: the published two-branch footprint — 52 GeoJSON areas, Winchester 31 and Martinsburg 35 with 14 shared — carried on the two Place nodes via branch references and never merged into one list. Branches: Winchester, VA (The Flat Rate Movers) and Martinsburg, WV (Flat Rate Movers Martinsburg WV), phone +1-540-422-2153, founded June 2010, tagline 'Guaranteed Flat Rate or Your Move is Free!'. Dispatch runs on the I-81, I-66, and I-70 corridors from both bases. Fourteen published pages carry this service: the method hub, the two protocol pages, the Martinsburg branch page, the technical rigging standards page, the Winchester industrial rigging hub, the vault relocation page, the calibration-safe page, the long-distance high-mass page, two category indexes, and the method articles. The quote path: 'Get My Flat Rate Quote' runs the Short (Quick Quote) form by default, with the Detailed Project form one toggle away and From, To, and What's moving preserved when switching; the film-only survey room supports a human-made estimate, and no test submission is ever sent. No Winchester SIR branch page exists; it is recorded here as a gap, not filled. No certification claim appears anywhere in this dataset.",
+      "keywords": [
+        "SIR heavy movers",
+        "heavy asset authority",
+        "industrial rigging Winchester VA",
+        "high-mass logistics"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-sir-heavy"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/heavy/"
+    }
+  ]
+}

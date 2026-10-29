@@ -1,0 +1,624 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://theflatratemovers.com/#dataset-industrial-commercial-operations",
+      "name": "The Flat Rate Movers \u2014 Industrial & Commercial Project Support Operations Dataset",
+      "description": "Industrial & commercial project support operations from The Flat Rate Movers: trained, supervised moving and warehouse teams supporting contractors, project managers and operations buyers \u2014 a B2B project-support service, not a listing of individual labor. Four service lines (published): Warehouse & Distribution; Commercial Relocation & Logistics, including white-glove and blanket-wrap handling; FF&E Installation & Project Support; and Flexible Workforce Deployment. Support types (published): military and regular household-goods loading and unloading; APU and driver crew support; warehouse load-outs and inbound unloads, including trailer loading and offloading and warehouse organization; vault and container handling with inventory, sorting, labeling and pallet work; residential driver-meet jobs; rush, overflow and short-notice support; and ocean container, PODS, transloading, restacking and packing support through the company's warehouse and transload operation. Published workflow: send the job details; confirm team, scope and rate; the team is dispatched; invoice per job. Teams are self-managed and supervised, trained in-house, with team size matched to each job; pricing is per job with no required contract duration.",
+      "keywords": [
+        "industrial project support teams",
+        "warehouse crew support virginia",
+        "hhg loading unloading crews",
+        "commercial relocation support",
+        "supervised moving teams"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-industrial-commercial"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "sameAs": [
+        "https://theflatratemovers.com/industrial-commercial-services/",
+        "https://theflatratemovers.com/industrial-commercial-movers-winchester-va/",
+        "https://theflatratemovers.com/industrial-commercial-movers-martinsburg-wv/"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Standard Job Pricing",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Unload",
+            "price": "8.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "8.00",
+              "priceCurrency": "USD",
+              "unitText": "CWT"
+            },
+            "description": "Warehouse, military or regular HHG unload."
+          },
+          {
+            "@type": "Offer",
+            "name": "Load",
+            "price": "10.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "10.00",
+              "priceCurrency": "USD",
+              "unitText": "CWT"
+            },
+            "description": "Warehouse load-out, origin service or regular HHG load."
+          },
+          {
+            "@type": "Offer",
+            "name": "APU",
+            "price": "12.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "12.00",
+              "priceCurrency": "USD",
+              "unitText": "CWT"
+            },
+            "description": "Additional project-support service for warehouse, household-goods, and distribution jobs, quoted per job."
+          },
+          {
+            "@type": "Offer",
+            "name": "Residential / Driver Meet",
+            "price": "400",
+            "priceCurrency": "USD",
+            "description": "Residential job where the team meets the driver on site. $400-$425 per man, quoted per job."
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://theflatratemovers.com/#dataset-industrial-commercial-filters",
+      "name": "The Flat Rate Movers \u2014 Industrial & Commercial Filter Taxonomy: Markets, Services, Deployment Needs Dataset",
+      "description": "The filter taxonomy behind the Industrial & Commercial Services page, which filters in place by market, service, deployment need and service area (areas load from the live service-area GeoJSON, by branch). Services dimension (published): Warehouse & Distribution; Commercial Relocation & Logistics; FF&E Installation & Project Support; Flexible Workforce Deployment; Ocean Containers, PODS & Transloading. Deployment-needs dimension (published): Planned Projects; Overflow Demand; Peak Season; Weekend Support; Vacation Coverage; Emergency Response. Markets dimension (published): Warehousing & Distribution; Manufacturing; Transportation & Logistics; Retail Distribution; Third-Party Logistics (3PL); Healthcare Facilities; Commercial Furniture Dealers; Corporate Offices; General Contractors; Educational Institutions; Hospitality & Hotel Renovations. Service-area dimension: the 52-feature published footprint in service-area.geojson, split by branch \u2014 Winchester 31 areas, Martinsburg 35 areas, 14 shared \u2014 never blended. This dataset is the machine-readable form of the page's own published filter design.",
+      "keywords": [
+        "project support filter taxonomy",
+        "warehouse markets served",
+        "deployment needs overflow peak",
+        "3pl project support",
+        "ffe installation support filters"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-industrial-commercial"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "name": "AI Sitemap",
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Service Area GeoJSON",
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/geo+json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Entity Graph",
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Best JSON Entity Graph",
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": [
+        "https://theflatratemovers.com/industrial-commercial-services/"
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://theflatratemovers.com/#dataset-industrial-commercial-taxonomy",
+      "name": "The Flat Rate Movers \u2014 Industrial & Commercial Work Taxonomy Dataset",
+      "description": "Work taxonomy for industrial & commercial project support, from the service's published capability lists. Warehouse & Distribution: trailer loading and offloading; cross-docking; container support; inventory, sorting, labeling and pallet work; warehouse organization and cleanup; load-outs and inbound unloads; restacking. Commercial Relocation & Logistics: office and warehouse relocations; equipment and asset moves; white-glove service and blanket-wrap handling; logistics coordination; decommission support. FF&E Installation & Project Support: furniture and office-system installation; hospitality project work and reconfiguration; receiving and warehousing coordination; punch lists and closeout; project-based teams. Container and unit handling: ocean container loading and unloading; PODS loading and unloading with packing, protection and placement; transloading between truck, container and warehouse; vault handling. Domain vocabulary (industry reference, labeled as such): FF&E means furniture, fixtures and equipment; a punch list is the documented list of incomplete or deficient items to correct before a project is accepted as complete; decommissioning is the planned emptying and hand-back preparation of a space. No equipment list is published for this service \u2014 equipment is matched to the project.",
+      "keywords": [
+        "warehouse work taxonomy",
+        "cross docking labor support",
+        "ffe installation tasks",
+        "blanket wrap white glove logistics",
+        "transloading restacking work"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-industrial-commercial"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "name": "AI Sitemap",
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Service Area GeoJSON",
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/geo+json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Entity Graph",
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Best JSON Entity Graph",
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": [
+        "https://theflatratemovers.com/industrial-commercial-services/"
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://theflatratemovers.com/#dataset-industrial-commercial-deployment",
+      "name": "The Flat Rate Movers \u2014 Industrial & Commercial Deployment Models Dataset",
+      "description": "Deployment models for industrial & commercial project support (published): planned projects; overflow demand; peak season; weekend support; vacation coverage; emergency response \u2014 including rapid and same-day deployment where the job allows. Operating model (published): self-managed, supervised project teams, trained in-house for household-goods moving, warehouse handling, property care and jobsite conduct; team size matched to each job; scope and price confirmed before dispatch; job-by-job pricing with no required contract duration. The service supports military and regular household-goods shipments, warehouse operations, and residential jobs needing additional manpower, and supports peak demand, workforce shortages, emergency response and planned projects for the buying organization. Domain reference (labeled as such): buyers typically distinguish planned deployment (scheduled project work), surge deployment (peak and overflow), and contingency deployment (vacation and emergency coverage); lead time, minimum engagement, and screening requirements vary by buyer and site and are confirmed per job \u2014 no minimum team size, minimum hours, or screening claim is published for this service.",
+      "keywords": [
+        "overflow workforce deployment",
+        "peak season warehouse support",
+        "weekend project support teams",
+        "emergency response manpower",
+        "planned project deployment"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-industrial-commercial"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "name": "AI Sitemap",
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Service Area GeoJSON",
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/geo+json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Entity Graph",
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Best JSON Entity Graph",
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": [
+        "https://theflatratemovers.com/industrial-commercial-services/"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://theflatratemovers.com/#dataset-industrial-commercial-terms",
+      "name": "The Flat Rate Movers \u2014 Industrial & Commercial Commercial Terms and Cost Drivers Dataset",
+      "description": "Commercial terms and cost drivers for industrial & commercial project support. Published Standard Job Pricing \u2014 the only published pricing for this service, and the only category pricing published anywhere in the estate: Unload $8.00/CWT; Load $10.00/CWT; APU $12.00/CWT; Residential/Driver Meet $400-$425 per man. Terms (published): rates are quoted per job and may be adjusted for unusual scope, special equipment, travel, after-hours requirements, or other conditions agreed before dispatch; job-by-job pricing with no required contract duration; scope and price confirmed before dispatch; invoice per job. These are per-job industrial and commercial rates for this service \u2014 they are not the residential flat-rate moving price, which is quoted separately, in writing, for a household move. Domain reference (labeled as such): CWT is the hundredweight, 100 lb, the standard weight unit in freight and household-goods rating; weight-based unload/load pricing scales with shipment weight rather than clock time, which is why the schedule is published per CWT. Whether this CWT schedule extends to any other service (for example standalone container unloads under the transloading categories) is an open question, not a claim \u2014 it is published for this service only.",
+      "keywords": [
+        "cwt pricing unload load",
+        "warehouse labor rates per cwt",
+        "per job project support pricing",
+        "no contract duration crew support",
+        "driver meet rate"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-industrial-commercial"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "sameAs": [
+        "https://theflatratemovers.com/industrial-commercial-services/"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Standard Job Pricing",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Unload",
+            "price": "8.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "8.00",
+              "priceCurrency": "USD",
+              "unitText": "CWT"
+            },
+            "description": "Warehouse, military or regular HHG unload."
+          },
+          {
+            "@type": "Offer",
+            "name": "Load",
+            "price": "10.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "10.00",
+              "priceCurrency": "USD",
+              "unitText": "CWT"
+            },
+            "description": "Warehouse load-out, origin service or regular HHG load."
+          },
+          {
+            "@type": "Offer",
+            "name": "APU",
+            "price": "12.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "12.00",
+              "priceCurrency": "USD",
+              "unitText": "CWT"
+            },
+            "description": "Additional project-support service for warehouse, household-goods, and distribution jobs, quoted per job."
+          },
+          {
+            "@type": "Offer",
+            "name": "Residential / Driver Meet",
+            "price": "400",
+            "priceCurrency": "USD",
+            "description": "Residential job where the team meets the driver on site. $400-$425 per man, quoted per job."
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://theflatratemovers.com/#dataset-industrial-commercial-personas",
+      "name": "The Flat Rate Movers \u2014 Industrial & Commercial Buyer Personas and Trigger Events Dataset",
+      "description": "Buyer personas and trigger events for industrial & commercial project support. Published audience: project managers, operations managers, warehouse managers, logistics coordinators, general contractors, commercial furniture dealers, healthcare facilities managers, corporate office managers, educational institution administrators, hospitality and hotel renovation project managers, military HHG coordinators, and government project managers \u2014 buyers who manage a warehouse, a move, a renovation, or a shipment that needs trained, supervised teams. Trigger events (domain reference): peak-season volume surges; warehouse load-out or inbound surges; staff shortages and vacation gaps; a hotel or office renovation entering its FF&E phase; a distribution or retail rollout; a household-goods capacity crunch for carriers and forwarders; an emergency that displaces goods or a workforce. Buying-route note (domain reference): in 3PL and carrier organizations, project support may be bought directly by operations or routed through vendor onboarding \u2014 which route applies is confirmed per organization, not assumed. No client, facility, agency, or contract name is published for this service.",
+      "keywords": [
+        "warehouse manager crew support buyer",
+        "general contractor project support",
+        "hotel renovation ffe buyer",
+        "hhg coordinator support",
+        "operations manager overflow labor"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-industrial-commercial"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "sameAs": [
+        "https://theflatratemovers.com/industrial-commercial-services/"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://theflatratemovers.com/#dataset-industrial-commercial-standards-compliance",
+      "name": "The Flat Rate Movers \u2014 Industrial & Commercial Training, Standards and Compliance Dataset",
+      "description": "Training, team standards and compliance context for industrial & commercial project support. Company standards (published): teams are trained in-house for household-goods moving, warehouse handling, property care, and jobsite conduct; teams work to client-specific standards with an emphasis on safety, efficiency, and operational excellence; site-specific rules, equipment restrictions, and required certifications are confirmed before dispatch \u2014 confirmed per job, which means no blanket certification, clearance, or screening claim is published for this service. Domain context (general industry reference, labeled as such): warehouse and materials-handling work sits under OSHA's materials handling standard (29 CFR 1910.176 \u2014 secure storage, clear aisles, safe stacking) and powered-industrial-truck standard (29 CFR 1910.178 \u2014 only trained, evaluated operators may operate forklifts); ergonomics guidance favors mechanical aids and team lifts over manual handling of heavy loads; commercial buyers commonly onboard vendors with a certificate of insurance and site safety induction before the first dispatch. The company's own warehouse and transload operation is documented in published, honestly captioned photos (faces blurred for privacy where crew appear).",
+      "keywords": [
+        "supervised warehouse team standards",
+        "osha 1910.176 materials handling",
+        "osha 1910.178 forklift operator training",
+        "vendor onboarding coi domain",
+        "trained hhg warehouse crews"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-industrial-commercial"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "sameAs": [
+        "https://theflatratemovers.com/industrial-commercial-services/"
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://theflatratemovers.com/#dataset-industrial-commercial-areas-dispatch",
+      "name": "The Flat Rate Movers \u2014 Industrial & Commercial Service Areas, Dispatch and Quote Path Dataset",
+      "description": "Service areas, dispatch and quote path for industrial & commercial project support. Two home bases, kept distinct and never blended: Winchester, VA \u2014 The Flat Rate Movers, 116 W Piccadilly St Suite 11, Winchester VA 22601, hours Mon\u2013Fri 8am\u20136pm, Sat 8am\u20134pm, Sun 9am\u20134pm, Google rating 5.0 with 1 review, 31 published service areas; and Martinsburg, WV \u2014 Flat Rate Movers Martinsburg WV, 736 Williamsport Pike Suite 2, Martinsburg WV 25404, hours Mon\u2013Fri 9am\u20136pm, Sat 9am\u20134pm, Sun 9am\u20134pm, Google rating 4.7 with 6 reviews, 35 published service areas. Google Business Profile service-area lists are Winchester 16 and Martinsburg 14; the full published footprint is 52 GeoJSON features (service-area.geojson), which also drives the service page's area filter by branch. Dispatch runs along the I-81, I-66 and I-70 corridors across the Shenandoah Valley and the Eastern Panhandle. Engagement path (published): send the job details (phone +1-540-422-2153, email ratemovers@gmail.com, or the Get My Flat Rate Quote form \u2014 Short by default, Detailed Project one toggle away); confirm team, scope and rate; the team is dispatched; invoice per job. The company was founded in June 2010.",
+      "keywords": [
+        "warehouse support winchester va",
+        "project support martinsburg wv",
+        "i-81 corridor warehouse teams",
+        "eastern panhandle distribution support"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-industrial-commercial"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "name": "AI Sitemap",
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Service Area GeoJSON",
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/geo+json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Entity Graph",
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Best JSON Entity Graph",
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": [
+        "https://theflatratemovers.com/industrial-commercial-services/",
+        "https://theflatratemovers.com/industrial-commercial-movers-winchester-va/",
+        "https://theflatratemovers.com/industrial-commercial-movers-martinsburg-wv/"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Standard Job Pricing",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Unload",
+            "price": "8.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "8.00",
+              "priceCurrency": "USD",
+              "unitText": "CWT"
+            },
+            "description": "Warehouse, military or regular HHG unload."
+          },
+          {
+            "@type": "Offer",
+            "name": "Load",
+            "price": "10.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "10.00",
+              "priceCurrency": "USD",
+              "unitText": "CWT"
+            },
+            "description": "Warehouse load-out, origin service or regular HHG load."
+          },
+          {
+            "@type": "Offer",
+            "name": "APU",
+            "price": "12.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "12.00",
+              "priceCurrency": "USD",
+              "unitText": "CWT"
+            },
+            "description": "Additional project-support service for warehouse, household-goods, and distribution jobs, quoted per job."
+          },
+          {
+            "@type": "Offer",
+            "name": "Residential / Driver Meet",
+            "price": "400",
+            "priceCurrency": "USD",
+            "description": "Residential job where the team meets the driver on site. $400-$425 per man, quoted per job."
+          }
+        ]
+      }
+    }
+  ]
+}

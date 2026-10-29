@@ -1,0 +1,500 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://theflatratemovers.com/#dataset-transloading-winchester-operations",
+      "@type": "Service",
+      "name": "Winchester Transload Operations",
+      "description": "Winchester transload operations: the Winchester-branch execution of a single transload job, from appointment to empty return. The appointment is booked before the container leaves the terminal. At the branch the container is devanned and destuffed; the freight is counted, inspected, and photographed, with exceptions reported in writing the same day; reworked as the job requires — palletized, wrapped, labeled, sorted by destination, purchase order, or SKU; restacked into 53ft domestic trailers (a 40ft container fills about 20 pallet positions, a 20ft about 10); dispatched inland the same day or the next morning; the empty container returned immediately after devanning, before per-diem accrues; and the final mile run by appointment. Domain reference, labeled as such: devanning happens at a warehouse or container freight station; floor-loaded and palletized are the two handling modes; cross-dock dwell is measured in hours, storage between legs in days. Every container transloading job is quoted per job and agreed in writing before dispatch — the only pricing basis published for this service. Not published and not claimed: any named port terminal or ramp; any drayage performer or chassis source; any list of handled container types.",
+      "keywords": [
+        "transloading winchester va",
+        "transloading services virginia",
+        "transloading virginia port container",
+        "container unloading winchester va",
+        "virginia inland port transloading",
+        "port of virginia container services"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-transloading-winchester-va"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/transloading-winchester-va/",
+      "provider": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-transloading-winchester-cross-dock-restack",
+      "@type": "Dataset",
+      "name": "Cross-Dock, Decon & Restack Operations",
+      "description": "Cross-dock, deconsolidation, and restack operations for Winchester transloading — the dwell models and the restack arithmetic, as data. Cross-dock: freight never enters storage and leaves the same shift. Deconsolidation: the container is broken by destination, purchase order, or SKU. Restack: freight is rebuilt into 53ft domestic trailers, split across destinations where the job calls for it. Restack arithmetic, labeled domain-typical and governed by each load plan: a 40ft container fills about 20 pallet positions; a 20ft about 10. Dwell models, labeled domain: cross-dock dwell is measured in hours; storage between legs is measured in days. IPI — where the original container continues inland intact — is vocabulary in this dataset, not a Winchester service claim. Outbound modes recorded as data: full truckload, less-than-truckload, and split delivery. No dwell-time guarantee and no rate of any kind is published in this dataset.",
+      "keywords": [
+        "container deconsolidation virginia",
+        "cross-docking virginia",
+        "container restacking virginia",
+        "deconsolidation services virginia mid-atlantic"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-transloading-winchester-va"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/transloading-winchester-va/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-transloading-winchester-equipment-reference",
+      "@type": "Dataset",
+      "name": "Winchester Container Equipment Reference",
+      "description": "Winchester container equipment reference — the container vocabulary buyers search, held strictly as domain reference; nothing in this dataset claims any container type is handled by the company. Domain reference data: 20ft general purpose, about 33 cubic meters, about 28,200 kg maximum payload; 40ft general purpose, about 67 cubic meters, about 26,700 kg; 40ft high cube, about 76 cubic meters, about 26,580 kg; refrigerated containers hold a set range from about minus 30 to plus 30 degrees Celsius; open top, flat rack (20ft about 40 tonnes, 40ft about 45 tonnes), platform, and tank containers (20,000 liters and up) complete the standard taxonomy; most dry containers carry a maximum gross of 30,480 kg, and the CSC plate on each individual box governs that box. Not published and not claimed: which container types the Winchester branch handles; any refrigerated or cold-chain capability; any flat-rack or out-of-gauge scope. Those fields stay empty until the company publishes them — the empty fields are this dataset's accuracy, not a gap in it.",
+      "keywords": [
+        "container sizes virginia",
+        "40ft container capacity",
+        "20ft container capacity",
+        "container taxonomy"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-transloading-winchester-va"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/transloading-winchester-va/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-transloading-winchester-port-chain-dispatch",
+      "@type": "Dataset",
+      "name": "Winchester Port Chain & Corridor Dispatch",
+      "description": "Winchester port chain and corridor dispatch — the chain a Winchester transload travels, as data, with no terminal or ramp named. The chain: the Virginia Inland Port and the Port of Virginia, named at the port-system level only; dispatch from the Winchester branch on I-81, I-66, and I-70; the Martinsburg branch cross-referenced, never blended; the final-mile leg by appointment. Domain reference, labeled as such: drayage is the short move between terminal and facility, usually 100 miles or less; port storage is a separate terminal charge, distinct from demurrage; an IPI movement keeps freight in the original container inland, where a transload rebuilds it into domestic equipment. Not published and not claimed: any Port of Virginia terminal name; any Virginia Inland Port ramp name; who performs the drayage leg; where chassis are sourced. Container transloading jobs are quoted per job, agreed in writing before dispatch.",
+      "keywords": [
+        "virginia inland port transloading",
+        "port of virginia container services",
+        "transloading virginia port container",
+        "i-81 corridor transloading virginia"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-transloading-winchester-va"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/transloading-winchester-va/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-transloading-winchester-terms",
+      "@type": "Article",
+      "name": "Winchester Commercial Terms & Cost Avoidance",
+      "description": "Winchester commercial terms and cost avoidance. The company's only published pricing term for container transloading: jobs are quoted per job and agreed in writing before dispatch. No per-container rate, no weight-based container rate, no minimum, and no fee schedule is published for this service — any figure presented as a company container rate did not come from the company. Everything else in this article is labeled domain education, never company terms. Free time is the window a container may sit before charges begin; the last free day ends it. Demurrage is the charge for container time at the terminal, billed per container per day and escalating the longer the box sits. Detention — per-diem — is the parallel charge for container time outside the terminal, and its clock stops when the empty is returned. Port storage is a separate terminal charge again. Chassis are pool-managed, shortages happen, split fees are possible, and tri-axle chassis enter the picture for heavy boxes — variables a transload plan works around, with the job quoted per job. The FMC 2024 billing rule governs who may be billed for demurrage and detention, what an invoice must show, and the window for disputing one. The causes that burn free time, from domain practice: late or incomplete documents; duty delays; customs exams; transport not arranged; slow offload; late empty return. The avoidance discipline, from domain practice: documents ready before arrival; free time known at booking, with extra negotiated where the job needs it; clearance and transport coordinated together; the receiving site ready; the empty returned promptly; and devanning into a warehouse when the premises are not ready to receive.",
+      "keywords": [
+        "demurrage charges importers",
+        "detention charges container",
+        "demurrage vs detention",
+        "free time container terminal",
+        "container demurrage avoidance",
+        "port storage charges"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-transloading-winchester-va"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/transloading-winchester-va/",
+      "headline": "Winchester Commercial Terms & Cost Avoidance",
+      "author": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-transloading-winchester-personas",
+      "@type": "Article",
+      "name": "Winchester Buyer Personas & Trigger Events",
+      "description": "Winchester buyer personas and trigger events. Who buys a Winchester transload, as published on the service page: importers and distributors are the core audience; retail and e-commerce sellers; third-party logistics providers, forwarders, and brokers; manufacturers; warehouses and distribution centers; and project cargo owners, for whom the SIR conditional applies. Trigger events, labeled domain context: port congestion and terminal dwell pressure; free time running out; one consolidated container splitting to several destinations; an overweight container where transloading beats permitting; surge and overflow volume; and an emergency shift or container tip needing same-day recovery. How a job starts: the quote path on this site — the main button reads 'Get My Flat Rate Quote' and the pill button 'Get a flat rate quote'; the Short (Quick Quote) form is the default and the Detailed Project form switches in place, preserving the From, To, and What's moving entries; job details are agreed before dispatch. No client is named in this dataset, no testimonial is quoted, and no contract term is claimed.",
+      "keywords": [
+        "transloading services virginia port container",
+        "emergency port container recovery",
+        "container moving virginia",
+        "warehouse transloading virginia"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-transloading-winchester-va"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/transloading-winchester-va/",
+      "headline": "Winchester Buyer Personas & Trigger Events",
+      "author": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-transloading-winchester-protection-compliance",
+      "@type": "Service",
+      "name": "Handling, Protection & Compliance Boundaries",
+      "description": "Handling, protection, and compliance boundaries for Winchester transloading. What a Winchester transload does to cargo, as published: the freight is counted, inspected, and photographed on devanning; damage and exceptions are reported the same day, in writing; freight is palletized where the job needs it, shrink-wrapped, labeled, sorted, and segregated by destination, purchase order, or SKU. Conditional: where a transload actually involves a high-mass asset of 1,500 to 3,500 lbs, that asset moves under SIR Structural Integrity Relocation with floor deflection analysis to L/360, as part of the same flat-rate job — only where such an asset is actually involved. Adjacent services, cross-referenced and never duplicated here: ISPM 15 export packing and custom crating. Domain definition, labeled as such: TWIC, the Transportation Worker Identification Credential, is the port-access credential used at secure port facilities. Not published and not claimed: the company's TWIC credential status; refrigerated or cold-chain handling; bonded warehouse operation; foreign-trade zone operation; customs brokerage; drayage fleet ownership; chassis ownership; and any named equipment list — no forklifts, pallet jacks, dollies, or cranes are listed for this service.",
+      "keywords": [
+        "container inspection virginia",
+        "transload damage reporting",
+        "ispm 15 export packing virginia",
+        "custom crating virginia"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-transloading-winchester-va"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/transloading-winchester-va/",
+      "provider": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-transloading-winchester-areas-quote",
+      "@type": "Dataset",
+      "name": "Winchester Service Areas, Dispatch & Quote Path",
+      "description": "Winchester service areas, dispatch, and quote path for transloading — two branches, always distinct. Winchester: The Flat Rate Movers, 116 W Piccadilly St Suite 11, Winchester, VA 22601, geo 39.18711576, -78.1668352, hours Mon-Fri 8-6, Sat 8-4, Sun 9-4, Google rating 5.0 from 1 review; published Google Business service areas 16; full footprint 31 areas. Martinsburg: Flat Rate Movers Martinsburg WV, 736 Williamsport Pike Suite 2, Martinsburg, WV 25404, geo 39.48319665, -77.94760443, hours Mon-Fri 9-6, Sat 9-4, Sun 9-4, Google rating 4.7 from 6 reviews; published Google Business service areas 14; full footprint 35 areas; 14 areas are shared, and Moorefield 26836 is served by both. Dispatch: I-81, I-66, and I-70 corridors from the Winchester branch, through the Virginia Inland Port and Port of Virginia chain; the final-mile leg runs by appointment. Quote path: the Short (Quick Quote) form is the default, the Detailed Project form switches in place preserving From, To, and What's moving; the main button reads 'Get My Flat Rate Quote' and the pill button 'Get a flat rate quote'. The video survey room is a household-survey route, not a container-job route — container jobs start through the job-details quote path. Founded June 2010. Tagline: 'Guaranteed Flat Rate or Your Move is Free!'",
+      "keywords": [
+        "transloading winchester va",
+        "moving company winchester va",
+        "movers winchester va",
+        "winchester moving company",
+        "transloading martinsburg wv"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-transloading-winchester-va"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/transloading-winchester-va/"
+    }
+  ]
+}

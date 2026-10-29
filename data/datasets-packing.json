@@ -1,0 +1,494 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://theflatratemovers.com/#dataset-packing-levels",
+      "@type": "Service",
+      "name": "Packing Service Levels",
+      "description": "Packing service levels from The Flat Rate Movers, quoted inside the one flat rate in writing before move day. Full packing: the whole home, every room, packed by the crew. Partial packing: the rooms or item classes the customer chooses. Fragile-only packing: just the fragile pieces. Unpacking and placement: boxes unpacked and items placed at destination so rooms come back together in order. The published audiences are residential, commercial, senior, and estate clients, served from Winchester, VA and Martinsburg, WV. Not published and not claimed: a standalone unpacking-only service; a pack-only service without a move; and a pack-for-storage scope. Those are industry patterns, not company offers, and they stay unpublished until the company publishes them.",
+      "keywords": [
+        "packing services winchester va",
+        "packing and unpacking services",
+        "packing services for moving",
+        "full packing service",
+        "partial packing service",
+        "unpacking services"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-packing"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/packing-unpacking-services-2/",
+      "provider": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-packing-materials",
+      "@type": "Dataset",
+      "name": "Packing Material Classes",
+      "description": "Packing material classes, split exactly as the company's published record splits them. Published wrap standard: furniture fully covered in blue padded moving blankets and sealed with clear stretch wrap, staged cleanly in the room. Published escalation: custom wooden crates for high-value, oversized, or fragile pieces, with export pieces packed to ISPM 15. Industry reference, labeled as such and never a company supply list: small, medium, and large cartons; dish barrels and dish packs with dividers; wardrobe boxes; unprinted packing paper; bubble wrap and foam pouches; packing tape; mirror and picture cartons; TV boxes; mattress bags; corner protectors. In the company's published service copy those industry terms are absent — dish packs, wardrobe boxes, bubble wrap, and packing paper appear nowhere in it — and this dataset does not present any of them as supplied. Not published and not claimed: any material beyond blankets, stretch wrap, and custom crates as company-supplied; and whether materials are bundled into the flat rate or itemized separately.",
+      "keywords": [
+        "packing materials",
+        "moving blankets",
+        "stretch wrap",
+        "dish pack",
+        "wardrobe box",
+        "bubble wrap",
+        "packing paper"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-packing"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/packing-unpacking-services-2/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-packing-room-item-classes",
+      "@type": "Dataset",
+      "name": "Room and Item Classes for Scoping",
+      "description": "Room and item classes used to scope a packing job. The published method: the estimator scopes the job room by room. Room classes: kitchen, primary bedroom, secondary bedrooms, living room, dining room, home office, bathroom, garage, basement, attic. Item classes with their handling class: furniture moves in the published blanket-and-stretch-wrap class; boxed household goods pack room by room in labeled cartons; heavy smalls — books, tools, canned goods, records — belong in small boxes only; light bulky goods — linens, bedding, pillows, lampshades — belong in large boxes; hanging clothing travels on a rail. The taxonomy is scoping data; the weight and size discipline inside it is industry practice, labeled as such, and the only handling standard claimed anywhere in it is the published wrap standard.",
+      "keywords": [
+        "packing estimator",
+        "room by room packing",
+        "packing scope",
+        "moving box sizes"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-packing"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/packing-unpacking-services-2/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-packing-fragile-classes",
+      "@type": "Dataset",
+      "name": "Fragile and High-Value Classes",
+      "description": "Fragile and high-value classes and how each is handled. The published anchor: fragile-only packing is a published service level, and high-value or fragile pieces escalate to white-glove handling or a custom crate, with export pieces packed to ISPM 15. The classes, ordered by breakage risk: dishes, glassware, and stemware — individually wrapped, with cell dividers as the industry technique; art, mirrors, and glass tabletops — corner protection and mirror cartons as industry technique, and custom crates for oversized or high-value pieces as the published escalation; electronics — padding and cable management, with setup photos before disassembly as industry technique; antiques and collectibles — individual assessment, cross-referenced to the piano, antique, and white-glove services and never duplicated here; lamps, lampshades, and ceramics — double-boxing for ceramics as industry technique; high-value and sentimental pieces — flagged before packing day and planned specifically. Techniques labeled industry practice are reference data, not company method claims.",
+      "keywords": [
+        "fragile packing",
+        "packing glassware",
+        "packing artwork",
+        "antique packing",
+        "high-value item packing"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-packing"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/packing-unpacking-services-2/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-packing-process-chain",
+      "@type": "Dataset",
+      "name": "Packing Process Chain",
+      "description": "The packing process chain, step by step. Step 1, scope up front: the packing level is scoped with the client and quoted inside the one flat rate — published. Step 2, quote: the Short (Quick Quote) form is the default, and the Detailed Project form switches in place, preserving From, To, and What's moving — published. Step 3, room-by-room pack: wrapped right, room by room, the way the estimator scoped it — published. Step 4, wrap standard: furniture fully covered in blue padded blankets, sealed with clear stretch wrap, staged cleanly in the room — published. Step 5, fragile escalation: high-value and fragile pieces get white-glove handling or a custom crate, and export pieces are packed to ISPM 15 — published. Step 6, labeling and inventory discipline: room and contents on every box, FRAGILE and THIS SIDE UP markings, a box-number inventory on larger moves — recorded as industry planning practice, not published company scope. Step 7, load: packed and wrapped items leave the room for loading — published. Step 8, unpack and place: at destination, unpack and place so rooms come back together in order — published. Step 9, debris handling: NOT published and not claimed — cartons and paper removed after unpacking appear nowhere in the company's published scope, and no removal service is claimed.",
+      "keywords": [
+        "packing process",
+        "how movers pack",
+        "packing day",
+        "unpacking and placement"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-packing"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/packing-unpacking-services-2/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-packing-personas",
+      "@type": "Article",
+      "name": "Packing Buyer Personas & Trigger Events",
+      "description": "Packing buyer personas and trigger events — who buys packing, and what starts the conversation. The closing-driven mover: a closing date sets a hard pack deadline, and the fit is full packing. The downsizing senior or estate executor: a downsizing or an estate clearance, and the fit is full packing with unpacking and placement — the senior and estate audiences are published on the service pages. The renovation mover: rooms emptied and restored in order, and the fit is partial packing with unpacking and placement. The time-poor professional or busy household: no time to pack, wants it handled as a system, and the fit is full-service packing and unpacking — the audience is published on the full-service article. The business or office mover: packing as one phase of an office move, and the fit is partial or full packing inside the move — the commercial audience is published on the hub page. The interstate self-packer: wants to pack correctly themselves, and is served by the published guide as advice, not by a packing service level. Personas and triggers are buyer logic recorded as data; no client is named, no testimonial is quoted, and no outcome is promised.",
+      "keywords": [
+        "packing services for moving",
+        "senior packing services",
+        "estate packing",
+        "office packing services"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-packing"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/packing-unpacking-services-2/",
+      "headline": "Packing Buyer Personas & Trigger Events",
+      "author": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-packing-terms",
+      "@type": "Article",
+      "name": "Packing Commercial Terms",
+      "description": "Packing commercial terms — the complete published position, with no dollar figure anywhere in it. Packing is quoted inside the one flat rate in writing before move day: not hourly, and not a price list. The cost page states it directly: the company does not publish a packing price list, because honest packing cost depends on what is actually being packed. The published scope drivers are rooms, fragile pieces, and crates — they change the scope, and the scope sets the quote. The estimator is a scoping tool, not a price calculator: it scopes the packing room by room, and the quote follows. Industry price research — per-room and per-home packing ranges, hourly packer rates, materials costs — was reviewed for this dataset and deliberately excluded: no figure from it is a company term. Not published and not claimed: whether packing materials are bundled into the flat rate or itemized separately; and any valuation or liability difference between crew-packed and owner-packed boxes — industry practice treats them differently for breakage claims, but the company publishes no such offer, and none is invented here.",
+      "keywords": [
+        "packing cost winchester va",
+        "cost of packing services",
+        "packing services prices"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-packing"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/packing-unpacking-services-2/",
+      "headline": "Packing Commercial Terms",
+      "author": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-packing-labeling-inventory-access",
+      "@type": "Dataset",
+      "name": "Labeling, Inventory & Access Discipline",
+      "description": "Labeling, inventory, and access discipline for packing — planning inputs, recorded as data and never as capability claims. Room and contents on every box, because unpacking is guesswork without it and load order follows room order. FRAGILE marking, so breakables are visible to every handler. THIS SIDE UP orientation for orientation-sensitive pieces. A box-number inventory on larger moves, so nothing is misplaced across multiple handlings — essential on long-distance and storage moves. A first-night essentials box that stays accessible at destination. Photos of electronics setups before disassembly, so reassembly matches the original setup. Access detail in the Detailed Project form — the published guide's instruction is to tell the form the truth, because access detail is what the detailed quote runs on. Two industry no-pack conventions are recorded as planning inputs only — valuables such as jewelry, cash, and papers ride with the customer, and hazardous items are not packed — and the boundary is explicit: the company publishes no no-pack list, and none is claimed here.",
+      "keywords": [
+        "packing labels",
+        "moving inventory list",
+        "box labeling system",
+        "first night box"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-packing"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-29",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        },
+        {
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/packing-unpacking-services-2/"
+    }
+  ]
+}

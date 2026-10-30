@@ -1,0 +1,137 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://theflatratemovers.com/#organization",
+      "@type": "Organization",
+      "email": "ratemovers@gmail.com",
+      "foundingDate": "2010-06",
+      "location": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "name": "The Flat Rate Movers LLC",
+      "sameAs": [
+        "https://www.instagram.com/theflatratemovers/",
+        "https://www.threads.com/@theflatratemovers",
+        "https://x.com/ratemovers",
+        "https://www.youtube.com/@theflatratemovers",
+        "https://github.com/TheFlatRateMovers",
+        "https://medium.com/@ratemovers"
+      ],
+      "slogan": "Guaranteed Flat Rate or Your Move is Free!",
+      "telephone": "+1-540-422-2153",
+      "url": "https://theflatratemovers.com/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/reading-an-ispm-15-mark/#post",
+      "@type": "BlogPosting",
+      "about": {
+        "@id": "https://theflatratemovers.com/#service-ispm15"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Henry Pitts Jr."
+      },
+      "dateModified": "2026-10-30",
+      "datePublished": "2026-10-30",
+      "description": "The four parts of the ISPM 15 mark on export crates and pallets — the IPPC wheat symbol, the ISO country code, the NPPO producer number, and the treatment code (HT, DH, MB, SF) — plus what is exempt, why KD and DB are not treatment codes, and what happens when a mark fails at the border.",
+      "editor": {
+        "@type": "Person",
+        "jobTitle": "Owner, The Flat Rate Movers",
+        "name": "Henry Pitts"
+      },
+      "headline": "Reading an ISPM 15 mark: what HT, the country code and the producer number mean",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://theflatratemovers.com/blog/#blog"
+      },
+      "mainEntityOfPage": "https://theflatratemovers.com/reading-an-ispm-15-mark/",
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    },
+    {
+      "@id": "https://theflatratemovers.com/reading-an-ispm-15-mark/#breadcrumb",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/",
+          "name": "Home",
+          "position": 1
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/blog/",
+          "name": "Blog",
+          "position": 2
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/reading-an-ispm-15-mark/",
+          "name": "Reading an ISPM 15 mark",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "@id": "https://theflatratemovers.com/reading-an-ispm-15-mark/#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HT means heat treatment under ISPM 15: the wood's core was heated to at least 56 °C (about 133 °F) and held there for at least 30 continuous minutes. It is the most common treatment code in the mark and the only one currently accepted for wood packaging imported into the United States (1, 2)."
+          },
+          "name": "What does HT mean on a crate or pallet?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is the producer or treatment-provider number: a unique code the National Plant Protection Organization of the country in the mark assigned to the company that produced or treated the wood packaging and applied the mark. It is the traceable part of the mark — the piece an inspector or auditor can follow back to a registered producer (2, 4)."
+          },
+          "name": "What is the number in the middle of the mark?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It shows the country whose plant protection organization authorized the producer — the country of treatment and production, not the destination and not necessarily the country where the packaging is used. A crate built and treated in the United States carries US, wherever in the world it travels (4)."
+          },
+          "name": "Does the country code show where the crate was made or where it is going?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The mark must be legible and durable; an over-branded, worn, or obscured mark cannot be verified, and unverifiable wood packaging can be stopped, ordered treated or destroyed, and reloaded at the importer's cost. Legibility on at least two opposite sides is the standard's own recommendation (2, 3)."
+          },
+          "name": "Can a crate be rejected for a mark that is present but hard to read?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — wood packaging made wholly of processed wood material such as plywood, particle board, or oriented strand board, created with glue, heat or pressure, is exempt from the standard's treatment and marking requirements. Solid wood thicker than 6 mm in the same crate — frames, skids, blocking — is not exempt (2, 3)."
+          },
+          "name": "Is plywood exempt from ISPM 15?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We publish our practice, not a certification: every export crate the company builds uses compliant, heat-treated, marked wood under ISPM 15, and the mark on the wood is the inspector-facing proof at destination. Our export packing datasets state the same boundary — the company claims its practice exactly, and nothing beyond it (5)."
+          },
+          "name": "Do you certify ISPM 15 compliance?"
+        }
+      ]
+    }
+  ]
+}

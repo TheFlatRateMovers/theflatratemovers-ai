@@ -2,16 +2,16 @@
   "dataset": "footprint",
   "generated": "2026-10-28",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-10-29",
-  "status": "CURRENT — full dataset. Every value verified field-by-field on 2026-10-29 against the live service-area GeoJSON (52 features; branch membership and shared areas) and the owner-supplied Google Business Profile service-area lists (GBP membership flags). Owner-approved 2026-10-29.",
+  "dateModified": "2026-10-30",
+  "status": "CURRENT — full dataset. Every value verified field-by-field on 2026-10-29 against the live service-area GeoJSON (53 features; branch membership and shared areas) and the owner-supplied Google Business Profile service-area lists (GBP membership flags). Owner-approved 2026-10-29. Bristow, VA added 2026-10-30 — Winchester branch extended footprint by owner ruling 2026-10-30 (closest branch), verified against the live service-area GeoJSON the same day; Bristow is not a Google Business Profile service area.",
   "counts": {
-    "geojsonFeatures": 52,
-    "winchesterFootprint": 31,
+    "geojsonFeatures": 53,
+    "winchesterFootprint": 32,
     "martinsburgFootprint": 35,
     "sharedAreas": 14,
     "gbpWinchester": 16,
     "gbpMartinsburg": 14,
-    "extendedWinchester": 15,
+    "extendedWinchester": 16,
     "extendedMartinsburg": 21
   },
   "winchesterFootprint": [
@@ -34,6 +34,7 @@
     "Front Royal, VA",
     "Strasburg, VA",
     "Woodstock, VA",
+    "Bristow, VA",
     "Clarke County",
     "Warren County",
     "Shenandoah County",
@@ -532,6 +533,19 @@
       "source": "Live service-area.geojson feature branch property + location pages, 2026-10-28 (NOT GBP screenshots)",
       "attested": "2026-10-28",
       "geojsonId": "place-woodstock-va"
+    },
+    {
+      "name": "Bristow, VA",
+      "type": "city",
+      "branches": [
+        "winchester"
+      ],
+      "shared": false,
+      "gbp": false,
+      "gbpBranches": [],
+      "source": "Live service-area.geojson feature branch property, 2026-10-30 — assigned to the Winchester branch by owner ruling 2026-10-30, closest branch (NOT a Google Business Profile service area)",
+      "attested": "2026-10-30",
+      "geojsonId": "place-bristow-va"
     },
     {
       "name": "Berkeley Springs, WV",

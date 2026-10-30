@@ -1,0 +1,79 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://theflatratemovers.com/#organization",
+      "@type": "Organization",
+      "email": "ratemovers@gmail.com",
+      "foundingDate": "2010-06",
+      "location": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "name": "The Flat Rate Movers LLC",
+      "sameAs": [
+        "https://www.instagram.com/theflatratemovers/",
+        "https://www.threads.com/@theflatratemovers",
+        "https://x.com/ratemovers",
+        "https://www.youtube.com/@theflatratemovers",
+        "https://github.com/TheFlatRateMovers",
+        "https://medium.com/@ratemovers"
+      ],
+      "slogan": "Guaranteed Flat Rate or Your Move is Free!",
+      "telephone": "+1-540-422-2153",
+      "url": "https://theflatratemovers.com/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/flat-rate-guarantee/",
+      "@type": "WebPage",
+      "about": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://theflatratemovers.com/flat-rate-guarantee/#breadcrumb"
+      },
+      "dateModified": "2026-10-30",
+      "description": "The Flat-Rate Guarantee — The Flat Rate Movers reviews the full scope of every job — the items, the distance, the manpower and the equipment — and gives one flat rate in writing before work begins, never an hourly rate. The published terms behind \"Guaranteed Flat Rate or Your Move is Free!\", from Winchester VA and Martinsburg WV.",
+      "hasPart": [
+        {
+          "@id": "https://theflatratemovers.com/flat-rate-guarantee/#in-depth",
+          "@type": "WebPageElement",
+          "description": "The stated terms behind \"Guaranteed Flat Rate or Your Move is Free!\": the full scope of every job — the items, the distance, the manpower, the equipment — is reviewed before pricing; one flat rate is issued in writing before work begins; nothing is auto-priced; scope changes are re-reviewed and re-issued in writing before move day.",
+          "name": "Flat-rate guarantee terms — full-scope review, one flat rate in writing, never hourly"
+        }
+      ],
+      "isPartOf": {
+        "@id": "https://theflatratemovers.com/#website"
+      },
+      "name": "Flat-Rate Guarantee — The Flat Rate Movers",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "caption": "The Flat Rate Movers logo — company brand image, not a job photo.",
+        "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png"
+      },
+      "url": "https://theflatratemovers.com/flat-rate-guarantee/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/flat-rate-guarantee/#breadcrumb",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/",
+          "name": "Home",
+          "position": 1
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/flat-rate-guarantee/",
+          "name": "Flat-Rate Guarantee",
+          "position": 2
+        }
+      ]
+    }
+  ]
+}

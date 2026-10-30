@@ -1,0 +1,662 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@id": "https://theflatratemovers.com/#dataset-medical-lab-operations",
+   "@type": "Service",
+   "name": "Medical & Laboratory Equipment Relocation Operations",
+   "description": "Medical and laboratory equipment relocation operations — how the heavy physical layer of a medical or lab move is run at The Flat Rate Movers, from Winchester VA and Martinsburg WV. The published chain has seven steps: (1) survey and structural check — every unit inventoried with weight, dimensions and center of mass, the route measured at both ends, and floors on the load path checked against L/360, span divided by 360, before any lift is planned; heavy units of 1,500 to 3,500 lbs are planned under SIR (Structural Integrity Relocation) and the KIM-GS Protocol; (2) vendor and EHS coordination — the schedule is built around the manufacturer's or biomedical team's de-installation window and the facility's own protocols, and the facility's decontamination sign-off, where its EHS team requires one, is a gate in the sequence; that sign-off is issued by the facility, never by the mover; (3) de-installation support — the crew works alongside the vendor's technicians, positioning, supporting and rigging components as they are released, while the technical de-installation itself is performed by the vendor; (4) pack and custom crate — instruments and components packed under padded instrument covers and, where the item or route calls for it, custom-crated with foam-lined or foam-in-place protection, electronic instruments in anti-static, ESD-safe packing and sensitive units sealed in moisture-barrier wrap, with ISPM 15 export packing where a chain continues internationally; the packing materials a job consumes are purchased for each project and scoped inside the flat rate; (5) sealed, documented transport — loads sealed for the run, instrument crates carrying tilt and shock indicator labels read at each hand-off, condition documented at each hand-off point; (6) placement and leveling — each unit set in its final position and leveled; (7) vendor recommissioning — the manufacturer's technicians or the facility's biomedical engineers reconnect, calibrate, certify and recommission. Steps 2, 3 and 7 are coordination with the customer's specialists, not services performed by the mover: no calibration, certification, commissioning, decontamination or requalification is performed or claimed at any step. Every engagement is surveyed in full and quoted per job at one flat rate in writing before work begins, never by the hour. Not published and not claimed: transport of specimens, chemicals, reagents or hazardous or biohazardous material; transport of cryogenic contents of any kind; temperature-controlled or powered cold-chain transport; any equipment list — equipment varies by project; any handling rule for heavy units outside the published SIR band of 1,500 to 3,500 lbs.",
+   "keywords": [
+    "medical equipment movers",
+    "laboratory relocation",
+    "lab movers Virginia",
+    "SIR",
+    "KIM-GS",
+    "floor deflection L/360",
+    "MRI moving",
+    "ultra-low freezer moving"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-medical-lab-relocation"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-sir-heavy"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-10-30",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemovers/",
+     "https://www.threads.com/@theflatratemovers",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/medical-lab-equipment-relocation/"
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-medical-lab-sequence",
+   "@type": "Dataset",
+   "name": "Lab Move Sequence & Custody Operations",
+   "description": "The sequence and custody model for a medical or laboratory move — the order of operations and the documentation at each hand-off. Planning phase: unit inventory with weights and dimensions; route survey at origin and destination (door, corridor, elevator and stair measurements); floor check against L/360 on the load path; crate plan for fragile components. Coordination phase: the move calendar is set against the vendor's de-installation window and the facility's access, hours and infection-control routing rules; the facility EHS decontamination sign-off is received where required — a document the facility issues about its own equipment, recorded in the move file, never issued by the mover. Execution phase: vendor technicians perform the technical de-installation; the crew supports with positioning and rigging; each unit's condition is documented as it is released, packed or crated, and sealed; seals and condition records travel with the load; at destination each unit is unsealed, condition-checked against the origin record, placed and leveled. Close-out phase: placement is verified with the facility's team and the vendor's recommissioning schedule takes over. Custody principle: at every point, one named party holds each unit — facility, vendor, or mover — and the hand-offs are the documented moments. What this dataset does not describe: any technical procedure on the equipment itself (disconnection, draining, preparation, reconnection, calibration), which belongs to the vendor and is recorded here only as a scheduling gate.",
+   "keywords": [
+    "lab move sequence",
+    "chain of custody medical equipment",
+    "de-installation support",
+    "move documentation",
+    "facility protocols"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-medical-lab-relocation"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-10-30",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemovers/",
+     "https://www.threads.com/@theflatratemovers",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/medical-lab-equipment-relocation/"
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-medical-lab-taxonomy",
+   "@type": "Dataset",
+   "name": "Medical & Laboratory Equipment Taxonomy",
+   "description": "The equipment taxonomy for medical and laboratory relocation — five classes, each with its handling model. (1) Imaging systems and components: MRI and CT components, C-arms, X-ray and mammography systems, de-installed by the manufacturer's technicians; magnet and gantry-class components are SIR-planned rigging work in the 1,500 to 3,500 lb band, fragile elements travel custom-crated, and placement at destination is set for the vendor's re-installation. (2) Cold and thermal equipment: ultra-low freezers rated to minus 80 degrees, laboratory freezers and refrigerators, sterilizers and autoclaves, incubators — moved as equipment, emptied and prepared to the vendor's or facility's instruction; this class never includes contents or specimens, and no powered or temperature-controlled transport is claimed for it. (3) Cryogenic equipment: cryogenic storage dewars and tanks and cryogenic freezers — equipment only, moving empty and prepared by the customer's team; cryogenic contents, meaning any stored material, are never transported, and the line between equipment and contents is stated on every page and dataset in this category. (4) Laboratory benches and instrument systems: benches and casework move as a commercial relocation inside the same program; analytical instruments and instrument systems move vendor-prepared and crated, electronic units in anti-static, ESD-safe packing. (5) Support and facility equipment: medical tanks and facility equipment in the SIR band — an established class in the company's published record, which includes a medical tank relocation among its own published job videos. Weight framing across all classes: the SIR band of 1,500 to 3,500 lbs governs the heavy units; lighter benches and crated instruments move inside the same surveyed program, and no separate handling rule below the band is published.",
+   "keywords": [
+    "medical equipment taxonomy",
+    "imaging equipment moving",
+    "ultra-low freezer",
+    "sterilizer moving",
+    "cryogenic equipment",
+    "lab benches"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-medical-lab-relocation"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-10-30",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemovers/",
+     "https://www.threads.com/@theflatratemovers",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/medical-lab-equipment-relocation/"
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-medical-lab-dispatch",
+   "@type": "Dataset",
+   "name": "Medical & Lab Branch Dispatch Network",
+   "description": "Dispatch network for medical and laboratory equipment relocation. Two branches, never merged, each dispatching over its own published footprint: Winchester VA — The Flat Rate Movers, 116 W Piccadilly St Suite 11, Winchester VA 22601, geo 39.18711576, -78.1668352, hours Monday to Friday 8-6, Saturday 8-4, Sunday 9-4, Google rating 5.0 from 1 review, 32 published service areas; Martinsburg WV — Flat Rate Movers Martinsburg WV, 736 Williamsport Pike Suite 2, Martinsburg WV 25404, geo 39.48319665, -77.94760443, hours Monday to Friday 9-6, Saturday 9-4, Sunday 9-4, Google rating 4.7 from 6 reviews, 35 published service areas; 14 areas are shared between the branches and Moorefield WV 26836 is served by both. The working geography for this category is the hospital, imaging, laboratory and university geography of the two footprints and the corridors between them — Winchester and Frederick County, Front Royal and Warren County, Harrisonburg, Martinsburg and Berkeley County, Shepherdstown, Hagerstown MD, and east along Interstate 66 into Northern Virginia — along the Interstate 81, Interstate 66 and Interstate 70 corridors. Phone for both branches: +1-540-422-2153. No facility or client is named in this dataset; geography is stated by place and corridor only.",
+   "keywords": [
+    "medical movers Winchester VA",
+    "lab movers Martinsburg WV",
+    "I-81 corridor",
+    "Northern Virginia",
+    "dispatch network"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-medical-lab-relocation"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-10-30",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemovers/",
+     "https://www.threads.com/@theflatratemovers",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/medical-lab-equipment-relocation/"
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-medical-lab-commercial-terms",
+   "@type": "Article",
+   "name": "Medical & Lab Relocation Commercial Terms and Market Cost Context",
+   "description": "Commercial terms and cost drivers for medical and laboratory equipment relocation. The only company pricing claim is one flat rate per job, quoted in writing before work begins, after a full-scope review of the items, the distance, the manpower and the equipment — with no hourly clock, under the tagline Guaranteed Flat Rate or Your Move is Free. No company price, discount, deposit or fee for this service is stated anywhere in this dataset. Crew-support engagements for manufacturer and vendor teams run under the separate Specialized Workforce Labor service and its published per-hundredweight and per-man schedule; that schedule is never extended to relocation pricing. Market context, labeled market and never company prices, from named publishers: Meyer, Inc.'s lab-moving cost guide states the average laboratory move often exceeds 100,000 dollars; Armstrong Scientific Transport's published lab relocation FAQ puts a small single-room lab move at 10,000 to 25,000 dollars and a full multi-floor facility relocation at 100,000 to over 1,000,000 dollars; PatientImage (Maven Imaging) puts relocating an MRI machine at roughly 60,000 to 100,000 dollars, with complex relocations potentially exceeding that range. Market cost drivers, labeled: the number and weight of heavy units, rigging complexity at both ends, custom crating, distance, facility downtime pressure, temporary storage, and the vendor-side costs of de-installation, calibration and recommissioning — which market guides list as separate categories and which this company does not sell. Risk transfer in the published model: the price is settled before move day, so the customer does not pay for every slow corridor, elevator wait or vendor-side delay; in the hourly domain model the customer does.",
+   "keywords": [
+    "lab moving cost",
+    "MRI relocation cost",
+    "medical equipment moving cost",
+    "flat rate",
+    "commercial terms"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-medical-lab-relocation"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-10-30",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemovers/",
+     "https://www.threads.com/@theflatratemovers",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/medical-lab-equipment-relocation/"
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-medical-lab-personas",
+   "@type": "Article",
+   "name": "Medical & Lab Relocation Buyer Personas and Trigger Events",
+   "description": "Buyer personas and trigger events for medical and laboratory equipment relocation. Hospital facilities and plant-operations directors: triggered by imaging suite replacement, department relocations, expansions and consolidations; they buy one accountable physical-move contractor who works inside facility protocols and around clinical schedules. Biomedical and clinical engineering managers: triggered by equipment install and removal programs and vendor-coordinated swaps; they buy a rigging and transport crew that takes instruction from biomed and the manufacturer and places and levels exactly where recommissioning needs it. Imaging center owners and managers: triggered by MRI and CT replacement, second-site openings and lease-end removals; they buy the heavy layer of the move — the vendor de-installs, the mover rigs, crates, transports and places. Laboratory managers and principal investigators: triggered by lab relocations, renovations, expansions and freezer-farm consolidations; they buy a surveyed, sequenced move with the vendor and EHS gates built into the schedule. University research operations and facilities departments: triggered by capital projects and swing-space moves; they buy a flat rate quoted per job in writing, with no hourly clock, in a form procurement can approve. Manufacturer service teams and general contractors: triggered by install schedules needing a local rigging and transport crew; they buy trained, supervised, self-managed crew support deployed per job under the Specialized Workforce Labor model. No persona in this dataset names a client, a facility or a health system; personas are roles and settings, not customers.",
+   "keywords": [
+    "facilities director",
+    "biomedical engineering",
+    "lab manager",
+    "imaging center",
+    "university research operations",
+    "OEM service teams"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-medical-lab-relocation"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-10-30",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemovers/",
+     "https://www.threads.com/@theflatratemovers",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/medical-lab-equipment-relocation/"
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-medical-lab-boundaries",
+   "@type": "Service",
+   "name": "Transport-Only Boundary & Facility Protocol Compliance",
+   "description": "The transport-only boundary for medical and laboratory equipment relocation — published as the professional standard of the category, in the same form on the page, in this dataset and in the quote conversation. Performed by the customer's specialists, never by the mover: technical de-installation and re-installation of equipment; calibration; certification of any kind, including biosafety certification; commissioning and requalification; decontamination — the facility's EHS team decontaminates and issues its own sign-off, which the mover receives as a sequence gate. Never transported: specimens and biological material of any kind; chemicals and reagents; hazardous or biohazardous material — each routes to licensed handlers, as the company's published pages already state for medical and biohazard waste; cryogenic contents — cryogenic equipment moves empty and customer-prepared, and equipment is never described as contents. Never claimed: any HIPAA or privacy compliance status — the company moves equipment, not patient data, and works to the facility's own privacy, access and infection-control protocols while on site; any temperature-controlled or powered cold-chain transport; any contract, clearance, accreditation or vendor-of-record status with any hospital, health system, university or manufacturer. Performed by the mover, and claimed: survey and structural assessment to L/360; rigging and physical handling of released components alongside vendor technicians; packing and custom crating; sealed, documented transport; placement and leveling in final position; coordination of the physical schedule with the facility and the vendor team. The boundary is the offer: a facilities buyer can put this mover on a vendor list next to the manufacturer precisely because the mover does not claim the manufacturer's layer.",
+   "keywords": [
+    "transport-only boundary",
+    "facility protocols",
+    "EHS coordination",
+    "no hazmat",
+    "cryogenic equipment not contents",
+    "vendor recommissioning"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-medical-lab-relocation"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-10-30",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemovers/",
+     "https://www.threads.com/@theflatratemovers",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/medical-lab-equipment-relocation/"
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-medical-lab-areas-quote",
+   "@type": "Dataset",
+   "name": "Medical & Lab Service Areas, Dispatch and Quote Path",
+   "description": "Service areas, dispatch and quote path for medical and laboratory equipment relocation. The service dispatches from both branches over the published footprint — 53 service-area features in the estate GeoJSON: Winchester 32 areas, Martinsburg 35 areas, 14 shared — covering the Shenandoah Valley, the Eastern Panhandle of West Virginia, and the Interstate 81, Interstate 66 and Interstate 70 corridors into Northern Virginia; the full per-branch area lists are carried on the branch Place nodes and are never merged. Quote path: the quote form at theflatratemovers.com/quote/ — the Short (Quick Quote) form by default with a Detailed Project toggle that switches in place and preserves what was entered; the form's heavy-item option already names this category ('Heavy item — safe, piano, medical (1,500-3,500 lbs)'); name, phone and email are the mandatory contact fields, with From and To; dates are optional and captured when given. Every quote follows a full-scope review — items, distance, manpower, equipment — and is issued per job at one flat rate in writing; estimates are human-made, never auto-priced. The Survey Room supports the survey: a video walkthrough filmed by the customer under the film-only safety rule — film only, never lift, move, open or climb anything heavy or locked — with clips auto-deleted after 24 hours. Phone for both branches: +1-540-422-2153.",
+   "keywords": [
+    "service areas",
+    "flat rate quote",
+    "survey room",
+    "medical equipment moving quote",
+    "dispatch"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-medical-lab-relocation"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-10-30",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemovers/",
+     "https://www.threads.com/@theflatratemovers",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/medical-lab-equipment-relocation/"
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-medical-lab-service-imaging",
+   "@type": "Service",
+   "name": "Service Detail: Imaging Equipment Rigging & Transport",
+   "description": "Imaging equipment rigging and transport, as a service detail of medical and laboratory equipment relocation. Scope: the physical layer of an imaging move — MRI and CT components, C-arms, X-ray and mammography systems — after the manufacturer's technicians have performed the technical de-installation. Magnet and gantry-class components are surveyed and planned under SIR (Structural Integrity Relocation) with the route measured and floors checked against L/360; fragile elements are custom-crated; the load runs sealed and documented; at destination each component is placed in position for the vendor's re-installation team. Market context, labeled: PatientImage (Maven Imaging) describes MRI relocation as three phases — de-installation by qualified technicians, transportation, and re-installation with re-calibration — at roughly 60,000 to 100,000 dollars for the full project; this service is the transportation and rigging phase of that structure, and the two technical phases remain the manufacturer's. Not claimed: de-installation, re-installation, reconnection, shielding work, calibration or system certification of any imaging system.",
+   "keywords": [
+    "MRI movers",
+    "CT moving",
+    "imaging equipment rigging",
+    "medical rigging Virginia"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-medical-lab-relocation"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-10-30",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemovers/",
+     "https://www.threads.com/@theflatratemovers",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/medical-lab-equipment-relocation/"
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-medical-lab-service-cold-thermal",
+   "@type": "Service",
+   "name": "Service Detail: Ultra-Low Freezers, Sterilizers & Cryogenic Equipment",
+   "description": "Ultra-low freezers, sterilizers and cryogenic equipment moving, as a service detail of medical and laboratory equipment relocation. Scope: ultra-low freezers rated to minus 80 degrees, laboratory freezers and refrigerators, sterilizers and autoclaves, incubators, and cryogenic storage equipment — dewars, tanks and cryogenic freezers. Every unit in this detail moves as equipment: emptied and prepared to the vendor's or facility's instruction before the crew handles it. The exclusions are the definition of the service: no specimens, no stored material, no chemicals, and no cryogenic contents are transported, ever; a cryogenic tank moves empty, and nothing in this category describes equipment as contents. No powered or temperature-controlled transport is claimed — where a facility's plan requires temperature management in transit, that plan and its equipment are the facility's or its specialist carrier's, and this service covers the physical move of the prepared unit. Heavy units in this class — large sterilizers, freezer banks, tanks — are planned under SIR in the 1,500 to 3,500 lb band with the L/360 floor check; the company's published record includes a medical tank relocation among its own job videos.",
+   "keywords": [
+    "ultra-low freezer moving",
+    "sterilizer moving",
+    "cryogenic equipment moving",
+    "ULT freezer relocation",
+    "medical tank relocation"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-medical-lab-relocation"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-10-30",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemovers/",
+     "https://www.threads.com/@theflatratemovers",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/medical-lab-equipment-relocation/"
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-medical-lab-service-vendor-crew",
+   "@type": "Service",
+   "name": "Service Detail: OEM & Vendor Rigging-Crew Support",
+   "description": "Manufacturer and vendor rigging-crew support, as a service detail of medical and laboratory equipment relocation. Scope: trained, supervised, self-managed moving teams deployed per job to support manufacturer service teams, biomedical departments and general contractors on medical and laboratory equipment programs — rigging support during vendor de-installation and re-installation windows, on-site equipment positioning, crate handling, staged loading and placement work — under the direction of the customer's technical lead for everything technical, and the crew's own supervision for everything physical. This detail is delivered under the published Specialized Workforce Labor model: teams, not individual temporary labor; quoted per job; the workforce service's published per-hundredweight and per-man schedule applies to crew-support engagements. Markets served by this detail: equipment manufacturers' install programs, hospital projects, university capital projects and healthcare construction. Not claimed: any technical procedure on equipment, any certification, and any contract or vendor-of-record status with any manufacturer, hospital or university.",
+   "keywords": [
+    "rigging crew support",
+    "OEM install support",
+    "vendor crew",
+    "healthcare project labor",
+    "specialized workforce"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-medical-lab-relocation"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-10-30",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemovers/",
+     "https://www.threads.com/@theflatratemovers",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/medical-lab-equipment-relocation/"
+  }
+ ]
+}

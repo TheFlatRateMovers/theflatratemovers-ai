@@ -1,0 +1,278 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://theflatratemovers.com/datasets/long-distance/#dataset",
+      "@type": "Dataset",
+      "name": "Long-Distance Move Operations",
+      "description": "Long-distance move operations from survey to walkthrough, in eight steps. Survey and quote: a room-by-room survey in person or through the free film-only video walkthrough survey room, where the customer films and a person makes the estimate — nothing is auto-priced — and one flat price agreed in writing before the truck rolls. Inventory: itemized, room by room (published process education: items worth more than $100 per pound are declared in writing under the federal high-value rule — a domain standard, labeled as such). Pack: full or partial packing with furniture fully covered, cross-referenced to the packing category and the interstate pack guide. Load: sequenced loading with blanket and stretch wrap protection; where a move includes a high-mass piece of 1,500 to 3,500 lbs, that piece moves under SIR Structural Integrity Relocation with the KIM-GS Protocol and L/360 floor-deflection analysis. Linehaul: transport along the published I-81, I-66 and I-70 corridor dispatch network from both branches (domain practice, labeled: certified scale weights and consolidated or exclusive-use routing shape the run). Delivery: handled inside a delivery window — the window models are published as domain education in the delivery windows dataset; no company delivery spread, date, or tracking practice is published. Placement: room-by-room placement on the residential pattern, cross-referenced. Walkthrough and claims: a final walkthrough with damage noted on the delivery paperwork, and the valuation level governing any claim — domain education, with no company claims procedure published. Shipment size sets the linehaul inputs (distance bands dataset), the delivery step uses a window model (delivery windows dataset), and the quote step rests on the estimate terms explained in the commercial terms dataset.",
+      "url": "https://theflatratemovers.com/datasets/long-distance/",
+      "sameAs": "https://theflatratemovers.com/datasets/long-distance/",
+      "identifier": "https://theflatratemovers.com/datasets/long-distance/",
+      "isAccessibleForFree": true,
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "dateModified": "2026-10-30",
+      "temporalCoverage": "2010/2026",
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "keywords": [
+        "winchester long distance moving company",
+        "long distance movers",
+        "cross country moving company",
+        "cross country movers",
+        "cross country moving services"
+      ],
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
+          "encodingFormat": "application/json"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-long-distance"
+        }
+      ]
+    },
+    {
+      "@id": "https://theflatratemovers.com/#organization",
+      "@type": "Organization",
+      "email": "ratemovers@gmail.com",
+      "foundingDate": "2010-06",
+      "location": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "height": 1024,
+        "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+        "width": 1024
+      },
+      "name": "The Flat Rate Movers LLC",
+      "sameAs": [
+        "https://www.instagram.com/theflatratemovers/",
+        "https://www.threads.com/@theflatratemovers",
+        "https://x.com/ratemovers",
+        "https://www.youtube.com/@theflatratemovers",
+        "https://github.com/TheFlatRateMovers",
+        "https://medium.com/@ratemovers"
+      ],
+      "slogan": "Guaranteed Flat Rate or Your Move is Free!",
+      "telephone": "+1-540-422-2153",
+      "url": "https://theflatratemovers.com/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#winchester",
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US",
+        "addressLocality": "Winchester",
+        "addressRegion": "VA",
+        "postalCode": "22601",
+        "streetAddress": "116 W Piccadilly St Suite 11"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "1"
+      },
+      "areaServed": [
+        "Berryville, VA",
+        "Bristow, VA",
+        "Clarke County",
+        "Eastern Panhandle of West Virginia",
+        "Fauquier County",
+        "Frederick County, VA",
+        "Front Royal, VA",
+        "Hardy County",
+        "Interstate 66 Corridor",
+        "Interstate 70 Corridor",
+        "Interstate 81 Corridor",
+        "Leesburg, VA",
+        "Loudoun County, VA",
+        "Marshall, VA",
+        "Middleburg, VA",
+        "Middletown, VA",
+        "Moorefield, WV",
+        "Port of Virginia",
+        "Purcellville, VA",
+        "Round Hill, VA",
+        "Shenandoah County",
+        "Shenandoah Valley",
+        "South Riding, VA",
+        "Stephens City, VA",
+        "Stephenson, VA",
+        "Sterling, VA",
+        "Strasburg, VA",
+        "Upperville, VA",
+        "Virginia Inland Port",
+        "Warren County",
+        "Winchester, VA",
+        "Woodstock, VA"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.18711576,
+        "longitude": -78.1668352
+      },
+      "name": "The Flat Rate Movers",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "18:00",
+          "dayOfWeek": "Mon-Fri",
+          "opens": "08:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sat",
+          "opens": "08:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sun",
+          "opens": "09:00"
+        }
+      ],
+      "telephone": "+1-540-422-2153"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#martinsburg",
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US",
+        "addressLocality": "Martinsburg",
+        "addressRegion": "WV",
+        "postalCode": "25404",
+        "streetAddress": "736 Williamsport Pike Suite 2"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "6"
+      },
+      "areaServed": [
+        "Berkeley County, WV",
+        "Berkeley Springs, WV",
+        "Bunker Hill, WV",
+        "Charles Town, WV",
+        "Clear Spring, MD",
+        "Eastern Panhandle of West Virginia",
+        "Frederick, MD",
+        "Front Royal, VA",
+        "Hagerstown, MD",
+        "Hampshire County",
+        "Hancock, MD",
+        "Hardy County",
+        "Harpers Ferry, WV",
+        "Hedgesville, WV",
+        "Interstate 66 Corridor",
+        "Interstate 70 Corridor",
+        "Interstate 81 Corridor",
+        "Inwood, WV",
+        "Jefferson County",
+        "Kearneysville, WV",
+        "Martinsburg, WV",
+        "Moorefield, WV",
+        "Morgan County",
+        "Paw Paw, WV",
+        "Port of Virginia",
+        "Romney, WV",
+        "Shenandoah County",
+        "Shenandoah Valley",
+        "Shepherdstown, WV",
+        "Strasburg, VA",
+        "Summit Point, WV",
+        "Virginia Inland Port",
+        "Warren County",
+        "Washington County",
+        "Woodstock, VA"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.48319665,
+        "longitude": -77.94760443
+      },
+      "name": "Flat Rate Movers Martinsburg WV",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "18:00",
+          "dayOfWeek": "Mon-Fri",
+          "opens": "09:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sat",
+          "opens": "09:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sun",
+          "opens": "09:00"
+        }
+      ],
+      "telephone": "+1-540-422-2153"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://theflatratemovers.com/datasets/long-distance/",
+      "url": "https://theflatratemovers.com/datasets/long-distance/",
+      "name": "Long-Distance Moving Datasets",
+      "breadcrumb": {
+        "@id": "https://theflatratemovers.com/datasets/long-distance/#breadcrumb"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+        "caption": "The Flat Rate Movers logo — company brand image, not a job photo."
+      },
+      "dateModified": "2026-10-30"
+    },
+    {
+      "@id": "https://theflatratemovers.com/datasets/long-distance/#breadcrumb",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/",
+          "name": "Home",
+          "position": 1
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/datasets/",
+          "name": "Published Datasets",
+          "position": 2
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/datasets/long-distance/",
+          "name": "Long-Distance Moving Datasets",
+          "position": 3
+        }
+      ]
+    }
+  ]
+}

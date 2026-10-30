@@ -1,0 +1,278 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://theflatratemovers.com/datasets/ffe-logistics/#dataset",
+      "@type": "Dataset",
+      "name": "The Flat Rate Movers — FF&E Logistics Operations Dataset",
+      "description": "FF&E logistics operations from The Flat Rate Movers — the physical chain that takes furniture, fixtures, and equipment from staggered vendor shipments to an opening-ready room. Company scope (published by this category): purchase-order receiving; dock inventory and condition documentation; warehousing in leased space; sequenced delivery by model room, floor, room, department, classroom, office, or project phase; installation support — unpacking, furniture assembly, placement, leveling, and set-in-place support for items that do not require a licensed trade or manufacturer commissioning; packaging and debris removal within the project scope; punch support; and opening-day readiness checks. Materials and supplies for the physical work — furniture pads, shrink and stretch wrap, corner and edge protectors, mattress and furniture bags, cartons, labels, and inventory tags — are purchased per project for the reviewed scope. The category recombines capabilities the company already publishes: FF&E Installation & Project Support and receiving and warehousing coordination inside Industrial & Commercial Services; freight counted and inventoried as it crosses the dock; leased-space storage with a 30-day minimum and customer access; final-mile placement and verification; and supervised B2B project-support teams. FF&E means furniture, fixtures, and equipment. OS&E — operating supplies and equipment — is a separate operating stream and is not automatically included. The company does not procure, design, purchase, or specify FF&E, and licensed-trade or technical installation remains with the responsible trade, manufacturer, facility team, or installer of record. Every job is reviewed in full and quoted per job at one flat rate in writing — Guaranteed Flat Rate or Your Move is Free!",
+      "url": "https://theflatratemovers.com/datasets/ffe-logistics/",
+      "sameAs": "https://theflatratemovers.com/datasets/ffe-logistics/",
+      "identifier": "https://theflatratemovers.com/datasets/ffe-logistics/",
+      "isAccessibleForFree": true,
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "dateModified": "2026-10-30",
+      "temporalCoverage": "2010/2026",
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "keywords": [
+        "FF&E logistics Virginia",
+        "FF&E receiving warehousing installation",
+        "hotel FF&E logistics Shenandoah Valley",
+        "FF&E installation support",
+        "sequenced FF&E delivery"
+      ],
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-ffe-logistics.json",
+          "encodingFormat": "application/json"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-ffe-logistics"
+        }
+      ]
+    },
+    {
+      "@id": "https://theflatratemovers.com/#organization",
+      "@type": "Organization",
+      "email": "ratemovers@gmail.com",
+      "foundingDate": "2010-06",
+      "location": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "height": 1024,
+        "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+        "width": 1024
+      },
+      "name": "The Flat Rate Movers LLC",
+      "sameAs": [
+        "https://www.instagram.com/theflatratemovers/",
+        "https://www.threads.com/@theflatratemovers",
+        "https://x.com/ratemovers",
+        "https://www.youtube.com/@theflatratemovers",
+        "https://github.com/TheFlatRateMovers",
+        "https://medium.com/@ratemovers"
+      ],
+      "slogan": "Guaranteed Flat Rate or Your Move is Free!",
+      "telephone": "+1-540-422-2153",
+      "url": "https://theflatratemovers.com/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#winchester",
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US",
+        "addressLocality": "Winchester",
+        "addressRegion": "VA",
+        "postalCode": "22601",
+        "streetAddress": "116 W Piccadilly St Suite 11"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "1"
+      },
+      "areaServed": [
+        "Berryville, VA",
+        "Bristow, VA",
+        "Clarke County",
+        "Eastern Panhandle of West Virginia",
+        "Fauquier County",
+        "Frederick County, VA",
+        "Front Royal, VA",
+        "Hardy County",
+        "Interstate 66 Corridor",
+        "Interstate 70 Corridor",
+        "Interstate 81 Corridor",
+        "Leesburg, VA",
+        "Loudoun County, VA",
+        "Marshall, VA",
+        "Middleburg, VA",
+        "Middletown, VA",
+        "Moorefield, WV",
+        "Port of Virginia",
+        "Purcellville, VA",
+        "Round Hill, VA",
+        "Shenandoah County",
+        "Shenandoah Valley",
+        "South Riding, VA",
+        "Stephens City, VA",
+        "Stephenson, VA",
+        "Sterling, VA",
+        "Strasburg, VA",
+        "Upperville, VA",
+        "Virginia Inland Port",
+        "Warren County",
+        "Winchester, VA",
+        "Woodstock, VA"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.18711576,
+        "longitude": -78.1668352
+      },
+      "name": "The Flat Rate Movers",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "18:00",
+          "dayOfWeek": "Mon-Fri",
+          "opens": "08:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sat",
+          "opens": "08:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sun",
+          "opens": "09:00"
+        }
+      ],
+      "telephone": "+1-540-422-2153"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#martinsburg",
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US",
+        "addressLocality": "Martinsburg",
+        "addressRegion": "WV",
+        "postalCode": "25404",
+        "streetAddress": "736 Williamsport Pike Suite 2"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "6"
+      },
+      "areaServed": [
+        "Berkeley County, WV",
+        "Berkeley Springs, WV",
+        "Bunker Hill, WV",
+        "Charles Town, WV",
+        "Clear Spring, MD",
+        "Eastern Panhandle of West Virginia",
+        "Frederick, MD",
+        "Front Royal, VA",
+        "Hagerstown, MD",
+        "Hampshire County",
+        "Hancock, MD",
+        "Hardy County",
+        "Harpers Ferry, WV",
+        "Hedgesville, WV",
+        "Interstate 66 Corridor",
+        "Interstate 70 Corridor",
+        "Interstate 81 Corridor",
+        "Inwood, WV",
+        "Jefferson County",
+        "Kearneysville, WV",
+        "Martinsburg, WV",
+        "Moorefield, WV",
+        "Morgan County",
+        "Paw Paw, WV",
+        "Port of Virginia",
+        "Romney, WV",
+        "Shenandoah County",
+        "Shenandoah Valley",
+        "Shepherdstown, WV",
+        "Strasburg, VA",
+        "Summit Point, WV",
+        "Virginia Inland Port",
+        "Warren County",
+        "Washington County",
+        "Woodstock, VA"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.48319665,
+        "longitude": -77.94760443
+      },
+      "name": "Flat Rate Movers Martinsburg WV",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "18:00",
+          "dayOfWeek": "Mon-Fri",
+          "opens": "09:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sat",
+          "opens": "09:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sun",
+          "opens": "09:00"
+        }
+      ],
+      "telephone": "+1-540-422-2153"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://theflatratemovers.com/datasets/ffe-logistics/",
+      "url": "https://theflatratemovers.com/datasets/ffe-logistics/",
+      "name": "FF&E Logistics Datasets",
+      "breadcrumb": {
+        "@id": "https://theflatratemovers.com/datasets/ffe-logistics/#breadcrumb"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+        "caption": "The Flat Rate Movers logo — company brand image, not a job photo."
+      },
+      "dateModified": "2026-10-30"
+    },
+    {
+      "@id": "https://theflatratemovers.com/datasets/ffe-logistics/#breadcrumb",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/",
+          "name": "Home",
+          "position": 1
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/datasets/",
+          "name": "Published Datasets",
+          "position": 2
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/datasets/ffe-logistics/",
+          "name": "FF&E Logistics Datasets",
+          "position": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://theflatratemovers.com/datasets/ispm15/#dataset",
+      "@type": "Dataset",
+      "name": "The Flat Rate Movers — ISPM 15 Export Packing Operations Dataset",
+      "description": "ISPM 15 export packing operations from The Flat Rate Movers — the full published scope of the export packing service across its pages. Company scope (published): export packing to ISPM 15 (International Standards for Phytosanitary Measures No. 15) for international shipping, with crates built and marked to the ISPM 15 standard; the whole export chain kept under one roof — pack, crate, load, transload and final mile — so custody never blurs at a hand-off. What is packed for export, as published: antiques, art, pianos and instruments, medical and sensitive equipment, and household or commercial items of high value, packed item by item with white-glove wrapping for fragile pieces. The service is dispatched from two home bases — Winchester, VA and Martinsburg, WV — through the Virginia Inland Port and Port of Virginia freight network over the I-81, I-66 and I-70 corridors. Heavy and high-mass pieces in the 1,500 to 3,500 lb band move under SIR Structural Integrity Relocation and the KIM-GS Protocol with L/360 floor-deflection analysis, as part of the same flat-rate job. Every export job is quoted at one flat rate, agreed in writing before move day. Published boundary: the service is published as packing and crating performed to the standard; no certification, license, accreditation, program enrollment or stamp authorization is claimed for the company anywhere in this dataset — the compliance boundary is recorded in full in the compliance node of this file.",
+      "url": "https://theflatratemovers.com/datasets/ispm15/",
+      "sameAs": "https://theflatratemovers.com/datasets/ispm15/",
+      "identifier": "https://theflatratemovers.com/datasets/ispm15/",
+      "isAccessibleForFree": true,
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "dateModified": "2026-10-30",
+      "temporalCoverage": "2010/2026",
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "keywords": [
+        "ispm 15 export packing",
+        "export crating virginia",
+        "ispm 15 movers winchester va",
+        "international export packing",
+        "ispm 15 crates martinsburg wv"
+      ],
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-ispm15.json",
+          "encodingFormat": "application/json"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-ispm15"
+        }
+      ]
+    },
+    {
+      "@id": "https://theflatratemovers.com/#organization",
+      "@type": "Organization",
+      "email": "ratemovers@gmail.com",
+      "foundingDate": "2010-06",
+      "location": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "height": 1024,
+        "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+        "width": 1024
+      },
+      "name": "The Flat Rate Movers LLC",
+      "sameAs": [
+        "https://www.instagram.com/theflatratemovers/",
+        "https://www.threads.com/@theflatratemovers",
+        "https://x.com/ratemovers",
+        "https://www.youtube.com/@theflatratemovers",
+        "https://github.com/TheFlatRateMovers",
+        "https://medium.com/@ratemovers"
+      ],
+      "slogan": "Guaranteed Flat Rate or Your Move is Free!",
+      "telephone": "+1-540-422-2153",
+      "url": "https://theflatratemovers.com/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#winchester",
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US",
+        "addressLocality": "Winchester",
+        "addressRegion": "VA",
+        "postalCode": "22601",
+        "streetAddress": "116 W Piccadilly St Suite 11"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "1"
+      },
+      "areaServed": [
+        "Berryville, VA",
+        "Bristow, VA",
+        "Clarke County",
+        "Eastern Panhandle of West Virginia",
+        "Fauquier County",
+        "Frederick County, VA",
+        "Front Royal, VA",
+        "Hardy County",
+        "Interstate 66 Corridor",
+        "Interstate 70 Corridor",
+        "Interstate 81 Corridor",
+        "Leesburg, VA",
+        "Loudoun County, VA",
+        "Marshall, VA",
+        "Middleburg, VA",
+        "Middletown, VA",
+        "Moorefield, WV",
+        "Port of Virginia",
+        "Purcellville, VA",
+        "Round Hill, VA",
+        "Shenandoah County",
+        "Shenandoah Valley",
+        "South Riding, VA",
+        "Stephens City, VA",
+        "Stephenson, VA",
+        "Sterling, VA",
+        "Strasburg, VA",
+        "Upperville, VA",
+        "Virginia Inland Port",
+        "Warren County",
+        "Winchester, VA",
+        "Woodstock, VA"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.18711576,
+        "longitude": -78.1668352
+      },
+      "name": "The Flat Rate Movers",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "18:00",
+          "dayOfWeek": "Mon-Fri",
+          "opens": "08:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sat",
+          "opens": "08:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sun",
+          "opens": "09:00"
+        }
+      ],
+      "telephone": "+1-540-422-2153"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#martinsburg",
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US",
+        "addressLocality": "Martinsburg",
+        "addressRegion": "WV",
+        "postalCode": "25404",
+        "streetAddress": "736 Williamsport Pike Suite 2"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "6"
+      },
+      "areaServed": [
+        "Berkeley County, WV",
+        "Berkeley Springs, WV",
+        "Bunker Hill, WV",
+        "Charles Town, WV",
+        "Clear Spring, MD",
+        "Eastern Panhandle of West Virginia",
+        "Frederick, MD",
+        "Front Royal, VA",
+        "Hagerstown, MD",
+        "Hampshire County",
+        "Hancock, MD",
+        "Hardy County",
+        "Harpers Ferry, WV",
+        "Hedgesville, WV",
+        "Interstate 66 Corridor",
+        "Interstate 70 Corridor",
+        "Interstate 81 Corridor",
+        "Inwood, WV",
+        "Jefferson County",
+        "Kearneysville, WV",
+        "Martinsburg, WV",
+        "Moorefield, WV",
+        "Morgan County",
+        "Paw Paw, WV",
+        "Port of Virginia",
+        "Romney, WV",
+        "Shenandoah County",
+        "Shenandoah Valley",
+        "Shepherdstown, WV",
+        "Strasburg, VA",
+        "Summit Point, WV",
+        "Virginia Inland Port",
+        "Warren County",
+        "Washington County",
+        "Woodstock, VA"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.48319665,
+        "longitude": -77.94760443
+      },
+      "name": "Flat Rate Movers Martinsburg WV",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "18:00",
+          "dayOfWeek": "Mon-Fri",
+          "opens": "09:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sat",
+          "opens": "09:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sun",
+          "opens": "09:00"
+        }
+      ],
+      "telephone": "+1-540-422-2153"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://theflatratemovers.com/datasets/ispm15/",
+      "url": "https://theflatratemovers.com/datasets/ispm15/",
+      "name": "ISPM 15 Export Packing Datasets",
+      "breadcrumb": {
+        "@id": "https://theflatratemovers.com/datasets/ispm15/#breadcrumb"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+        "caption": "The Flat Rate Movers logo — company brand image, not a job photo."
+      },
+      "dateModified": "2026-10-30"
+    },
+    {
+      "@id": "https://theflatratemovers.com/datasets/ispm15/#breadcrumb",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/",
+          "name": "Home",
+          "position": 1
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/datasets/",
+          "name": "Published Datasets",
+          "position": 2
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/datasets/ispm15/",
+          "name": "ISPM 15 Export Packing Datasets",
+          "position": 3
+        }
+      ]
+    }
+  ]
+}

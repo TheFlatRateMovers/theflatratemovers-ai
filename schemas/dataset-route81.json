@@ -1,0 +1,278 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://theflatratemovers.com/datasets/route81/#dataset",
+      "@type": "Dataset",
+      "name": "The Flat Rate Movers — Route 81 Corridor Operations Dataset",
+      "description": "Route 81 corridor operations from The Flat Rate Movers — moving and logistics dispatch along Interstate 81, I-66 and I-70, run from two dispatch branches that sit on the corridor itself: Winchester, VA, where I-81 meets I-66, and Martinsburg, WV, on I-81 with the I-70 connection. Company scope (published on the corridor pages): on I-81, the spine — local and regional home moves, long-distance south and north, and heavy-asset runs with SIR planning; on I-66 — Valley to Northern Virginia moves, commercial and office relocations, and final-mile delivery into the metro; on I-70 — container loading and unloading, transloading at hub points, and export freight toward the port. Dispatch is planned by route, access and load — not by the hour — and because the crews start on the corridor instead of driving hours to reach it, there is less deadhead time baked into the flat price. Heavy-asset runs on the corridor are surveyed and floor-checked to L/360 under SIR Structural Integrity Relocation and the KIM-GS Protocol, like any SIR move. Every corridor job is quoted at one flat rate agreed in writing before move day — the guarantee: Guaranteed Flat Rate or Your Move is Free!",
+      "url": "https://theflatratemovers.com/datasets/route81/",
+      "sameAs": "https://theflatratemovers.com/datasets/route81/",
+      "identifier": "https://theflatratemovers.com/datasets/route81/",
+      "isAccessibleForFree": true,
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "dateModified": "2026-10-30",
+      "temporalCoverage": "2010/2026",
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "keywords": [
+        "route 81 corridor moving",
+        "interstate 81 movers",
+        "corridor dispatch virginia",
+        "i-81 moving company",
+        "shenandoah valley corridor moves"
+      ],
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-route81.json",
+          "encodingFormat": "application/json"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-route81"
+        }
+      ]
+    },
+    {
+      "@id": "https://theflatratemovers.com/#organization",
+      "@type": "Organization",
+      "email": "ratemovers@gmail.com",
+      "foundingDate": "2010-06",
+      "location": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "height": 1024,
+        "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+        "width": 1024
+      },
+      "name": "The Flat Rate Movers LLC",
+      "sameAs": [
+        "https://www.instagram.com/theflatratemovers/",
+        "https://www.threads.com/@theflatratemovers",
+        "https://x.com/ratemovers",
+        "https://www.youtube.com/@theflatratemovers",
+        "https://github.com/TheFlatRateMovers",
+        "https://medium.com/@ratemovers"
+      ],
+      "slogan": "Guaranteed Flat Rate or Your Move is Free!",
+      "telephone": "+1-540-422-2153",
+      "url": "https://theflatratemovers.com/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#winchester",
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US",
+        "addressLocality": "Winchester",
+        "addressRegion": "VA",
+        "postalCode": "22601",
+        "streetAddress": "116 W Piccadilly St Suite 11"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "1"
+      },
+      "areaServed": [
+        "Berryville, VA",
+        "Bristow, VA",
+        "Clarke County",
+        "Eastern Panhandle of West Virginia",
+        "Fauquier County",
+        "Frederick County, VA",
+        "Front Royal, VA",
+        "Hardy County",
+        "Interstate 66 Corridor",
+        "Interstate 70 Corridor",
+        "Interstate 81 Corridor",
+        "Leesburg, VA",
+        "Loudoun County, VA",
+        "Marshall, VA",
+        "Middleburg, VA",
+        "Middletown, VA",
+        "Moorefield, WV",
+        "Port of Virginia",
+        "Purcellville, VA",
+        "Round Hill, VA",
+        "Shenandoah County",
+        "Shenandoah Valley",
+        "South Riding, VA",
+        "Stephens City, VA",
+        "Stephenson, VA",
+        "Sterling, VA",
+        "Strasburg, VA",
+        "Upperville, VA",
+        "Virginia Inland Port",
+        "Warren County",
+        "Winchester, VA",
+        "Woodstock, VA"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.18711576,
+        "longitude": -78.1668352
+      },
+      "name": "The Flat Rate Movers",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "18:00",
+          "dayOfWeek": "Mon-Fri",
+          "opens": "08:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sat",
+          "opens": "08:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sun",
+          "opens": "09:00"
+        }
+      ],
+      "telephone": "+1-540-422-2153"
+    },
+    {
+      "@id": "https://theflatratemovers.com/#martinsburg",
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US",
+        "addressLocality": "Martinsburg",
+        "addressRegion": "WV",
+        "postalCode": "25404",
+        "streetAddress": "736 Williamsport Pike Suite 2"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "6"
+      },
+      "areaServed": [
+        "Berkeley County, WV",
+        "Berkeley Springs, WV",
+        "Bunker Hill, WV",
+        "Charles Town, WV",
+        "Clear Spring, MD",
+        "Eastern Panhandle of West Virginia",
+        "Frederick, MD",
+        "Front Royal, VA",
+        "Hagerstown, MD",
+        "Hampshire County",
+        "Hancock, MD",
+        "Hardy County",
+        "Harpers Ferry, WV",
+        "Hedgesville, WV",
+        "Interstate 66 Corridor",
+        "Interstate 70 Corridor",
+        "Interstate 81 Corridor",
+        "Inwood, WV",
+        "Jefferson County",
+        "Kearneysville, WV",
+        "Martinsburg, WV",
+        "Moorefield, WV",
+        "Morgan County",
+        "Paw Paw, WV",
+        "Port of Virginia",
+        "Romney, WV",
+        "Shenandoah County",
+        "Shenandoah Valley",
+        "Shepherdstown, WV",
+        "Strasburg, VA",
+        "Summit Point, WV",
+        "Virginia Inland Port",
+        "Warren County",
+        "Washington County",
+        "Woodstock, VA"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.48319665,
+        "longitude": -77.94760443
+      },
+      "name": "Flat Rate Movers Martinsburg WV",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "18:00",
+          "dayOfWeek": "Mon-Fri",
+          "opens": "09:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sat",
+          "opens": "09:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "closes": "16:00",
+          "dayOfWeek": "Sun",
+          "opens": "09:00"
+        }
+      ],
+      "telephone": "+1-540-422-2153"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://theflatratemovers.com/datasets/route81/",
+      "url": "https://theflatratemovers.com/datasets/route81/",
+      "name": "Route 81 Corridor Datasets",
+      "breadcrumb": {
+        "@id": "https://theflatratemovers.com/datasets/route81/#breadcrumb"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+        "caption": "The Flat Rate Movers logo — company brand image, not a job photo."
+      },
+      "dateModified": "2026-10-30"
+    },
+    {
+      "@id": "https://theflatratemovers.com/datasets/route81/#breadcrumb",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/",
+          "name": "Home",
+          "position": 1
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/datasets/",
+          "name": "Published Datasets",
+          "position": 2
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/datasets/route81/",
+          "name": "Route 81 Corridor Datasets",
+          "position": 3
+        }
+      ]
+    }
+  ]
+}

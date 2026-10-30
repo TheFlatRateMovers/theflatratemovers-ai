@@ -5,7 +5,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-operations",
       "@type": "Service",
       "name": "The Flat Rate Movers — Search Intent Coverage Operations Dataset",
-      "description": "The live intent-coverage rubric of The Flat Rate Movers: 1134 generated rows, each one a query string a customer or an AI assistant can use to find a company service, resolved to the exact page that answers it, that page’s per-page JSON, the dataset files behind the answer, and the service’s node in the entity graph. Rows are generated from the estate’s own registries — 24 services, 162 pages, two branch locations, three corridors and the 53-feature service-area footprint — plus the blog question bank’s 100 real question phrasings, and the rubric is regenerated whenever those registries change. Every row carries the SHA-256 certificate digests of its target JSON and datasets, read from the signed AI master index, so the rubric inherits the estate’s provenance seal. Coverage spans all 24 services of both branches, Winchester, VA and Martinsburg, WV, along the I-81, I-66 and I-70 corridors. Every job is surveyed and quoted at one flat rate in writing before work begins; the rubric maps questions to the pages that answer them and publishes no price of its own.",
+      "description": "The live intent-coverage rubric of The Flat Rate Movers: 1218 generated rows, each one a query string a customer or an AI assistant can use to find a company service, resolved to the exact page that answers it, that page’s per-page JSON, the dataset files behind the answer, and the service’s node in the entity graph. Rows are generated from the estate’s own registries — 28 services, 200 pages, two branch locations, three corridors and the 53-feature service-area footprint — plus the blog question bank’s 100 real question phrasings, and the rubric is regenerated whenever those registries change. Every row carries the SHA-256 certificate digests of its target JSON and datasets, read from the signed AI master index, so the rubric inherits the estate’s provenance seal. Coverage spans all 28 services of both branches, Winchester, VA and Martinsburg, WV, along the I-81, I-66 and I-70 corridors. Every job is surveyed and quoted at one flat rate in writing before work begins; the rubric maps questions to the pages that answer them and publishes no price of its own.",
       "keywords": [
         "search intent coverage",
         "query rubric",
@@ -46,18 +46,27 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json"
         }
@@ -134,6 +143,18 @@
         },
         {
           "@id": "https://theflatratemovers.com/#intent-coverage-junk-removal"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#intent-coverage-warehouse-racking-relocation"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#intent-coverage-ffe-logistics"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#intent-coverage-data-center-relocation"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#intent-coverage-medical-lab-relocation"
         }
       ],
       "certificate": {
@@ -141,13 +162,15 @@
         "name": "Certificate — signed AI master index distribution",
         "propertyID": "https://theflatratemovers.com/ai-master-index.json",
         "value": "This dataset file is a sealed distribution of the signed AI master index of The Flat Rate Movers. Its SHA-256 digest and byte size are recorded in that index; the index is signed with Ed25519 under key id theflatratemovers-2026-10-29-1 and is verifiable against the key published at https://theflatratemovers.com/.well-known/signing-keys.json using the detached signature at https://theflatratemovers.com/ai-master-index.jws. The certificate digests carried by the rubric rows in the working rubric database are read from the same signed index at generation time."
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/"
     },
     {
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-scope",
       "@type": "Dataset",
       "name": "The Flat Rate Movers — Intent Coverage Scope Dataset",
-      "description": "What the intent-coverage rubric covers, and from what sources. Inputs: the machine registries services.json (24 services), pages.json (162 pages), locations.json (the two distinct branches — Winchester, The Flat Rate Movers, and Martinsburg, Flat Rate Movers Martinsburg WV, never blended), corridors.json (Interstate 81, Interstate 66, Interstate 70) and service-area.geojson (53 features: Winchester footprint 32 areas, Martinsburg footprint 35 areas, 14 areas shared); the signed AI master index (certificate digests); and the blog question bank (10 categories of the top-10 questions customers actually ask, 100 phrasings). Output: one row per generated query string across five intent classes — navigational-local (626), cost (144), how-process (96), best-choice (144), ai-question (124). Rows exist only where the estate has a real page that answers the string; the scope of the rubric is exactly the scope of the published estate, nothing wider.",
+      "description": "What the intent-coverage rubric covers, and from what sources. Inputs: the machine registries services.json (28 services), pages.json (200 pages), locations.json (the two distinct branches — Winchester, The Flat Rate Movers, and Martinsburg, Flat Rate Movers Martinsburg WV, never blended), corridors.json (Interstate 81, Interstate 66, Interstate 70) and service-area.geojson (53 features: Winchester footprint 32 areas, Martinsburg footprint 35 areas, 14 areas shared); the signed AI master index (certificate digests); and the blog question bank (10 categories of the top-10 questions customers actually ask, 100 phrasings). Output: one row per generated query string across five intent classes — navigational-local (642), cost (168), how-process (112), best-choice (168), ai-question (128). Rows exist only where the estate has a real page that answers the string; the scope of the rubric is exactly the scope of the published estate, nothing wider.",
       "keywords": [
         "coverage scope",
         "service registry",
@@ -186,22 +209,40 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json"
         }
-      ]
+      ],
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.23818766",
+        "url": "https://doi.org/10.5281/zenodo.23818766"
+      },
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-taxonomy",
@@ -248,22 +289,40 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json"
         }
-      ]
+      ],
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.23818766",
+        "url": "https://doi.org/10.5281/zenodo.23818766"
+      },
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-resolution",
@@ -309,28 +368,46 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json"
         }
-      ]
+      ],
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.23818766",
+        "url": "https://doi.org/10.5281/zenodo.23818766"
+      },
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-method",
       "@type": "Article",
       "name": "The Flat Rate Movers — Intent Rubric Generation Method",
-      "description": "Method. The rubric is generated by build-intent-rubric.js v1.0.0 in the Flat Rate Machine, from the registries named in the scope dataset — no row is hand-typed. Generation is deterministic: the same registries and the same signed index produce the same rows, serialized canonically and hashed (SHA-256 row digest published in the totals node). The working rubric database (rubric.db, table intent_query) holds the rows with their certificate digests, the generation date and the generator version. When any registry, page, dataset or the signed index changes, the generator is re-run in the same batch, the database and this dataset are regenerated, the changed files are re-digested and the master index is re-signed, and the verification suite’s intent checks (verify.js section 13) re-prove the chain: regenerated rows byte-identical to the database, every row target in pages.json, every target JSON and dataset in the signed index, and this dataset’s published counts equal to the database counts.",
+      "description": "Method. The rubric is generated by build-intent-rubric.js v1.3.2 in the Flat Rate Machine, from the registries named in the scope dataset — no row is hand-typed. Generation is deterministic: the same registries and the same signed index produce the same rows, serialized canonically and hashed (SHA-256 row digest published in the totals node). The working rubric database (rubric.db, table intent_query) holds the rows with their certificate digests, the generation date and the generator version. When any registry, page, dataset or the signed index changes, the generator is re-run in the same batch, the database and this dataset are regenerated, the changed files are re-digested and the master index is re-signed, and the verification suite’s intent checks (verify.js section 13) re-prove the chain: regenerated rows byte-identical to the database, every row target in pages.json, every target JSON and dataset in the signed index, and this dataset’s published counts equal to the database counts.",
       "keywords": [
         "generation method",
         "deterministic build",
@@ -369,18 +446,27 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json"
         }
@@ -428,18 +514,27 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json"
         }
@@ -488,18 +583,27 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json"
         }
@@ -509,7 +613,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-totals",
       "@type": "Dataset",
       "name": "The Flat Rate Movers — Intent Coverage Totals, Areas and Certificate Dataset",
-      "description": "Totals for this generation of the intent-coverage rubric, computed by the generator run of 2026-10-30: 1134 rows across 24 services — navigational-local (626), cost (144), how-process (96), best-choice (144), ai-question (124). Per-service row counts are carried on the 24 coverage nodes in this file. Area coverage follows the service-area GeoJSON: 53 features in total; the Winchester footprint is 32 areas and the Martinsburg footprint is 35 areas, with 14 areas served by both branches and recorded as shared. The canonical serialization of the rows hashes to the SHA-256 digest recorded on this node (intentRowsDigest), which is also stored in the rubric database, so any reader can re-prove that the published totals describe the exact row set the generator produced. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on this node.",
+      "description": "Totals for this generation of the intent-coverage rubric, computed by the generator run of 2026-10-30: 1218 rows across 28 services — navigational-local (642), cost (168), how-process (112), best-choice (168), ai-question (128). Per-service row counts are carried on the 28 coverage nodes in this file. Area coverage follows the service-area GeoJSON: 53 features in total; the Winchester footprint is 32 areas and the Martinsburg footprint is 35 areas, with 14 areas served by both branches and recorded as shared. The canonical serialization of the rows hashes to the SHA-256 digest recorded on this node (intentRowsDigest), which is also stored in the rubric database, so any reader can re-prove that the published totals describe the exact row set the generator produced. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on this node.",
       "keywords": [
         "coverage totals",
         "rows digest",
@@ -548,23 +652,32 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json"
         }
       ],
-      "intentRowsDigest": "38c84749f035d4a40b314d7d18523b01a6a852024eb504fd78611a3d1cbfae69",
+      "intentRowsDigest": "10aaafc7685c3a7aa20e04014ea7af7ff695e4c6b8e62f9a1d3f9f38df1748bc",
       "intentRowsDigestAlgorithm": "SHA-256",
       "certificate": {
         "@type": "PropertyValue",
@@ -572,13 +685,22 @@
         "propertyID": "https://theflatratemovers.com/ai-master-index.json",
         "value": "This dataset file is a sealed distribution of the signed AI master index of The Flat Rate Movers. Its SHA-256 digest and byte size are recorded in that index; the index is signed with Ed25519 under key id theflatratemovers-2026-10-29-1 and is verifiable against the key published at https://theflatratemovers.com/.well-known/signing-keys.json using the detached signature at https://theflatratemovers.com/ai-master-index.jws. The certificate digests carried by the rubric rows in the working rubric database are read from the same signed index at generation time."
       },
-      "generatedBy": "build-intent-rubric.js v1.0.0",
+      "generatedBy": "build-intent-rubric.js v1.3.2",
       "areaCoverage": {
         "features": 53,
         "winchesterFootprint": 32,
         "martinsburgFootprint": 35,
         "shared": 14
-      }
+      },
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.5281/zenodo.23818766",
+        "url": "https://doi.org/10.5281/zenodo.23818766"
+      },
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-residential",
@@ -621,15 +743,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/residential-moving.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-residential.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/residential-moving/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-residential",
       "queryRows": 65,
       "queryRowsByIntentClass": {
@@ -638,7 +767,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 1
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-commercial",
@@ -681,15 +813,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/commercial-moving.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-commercial.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/commercial-moving/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-commercial",
       "queryRows": 65,
       "queryRowsByIntentClass": {
@@ -698,7 +837,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 1
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-local-regional",
@@ -741,15 +883,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/local-regional-moving.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/local-regional-moving/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-local-regional",
       "queryRows": 24,
       "queryRowsByIntentClass": {
@@ -758,7 +907,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 1
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-long-distance",
@@ -801,15 +953,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/long-distance-cross-country-moving.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/long-distance-cross-country-moving/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-long-distance",
       "queryRows": 24,
       "queryRowsByIntentClass": {
@@ -818,7 +977,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 1
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-packing",
@@ -861,15 +1023,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/packing-unpacking-services-2.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-packing.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/packing-unpacking-services-2/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-packing",
       "queryRows": 78,
       "queryRowsByIntentClass": {
@@ -878,7 +1047,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 11
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-sir-heavy",
@@ -921,15 +1093,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/heavy.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-sir-heavy.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/heavy/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-sir-heavy",
       "queryRows": 21,
       "queryRowsByIntentClass": {
@@ -938,7 +1117,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 1
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-gun-safe",
@@ -981,15 +1163,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/gun-safe-movers.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-gun-safe.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/gun-safe-movers/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-gun-safe",
       "queryRows": 21,
       "queryRowsByIntentClass": {
@@ -998,7 +1187,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 1
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-piano-antique",
@@ -1041,15 +1233,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/elite-asset-transition-white-glove-discreet-logistics.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-piano-antique.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/elite-asset-transition-white-glove-discreet-logistics/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/piano-antique-movers-martinsburg-wv/#service",
       "queryRows": 31,
       "queryRowsByIntentClass": {
@@ -1058,7 +1257,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 11
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-ispm15",
@@ -1101,15 +1303,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/export.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-ispm15.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/export/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-ispm15",
       "queryRows": 66,
       "queryRowsByIntentClass": {
@@ -1118,7 +1327,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 11
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-crating",
@@ -1161,15 +1373,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/international-export-packing-crating-winchester-va.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-crating.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/international-export-packing-crating-winchester-va/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-crating",
       "queryRows": 66,
       "queryRowsByIntentClass": {
@@ -1178,7 +1397,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 11
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-transloading",
@@ -1221,19 +1443,32 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/container-deconsolidation-cross-docking-transloading-services-virginia.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-transloading.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-transloading-inland-port.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-ocean-container.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/container-deconsolidation-cross-docking-transloading-services-virginia/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-transloading",
       "queryRows": 75,
       "queryRowsByIntentClass": {
@@ -1242,7 +1477,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 8
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-final-mile",
@@ -1285,15 +1523,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/commercial-freight-handling-white-glove-final-mile-services.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-final-mile.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/commercial-freight-handling-white-glove-final-mile-services/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/final-mile-movers-martinsburg-wv/#service",
       "queryRows": 78,
       "queryRowsByIntentClass": {
@@ -1302,7 +1547,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 11
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-office-moving",
@@ -1345,15 +1593,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/commercial-office-moving-2.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-office.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/commercial-office-moving-2/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-office-moving",
       "queryRows": 65,
       "queryRowsByIntentClass": {
@@ -1362,7 +1617,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 1
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-industrial-offices",
@@ -1405,15 +1663,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/industrial-offices-moving.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-industrial-offices.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/industrial-offices-moving/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-industrial-offices",
       "queryRows": 75,
       "queryRowsByIntentClass": {
@@ -1422,7 +1687,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 11
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-government",
@@ -1465,15 +1733,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/military-government-moving.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-government.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/military-government-moving/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-government",
       "queryRows": 75,
       "queryRowsByIntentClass": {
@@ -1482,7 +1757,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 11
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-military",
@@ -1525,15 +1803,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/military-government-moving.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-military.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/military-government-moving/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-military",
       "queryRows": 75,
       "queryRowsByIntentClass": {
@@ -1542,7 +1827,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 11
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-route81",
@@ -1585,15 +1873,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/route81.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-route81.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/route81/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/interstate-66-corridor/#service",
       "queryRows": 34,
       "queryRowsByIntentClass": {
@@ -1602,7 +1897,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 11
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-industrial-commercial",
@@ -1645,19 +1943,27 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/industrial-commercial-services.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-industrial-commercial.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-warehouse.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/industrial-commercial-services/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-industrial-commercial",
       "queryRows": 71,
       "queryRowsByIntentClass": {
@@ -1666,7 +1972,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 4
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-senior-moving",
@@ -1709,15 +2018,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/senior-moving.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-senior.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/senior-moving/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-senior-moving",
       "queryRows": 21,
       "queryRowsByIntentClass": {
@@ -1726,7 +2042,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 1
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-warehouse-relocation",
@@ -1769,15 +2088,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/warehouse-relocation.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-warehouse.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/warehouse-relocation/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-warehouse-relocation",
       "queryRows": 21,
       "queryRowsByIntentClass": {
@@ -1786,7 +2112,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 1
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-it-relocation",
@@ -1829,15 +2158,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/it-equipment-moving-data-center-logistics-services-virginia.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-it.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/it-equipment-moving-data-center-logistics-services-virginia/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-it-relocation",
       "queryRows": 21,
       "queryRowsByIntentClass": {
@@ -1846,7 +2182,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 1
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-transloading-winchester-va",
@@ -1889,15 +2228,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/transloading-winchester-va.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-transloading-winchester.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/transloading-winchester-va/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-transloading-winchester-va",
       "queryRows": 20,
       "queryRowsByIntentClass": {
@@ -1906,7 +2252,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 1
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-moving-and-storage",
@@ -1949,15 +2298,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/moving-and-storage.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-moving-and-storage.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/moving-and-storage/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-moving-and-storage",
       "queryRows": 21,
       "queryRowsByIntentClass": {
@@ -1966,7 +2322,10 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 1
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     },
     {
       "@id": "https://theflatratemovers.com/#intent-coverage-junk-removal",
@@ -2009,15 +2368,22 @@
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "distribution": [
         {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/junk-removal.json",
           "encodingFormat": "application/json"
         },
         {
+          "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-junk-removal.json",
           "encodingFormat": "application/json"
         }
       ],
-      "url": "https://theflatratemovers.com/junk-removal/",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-junk-removal",
       "queryRows": 21,
       "queryRowsByIntentClass": {
@@ -2026,7 +2392,290 @@
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 1
-      }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
+    },
+    {
+      "@id": "https://theflatratemovers.com/#intent-coverage-warehouse-racking-relocation",
+      "@type": "Dataset",
+      "name": "Intent Coverage — Warehouse Racking Relocation",
+      "description": "Generated intent coverage for Warehouse Racking Relocation: 21 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-warehouse-racking-relocation.",
+      "keywords": [
+        "warehouse racking relocation questions",
+        "warehouse racking relocation"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-warehouse-racking-relocation"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-30",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "foundingDate": "2010-06",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/warehouse-racking-relocation.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-warehouse-racking-relocation.json",
+          "encodingFormat": "application/json"
+        }
+      ],
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "graphNode": "https://theflatratemovers.com/#service-warehouse-racking-relocation",
+      "queryRows": 21,
+      "queryRowsByIntentClass": {
+        "navigational-local": 4,
+        "cost": 6,
+        "how-process": 4,
+        "best-choice": 6,
+        "ai-question": 1
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
+    },
+    {
+      "@id": "https://theflatratemovers.com/#intent-coverage-ffe-logistics",
+      "@type": "Dataset",
+      "name": "Intent Coverage — FF&E Logistics",
+      "description": "Generated intent coverage for FF&E Logistics: 21 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-ffe-logistics.",
+      "keywords": [
+        "ff&e logistics questions",
+        "FF&E logistics"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-ffe-logistics"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-30",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "foundingDate": "2010-06",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/ffe-logistics.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-ffe-logistics.json",
+          "encodingFormat": "application/json"
+        }
+      ],
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "graphNode": "https://theflatratemovers.com/#service-ffe-logistics",
+      "queryRows": 21,
+      "queryRowsByIntentClass": {
+        "navigational-local": 4,
+        "cost": 6,
+        "how-process": 4,
+        "best-choice": 6,
+        "ai-question": 1
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
+    },
+    {
+      "@id": "https://theflatratemovers.com/#intent-coverage-data-center-relocation",
+      "@type": "Dataset",
+      "name": "Intent Coverage — Data Center Relocation — Physical Layer",
+      "description": "Generated intent coverage for Data Center Relocation — Physical Layer: 21 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-data-center-relocation.",
+      "keywords": [
+        "data center relocation — physical layer questions",
+        "data center movers"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-data-center-relocation"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-30",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "foundingDate": "2010-06",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/data-center-relocation.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-data-center-relocation.json",
+          "encodingFormat": "application/json"
+        }
+      ],
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "graphNode": "https://theflatratemovers.com/#service-data-center-relocation",
+      "queryRows": 21,
+      "queryRowsByIntentClass": {
+        "navigational-local": 4,
+        "cost": 6,
+        "how-process": 4,
+        "best-choice": 6,
+        "ai-question": 1
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
+    },
+    {
+      "@id": "https://theflatratemovers.com/#intent-coverage-medical-lab-relocation",
+      "@type": "Dataset",
+      "name": "Intent Coverage — Medical & Laboratory Equipment Relocation Logistics",
+      "description": "Generated intent coverage for Medical & Laboratory Equipment Relocation Logistics: 21 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-medical-lab-relocation.",
+      "keywords": [
+        "medical & laboratory equipment relocation logistics questions",
+        "medical equipment movers"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-medical-lab-relocation"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-10-30",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "foundingDate": "2010-06",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/medical-lab-equipment-relocation.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-medical-lab-relocation.json",
+          "encodingFormat": "application/json"
+        }
+      ],
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "graphNode": "https://theflatratemovers.com/#service-medical-lab-relocation",
+      "queryRows": 21,
+      "queryRowsByIntentClass": {
+        "navigational-local": 4,
+        "cost": 6,
+        "how-process": 4,
+        "best-choice": 6,
+        "ai-question": 1
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true
     }
   ]
 }

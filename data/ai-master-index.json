@@ -127,8 +127,8 @@
    "encodingFormat": "text/plain",
    "digest": {
     "algorithm": "SHA-256",
-    "value": "522767bc3303696a4c9dbe78cd4d973101d076c489589c579566d9d66ccef58f",
-    "byteSize": 160551
+    "value": "b44d018d327d2e942ff5f4bf6901401085cf408f611b292367039391284ed635",
+    "byteSize": 161116
    },
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "dateModified": "2026-10-29"
@@ -2605,12 +2605,12 @@
   },
   {
    "@type": "DataDownload",
-   "name": "Site Shell \u2014 index.html (deployed build artifact)",
+   "name": "Site Shell \u2014 index.html (per-route generator source)",
    "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/the-flat-rate-machine/main/code/site-shell/index.html",
    "encodingFormat": "text/html",
    "license": "https://opensource.org/licenses/MIT",
    "dateModified": "2026-10-30",
-   "description": "The deployed site shell (SPA index.html) as a build artifact. The bytes at this contentUrl are the exact deploy-source bytes placed in the Pages build; per-URL served HTML is generated from this shell by the sealed Pages middleware + head-data (also distributions in this index), and the shell's own per-page JSON chain is sealed entry-by-entry above. Digest is over the build-artifact bytes at this URL.",
+   "description": "The source shell from which scripts/build-routes.js generates every per-route document of the estate (Solution A, 2026-10-31). The shell file itself is no longer the served document: each canonical URL serves its own generated route document, and every route document is sealed individually in this index. The shell remains the content source of record \u2014 chrome, head template, all 205 page divs and the helpers script \u2014 and its digest here is over the source bytes at this URL.",
    "digest": {
     "algorithm": "SHA-256",
     "value": "017e4fe0e4d975dd1354cac71d72ed6ae5e996a6a61817e3c88e1651f01a11bf",
@@ -2626,8 +2626,8 @@
    "dateModified": "2026-10-30",
    "digest": {
     "algorithm": "SHA-256",
-    "value": "a87634e4e12351e71d03e980c36e837f78f1a4c3fc08061fd440828c1b80d35e",
-    "byteSize": 21330
+    "value": "e0e8f60ed8af236b28aac35d9e36c9625bd1f0b8f3baf634db1275780fd19b57",
+    "byteSize": 27611
    }
   },
   {
@@ -2678,8 +2678,8 @@
    "dateModified": "2026-10-30",
    "digest": {
     "algorithm": "SHA-256",
-    "value": "b3b1dc86d0c48a73a32ea60df3c7a4ff958088543a0b03fb50fe87c698ecd64a",
-    "byteSize": 97364
+    "value": "e883eb1c70ae737fd0edc38900a6397aa22f0291b7514ce23f5850758709a55e",
+    "byteSize": 104635
    }
   },
   {
@@ -2704,8 +2704,8 @@
    "dateModified": "2026-10-30",
    "digest": {
     "algorithm": "SHA-256",
-    "value": "7fff08e91a272f920446b5759dcf396c72c5e3a36a1b6a73b8299c1255e314fc",
-    "byteSize": 5262
+    "value": "162ddc7b1894c63f7142dc49e4582aaad4b1549bd7a0b4a8095fe70decb4879b",
+    "byteSize": 5570
    }
   },
   {
@@ -2730,8 +2730,8 @@
    "dateModified": "2026-10-30",
    "digest": {
     "algorithm": "SHA-256",
-    "value": "fe4cffe4458954aaa3b3ba95a8a89f1b64fd2ea7632e31f057dddfc11a432f0d",
-    "byteSize": 3725
+    "value": "eab90cd056037d2d059fc34ff2d7fc875e368bb3dd2cef2ba0df284273c26537",
+    "byteSize": 3989
    }
   },
   {
@@ -3396,6 +3396,2736 @@
    },
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "dateModified": "2026-10-31"
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 home (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "2bbea0f7ab797d682873bdd378f15acd78be3ca5a4c09ab040c084b4b7261e16",
+    "byteSize": 284159
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "0e6a46ce5f5d144030df920902e1813cdfccb311994d81c9fe5d416756402315",
+    "byteSize": 273741
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 1650-lb-gun-safe-delivered-and-installed-moorefield-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/1650-lb-gun-safe-delivered-and-installed-moorefield-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "db7143621122f2b28158dcab67e8e9e9d5c38dc77112b67a2b9ccd6e62e3bc74",
+    "byteSize": 286172
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 ai-license (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/ai-license/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "01db97bd0578649d0ba2ffff1cdbc75016dcedf44df78cbfbd8f4ba6f23c83d6",
+    "byteSize": 264688
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 all-pages (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/all-pages/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "d6983f6b13ef71032f723d4f58d1e4213b4e8f20a5e2b4f888da0ac4e49cafd5",
+    "byteSize": 308542
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 areas-served (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/areas-served/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "d49a90c4411ef503b46f0cea5c66eb7eed6c174647aa4db5943512b40aae7190",
+    "byteSize": 271032
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 author-ratemoversgmail-com (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/author/ratemoversgmail-com/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "4deb8eaaf667528945a09c2b991e65477a039e80f75b966da095c60b143e0542",
+    "byteSize": 266105
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 blog (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/blog/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "8e3d207f3ef5b16122d0ed1b79d9fc8928e65e0928f88f0e194ddedaf3bc58cb",
+    "byteSize": 291046
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 calibration-safe-moving (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/calibration-safe-moving/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "ee2c2a44a364a833b9f27734acd908e595a33949d9cdad2111745c46744e23f9",
+    "byteSize": 275970
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 case-study-3500lb-safe-moving-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/case-study-3500lb-safe-moving-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "820f0ceb471cadacefa80b32f33787e677cba9fc0dbd98afaa9bf37d32f952c0",
+    "byteSize": 276747
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-freight-services (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/freight-services/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "88a4195c52ebc83d65a2423c0bf3f450a8d97b56d8fa1820e59406cc5a157a8c",
+    "byteSize": 269461
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-logistics (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/logistics/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "516d1c029e56670c9441775856ca64da6e769932712f14098ded61a5c6df60c7",
+    "byteSize": 268012
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-long-distance-moving (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/long-distance-moving/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "de1532c900d6438fe8b0939f2e99611feb158d5b0f5a421b7b34963fd7e9a006",
+    "byteSize": 273220
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-maritime-shipping (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/maritime-shipping/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "5e7897f826732f2bf005c20544cd40eccf0d62e3398a07e28df6f8cd4dfd9d71",
+    "byteSize": 272530
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-military-government-moving-cat (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/military-government-moving/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "9fb944e2022530c5c5f6eb7f4e5154e84af7f6f974d285454d61588e96b61498",
+    "byteSize": 274447
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-office-commercial-moving (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/office-commercial-moving/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "6fdfba450fa87c7ca267161362c18d66dd74e7f5eaa30f7db932127ec05a97fc",
+    "byteSize": 272532
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-port-logistics (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/port-logistics/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "916bbf4917ef9b95590186fff92fb2098a633b061339feb02dfc12f9a33a1161",
+    "byteSize": 273873
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-rigging-sir-2026 (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/rigging-sir-2026/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "6ab8af1e88fe23b556241824832f0d1e7d0333c2eb281008017641bc6c714b2c",
+    "byteSize": 273388
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-high-value-rigging (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/rigging-sir-2026/high-value-rigging/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "eb5296c68eac1f89a3a1917af1a1372923830956b1850134bd514923c32b29f7",
+    "byteSize": 273646
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-shenandoah-valley-logistics (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/shenandoah-valley-logistics/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "3b613c98a775716de992ac5c803be3d14008517e33c700ced81f823905973b65",
+    "byteSize": 268453
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-vault-moving (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/vault-moving/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "bdbc18fb62854fcce5241be53fc8a7322aa1044315851d89beb691c3eadf6a0e",
+    "byteSize": 272003
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "159e18a9496bd7ba45bd8d71518d0d685a92aba03e3244845245da47620a550c",
+    "byteSize": 267183
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-residential-logistics (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/winchester-va/residential-logistics/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "be51c8c634ff5f3b0a1b5e3bc0e4df7c6beb4557991b3320d406100ede08b6df",
+    "byteSize": 272863
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-relocation-services (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/winchester-va/residential-logistics/relocation-services/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "2168fb9bebce42840411df69e0944100ff484bf236561a295fe28593be40f216",
+    "byteSize": 268397
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-moving (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/winchester-va/residential-logistics/relocation-services/moving/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "ae1a31bd6ff454d036d04ef74e205971f7e6525d1a1fd8deeffed3b0d10efedb",
+    "byteSize": 271504
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-eastern-panhandle-moving (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/winchester-va/residential-logistics/relocation-services/moving/eastern-panhandle-moving/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "bc589b193ef633408403729185412c3dca396574ef20302dcb21ca4b56354c3a",
+    "byteSize": 272731
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-estate-relocation (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/winchester-va/residential-logistics/relocation-services/moving/estate-relocation/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "c61edfc84afb3daede47add434bb8a4275879adcb4e4a1b89e7350da102fae9b",
+    "byteSize": 271856
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-long-distance-nested (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/winchester-va/residential-logistics/relocation-services/moving/long-distance/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "d4849df42eb3728e1d9b787784ee178558c5d2c3251a7c37a10cc42baed9e1a1",
+    "byteSize": 272758
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-museum-logistics (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/winchester-va/residential-logistics/relocation-services/moving/museum-logistics/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "cc5f45bce1ba213dce346e536277f55af4d28a6cae22222650b57c45b0b450e8",
+    "byteSize": 298475
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-logistics-transportation (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/winchester-va/residential-logistics/relocation-services/moving/museum-logistics/logistics-transportation/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "f8be763ac946ec163fb18e5dc826c0e1706033a2567fec383774a3a6a45a6c9e",
+    "byteSize": 274400
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-paper-padding (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/winchester-va/residential-logistics/relocation-services/paper-padding/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "4e910bafb2fdc2b9a0d3d27c239af1b0ae5b40d977a4787c0e53d4c87c67ce1f",
+    "byteSize": 273965
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 category-top-rated-movers-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/category/winchester-va/top-rated-movers-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "09c98fb1806e90c2cbeba6abebef00fd486e29515b4b8e72f02d55d7495004b2",
+    "byteSize": 271509
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 commercial-freight-handling-solutions (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/commercial-freight-handling-solutions/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "a6b63b22b1f8071bbe6fa1e4c14de0a8376bdb6f9e65c494293c59a5cddda2af",
+    "byteSize": 276467
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 commercial-freight-handling-white-glove-final-mile-services (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/commercial-freight-handling-white-glove-final-mile-services/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "b790c17f44c5d59913c75186635f40a09467e360c799faffae69e60809884ed2",
+    "byteSize": 299306
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 commercial-movers-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/commercial-movers-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "e1991ebcf5bc91ba8897a8ec4685145b3d06f0c6784314b08f4914a550c25a43",
+    "byteSize": 272469
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 commercial (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/commercial-moving/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "d11b1ccc814071acbe27dcc22650ab1f28f80cd2a5854ee8cc6084b01bc0d9b5",
+    "byteSize": 300988
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 office (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/commercial-office-moving-2/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "8a913d3bea89f141df9520d0e54192b932e15a23aafe468952562783a16571c5",
+    "byteSize": 300006
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 container-deconsolidation-cross-docking-transloading-services-virginia (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/container-deconsolidation-cross-docking-transloading-services-virginia/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "0c0c32dfee3e0f9099e4698697ee8c1b258feb3b649d95b9f888d03c0f95e45d",
+    "byteSize": 300557
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 container-deconsolidation-services-virginia-mid-atlantic (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/container-deconsolidation-services-virginia-mid-atlantic/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "2719a5bc42429334c31d2e7f976f702701b686052907bbd86c68e50299e236d0",
+    "byteSize": 276453
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 container-loading-unloading-services-port-transload-virginia (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/container-loading-unloading-services-port-transload-virginia/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "5c55e19c4bba2d83e2e81c0a636443e7a5644aa14f8c9bcdb3eae29ec3f7460f",
+    "byteSize": 270061
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 crating-movers-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/crating-movers-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "522a578f6c25709ffbf596fef0bd2530d8f6bc1753e6ecfec7b93a3d83569005",
+    "byteSize": 272365
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 curbside-vs-inside-vs-white-glove-delivery (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/curbside-vs-inside-vs-white-glove-delivery/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "7540bbb4be1eebbb6ee06e91bc8e1ee2c3981ee91df14cf0bb402c262016dfdd",
+    "byteSize": 282057
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 data-center-relocation (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/data-center-relocation/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "a672800fac91deeb3415306c0b2e50b46085038b22e34ed5d23415d7610d805b",
+    "byteSize": 323069
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "456aa18736dea6e71782200534847b228f55693db665d6c573663ca09cde7fe7",
+    "byteSize": 277203
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-commercial (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/commercial/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "d467b71448f435484ac151916b2da5c3e7356eb43655d617685d3207e76e3e59",
+    "byteSize": 307274
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-crating (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/crating/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "2839a6cd56fb55e32dfcd4a1f9811d18fa6f6b57f6916aaf1f5defa064a00163",
+    "byteSize": 302325
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-data-center-relocation (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/data-center-relocation/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "b4cd09d3d989d0f6891a2f82fa4a406308b6372d82c6d4bcadbe269cda743291",
+    "byteSize": 311145
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-ffe-logistics (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/ffe-logistics/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "740aad5c94b002504eb13ca659ce245306e53b83763d9c3c1ece58d0c6675d05",
+    "byteSize": 308319
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-final-mile (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/final-mile/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "4b2e1e8bf4fd886ee39686cc87344943e171a2b2e64a9e7eee7d827ef4911712",
+    "byteSize": 305756
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-government (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/government/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "f91daec09a7def876a43815344bb17a526aa552031cc0173953a4a4005246791",
+    "byteSize": 302861
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-gun-safe (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/gun-safe/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "8e17a4ed5b68746d2c27fb93f3f4e99344daff9fc2c920271d0e5020ca3faa3c",
+    "byteSize": 335061
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-industrial-commercial (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/industrial-commercial/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "a2a797695a5e87d19753f61026b9fbc8b1049e7e79ce3b5c8f465f8e03c938c3",
+    "byteSize": 311453
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-industrial-offices (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/industrial-offices/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "b0e9c824a355ba802b7bf7eae31f6d5029c50ccf1c7bd5aca44db69e7853de24",
+    "byteSize": 301424
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-intent-coverage (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/intent-coverage/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "a0266381263d0f8b967972eb9e7ba3141165c9d1ce463a5f0d1e298e979868c3",
+    "byteSize": 461303
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-ispm15 (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/ispm15/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "bd1b7d15d201c5606945213bc1563086be52542a073ec765c0c9173ad1aba20f",
+    "byteSize": 305201
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-it (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/it/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "a5f18739fab48e07df79ab6579c6e99d759a492d1dde79f75af141b85a92a961",
+    "byteSize": 307205
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-junk-removal (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/junk-removal/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "ad6e041482491edd9efbe3c9a2e800c065caaa5dd1a6a0194278603bd59d2c84",
+    "byteSize": 311316
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-local-regional (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/local-regional/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "0218e8891a78c05541b5e2fdfd8091aa0e6c0636e5372a9c26189dc90d8fbc26",
+    "byteSize": 309404
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-long-distance (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/long-distance/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "0c134e74a092c1deda12cf133404ed9d9bc6f6e2eeb72415a5bd94b283c811d3",
+    "byteSize": 309545
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-medical-lab-relocation (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/medical-lab-relocation/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "adc55684bb578fd0ad3ca1e479086cca81a55630f5e3c9055a4020108318a94a",
+    "byteSize": 320681
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-military (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/military/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "9a25d69921b045034c26a5644924be4753c0e6281314a675395c339e78bfe2a6",
+    "byteSize": 304239
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-moving-and-storage (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/moving-and-storage/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "e54663e2b41ac4d51d9b132fd246431c02245bb4f932094beabe573d7abf2556",
+    "byteSize": 311879
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-ocean-container (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/ocean-container/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "956be6a0657114147623f0d6e2841c1f41bf9eb6fa94a912eea0f1071e4bf5ea",
+    "byteSize": 308409
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-office (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/office/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "1b33155144a857acf5f997293faedc2c5d00387034dfb4512d5ea18aeea36385",
+    "byteSize": 306079
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-packing (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/packing/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "1578adb54c95dc698d54b1aa22da758b05c4d112e0262707c8d4c2be7b919157",
+    "byteSize": 302593
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-piano-antique (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/piano-antique/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "5284435abae74379baf39cbd511c61a7d1680f140206ea1ae00288078c232041",
+    "byteSize": 307665
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-residential (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/residential/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "634b2a5d23281e62e20e0b31abf03ddf65a88ddd6c764502008d99bad8543e5c",
+    "byteSize": 304324
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-route81 (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/route81/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "ac835e681477aaa2880b3161d2eeaf708dd4ab9a95fe8c465a6b3f99e01866e2",
+    "byteSize": 366982
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-senior (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/senior/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "7194ce8326965ecf66d1e6d9f4b7f0b0b3572fbc4cd0c4f7397f51e8190d932b",
+    "byteSize": 307226
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-sir-heavy (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/sir-heavy/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "be8fd671f8193dc321fb76c89f2aa5e85c4d7bc9162edcef8f218513a7d20caf",
+    "byteSize": 306264
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-transloading-inland-port (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/transloading-inland-port/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "0464b369d30b71b1d07c1f91a58afd1639246fc775e80b91318ea4d5781ee3ac",
+    "byteSize": 312750
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-transloading-winchester (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/transloading-winchester/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "a260d192daeaa317aba701bd16eb6d96f64d159ce540184fbd54a9cd2a484f43",
+    "byteSize": 306156
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-transloading (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/transloading/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "86231557588f9d2a98e4e2bd04fb30b89dffb34ec9dde06328998faa2a1220e2",
+    "byteSize": 309286
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-videos (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/videos/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "781e24718d7ac1c85f7d5c56dd665fba44b452974e25cadb0f0565503ccd61b5",
+    "byteSize": 280538
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-warehouse-racking-relocation (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/warehouse-racking-relocation/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "0c33ba20c0ba9efe432df85a15ee61ebedb1c8635a1ffc50de0c01258095715b",
+    "byteSize": 314593
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 datasets-warehouse (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/datasets/warehouse/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "a7c88b1d8fc0d320673941751d43dfb2cc68c86d10da9b746e8375ab2f5697e5",
+    "byteSize": 309770
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 developer (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/developer/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "452d4032a1df7b3a4123825ba4870eb0799adbec274fbbe21c7da924d2871df1",
+    "byteSize": 299040
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 do-movers-pack-for-you (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/do-movers-pack-for-you/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "ea1f9a610c75d5c602017fa28d5044dd87754c4af6e941e4be55bf00a2789bb6",
+    "byteSize": 279142
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 docs (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/docs/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "167f8f2098d71184b32f457d5e7fa6aac2c81f3ffba7cee0a1991b564483e9e9",
+    "byteSize": 270709
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 docs-container-deconsolidation (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/docs/container-deconsolidation/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "0378098748668426a95610fcff62a004d7217210ff7842da10b4bb2953197063",
+    "byteSize": 273486
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 docs-data-center-logistics (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/docs/data-center-logistics/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "5315f75a394f9f6ad85a2ad78a654b77c2c177b2d0fc177f42e0630e2fe10777",
+    "byteSize": 271593
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 docs-logistics-event-protocol (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/docs/logistics-event-protocol/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "6ab0b19aab3fbb195782bef607e9a374cb837bae9b81c3135d55850a1ec5fadd",
+    "byteSize": 269041
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 docs-logistics-ontology (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/docs/logistics-ontology/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "e9e00253bbfee1810668f9d401768baba5cf0d13810ae0684fcb4fe81926abba",
+    "byteSize": 269548
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 elite-asset-transition-white-glove-discreet-logistics (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/elite-asset-transition-white-glove-discreet-logistics/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "5bfafc9b597558284724cf1136d1ccbf315088aa7de72f2c2d73a20d1e06079f",
+    "byteSize": 299940
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 emergency-port-container-recovery-twic-labor-virginia (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/emergency-port-container-recovery-twic-labor-virginia/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "1920992d6f19030a48eefb491667b7867062eb58610532614bec65719ca60200",
+    "byteSize": 275912
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 entities (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/entities/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "d9a341b5e439dce0884666a6430cc019afdd0bfa2796a205c2eea244d3a23bfe",
+    "byteSize": 270222
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 entity-authority-layer (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/entity-authority-layer/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "12823bcadf6486b826ae7528496194a4771642d8c1a79ac7d43cbcb911661dfc",
+    "byteSize": 268236
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 export (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/export/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "1867aeb7b54c28f0cd8fbd0110caabd8e02d5e2f75edb0652a31af0761f6ff10",
+    "byteSize": 327556
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 faq (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/faq/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "acb214b0bf558c29e322d3f3446bc6977b2462c97c4dd93b30043e0da9dc5464",
+    "byteSize": 268975
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 ffe-logistics (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/ffe-logistics/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "11ea98c7f8cef5616904d99dc90b9290e332cf844ba5bcf82c49dbcdb34c2810",
+    "byteSize": 330873
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 final-mile-movers-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/final-mile-movers-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "ead9b3e1cd5fe9cb1d8393b1683e51a483f183432a6ada892f401edf05db40e7",
+    "byteSize": 273007
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 find-us (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/find-us/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "29555874cbc98fa97b3f7ecd07f876531ed8060bbb585209652633cf56aaff34",
+    "byteSize": 271627
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 flat-rate-guarantee (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/flat-rate-guarantee/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "720b22468f68d7d50d51007ca936aa3c5bb3cae0e6028237aea46bd94f56c5ed",
+    "byteSize": 269518
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 flat-rate-moving-quote-winchester (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/flat-rate-moving-quote-winchester/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "d2756dbd2b3e7cf3d7c7c744ea8ccf088920faaea6d033944e69915a74d09057",
+    "byteSize": 265531
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 full-service-packing-unpacking-systematic-asset-encapsulation (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/full-service-packing-unpacking-systematic-asset-encapsulation/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "863640dbbc4bc0b3f81d1cbf89f84215746908f37b7930a2fb4037a5d061af87",
+    "byteSize": 273747
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 government-movers-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/government-movers-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "939a82cb06760ac14da6f43c8178fa4c89d8431f39bc59abef14ec0619fc5dd9",
+    "byteSize": 273366
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 government-movers-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/government-movers-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "224cebf2ad2ba16eda388e670597a11a2427d4cdd12e4e9ec6050da6b93014a3",
+    "byteSize": 272992
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 gun-safe-movers-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/gun-safe-movers-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "a15760ccce790ff57b03fb2e6a71c1762748d8fb97f21cfbfb7c91ff34073062",
+    "byteSize": 274816
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 gun-safe-movers-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/gun-safe-movers-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "06b633ddeb8b1c1ed4fba890abc5e107e590db07de4590eeddf2f5c184b6be74",
+    "byteSize": 270581
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 gunsafe (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/gun-safe-movers/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "471b615471fbf184d1c6e871e2841bea871e4349495fae289b95746b29fb5a14",
+    "byteSize": 367571
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 heavy (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/heavy/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "47b4bcb63a502f13bd16a9ae6b1e207c652be99a42e9fa26b50f21733da4748c",
+    "byteSize": 301763
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 high-mass-logistics-long-distance-moving-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/high-mass-logistics-long-distance-moving-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "8c652a9cd1188a960813220f30f9d871958ad478a7e4121d17046e0005b82ec3",
+    "byteSize": 274428
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 how-container-deconsolidation-cross-docking-transloading-supports-virginia-freight-networks (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/how-container-deconsolidation-cross-docking-transloading-supports-virginia-freight-networks/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "c4a620a0ba8f2315188f5f5a2dd997e2aa73dd758ca4ff4e5c9bf095775a5b54",
+    "byteSize": 277640
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 how-container-loading-unloading-services-improve-port-logistics (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/how-container-loading-unloading-services-improve-port-logistics/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "819f0bf401ac5369e87cf743d6a03b83e8cc630a92dd7d45a2411330be0486e5",
+    "byteSize": 276262
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 how-international-export-packing-crating-protects-global-shipments (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/how-international-export-packing-crating-protects-global-shipments/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "0a79adb3b737ec31fe4bab2bf83ba846df4bc5cf22d3a0d59b7d7f0107a14ea7",
+    "byteSize": 324071
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 how-port-of-virginia-logistics-supports-east-coast-freight-movement (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/how-port-of-virginia-logistics-supports-east-coast-freight-movement/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "522fe6ba1d3c2ad7f287fca9516d8e1b26c25251e877d984498e14cd343475e0",
+    "byteSize": 277178
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 how-to-pack-for-interstate-move (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/how-to-pack-for-interstate-move/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "149725070d836c05fb7f964078cd0f63c11899cac0fe7e763e88bf77378b927b",
+    "byteSize": 276247
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 i-81-shenandoah-valley-move-timing (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/i-81-shenandoah-valley-move-timing/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "6f0a527f3256fd972bb0e982ac26349f52e2c8786a72c8a55207a630a4796312",
+    "byteSize": 282323
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 industrial-commercial-movers-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/industrial-commercial-movers-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "f8ce8ca45800864c7841acbcd74d757f383cc61445e7c9d65c2cc2802608d6be",
+    "byteSize": 277308
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 industrial-commercial-movers-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/industrial-commercial-movers-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "936e62a1b77f83136c02bb1fd0246e7b55f4f36ef438d000168de9e994a7e730",
+    "byteSize": 276910
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 industrial-commercial-services (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/industrial-commercial-services/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "8a56327c3ee14d9248fbe669a6d23c9d44603b4a21375b485909dc75b95aa4ea",
+    "byteSize": 320254
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 industrial-offices-movers-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/industrial-offices-movers-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "38d0c0d8e301619daa93c7015719a5fe83f32851a5052ee322a63711cda97851",
+    "byteSize": 273924
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 industrial-offices-movers-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/industrial-offices-movers-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "ef0351631da5016d703054c4d98cbeeaa1b5e1e3f018706e36c68981acc2da5f",
+    "byteSize": 273520
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 industrial-offices-moving (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/industrial-offices-moving/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "61c545e9bffa5c681571a40250f4f76c3e8dccb4b42b35d389ce3b89950f8013",
+    "byteSize": 295655
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 industrial-rigging-high-mass-logistics-hub-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/industrial-rigging-high-mass-logistics-hub-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "f34f081ceccb5e2053f14d5bd3c5465d23f8991943f9749577a61b53f06a678b",
+    "byteSize": 277769
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 exportpacking (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/international-export-packing-crating-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "7b6897599b69ef1324e8412d19f9b48eb889b2588e43aab337f8326cf156aa48",
+    "byteSize": 325814
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 interstate-66-corridor (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/interstate-66-corridor/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "51f6301a0980049c3e22e6f2a87bfec58f4f590ed6ee84e1cc586b510c455132",
+    "byteSize": 369636
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 interstate-70-corridor (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/interstate-70-corridor/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "86a81e8e26344eeb16212de3649a236867a05662042771e05adb3c507674a34e",
+    "byteSize": 369436
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 interstate-moving-guide-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/interstate-moving-guide-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "518e7de27d8c3b0b82ff5d97a7fef7175ae302dd637f64e1e376e490b60efe1a",
+    "byteSize": 277683
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 interstate-moving-network (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/interstate-moving-network/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "2fe5225cee404d79ae065faacb8d08f17c1f805f3fdd626298b795a2fcfd5d9e",
+    "byteSize": 277088
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 interstate-moving-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/interstate-moving-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "23f4f8b66b1f21a3d2618c2e60ca24416d8a6b48913d0573cf83c47f8c2286ca",
+    "byteSize": 275448
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 ispm15-movers-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/ispm15-movers-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "b830f54d518edc80efdbec087df5e19193eb2a9719af9e48efaa546469f92498",
+    "byteSize": 272726
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 it-equipment-moving-data-center-logistics-services-virginia (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/it-equipment-moving-data-center-logistics-services-virginia/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "7e0001564beeb7cfd2788f5217c9052c1eaea4e7071233e6f8f32b80cab98974",
+    "byteSize": 300471
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 junk-removal (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/junk-removal/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "424f4d043a0b9dcd2886c26a5b0dc25d7a8030450cef21e50a1aabcd1be91380",
+    "byteSize": 320857
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 knowledge-entities (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/knowledge-entities/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "840d6fb180e4f58892e75b7104d0c754ec2a1c41f657014a32d8e1138930e6cc",
+    "byteSize": 267624
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 knowledge-equipment (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/knowledge-equipment/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "608ce07f53eef72a859ffb49f7b5aa84425d45e6803b95e58dcdd161d911f784",
+    "byteSize": 268217
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 knowledge-events (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/knowledge-events/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "5e14f29b2329965138d620c1043a7b1c84771a3cad58f036bc736df1d0931694",
+    "byteSize": 268714
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 knowledge-locations (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/knowledge-locations/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "a04e69f43b4905cdfe8a9ad5fa1a9c9452ff93d6d6234af6f269788d151b6e6d",
+    "byteSize": 268307
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 knowledge-services (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/knowledge-services/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "d4efe4d14469ff47f0cc76289600d861e9d3ef92b936b50f42174470807811f8",
+    "byteSize": 267480
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 local-regional-movers-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/local-regional-movers-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "19851126a1593753c215900a28de38ee8c6bc5a1981305abb6ee45044865e6ae",
+    "byteSize": 273196
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 local-regional-movers-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/local-regional-movers-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "ef12e947efedf25aa590e4029e0cf8a2d07488fe9feabd61441e08df8aa18f0a",
+    "byteSize": 272584
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 local-regional-moving (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/local-regional-moving/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "9de0ca6e9dd0a88d3010acb20b03f721079465fb1e4edef27ad32df745e3c806",
+    "byteSize": 303936
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 logistics-data-engineering-center (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/logistics-data-engineering-center/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "077e859a55fad75596f8e96db852a7d6ddd1ce08f63345ab93e307e3773817d6",
+    "byteSize": 270734
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 long-distance-cross-country-moving (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/long-distance-cross-country-moving/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "1f9eac3f0c49706d8988fc57c3f9971539241faf23d6495902fbbb40269e3e6a",
+    "byteSize": 276304
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 long-distance-gun-safe-moving-winchester-va-to-las-vegas-nv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/long-distance-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "d355355d43b1da3ef4076ba1a9f5ae26bea011f370397699a2d63869b3d9e71a",
+    "byteSize": 273410
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 long-distance-movers-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/long-distance-movers-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "e7c4151f0e6c62567a80eca07410ed87840a9d5be34486f41f0ee9e04728cabe",
+    "byteSize": 273231
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 long-distance-movers-miami (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/long-distance-movers-miami/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "c764ceba42c86767b9c5a6d5b8a94060b1ccecaa3ed5d308ca88311a1e01e446",
+    "byteSize": 273109
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 long-distance-movers-winchester-va-guide (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/long-distance-movers-winchester-va-guide/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "8aba2ac4afb1205246fef1c9dd025314c2cda4adf3a22bb3afdbaf89b42d1e3d",
+    "byteSize": 273809
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 longdistance (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/long-distance-movers-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "cf1cf544650a43ed9eb5a18b312a06a3280a5c3ebf34b4db42226376e3b6c0bb",
+    "byteSize": 302566
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 looking-for-the-best-movers-near-me-your-guide-to-stress-free-moving-in-winchester-and-martinsburg (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/looking-for-the-best-movers-near-me-your-guide-to-stress-free-moving-in-winchester-and-martinsburg/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "39ae6376d5464af752e3a08fbe30fef0dfef3628e96c685c267351b098eecb1e",
+    "byteSize": 271726
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 martinsburg-wv-movers-full-service-guide (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/martinsburg-wv-movers-full-service-guide/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "3b59ff930d057af4df7eb039f428eef6e8f29b1871c70f075751d6947c3bcb79",
+    "byteSize": 271740
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 medical-lab-equipment-relocation (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/medical-lab-equipment-relocation/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "389d92f5374fc653239b49ae6118dbc66e8c011d175f504c822df81082e160a9",
+    "byteSize": 332998
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 military-government-hhg-moving-requirements-contractors (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/military-government-hhg-moving-requirements-contractors/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "d9c4ee1f19a7fb9d502a912375ecaee2c1e25c28c1ef37793015c5263aebab67",
+    "byteSize": 297275
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 militarygov (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/military-government-moving/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "cba3017fba7157355a3319ac94df76f6035512421b78552cb75505d3c43e8646",
+    "byteSize": 326442
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 military-movers-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/military-movers-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "deade5da657336b119e401d04caded5f10b4c708d4dae2b8f4e6a37e68c94c64",
+    "byteSize": 272937
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 military-movers-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/military-movers-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "38a9aa012493cd55d0d86a05caf10ec83c40c554dcfe5a65a4fc24f914a79844",
+    "byteSize": 272563
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 moving-a-piano (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/moving-a-piano/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "fee4e5765104a6aca678726711a087f189e3e59c8c7f7fd52026ad34b845633b",
+    "byteSize": 281260
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 moving-an-office-inside-a-plant-or-warehouse (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/moving-an-office-inside-a-plant-or-warehouse/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "401a33c950d0752a003fee7accdcb660a8c587bb27aecf04c35cc4a43f7c9fb8",
+    "byteSize": 286905
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 moving-and-storage (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/moving-and-storage/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "cb6dde6540ea20dc8cb7a14b80a5d552b34e416eab65d16331c6c312946edca4",
+    "byteSize": 320341
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 martinsburg (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "7eb4889bec56fe8a3ae867bc0cd615c607756930c5c089566b7f295c99e1bc2f",
+    "byteSize": 269039
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 winchester (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/moving-company-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "ad34ff5f7cab0bd898503cd7772e32b8a0940a0031f5e79d1d7c7200176080d3",
+    "byteSize": 268857
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 moving-cost-guide-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/moving-cost-guide-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "db003037df403dbcc83e37f5f9f49124790b1c003f2cf0259e1adffdebb20bbd",
+    "byteSize": 270006
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 moving-questions-answers (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/moving-questions-answers/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "c19aa20ceef4c5972190be2392723885f24e388079b81d927840931ad5e7d8f9",
+    "byteSize": 264929
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 moving-tips-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/moving-tips-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "d28906c50632a7cc677291085171fed84fcd5edaa7bf7fa14a7da11f815e0d66",
+    "byteSize": 270625
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 office-moving-movers-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/office-moving-movers-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "720fa3a7c84222edb3b9f4651850ec07f49ff7d8331d8c0bccd37d1f2d960d0e",
+    "byteSize": 273104
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 office-moving-movers-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/office-moving-movers-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "3ef55c8fef2a034aa088ad0048e2d72124b6b03f5b96a8859b2281a2eb2bbb0c",
+    "byteSize": 272718
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 online-estimate (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/online-estimate/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "384c9944b48984513a04d232d758ea6a5478b1882ab946e621529bea5d247ec7",
+    "byteSize": 264735
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 packing-cost-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/packing-cost-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "5bb1f2c5da46e677e2d22b3865f9ea631ebb5da4c1b60aaa99a6b4cd7ba9f549",
+    "byteSize": 272027
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 packing-movers-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/packing-movers-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "4d28e84acf516b20c253c8b14d8d8ca2bef1f9384a6afe6ff88934fb8c9a8f81",
+    "byteSize": 272892
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 packing-services-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/packing-services-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "b7ba9e4d0bc481d1ce8208557b0e0dba52b401727ed0cb43bdca76182f1846e3",
+    "byteSize": 272229
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 packing-unpacking-services-2 (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/packing-unpacking-services-2/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "5110f9f99bd5127f884b85ba80d678da38272abdb022b089d7672efba5becf91",
+    "byteSize": 302969
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 piano-antique-movers-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/piano-antique-movers-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "ff28457665c8d4377732a6e9542d781a194c6c3b79c5cc6b55353e88b8246004",
+    "byteSize": 273550
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 port-of-virginia-container-loading-unloading-logistics-services (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/port-of-virginia-container-loading-unloading-logistics-services/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "d7ff7b0e22b82593dc2ff3982586f02e71d2505810d4a77a53862cbf6702279e",
+    "byteSize": 275877
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 privacy-policy (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/privacy-policy/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "30c0d497e9eb1ae51011afa131051abc875a35dfcc0c05a519942d38762c61ce",
+    "byteSize": 264397
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 professional-packing-services-moving-cost-estimator (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/professional-packing-services-moving-cost-estimator/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "aca10d947d44b39220f7da38871fc132dd788a7382b5815b4714093f1ee5d7d6",
+    "byteSize": 276875
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 quote (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/quote/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "9fcabd84382d3de0b44bfd35a2262cafe4de23b3b4f3c42bf31688d8c66bd56a",
+    "byteSize": 271145
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 reading-an-ispm-15-mark (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/reading-an-ispm-15-mark/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "e3fde9e9667635ac6304e42c29ce275255132045217fe53ba255424e3e285068",
+    "byteSize": 278965
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 recursive-indexing-layer (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/recursive-indexing-layer/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "6dbbebb031edd920872b666375b38061960c61e0ce9cff42e100943b697df268",
+    "byteSize": 267156
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 reliable-movers-in-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/reliable-movers-in-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "dd19abda6f1ab9fc93804c9efcfa54997f036efdb81f9ee80c47c4483ef959eb",
+    "byteSize": 270882
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 relocation-engineering-framework (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/relocation-engineering-framework/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "5c39b0bd6d714034cde5205850da78011a74077ecd834b95c634d5ed3186ca75",
+    "byteSize": 276507
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 relocation-engineering-standards-portal (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/relocation-engineering-standards-portal/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "cac9c7d75102225cec233fe2731d481063e8ec11191be3c871e46ca6378f94ac",
+    "byteSize": 276023
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 residential (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/residential-moving/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "c8f1b297dbe167feb3492832a0aeed4b43bf4e1e78a51d0466b37e06c0ea8dd7",
+    "byteSize": 300397
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 route81 (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/route81/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "6c052c0f5e0faec44b9467d2d99139ac45ed52d113b47f372f7016dbc7f29bcc",
+    "byteSize": 360527
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 safe-moving-protocol (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/safe-moving-protocol/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "8b524bb62b14fe9a3a398d90d8633bb52e0033f03598866c3543dcd0e52517b9",
+    "byteSize": 276399
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 senior-moving (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/senior-moving/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "c6beda8cae987932ddc7f6b904b452823b7104dd4221baa6a271ad19c933763b",
+    "byteSize": 310595
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 service-areas-moving-company (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/service-areas-moving-company/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "963056338fdb5c9a34f3e9e7c877b7b04756f54f80a3f1a4dd07aef5d2facca0",
+    "byteSize": 271931
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 services (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/services/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "d8ffbc97e7c2178a5bd0016ead27b9ebda0d59d89428f848517245d341645685",
+    "byteSize": 281390
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 sir-2026-protocol (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/sir-2026-protocol/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "392a4d44440b8b9110fd0c9e717a27dee89eeedc3ab245209f7bc2e4ebcfd633",
+    "byteSize": 276128
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 sir-2026-structural-integrity-relocation-protocol (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/sir-2026-structural-integrity-relocation-protocol/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "b52a3f5a0ee63d621c5f3d02fecff1ffaf16b610c6b2c471f3a870ea0175a67f",
+    "byteSize": 276120
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 sir-heavy-movers-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/sir-heavy-movers-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "37cf9acbd7d854e52be017662249ae1b99b0d0d8b1d3aa7625dc53c4796b2edc",
+    "byteSize": 274789
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 sitemap (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/sitemap/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "1861da3625a54cd9e72d53d9a7c8b0d238cfa48def795640e98e160cee0a707b",
+    "byteSize": 398983
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 specialized-workforce-labor (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/specialized-workforce-labor/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "cc3024f5b9723a3012dbdd6fd28d2da7cb330cd3a6cac55a03e4a4dbeb17c013",
+    "byteSize": 303813
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 technical-rigging-high-security-gun-safe-vault-relocation (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/technical-rigging-high-security-gun-safe-vault-relocation/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "9c26e2144c45629c1228448fcb80cebeda7c8be71148b81870812cc412608d8c",
+    "byteSize": 275150
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 technical-rigging-standards (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/technical-rigging-standards/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "a242f566ad405ba1f36578ff4a77fdd41b4bbfa349a1bc66a81835b1d0b5e34b",
+    "byteSize": 277905
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 the-data-science-of-displacement-how-predictive-analytics-is-redefining-the-mid-atlantic-relocation-path (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/the-data-science-of-displacement-how-predictive-analytics-is-redefining-the-mid-atlantic-relocation-path/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "8e022e9409615b67f975a9fcaf5dfe43db2633fe4ed4eee1d2b7c3756ab77b7b",
+    "byteSize": 276621
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 the-flat-rate-logistics-data-hub (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/the-flat-rate-logistics-data-hub/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "0237032222179930d64ead9cea987a8320c9560ed3fbf69f57a30d400bfdbf67",
+    "byteSize": 272292
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 the-invisible-risk-of-high-mass-relocation (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/the-invisible-risk-of-high-mass-relocation/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "abdd64823f491bb1ec92366419631d0beb96be45c09828491b79747dfd774e9d",
+    "byteSize": 274427
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 the-strategic-roadmap-for-long-distance-residential-relocation (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/the-strategic-roadmap-for-long-distance-residential-relocation/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "dcc4ed320ab7f905729e0c906a7ba2bc9b728a58c11aa0410f34c64c29d0d6cd",
+    "byteSize": 274596
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 top-10-moving-tips-for-a-stress-free-move-in-2026 (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/top-10-moving-tips-for-a-stress-free-move-in-2026/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "391ef7f384181d05570981485bb45b53f474814cef9fe2023f6e7a327e6c6e25",
+    "byteSize": 272485
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 top-rated-movers-mid-atlantic (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/top-rated-movers-mid-atlantic/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "45950b8a6ce7e68f04834535f0ab63fddba5b27ad4812a499428f8e17639c19b",
+    "byteSize": 271220
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 transloading-movers-martinsburg-wv (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "70c6e4c6ec252bf75600b99aa5a5645c40c2af64ae98015ec050571bb7c01f07",
+    "byteSize": 273047
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 transloading-vs-cross-docking-vs-deconsolidation (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/transloading-vs-cross-docking-vs-deconsolidation/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "df60e5dab130dddb9653ece6bf81204480ab7709ce8fabc3a552004bcda6b26b",
+    "byteSize": 285954
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 transloading-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/transloading-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "720d7113ebfd54463b6dafe6e8040de8857f0c87c7d89893c4e33740781ad95e",
+    "byteSize": 317271
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 videos (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/videos/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "9b704096fe84857dd99a6ff79405e622e00384b05acce39e87bb128cb2d1ba67",
+    "byteSize": 288081
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 virginia-inland-port-freight-transloading-operations (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/virginia-inland-port-freight-transloading-operations/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "1522d688653e24bcaaf721af396eb09b2bf48decb7bb0d6d887a9db151d6d8bb",
+    "byteSize": 275577
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 virginia-inland-port-transloading (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/virginia-inland-port-transloading/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "a0bfd4475308618b32efc65377745e4abe723158510d5a17105b1e8126db1da7",
+    "byteSize": 327824
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 virginia-to-california-movers (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/virginia-to-california-movers/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "ad9a13273fd4a07063ddf6d778e99bdb4c94e83712430fdab03ba08e5584cb57",
+    "byteSize": 276295
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 virginia-to-florida-movers (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/virginia-to-florida-movers/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "77ba5e3560f733fcffb34b226231c11d22868199949627d8fe0f5ce36c36bc6c",
+    "byteSize": 275685
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 virginia-to-nevada-movers (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/virginia-to-nevada-movers/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "f31a5f634b41a29d311badfa6bfc815f110a84a80b8585f6c4ef308881d80966",
+    "byteSize": 276390
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 virginia-to-new-york-movers (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/virginia-to-new-york-movers/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "aa6174b4e814a38016d7582e3344e2b005e4b9628ba4999e7896b272d7d5dc35",
+    "byteSize": 275722
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 virginia-to-texas-movers (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/virginia-to-texas-movers/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "a09a26725fba44f30a2f5257c46cc5c572ffb8af7731612a6e774dc771595aab",
+    "byteSize": 275595
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 warehouse-racking-relocation (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/warehouse-racking-relocation/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "eca530ac7f6518301551a33eb095ccc4117a6bd59a834042e0199ba156c7ed9c",
+    "byteSize": 336454
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 warehouse-relocation (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/warehouse-relocation/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "f2e156fb09c379c99f681e0fdbca0891a5f5ceb2a0d03dbf365c5ef3d40f334c",
+    "byteSize": 313899
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 when-an-item-needs-a-custom-crate (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/when-an-item-needs-a-custom-crate/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "fa14e90614eb637e2219b73ab81feac518682302068b1ad5814b1bbbc4d23354",
+    "byteSize": 283541
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Route Document \u2014 white-glove-delivery-winchester-va (per-route HTML)",
+   "contentUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
+   "encodingFormat": "text/html",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "456eb75d3e1931009677b8341cd435e70ca50c26d62b56e359825fdfdab396a9",
+    "byteSize": 328587
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "llms-full.txt",
+   "contentUrl": "https://theflatratemovers.com/llms-full.txt",
+   "encodingFormat": "text/plain",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "6906ddbdaf0b38b72c3bb806184aef9d28a7666aabba8aa7076686f4601ece01",
+    "byteSize": 403563
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Code \u2014 scripts/build-routes.js (per-route document generator)",
+   "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/the-flat-rate-machine/main/scripts/build-routes.js",
+   "encodingFormat": "text/javascript",
+   "license": "https://opensource.org/licenses/MIT",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "3bc2668104236244ad7b8073584f47d1f9244fdae523546367e87ace5b4fb18c",
+    "byteSize": 20624
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Code \u2014 scripts/build-llms-full.js (llms-full.txt generator)",
+   "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/the-flat-rate-machine/main/scripts/build-llms-full.js",
+   "encodingFormat": "text/javascript",
+   "license": "https://opensource.org/licenses/MIT",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "00b2f42617b57e5c12e9d5c826d8580c55bd882acc526b2591ced98badc66eef",
+    "byteSize": 18326
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Code \u2014 scripts/route-assets/main.js (site main script, per-route edition)",
+   "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/the-flat-rate-machine/main/scripts/route-assets/main.js",
+   "encodingFormat": "text/javascript",
+   "license": "https://opensource.org/licenses/MIT",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "2edbccbcdc91d573fa789d83ecdc5d09d376043e376fcdc0f35b8fb5d2a45bdf",
+    "byteSize": 163924
+   }
+  },
+  {
+   "@type": "DataDownload",
+   "name": "Code \u2014 scripts/route-assets/webmcp.js (WebMCP agent-tools script, per-route edition)",
+   "contentUrl": "https://raw.githubusercontent.com/TheFlatRateMovers/the-flat-rate-machine/main/scripts/route-assets/webmcp.js",
+   "encodingFormat": "text/javascript",
+   "license": "https://opensource.org/licenses/MIT",
+   "dateModified": "2026-10-31",
+   "digest": {
+    "algorithm": "SHA-256",
+    "value": "5dc1473f2a3819a3af535233b0bd808519ba95d2f8b126dfef4f8b4dcbfdb977",
+    "byteSize": 19062
+   }
   }
  ],
  "mainEntity": {

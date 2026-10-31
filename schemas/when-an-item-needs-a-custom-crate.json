@@ -1,0 +1,163 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://theflatratemovers.com/#organization",
+      "@type": "Organization",
+      "email": "ratemovers@gmail.com",
+      "foundingDate": "2010-06",
+      "location": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "height": 1024,
+        "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+        "width": 1024
+      },
+      "name": "The Flat Rate Movers LLC",
+      "sameAs": [
+        "https://www.instagram.com/theflatratemovers/",
+        "https://www.threads.com/@theflatratemovers",
+        "https://x.com/ratemovers",
+        "https://www.youtube.com/@theflatratemovers",
+        "https://github.com/TheFlatRateMovers",
+        "https://medium.com/@ratemovers"
+      ],
+      "slogan": "Guaranteed Flat Rate or Your Move is Free!",
+      "telephone": "+1-540-422-2153",
+      "url": "https://theflatratemovers.com/"
+    },
+    {
+      "@id": "https://theflatratemovers.com/when-an-item-needs-a-custom-crate/#post",
+      "@type": "BlogPosting",
+      "about": {
+        "@id": "https://theflatratemovers.com/#service-crating"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Henry Pitts Jr."
+      },
+      "contentLocation": [
+        {
+          "@type": "Place",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 39.18711576,
+            "longitude": -78.1668352
+          },
+          "name": "The Flat Rate Movers — Winchester, VA"
+        },
+        {
+          "@type": "Place",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 39.48319665,
+            "longitude": -77.94760443
+          },
+          "name": "Flat Rate Movers Martinsburg WV"
+        }
+      ],
+      "dateModified": "2026-10-31",
+      "datePublished": "2026-10-31",
+      "description": "The crate-or-padding decision made plain: five triggers that settle it (fragile structure, hand-offs, shape, border, storage), a piece-by-piece decision table, what padding cannot do, third-party cost ranges labeled as context, the ISPM 15 rules that govern an export crate's wood, and how crating is surveyed and quoted at one flat rate from Winchester VA and Martinsburg WV to the Port of Virginia.",
+      "editor": {
+        "@type": "Person",
+        "jobTitle": "Owner, The Flat Rate Movers",
+        "name": "Henry Pitts"
+      },
+      "headline": "When an item needs a custom crate and when padding is enough",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://theflatratemovers.com/blog/#blog"
+      },
+      "mainEntityOfPage": "https://theflatratemovers.com/when-an-item-needs-a-custom-crate/",
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    },
+    {
+      "@id": "https://theflatratemovers.com/when-an-item-needs-a-custom-crate/#breadcrumb",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/",
+          "name": "Home",
+          "position": 1
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/blog/",
+          "name": "Blog",
+          "position": 2
+        },
+        {
+          "@type": "ListItem",
+          "item": "https://theflatratemovers.com/when-an-item-needs-a-custom-crate/",
+          "name": "When an item needs a custom crate and when padding is enough",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "@id": "https://theflatratemovers.com/when-an-item-needs-a-custom-crate/#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Building a rigid wooden crate around one specific item, measured to that item, with the piece secured inside by blocking, bracing and cushioning so it cannot shift in transit (7). Packing wraps an item in flexible protection; a crate gives it a rigid shell freight systems can stack and forklift (1, 2)."
+          },
+          "name": "What is custom crating?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Published third-party guides put custom crating at roughly $150 to $1,000 or more per crate, against $5 to $50 for boxes and specialty cartons, with size, materials and complexity driving the figure (3). We publish no per-crate price: crating is scoped per job and quoted inside the one flat rate in writing (7)."
+          },
+          "name": "How much does custom crating cost?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often, yes. This Old House notes that many custom-built crates are reusable, spreading the build cost across future moves (1). Whether a crate suits a second journey depends on its construction and the next piece — reuse is settled when the next job is scoped, not assumed."
+          },
+          "name": "Can a custom crate be reused?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For its solid wood components, yes. ISPM 15 requires solid wood packaging in international trade to be treated — heat treatment: a core temperature of at least 56 degrees Celsius held for 30 minutes — and marked (4, 5). Plywood and oriented strand board are exempt (5). Our export crates are built to ISPM 15 from compliant, heat-treated, marked wood (7)."
+          },
+          "name": "Does an export crate need heat-treated wood?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A skid is a base — runners that carry a load and let a forklift underneath; a pallet is a flat deck on the same principle. Neither has walls. A crate is the base plus an enclosure: panels and a lid that turn protection from a platform into a structure, its interior fitted so the piece cannot shift (7)."
+          },
+          "name": "What is the difference between a crate, a pallet and a skid?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The build follows the survey: the piece is measured, the crate designed to its weight, fragile points and center of mass, the item wrapped, and only then is the wood closed around it (7). The sequence is scheduled when the job is scoped, ahead of move day. We publish no fixed lead time."
+          },
+          "name": "How long does it take to build a custom crate?"
+        }
+      ]
+    }
+  ]
+}

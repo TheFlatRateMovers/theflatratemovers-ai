@@ -5,7 +5,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-operations",
       "@type": "Service",
       "name": "The Flat Rate Movers — Search Intent Coverage Operations Dataset",
-      "description": "The live intent-coverage rubric of The Flat Rate Movers: 2736 generated rows, each one a query string a customer or an AI assistant can use to find a company service, resolved to the exact page that answers it, that page’s per-page JSON, the dataset files behind the answer, and the service’s node in the entity graph. Rows are generated from the estate’s own registries — 28 services, 204 pages, two branch locations, three corridors and the 53-feature service-area footprint — plus the blog question bank’s 100 real question phrasings, and the rubric is regenerated whenever those registries change. Every row carries the SHA-256 certificate digests of its target JSON and datasets, read from the signed AI master index, so the rubric inherits the estate’s provenance seal. Coverage spans all 28 services of both branches, Winchester, VA and Martinsburg, WV, along the I-81, I-66 and I-70 corridors. Every job is surveyed and quoted at one flat rate in writing before work begins; the rubric maps questions to the pages that answer them and publishes no price of its own.",
+      "description": "The live intent-coverage rubric of The Flat Rate Movers: 2738 generated rows, each one a query string a customer or an AI assistant can use to find a company service, resolved to the exact page that answers it, that page’s per-page JSON, the dataset files behind the answer, and the service’s node in the entity graph. Rows are generated from the estate’s own registries — 28 services, 205 pages, two branch locations, three corridors and the 53-feature service-area footprint — plus the blog question bank’s 100 real question phrasings, and the rubric is regenerated whenever those registries change. Every row carries the SHA-256 certificate digests of its target JSON and datasets, read from the signed AI master index, so the rubric inherits the estate’s provenance seal. Coverage spans all 28 services of both branches, Winchester, VA and Martinsburg, WV, along the I-81, I-66 and I-70 corridors. Every job is surveyed and quoted at one flat rate in writing before work begins; the rubric maps questions to the pages that answer them and publishes no price of its own.",
       "keywords": [
         "search intent coverage",
         "query rubric",
@@ -170,7 +170,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-scope",
       "@type": "Dataset",
       "name": "The Flat Rate Movers — Intent Coverage Scope Dataset",
-      "description": "What the intent-coverage rubric covers, and from what sources. Inputs: the machine registries services.json (28 services), pages.json (204 pages), locations.json (the two distinct branches — Winchester, The Flat Rate Movers, and Martinsburg, Flat Rate Movers Martinsburg WV, never blended), corridors.json (Interstate 81, Interstate 66, Interstate 70) and service-area.geojson (53 features: Winchester footprint 32 areas, Martinsburg footprint 35 areas, 14 areas shared); the signed AI master index (certificate digests); and the blog question bank (10 categories of the top-10 questions customers actually ask, 100 phrasings). Output: one row per generated query string across five intent classes — navigational-local (2084), cost (229), how-process (112), best-choice (168), ai-question (143). Rows exist only where the estate has a real page that answers the string; the scope of the rubric is exactly the scope of the published estate, nothing wider.",
+      "description": "What the intent-coverage rubric covers, and from what sources. Inputs: the machine registries services.json (28 services), pages.json (205 pages), locations.json (the two distinct branches — Winchester, The Flat Rate Movers, and Martinsburg, Flat Rate Movers Martinsburg WV, never blended), corridors.json (Interstate 81, Interstate 66, Interstate 70) and service-area.geojson (53 features: Winchester footprint 32 areas, Martinsburg footprint 35 areas, 14 areas shared); the signed AI master index (certificate digests); and the blog question bank (10 categories of the top-10 questions customers actually ask, 100 phrasings). Output: one row per generated query string across five intent classes — navigational-local (2086), cost (229), how-process (112), best-choice (168), ai-question (143). Rows exist only where the estate has a real page that answers the string; the scope of the rubric is exactly the scope of the published estate, nothing wider.",
       "keywords": [
         "coverage scope",
         "service registry",
@@ -613,7 +613,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-totals",
       "@type": "Dataset",
       "name": "The Flat Rate Movers — Intent Coverage Totals, Areas and Certificate Dataset",
-      "description": "Totals for this generation of the intent-coverage rubric, computed by the generator run of 2026-10-31: 2736 rows across 28 services — navigational-local (2084), cost (229), how-process (112), best-choice (168), ai-question (143). Per-service row counts are carried on the 28 coverage nodes in this file. Area coverage follows the service-area GeoJSON: 53 features in total; the Winchester footprint is 32 areas and the Martinsburg footprint is 35 areas, with 14 areas served by both branches and recorded as shared. The canonical serialization of the rows hashes to the SHA-256 digest recorded on this node (intentRowsDigest), which is also stored in the rubric database, so any reader can re-prove that the published totals describe the exact row set the generator produced. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on this node.",
+      "description": "Totals for this generation of the intent-coverage rubric, computed by the generator run of 2026-10-31: 2738 rows across 28 services — navigational-local (2086), cost (229), how-process (112), best-choice (168), ai-question (143). Per-service row counts are carried on the 28 coverage nodes in this file. Area coverage follows the service-area GeoJSON: 53 features in total; the Winchester footprint is 32 areas and the Martinsburg footprint is 35 areas, with 14 areas served by both branches and recorded as shared. The canonical serialization of the rows hashes to the SHA-256 digest recorded on this node (intentRowsDigest), which is also stored in the rubric database, so any reader can re-prove that the published totals describe the exact row set the generator produced. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on this node.",
       "keywords": [
         "coverage totals",
         "rows digest",
@@ -677,11 +677,11 @@
           "encodingFormat": "application/ld+json"
         }
       ],
-      "intentRowsDigest": "45ee15c734da4ad5cbaa506f7b84f17a0a39885f865cbc876bc1fada4755bae6",
+      "intentRowsDigest": "671f2549176e3e4656facf37aa583b3bfb3af8b1af16ae83983a5e3345ca2d58",
       "intentRowsDigestAlgorithm": "SHA-256",
       "rowSources": {
-        "estateGenerated": 2736,
-        "pageDerived": 279,
+        "estateGenerated": 2738,
+        "pageDerived": 281,
         "gscObservedRows": 0
       },
       "gscEvidence": {
@@ -700,9 +700,9 @@
         "pagesStale": 30
       },
       "pageDerived": {
-        "pagesConsidered": 162,
-        "pagesWithRows": 158,
-        "rowsEmitted": 279,
+        "pagesConsidered": 163,
+        "pagesWithRows": 159,
+        "rowsEmitted": 281,
         "duplicatesSkipped": 77,
         "gateExcluded": 0
       },
@@ -721,8 +721,8 @@
         }
       },
       "pageCoverage": {
-        "pagesTargeted": 204,
-        "pagesTotal": 204,
+        "pagesTargeted": 205,
+        "pagesTotal": 205,
         "uncoveredPages": []
       },
       "rowsByArea": [
@@ -1107,9 +1107,9 @@
         "i-81": 9
       },
       "outcomeRollup": {
-        "rows": 2736,
+        "rows": 2738,
         "byHighestGate": {
-          "none": 2736,
+          "none": 2738,
           "crawled": 0,
           "indexed": 0,
           "understood": 0,
@@ -1118,45 +1118,45 @@
         },
         "byStatus": {
           "unknown": 1119,
-          "awaiting-observation": 1617,
+          "awaiting-observation": 1619,
           "partial": 0,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 2736,
+            "unknown": 2738,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 2736,
+            "unknown": 2738,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 2736,
+            "unknown": 2738,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 2736,
+            "unknown": 2738,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 2736,
+            "unknown": 2738,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           }
         }
       },
-      "outcomeDigest": "5fb69167d3c0956fd57d52028446f801c609c1019002d9764c0fe495e9504611",
+      "outcomeDigest": "8bfd2fee56165b9de648f9605b4b5ae22dae86e788a98ce360bfe1084381a300",
       "certificate": {
         "@type": "PropertyValue",
         "name": "Certificate — signed AI master index distribution",
@@ -1934,7 +1934,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-gun-safe",
       "@type": "Dataset",
       "name": "Intent Coverage — Gun Safe Moving",
-      "description": "Generated intent coverage for Gun Safe Moving: 81 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-gun-safe.",
+      "description": "Generated intent coverage for Gun Safe Moving: 83 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-gun-safe.",
       "keywords": [
         "gun safe moving questions",
         "gun safe movers"
@@ -1988,23 +1988,23 @@
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-gun-safe",
-      "queryRows": 81,
+      "queryRows": 83,
       "queryRowsByIntentClass": {
-        "navigational-local": 62,
+        "navigational-local": 64,
         "cost": 8,
         "how-process": 4,
         "best-choice": 6,
         "ai-question": 1
       },
       "queryRowsBySource": {
-        "generated": 81,
+        "generated": 83,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 7,
       "outcomeRollup": {
-        "rows": 81,
+        "rows": 83,
         "byHighestGate": {
-          "none": 81,
+          "none": 83,
           "crawled": 0,
           "indexed": 0,
           "understood": 0,
@@ -2013,38 +2013,38 @@
         },
         "byStatus": {
           "unknown": 47,
-          "awaiting-observation": 34,
+          "awaiting-observation": 36,
           "partial": 0,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 81,
+            "unknown": 83,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 81,
+            "unknown": 83,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 81,
+            "unknown": 83,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 81,
+            "unknown": 83,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 81,
+            "unknown": 83,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0

@@ -4,31 +4,36 @@
     {
       "@id": "https://theflatratemovers.com/datasets/intent-coverage/#dataset",
       "@type": "Dataset",
-      "name": "The Flat Rate Movers — Search Intent Coverage Operations Dataset",
-      "description": "The live intent-coverage rubric of The Flat Rate Movers: 1218 generated rows, each one a query string a customer or an AI assistant can use to find a company service, resolved to the exact page that answers it, that page’s per-page JSON, the dataset files behind the answer, and the service’s node in the entity graph. Rows are generated from the estate’s own registries — 28 services, 167 pages, two branch locations, three corridors and the 53-feature service-area footprint — plus the blog question bank’s 100 real question phrasings, and the rubric is regenerated whenever those registries change. Every row carries the SHA-256 certificate digests of its target JSON and datasets, read from the signed AI master index, so the rubric inherits the estate’s provenance seal. Coverage spans all 28 services of both branches, Winchester, VA and Martinsburg, WV, along the I-81, I-66 and I-70 corridors. Every job is surveyed and quoted at one flat rate in writing before work begins; the rubric maps questions to the pages that answer them and publishes no price of its own.",
-      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
-      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "DOI",
-        "value": "10.5281/zenodo.23818766",
-        "url": "https://doi.org/10.5281/zenodo.23818766"
-      },
-      "isAccessibleForFree": true,
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization"
-      },
-      "dateModified": "2026-10-30",
-      "temporalCoverage": "2010/2026",
-      "spatialCoverage": [
+      "about": [
         {
-          "@id": "https://theflatratemovers.com/#winchester"
-        },
-        {
-          "@id": "https://theflatratemovers.com/#martinsburg"
+          "@id": "https://theflatratemovers.com/#service-catalog"
         }
       ],
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "foundingDate": "2010-06",
+        "name": "The Flat Rate Movers",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "dateModified": "2026-11-01",
+      "description": "The live intent-coverage rubric of The Flat Rate Movers: 3096 generated rows, each one a query string a customer or an AI assistant can use to find a company service, resolved to the exact page that answers it, that page’s per-page JSON, the dataset files behind the answer, and the service’s node in the entity graph. Rows are generated from the estate’s own registries — 29 services, 212 pages, two branch locations, three corridors and the 53-feature service-area footprint — plus the blog question bank’s 100 real question phrasings, and the rubric is regenerated whenever those registries change. Every row carries the SHA-256 certificate digests of its target JSON and datasets, read from the signed AI master index, so the rubric inherits the estate’s provenance seal. Coverage spans all 29 services of both branches, Winchester, VA and Martinsburg, WV, along the I-81, I-66 and I-70 corridors. Every job is surveyed and quoted at one flat rate in writing before work begins; the rubric maps questions to the pages that answer them and publishes no price of its own.",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        }
+      ],
+      "identifier": "https://doi.org/10.5281/zenodo.23818766",
+      "isAccessibleForFree": true,
       "keywords": [
         "search intent coverage",
         "query rubric",
@@ -37,18 +42,33 @@
         "transloading winchester va",
         "questions customers ask movers"
       ],
-      "distribution": [
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "name": "The Flat Rate Movers — Search Intent Coverage Operations Dataset",
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "foundingDate": "2010-06",
+        "name": "The Flat Rate Movers",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemovers/",
+          "https://www.threads.com/@theflatratemovers",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "spatialCoverage": [
         {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
-          "encodingFormat": "application/json"
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
         }
       ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-catalog"
-        }
-      ]
+      "temporalCoverage": "2010/2026",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/"
     },
     {
       "@id": "https://theflatratemovers.com/#organization",
@@ -242,19 +262,19 @@
       "telephone": "+1-540-422-2153"
     },
     {
-      "@type": "WebPage",
       "@id": "https://theflatratemovers.com/datasets/intent-coverage/",
-      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
-      "name": "Search Intent Coverage Dataset",
+      "@type": "WebPage",
       "breadcrumb": {
         "@id": "https://theflatratemovers.com/datasets/intent-coverage/#breadcrumb"
       },
+      "dateModified": "2026-10-30",
       "image": {
         "@type": "ImageObject",
-        "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
-        "caption": "The Flat Rate Movers logo — company brand image, not a job photo."
+        "caption": "The Flat Rate Movers logo — company brand image, not a job photo.",
+        "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png"
       },
-      "dateModified": "2026-10-30"
+      "name": "Search Intent Coverage Dataset",
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/"
     },
     {
       "@id": "https://theflatratemovers.com/datasets/intent-coverage/#breadcrumb",

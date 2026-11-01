@@ -43628,7 +43628,7 @@
       "@id": "https://theflatratemovers.com/#dataset-answer-evidence-fragments",
       "@type": "Dataset",
       "name": "Answer Fragments",
-      "description": "The estate’s answer fragments — 2243 passages extracted from the live estate (83 FAQ answers from the per-page JSON schema, 2160 heading-led passages from the page texts). Each fragment carries its owning page, heading-path locator, full text, a SHA-256 text hash for drift detection, the schema types present on its page, evidence links to the sealed records backing its facts, its surface copies, and the rubric questions bound to it.",
+      "description": "The estate’s answer fragments — 2244 passages extracted from the live estate (83 FAQ answers from the per-page JSON schema, 2161 heading-led passages from the page texts). Each fragment carries its owning page, heading-path locator, full text, a SHA-256 text hash for drift detection, the schema types present on its page, evidence links to the sealed records backing its facts, its surface copies, and the rubric questions bound to it.",
       "keywords": [
         "answer engines",
         "citation evidence",
@@ -69964,6 +69964,44 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
+          "locator": "Developer resources — the machine-readable site. › Office data",
+          "heading": "Office data",
+          "questionShaped": false,
+          "text": "Office data datasets-office.json → — 8 published nodes about the office moving service, from both branches, never merged: 3 as Datasets (CC BY 4.0) — office types and size bands, workstation, furniture and equipment taxonomy, service areas, dispatch and quote path; 2 as Service data — office move operations, building access, protection and compliance; 3 as Articles — phasing models and day-one planning, commercial terms and cost drivers (flat-rate-in-writing only; domain figures labeled), buyer personas and trigger events. Hub page: Office Moving · Hub JSON: commercial-office-moving-2.json → .",
+          "textHash": "c05395cb36fe529bc4fd6148a391908d5516c482e5af17566cc6c1e4489bf5d6",
+          "bodyChars": 588,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "CollectionPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/developer.json",
+              "sha256": "c721232b299896081544cbde542eb2ea9f435c351f6d596129e754c836b12cd7",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/developer/"
+            },
+            {
+              "surface": "llms-full.txt",
+              "url": "https://theflatratemovers.com/llms-full.txt"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-developer-11",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/developer/",
+          "pageSlug": "developer",
           "locator": "Developer resources — the machine-readable site. › Local & Regional data",
           "heading": "Local & Regional data",
           "questionShaped": false,
@@ -69998,7 +70036,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-11",
+          "fragmentId": "frag-developer-12",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70036,7 +70074,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-12",
+          "fragmentId": "frag-developer-13",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70074,7 +70112,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-13",
+          "fragmentId": "frag-developer-14",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70112,7 +70150,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-14",
+          "fragmentId": "frag-developer-15",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70150,7 +70188,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-15",
+          "fragmentId": "frag-developer-16",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70188,7 +70226,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-16",
+          "fragmentId": "frag-developer-17",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70226,7 +70264,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-17",
+          "fragmentId": "frag-developer-18",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70264,7 +70302,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-18",
+          "fragmentId": "frag-developer-19",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70302,7 +70340,45 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-19",
+          "fragmentId": "frag-developer-2",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/developer/",
+          "pageSlug": "developer",
+          "locator": "Developer resources — the machine-readable site. › Live API — api.theflatratemovers.com",
+          "heading": "Live API — api.theflatratemovers.com",
+          "questionShaped": false,
+          "text": "Live API — api.theflatratemovers.com The Flat Rate Movers publishes a live, read-only API for AI systems, search engines and developers at https://api.theflatratemovers.com . It serves all 29 services ( /v1/services ), the 38 published dataset files byte-identical to this site ( /v1/datasets ), the search-intent rubric ( /v1/intent ), the entity graph ( /v1/graph ), the signed master index ( /v1/index ) and signed-index verification ( /v1/verify ) — every response traceable to the signed provenance index at ai-master-index.json (Ed25519, key id theflatratemovers-2026-10-29-1). An MCP server for agent tools is at https://api.theflatratemovers.com/mcp (tools: search_intent, get_service, get_dataset, verify_file, list_services, list_datasets). The datasets are also mirrored on Hugging Face ( huggingface.co/datasets/theflatratemovers ) and archived on Zenodo under concept DOI 10.5281/zenodo.23818766 .",
+          "textHash": "e11ad0f07784405fdd7fdaf0bbbe5149315929fce9e1f6be0b7a9c2e58511b53",
+          "bodyChars": 873,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "CollectionPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/developer.json",
+              "sha256": "c721232b299896081544cbde542eb2ea9f435c351f6d596129e754c836b12cd7",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/developer/"
+            },
+            {
+              "surface": "llms-full.txt",
+              "url": "https://theflatratemovers.com/llms-full.txt"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-developer-20",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70340,41 +70416,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-2",
-          "source": "passage",
-          "pageUrl": "https://theflatratemovers.com/developer/",
-          "pageSlug": "developer",
-          "locator": "Developer resources — the machine-readable site. › Live endpoints",
-          "heading": "Live endpoints",
-          "questionShaped": false,
-          "text": "Live endpoints ai-sitemap.json → · llms.txt → · the-flat-rate-movers-data.txt → — the same verified facts in three formats, kept in sync.",
-          "textHash": "fc2dece78cf9c3b601220c3bacb7dfb976dc3f819777eef00be78e6cfde44d3e",
-          "bodyChars": 122,
-          "substantive": true,
-          "schemaTypes": [
-            "BreadcrumbList",
-            "CollectionPage",
-            "Organization",
-            "WebPage"
-          ],
-          "evidenceLinks": [
-            {
-              "kind": "per-page-json",
-              "url": "https://theflatratemovers.com/developer.json",
-              "sha256": "c721232b299896081544cbde542eb2ea9f435c351f6d596129e754c836b12cd7",
-              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
-            }
-          ],
-          "surfaceCopies": [
-            {
-              "surface": "page",
-              "url": "https://theflatratemovers.com/developer/"
-            }
-          ],
-          "questionIdsAnswered": []
-        },
-        {
-          "fragmentId": "frag-developer-20",
+          "fragmentId": "frag-developer-21",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70412,7 +70454,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-21",
+          "fragmentId": "frag-developer-22",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70450,7 +70492,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-22",
+          "fragmentId": "frag-developer-23",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70488,7 +70530,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-23",
+          "fragmentId": "frag-developer-24",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70526,7 +70568,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-24",
+          "fragmentId": "frag-developer-25",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70564,7 +70606,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-25",
+          "fragmentId": "frag-developer-26",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70602,7 +70644,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-26",
+          "fragmentId": "frag-developer-27",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70640,7 +70682,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-27",
+          "fragmentId": "frag-developer-28",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70678,7 +70720,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-28",
+          "fragmentId": "frag-developer-29",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70716,7 +70758,41 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-29",
+          "fragmentId": "frag-developer-3",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/developer/",
+          "pageSlug": "developer",
+          "locator": "Developer resources — the machine-readable site. › Live endpoints",
+          "heading": "Live endpoints",
+          "questionShaped": false,
+          "text": "Live endpoints ai-sitemap.json → · llms.txt → · the-flat-rate-movers-data.txt → — the same verified facts in three formats, kept in sync.",
+          "textHash": "fc2dece78cf9c3b601220c3bacb7dfb976dc3f819777eef00be78e6cfde44d3e",
+          "bodyChars": 122,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "CollectionPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/developer.json",
+              "sha256": "c721232b299896081544cbde542eb2ea9f435c351f6d596129e754c836b12cd7",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/developer/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-developer-30",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70750,45 +70826,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-3",
-          "source": "passage",
-          "pageUrl": "https://theflatratemovers.com/developer/",
-          "pageSlug": "developer",
-          "locator": "Developer resources — the machine-readable site. › Entity graphs",
-          "heading": "Entity graphs",
-          "questionShaped": false,
-          "text": "Entity graphs entity-graph.json → — the full entity graph: 32 nodes for the organization, both branches, services, corridors and protocols, with rubric scores and published source data. best-json-entity-graph.json → — the expanded entity graph: 76 nodes, the same organization and branches with deeper service and protocol linkage. Both graphs chain by stable @id to the same Organization node used on every page — no loose copies, no invented entities.",
-          "textHash": "39951bb932e977b2452fe694fed9c089ede563ef1904f78ae7e80902f34738fa",
-          "bodyChars": 439,
-          "substantive": true,
-          "schemaTypes": [
-            "BreadcrumbList",
-            "CollectionPage",
-            "Organization",
-            "WebPage"
-          ],
-          "evidenceLinks": [
-            {
-              "kind": "per-page-json",
-              "url": "https://theflatratemovers.com/developer.json",
-              "sha256": "c721232b299896081544cbde542eb2ea9f435c351f6d596129e754c836b12cd7",
-              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
-            }
-          ],
-          "surfaceCopies": [
-            {
-              "surface": "page",
-              "url": "https://theflatratemovers.com/developer/"
-            },
-            {
-              "surface": "llms-full.txt",
-              "url": "https://theflatratemovers.com/llms-full.txt"
-            }
-          ],
-          "questionIdsAnswered": []
-        },
-        {
-          "fragmentId": "frag-developer-30",
+          "fragmentId": "frag-developer-31",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70826,7 +70864,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-31",
+          "fragmentId": "frag-developer-32",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70864,7 +70902,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-32",
+          "fragmentId": "frag-developer-33",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70902,7 +70940,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-33",
+          "fragmentId": "frag-developer-34",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70940,7 +70978,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-34",
+          "fragmentId": "frag-developer-35",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -70978,7 +71016,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-35",
+          "fragmentId": "frag-developer-36",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -71016,7 +71054,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-36",
+          "fragmentId": "frag-developer-37",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -71054,7 +71092,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-37",
+          "fragmentId": "frag-developer-38",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -71092,7 +71130,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-38",
+          "fragmentId": "frag-developer-39",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -71130,7 +71168,45 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-39",
+          "fragmentId": "frag-developer-4",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/developer/",
+          "pageSlug": "developer",
+          "locator": "Developer resources — the machine-readable site. › Entity graphs",
+          "heading": "Entity graphs",
+          "questionShaped": false,
+          "text": "Entity graphs entity-graph.json → — the full entity graph: 32 nodes for the organization, both branches, services, corridors and protocols, with rubric scores and published source data. best-json-entity-graph.json → — the expanded entity graph: 76 nodes, the same organization and branches with deeper service and protocol linkage. Both graphs chain by stable @id to the same Organization node used on every page — no loose copies, no invented entities.",
+          "textHash": "39951bb932e977b2452fe694fed9c089ede563ef1904f78ae7e80902f34738fa",
+          "bodyChars": 439,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "CollectionPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/developer.json",
+              "sha256": "c721232b299896081544cbde542eb2ea9f435c351f6d596129e754c836b12cd7",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/developer/"
+            },
+            {
+              "surface": "llms-full.txt",
+              "url": "https://theflatratemovers.com/llms-full.txt"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-developer-40",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -71164,41 +71240,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-4",
-          "source": "passage",
-          "pageUrl": "https://theflatratemovers.com/developer/",
-          "pageSlug": "developer",
-          "locator": "Developer resources — the machine-readable site. › Published Datasets — Landing Pages & Zenodo DOI",
-          "heading": "Published Datasets — Landing Pages & Zenodo DOI",
-          "questionShaped": false,
-          "text": "Published Datasets — Landing Pages & Zenodo DOI Every published dataset has a canonical landing page: Published Datasets → — 32 CC BY 4.0 dataset files, each landing page carrying the dataset’s full node inventory, its facts, the download, and the file’s SHA-256 certificate from the signed AI master index. The Search Intent Coverage dataset is archived on Zenodo: concept DOI 10.5281/zenodo.23818766 (always resolves to the latest version); version DOI 10.5281/zenodo.23844324; record https://zenodo.org/records/23844324.",
-          "textHash": "ef2f5e05d02db18809be51d5355514c56b29cd95ffa1d3be37467de7ccb48718",
-          "bodyChars": 475,
-          "substantive": true,
-          "schemaTypes": [
-            "BreadcrumbList",
-            "CollectionPage",
-            "Organization",
-            "WebPage"
-          ],
-          "evidenceLinks": [
-            {
-              "kind": "per-page-json",
-              "url": "https://theflatratemovers.com/developer.json",
-              "sha256": "c721232b299896081544cbde542eb2ea9f435c351f6d596129e754c836b12cd7",
-              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
-            }
-          ],
-          "surfaceCopies": [
-            {
-              "surface": "page",
-              "url": "https://theflatratemovers.com/developer/"
-            }
-          ],
-          "questionIdsAnswered": []
-        },
-        {
-          "fragmentId": "frag-developer-40",
+          "fragmentId": "frag-developer-41",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -71236,7 +71278,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-41",
+          "fragmentId": "frag-developer-42",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -71274,6 +71316,40 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
+          "locator": "Developer resources — the machine-readable site. › Published Datasets — Landing Pages & Zenodo DOI",
+          "heading": "Published Datasets — Landing Pages & Zenodo DOI",
+          "questionShaped": false,
+          "text": "Published Datasets — Landing Pages & Zenodo DOI Every published dataset has a canonical landing page: Published Datasets → — 32 CC BY 4.0 dataset files, each landing page carrying the dataset’s full node inventory, its facts, the download, and the file’s SHA-256 certificate from the signed AI master index. The Search Intent Coverage dataset is archived on Zenodo: concept DOI 10.5281/zenodo.23818766 (always resolves to the latest version); version DOI 10.5281/zenodo.23844324; record https://zenodo.org/records/23844324.",
+          "textHash": "ef2f5e05d02db18809be51d5355514c56b29cd95ffa1d3be37467de7ccb48718",
+          "bodyChars": 475,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "CollectionPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/developer.json",
+              "sha256": "c721232b299896081544cbde542eb2ea9f435c351f6d596129e754c836b12cd7",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/developer/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-developer-6",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/developer/",
+          "pageSlug": "developer",
           "locator": "Developer resources — the machine-readable site. › Location page data",
           "heading": "Location page data",
           "questionShaped": false,
@@ -71308,7 +71384,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-6",
+          "fragmentId": "frag-developer-7",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -71346,7 +71422,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-7",
+          "fragmentId": "frag-developer-8",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -71384,7 +71460,7 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-developer-8",
+          "fragmentId": "frag-developer-9",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/developer/",
           "pageSlug": "developer",
@@ -71394,44 +71470,6 @@
           "text": "Commercial data datasets-commercial.json → — 8 published nodes about the commercial service, from both branches, never merged: 3 as Datasets (CC BY 4.0) — business asset taxonomy, branch dispatch network, service areas, dispatch and quote path; 3 as Service data — commercial move operations, premises and access, protection, IT coordination and building compliance; 2 as Articles — commercial terms and cost drivers (flat-rate-in-writing only; domain figures labeled), buyer personas and triggers.",
           "textHash": "f1c8db3822dc76d730beede7072c6a18a8c9b360c69130e24dc4d04e1e53f544",
           "bodyChars": 482,
-          "substantive": true,
-          "schemaTypes": [
-            "BreadcrumbList",
-            "CollectionPage",
-            "Organization",
-            "WebPage"
-          ],
-          "evidenceLinks": [
-            {
-              "kind": "per-page-json",
-              "url": "https://theflatratemovers.com/developer.json",
-              "sha256": "c721232b299896081544cbde542eb2ea9f435c351f6d596129e754c836b12cd7",
-              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
-            }
-          ],
-          "surfaceCopies": [
-            {
-              "surface": "page",
-              "url": "https://theflatratemovers.com/developer/"
-            },
-            {
-              "surface": "llms-full.txt",
-              "url": "https://theflatratemovers.com/llms-full.txt"
-            }
-          ],
-          "questionIdsAnswered": []
-        },
-        {
-          "fragmentId": "frag-developer-9",
-          "source": "passage",
-          "pageUrl": "https://theflatratemovers.com/developer/",
-          "pageSlug": "developer",
-          "locator": "Developer resources — the machine-readable site. › Office data",
-          "heading": "Office data",
-          "questionShaped": false,
-          "text": "Office data datasets-office.json → — 8 published nodes about the office moving service, from both branches, never merged: 3 as Datasets (CC BY 4.0) — office types and size bands, workstation, furniture and equipment taxonomy, service areas, dispatch and quote path; 2 as Service data — office move operations, building access, protection and compliance; 3 as Articles — phasing models and day-one planning, commercial terms and cost drivers (flat-rate-in-writing only; domain figures labeled), buyer personas and trigger events. Hub page: Office Moving · Hub JSON: commercial-office-moving-2.json → .",
-          "textHash": "c05395cb36fe529bc4fd6148a391908d5516c482e5af17566cc6c1e4489bf5d6",
-          "bodyChars": 588,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
@@ -128427,7 +128465,7 @@
       "@id": "https://theflatratemovers.com/#dataset-answer-evidence-totals",
       "@type": "Dataset",
       "name": "Answer Evidence Totals",
-      "description": "Totals for this generation of the answer-evidence dataset, computed by the generator from the live estate: 3096 questions, 2243 fragments, 4 engine profiles, 6 citation observations (all search-surface method; prompt-panel observations: 0 — unmeasured, stated as such), 4 review distribution snapshots and 9 gap records. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on the operations node.",
+      "description": "Totals for this generation of the answer-evidence dataset, computed by the generator from the live estate: 3096 questions, 2244 fragments, 4 engine profiles, 6 citation observations (all search-surface method; prompt-panel observations: 0 — unmeasured, stated as such), 4 review distribution snapshots and 9 gap records. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on the operations node.",
       "keywords": [
         "answer engines",
         "citation evidence",
@@ -128498,13 +128536,13 @@
       "isAccessibleForFree": true,
       "totals": {
         "questions": 3096,
-        "fragments": 2243,
+        "fragments": 2244,
         "fragmentsBySource": {
           "faq-schema": 83,
-          "passage": 2160
+          "passage": 2161
         },
         "fragmentsQuestionShaped": 560,
-        "fragmentsSubstantive": 2116,
+        "fragmentsSubstantive": 2117,
         "fragmentsExcludedSelfReferential": 46,
         "coverage": {
           "rubricRows": 3096,

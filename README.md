@@ -43,6 +43,7 @@ https://theflatratemovers.com/recursive-indexing-layer/
 📦 Repository Structure
 theflatratemovers-ai/
 │
+├── LICENSE
 ├── README.md
 ├── ai-catalog.json
 ├── ai-sitemap.json
@@ -51,27 +52,55 @@ theflatratemovers-ai/
 ├── endpoint-definition.jsonld
 ├── llms.txt
 ├── predictive-query-map.json
+├── signing-keys.json
 ├── the-flat-rate-movers-data.txt
 │
 ├── data/
 │   ├── ai-master-index.json
+│   ├── ai-master-index.jws
+│   ├── ai-verification-report-2026-11-01.json
+│   ├── ai-verification-report-2026-11-01.jws
+│   ├── ai-verification-report-2026-11-01-e6b2.json
+│   ├── ai-verification-report-2026-11-01-e6b2.jws
 │   ├── best-json-entity-graph-full.json
 │   ├── capabilities-matrix.json
+│   ├── datasets-answer-evidence.json
+│   ├── datasets-archive-registry.json
 │   ├── datasets-commercial.json
+│   ├── datasets-crating.json
+│   ├── datasets-crawl-presence.json
+│   ├── datasets-data-center-relocation.json
+│   ├── datasets-ffe-logistics.json
+│   ├── datasets-final-mile.json
+│   ├── datasets-government.json
 │   ├── datasets-gun-safe.json
+│   ├── datasets-industrial-commercial.json
+│   ├── datasets-industrial-offices.json
+│   ├── datasets-intent-coverage.json
+│   ├── datasets-ispm15.json
 │   ├── datasets-it.json
+│   ├── datasets-junk-removal.json
+│   ├── datasets-local-graph-registry.json
 │   ├── datasets-local-regional.json
 │   ├── datasets-long-distance.json
+│   ├── datasets-medical-lab-relocation.json
+│   ├── datasets-military.json
 │   ├── datasets-moving-and-storage.json
 │   ├── datasets-ocean-container.json
 │   ├── datasets-office.json
 │   ├── datasets-packing.json
+│   ├── datasets-piano-antique.json
 │   ├── datasets-residential.json
+│   ├── datasets-route81.json
+│   ├── datasets-search-index.json
 │   ├── datasets-senior.json
 │   ├── datasets-sir-heavy.json
+│   ├── datasets-transloading.json
+│   ├── datasets-transloading-inland-port.json
 │   ├── datasets-transloading-winchester.json
 │   ├── datasets-videos.json
 │   ├── datasets-warehouse.json
+│   ├── datasets-warehouse-racking-relocation.json
 │   ├── entity-graph-full.json
 │   ├── entity-graph.json
 │   └── footprint.json
@@ -107,7 +136,7 @@ theflatratemovers-ai/
 │   ├── ai-inventory-reasoning.schema.json
 │   ├── ai-risk-profile.schema.json
 │   ├── ai-scheduling-request.schema.json
-│   └── 36 per-page JSON files for the site's service pages
+│   └── 86 per-page JSON files for the site's pages
 │
 ├── terminology/
 │   ├── bmrs-protocol.jsonld
@@ -125,8 +154,8 @@ theflatratemovers-ai/
 File	Purpose
 ai-master-index.json (data/)	Root index of all datasets, graphs, and endpoints — the discovery entry point
 ai-sitemap.json (repo root)	Machine-readable sitemap for AI systems; the canonical copy, also served at https://theflatratemovers.com/ai-sitemap.json
-datasets-*.json (data/, 15 files)	Category dataset files — see the Datasets Layer below
-entity-graph-full.json (data/)	The full 33-node entity graph; identical to https://theflatratemovers.com/entity-graph.json
+datasets-*.json (data/, 37 files)	Category dataset files — see the Datasets Layer below
+entity-graph-full.json (data/)	The full 38-node entity graph; identical to https://theflatratemovers.com/entity-graph.json
 best-json-entity-graph-full.json (data/)	The extended entity graph; identical to https://theflatratemovers.com/best-json-entity-graph.json
 entity-graph.json (data/)	Compact gist-based entity graph — a small, stable snapshot (see "Which entity graph is which")
 capabilities-matrix.json (data/)	Maps capabilities → models → schemas
@@ -136,7 +165,7 @@ The Developer Feed (data/developer-feed.json) was retired on 2026-10-29: it poin
 
 🗂️ Datasets Layer
 
-The datasets layer is this repository's flagship data product: 15 category files in data/, one per service line, each a JSON-LD @graph of Dataset, Service, and Article nodes carrying per-node provenance and a CC BY 4.0 license. Every file is served live — with the same bytes — at https://theflatratemovers.com/datasets-<category>.json, and every file is listed in the master index.
+The datasets layer is this repository's flagship data product: 37 dataset files in data/ — the per-category process-chain and taxonomy datasets, one per service line, plus the estate's registry and evidence datasets (intent coverage, search index, answer evidence, local graph registry, crawl presence, archive registry). Each is a JSON-LD @graph of Dataset, Service, and Article nodes carrying per-node provenance and a CC BY 4.0 license. Every file is served live — with the same bytes — at https://theflatratemovers.com/datasets-<category>.json, and every file is listed in the master index.
 
 datasets-commercial.json — commercial moving
 datasets-gun-safe.json — gun safe moving
@@ -153,6 +182,28 @@ datasets-sir-heavy.json — SIR heavy asset relocation (high-mass assets)
 datasets-transloading-winchester.json — transloading, Winchester VA
 datasets-videos.json — the company's video library, as a VideoObject graph
 datasets-warehouse.json — warehouse relocation
+datasets-answer-evidence.json — answer-engine evidence base: questions, fragments, observations
+datasets-archive-registry.json — archive registry: targets, captures, deposits, verification runs
+datasets-crating.json — custom crating
+datasets-crawl-presence.json — crawl-presence registry: Common Crawl captures, robots posture, signal log
+datasets-data-center-relocation.json — data center relocation, physical layer
+datasets-ffe-logistics.json — FF&E logistics
+datasets-final-mile.json — final-mile delivery
+datasets-government.json — government moving
+datasets-industrial-commercial.json — industrial & commercial services taxonomy
+datasets-industrial-offices.json — industrial offices moving
+datasets-intent-coverage.json — intent coverage: the estate's query rubric and outcome evidence
+datasets-ispm15.json — ISPM 15 export packing
+datasets-junk-removal.json — junk removal
+datasets-local-graph-registry.json — local-business graph registry: third-party records and corrections
+datasets-medical-lab-relocation.json — medical & laboratory equipment relocation
+datasets-military.json — military moving
+datasets-piano-antique.json — piano, antique and white-glove moving
+datasets-route81.json — Route 81 corridor dispatch
+datasets-search-index.json — search-index supply and observation registry
+datasets-transloading.json — transloading
+datasets-transloading-inland-port.json — Virginia Inland Port transloading
+datasets-warehouse-racking-relocation.json — warehouse racking relocation
 
 🧭 Which entity graph is which
 
@@ -160,7 +211,7 @@ Two different files share the entity-graph name; they are not copies of each oth
 
 data/entity-graph.json is the compact gist-based graph (2,486 bytes): a small, stable snapshot of the organization and its core identifiers. It does not change between data releases.
 
-The full entity graph — 33 nodes covering the organization, both branch locations with their complete service areas, and every service — lives in this repository at data/entity-graph-full.json and is served live at https://theflatratemovers.com/entity-graph.json. When a system needs the company's complete graph, that is the file to consume. The extended companion graph is data/best-json-entity-graph-full.json, served at https://theflatratemovers.com/best-json-entity-graph.json.
+The full entity graph — 38 nodes covering the organization, both branch locations with their complete service areas, and every service — lives in this repository at data/entity-graph-full.json and is served live at https://theflatratemovers.com/entity-graph.json. When a system needs the company's complete graph, that is the file to consume. The extended companion graph is data/best-json-entity-graph-full.json, served at https://theflatratemovers.com/best-json-entity-graph.json.
 
 🤖 Model Layer (Decision Systems)
 Model	Purpose
@@ -179,7 +230,7 @@ ai-estimate-request.schema.json	Estimate generation
 
 🌍 Geo Layer
 
-The canonical service-area GeoJSON (52 features — the Winchester branch's 31 areas and the Martinsburg branch's 35 areas) is served live at https://theflatratemovers.com/service-area.geojson and maintained in the the-flat-rate-machine repository (data/service-area.geojson). This repository no longer carries a separate geo copy, so the map can never drift from the live one.
+The canonical service-area GeoJSON (53 features — the Winchester branch's 32 areas and the Martinsburg branch's 35 areas) is served live at https://theflatratemovers.com/service-area.geojson and maintained in the the-flat-rate-machine repository (data/service-area.geojson). This repository no longer carries a separate geo copy, so the map can never drift from the live one.
 
 Service regions: VA, WV, MD, Eastern Panhandle.
 

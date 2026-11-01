@@ -1,0 +1,181 @@
+{
+ "@type": "VerificationReport",
+ "id": "https://theflatratemovers.com/ai-verification-report-2026-11-01.json",
+ "runbook": "Retrieval Machine Element 6 verification runbook (crosscheck-reconciliation-2026-10-31, build input E6-3), executed count-free",
+ "verifier": "Mira, Flat Rate Machine build batch E6-B1 (archive registry)",
+ "verificationTime": "2026-11-01T08:33:09Z",
+ "indexUnderVerification": {
+  "url": "https://theflatratemovers.com/ai-master-index.json",
+  "sha256": "289d461ae109aee86022f8c575df6d96c25697bbcf4c3e03a084db4a8ac78214",
+  "dateModified": "2026-11-01",
+  "expectedDistributionsReadFromIndex": 486,
+  "signature": "VERIFIED \u2014 verify-provenance.py against the published JWKS (kid theflatratemovers-2026-10-29-1): JWS valid, payload == RFC 8785 canonical form of the published index"
+ },
+ "legs": [
+  {
+   "leg": "local",
+   "expected": 486,
+   "matched": 486,
+   "exceptions": 0,
+   "detail": "scripts/build-estate-archive.py regeneration: every distribution's resolved bytes re-hash to its signed digest and byte size; the set is packaged as a BagIt 1.0 bag (RFC 8493) and the bag validates with full checksum verification (bagit.py reference implementation). Payload-Oxum 125430624.486."
+  },
+  {
+   "leg": "doi-zenodo",
+   "records": [
+    {
+     "record": 23818767,
+     "version": "v1.1.0",
+     "files": 126,
+     "counts": {
+      "releaseSealMatch": 25,
+      "releaseSealMismatch": 10,
+      "notInReleaseIndex": 91,
+      "currentVerified": 1,
+      "currentSuperseded": 34,
+      "notCurrentDistribution": 91
+     }
+    },
+    {
+     "record": 23844324,
+     "version": "v1.2.0",
+     "files": 167,
+     "counts": {
+      "releaseSealMatch": 37,
+      "releaseSealMismatch": 1,
+      "notInReleaseIndex": 129,
+      "currentVerified": 2,
+      "currentSuperseded": 36,
+      "notCurrentDistribution": 129
+     }
+    }
+   ],
+   "detail": "Both deposits' single archive files (the GitHub release source zips) MD5-match the checksums Zenodo serves for the records. Contents verified per file against each release's own signed index (inside the zip) and against the current signed index: unchanged files read verified, moved files read superseded, divergences are logged as exceptions. v1.2.0 record 23844324 (concept DOI 10.5281/zenodo.23818766); v1.1.0 record 23818767.",
+   "exceptions": 11
+  },
+  {
+   "leg": "internet-archive",
+   "sampledCaptures": 10,
+   "cdxDigestVerified": 10,
+   "differFromCurrentSeal": 10,
+   "detail": "Sampled captures fetched in id_ identity form: every sampled capture's bytes re-hash (SHA-1, Wayback digest form) to its CDX digest \u2014 the captures are the indexed bytes, unaltered. Every sampled capture differs from the current seal: classification source-changed (the live site, GitHub and the local bag agree on the current bytes; the captures hold the pre-Solution-A / pre-reseal generation). Zero snapshot-altered, zero corruption.",
+   "exceptions": 5
+  },
+  {
+   "leg": "registry-cdx-sweep",
+   "targets": 44,
+   "verified": 37,
+   "notVerifiable": 5,
+   "detail": "All 43 registry targets re-queried against the live CDX index this run: 37 recorded captures verified present with digest/status/length; 5 recorded captures not verifiable by any method (see exceptions); both Zenodo record pages confirmed to hold no Wayback capture (record 23818767: six Save Page Now attempts failed with HTTP 520 in 2026-10-30/31; preservation is by DOI)."
+  }
+ ],
+ "exceptions": [
+  {
+   "kind": "deposit-divergent",
+   "file": "data/datasets-gun-safe.json",
+   "deposit": "Zenodo record 23818767 (v1.1.0)",
+   "depositSha256": "d1aa479daf05ef4323649c662ac5e057cfc2e4fcb6a2e1c399392f61057479f1",
+   "classification": "snapshot-altered class: the deposit copy diverges from its own release's signed index; the signed-index lineage (release index -> current index, provenance-verified) agrees against it. The estate's sealed bytes are not implicated; no copy was overwritten."
+  },
+  {
+   "kind": "deposit-divergent",
+   "file": "data/datasets-intent-coverage.json",
+   "deposit": "Zenodo record 23818767 (v1.1.0)",
+   "depositSha256": "bdabfae3ba0bbfd3bd8e244b9ab77109fc88f127374dc15c4b1a91c14ea1fc72",
+   "classification": "snapshot-altered class: the deposit copy diverges from its own release's signed index; the signed-index lineage (release index -> current index, provenance-verified) agrees against it. The estate's sealed bytes are not implicated; no copy was overwritten."
+  },
+  {
+   "kind": "deposit-divergent",
+   "file": "data/datasets-it.json",
+   "deposit": "Zenodo record 23818767 (v1.1.0)",
+   "depositSha256": "f2def67919e356affdc93c9df8888abba542eb2d19f1918ac091a7b97bac5840",
+   "classification": "snapshot-altered class: the deposit copy diverges from its own release's signed index; the signed-index lineage (release index -> current index, provenance-verified) agrees against it. The estate's sealed bytes are not implicated; no copy was overwritten."
+  },
+  {
+   "kind": "deposit-divergent",
+   "file": "data/datasets-local-regional.json",
+   "deposit": "Zenodo record 23818767 (v1.1.0)",
+   "depositSha256": "4e7ae2246f027f892073d6889a98110c92f10cafcbebf5b2825fb561d76f1ff3",
+   "classification": "snapshot-altered class: the deposit copy diverges from its own release's signed index; the signed-index lineage (release index -> current index, provenance-verified) agrees against it. The estate's sealed bytes are not implicated; no copy was overwritten."
+  },
+  {
+   "kind": "deposit-divergent",
+   "file": "data/datasets-long-distance.json",
+   "deposit": "Zenodo record 23818767 (v1.1.0)",
+   "depositSha256": "0331ddc8d8703764a396371665d64815852061e3f3d24110ae40a0bec9f908bf",
+   "classification": "snapshot-altered class: the deposit copy diverges from its own release's signed index; the signed-index lineage (release index -> current index, provenance-verified) agrees against it. The estate's sealed bytes are not implicated; no copy was overwritten."
+  },
+  {
+   "kind": "deposit-divergent",
+   "file": "data/datasets-moving-and-storage.json",
+   "deposit": "Zenodo record 23818767 (v1.1.0)",
+   "depositSha256": "68d0dadff7ba85be9597ab0424c4810cbc05441fb85abeea4dbec01a9a6c7750",
+   "classification": "snapshot-altered class: the deposit copy diverges from its own release's signed index; the signed-index lineage (release index -> current index, provenance-verified) agrees against it. The estate's sealed bytes are not implicated; no copy was overwritten."
+  },
+  {
+   "kind": "deposit-divergent",
+   "file": "data/datasets-office.json",
+   "deposit": "Zenodo record 23818767 (v1.1.0)",
+   "depositSha256": "ca7f56fc8a95e8b93528cf19d78e7944aff97342c1f875c10e9bbaea8296221d",
+   "classification": "snapshot-altered class: the deposit copy diverges from its own release's signed index; the signed-index lineage (release index -> current index, provenance-verified) agrees against it. The estate's sealed bytes are not implicated; no copy was overwritten."
+  },
+  {
+   "kind": "deposit-divergent",
+   "file": "data/datasets-senior.json",
+   "deposit": "Zenodo record 23818767 (v1.1.0)",
+   "depositSha256": "29e4edd7c4cb9ae699bc0b45c1917793cc220b0ee3fdb0c201b66bc22c421f64",
+   "classification": "snapshot-altered class: the deposit copy diverges from its own release's signed index; the signed-index lineage (release index -> current index, provenance-verified) agrees against it. The estate's sealed bytes are not implicated; no copy was overwritten."
+  },
+  {
+   "kind": "deposit-divergent",
+   "file": "data/datasets-sir-heavy.json",
+   "deposit": "Zenodo record 23818767 (v1.1.0)",
+   "depositSha256": "a32808f4e8fbb64dc34fc322feb87e3616716241e07084d78be39e91577fc312",
+   "classification": "snapshot-altered class: the deposit copy diverges from its own release's signed index; the signed-index lineage (release index -> current index, provenance-verified) agrees against it. The estate's sealed bytes are not implicated; no copy was overwritten."
+  },
+  {
+   "kind": "different-artifact",
+   "file": "data/entity-graph.json",
+   "deposit": "Zenodo record 23818767 (v1.1.0)",
+   "depositSha256": "f6baf3289d410739dd894530012d47ca46d1b95203952b8f6d082ef39833ca35",
+   "classification": "the ai repo's data/entity-graph.json is the separate gist-based file (2,486 bytes) that is never overwritten; the signed index's entity-graph entry names the site-served graph. Not a divergence of the indexed artifact."
+  },
+  {
+   "kind": "different-artifact",
+   "file": "data/entity-graph.json",
+   "deposit": "Zenodo record 23844324 (v1.2.0)",
+   "depositSha256": "f6baf3289d410739dd894530012d47ca46d1b95203952b8f6d082ef39833ca35",
+   "classification": "the ai repo's data/entity-graph.json is the separate gist-based file (2,486 bytes) that is never overwritten; the signed index's entity-graph entry names the site-served graph. Not a divergence of the indexed artifact."
+  },
+  {
+   "kind": "capture-not-verifiable",
+   "file": "https://theflatratemovers.com/datasets-intent-coverage.json",
+   "recordedTimestamp": "20261030215043",
+   "classification": "confirmed by the 2026-10-30/31 runner via the Availability API, but absent today from CDX (all scheme/host variants), the Availability API, the timemap, and direct snapshot fetch (404). Recorded as itself; re-capture is in the E6-B2 re-snapshot scope."
+  },
+  {
+   "kind": "capture-not-verifiable",
+   "file": "https://theflatratemovers.com/datasets/ffe-logistics/",
+   "recordedTimestamp": "20261030235404",
+   "classification": "confirmed by the 2026-10-30/31 runner via the Availability API, but absent today from CDX (all scheme/host variants), the Availability API, the timemap, and direct snapshot fetch (404). Recorded as itself; re-capture is in the E6-B2 re-snapshot scope."
+  },
+  {
+   "kind": "capture-not-verifiable",
+   "file": "https://theflatratemovers.com/datasets/government/",
+   "recordedTimestamp": "20261031000839",
+   "classification": "confirmed by the 2026-10-30/31 runner via the Availability API, but absent today from CDX (all scheme/host variants), the Availability API, the timemap, and direct snapshot fetch (404). Recorded as itself; re-capture is in the E6-B2 re-snapshot scope."
+  },
+  {
+   "kind": "capture-not-verifiable",
+   "file": "https://theflatratemovers.com/datasets/gun-safe/",
+   "recordedTimestamp": "20261031003409",
+   "classification": "confirmed by the 2026-10-30/31 runner via the Availability API, but absent today from CDX (all scheme/host variants), the Availability API, the timemap, and direct snapshot fetch (404). Recorded as itself; re-capture is in the E6-B2 re-snapshot scope."
+  },
+  {
+   "kind": "capture-not-verifiable",
+   "file": "https://theflatratemovers.com/datasets/local-regional/",
+   "recordedTimestamp": "20261031014846",
+   "classification": "confirmed by the 2026-10-30/31 runner via the Availability API, but absent today from CDX (all scheme/host variants), the Availability API, the timemap, and direct snapshot fetch (404). Recorded as itself; re-capture is in the E6-B2 re-snapshot scope."
+  }
+ ],
+ "conclusion": "The signed index verifies end to end: signature valid, all 486 local copies hash-match, the local archive is a valid BagIt 1.0 bag, both DOI deposits are checksum-true to their records with contents accounted for per file, and every sampled Wayback capture is byte-true to its CDX record. Exceptions are confined to deposit-copy divergence in the v1.1.0 source archive (9 files), the known gist-file artifact distinction (2 rows), and 5 Wayback captures the Archive no longer serves. No copy was overwritten; old indexes are never edited."
+}

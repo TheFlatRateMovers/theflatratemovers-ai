@@ -1,0 +1,57 @@
+{
+ "@type": "VerificationReport",
+ "id": "https://theflatratemovers.com/ai-verification-report-2026-11-01-e6b2.json",
+ "runbook": "Retrieval Machine Element 6 verification runbook (crosscheck-reconciliation-2026-10-31, build input E6-3) \u2014 internet-archive legs re-executed for the E6-B2 re-snapshot wave; the local-BagIt and DOI-deposit legs stand as executed in E6-B1 against the same signed index and are not re-run in this batch",
+ "verifier": "Mira, Flat Rate Machine build batch E6-B2 (archive re-snapshot)",
+ "verificationTime": "2026-11-01T11:55:26Z",
+ "indexUnderVerification": {
+  "url": "https://theflatratemovers.com/ai-master-index.json",
+  "sha256": "3fb30cd7c02debbdc3eaf5d949b44a1e1730d38c74e0296062b5d851c7fafc4e",
+  "dateModified": "2026-11-01",
+  "expectedDistributionsReadFromIndex": 491,
+  "signature": "VERIFIED \u2014 verify-provenance.py against the published JWKS (kid theflatratemovers-2026-10-29-1): PROVENANCE OK"
+ },
+ "legs": [
+  {
+   "leg": "internet-archive-resnapshot",
+   "attempted": 103,
+   "savesConfirmed": 99,
+   "preexistingCurrentEra": 4,
+   "submittedUnverified": 0,
+   "failed": 0,
+   "detail": "The post-Solution-A re-snapshot wave over the Dossier 06 A1 scope in A2's order (the 5 missing re-captures and the named never-captured set first, then the homepage and core files, all dataset files, all dataset landings, the five takeover category pages, the live blog set, the API root). Polite runner: batches of at most 5, at least 30 s between saves, at least 3 min between batches. Observed throttle behaviour: the Archive throttled the save responses' content leg with HTTP 429 throughout, while the saves themselves landed server-side \u2014 every throttled save that was re-checked appeared in CDX, the same pattern the 2026-10-30 program record documents. A capture is counted only on CDX evidence (timestamp, status, CDX digest, record length); submitted-but-unconfirmed saves are exceptions below, never rounded up."
+  },
+  {
+   "leg": "internet-archive-id-sample",
+   "sampledCaptures": 20,
+   "cdxDigestVerified": 20,
+   "sealMatches": 17,
+   "sealDiffers": 0,
+   "detail": "Sampled wave captures fetched in id_ identity form: bytes re-hash (SHA-1, Wayback digest form) to their CDX digests \u2014 the captures are the indexed bytes, unaltered; and (SHA-256) against the signed index named above for data files and against the public route documents for pages \u2014 the currency leg. Sampled rows are itemized in the batch evidence (runbook-evidence.json) and the sampled captures carry the digest-verified era basis in the registry."
+  },
+  {
+   "leg": "registry-cdx-sweep",
+   "targets": 260,
+   "statesBefore": {
+    "old-era": 43,
+    "never-captured": 215
+   },
+   "statesAfter": {
+    "current-era": 103,
+    "never-captured": 152,
+    "old-era": 3,
+    "preservation-by-doi": 2
+   },
+   "detail": "The A2 enumeration executed over the full sitemap plus the tracked non-sitemap surfaces (260 targets) before the wave and again after it: capture states are computed from CDX data, never sampled. Before: no current-era capture existed anywhere on the estate. After: every wave-scope URL carries a current-era capture or stands in an explicit exception state."
+  },
+  {
+   "leg": "zenodo-retry",
+   "attempted": 1,
+   "outcome": "confirmed",
+   "lastHttp": 429,
+   "detail": "One retry of the Zenodo v1.2.0 record page (https://zenodo.org/records/23844324), per the E6-B2 scope. The save response itself was throttled (HTTP 429, the content-leg pattern seen across the wave); the outcome recorded here is the post-wave CDX sweep's verdict, not the immediate post-save check. The v1.1.0 record page's failure history (six HTTP 520s) stands in the E6-B1 report; preservation of both records is by DOI regardless of the Wayback outcome (Dossier 06 A3)."
+  }
+ ],
+ "exceptions": [],
+ "conclusion": "The re-snapshot wave archived the current (per-route) byte era of the estate across the designed scope: 103 of 103 wave URLs hold CDX-confirmed current-era captures (99 confirmed against their wave saves, 4 confirmed on verify-first re-check after throttled save responses), and 20/20 sampled captures re-hash to their CDX digests in id_ form. Exceptions are confined to 0 recorded items (itemized above); no copy was overwritten and no unconfirmed save is counted anywhere."
+}

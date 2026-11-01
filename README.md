@@ -19,6 +19,10 @@ Automation frameworks
 
 All files are public, versioned, and safe for ingestion.
 
+## Live API
+
+The estate's data is served live at **https://api.theflatratemovers.com** — REST endpoints for all 29 services (`/v1/services`), the 38 dataset files byte-identical to the site's (`/v1/datasets`), the search-intent rubric (`/v1/intent`), the entity graph (`/v1/graph`), and signed-index verification (`/v1/verify`), plus an MCP server at **https://api.theflatratemovers.com/mcp** (tools: `search_intent`, `get_service`, `get_dataset`, `verify_file`, `list_services`, `list_datasets`). The datasets are mirrored on Hugging Face (https://huggingface.co/datasets/theflatratemovers) and archived on Zenodo under concept DOI 10.5281/zenodo.23818766. Every file here is listed in the signed provenance index at https://theflatratemovers.com/ai-master-index.json (Ed25519, key id `theflatratemovers-2026-10-29-1`).
+
 🌐 Core Protocol Systems
 Interstate Moving Network
 

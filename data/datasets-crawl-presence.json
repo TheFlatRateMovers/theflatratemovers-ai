@@ -186067,7 +186067,7 @@
       "@type": "Dataset",
       "@id": "https://theflatratemovers.com/datasets-crawl-presence.json#dataset-crawl-presence-robots-policy",
       "name": "Crawl Presence Registry Dataset — Robots Policy (decision record)",
-      "description": "The robots posture under which crawling of this estate happens, recorded as the owner’s decision: Option 1 — open training — chosen 2026-10-31, with no file change (Option 1 mechanics). The record carries the per-agent table parsed from the live file (agent, purpose class — training / retrieval / archive / other — and posture), the served file’s digest from the signed signal observation, the deployed source file’s digest, the drift-gate result, the Content-Signal fields read from the served file (unset today), and the __usage_ai-training token state (absent — recorded as decision evidence, not deployed, because the owner chose open training).",
+      "description": "The robots posture under which crawling of this estate happens, recorded as the owner’s decision: Option 1 — open training — chosen 2026-10-31, and declared in-band in the file itself on 2026-11-02 (sitemap-extensions batch). The record carries the per-agent table parsed from the live file (agent, purpose class — training / retrieval / archive / other — and posture), the served file’s digest from the signed signal observation, the deployed source file’s digest, the drift-gate result, the Content-Signal fields read from the served file (search=yes, ai-input=yes, ai-train=yes as declared 2026-11-02), and the __usage_ai-training token state (present, Allow: / — the affirmative in-band form of the same open-training decision).",
       "inLanguage": "en-US",
       "dateModified": "2026-11-02",
       "isAccessibleForFree": true,
@@ -186132,22 +186132,22 @@
           "optionName": "open-training",
           "decidedBy": "owner",
           "decidedOn": "2026-10-31",
-          "fileChange": "none — Option 1 keeps the live robots.txt exactly as-is; the change is the recorded decision and the armed gate",
+          "fileChange": "deliberate in-band declaration, 2026-11-02 (sitemap-extensions batch) — the file now carries the decision: Content-Signal yes/yes/yes in every group plus the __usage_ai-training group; entry sig-2026-11-02-robots-003 records it",
           "posture": "open-training",
           "basis": "Dossier 05 §4 P3, Option 1 — open training (status quo, made deliberate), chosen by the owner 2026-10-31."
         },
         "servedFile": {
           "url": "https://theflatratemovers.com/robots.txt",
-          "observedAt": "2026-11-02T10:52:56Z",
+          "observedAt": "2026-11-02T13:04:10Z",
           "httpStatus": 200,
-          "sha256": "1ba1328472238e343a38766e58ac5fdfe0ac38909c67d7ebe139fffcb43b4b10",
-          "byteSize": 1014,
-          "evidence": "Signed signal observation sig-2026-11-02-robots-002 in this dataset (entry_digest 2eb4642ee580ab6afada8da0f829b6b90753225b0108a1982e23fb24b38d4153)."
+          "sha256": "c1e31bf3d648893ac53fdc885615a099046f696f232d328e9ebc62c555d743d6",
+          "byteSize": 2296,
+          "evidence": "Signed signal observation sig-2026-11-02-robots-003 in this dataset (entry_digest 2b4d9e0647811a5e6549c1476b9d72610c23cd172037e1332eed076865b3a373)."
         },
         "sourceFile": {
           "path": "public/robots.txt (Cloudflare Pages tree — the deployed source)",
-          "sha256": "1ba1328472238e343a38766e58ac5fdfe0ac38909c67d7ebe139fffcb43b4b10",
-          "byteSize": 1014
+          "sha256": "c1e31bf3d648893ac53fdc885615a099046f696f232d328e9ebc62c555d743d6",
+          "byteSize": 2296
         },
         "driftGate": {
           "compared": "served robots.txt bytes (per the signed observation) vs deployed source file bytes",
@@ -186156,12 +186156,22 @@
           "cloudflarePrependObserved": false,
           "rule": "Generation fails if the served digest ever differs from the source digest, and verify.js re-checks the recorded decision against the live file on every run — the file cannot quietly stop matching the recorded posture (§5.3)."
         },
-        "contentSignalSearch": "unset",
-        "contentSignalAiInput": "unset",
-        "contentSignalAiTrain": "unset",
+        "contentSignalSearch": "yes",
+        "contentSignalAiInput": "yes",
+        "contentSignalAiTrain": "yes",
         "usageTokenAiTraining": {
-          "state": "absent",
-          "groups": []
+          "state": "present",
+          "groups": [
+            {
+              "agent": "__usage_ai-training",
+              "rules": [
+                {
+                  "type": "Allow",
+                  "value": "/"
+                }
+              ]
+            }
+          ]
         },
         "agents": [
           {
@@ -186367,6 +186377,18 @@
                 "value": "/"
               }
             ]
+          },
+          {
+            "agent": "__usage_ai-training",
+            "purposeClass": "other",
+            "purposeNote": "Not in the dossier’s purpose map; classed other until a cadence review maps it.",
+            "posture": "allowed",
+            "rules": [
+              {
+                "type": "Allow",
+                "value": "/"
+              }
+            ]
           }
         ],
         "sitemaps": [
@@ -186380,7 +186402,7 @@
       "@type": "Dataset",
       "@id": "https://theflatratemovers.com/datasets-crawl-presence.json#dataset-crawl-presence-signal-observations",
       "name": "Crawl Presence Registry Dataset — Signal Observations (signed log)",
-      "description": "The append-only, hash-chained signal log in the reconciliation’s 22-field shape: each entry records one observation of a preference signal exactly as served — response-headers digest, body digest, byte size, the stored raw artifact, the parsed directives, and the validity window — with entry_digest = SHA-256 over the entry’s JCS-canonical form (digest/signature fields omitted) and an Ed25519 signature over the digest bytes, verifiable against the estate’s published JWKS (https://theflatratemovers.com/.well-known/signing-keys.json, kid theflatratemovers-2026-10-29-1). The optional RFC 3161 timestamp_token field stands unpopulated: no Time-Stamp Authority has been adopted. First entry: the served robots.txt of 2026-10-31. The log’s latest entry (2026-11-02, sig-2026-11-02-robots-002, recorded after the sitemap-architecture batch’s deliberate robots.txt change) records the currently served file — its body digest equals the deployed source file’s digest, which is the drift gate’s no-drift evidence.",
+      "description": "The append-only, hash-chained signal log in the reconciliation’s 22-field shape: each entry records one observation of a preference signal exactly as served — response-headers digest, body digest, byte size, the stored raw artifact, the parsed directives, and the validity window — with entry_digest = SHA-256 over the entry’s JCS-canonical form (digest/signature fields omitted) and an Ed25519 signature over the digest bytes, verifiable against the estate’s published JWKS (https://theflatratemovers.com/.well-known/signing-keys.json, kid theflatratemovers-2026-10-29-1). The optional RFC 3161 timestamp_token field stands unpopulated: no Time-Stamp Authority has been adopted. First entry: the served robots.txt of 2026-10-31. The log’s latest entry (2026-11-02, sig-2026-11-02-robots-003, recorded after the sitemap-extensions batch’s deliberate in-band declaration of the standing open-training posture) records the currently served file — its body digest equals the deployed source file’s digest, which is the drift gate’s no-drift evidence.",
       "inLanguage": "en-US",
       "dateModified": "2026-11-02",
       "isAccessibleForFree": true,
@@ -186742,6 +186764,274 @@
           "signing_key_id": "theflatratemovers-2026-10-29-1",
           "entry_digest": "2eb4642ee580ab6afada8da0f829b6b90753225b0108a1982e23fb24b38d4153",
           "signature": "UhCYCd6-vONkIJTe4qYkbi-KBDUuheIIV169MSwg-qcisqAnGRklZtyicfybR60zZraXoapvXl_ZmUEZrvz5Cg"
+        },
+        {
+          "entry_id": "sig-2026-11-02-robots-003",
+          "schema_version": "signal-observation/1.0 (per Dossier 05 §3.3)",
+          "observed_at": "2026-11-02T13:04:10Z",
+          "capturing_agent": "Flat Rate Machine signal observation (Mira) — urllib fetch + build-crawl-presence parser, 2026-11-02",
+          "mechanism": "robots",
+          "signal_url": "https://theflatratemovers.com/robots.txt",
+          "scope": "site",
+          "scope_value": "/",
+          "http_status": 200,
+          "response_headers_digest": "87a5596e7182472541e01ddbea5558c33738502d3df5d43fc36ee0e8e9975eb5",
+          "body_digest": "c1e31bf3d648893ac53fdc885615a099046f696f232d328e9ebc62c555d743d6",
+          "body_byte_size": 2296,
+          "raw_artifact_uri": "estate-archive:out/batch-sitemap-extensions-2026-11-02/work/signal-artifacts/robots-2026-11-02.txt",
+          "parsed_directives": [
+            {
+              "user_agent": "GPTBot",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "ChatGPT-User",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "OAI-SearchBot",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "ClaudeBot",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "Claude-User",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "anthropic-ai",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "Google-Extended",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "PerplexityBot",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "Perplexity-User",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "CCBot",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "Applebot-Extended",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "Meta-ExternalAgent",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "cohere-ai",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "YouBot",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "DuckAssistBot",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "MistralAI-User",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "*",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "user_agent": "__usage_ai-training",
+              "rules": [
+                {
+                  "type": "allow",
+                  "pattern": "/"
+                },
+                {
+                  "type": "content-signal",
+                  "pattern": "search=yes, ai-input=yes, ai-train=yes"
+                }
+              ]
+            },
+            {
+              "sitemap_directives": [
+                "https://theflatratemovers.com/sitemap.xml",
+                "https://theflatratemovers.com/news-sitemap.xml"
+              ]
+            }
+          ],
+          "spec_version": "RFC 9309 (robots.txt) + draft-ietf-aipref-attach-01 (Content Signals: search=yes, ai-input=yes, ai-train=yes declared in every group) + draft-kelley-aipref-training-preference-signal-00 (__usage_ai-training group, Allow: /)",
+          "archive_snapshot_uri": null,
+          "archive_snapshot_note": "No Internet Archive capture of this robots.txt revision exists (CDX check at observation time: latest capture of the host’s robots.txt is 20260304124314, WARC digest 5YOGMNIWAMGAZJZXWZFQZ7ACXZFVEQOI, a predecessor revision); this revision was first served 2026-11-02 by the sitemap-extensions batch. Recorded absent, never invented.",
+          "change_ref": "batch-sitemap-extensions-2026-11-02: robots.txt declares the standing open-training posture in-band — Content-Signal search=yes, ai-input=yes, ai-train=yes in every group plus a __usage_ai-training group (Allow: /); deliberate change, drift gate re-armed by this entry",
+          "effective_from": "2026-11-02T13:04:10Z",
+          "effective_to": null,
+          "prev_entry_digest": "2eb4642ee580ab6afada8da0f829b6b90753225b0108a1982e23fb24b38d4153",
+          "timestamp_token": null,
+          "signing_key_id": "theflatratemovers-2026-10-29-1",
+          "entry_digest": "2b4d9e0647811a5e6549c1476b9d72610c23cd172037e1332eed076865b3a373",
+          "signature": "F7Ps4UuWlGRsAQCvDkfzBKygrUf2I1Gef31z0UBwzHJ2uYRrd4-PPoDatr5e4NakBu1VoMeIN4LetZ-g6VCQBA"
         }
       ],
       "verification": "Recompute entry_digest from the entry (omit entry_digest, signature, timestamp_token; JCS-canonicalize; SHA-256), then verify the base64url Ed25519 signature over the raw digest bytes against the JWKS key. The chain: each entry’s prev_entry_digest equals the previous entry’s entry_digest; the first entry’s is null (genesis)."
@@ -187193,14 +187483,14 @@
         },
         "capturesFlaggedEraReview": 0,
         "currentEstateCaptures": 0,
-        "robotsAgents": 17,
+        "robotsAgents": 18,
         "robotsAgentsByPurpose": {
           "training": 7,
           "retrieval": 9,
           "archive": 0,
-          "other": 1
+          "other": 2
         },
-        "signalObservations": 2,
+        "signalObservations": 3,
         "filterInspections": 0,
         "corpusReleaseChecks": 0,
         "gapRecords": 6,

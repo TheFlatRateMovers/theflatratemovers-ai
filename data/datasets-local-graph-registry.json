@@ -7,7 +7,7 @@
       "name": "The Flat Rate Movers — Local Graph Registry Operations",
       "description": "The standing registry of the local-business graph for The Flat Rate Movers’ two branches: the canonical branch entities (generated from the estate), every public third-party record with its observed value, correct value, status, verification date, method and crawl age, the source-by-branch coverage matrix, per-platform review-distribution snapshots, the name-collision DO-NOT-TOUCH class, the gap records L1–L11 each with its designed solution, and the consolidated owner-step list generated from the rows it blocks. Query it three ways: the full JSON file; ?table= on the API route; and the ?table= form of /v1/datasets for the estate inventory.",
       "inLanguage": "en-US",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-02",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -16,8 +16,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -30,8 +30,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -90,8 +90,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -208,6 +208,10 @@
         {
           "@type": "Dataset",
           "@id": "https://theflatratemovers.com/datasets-local-graph-registry.json#dataset-local-graph-registry-totals"
+        },
+        {
+          "@type": "Dataset",
+          "@id": "https://theflatratemovers.com/datasets-local-graph-registry.json#dataset-local-graph-registry-backlinks"
         }
       ]
     },
@@ -217,7 +221,7 @@
       "name": "Local Graph Registry Dataset — Scope",
       "description": "What this registry is and the rules it runs on. The graph’s center (Google) resolves both branches correctly; the graph’s edges (aggregators, directories, stale scrapes) corrupt them — and the edges are the layer answer engines and secondary directories actually read. This dataset is the permanent corrections worklist for that layer: branch truth generated from the estate; every public record as a field-level row with a status from a controlled vocabulary; propagation parents so a downstream row is never demanded fixed before its upstream; corrected-live earned only on direct-fetch proof; verification aging flagged, never silently trusted; collisions catalogued DO-NOT-TOUCH; and the owner’s action list generated from the rows it blocks so it cannot drift.",
       "inLanguage": "en-US",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-02",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -226,8 +230,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -240,8 +244,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -296,6 +300,16 @@
         "Review data is carried as per-platform distribution snapshots — averages, counts and arithmetic — never blended across platforms or branches, and never presented as a quality signal (owner ruling 2026-10-31).",
         "Collision companies are catalogued for detection only. This registry never edits, claims or corrects another company’s record.",
         "No third-party record in this dataset carries a client name, a price, a contract, a clearance or a certification claim."
+      ],
+      "datePublished": "2026-10-31",
+      "includedInDataCatalog": {
+        "@id": "https://theflatratemovers.com/datasets/#collection"
+      },
+      "variableMeasured": [
+        "thirdPartyRecords (field, observedValue vs correctValue, lastVerified)",
+        "reviewDistributionSnapshots (displayedAverage, displayedCount, branch)",
+        "coverageMatrix (winchester / martinsburg parity cells per source)",
+        "collisionRecords (conflationEvents, presence)"
       ]
     },
     {
@@ -304,7 +318,7 @@
       "name": "Local Graph Registry Dataset — Branch Entities (canonical)",
       "description": "The canonical side of the registry: the two branch entities, generated from the estate’s own registries (locations + service-area GeoJSON) so the truth every third-party record is compared against can never be hand-edited in this file. The branches are distinct — different names, hours, addresses, coordinates and Google place identifiers — and are always both present.",
       "inLanguage": "en-US",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-02",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -313,8 +327,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -327,8 +341,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -466,7 +480,7 @@
             "note": "GBP manager-of-record values as recorded in the estate locations registry. Per-platform displays live in the review snapshot table; no surface of this dataset blends the two branches’ ratings."
           },
           "founding": "2010-06",
-          "canonicalSource": "data/locations.json + data/service-area.geojson (estate registries), generated 2026-10-31"
+          "canonicalSource": "data/locations.json + data/service-area.geojson (estate registries), generated 2026-11-02"
         },
         {
           "branchId": "martinsburg",
@@ -574,17 +588,27 @@
             "note": "GBP manager-of-record values as recorded in the estate locations registry. Per-platform displays live in the review snapshot table; no surface of this dataset blends the two branches’ ratings."
           },
           "founding": "2010-06",
-          "canonicalSource": "data/locations.json + data/service-area.geojson (estate registries), generated 2026-10-31"
+          "canonicalSource": "data/locations.json + data/service-area.geojson (estate registries), generated 2026-11-02"
         }
+      ],
+      "datePublished": "2026-10-31",
+      "includedInDataCatalog": {
+        "@id": "https://theflatratemovers.com/datasets/#collection"
+      },
+      "variableMeasured": [
+        "thirdPartyRecords (field, observedValue vs correctValue, lastVerified)",
+        "reviewDistributionSnapshots (displayedAverage, displayedCount, branch)",
+        "coverageMatrix (winchester / martinsburg parity cells per source)",
+        "collisionRecords (conflationEvents, presence)"
       ]
     },
     {
       "@type": "Dataset",
       "@id": "https://theflatratemovers.com/datasets-local-graph-registry.json#dataset-local-graph-registry-records",
       "name": "Local Graph Registry Dataset — Third-Party Records",
-      "description": "One row per public record per field: source, branch, field, the observed value exactly as the evidence base recorded it, the correct value traced to its canonical source, the status from the controlled vocabulary, the last-verified date with method (direct-fetch / search-surface / owner-manager-read) and the crawl age of the underlying page where the observation rests on one, the designed solution’s gap, the owner step where one blocks, the propagation parent where the fix flows from upstream, and the append-only status history. 112 records: 28 verified-correct, 5 correction-sent, 8 parked on an owner step, 45 absences with a creation path, and the remainder open or unverifiable-today — each with its fix designed in the gap records.",
+      "description": "One row per public record per field: source, branch, field, the observed value exactly as the evidence base recorded it, the correct value traced to its canonical source, the status from the controlled vocabulary, the last-verified date with method (direct-fetch / search-surface / owner-manager-read) and the crawl age of the underlying page where the observation rests on one, the designed solution’s gap, the owner step where one blocks, the propagation parent where the fix flows from upstream, and the append-only status history. 120 records: 36 verified-correct, 5 correction-sent, 8 parked on an owner step, 45 absences with a creation path, and the remainder open or unverifiable-today — each with its fix designed in the gap records.",
       "inLanguage": "en-US",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-02",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -593,8 +617,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -607,8 +631,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -657,7 +681,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.1 (Places-style record read 2026-10-31)",
           "propagationParent": null,
@@ -665,6 +689,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -691,7 +716,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.1",
           "propagationParent": null,
@@ -699,6 +724,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "The Suite 11 omission is display-layer thinness in the short-form address, not a record error; the full record carries the suite. Tracked as a display observation, not a correction (Dossier 03 §2.1).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -725,7 +751,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.1",
           "propagationParent": null,
@@ -733,6 +759,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -759,7 +786,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.1",
           "propagationParent": null,
@@ -767,6 +794,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "Displayed coordinates round the canonical estate geo (39.18711576, -78.1668352) to six decimals.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -793,7 +821,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.1",
           "propagationParent": null,
@@ -801,6 +829,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "Exactly Winchester’s hours — branch-distinct from Martinsburg, as required.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -827,7 +856,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Winchester audit table, Google row)",
           "propagationParent": null,
@@ -835,6 +864,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -861,7 +891,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.1",
           "propagationParent": null,
@@ -869,6 +899,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "A display observation, not a correction: the rating exists on the profile of record (see the branch entity and the review snapshot table).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -895,7 +926,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §§2.1, 2.4.1 (NEW finding)",
           "propagationParent": null,
@@ -903,6 +934,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "The display name is shortened at the Places layer, dropping the branch-distinct “Martinsburg WV”. Whether the drift sits in the GBP field or is platform shortening is determined by the L7 GBP-source audit.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -929,7 +961,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.1",
           "propagationParent": null,
@@ -937,6 +969,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -963,7 +996,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.1",
           "propagationParent": null,
@@ -971,6 +1004,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -997,7 +1031,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.1",
           "propagationParent": null,
@@ -1005,6 +1039,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "Displayed coordinates round the canonical estate geo (39.48319665, -77.94760443) to six decimals.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -1031,7 +1066,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.1",
           "propagationParent": null,
@@ -1039,6 +1074,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "Exactly Martinsburg’s hours — branch-distinct from Winchester, as required.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -1065,7 +1101,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §§2.1, 2.4.1 (NEW finding)",
           "propagationParent": null,
@@ -1073,6 +1109,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "Origin undetermined — GBP services field vs platform synthesis — until the L7 GBP-source audit (a read-only manager read). If the labels are platform-synthesized, this row becomes monitored-synthesis and the estate’s published labels stay exact as the corpus those syntheses learn from (Dossier 03 §4 L7). An answer engine summarizing this branch today can lift these labels as company claims — the answer-evidence dataset (Dossier 02 §4 A7) consumes this row’s status.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -1099,7 +1136,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.1; Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg audit table, Google row)",
           "propagationParent": null,
@@ -1107,6 +1144,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -1133,7 +1171,7 @@
             "method": "search-surface",
             "crawlAgeDays": 63
           },
-          "verificationAgeDays": 63,
+          "verificationAgeDays": 65,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (Birdeye — Winchester)",
           "propagationParent": null,
@@ -1141,6 +1179,30 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "The observation rests on a page last crawled ~63 days before the read — before the owner’s 2026-10-30 claim. Step 1 of the designed fix is the direct-URL recheck (this element’s build batch B2), which separates “claim didn’t propagate” from “crawl predates the claim effect”.",
+          "backlinks": [
+            {
+              "referring_domain": "reviews.birdeye.com",
+              "referring_page": "https://reviews.birdeye.com/the-flat-rate-movers-163130362685696",
+              "anchor_text": "https://www.theflatratemovers.com/",
+              "target_url": "https://theflatratemovers.com",
+              "tier": "directory-or-platform",
+              "class": "recorded",
+              "source": "Bing Webmaster backlinks export 2026-11-01",
+              "observed_date": "2026-11-01",
+              "verification_status": "recorded (export-sourced; not fetch-verified)"
+            },
+            {
+              "referring_domain": "reviews.birdeye.com",
+              "referring_page": "https://reviews.birdeye.com/the-flat-rate-movers-163130362685696?filter=newest&rsource=100",
+              "anchor_text": "https://www.theflatratemovers.com/",
+              "target_url": "https://theflatratemovers.com",
+              "tier": "directory-or-platform",
+              "class": "recorded",
+              "source": "Bing Webmaster backlinks export 2026-11-01",
+              "observed_date": "2026-11-01",
+              "verification_status": "recorded (export-sourced; not fetch-verified)"
+            }
+          ],
           "statusHistory": [
             {
               "status": "open",
@@ -1167,7 +1229,7 @@
             "method": "search-surface",
             "crawlAgeDays": 63
           },
-          "verificationAgeDays": 63,
+          "verificationAgeDays": 65,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2; Backlink program Wave 1 execution record, 2026-10-30 (Birdeye claims completed by the owner)",
           "propagationParent": null,
@@ -1175,6 +1237,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "The public page as last crawled contradicts the completed claim. The registry tracks the public page, not the account claim, as the status source: this row closes only when the public page shows claimed (Dossier 03 §4 L1).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -1201,7 +1264,7 @@
             "method": "search-surface",
             "crawlAgeDays": 63
           },
-          "verificationAgeDays": 63,
+          "verificationAgeDays": 65,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §§0, 2.2",
           "propagationParent": null,
@@ -1209,6 +1272,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "The display is what the platform does with the underlying reviews; the defect rows on this profile are the address and the claim label. Arithmetic for this display is carried in the review snapshot table.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -1235,7 +1299,7 @@
             "method": "search-surface",
             "crawlAgeDays": 210
           },
-          "verificationAgeDays": 210,
+          "verificationAgeDays": 212,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (Birdeye — Martinsburg); Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg audit table, Birdeye row)",
           "propagationParent": null,
@@ -1243,6 +1307,19 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "The crawl underlying this observation is ~210 days old; the NAP facts agree with every other observation of this profile.",
+          "backlinks": [
+            {
+              "referring_domain": "reviews.birdeye.com",
+              "referring_page": "https://reviews.birdeye.com/flat-rate-movers-martinsburg-wv-171614909716521",
+              "anchor_text": "https://www.theflatratemovers.com/",
+              "target_url": "https://theflatratemovers.com",
+              "tier": "directory-or-platform",
+              "class": "recorded",
+              "source": "Bing Webmaster backlinks export 2026-11-01",
+              "observed_date": "2026-11-01",
+              "verification_status": "recorded (export-sourced; not fetch-verified)"
+            }
+          ],
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -1269,7 +1346,7 @@
             "method": "search-surface",
             "crawlAgeDays": 210
           },
-          "verificationAgeDays": 210,
+          "verificationAgeDays": 212,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2; Backlink program Wave 1 execution record, 2026-10-30",
           "propagationParent": null,
@@ -1277,6 +1354,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "OPEN / STALE-CRAWL in the dossier’s stamp: the crawl predates the claim by months, so the current public state is unverifiable from the snippet. The direct-URL recheck (build batch B2) is step 1 of the designed fix (Dossier 03 §§2.2, 8.1).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -1303,7 +1381,7 @@
             "method": "search-surface",
             "crawlAgeDays": 210
           },
-          "verificationAgeDays": 210,
+          "verificationAgeDays": 212,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2",
           "propagationParent": null,
@@ -1311,6 +1389,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "A claimed profile showing zero reviews while Google shows 6 is a feed failure, not a review-volume fact (Dossier 03 §2.2).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -1337,7 +1416,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg audit table, Birdeye row)",
           "propagationParent": null,
@@ -1345,6 +1424,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "Category could be sharpened to Movers at claim (Phase 1 audit). A minor row beside the claim and syndication rows on the same profile.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -1371,7 +1451,7 @@
             "method": "search-surface",
             "crawlAgeDays": 0
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (CB Insights)",
           "propagationParent": null,
@@ -1379,6 +1459,30 @@
           "ownerStep": "step-5-cb-insights-mailbox",
           "creationPath": null,
           "note": "Re-confirmed current: the page was crawled ~20 hours before the 2026-10-31 read. The claim path is blocked on the company-domain mailbox decision (owner step 5). CB Insights is a separate data product — this row is NOT a Data Axle propagation child (Dossier 03 §2.3).",
+          "backlinks": [
+            {
+              "referring_domain": "cbinsights.com",
+              "referring_page": "https://cbinsights.com/company/the-flat-rate-movers/alternatives-competitors",
+              "anchor_text": "theflatratemovers.com",
+              "target_url": "https://theflatratemovers.com",
+              "tier": "directory-or-platform",
+              "class": "recorded",
+              "source": "Bing Webmaster backlinks export 2026-11-01",
+              "observed_date": "2026-11-01",
+              "verification_status": "recorded (export-sourced; not fetch-verified)"
+            },
+            {
+              "referring_domain": "cbinsights.com",
+              "referring_page": "https://cbinsights.com/company/the-flat-rate-movers",
+              "anchor_text": "theflatratemovers.com",
+              "target_url": "https://theflatratemovers.com",
+              "tier": "directory-or-platform",
+              "class": "recorded",
+              "source": "Bing Webmaster backlinks export 2026-11-01",
+              "observed_date": "2026-11-01",
+              "verification_status": "recorded (export-sourced; not fetch-verified)"
+            }
+          ],
           "statusHistory": [
             {
               "status": "open",
@@ -1405,7 +1509,7 @@
             "method": "search-surface",
             "crawlAgeDays": 0
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2",
           "propagationParent": null,
@@ -1413,6 +1517,7 @@
           "ownerStep": "step-5-cb-insights-mailbox",
           "creationPath": null,
           "note": "The claim form rejects gmail.com addresses; the mailbox decision (owner step 5) is the unblock, with the documented correction-request channel as the fallback (Dossier 03 §4 L11).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -1439,7 +1544,7 @@
             "method": "search-surface",
             "crawlAgeDays": 0
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §§2.2, 8.3",
           "propagationParent": null,
@@ -1447,6 +1552,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "Recorded as an unverified possible additional corruption, never as a finding. A direct page open in the re-verification pass (build batch B2) resolves attribution; if attributed, correct founding to June 2010 at claim.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "unverifiable-today",
@@ -1473,7 +1579,7 @@
             "method": "search-surface",
             "crawlAgeDays": 63
           },
-          "verificationAgeDays": 63,
+          "verificationAgeDays": 65,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (BBB); Backlink program Phase 1 citation audit, 2026-10-30 (BBB profile 1)",
           "propagationParent": "data-axle-w-record",
@@ -1481,6 +1587,7 @@
           "ownerStep": "step-3-bbb",
           "creationPath": null,
           "note": "Live and findable, and it carries the same place identifier as the Winchester GBP record in the search surface — BBB’s own data ties this stale profile to the real place. The designed fix is the merge into profile 0241-236010957 in the B4 owner sitting (free correction path only — no paid accreditation, standing rule).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "parked-owner-step",
@@ -1507,7 +1614,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (BBB profile 2); Retrieval Machine Dossier 03 §8.5",
           "propagationParent": null,
@@ -1515,6 +1622,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "Not read directly in the 2026-10-31 pass; its current-minute state is unverified (Dossier 03 §8.5). The direct read is part of the B4 sitting’s in-session work.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "unverifiable-today",
@@ -1541,7 +1649,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2; Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg audit table, BBB row)",
           "propagationParent": null,
@@ -1549,6 +1657,7 @@
           "ownerStep": "step-3-bbb",
           "creationPath": "Created from the canonical submission packet in the B4 owner sitting, in the same session as the Winchester merge (Dossier 03 §4 L3)",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -1575,7 +1684,7 @@
             "method": "owner-manager-read",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (Data Axle); Backlink program Wave 1 execution record, 2026-10-30 (Data Axle item)",
           "propagationParent": null,
@@ -1583,6 +1692,7 @@
           "ownerStep": "step-1-data-axle",
           "creationPath": null,
           "note": "The cluster root: the 1850 Valley Ave rows (BBB duplicate, MapQuest, Judy’s Book, Fyple, NSN Lookup, StartUs) carry this record as their propagation parent and cannot be marked failed until it is corrected-live AND one refresh cycle has passed (Dossier 03 §2.3). That Data Axle is the sole upstream for every cluster row is an inference from cluster shape and aggregator mechanics; the B3→B7 sequence tests it empirically (Dossier 03 §8.4).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "parked-owner-step",
@@ -1609,7 +1719,7 @@
             "method": "owner-manager-read",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (Data Axle); Backlink program Wave 1 execution record, 2026-10-30",
           "propagationParent": null,
@@ -1617,6 +1727,7 @@
           "ownerStep": "step-1-data-axle",
           "creationPath": null,
           "note": "Both branch corrections are executed from the canonical packets in the same session once the account is confirmed (owner step 1).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "parked-owner-step",
@@ -1643,7 +1754,7 @@
             "method": "search-surface",
             "crawlAgeDays": 23
           },
-          "verificationAgeDays": 23,
+          "verificationAgeDays": 25,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (Superpages / Thryv); Backlink program Phase 1 citation audit, 2026-10-30 (Superpages row)",
           "propagationParent": null,
@@ -1651,6 +1762,7 @@
           "ownerStep": "step-2-thryv",
           "creationPath": null,
           "note": "Observed via a Superpages category page (crawl ~23 days), not the listing page itself (Dossier 03 §8.7). One Thryv account fix covers Superpages + YellowPages + DexKnows in a single motion — the three properties share the feed.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "parked-owner-step",
@@ -1677,7 +1789,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (YellowPages direct row); Retrieval Machine Dossier 03 §2.2",
           "propagationParent": "superpages-w-address",
@@ -1685,6 +1797,7 @@
           "ownerStep": "step-2-thryv",
           "creationPath": null,
           "note": "Same Thryv feed as the Superpages record, which is this row’s propagation parent; corrected by the same single Thryv action and verified on this property’s public page after one refresh cycle.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "parked-owner-step",
@@ -1711,7 +1824,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30; Retrieval Machine Dossier 03 §2.2 (Thryv family)",
           "propagationParent": "superpages-w-address",
@@ -1719,6 +1832,7 @@
           "ownerStep": "step-2-thryv",
           "creationPath": null,
           "note": "Same Thryv feed as the Superpages record, which is this row’s propagation parent; corrected by the same single Thryv action and verified on this property’s public page after one refresh cycle.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "parked-owner-step",
@@ -1745,7 +1859,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg audit table, Thryv row)",
           "propagationParent": null,
@@ -1753,6 +1867,7 @@
           "ownerStep": "step-2-thryv",
           "creationPath": "Added as the second location in the Thryv correction, executed in the B4 owner sitting (Dossier 03 §4 L5)",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -1779,7 +1894,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg audit table, Thryv row)",
           "propagationParent": null,
@@ -1787,6 +1902,7 @@
           "ownerStep": "step-2-thryv",
           "creationPath": "Rides the same Thryv second-location creation as the Superpages Martinsburg record (one feed, three properties)",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -1813,7 +1929,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg audit table, Thryv row)",
           "propagationParent": null,
@@ -1821,6 +1937,7 @@
           "ownerStep": "step-2-thryv",
           "creationPath": "Rides the same Thryv second-location creation as the Superpages Martinsburg record (one feed, three properties)",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -1847,7 +1964,7 @@
             "method": "search-surface",
             "crawlAgeDays": 86
           },
-          "verificationAgeDays": 86,
+          "verificationAgeDays": 88,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (Porch); Backlink program Phase 1 citation audit, 2026-10-30 (Porch row)",
           "propagationParent": null,
@@ -1855,6 +1972,7 @@
           "ownerStep": "step-4-porch",
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "parked-owner-step",
@@ -1881,7 +1999,7 @@
             "method": "search-surface",
             "crawlAgeDays": 86
           },
-          "verificationAgeDays": 86,
+          "verificationAgeDays": 88,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (Porch)",
           "propagationParent": null,
@@ -1889,6 +2007,7 @@
           "ownerStep": "step-4-porch",
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "parked-owner-step",
@@ -1915,7 +2034,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg audit table, Porch row); Retrieval Machine Dossier 03 §2.2",
           "propagationParent": null,
@@ -1923,6 +2042,7 @@
           "ownerStep": "step-4-porch",
           "creationPath": "Created from the canonical packet in the B4 owner sitting, in the same session as the Winchester corrections (Dossier 03 §4 L6)",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -1949,7 +2069,7 @@
             "method": "search-surface",
             "crawlAgeDays": 276
           },
-          "verificationAgeDays": 276,
+          "verificationAgeDays": 278,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (MapQuest); Backlink program Wave 1 execution record, 2026-10-30 (free report submitted; listing ID 270567269)",
           "propagationParent": "data-axle-w-record",
@@ -1957,6 +2077,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "The free report was submitted 2026-10-30 (report listing ID 270567269). The profile page itself was last crawled ~276 days before the 2026-10-31 read and has carried the wrong address since at least then; the free report may or may not have landed. Propagation class: this row re-resolves when the Data Axle parent is corrected-live and one refresh cycle has passed (Dossier 03 §2.3).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "correction-sent",
@@ -1983,7 +2104,7 @@
             "method": "search-surface",
             "crawlAgeDays": 310
           },
-          "verificationAgeDays": 310,
+          "verificationAgeDays": 312,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (Fyple); Backlink program Wave 1 execution record, 2026-10-30 (report submitted 2026-10-30)",
           "propagationParent": "data-axle-w-record",
@@ -1991,6 +2112,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "Page last crawled ~310 days before the 2026-10-31 read; the 2026-10-30 report is sent and its effect is unproven until the page re-crawls.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "correction-sent",
@@ -2017,7 +2139,7 @@
             "method": "search-surface",
             "crawlAgeDays": 310
           },
-          "verificationAgeDays": 310,
+          "verificationAgeDays": 312,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (Fyple); Backlink program Phase 1 citation audit, 2026-10-30 (Fyple row)",
           "propagationParent": "data-axle-w-record",
@@ -2025,6 +2147,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "A wrong category on the same stale record; the category correction rides the same report/propagation path as the address row.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -2051,7 +2174,7 @@
             "method": "search-surface",
             "crawlAgeDays": 319
           },
-          "verificationAgeDays": 319,
+          "verificationAgeDays": 321,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (NSN Lookup); Backlink program Wave 1 execution record, 2026-10-30 (correction sent via live chat 2026-10-30)",
           "propagationParent": "data-axle-w-record",
@@ -2059,6 +2182,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "The correction was sent via live chat 2026-10-30 with no written confirmation path; the page was last crawled ~319 days before the 2026-10-31 read. A direct recheck of the cage page verifies whether the chat correction landed (build batch B2); until then the dossier’s honest stamp stands: sent is not corrected (§8.2).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "correction-sent",
@@ -2085,7 +2209,7 @@
             "method": "search-surface",
             "crawlAgeDays": 237
           },
-          "verificationAgeDays": 237,
+          "verificationAgeDays": 239,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (Judy’s Book)",
           "propagationParent": "data-axle-w-record",
@@ -2093,6 +2217,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "Direct edits are paywalled ($9.95 one-time / ~$19.92 per month; standing default: NO paid correction). The designed free path is the Data Axle upstream correction — this row’s fix arrives by propagation or not at all (Dossier 03 §§2.2, 8.6).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -2119,7 +2244,7 @@
             "method": "search-surface",
             "crawlAgeDays": 237
           },
-          "verificationAgeDays": 237,
+          "verificationAgeDays": 239,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (Judy’s Book — NEW category finding)",
           "propagationParent": "data-axle-w-record",
@@ -2127,6 +2252,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "A category error on the same record (NEW in the 2026-10-31 pass): the company is filed under Personal Care. Same paywalled-edit constraint as the address row; the correction rides propagation.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -2153,7 +2279,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (StartUs row); Retrieval Machine Dossier 03 §2.2",
           "propagationParent": "data-axle-w-record",
@@ -2161,6 +2287,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "The site was unreachable during the Wave 1 pass — standing instruction: do not retry the direct route. The row is tracked for propagation only.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -2187,7 +2314,7 @@
             "method": "search-surface",
             "crawlAgeDays": 57
           },
-          "verificationAgeDays": 57,
+          "verificationAgeDays": 59,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (Chamberofcommerce.com); Backlink program Wave 1 execution record, 2026-10-30 (merge request sent 2026-10-30)",
           "propagationParent": null,
@@ -2195,6 +2322,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "The merge request is sent; the duplicate still appeared in the 2026-10-31 read (page crawl ~57 days). Merges process on the directory’s own schedule — this row closes on the duplicate’s disappearance from the public pages, verified by direct fetch.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "correction-sent",
@@ -2221,7 +2349,7 @@
             "method": "search-surface",
             "crawlAgeDays": 57
           },
-          "verificationAgeDays": 57,
+          "verificationAgeDays": 59,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2",
           "propagationParent": "chamber-w-merge",
@@ -2229,6 +2357,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "The category error lives on the duplicate; the merge (this row’s propagation parent) removes it with the listing itself.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "correction-sent",
@@ -2255,7 +2384,7 @@
             "method": "search-surface",
             "crawlAgeDays": 57
           },
-          "verificationAgeDays": 57,
+          "verificationAgeDays": 59,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (Chamberofcommerce.com — NEW rendering note)",
           "propagationParent": null,
@@ -2263,6 +2392,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "A display-rendering defect on the surviving listing, distinct from the duplicate: even after the merge, the rendered address needs the correction. Flagged for the merge follow-up / a directory correction request.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -2289,7 +2419,7 @@
             "method": "search-surface",
             "crawlAgeDays": 3
           },
-          "verificationAgeDays": 3,
+          "verificationAgeDays": 5,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (GreatGuysMove)",
           "propagationParent": null,
@@ -2297,6 +2427,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "Re-confirmed live on a page crawled ~3 days before the 2026-10-31 read — the first correction (sent 2026-10-30, Wave 1) did not remove it. The designed fix is two-sided: retire our own stale pre-rebuild page that carries the identical sentence (see the estate-stale-index row), then send the second correction citing that provenance (gap L4).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -2323,7 +2454,7 @@
             "method": "search-surface",
             "crawlAgeDays": 3
           },
-          "verificationAgeDays": 3,
+          "verificationAgeDays": 5,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (GreatGuysMove)",
           "propagationParent": null,
@@ -2331,6 +2462,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "The platform presents a license-status claim about the federal carrier registry that the company has never published. The correction asks for removal of the framing alongside the discount (gap L4); the registry records the framing, never the platform’s wording.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -2357,7 +2489,7 @@
             "method": "search-surface",
             "crawlAgeDays": 3
           },
-          "verificationAgeDays": 3,
+          "verificationAgeDays": 5,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (GreatGuysMove)",
           "propagationParent": null,
@@ -2365,6 +2497,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -2391,7 +2524,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (GreatGuysMove)",
           "propagationParent": null,
@@ -2399,6 +2532,7 @@
           "ownerStep": null,
           "creationPath": "Request the second location page in the same correction motion as the Winchester discount removal (branch-parity wave, Dossier 03 §4 L9 / G-E5)",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -2425,7 +2559,7 @@
             "method": "search-surface",
             "crawlAgeDays": 352
           },
-          "verificationAgeDays": 352,
+          "verificationAgeDays": 354,
           "staleVerification": true,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (GreatGuysMove provenance)",
           "propagationParent": null,
@@ -2433,6 +2567,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "Provenance evidence for gap L4: the scraped sentence most plausibly originated on our own pre-rebuild page (page last crawled ~352 days before the 2026-10-31 read). First action is to verify the page is still served; the retirement itself is this element’s build batch B5 (an estate-side change, sequenced so a live estate batch is never edited concurrently).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -2459,7 +2594,7 @@
             "method": "search-surface",
             "crawlAgeDays": 9
           },
-          "verificationAgeDays": 9,
+          "verificationAgeDays": 11,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (AnyFlip — NEW)",
           "propagationParent": null,
@@ -2467,6 +2602,7 @@
           "ownerStep": "step-6-anyflip-conditional",
           "creationPath": null,
           "note": "The mirrored content is ~497 days old (it cites an October 2024 mover ranking) and the page was crawled ~9 days before the 2026-10-31 read — it is ranking NOW. Whether the publishing account is ours is unverified: the designed sequence checks account recovery first, then takedown-or-update (build batch B5); the owner step is conditional on recovery requiring it.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -2493,7 +2629,7 @@
             "method": "search-surface",
             "crawlAgeDays": 9
           },
-          "verificationAgeDays": 9,
+          "verificationAgeDays": 11,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.2 (AnyFlip)",
           "propagationParent": null,
@@ -2501,6 +2637,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -2527,7 +2664,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Thomasnet row); Wave 2 prep re-verification 2026-10-31 (listing confirmed present — the wave item is a CLAIM, not a creation)",
           "propagationParent": null,
@@ -2535,6 +2672,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "One of the strongest industrial discovery surfaces in the audit. The registry tracks the public profile; the claim (G-E3) rides a Thomasnet supplier account action at the table.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -2561,7 +2699,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (NearbyMovers row)",
           "propagationParent": null,
@@ -2569,6 +2707,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -2595,7 +2734,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (BestProsInTown row)",
           "propagationParent": null,
@@ -2603,6 +2742,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -2629,7 +2769,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Bizidex row)",
           "propagationParent": null,
@@ -2637,6 +2777,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -2663,7 +2804,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Bunity row)",
           "propagationParent": null,
@@ -2671,6 +2812,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -2697,7 +2839,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (HireRush row)",
           "propagationParent": null,
@@ -2705,6 +2847,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -2731,7 +2874,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (About.me row)",
           "propagationParent": null,
@@ -2739,6 +2882,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -2765,7 +2909,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Akama row)",
           "propagationParent": null,
@@ -2773,6 +2917,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -2799,7 +2944,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (IndustryOversight row)",
           "propagationParent": null,
@@ -2807,6 +2952,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -2833,7 +2979,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Lnk.bio row)",
           "propagationParent": null,
@@ -2841,6 +2987,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "Company-level surface: the page is ours and carries the Winchester address; Martinsburg is carried in its service links rather than on a branch-specific page, and no branch-specific page exists on this source.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -2867,7 +3014,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Medium rows, both branch tables)",
           "propagationParent": null,
@@ -2875,6 +3022,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -2901,7 +3049,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg audit table, LocalityBiz row)",
           "propagationParent": null,
@@ -2909,6 +3057,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "verified-correct",
@@ -2935,7 +3084,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg audit table, LocalityBiz row)",
           "propagationParent": null,
@@ -2943,6 +3092,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "No practical edit channel exists on this source — monitor only (Phase 1 audit). Recorded so the parity matrix shows the state honestly rather than a blank.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -2969,7 +3119,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg audit table, RenTechDigital row)",
           "propagationParent": "data-axle-m-record",
@@ -2977,6 +3127,7 @@
           "ownerStep": null,
           "creationPath": null,
           "note": "A scraper, not a citation channel: the row exists for propagation tracking only — if the upstream record is corrected and this one refreshes wrong, it is evidence about propagation, not a channel to fix directly.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "open",
@@ -3003,7 +3154,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 2 plan, Wave 2 prep re-verification 2026-10-31",
           "propagationParent": null,
@@ -3011,6 +3162,7 @@
           "ownerStep": null,
           "creationPath": "Bing Places creation via GBP import, after the in-account duplicate check (G-E1)",
           "note": "No public listing surfaced in the Wave 2 prep check. Creation opens with an in-account duplicate check, then the standard GBP-import flow (the documented route — the data is already canonical in Google). Sequenced as a wave-3 at-the-table item (G-E1).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3037,7 +3189,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 2 plan, Wave 2 prep re-verification 2026-10-31",
           "propagationParent": null,
@@ -3045,6 +3197,7 @@
           "ownerStep": null,
           "creationPath": "Bing Places creation via GBP import, after the in-account duplicate check (G-E1)",
           "note": "Parity row: Martinsburg is created in the same motion as Winchester (G-E1).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3071,7 +3224,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §6 (G-E1)",
           "propagationParent": null,
@@ -3079,6 +3232,7 @@
           "ownerStep": null,
           "creationPath": "Apple Business Connect claim/creation, both branches (G-E1)",
           "note": "Apple Business Connect state is account-side and not publicly verifiable from the search surface; the claim check is part of the G-E1 wave (Apple Maps is a material share of local pack traffic on iOS).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "unverifiable-today",
@@ -3105,7 +3259,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §6 (G-E1)",
           "propagationParent": null,
@@ -3113,6 +3267,7 @@
           "ownerStep": null,
           "creationPath": "Apple Business Connect claim/creation, both branches (G-E1)",
           "note": "Parity row — claimed/created in the same motion as Winchester (G-E1).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "unverifiable-today",
@@ -3139,7 +3294,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Yelp row); re-corroborated 2026-10-31",
           "propagationParent": null,
@@ -3147,6 +3302,7 @@
           "ownerStep": null,
           "creationPath": "Yelp business claim/creation, both branches in one motion (G-E4, wave 3, at the table)",
           "note": "Verified absence twice (2026-10-30 audit and the 2026-10-31 Wave 2 prep re-check): no Yelp page exists for either branch. Yelp is the highest-weight review surface in the answer-citation research (Dossier 02 §2) after the GBP layer — the most material single absence in the graph.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3173,7 +3329,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Yelp row); re-corroborated 2026-10-31",
           "propagationParent": null,
@@ -3181,6 +3337,7 @@
           "ownerStep": null,
           "creationPath": "Yelp business claim/creation, both branches in one motion (G-E4)",
           "note": "Parity row — created in the same motion as Winchester (G-E4).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3207,7 +3364,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §6 (G-E4)",
           "propagationParent": null,
@@ -3215,6 +3372,7 @@
           "ownerStep": null,
           "creationPath": "Nextdoor business claim/creation (G-E4)",
           "note": "Nextdoor presence is neighborhood-graph state, not publicly enumerable from the search surface; the claim check rides the G-E4 wave (Nextdoor is a real referral surface for residential moving).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "unverifiable-today",
@@ -3241,7 +3399,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §6 (G-E4)",
           "propagationParent": null,
@@ -3249,6 +3407,7 @@
           "ownerStep": null,
           "creationPath": "Nextdoor business claim/creation (G-E4)",
           "note": "Parity row — same motion as Winchester (G-E4).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "unverifiable-today",
@@ -3275,7 +3434,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Angi row)",
           "propagationParent": null,
@@ -3283,6 +3442,7 @@
           "ownerStep": null,
           "creationPath": "Angi business claim (one account also covers HomeAdvisor), wave 2, at the table",
           "note": "Free claim path verified in the audit (angi.com/business-claim); Angi and HomeAdvisor are the same account — one claim covers both.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3309,7 +3469,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Angi row)",
           "propagationParent": null,
@@ -3317,6 +3477,7 @@
           "ownerStep": null,
           "creationPath": "Angi business claim, second location (wave 2)",
           "note": "Parity row — second location on the same claim.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3343,7 +3504,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Houzz row)",
           "propagationParent": null,
@@ -3351,6 +3512,7 @@
           "ownerStep": null,
           "creationPath": "Houzz pro profile creation (free tier), wave 2, at the table",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3377,7 +3539,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Houzz row)",
           "propagationParent": null,
@@ -3385,6 +3547,7 @@
           "ownerStep": null,
           "creationPath": "Houzz pro profile, second location (wave 2)",
           "note": "Parity row — second location/service area on the same profile.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3411,7 +3574,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Thumbtack row)",
           "propagationParent": null,
@@ -3419,6 +3582,7 @@
           "ownerStep": null,
           "creationPath": "Thumbtack pro signup (free), wave 2, at the table — phone verification code is the owner’s step in-session",
           "note": "Free to join; leads are pay-per-lead afterwards — joining is free and inside the rule; lead purchase decisions are the owner’s.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3445,7 +3609,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Thumbtack row)",
           "propagationParent": null,
@@ -3453,6 +3617,7 @@
           "ownerStep": null,
           "creationPath": "Thumbtack pro signup, Martinsburg service area (wave 2)",
           "note": "Parity row — Martinsburg service area on the same pro account.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3479,7 +3644,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Movers.com row)",
           "propagationParent": null,
@@ -3487,6 +3652,7 @@
           "ownerStep": null,
           "creationPath": "Movers.com business profile (free route), wave 2, at the table",
           "note": "Program rule 3.8 applies: a lead-gen profile, if created, never carries lead-gen copy as company fact.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3513,7 +3679,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Movers.com row)",
           "propagationParent": null,
@@ -3521,6 +3687,7 @@
           "ownerStep": null,
           "creationPath": "Movers.com business profile, Martinsburg (wave 2)",
           "note": "Parity row.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3547,7 +3714,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (MovingCompanyReviews row)",
           "propagationParent": null,
@@ -3555,6 +3722,7 @@
           "ownerStep": null,
           "creationPath": "MovingCompanyReviews business profile (free), wave 2, at the table",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3581,7 +3749,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Movers.com/MCR rows)",
           "propagationParent": null,
@@ -3589,6 +3757,7 @@
           "ownerStep": null,
           "creationPath": "MovingCompanyReviews business profile, Martinsburg (wave 2)",
           "note": "Parity row.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3615,7 +3784,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 0,
+          "verificationAgeDays": 2,
           "staleVerification": false,
           "evidenceRef": "Retrieval Machine Dossier 03 §2.4.3",
           "propagationParent": null,
@@ -3623,6 +3792,7 @@
           "ownerStep": null,
           "creationPath": "Editorial channel check + canonical packet submission; no paid placement (Dossier 03 §2.4.3)",
           "note": "An editorial absence on a high-intent list — the fix is the channel check (editorial update request vs paid placement; paid placement is out under the no-paid rule) plus the canonical data packet. Framed as corroboration work, never a promise (Dossier 03 §2.4.3).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3649,7 +3819,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg audit table, moveBuddha row)",
           "propagationParent": null,
@@ -3657,6 +3827,7 @@
           "ownerStep": null,
           "creationPath": "Editorial channel check + canonical packet submission; no paid placement",
           "note": "Parity row — same editorial channel as the Winchester row.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3683,7 +3854,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Today’s Homeowner row)",
           "propagationParent": null,
@@ -3691,6 +3862,7 @@
           "ownerStep": null,
           "creationPath": "None (editorial; monitor only)",
           "note": "Data-driven editorial rankings with no submission flow — monitor only; the corroboration estate is the lever.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3717,7 +3889,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Today’s Homeowner row)",
           "propagationParent": null,
@@ -3725,6 +3897,7 @@
           "ownerStep": null,
           "creationPath": "None (editorial; monitor only)",
           "note": "Parity row — monitor only.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3751,7 +3924,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Top of Virginia Regional Chamber row)",
           "propagationParent": null,
@@ -3759,6 +3932,7 @@
           "ownerStep": null,
           "creationPath": "Paid membership — owner business decision; not pursued under the no-paid rule",
           "note": "The REAL local chamber (distinct from the Chamberofcommerce.com directory): membership is paid and outside the no-paid rule — a business decision for the owner, recorded so the absence is a decision, not an oversight.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3785,7 +3959,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg–Berkeley County Chamber row)",
           "propagationParent": null,
@@ -3793,6 +3967,7 @@
           "ownerStep": null,
           "creationPath": "Paid membership — owner business decision; not pursued under the no-paid rule",
           "note": "Parity row — the real Berkeley County chamber; paid membership, owner decision.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3819,7 +3994,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg grouped absence sweep, 2026-10-30)",
           "propagationParent": null,
@@ -3827,6 +4002,7 @@
           "ownerStep": null,
           "creationPath": "Branch-parity wave (G-E5): Martinsburg listing created/submitted from the canonical packet",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3853,7 +4029,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg grouped absence sweep, 2026-10-30)",
           "propagationParent": null,
@@ -3861,6 +4037,7 @@
           "ownerStep": null,
           "creationPath": "Branch-parity wave (G-E5): Martinsburg listing from the canonical packet",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3887,7 +4064,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg grouped absence sweep, 2026-10-30)",
           "propagationParent": null,
@@ -3895,6 +4072,7 @@
           "ownerStep": null,
           "creationPath": "Branch-parity wave (G-E5): Martinsburg listing from the canonical packet",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3921,7 +4099,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg grouped absence sweep, 2026-10-30)",
           "propagationParent": null,
@@ -3929,6 +4107,7 @@
           "ownerStep": null,
           "creationPath": "Branch-parity wave (G-E5): Martinsburg listing from the canonical packet",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3955,7 +4134,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg grouped absence sweep, 2026-10-30)",
           "propagationParent": null,
@@ -3963,6 +4142,7 @@
           "ownerStep": null,
           "creationPath": "Branch-parity wave (G-E5): Martinsburg listing from the canonical packet",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -3989,7 +4169,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg grouped absence sweep, 2026-10-30)",
           "propagationParent": null,
@@ -3997,6 +4177,7 @@
           "ownerStep": null,
           "creationPath": "Branch-parity wave (G-E5): Martinsburg listing from the canonical packet",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -4023,7 +4204,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg grouped absence sweep, 2026-10-30)",
           "propagationParent": null,
@@ -4031,6 +4212,7 @@
           "ownerStep": null,
           "creationPath": "Branch-parity wave (G-E5): Martinsburg facts verified on the company page / branch page if the source supports one",
           "note": "The company About.me page names both towns in its descriptors; no branch-specific Martinsburg page exists. Parity here means the Martinsburg facts ride the company page accurately.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -4057,7 +4239,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg grouped absence sweep, 2026-10-30)",
           "propagationParent": null,
@@ -4065,6 +4247,7 @@
           "ownerStep": null,
           "creationPath": "Branch-parity wave (G-E5): Martinsburg listing if the directory supports a second location",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -4091,7 +4274,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg grouped absence sweep, 2026-10-30)",
           "propagationParent": null,
@@ -4099,6 +4282,7 @@
           "ownerStep": null,
           "creationPath": "At claim (G-E3): Martinsburg carried as a served location on the one supplier profile",
           "note": "The Thomasnet supplier record is anchored on the Winchester address; Martinsburg parity on this source is the service-area statement on the claimed profile (the G-E3 claim), not a second profile.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -4125,7 +4309,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg grouped absence sweep, 2026-10-30)",
           "propagationParent": null,
@@ -4133,6 +4317,7 @@
           "ownerStep": null,
           "creationPath": "Branch-parity wave (G-E5): Martinsburg listing if the directory supports one",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -4159,7 +4344,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg grouped absence sweep, 2026-10-30)",
           "propagationParent": null,
@@ -4167,6 +4352,7 @@
           "ownerStep": null,
           "creationPath": "Branch-parity wave (G-E5): Martinsburg listing from the canonical packet",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -4193,7 +4379,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg grouped absence sweep, 2026-10-30)",
           "propagationParent": null,
@@ -4201,6 +4387,7 @@
           "ownerStep": null,
           "creationPath": "Branch-parity wave (G-E5): free creation path only; otherwise monitored",
           "note": "No Martinsburg listing; creation on this source runs into the same paywalled-edit economics as the Winchester record — the parity route is the canonical packet if a free creation path exists, else recorded as monitored.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -4227,7 +4414,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg grouped absence sweep, 2026-10-30)",
           "propagationParent": null,
@@ -4235,6 +4422,7 @@
           "ownerStep": null,
           "creationPath": "Branch-parity wave (G-E5): Martinsburg listing from the canonical packet",
           "note": null,
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -4261,7 +4449,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg grouped absence sweep, 2026-10-30)",
           "propagationParent": null,
@@ -4269,6 +4457,7 @@
           "ownerStep": null,
           "creationPath": "Propagation only (source unreachable; standing no-retry)",
           "note": "The source site was unreachable in Wave 1 — do not retry the direct route; parity rides propagation.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -4295,7 +4484,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (NSN Lookup row — Winchester table only)",
           "propagationParent": null,
@@ -4303,6 +4492,7 @@
           "ownerStep": null,
           "creationPath": "None — single company record source; correctness rides the Winchester row’s correction",
           "note": "Parity on a single-record source means the company record is correct; there is nothing branch-specific to create here. The address defect lives on the Winchester row (nsn-w-address).",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -4329,7 +4519,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Winchester audit table — no LocalityBiz row)",
           "propagationParent": null,
@@ -4337,6 +4527,7 @@
           "ownerStep": null,
           "creationPath": "Branch-parity wave (G-E5): Winchester listing from the canonical packet if the source accepts one",
           "note": "This source surfaced only for Martinsburg in the audit; the Winchester cell is recorded as an absence so the matrix stays honest.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -4363,7 +4554,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Winchester audit table — no RenTechDigital row)",
           "propagationParent": null,
@@ -4371,6 +4562,7 @@
           "ownerStep": null,
           "creationPath": "None pursued — scraper surface; propagation tracking only",
           "note": "The scraped record surfaced only for Martinsburg. A scraper, not a citation channel — recorded for completeness of the matrix.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -4397,7 +4589,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Top of Virginia Regional Chamber row)",
           "propagationParent": null,
@@ -4405,6 +4597,7 @@
           "ownerStep": null,
           "creationPath": "Not applicable — regional chamber for the Winchester area",
           "note": "This chamber serves the Winchester / Top of Virginia region; Martinsburg parity lives on the Martinsburg–Berkeley County chamber source, not here.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -4431,7 +4624,7 @@
             "method": "search-surface",
             "crawlAgeDays": null
           },
-          "verificationAgeDays": 1,
+          "verificationAgeDays": 3,
           "staleVerification": false,
           "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg–Berkeley County Chamber row)",
           "propagationParent": null,
@@ -4439,6 +4632,7 @@
           "ownerStep": null,
           "creationPath": "Not applicable — regional chamber for the Martinsburg area",
           "note": "This chamber serves Berkeley County (Martinsburg); Winchester parity lives on the Top of Virginia chamber source, not here.",
+          "backlinks": null,
           "statusHistory": [
             {
               "status": "no-profile-exists",
@@ -4447,16 +4641,306 @@
               "evidenceRef": "Backlink program Phase 1 citation audit, 2026-10-30 (Martinsburg–Berkeley County Chamber row)"
             }
           ]
+        },
+        {
+          "recordId": "wikidata-company-item",
+          "source": "wikidata",
+          "sourceName": "Wikidata",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q141969215",
+          "sourceRecordId": "Q141969215",
+          "branch": "company",
+          "field": "company item",
+          "observedValue": "Live Wikidata item Q141969215 for the company: 7 statements (P31 business, P571 inception 2010-06, P856 website, P17 US, P159 HQ Winchester, P452 transport industry, P276 location Martinsburg), all carrying the site as reference; EntityData JSON parsed OK; no notability/deletion warnings",
+          "correctValue": "A live Wikidata company item carrying the company facts in the observed value (founded June 2010; HQ Winchester; Martinsburg location; company website)",
+          "correctSource": "canonical estate record (see note / evidence)",
+          "status": "verified-correct",
+          "lastVerified": {
+            "date": "2026-11-02",
+            "method": "direct-fetch",
+            "crawlAgeDays": null
+          },
+          "verificationAgeDays": 0,
+          "staleVerification": false,
+          "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — Wikidata section (parent-verified via EntityData JSON 2026-11-02)",
+          "propagationParent": null,
+          "solutionRef": null,
+          "ownerStep": null,
+          "creationPath": null,
+          "note": "Machine form: https://www.wikidata.org/wiki/Special:EntityData/Q141969215.json. Company-level item — covers both branches in the coverage matrix. Cross-linked from both OpenStreetMap nodes (wikidata=Q141969215, changeset 191354104).",
+          "backlinks": null,
+          "statusHistory": [
+            {
+              "status": "verified-correct",
+              "date": "2026-11-02",
+              "method": "direct-fetch",
+              "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — Wikidata section (parent-verified via EntityData JSON 2026-11-02)"
+            }
+          ]
+        },
+        {
+          "recordId": "wikidata-book-item",
+          "source": "wikidata",
+          "sourceName": "Wikidata",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q141969268",
+          "sourceRecordId": "Q141969268",
+          "branch": "company",
+          "field": "book item",
+          "observedValue": "Live Wikidata item Q141969268 for the book: 6 properties (P31 written work + literary work, P1476 full title, P2093 author name string \"Henry Pitts Jr.\", P577 2026-03-01, P5749 ASIN B0GRBKR5DS, P407 English); EntityData JSON parsed OK; no notability/deletion warnings",
+          "correctValue": "A live Wikidata item for the book carrying ASIN B0GRBKR5DS and publication date 2026-03-01",
+          "correctSource": "canonical estate record (see note / evidence)",
+          "status": "verified-correct",
+          "lastVerified": {
+            "date": "2026-11-02",
+            "method": "direct-fetch",
+            "crawlAgeDays": null
+          },
+          "verificationAgeDays": 0,
+          "staleVerification": false,
+          "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — Wikidata section (parent-verified via EntityData JSON 2026-11-02)",
+          "propagationParent": null,
+          "solutionRef": null,
+          "ownerStep": null,
+          "creationPath": null,
+          "note": "No EAN property exists on Wikidata for 2940185300718 (searched; correctly not forced) — the Barnes & Noble EAN is therefore absent from the item by platform structure, not by omission. The ASIN statement carries no Amazon reference because Amazon refuses the agent browser (standing Amazon block, per the source record). Machine form: https://www.wikidata.org/wiki/Special:EntityData/Q141969268.json.",
+          "backlinks": null,
+          "statusHistory": [
+            {
+              "status": "verified-correct",
+              "date": "2026-11-02",
+              "method": "direct-fetch",
+              "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — Wikidata section (parent-verified via EntityData JSON 2026-11-02)"
+            }
+          ]
+        },
+        {
+          "recordId": "wikidata-dataset-item",
+          "source": "wikidata",
+          "sourceName": "Wikidata",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q141969285",
+          "sourceRecordId": "Q141969285",
+          "branch": "company",
+          "field": "dataset item",
+          "observedValue": "Live Wikidata item Q141969285 for the dataset estate: 7 statements (P31 data set, P356 DOI 10.5281/zenodo.23879048 with Zenodo reference, P123 publisher -> Q141969215, P275 CC BY 4.0, P6216 copyrighted, P577 2026-11-02, P856 https://api.theflatratemovers.com/); EntityData JSON parsed OK; no notability/deletion warnings",
+          "correctValue": "A live Wikidata dataset item carrying concept DOI 10.5281/zenodo.23879048, publisher Q141969215 and CC BY 4.0",
+          "correctSource": "canonical estate record (see note / evidence)",
+          "status": "verified-correct",
+          "lastVerified": {
+            "date": "2026-11-02",
+            "method": "direct-fetch",
+            "crawlAgeDays": null
+          },
+          "verificationAgeDays": 0,
+          "staleVerification": false,
+          "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — Wikidata section (parent-verified via EntityData JSON 2026-11-02)",
+          "propagationParent": null,
+          "solutionRef": null,
+          "ownerStep": null,
+          "creationPath": null,
+          "note": "Machine form: https://www.wikidata.org/wiki/Special:EntityData/Q141969285.json. The DOI is the Zenodo dataset concept DOI recorded in the Zenodo section of the same source file.",
+          "backlinks": null,
+          "statusHistory": [
+            {
+              "status": "verified-correct",
+              "date": "2026-11-02",
+              "method": "direct-fetch",
+              "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — Wikidata section (parent-verified via EntityData JSON 2026-11-02)"
+            }
+          ]
+        },
+        {
+          "recordId": "openstreetmap-w-node",
+          "source": "openstreetmap",
+          "sourceName": "OpenStreetMap",
+          "sourceUrl": "https://www.openstreetmap.org/node/14340286372",
+          "sourceRecordId": "14340286372",
+          "branch": "winchester",
+          "field": "map node (place record)",
+          "observedValue": "OpenStreetMap node for The Flat Rate Movers, 116 W Piccadilly St Suite 11, Winchester VA 22601; placed 39.1870713, -78.1668261 (~5 m from the Places point 39.18711576, -78.1668352; iD click placement); 12 tags verified incl. phone, website, opening_hours Mo-Fr 08:00-18:00 / Sa 08:00-16:00 / Su 09:00-16:00; wikidata=Q141969215 tag present (Version #2, verified live on the node page)",
+          "correctValue": "Correct as displayed",
+          "correctSource": "canonical estate record (see note / evidence)",
+          "status": "verified-correct",
+          "lastVerified": {
+            "date": "2026-11-02",
+            "method": "direct-fetch",
+            "crawlAgeDays": null
+          },
+          "verificationAgeDays": 0,
+          "staleVerification": false,
+          "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — OpenStreetMap section (creation changeset 191353533; wikidata cross-link changeset 191354104)",
+          "propagationParent": null,
+          "solutionRef": null,
+          "ownerStep": null,
+          "creationPath": null,
+          "note": "No correctRef is used: the node's placed coordinates are an iD click placement ~5 m from the canonical branch geo, as the source records, so a geo correctRef would make the generator refuse the row (seed value would disagree with the computed canonical value). The field tracked is the node record as a whole.",
+          "backlinks": null,
+          "statusHistory": [
+            {
+              "status": "verified-correct",
+              "date": "2026-11-02",
+              "method": "direct-fetch",
+              "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — OpenStreetMap section (creation changeset 191353533; wikidata cross-link changeset 191354104)"
+            }
+          ]
+        },
+        {
+          "recordId": "openstreetmap-m-node",
+          "source": "openstreetmap",
+          "sourceName": "OpenStreetMap",
+          "sourceUrl": "https://www.openstreetmap.org/node/14340286373",
+          "sourceRecordId": "14340286373",
+          "branch": "martinsburg",
+          "field": "map node (place record)",
+          "observedValue": "OpenStreetMap node for Flat Rate Movers Martinsburg WV, 736 Williamsport Pike Suite 2, Martinsburg WV 25404; placed 39.4831998, -77.9476545 (~5 m from the canonical point 39.48319665, -77.94760443); 12 tags verified incl. opening_hours Mo-Fr 09:00-18:00 / Sa 09:00-16:00 / Su 09:00-16:00; wikidata=Q141969215 tag present (Version #2, verified live on the node page)",
+          "correctValue": "Correct as displayed",
+          "correctSource": "canonical estate record (see note / evidence)",
+          "status": "verified-correct",
+          "lastVerified": {
+            "date": "2026-11-02",
+            "method": "direct-fetch",
+            "crawlAgeDays": null
+          },
+          "verificationAgeDays": 0,
+          "staleVerification": false,
+          "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — OpenStreetMap section (creation changeset 191353533; wikidata cross-link changeset 191354104)",
+          "propagationParent": null,
+          "solutionRef": null,
+          "ownerStep": null,
+          "creationPath": null,
+          "note": "Branch record — the Martinsburg node is a separate node from the Winchester node and carries Martinsburg's own name, address and hours. No correctRef, for the same click-placement reason as the Winchester node row.",
+          "backlinks": null,
+          "statusHistory": [
+            {
+              "status": "verified-correct",
+              "date": "2026-11-02",
+              "method": "direct-fetch",
+              "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — OpenStreetMap section (creation changeset 191353533; wikidata cross-link changeset 191354104)"
+            }
+          ]
+        },
+        {
+          "recordId": "google-publisher-center-company-publication",
+          "source": "google-publisher-center",
+          "sourceName": "Google Publisher Center",
+          "sourceUrl": "https://publishercenter.google.com/?publication=CAoww5riCw",
+          "sourceRecordId": "CAoww5riCw",
+          "branch": "company",
+          "field": "publication",
+          "observedValue": "Google Publisher Center publication \"The Flat Rate Movers\" created 2026-11-02 (org \"The Flat Rate Movers\", ratemovers@gmail.com); primary URL theflatratemovers.com VERIFIED in settings (Search Console ownership); square logo uploaded (estate logo 1024x1024), wide logo slot unfilled; contact ratemovers@gmail.com status Verified (update 2026-11-02 ~03:35 EST, read directly from the settings page)",
+          "correctValue": "A Publisher Center publication for the company with the primary URL verified and the contact verified",
+          "correctSource": "canonical estate record (see note / evidence)",
+          "status": "verified-correct",
+          "lastVerified": {
+            "date": "2026-11-02",
+            "method": "owner-manager-read",
+            "crawlAgeDays": null
+          },
+          "verificationAgeDays": 0,
+          "staleVerification": false,
+          "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — Google Publisher Center section incl. the 2026-11-02 ~03:35 EST contact-verified update",
+          "propagationParent": null,
+          "solutionRef": null,
+          "ownerStep": null,
+          "creationPath": null,
+          "note": "The current UI offers no News section/feed/RSS mechanism (per the source record: \"March 2025 update: Google News now automatically generates publication pages\"); Reader Revenue Manager NOT STARTED (deliberately; not a News gate); the legacy publication \"Historic Apple Winchester VA Movers\" in the same account is untouched. The unfilled wide-logo slot is recorded in the observed value, not staged as a separate row (one record per channel, per the staging brief).",
+          "backlinks": null,
+          "statusHistory": [
+            {
+              "status": "verified-correct",
+              "date": "2026-11-02",
+              "method": "owner-manager-read",
+              "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — Google Publisher Center section incl. the 2026-11-02 ~03:35 EST contact-verified update"
+            }
+          ]
+        },
+        {
+          "recordId": "instagram-company-profile",
+          "source": "instagram",
+          "sourceName": "Instagram",
+          "sourceUrl": "https://www.instagram.com/theflatratemoversllc/",
+          "sourceRecordId": "@theflatratemoversllc",
+          "branch": "company",
+          "field": "profile (own channel)",
+          "observedValue": "Operating Instagram @theflatratemoversllc: Business (Professional) account, category \"Moving & Storage Service\"; name \"The Flat Rate Movers | Winchester & Martinsburg\"; 149-char company bio (flat-rate, Winchester VA & Martinsburg WV, gun safes/pianos/heavy, guarantee, Est. 2010); logo profile picture; contact email ratemovers@gmail.com and phone +1 540-422-2153 shown; no street address entered; privacy PUBLIC; 0 posts / 0 followers / 0 following at capture (~05:36 EST, browser-verified by profile reload); personal-name occurrences on the finished profile: 0",
+          "correctValue": "Correct as displayed",
+          "correctSource": "canonical estate record (see note / evidence)",
+          "status": "verified-correct",
+          "lastVerified": {
+            "date": "2026-11-02",
+            "method": "direct-fetch",
+            "crawlAgeDays": null
+          },
+          "verificationAgeDays": 0,
+          "staleVerification": false,
+          "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — Instagram section (node captured 2026-11-02 ~05:36 EST)",
+          "propagationParent": null,
+          "solutionRef": null,
+          "ownerStep": null,
+          "creationPath": null,
+          "note": "OPEN ITEM carried on this row (not a separate record, and deliberately NOT coded as an ownerStep — see D-registry.md): website links NOT set — Instagram's web editor refuses link editing (\"only available on mobile\"); the source record's route is the Instagram connector (update-bio --action add-link) once the account is linked through Meta Accounts Center, else the owner's mobile app. The older @theflatratemovers account is CLOSED by owner ruling 2026-11-02 (cannot be logged into; never propose recovery) — this llc account is its replacement.",
+          "backlinks": null,
+          "statusHistory": [
+            {
+              "status": "verified-correct",
+              "date": "2026-11-02",
+              "method": "direct-fetch",
+              "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — Instagram section (node captured 2026-11-02 ~05:36 EST)"
+            }
+          ]
+        },
+        {
+          "recordId": "threads-company-profile",
+          "source": "threads",
+          "sourceName": "Threads",
+          "sourceUrl": "https://www.threads.com/@theflatratemoversllc",
+          "sourceRecordId": "@theflatratemoversllc",
+          "branch": "company",
+          "field": "profile (own channel)",
+          "observedValue": "Threads @theflatratemoversllc (tied to the operating Instagram of the same handle): name \"The Flat Rate Movers\"; full company bio (flat-rate, Winchester VA & Martinsburg WV, gun safes/pianos/heavy, guarantee, Est. 2010); link https://theflatratemovers.com/; logo profile picture (carried from Instagram); privacy PUBLIC (confirmed in Edit profile); 0 followers, no posts at capture (~05:41 EST, browser-verified on the reloaded profile)",
+          "correctValue": "Correct as displayed",
+          "correctSource": "canonical estate record (see note / evidence)",
+          "status": "verified-correct",
+          "lastVerified": {
+            "date": "2026-11-02",
+            "method": "direct-fetch",
+            "crawlAgeDays": null
+          },
+          "verificationAgeDays": 0,
+          "staleVerification": false,
+          "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — Threads section (node captured 2026-11-02 ~05:41 EST)",
+          "propagationParent": null,
+          "solutionRef": null,
+          "ownerStep": null,
+          "creationPath": null,
+          "note": "Threads' own \"Finish your profile\" prompts (create thread, follow 10) were intentionally left undone — no posts/follows made (source record). Nothing was attempted with the closed @theflatratemovers account.",
+          "backlinks": null,
+          "statusHistory": [
+            {
+              "status": "verified-correct",
+              "date": "2026-11-02",
+              "method": "direct-fetch",
+              "evidenceRef": "Retrieval Machine new-channels record, 2026-11-02 (~/workspace/theflatratemovers/retrieval-machine/new-channels-2026-11-02.md) — Threads section (node captured 2026-11-02 ~05:41 EST)"
+            }
+          ]
         }
+      ],
+      "datePublished": "2026-10-31",
+      "includedInDataCatalog": {
+        "@id": "https://theflatratemovers.com/datasets/#collection"
+      },
+      "variableMeasured": [
+        "thirdPartyRecords (field, observedValue vs correctValue, lastVerified)",
+        "reviewDistributionSnapshots (displayedAverage, displayedCount, branch)",
+        "coverageMatrix (winchester / martinsburg parity cells per source)",
+        "collisionRecords (conflationEvents, presence)"
       ]
     },
     {
       "@type": "Dataset",
       "@id": "https://theflatratemovers.com/datasets-local-graph-registry.json#dataset-local-graph-registry-coverage",
       "name": "Local Graph Registry Dataset — Coverage Matrix",
-      "description": "The generated source-by-branch matrix: 44 sources x 2 branches = 88 cells, every cell carrying a state (the worst status among its records) and the recordIds behind it. A source with no record for a branch fails generation — the branch-parity rule made structural. Company-scope records cover both branches and their cells are marked company-level.",
+      "description": "The generated source-by-branch matrix: 49 sources x 2 branches = 98 cells, every cell carrying a state (the worst status among its records) and the recordIds behind it. A source with no record for a branch fails generation — the branch-parity rule made structural. Company-scope records cover both branches and their cells are marked company-level.",
       "inLanguage": "en-US",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-02",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -4465,8 +4949,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -4479,8 +4963,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -5630,11 +6114,130 @@
               "estate-stale-free-estimates-offer — offer text (stale pre-rebuild page) (open)"
             ]
           }
+        },
+        {
+          "sourceId": "wikidata",
+          "source": "Wikidata",
+          "sourceKind": "Knowledge base",
+          "winchester": {
+            "state": "verified-correct",
+            "scope": "company-level",
+            "recordIds": [
+              "wikidata-company-item",
+              "wikidata-book-item",
+              "wikidata-dataset-item"
+            ],
+            "openItems": []
+          },
+          "martinsburg": {
+            "state": "verified-correct",
+            "scope": "company-level",
+            "recordIds": [
+              "wikidata-company-item",
+              "wikidata-book-item",
+              "wikidata-dataset-item"
+            ],
+            "openItems": []
+          }
+        },
+        {
+          "sourceId": "openstreetmap",
+          "source": "OpenStreetMap",
+          "sourceKind": "Map / open geographic database",
+          "winchester": {
+            "state": "verified-correct",
+            "scope": "branch",
+            "recordIds": [
+              "openstreetmap-w-node"
+            ],
+            "openItems": []
+          },
+          "martinsburg": {
+            "state": "verified-correct",
+            "scope": "branch",
+            "recordIds": [
+              "openstreetmap-m-node"
+            ],
+            "openItems": []
+          }
+        },
+        {
+          "sourceId": "google-publisher-center",
+          "source": "Google Publisher Center",
+          "sourceKind": "Publisher platform (Google News)",
+          "winchester": {
+            "state": "verified-correct",
+            "scope": "company-level",
+            "recordIds": [
+              "google-publisher-center-company-publication"
+            ],
+            "openItems": []
+          },
+          "martinsburg": {
+            "state": "verified-correct",
+            "scope": "company-level",
+            "recordIds": [
+              "google-publisher-center-company-publication"
+            ],
+            "openItems": []
+          }
+        },
+        {
+          "sourceId": "instagram",
+          "source": "Instagram",
+          "sourceKind": "Own social channel",
+          "winchester": {
+            "state": "verified-correct",
+            "scope": "company-level",
+            "recordIds": [
+              "instagram-company-profile"
+            ],
+            "openItems": []
+          },
+          "martinsburg": {
+            "state": "verified-correct",
+            "scope": "company-level",
+            "recordIds": [
+              "instagram-company-profile"
+            ],
+            "openItems": []
+          }
+        },
+        {
+          "sourceId": "threads",
+          "source": "Threads",
+          "sourceKind": "Own social channel",
+          "winchester": {
+            "state": "verified-correct",
+            "scope": "company-level",
+            "recordIds": [
+              "threads-company-profile"
+            ],
+            "openItems": []
+          },
+          "martinsburg": {
+            "state": "verified-correct",
+            "scope": "company-level",
+            "recordIds": [
+              "threads-company-profile"
+            ],
+            "openItems": []
+          }
         }
       ],
       "parityRule": "Every source carries at least one record for each branch; absences are records with creation paths, never blank cells.",
       "staleVerificationWindowDays": 35,
-      "staleVerificationRule": "A record whose effective verification age (days since last verified, plus the crawl age of the underlying page where applicable) exceeds 35 days is flagged staleVerification in the records table — flagged for the re-verification cadence, never silently trusted and never silently re-stated."
+      "staleVerificationRule": "A record whose effective verification age (days since last verified, plus the crawl age of the underlying page where applicable) exceeds 35 days is flagged staleVerification in the records table — flagged for the re-verification cadence, never silently trusted and never silently re-stated.",
+      "datePublished": "2026-10-31",
+      "includedInDataCatalog": {
+        "@id": "https://theflatratemovers.com/datasets/#collection"
+      },
+      "variableMeasured": [
+        "thirdPartyRecords (field, observedValue vs correctValue, lastVerified)",
+        "reviewDistributionSnapshots (displayedAverage, displayedCount, branch)",
+        "coverageMatrix (winchester / martinsburg parity cells per source)",
+        "collisionRecords (conflationEvents, presence)"
+      ]
     },
     {
       "@type": "Dataset",
@@ -5642,7 +6245,7 @@
       "name": "Local Graph Registry Dataset — Review Distribution Snapshots",
       "description": "Per-platform review displays as distribution and arithmetic — the shared snapshot schema with the answer-evidence dataset: displayed average, displayed count, the perfect-score total and the star deficit the average implies, the minimum below-five-star construction, and the measurement state. 8 company snapshots (per branch, per platform — never blended) and 1 competitor-namespace snapshot whose arithmetic shows why a raw review count is not an authority signal. Histogram and authenticity fields are null-marked unmeasured wherever no instrumented collection exists.",
       "inLanguage": "en-US",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-02",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -5651,8 +6254,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -5665,8 +6268,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -5958,6 +6561,16 @@
           "sampledAt": "2026-10-31",
           "note": "Competitor-namespace record. The competitor’s displayed average and count are public display facts; the arithmetic shows why a raw count is not an authority signal. This snapshot lives in the competitor namespace and can never contribute to any company claim surface — the generator asserts the namespace label and the claim-field bar (Dossier 03 §5)."
         }
+      ],
+      "datePublished": "2026-10-31",
+      "includedInDataCatalog": {
+        "@id": "https://theflatratemovers.com/datasets/#collection"
+      },
+      "variableMeasured": [
+        "thirdPartyRecords (field, observedValue vs correctValue, lastVerified)",
+        "reviewDistributionSnapshots (displayedAverage, displayedCount, branch)",
+        "coverageMatrix (winchester / martinsburg parity cells per source)",
+        "collisionRecords (conflationEvents, presence)"
       ]
     },
     {
@@ -5966,7 +6579,7 @@
       "name": "Local Graph Registry Dataset — Name Collisions (DO-NOT-TOUCH)",
       "description": "The name-collision class: 6 other companies whose names collide with The Flat Rate Movers, catalogued with their distinguishing facts so a conflation event — their identifiers, ratings or complaints landing on this company’s records, or the reverse — is detectable in one query. Action on every record is none: this registry never edits another company’s record. No conflation event has been observed to date (0 events recorded).",
       "inLanguage": "en-US",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-02",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -5975,8 +6588,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -5989,8 +6602,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -6098,6 +6711,16 @@
           "conflationEvents": [],
           "note": "Catalogued for completeness of the collision class."
         }
+      ],
+      "datePublished": "2026-10-31",
+      "includedInDataCatalog": {
+        "@id": "https://theflatratemovers.com/datasets/#collection"
+      },
+      "variableMeasured": [
+        "thirdPartyRecords (field, observedValue vs correctValue, lastVerified)",
+        "reviewDistributionSnapshots (displayedAverage, displayedCount, branch)",
+        "coverageMatrix (winchester / martinsburg parity cells per source)",
+        "collisionRecords (conflationEvents, presence)"
       ]
     },
     {
@@ -6106,7 +6729,7 @@
       "name": "Local Graph Registry Dataset — Gaps and Designed Solutions (L1–L11)",
       "description": "The element’s gap records, each with its evidence rows, its impact, and its designed solution — solutions, not problem lists (owner ruling 2026-10-31). Resolution runs through this element’s build sequence: the re-verification pass, the Data Axle root fix, the one consolidated owner sitting, the our-side stale-artifact retirements, the expansion wave, and the propagation proof pass.",
       "inLanguage": "en-US",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-02",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -6115,8 +6738,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -6129,8 +6752,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -6307,6 +6930,16 @@
           "impact": "A company-intelligence platform read by researchers and answer engines states the wrong headquarters on a freshly crawled page, and the only unblock is an owner decision about a company-domain mailbox.",
           "solution": "Owner step 5 is a decision, not a chore: designate a monitored company-domain mailbox for registry claims (the claim form rejects gmail.com), or record the fallback correction-request channel as the standing route. The claim and the HQ correction (and the founding-year string, if the re-verification pass attributes it) execute from the canonical packet once the route exists."
         }
+      ],
+      "datePublished": "2026-10-31",
+      "includedInDataCatalog": {
+        "@id": "https://theflatratemovers.com/datasets/#collection"
+      },
+      "variableMeasured": [
+        "thirdPartyRecords (field, observedValue vs correctValue, lastVerified)",
+        "reviewDistributionSnapshots (displayedAverage, displayedCount, branch)",
+        "coverageMatrix (winchester / martinsburg parity cells per source)",
+        "collisionRecords (conflationEvents, presence)"
       ]
     },
     {
@@ -6315,7 +6948,7 @@
       "name": "Local Graph Registry Dataset — Consolidated Owner Steps (generated)",
       "description": "The owner’s entire action list for this element — 6 items — GENERATED from the record rows that carry an owner step, so the list can never drift from the registry: each step names its system, the exact action, and the recordIds it unblocks. One sitting covers the sign-in items; the Data Axle confirmation and the CB Insights mailbox decision stand as their own items. No other owner action exists anywhere in this element’s worklist.",
       "inLanguage": "en-US",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-02",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -6324,8 +6957,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -6338,8 +6971,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -6441,6 +7074,16 @@
           ],
           "blocksRecordCount": 1
         }
+      ],
+      "datePublished": "2026-10-31",
+      "includedInDataCatalog": {
+        "@id": "https://theflatratemovers.com/datasets/#collection"
+      },
+      "variableMeasured": [
+        "thirdPartyRecords (field, observedValue vs correctValue, lastVerified)",
+        "reviewDistributionSnapshots (displayedAverage, displayedCount, branch)",
+        "coverageMatrix (winchester / martinsburg parity cells per source)",
+        "collisionRecords (conflationEvents, presence)"
       ]
     },
     {
@@ -6449,7 +7092,7 @@
       "name": "Local Graph Registry Dataset — Totals",
       "description": "Registry totals, generated: records by status and by branch, coverage cells, snapshots by namespace, collisions, gaps by status, owner steps, and the stale-verification count under the 35-day window.",
       "inLanguage": "en-US",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-02",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -6458,8 +7101,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -6472,8 +7115,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -6506,11 +7149,11 @@
       ],
       "totals": {
         "branchEntities": 2,
-        "sources": 44,
-        "coverageCells": 88,
-        "thirdPartyRecords": 112,
+        "sources": 49,
+        "coverageCells": 98,
+        "thirdPartyRecords": 120,
         "recordsByStatus": {
-          "verified-correct": 28,
+          "verified-correct": 36,
           "open": 20,
           "unverifiable-today": 6,
           "parked-owner-step": 8,
@@ -6518,11 +7161,11 @@
           "correction-sent": 5
         },
         "recordsByBranch": {
-          "winchester": 55,
-          "martinsburg": 49,
-          "company": 8
+          "winchester": 56,
+          "martinsburg": 50,
+          "company": 14
         },
-        "recordsVerifiedCorrect": 28,
+        "recordsVerifiedCorrect": 36,
         "recordsOpenWorklist": 84,
         "recordsCorrectionSent": 5,
         "recordsParkedOwnerStep": 8,
@@ -6552,17 +7195,31 @@
           "parked-owner-step": 5
         },
         "consolidatedOwnerSteps": 6,
+        "backlinkRecords": 28,
+        "backlinksAttached": 5,
+        "backlinkEntriesTotal": 33,
+        "backlinkDomains": 23,
         "geojsonFeaturesTotal": 53,
-        "dateModified": "2026-10-31"
-      }
+        "dateModified": "2026-11-02"
+      },
+      "datePublished": "2026-10-31",
+      "includedInDataCatalog": {
+        "@id": "https://theflatratemovers.com/datasets/#collection"
+      },
+      "variableMeasured": [
+        "thirdPartyRecords (field, observedValue vs correctValue, lastVerified)",
+        "reviewDistributionSnapshots (displayedAverage, displayedCount, branch)",
+        "coverageMatrix (winchester / martinsburg parity cells per source)",
+        "collisionRecords (conflationEvents, presence)"
+      ]
     },
     {
-      "@type": "Article",
-      "@id": "https://theflatratemovers.com/datasets-local-graph-registry.json#dataset-local-graph-registry-method",
-      "name": "Local Graph Registry — Method",
-      "description": "How the registry is built and maintained. (1) The canonical side is generated from the estate registries; (2) the observation side is transcribed from the evidence base — Dossier 03’s audit of 2026-10-31 and the backlink program’s records — with every row carrying its evidence reference, and the fresher source governing conflicts (conflicts are noted on the row, never silently resolved); (3) statuses follow the controlled vocabulary and the direct-fetch rule for corrected-live; (4) the coverage matrix, owner-step list and totals are computed from the rows at generation, so the published views cannot drift from the underlying records; (5) maintenance runs on the measurement cadence — re-verification passes update rows only on page evidence, stale-verification flags mark rows past the window, and every regeneration re-seals the file in the estate’s signed index in the same motion.",
+      "@type": "Dataset",
+      "@id": "https://theflatratemovers.com/datasets-local-graph-registry.json#dataset-local-graph-registry-backlinks",
+      "name": "Local Graph Registry Dataset — Verified Backlink Tier",
+      "description": "The verified backlink tier, added 2026-11-02: referring pages recorded in the estate backlink ledger (Bing Webmaster export 2026-11-01) and the review-tier rows fetch-verified the same day. Entries whose domain already carries a registry source ride on that source’s holder record as a backlinks array; the rest stand here as their own class beside the third-party records — never inside the coverage matrix and never inside the record count. Fetch verification is direct-fetch evidence only: a page earns a review-tier record only when the fetched page itself carries the link.",
       "inLanguage": "en-US",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-02",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -6571,8 +7228,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -6585,8 +7242,490 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "url": "https://theflatratemovers.com/datasets/local-graph-registry/",
+      "sameAs": "https://theflatratemovers.com/datasets/local-graph-registry/",
+      "identifier": "https://theflatratemovers.com/datasets/local-graph-registry/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://theflatratemovers.com/datasets-local-graph-registry.json"
+        },
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://theflatratemovers.com/ai-master-index.json",
+          "name": "Signed master index (provenance)"
+        }
+      ],
+      "keywords": [
+        "local business graph",
+        "third-party records",
+        "citations registry",
+        "branch entities",
+        "corrections worklist",
+        "retrieval machine"
+      ],
+      "backlinkRecords": [
+        {
+          "backlinkRecordId": "backlink-linkcenter-com",
+          "referring_domain": "linkcenter.com",
+          "referring_page": "https://linkcenter.com/us/home-and-garden/house-moving/18.php",
+          "anchor_text": "The Flat Rate Movers",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "directory-or-platform",
+          "class": "recorded",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "recorded (export-sourced; not fetch-verified)"
+        },
+        {
+          "backlinkRecordId": "backlink-localmint-com",
+          "referring_domain": "localmint.com",
+          "referring_page": "https://localmint.com/us/the-flat-rate-movers-winchester-hours-1233741",
+          "anchor_text": "www.theflatratemovers.com",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "directory-or-platform",
+          "class": "recorded",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "recorded (export-sourced; not fetch-verified)"
+        },
+        {
+          "backlinkRecordId": "backlink-callupcontact-com",
+          "referring_domain": "callupcontact.com",
+          "referring_page": "https://callupcontact.com/b/businessprofile/the_flat_rate_movers/9698816",
+          "anchor_text": "https://www.theflatratemovers.com/",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "directory-or-platform",
+          "class": "recorded",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "recorded (export-sourced; not fetch-verified)"
+        },
+        {
+          "backlinkRecordId": "backlink-linkcentre-com",
+          "referring_domain": "linkcentre.com",
+          "referring_page": "https://linkcentre.com/profile/theflatratemovers",
+          "anchor_text": "The Flat Rate Movers",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "directory-or-platform",
+          "class": "recorded",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "recorded (export-sourced; not fetch-verified)"
+        },
+        {
+          "backlinkRecordId": "backlink-shenandoahvalleyweb-com",
+          "referring_domain": "shenandoahvalleyweb.com",
+          "referring_page": "https://shenandoahvalleyweb.com/services.html",
+          "anchor_text": "The Flat Rate Movers, LLC",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "directory-or-platform",
+          "class": "recorded",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "recorded (export-sourced; not fetch-verified)"
+        },
+        {
+          "backlinkRecordId": "backlink-find-us-here-com",
+          "referring_domain": "find-us-here.com",
+          "referring_page": "https://find-us-here.com/businesses/the-flat-rate-movers-winchester-virginia-usa/34304776",
+          "anchor_text": "https://www.theflatratemovers.com/",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "directory-or-platform",
+          "class": "recorded",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "recorded (export-sourced; not fetch-verified)"
+        },
+        {
+          "backlinkRecordId": "backlink-directory-coldlytics-com",
+          "referring_domain": "directory.coldlytics.com",
+          "referring_page": "https://directory.coldlytics.com/companies/theflatratemovers",
+          "anchor_text": "theflatratemovers.com",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "directory-or-platform",
+          "class": "recorded",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "recorded (export-sourced; not fetch-verified)"
+        },
+        {
+          "backlinkRecordId": "backlink-looklocally-com",
+          "referring_domain": "looklocally.com",
+          "referring_page": "https://looklocally.com/united-states/winchester/home-services/the-flat-rate-movers",
+          "anchor_text": "https://theflatratemovers.com",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "directory-or-platform",
+          "class": "recorded",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "recorded (export-sourced; not fetch-verified)"
+        },
+        {
+          "backlinkRecordId": "backlink-blackdirectory-com",
+          "referring_domain": "blackdirectory.com",
+          "referring_page": "https://blackdirectory.com/virginia/winchester/construction/flat-rate-movers-the",
+          "anchor_text": "https://www.theflatratemovers.com",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "directory-or-platform",
+          "class": "recorded",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "recorded (export-sourced; not fetch-verified)"
+        },
+        {
+          "backlinkRecordId": "backlink-yellowbot-com",
+          "referring_domain": "yellowbot.com",
+          "referring_page": "https://yellowbot.com/the-flat-rate-movers-winchester-va.html",
+          "anchor_text": "theflatratemovers.com",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "directory-or-platform",
+          "class": "recorded",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "recorded (export-sourced; not fetch-verified)"
+        },
+        {
+          "backlinkRecordId": "backlink-choice-directory",
+          "referring_domain": "choice.directory",
+          "referring_page": "https://choice.directory/business-consultants/the-flat-rate-movers",
+          "anchor_text": "https://www.theflatratemovers.com/",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "directory-or-platform",
+          "class": "recorded",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "recorded (export-sourced; not fetch-verified)"
+        },
+        {
+          "backlinkRecordId": "backlink-qdexx-com",
+          "referring_domain": "qdexx.com",
+          "referring_page": "https://qdexx.com/us/va/winchester/business services/us-va-winchester-business-services-the-flat-rate-movers",
+          "anchor_text": "https://www.theflatratemovers.com/",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "directory-or-platform",
+          "class": "recorded",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "recorded (export-sourced; not fetch-verified)"
+        },
+        {
+          "backlinkRecordId": "backlink-x-com",
+          "referring_domain": "x.com",
+          "referring_page": "https://x.com/theflatratemove",
+          "anchor_text": "theflatratemovers.com",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "owned",
+          "class": "recorded",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "recorded (export-sourced; not fetch-verified)"
+        },
+        {
+          "backlinkRecordId": "backlink-eliteservicesnetwork-com",
+          "referring_domain": "eliteservicesnetwork.com",
+          "referring_page": "https://eliteservicesnetwork.com/united-states/winchester/home-services/the-flat-rate-movers",
+          "anchor_text": "https://theflatratemovers.com",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "directory-or-platform",
+          "class": "recorded",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "recorded (export-sourced; not fetch-verified)"
+        },
+        {
+          "backlinkRecordId": "backlink-toptohigh-com",
+          "referring_domain": "toptohigh.com",
+          "referring_page": "https://toptohigh.com/make-money-at-home-with-affiliate-marketing",
+          "anchor_text": "theflatratemovers",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "unverified-source",
+          "class": "review",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "fetch-verified 2026-11-02"
+        },
+        {
+          "backlinkRecordId": "backlink-junk-haulers-blogspot-com",
+          "referring_domain": "junk-haulers.blogspot.com",
+          "referring_page": "https://junk-haulers.blogspot.com/2021/09/light-demolition-removal-of-flooring.html",
+          "anchor_text": "https://www.theflatratemovers.com/",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "topical-blog",
+          "class": "review",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "fetch-verified 2026-11-02"
+        },
+        {
+          "backlinkRecordId": "backlink-longdistancemovinginwinchesterva-blogspot-com",
+          "referring_domain": "longdistancemovinginwinchesterva.blogspot.com",
+          "referring_page": "https://longdistancemovinginwinchesterva.blogspot.com/2024/05/trusted-movers-in-frederick-county-va.html",
+          "anchor_text": "Specialized Care",
+          "target_url": "https://theflatratemovers.com/gun-safe-movers",
+          "tier": "topical-blog",
+          "class": "review",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "fetch-verified 2026-11-02"
+        },
+        {
+          "backlinkRecordId": "backlink-jet-links-com",
+          "referring_domain": "jet-links.com",
+          "referring_page": "https://jet-links.com/index.php?c=213",
+          "anchor_text": "The Flat Rate Movers",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "unverified-source",
+          "class": "review",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "fetch-verified 2026-11-02"
+        },
+        {
+          "backlinkRecordId": "backlink-bestmovingcompaniesreviews-com",
+          "referring_domain": "bestmovingcompaniesreviews.com",
+          "referring_page": "https://bestmovingcompaniesreviews.com/theflatratemovers",
+          "anchor_text": "https://www.theflatratemovers.com",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "unverified-source",
+          "class": "review",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "fetch-verified 2026-11-02"
+        },
+        {
+          "backlinkRecordId": "backlink-zumvu-com",
+          "referring_domain": "zumvu.com",
+          "referring_page": "https://zumvu.com/theflatratemovers",
+          "anchor_text": "Website",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "unverified-source",
+          "class": "review",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "fetch-verified 2026-11-02"
+        },
+        {
+          "backlinkRecordId": "backlink-junk-haulers-blogspot-com-2",
+          "referring_domain": "junk-haulers.blogspot.com",
+          "referring_page": "https://junk-haulers.blogspot.com/2021/09/junk-removal-in-my-area-winchester.html",
+          "anchor_text": "https://www.theflatratemovers.com/",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "topical-blog",
+          "class": "review",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "fetch-verified 2026-11-02"
+        },
+        {
+          "backlinkRecordId": "backlink-junk-haulers-blogspot-com-3",
+          "referring_domain": "junk-haulers.blogspot.com",
+          "referring_page": "https://junk-haulers.blogspot.com/2021/09/local-junk-haulers-in-winchester.html",
+          "anchor_text": "https://www.theflatratemovers.com/",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "topical-blog",
+          "class": "review",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "fetch-verified 2026-11-02"
+        },
+        {
+          "backlinkRecordId": "backlink-jet-links-com-2",
+          "referring_domain": "jet-links.com",
+          "referring_page": "http://jet-links.com/landscaping-solutions-sydney:-landscape-garden-design/index.php?c=213",
+          "anchor_text": "The Flat Rate Movers",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "unverified-source",
+          "class": "review",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "fetch-verified 2026-11-02"
+        },
+        {
+          "backlinkRecordId": "backlink-jet-links-com-3",
+          "referring_domain": "jet-links.com",
+          "referring_page": "http://jet-links.com/bring-back-your-lost-love-/index.php?c=213",
+          "anchor_text": "The Flat Rate Movers",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "unverified-source",
+          "class": "review",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "fetch-verified 2026-11-02"
+        },
+        {
+          "backlinkRecordId": "backlink-longdistancemovinginwinchesterva-blogspot-com-2",
+          "referring_domain": "longdistancemovinginwinchesterva.blogspot.com",
+          "referring_page": "https://longdistancemovinginwinchesterva.blogspot.com/2024/05/trusted-movers-in-frederick-county-va.html",
+          "anchor_text": "Full-Service Moving",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "topical-blog",
+          "class": "review",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "fetch-verified 2026-11-02"
+        },
+        {
+          "backlinkRecordId": "backlink-jacksonvilleflmovers-blogspot-com",
+          "referring_domain": "jacksonvilleflmovers.blogspot.com",
+          "referring_page": "https://jacksonvilleflmovers.blogspot.com/2024/05/the-flat-rate-movers-jacksonville-your.html",
+          "anchor_text": "https://www.theflatratemovers.com/online-estimate",
+          "target_url": "https://theflatratemovers.com/online-estimate",
+          "tier": "topical-blog",
+          "class": "review",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "fetch-verified 2026-11-02"
+        },
+        {
+          "backlinkRecordId": "backlink-junk-haulers-blogspot-com-4",
+          "referring_domain": "junk-haulers.blogspot.com",
+          "referring_page": "https://junk-haulers.blogspot.com/2021/09/reliable-professional-junk-haulers-in.html",
+          "anchor_text": "https://www.theflatratemovers.com/",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "topical-blog",
+          "class": "review",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "fetch-verified 2026-11-02"
+        },
+        {
+          "backlinkRecordId": "backlink-jet-links-com-4",
+          "referring_domain": "jet-links.com",
+          "referring_page": "http://jet-links.com/obstetrics-gynecology-in-abu-dhabi-uae-ivf/index.php?c=213",
+          "anchor_text": "The Flat Rate Movers",
+          "target_url": "https://theflatratemovers.com",
+          "tier": "unverified-source",
+          "class": "review",
+          "source": "Bing Webmaster backlinks export 2026-11-01",
+          "observed_date": "2026-11-01",
+          "verification_status": "fetch-verified 2026-11-02"
+        }
+      ],
+      "backlinkAttachments": [
+        {
+          "holderRecordId": "cb-insights-hq-address",
+          "backlinks": [
+            {
+              "referring_domain": "cbinsights.com",
+              "referring_page": "https://cbinsights.com/company/the-flat-rate-movers/alternatives-competitors",
+              "anchor_text": "theflatratemovers.com",
+              "target_url": "https://theflatratemovers.com",
+              "tier": "directory-or-platform",
+              "class": "recorded",
+              "source": "Bing Webmaster backlinks export 2026-11-01",
+              "observed_date": "2026-11-01",
+              "verification_status": "recorded (export-sourced; not fetch-verified)"
+            },
+            {
+              "referring_domain": "cbinsights.com",
+              "referring_page": "https://cbinsights.com/company/the-flat-rate-movers",
+              "anchor_text": "theflatratemovers.com",
+              "target_url": "https://theflatratemovers.com",
+              "tier": "directory-or-platform",
+              "class": "recorded",
+              "source": "Bing Webmaster backlinks export 2026-11-01",
+              "observed_date": "2026-11-01",
+              "verification_status": "recorded (export-sourced; not fetch-verified)"
+            }
+          ]
+        },
+        {
+          "holderRecordId": "birdeye-w-address",
+          "backlinks": [
+            {
+              "referring_domain": "reviews.birdeye.com",
+              "referring_page": "https://reviews.birdeye.com/the-flat-rate-movers-163130362685696",
+              "anchor_text": "https://www.theflatratemovers.com/",
+              "target_url": "https://theflatratemovers.com",
+              "tier": "directory-or-platform",
+              "class": "recorded",
+              "source": "Bing Webmaster backlinks export 2026-11-01",
+              "observed_date": "2026-11-01",
+              "verification_status": "recorded (export-sourced; not fetch-verified)"
+            },
+            {
+              "referring_domain": "reviews.birdeye.com",
+              "referring_page": "https://reviews.birdeye.com/the-flat-rate-movers-163130362685696?filter=newest&rsource=100",
+              "anchor_text": "https://www.theflatratemovers.com/",
+              "target_url": "https://theflatratemovers.com",
+              "tier": "directory-or-platform",
+              "class": "recorded",
+              "source": "Bing Webmaster backlinks export 2026-11-01",
+              "observed_date": "2026-11-01",
+              "verification_status": "recorded (export-sourced; not fetch-verified)"
+            }
+          ]
+        },
+        {
+          "holderRecordId": "birdeye-m-nap",
+          "backlinks": [
+            {
+              "referring_domain": "reviews.birdeye.com",
+              "referring_page": "https://reviews.birdeye.com/flat-rate-movers-martinsburg-wv-171614909716521",
+              "anchor_text": "https://www.theflatratemovers.com/",
+              "target_url": "https://theflatratemovers.com",
+              "tier": "directory-or-platform",
+              "class": "recorded",
+              "source": "Bing Webmaster backlinks export 2026-11-01",
+              "observed_date": "2026-11-01",
+              "verification_status": "recorded (export-sourced; not fetch-verified)"
+            }
+          ]
+        }
+      ],
+      "datePublished": "2026-10-31",
+      "includedInDataCatalog": {
+        "@id": "https://theflatratemovers.com/datasets/#collection"
+      },
+      "variableMeasured": [
+        "thirdPartyRecords (field, observedValue vs correctValue, lastVerified)",
+        "reviewDistributionSnapshots (displayedAverage, displayedCount, branch)",
+        "coverageMatrix (winchester / martinsburg parity cells per source)",
+        "collisionRecords (conflationEvents, presence)"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://theflatratemovers.com/datasets-local-graph-registry.json#dataset-local-graph-registry-method",
+      "name": "Local Graph Registry — Method",
+      "description": "How the registry is built and maintained. (1) The canonical side is generated from the estate registries; (2) the observation side is transcribed from the evidence base — Dossier 03’s audit of 2026-10-31 and the backlink program’s records — with every row carrying its evidence reference, and the fresher source governing conflicts (conflicts are noted on the row, never silently resolved); (3) statuses follow the controlled vocabulary and the direct-fetch rule for corrected-live; (4) the coverage matrix, owner-step list and totals are computed from the rows at generation, so the published views cannot drift from the underlying records; (5) maintenance runs on the measurement cadence — re-verification passes update rows only on page evidence, stale-verification flags mark rows past the window, and every regeneration re-seals the file in the estate’s signed index in the same motion.",
+      "inLanguage": "en-US",
+      "dateModified": "2026-11-02",
+      "isAccessibleForFree": true,
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "foundingDate": "2010-06",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "foundingDate": "2010-06",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -6629,7 +7768,7 @@
       "name": "Local Graph Registry — Sources",
       "description": "The evidence base for this registry: Retrieval Machine Dossier 03 (the local-business graph audit and design, reads of 2026-10-31); the backlink program’s Phase 1 citation audit (2026-10-30), Wave 1 execution record (2026-10-30) and Phase 2 plan with its Wave 2 prep re-verification note (2026-10-31); the estate’s canonical registries (locations, service-area GeoJSON, the signed ai-master-index); and the branch submission data packets the program corrects from. Where the audit and the dossier conflict, the dossier’s fresher reading governs and the conflict is noted on the affected row (one instance: the Chamber directory’s Winchester review display — dossier 4.8 over 30 governs over the audit’s 4.9 over 34).",
       "inLanguage": "en-US",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-02",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -6638,8 +7777,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -6652,8 +7791,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -6717,7 +7856,7 @@
       "name": "Local Graph Registry — Boundaries",
       "description": "What this registry will not do. It never edits, claims or corrects another company’s record (the collision class is detection-only). It never presents a review count — ours or a competitor’s — as a quality or authority signal. It never marks a row corrected on snippet evidence. It never blends the two branches. It carries no client names, no prices beyond the estate’s already-published industrial schedule (which appears nowhere in this file), no contracts, no clearances and no certification claims. Paid corrections and paid placements are outside the program’s no-paid rule; where a platform paywalls an edit (Judy’s Book), the registry records the free propagation path instead.",
       "inLanguage": "en-US",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-02",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -6726,8 +7865,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",
@@ -6740,8 +7879,8 @@
         "name": "The Flat Rate Movers",
         "foundingDate": "2010-06",
         "sameAs": [
-          "https://www.instagram.com/theflatratemovers/",
-          "https://www.threads.com/@theflatratemovers",
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
           "https://x.com/ratemovers",
           "https://www.youtube.com/@theflatratemovers",
           "https://github.com/TheFlatRateMovers",

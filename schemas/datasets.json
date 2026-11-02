@@ -2,10 +2,13 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "CollectionPage",
+      "@type": [
+        "CollectionPage",
+        "DataCatalog"
+      ],
       "@id": "https://theflatratemovers.com/datasets/#collection",
       "name": "Published Datasets",
-      "description": "Every dataset The Flat Rate Movers publishes (CC BY 4.0): 32 dataset files with canonical landing pages, node inventories, downloads and signed SHA-256 certificates.",
+      "description": "Every dataset The Flat Rate Movers publishes (CC BY 4.0): 39 dataset files with canonical landing pages, node inventories, downloads and signed SHA-256 certificates.",
       "hasPart": [
         {
           "@type": "WebPage",
@@ -129,6 +132,11 @@
         },
         {
           "@type": "WebPage",
+          "@id": "https://theflatratemovers.com/datasets/search-index/",
+          "name": "Search Index Supply & Standing Dataset"
+        },
+        {
+          "@type": "WebPage",
           "@id": "https://theflatratemovers.com/datasets/senior/",
           "name": "Senior Moving Datasets"
         },
@@ -166,8 +174,39 @@
           "@type": "WebPage",
           "@id": "https://theflatratemovers.com/datasets/warehouse/",
           "name": "Warehouse Relocation Datasets"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://theflatratemovers.com/datasets/answer-evidence/",
+          "name": "Answer-Engine Evidence Dataset"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://theflatratemovers.com/datasets/local-graph-registry/",
+          "name": "Local Graph Registry Dataset"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://theflatratemovers.com/datasets/crawl-presence/",
+          "name": "Crawl Presence Registry Dataset"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://theflatratemovers.com/datasets/archive-registry/",
+          "name": "Archive Registry Dataset"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://theflatratemovers.com/datasets/freight-rework/",
+          "name": "Freight Rework Datasets"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://theflatratemovers.com/datasets/white-glove/",
+          "name": "White-Glove Delivery Datasets"
         }
-      ]
+      ],
+      "dateModified": "2026-11-01"
     },
     {
       "@id": "https://theflatratemovers.com/#organization",
@@ -190,8 +229,8 @@
       },
       "name": "The Flat Rate Movers LLC",
       "sameAs": [
-        "https://www.instagram.com/theflatratemovers/",
-        "https://www.threads.com/@theflatratemovers",
+        "https://www.instagram.com/theflatratemoversllc/",
+        "https://www.threads.com/@theflatratemoversllc",
         "https://x.com/ratemovers",
         "https://www.youtube.com/@theflatratemovers",
         "https://github.com/TheFlatRateMovers",
@@ -217,7 +256,7 @@
         "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
         "caption": "The Flat Rate Movers logo — company brand image, not a job photo."
       },
-      "dateModified": "2026-10-30"
+      "dateModified": "2026-10-31"
     },
     {
       "@id": "https://theflatratemovers.com/datasets/#breadcrumb",

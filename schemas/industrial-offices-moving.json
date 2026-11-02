@@ -1,0 +1,95 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://theflatratemovers.com/#service-industrial-offices",
+      "@type": "Service",
+      "name": "Industrial Offices Moving",
+      "serviceType": "Industrial Offices Moving",
+      "description": "Office moves for industrial and facility sites — office areas within plants, warehouses and industrial facilities — planned around production and site access, quoted flat.",
+      "provider": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "url": "https://theflatratemovers.com/industrial-offices-moving/",
+      "areaServed": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://theflatratemovers.com/#organization",
+      "name": "The Flat Rate Movers LLC",
+      "telephone": "+1-540-422-2153",
+      "email": "ratemovers@gmail.com",
+      "foundingDate": "2010-06",
+      "url": "https://theflatratemovers.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+        "width": 1024,
+        "height": 1024
+      },
+      "slogan": "Guaranteed Flat Rate or Your Move is Free!"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://theflatratemovers.com/industrial-offices-moving/",
+      "url": "https://theflatratemovers.com/industrial-offices-moving/",
+      "name": "Industrial Offices Moving",
+      "description": "Office moves for industrial and facility sites — office areas within plants, warehouses and industrial facilities, moved at one flat rate in writing, from Winchester, VA and Martinsburg, WV.",
+      "breadcrumb": {
+        "@id": "https://theflatratemovers.com/industrial-offices-moving/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://theflatratemovers.com/#service-industrial-offices"
+      },
+      "mentions": [
+        {
+          "@id": "https://theflatratemovers.com/#dataset-industrial-offices-operations"
+        }
+      ],
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+        "caption": "The Flat Rate Movers logo — company brand image, not a job photo."
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://theflatratemovers.com/industrial-offices-moving/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://theflatratemovers.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Industrial Offices Moving",
+          "item": "https://theflatratemovers.com/industrial-offices-moving/"
+        }
+      ]
+    },
+    {
+      "@id": "https://theflatratemovers.com/industrial-offices-moving/#faq",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an industrial offices move?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An industrial offices move is the office area inside a plant, warehouse or industrial facility — plant offices, warehouse offices and facility administration areas — as distinct from a commercial office in an office building. It covers office furniture and equipment, files and fixtures, and the packing, protection and placement that goes with them, moved at one flat rate in writing from Winchester, VA and Martinsburg, WV — the same flat-rate standard as every other move, planned for the site it sits in. Where an office-area item is high-mass (1,500 to 3,500 lbs), it moves under SIR and the KIM-GS Protocol with L/360 floor-deflection analysis."
+          }
+        }
+      ]
+    }
+  ]
+}

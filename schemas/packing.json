@@ -1,0 +1,314 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@id": "https://theflatratemovers.com/#service-packing",
+   "@type": "Service",
+   "name": "Packing and Unpacking",
+   "serviceType": "Packing and Unpacking",
+   "description": "Packing and unpacking from The Flat Rate Movers: full, partial and fragile-only packing and unpacking, including loading and unloading — rooms packed and labeled in sequence, fragile and high-value pieces protected, so unpacking lands in order. Full packing covers nearly every item in the home; partial packing covers the rooms or item classes the client assigns, most commonly the kitchen; fragile-only packing covers dishes and glassware, artwork and mirrors, TVs, lamps, china, crystal and antiques, escalating to white-glove handling or a custom-built crate when a box is not enough. Furniture is fully covered in blue padded blankets and sealed with clear stretch wrap, staged cleanly in the room, and export pieces are packed to ISPM 15 when the journey crosses a border. At destination the crew unpacks and places, so rooms come back together in order. The packing level is scoped room by room and quoted inside the one flat rate in writing before move day, never hourly, and no packing price list is published. Packing only, without a move attached, is one of the move types on the quote form. Dispatched from Winchester, VA and Martinsburg, WV. Guaranteed Flat Rate or Your Move is Free!",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/packing/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "subjectOf": {
+    "@id": "https://theflatratemovers.com/datasets-packing.json"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/#organization",
+   "@type": "Organization",
+   "email": "ratemovers@gmail.com",
+   "foundingDate": "2010-06",
+   "location": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "logo": {
+    "@type": "ImageObject",
+    "height": 1024,
+    "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+    "width": 1024
+   },
+   "name": "The Flat Rate Movers LLC",
+   "sameAs": [
+    "https://www.instagram.com/theflatratemovers/",
+    "https://www.threads.com/@theflatratemovers",
+    "https://x.com/ratemovers",
+    "https://www.youtube.com/@theflatratemovers",
+    "https://github.com/TheFlatRateMovers",
+    "https://medium.com/@ratemovers"
+   ],
+   "slogan": "Guaranteed Flat Rate or Your Move is Free!",
+   "telephone": "+1-540-422-2153",
+   "url": "https://theflatratemovers.com/"
+  },
+  {
+   "@id": "https://theflatratemovers.com/#winchester",
+   "@type": "Place",
+   "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US",
+    "addressLocality": "Winchester",
+    "addressRegion": "VA",
+    "postalCode": "22601",
+    "streetAddress": "116 W Piccadilly St Suite 11"
+   },
+   "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "1"
+   },
+   "areaServed": [
+    "Berryville, VA",
+    "Bristow, VA",
+    "Clarke County",
+    "Eastern Panhandle of West Virginia",
+    "Fauquier County",
+    "Frederick County, VA",
+    "Front Royal, VA",
+    "Hardy County",
+    "Interstate 66 Corridor",
+    "Interstate 70 Corridor",
+    "Interstate 81 Corridor",
+    "Leesburg, VA",
+    "Loudoun County, VA",
+    "Marshall, VA",
+    "Middleburg, VA",
+    "Middletown, VA",
+    "Moorefield, WV",
+    "Port of Virginia",
+    "Purcellville, VA",
+    "Round Hill, VA",
+    "Shenandoah County",
+    "Shenandoah Valley",
+    "South Riding, VA",
+    "Stephens City, VA",
+    "Stephenson, VA",
+    "Sterling, VA",
+    "Strasburg, VA",
+    "Upperville, VA",
+    "Virginia Inland Port",
+    "Warren County",
+    "Winchester, VA",
+    "Woodstock, VA"
+   ],
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.18711576,
+    "longitude": -78.1668352
+   },
+   "name": "The Flat Rate Movers",
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "closes": "18:00",
+     "dayOfWeek": "Mon-Fri",
+     "opens": "08:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "closes": "16:00",
+     "dayOfWeek": "Sat",
+     "opens": "08:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "closes": "16:00",
+     "dayOfWeek": "Sun",
+     "opens": "09:00"
+    }
+   ],
+   "telephone": "+1-540-422-2153"
+  },
+  {
+   "@id": "https://theflatratemovers.com/#martinsburg",
+   "@type": "Place",
+   "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US",
+    "addressLocality": "Martinsburg",
+    "addressRegion": "WV",
+    "postalCode": "25404",
+    "streetAddress": "736 Williamsport Pike Suite 2"
+   },
+   "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "6"
+   },
+   "areaServed": [
+    "Berkeley County, WV",
+    "Berkeley Springs, WV",
+    "Bunker Hill, WV",
+    "Charles Town, WV",
+    "Clear Spring, MD",
+    "Eastern Panhandle of West Virginia",
+    "Frederick, MD",
+    "Front Royal, VA",
+    "Hagerstown, MD",
+    "Hampshire County",
+    "Hancock, MD",
+    "Hardy County",
+    "Harpers Ferry, WV",
+    "Hedgesville, WV",
+    "Interstate 66 Corridor",
+    "Interstate 70 Corridor",
+    "Interstate 81 Corridor",
+    "Inwood, WV",
+    "Jefferson County",
+    "Kearneysville, WV",
+    "Martinsburg, WV",
+    "Moorefield, WV",
+    "Morgan County",
+    "Paw Paw, WV",
+    "Port of Virginia",
+    "Romney, WV",
+    "Shenandoah County",
+    "Shenandoah Valley",
+    "Shepherdstown, WV",
+    "Strasburg, VA",
+    "Summit Point, WV",
+    "Virginia Inland Port",
+    "Warren County",
+    "Washington County",
+    "Woodstock, VA"
+   ],
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.48319665,
+    "longitude": -77.94760443
+   },
+   "name": "Flat Rate Movers Martinsburg WV",
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "closes": "18:00",
+     "dayOfWeek": "Mon-Fri",
+     "opens": "09:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "closes": "16:00",
+     "dayOfWeek": "Sat",
+     "opens": "09:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "closes": "16:00",
+     "dayOfWeek": "Sun",
+     "opens": "09:00"
+    }
+   ],
+   "telephone": "+1-540-422-2153"
+  },
+  {
+   "@id": "https://theflatratemovers.com/packing/#breadcrumbs",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://theflatratemovers.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Packing and Unpacking",
+     "item": "https://theflatratemovers.com/packing/"
+    }
+   ]
+  },
+  {
+   "@id": "https://theflatratemovers.com/packing/#faq",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Do movers pack for you?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes — movers can pack for you, at three levels: full packing (the whole home), partial packing (the rooms or items you choose), and fragile-only packing (just the breakables). Whichever level you choose is scoped room by room and quoted inside the one flat rate in writing before move day — never hourly. Packing can also be booked on its own, without a move attached: packing only is one of the move types on our quote form."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does full packing include?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A trained crew packs nearly every item in the home: kitchen, closets, decor, garage. Furniture is protected separately — our published wrap standard is furniture fully covered in padded moving blankets and sealed with clear stretch wrap. Full packing is chosen most for large households, hard closing deadlines, and long-distance moves, where boxes ride for days and must be packed to travel, not just to carry."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is partial packing?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The middle level: you pack what you are comfortable packing — clothing, books, linens — and the crew packs the rooms or item classes you assign. The most common assignment is the kitchen, because it is the slowest room in the house to pack well. Partial packing is also the rescue level — if you started packing yourself and ran out of time, a crew can be scoped to finish exactly where you stopped."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is fragile-only packing?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Fragile-only packing covers the items where skill matters most: dishes and glassware, artwork and mirrors, TVs, lamps, china and crystal, antiques. They are packed with care and marked FRAGILE. Fragile and high-value pieces escalate past the box when a box is not enough: a large mirror, a marble top, or an irreplaceable antique goes to white-glove handling or a custom-built crate. Name these pieces when the job is scoped — not on move day."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is packing included in a moving quote, or is it an add-on?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "With most movers, packing is an add-on you must ask for, and many companies bill it by the hour. Our model is different and published: the packing level is scoped with the rest of the job — the items, the distance, the manpower, the equipment — and quoted inside the one flat rate in writing before move day. There is no hourly packing clock."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What will movers not pack?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Even on a full pack, some things a crew cannot take: hazardous materials — paint, solvents, propane, fuel — and perishables are the standard exclusions, and federal guidance is blunt that hazardous materials must never be hidden in household goods boxes. Plants travel badly and are usually excluded too. Irreplaceables — jewelry, documents, medication, cash — should travel with you, whoever packs the box."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it matter who packs the box?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Under the federal rules for interstate moves, a mover's liability can be reduced by your own acts — the FMCSA consumer booklet gives the example of improper packing of containers you pack yourself. If a box you packed arrives with the carton intact but the contents broken, fault is much harder to establish. The reading is simple: the more breakable and valuable the item, the stronger the case for having the crew pack it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is packing priced?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We do not publish a packing price list, because honest packing cost depends on what is actually being packed — rooms, fragile pieces, crates. Full, partial and fragile-only packing are scoped to your rooms and items, then fixed inside the one flat rate in writing. What changes the scope: number of rooms, fragile and high-value pieces, custom crates, ISPM 15 export packing, and unpacking at destination."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does unpacking include?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Unpacking and placement at destination: boxes unpacked and items placed, so rooms come back together in order. Unpacking is part of the same service — boxes opened at the destination and contents set out, so the new home is usable the day you arrive."
+     }
+    }
+   ]
+  }
+ ]
+}

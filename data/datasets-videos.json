@@ -2,6 +2,86 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@id": "https://theflatratemovers.com/datasets/videos/#dataset",
+      "@type": "Dataset",
+      "name": "The Flat Rate Movers — Moving Videos Dataset",
+      "description": "The published video dataset of The Flat Rate Movers: the six VideoObject records behind the estate’s Videos page — DMV Moving Made Easy: Top-Rated Movers in Winchester & Beyond! (#WinchesterVA #MoversVA #DMVMovers); Moving a Heavy Gun Safe? We Can Help! Flat Rate Movers (VA); The Flat Rate Movers of Winchester: Safe and Reliable Gun Safe Moving in Northern Virginia; Final Mile Delivery & White Glove Safe Installation | 1,800 lb Locker System (Full Process); Medical Tank Relocation: Experts for Your Sensitive Equipment; Gun Safe Movers Moving a 900 lb Gun Safe BROWNING PROSTEEL 1878 SERIES — published as structured data under CC BY 4.0 so search and AI systems read the same titles and descriptions the Videos page serves.",
+      "url": "https://theflatratemovers.com/datasets/videos/",
+      "sameAs": "https://theflatratemovers.com/datasets/videos/",
+      "identifier": "https://theflatratemovers.com/datasets/videos/",
+      "isAccessibleForFree": true,
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "foundingDate": "2010-06",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "foundingDate": "2010-06",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "includedInDataCatalog": {
+        "@id": "https://theflatratemovers.com/datasets/#collection"
+      },
+      "datePublished": "2026-10-29",
+      "dateModified": "2026-11-03",
+      "temporalCoverage": "2010/2026",
+      "spatialCoverage": [
+        {
+          "@type": "Place",
+          "@id": "https://theflatratemovers.com/#winchester",
+          "name": "The Flat Rate Movers — Winchester",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 39.18711576,
+            "longitude": -78.1668352
+          }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://theflatratemovers.com/#martinsburg",
+          "name": "Flat Rate Movers Martinsburg WV",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 39.48319665,
+            "longitude": -77.94760443
+          }
+        }
+      ],
+      "keywords": [
+        "moving videos",
+        "gun safe moving video",
+        "final mile delivery video",
+        "winchester va movers"
+      ],
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-videos.json",
+          "encodingFormat": "application/json"
+        }
+      ]
+    },
+    {
       "@type": "VideoObject",
       "@id": "https://theflatratemovers.com/videos/#video-29L981tzn5E",
       "name": "DMV Moving Made Easy: Top-Rated Movers in Winchester & Beyond! (#WinchesterVA #MoversVA #DMVMovers)",

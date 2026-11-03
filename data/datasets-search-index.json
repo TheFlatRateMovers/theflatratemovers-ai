@@ -28,7 +28,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-03",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -85,13 +85,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "783100498794114d958b96da3afe2452832579277657555f7b44219d6cb3aa0f"
+          "sha256": "9d759be4c6328b30a20152ebbbbf74a3a1d7cdabf7171ce41f629b7b5c64598f"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "db28775ea1a4ea4c34c5e1bedd206042d90856f4a275f991c135b152088e19ec"
+          "sha256": "2a4559a8a7604fa0e1e3157eaf37ff056668203a2d1196c69b003be9bff4c932"
         }
       ],
       "sameAs": "https://theflatratemovers.com/datasets/search-index/",
@@ -174,7 +174,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-03",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -280,7 +280,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-03",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -417,7 +417,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-03",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -41115,7 +41115,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-03",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -47865,7 +47865,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-03",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -48417,7 +48417,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-03",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -49137,7 +49137,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-03",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -49513,7 +49513,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-03",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -49783,7 +49783,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-03",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -49998,7 +49998,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-03",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -50076,7 +50076,7 @@
       "sources": [
         {
           "name": "Intent rubric database",
-          "detail": "3400 rows; rows digest da7fad56f0af082b02a372a013b1b9194c644d334a5baf039666027a47361bf2; generator build-intent-rubric.js (rubric v2)"
+          "detail": "3400 rows; rows digest ae4e33ef3c2c19432de35fe2e4fae671ff6f7f8eb45f03acbd19da8b318944b1; generator build-intent-rubric.js (rubric v2)"
         },
         {
           "name": "Search Console performance export",
@@ -50110,8 +50110,8 @@
       "@id": "https://theflatratemovers.com/#dataset-search-index-method",
       "@type": "Article",
       "name": "How the Search Index Dataset Is Built",
-      "description": "Method. The generator (scripts/build-search-index.js in the Flat Rate Machine) reads the paths registry for every location and builds all seven tables from the live estate in one run: clusters are grouped mechanically from the rubric database by (service, intent class, geo scope, target URL); URL supply is mined from the registries, the source shell, the served head data and the per-page JSON files; standing observations are admitted only from evidence on file — the research dossier’s dated live sampling and the Search Console verdicts — and the generator rejects any observation missing its method, era or source; the console window is joined from the rubric’s era-tagged evidence tables without aggregation or zero-filling; competitor, third-party and gap records are transcribed from the research dossiers with their check dates, under a schema bar the generator enforces in code. The url_supply digest is the SHA-256 of the page’s per-page JSON file in the public tree at generation time; a completed batch seals exactly those bytes, and the verification suite asserts the supply digests equal the served signed index after every batch. The file’s dateModified is the newest evidence date among its inputs, never the wall clock, so regeneration is byte-stable and checkable. Update cadence: the dataset regenerates in every estate batch that changes pages, rubric rows or standing evidence, and reseals in the same motion.",
-      "dateModified": "2026-10-31",
+      "description": "Method. The generator (scripts/build-search-index.js in the Flat Rate Machine) reads the paths registry for every location and builds all seven tables from the live estate in one run: clusters are grouped mechanically from the rubric database by (service, intent class, geo scope, target URL); URL supply is mined from the registries, the source shell, the served head data and the per-page JSON files; standing observations are admitted only from evidence on file — the research dossier’s dated live sampling and the Search Console verdicts — and the generator rejects any observation missing its method, era or source; the console window is joined from the rubric’s era-tagged evidence tables without aggregation or zero-filling; competitor, third-party and gap records are transcribed from the research dossiers with their check dates, under a schema bar the generator enforces in code. The url_supply digest is the SHA-256 of the page’s per-page JSON file in the public tree at generation time; a completed batch seals exactly those bytes, and the verification suite asserts the supply digests equal the served signed index after every batch. The file’s dateModified is the estate lastmod-ledger date for this file’s URL, wired by the seal (Batch Q124, 2026-11-03) — outside a seal the generator falls back to the newest evidence date among its inputs — never the wall clock, so regeneration is byte-stable and checkable. Update cadence: the dataset regenerates in every estate batch that changes pages, rubric rows or standing evidence, and reseals in the same motion.",
+      "dateModified": "2026-11-03",
       "author": {
         "@id": "https://theflatratemovers.com/#organization"
       },
@@ -50128,7 +50128,7 @@
       "@type": "Article",
       "name": "Search Index Dataset Sources",
       "description": "Sources, with their dates and eras kept distinct. (1) The estate’s own registries and rubric database — the demand and supply truth, current at generation. (2) Live search sampling of 2026-10-31 (Retrieval Machine Dossier 01 §§2–3): sampled positions and pack orders, labeled [OBS] in the dossier, post-rebuild era, small-sample by design and never blended with console data. (3) Search Console URL-inspection verdicts of 2026-10-31: 11 URLs inspected in the standing indexing pass; the same verdicts were ingested into the rubric outcome-evidence log (161 evidence rows). (4) The Search Console performance export for 2026-07-29 to 2026-10-28: pre-rebuild era evidence, attached to rubric rows by exact normalized text match only where the target page existed in the export and still exists; its totals describe the old site, not this one. (5) Third-party record checks of 2026-10-30 (backlink program wave 1) and 2026-10-31 (Dossier 03 re-verification, with each crawl’s age stated there). No source is presented as fresher than it is.",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-03",
       "author": {
         "@id": "https://theflatratemovers.com/#organization"
       },
@@ -50167,7 +50167,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-10-31",
+      "dateModified": "2026-11-03",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",

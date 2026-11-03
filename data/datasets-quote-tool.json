@@ -1,0 +1,393 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@id": "https://theflatratemovers.com/datasets/quote-tool/#dataset",
+   "@type": "Dataset",
+   "name": "Quote Tool Coverage — Form Inventory and Audience Guide",
+   "description": "The published coverage dataset for The Flat Rate Movers' flat rate quote tool: the complete, source-measured inventory of the live quote form and the audience guide that explains it. The form carries 44 named field controls and 33 pick chips — 77 visitor-value controls — across two modes: Short (the default: moving from, moving to, what is moving, heavy-item chips, and contact) and Detailed (adding the 20 project types, five conditional sections that open only for a selected type, the services chips, project notes and the video walkthrough). The dataset records both modes field by field, the five required fields (moving from, moving to, name, phone, email), the 20 project types with a five-dimension audience entry for each (who it is for, the jobs it covers, what to prepare, which form fields apply, and one thing to watch), the universal preparation checklist, and the eight-check coverage rubric the page is held to, with each check's measured result. The photo and video route is the walkthrough: a private phone link whose clips delete automatically after 24 hours. No prices are carried in this dataset; the industrial workforce rate schedule is published only on the industrial service surfaces and is deliberately absent here.",
+   "url": "https://theflatratemovers.com/datasets/quote-tool/",
+   "sameAs": "https://theflatratemovers.com/datasets/quote-tool/",
+   "identifier": "https://theflatratemovers.com/datasets/quote-tool/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "includedInDataCatalog": {
+    "@id": "https://theflatratemovers.com/datasets/#collection"
+   },
+   "datePublished": "2026-11-03",
+   "dateModified": "2026-11-03",
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/quote-tool/"
+    },
+    {
+     "@id": "https://theflatratemovers.com/quote/"
+    }
+   ],
+   "keywords": [
+    "flat rate quote",
+    "quote form",
+    "moving quote",
+    "Short quote",
+    "Detailed quote",
+    "project types",
+    "video walkthrough",
+    "Survey Room",
+    "form inventory",
+    "audience guide"
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-quote-tool.json",
+     "encodingFormat": "application/json"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "propertyID": "quoteFormFieldControls",
+     "value": 44
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "quoteFormPickChips",
+     "value": 33
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "quoteFormVisitorValueControls",
+     "value": 77
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "heroFormVisitorValueControls",
+     "value": 10
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "projectTypes",
+     "value": 20
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "conditionalSections",
+     "value": 5
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "requiredFields",
+     "value": 5
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "inventorySource",
+     "value": "Enumerated from the live form source (repo-dir/index.html, #quoteForm and #heroQuote) on 2026-11-03 with an HTML parser: every input/select/textarea element plus every pick-chip button, excluding submit and mode-toggle buttons."
+    }
+   ]
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/quote-tool/#coverage-rubric",
+   "@type": "Dataset",
+   "name": "Quote Tool Coverage Rubric — the checks the quote tool pages are held to",
+   "description": "The eight-check coverage rubric for the quote tool guide page, adapted from the template the company supplied and re-expressed against estate facts: a direct-answer opening, fidelity to the live form's source inventory, completeness of the 20 audience entries, plain-text facts, schema that mirrors the visible page, one clear call to action, no unverifiable numbers, and currency against the pinned form. Each check is recorded with its measured result at publication; a check that fails blocks the page, it is not averaged away.",
+   "url": "https://theflatratemovers.com/datasets/quote-tool/",
+   "sameAs": "https://theflatratemovers.com/datasets/quote-tool/",
+   "identifier": "https://theflatratemovers.com/datasets/quote-tool/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "includedInDataCatalog": {
+    "@id": "https://theflatratemovers.com/datasets/#collection"
+   },
+   "datePublished": "2026-11-03",
+   "dateModified": "2026-11-03",
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/quote-tool/"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "propertyID": "QT-1",
+     "name": "Direct answer first",
+     "description": "The page opens by naming the tool, its two modes and who it is for, in the first screen.",
+     "value": "pass — the hero states the tool, Short and Detailed, and the audience range before any detail section"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "QT-2",
+     "name": "Form fidelity",
+     "description": "Every claim about the form matches the live form's source inventory: 44 named field controls and 33 pick chips on the quote form (77 visitor-value controls), 20 project types, five conditional sections, Short default with Detailed toggle, data preserved on switch.",
+     "value": "pass — inventory measured from the form source on 2026-11-03; every number on the page traces to that inventory"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "QT-3",
+     "name": "Audience completeness",
+     "description": "Each of the 20 project types carries who it is for, the jobs it covers, what to prepare, which form fields apply, and one thing to watch.",
+     "value": "pass — 20 of 20 audiences carry all five dimensions"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "QT-4",
+     "name": "Plain-text facts",
+     "description": "Phone, email, both branches' hours and the required-fields list appear as HTML text, not only in images.",
+     "value": "pass — all contact and requirement facts are text on the page"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "QT-5",
+     "name": "Schema mirrors the page",
+     "description": "The page's JSON-LD (WebPage, ItemList, FAQPage, HowTo) validates and mirrors visible text; the FAQ schema is byte-equal to the visible FAQ.",
+     "value": "pass — FAQ generated from one source for the visible cards, the per-page JSON and the served head; the ItemList names the same 20 types the page lists"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "QT-6",
+     "name": "One clear call to action",
+     "description": "The call to action is Get My Flat Rate Quote, in the hero, repeated after the audience section and at the close.",
+     "value": "pass — the CTA appears in the hero, after Find your move, and in the closing section, in the estate's exact wording"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "QT-7",
+     "name": "No unverifiable numbers",
+     "description": "Weights, bands and limits come only from the form and settled company facts: the 1,500–3,500 lb SIR band, the L/360 floor standard, the 30-day storage minimum, the 24-hour walkthrough deletion.",
+     "value": "pass — no rates, counts or capacities appear that do not trace to the form source or a settled company fact; the industrial CWT schedule is deliberately absent from this page"
+    },
+    {
+     "@type": "PropertyValue",
+     "propertyID": "QT-8",
+     "name": "Currency",
+     "description": "The page shows the date its form inventory was taken, and this dataset is re-issued whenever the form changes; the form itself is pinned by the estate's W-2 and W-5 checks.",
+     "value": "pass — the page carries its as-of date (2026-11-03) and the form segments are digest-pinned in the build"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-quote-tool.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-quote-tool.json",
+     "encodingFormat": "application/json"
+    }
+   ]
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/quote-tool/#audiences",
+   "@type": "ItemList",
+   "name": "The 20 project types — audience guide",
+   "numberOfItems": 20,
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Residential",
+     "description": "Households moving an apartment, townhome or house. Full-home and partial-home moves, packed or unpacked.",
+     "url": "https://theflatratemovers.com/quote-tool/#residential"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Local & Regional",
+     "description": "People and businesses moving inside the Shenandoah Valley and Eastern Panhandle. Winchester, Martinsburg and the surrounding counties, from either home base.",
+     "url": "https://theflatratemovers.com/quote-tool/#local-regional"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Long-Distance",
+     "description": "Households and businesses moving out of the area, with an emphasis on high-value items. Interstate moves, including heavy or high-value pieces carried under the same standard.",
+     "url": "https://theflatratemovers.com/quote-tool/#long-distance"
+    },
+    {
+     "@type": "ListItem",
+     "position": 4,
+     "name": "Senior Moving",
+     "description": "Older adults, families and caregivers managing a downsize or a move to a new home or community. Downsizing, move-in day, and sorting and packing support.",
+     "url": "https://theflatratemovers.com/quote-tool/#senior-moving"
+    },
+    {
+     "@type": "ListItem",
+     "position": 5,
+     "name": "Moving & Storage",
+     "description": "Anyone whose move and storage dates do not line up. Moves into or out of storage — containers, household goods and machines, on a 30-day minimum, with access to your stored items while they are with us.",
+     "url": "https://theflatratemovers.com/quote-tool/#moving-storage"
+    },
+    {
+     "@type": "ListItem",
+     "position": 6,
+     "name": "Junk Removal",
+     "description": "Homeowners and businesses clearing out what is not moving with them. Removal of furniture, debris and unwanted items as its own job or alongside a move.",
+     "url": "https://theflatratemovers.com/quote-tool/#junk-removal"
+    },
+    {
+     "@type": "ListItem",
+     "position": 7,
+     "name": "Commercial",
+     "description": "Businesses relocating, expanding or consolidating. Office and commercial moves, planned around your operation and phased where the job needs it.",
+     "url": "https://theflatratemovers.com/quote-tool/#commercial"
+    },
+    {
+     "@type": "ListItem",
+     "position": 8,
+     "name": "Office Moving",
+     "description": "Offices moving desks, files, furniture and equipment. Whole-office and partial-office relocations.",
+     "url": "https://theflatratemovers.com/quote-tool/#office-moving"
+    },
+    {
+     "@type": "ListItem",
+     "position": 9,
+     "name": "Industrial Offices",
+     "description": "The office areas inside plants, warehouses and industrial facilities. Office relocations planned for the site they sit in — same flat-rate standard, site rules included.",
+     "url": "https://theflatratemovers.com/quote-tool/#industrial-offices"
+    },
+    {
+     "@type": "ListItem",
+     "position": 10,
+     "name": "Government",
+     "description": "Government offices and agencies moving facilities, offices or equipment. Agency office moves and equipment relocations, quoted in writing like every job here.",
+     "url": "https://theflatratemovers.com/quote-tool/#government"
+    },
+    {
+     "@type": "ListItem",
+     "position": 11,
+     "name": "Military",
+     "description": "Service members, military families and units moving on orders or on their own schedule. Household and equipment moves tied to reporting dates.",
+     "url": "https://theflatratemovers.com/quote-tool/#military"
+    },
+    {
+     "@type": "ListItem",
+     "position": 12,
+     "name": "Warehouse Relocation",
+     "description": "Warehouses and distribution operations moving sites or reconfiguring. Warehouse moves, racking moves and load-outs, planned around dock operations.",
+     "url": "https://theflatratemovers.com/quote-tool/#warehouse-relocation"
+    },
+    {
+     "@type": "ListItem",
+     "position": 13,
+     "name": "Data Center & IT",
+     "description": "Data centers and IT operations moving racks, servers and equipment. Data center and IT relocations, with disconnect and reconnect in scope.",
+     "url": "https://theflatratemovers.com/quote-tool/#data-center-it"
+    },
+    {
+     "@type": "ListItem",
+     "position": 14,
+     "name": "Gun Safes",
+     "description": "Owners of gun safes and vaults, including safes in the 1,500–3,500 lb SIR band. Gun safe moves — in-home, between addresses, and long-distance — with stairs planned, not improvised.",
+     "url": "https://theflatratemovers.com/quote-tool/#gun-safes"
+    },
+    {
+     "@type": "ListItem",
+     "position": 15,
+     "name": "Pianos & Antiques",
+     "description": "Owners of upright and grand pianos, antiques and museum-grade pieces. Piano and antique moves, protected piece by piece.",
+     "url": "https://theflatratemovers.com/quote-tool/#pianos-antiques"
+    },
+    {
+     "@type": "ListItem",
+     "position": 16,
+     "name": "Medical Equipment",
+     "description": "Clinics, labs and practices moving medical devices and equipment. Medical equipment relocation, from single devices to full rooms.",
+     "url": "https://theflatratemovers.com/quote-tool/#medical-equipment"
+    },
+    {
+     "@type": "ListItem",
+     "position": 17,
+     "name": "Cryogenic",
+     "description": "Labs and facilities moving cryogenic units and freezers. Cryogenic equipment moves, planned as heavy, sensitive items.",
+     "url": "https://theflatratemovers.com/quote-tool/#cryogenic"
+    },
+    {
+     "@type": "ListItem",
+     "position": 18,
+     "name": "Heavy Assets (SIR)",
+     "description": "Owners of any single asset in the 1,500–3,500 lb band — safes, machinery, medical devices, cryogenic units, pianos, antiques. High-mass moves planned under SIR (Structural Integrity Relocation) and the KIM-GS Protocol, with floor-deflection analysis to L/360 before anything lifts.",
+     "url": "https://theflatratemovers.com/quote-tool/#heavy-assets-sir"
+    },
+    {
+     "@type": "ListItem",
+     "position": 19,
+     "name": "ISPM 15 Export",
+     "description": "Exporters shipping household goods, equipment or high-value items overseas. ISPM 15 export packing and custom crating that clears customs — compliant, treated, marked wood.",
+     "url": "https://theflatratemovers.com/quote-tool/#ispm-15-export"
+    },
+    {
+     "@type": "ListItem",
+     "position": 20,
+     "name": "Freight Rework & Transloading",
+     "description": "Drivers, carriers, warehouses and receivers — freight professionals, not household moves. Load-shift corrections and reworks, transloading, container loading and unloading, cross-docking and final-mile legs.",
+     "url": "https://theflatratemovers.com/quote-tool/#freight-rework-transloading"
+    }
+   ]
+  }
+ ]
+}

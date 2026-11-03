@@ -73,7 +73,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/llms-full.txt",
           "encodingFormat": "text/plain",
-          "sha256": "127d2e62044859ff9789fef2f11a03375b9cda5d724aa38efbc85cde4da4df45"
+          "sha256": "5845d6ead15f2a3b1954fd28f5a945380e624d8efa59f2caa82626e1d8f615fa"
         },
         {
           "@type": "DataDownload",
@@ -85,13 +85,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "a7589d24a0eb7721d27c25a274701655853d354b933c388f5b15d326c138d1a0"
+          "sha256": "ff0a811476de0e4cba69d7c39822b6beb5e054e16fba4b6fa57629604863437e"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "ebe976247f1deedcda322fc3b3391d236f19752db6f2d833ae5da23c195184c7"
+          "sha256": "38336eb8732ee27838a465589ada8cffa314e2fd03dddf45d836fe45c436e8f1"
         }
       ],
       "sameAs": "https://theflatratemovers.com/datasets/search-index/",
@@ -137,7 +137,7 @@
       "@id": "https://theflatratemovers.com/#dataset-search-index-scope",
       "@type": "Dataset",
       "name": "Search Index Scope and Footprint",
-      "description": "The scope the standing system measures: 231 pages in the registry, 30 published services, and the 53-feature service-area footprint (Winchester footprint 32 areas, Martinsburg footprint 35 areas, 14 shared). The two branches are distinct in every table of this file: Winchester is The Flat Rate Movers (116 W Piccadilly St Suite 11, Winchester, VA 22601; hours Mon-Fri 8-6, Sat 8-4, Sun 9-4; Google rating 5.0 from 1 review) and Martinsburg is Flat Rate Movers Martinsburg WV (736 Williamsport Pike Suite 2, Martinsburg, WV 25404; hours Mon-Fri 9-6, Sat 9-4, Sun 9-4; Google rating 4.7 from 6 reviews). Branch facts are never blended.",
+      "description": "The scope the standing system measures: 232 pages in the registry, 30 published services, and the 53-feature service-area footprint (Winchester footprint 32 areas, Martinsburg footprint 35 areas, 14 shared). The two branches are distinct in every table of this file: Winchester is The Flat Rate Movers (116 W Piccadilly St Suite 11, Winchester, VA 22601; hours Mon-Fri 8-6, Sat 8-4, Sun 9-4; Google rating 5.0 from 1 review) and Martinsburg is Flat Rate Movers Martinsburg WV (736 Williamsport Pike Suite 2, Martinsburg, WV 25404; hours Mon-Fri 9-6, Sat 9-4, Sun 9-4; Google rating 4.7 from 6 reviews). Branch facts are never blended.",
       "keywords": [
         "search index",
         "query clusters",
@@ -221,7 +221,7 @@
       "identifier": "https://theflatratemovers.com/datasets/search-index/",
       "isAccessibleForFree": true,
       "coverage": {
-        "pagesInRegistry": 231,
+        "pagesInRegistry": 232,
         "servicesPublished": 30,
         "geojsonFeatures": 53,
         "winchesterFootprint": 32,
@@ -380,7 +380,7 @@
       "@id": "https://theflatratemovers.com/#dataset-search-index-clusters",
       "@type": "Dataset",
       "name": "Query Clusters",
-      "description": "The demand side: 2410 query clusters grouping all 3393 intent-rubric rows by service, intent class, geo scope and target URL. Each cluster carries its canonical query (the shortest variant, the cluster’s representative phrasing), every variant phrasing, the rubric row ids it groups, and a money weight: the sampled money clusters carry the owner’s priority classes from the research dossier (P1 B2B and freight money plus the defended gun-safe #1, P2 the Winchester head terms, P3 the Martinsburg defense and category hubs); generated clusters carry \"standard\", meaning not separately owner-ordered. Cluster derivation is mechanical — no cluster is hand-written, and an observation-defined cluster whose text matches no rubric row carries an empty rubricRowRefs list rather than invented refs.",
+      "description": "The demand side: 2411 query clusters grouping all 3396 intent-rubric rows by service, intent class, geo scope and target URL. Each cluster carries its canonical query (the shortest variant, the cluster’s representative phrasing), every variant phrasing, the rubric row ids it groups, and a money weight: the sampled money clusters carry the owner’s priority classes from the research dossier (P1 B2B and freight money plus the defended gun-safe #1, P2 the Winchester head terms, P3 the Martinsburg defense and category hubs); generated clusters carry \"standard\", meaning not separately owner-ordered. Cluster derivation is mechanical — no cluster is hand-written, and an observation-defined cluster whose text matches no rubric row carries an empty rubricRowRefs list rather than invented refs.",
       "keywords": [
         "search index",
         "query clusters",
@@ -29316,7 +29316,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/",
           "rubricRowRefs": [
-            2497
+            2500
           ],
           "clusterSource": "rubric-derived"
         },
@@ -29332,7 +29332,27 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/developer/",
           "rubricRowRefs": [
-            2495
+            2496
+          ],
+          "clusterSource": "rubric-derived"
+        },
+        {
+          "clusterId": "cluster-residential-ai-question-pattern-family-flat-rate-movers-dataset-estate-citable-doi",
+          "canonicalQuery": "Does The Flat Rate Movers publish its datasets with a DOI?",
+          "variants": [
+            "Does The Flat Rate Movers publish its datasets with a DOI?",
+            "How can I verify that The Flat Rate Movers published data is really theirs?",
+            "Is The Flat Rate Movers listed on Wikidata and OpenStreetMap?"
+          ],
+          "intentClass": "ai-question",
+          "serviceId": "service-residential",
+          "geoScope": "pattern-family",
+          "moneyWeight": "standard",
+          "targetUrl": "https://theflatratemovers.com/flat-rate-movers-dataset-estate-citable-doi/",
+          "rubricRowRefs": [
+            2495,
+            2497,
+            2498
           ],
           "clusterSource": "rubric-derived"
         },
@@ -29349,8 +29369,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/residential-moving/",
           "rubricRowRefs": [
-            2496,
-            2498
+            2499,
+            2501
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31232,7 +31252,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/how-port-of-virginia-logistics-supports-east-coast-freight-movement/",
           "rubricRowRefs": [
-            2597
+            2600
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31258,9 +31278,6 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/route81/",
           "rubricRowRefs": [
-            2587,
-            2588,
-            2589,
             2590,
             2591,
             2592,
@@ -31268,7 +31285,10 @@
             2594,
             2595,
             2596,
-            2598
+            2597,
+            2598,
+            2599,
+            2601
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31285,8 +31305,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/route81/",
           "rubricRowRefs": [
-            2581,
-            2584
+            2584,
+            2587
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31303,8 +31323,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/route81/",
           "rubricRowRefs": [
-            2583,
-            2586
+            2586,
+            2589
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31321,8 +31341,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/route81/",
           "rubricRowRefs": [
-            2582,
-            2585
+            2585,
+            2588
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31339,8 +31359,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-cost-guide-winchester-va/",
           "rubricRowRefs": [
-            2575,
-            2576
+            2578,
+            2579
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31357,8 +31377,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/route81/",
           "rubricRowRefs": [
-            2569,
-            2572
+            2572,
+            2575
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31375,8 +31395,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/route81/",
           "rubricRowRefs": [
-            2571,
-            2574
+            2574,
+            2577
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31393,8 +31413,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/route81/",
           "rubricRowRefs": [
-            2570,
-            2573
+            2573,
+            2576
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31410,7 +31430,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/route81/",
           "rubricRowRefs": [
-            2577
+            2580
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31426,7 +31446,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/route81/",
           "rubricRowRefs": [
-            2578
+            2581
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31442,7 +31462,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/route81/",
           "rubricRowRefs": [
-            2580
+            2583
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31458,7 +31478,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/route81/",
           "rubricRowRefs": [
-            2579
+            2582
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31474,7 +31494,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/interstate-66-corridor/",
           "rubricRowRefs": [
-            2500
+            2503
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31490,7 +31510,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/interstate-70-corridor/",
           "rubricRowRefs": [
-            2501
+            2504
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31506,7 +31526,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/route81/",
           "rubricRowRefs": [
-            2502
+            2505
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31522,7 +31542,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/ai-license/",
           "rubricRowRefs": [
-            2506
+            2509
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31539,8 +31559,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/all-pages/",
           "rubricRowRefs": [
-            2507,
-            2513
+            2510,
+            2516
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31556,7 +31576,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/areas-served/",
           "rubricRowRefs": [
-            2512
+            2515
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31573,8 +31593,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/henry-pitts-jr/",
           "rubricRowRefs": [
-            2532,
-            2533
+            2535,
+            2536
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31590,7 +31610,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/ratemoversgmail-com/",
           "rubricRowRefs": [
-            2520
+            2523
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31606,7 +31626,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/blog/",
           "rubricRowRefs": [
-            2521
+            2524
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31622,7 +31642,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/category/logistics/",
           "rubricRowRefs": [
-            2525
+            2528
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31638,7 +31658,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/",
           "rubricRowRefs": [
-            2558
+            2561
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31655,8 +31675,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/answer-evidence/",
           "rubricRowRefs": [
-            2508,
-            2509
+            2511,
+            2512
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31673,8 +31693,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/archive-registry/",
           "rubricRowRefs": [
-            2510,
-            2511
+            2513,
+            2514
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31691,8 +31711,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/crawl-presence/",
           "rubricRowRefs": [
-            2514,
-            2515
+            2517,
+            2518
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31709,8 +31729,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/intent-coverage/",
           "rubricRowRefs": [
-            2536,
-            2565
+            2539,
+            2568
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31727,8 +31747,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/local-graph-registry/",
           "rubricRowRefs": [
-            2546,
-            2547
+            2549,
+            2550
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31744,7 +31764,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/route81/",
           "rubricRowRefs": [
-            2561
+            2564
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31761,8 +31781,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/search-index/",
           "rubricRowRefs": [
-            2563,
-            2564
+            2566,
+            2567
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31778,7 +31798,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/developer/",
           "rubricRowRefs": [
-            2516
+            2519
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31794,7 +31814,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-event-protocol/",
           "rubricRowRefs": [
-            2549
+            2552
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31810,7 +31830,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-ontology/",
           "rubricRowRefs": [
-            2550
+            2553
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31826,7 +31846,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entities/",
           "rubricRowRefs": [
-            2522
+            2525
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31842,7 +31862,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entity-authority-layer/",
           "rubricRowRefs": [
-            2517
+            2520
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31858,7 +31878,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/faq/",
           "rubricRowRefs": [
-            2523
+            2526
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31874,7 +31894,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/find-us/",
           "rubricRowRefs": [
-            2518
+            2521
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31891,8 +31911,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-guarantee/",
           "rubricRowRefs": [
-            2519,
-            2530
+            2522,
+            2533
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31909,8 +31929,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-moving-quote-winchester/",
           "rubricRowRefs": [
-            2528,
-            2529
+            2531,
+            2532
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31926,7 +31946,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/",
           "rubricRowRefs": [
-            2524
+            2527
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31943,8 +31963,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/i-81-shenandoah-valley-move-timing/",
           "rubricRowRefs": [
-            2534,
-            2535
+            2537,
+            2538
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31961,8 +31981,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/interstate-66-corridor/",
           "rubricRowRefs": [
-            2537,
-            2538
+            2540,
+            2541
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31979,8 +31999,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/interstate-70-corridor/",
           "rubricRowRefs": [
-            2539,
-            2540
+            2542,
+            2543
           ],
           "clusterSource": "rubric-derived"
         },
@@ -31996,7 +32016,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-entities/",
           "rubricRowRefs": [
-            2541
+            2544
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32012,7 +32032,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-equipment/",
           "rubricRowRefs": [
-            2542
+            2545
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32028,7 +32048,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-events/",
           "rubricRowRefs": [
-            2543
+            2546
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32044,7 +32064,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-locations/",
           "rubricRowRefs": [
-            2544
+            2547
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32060,7 +32080,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-services/",
           "rubricRowRefs": [
-            2545
+            2548
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32076,7 +32096,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/logistics-data-engineering-center/",
           "rubricRowRefs": [
-            2548
+            2551
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32093,8 +32113,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "rubricRowRefs": [
-            2551,
-            2552
+            2554,
+            2555
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32110,7 +32130,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-winchester-va/",
           "rubricRowRefs": [
-            2553
+            2556
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32127,8 +32147,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-questions-answers/",
           "rubricRowRefs": [
-            2554,
-            2555
+            2557,
+            2558
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32144,7 +32164,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/online-estimate/",
           "rubricRowRefs": [
-            2556
+            2559
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32160,7 +32180,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/privacy-policy/",
           "rubricRowRefs": [
-            2557
+            2560
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32176,7 +32196,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/quote/",
           "rubricRowRefs": [
-            2531
+            2534
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32192,7 +32212,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/recursive-indexing-layer/",
           "rubricRowRefs": [
-            2559
+            2562
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32211,10 +32231,10 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/route81/",
           "rubricRowRefs": [
-            2499,
-            2505,
-            2560,
-            2562
+            2502,
+            2508,
+            2563,
+            2565
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32231,8 +32251,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/service-areas-moving-company/",
           "rubricRowRefs": [
-            2566,
-            2567
+            2569,
+            2570
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32248,7 +32268,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/services/",
           "rubricRowRefs": [
-            2526
+            2529
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32264,7 +32284,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sitemap/",
           "rubricRowRefs": [
-            2527
+            2530
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32280,7 +32300,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/the-flat-rate-logistics-data-hub/",
           "rubricRowRefs": [
-            2568
+            2571
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32296,7 +32316,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/route81/",
           "rubricRowRefs": [
-            2503
+            2506
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32312,7 +32332,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/route81/",
           "rubricRowRefs": [
-            2504
+            2507
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32426,7 +32446,7 @@
           "moneyWeight": "P1",
           "targetUrl": "https://theflatratemovers.com/gun-safe-movers/",
           "rubricRowRefs": [
-            3204
+            3207
           ],
           "clusterSource": "sampled-observation"
         },
@@ -32442,7 +32462,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/senior-moving/",
           "rubricRowRefs": [
-            2676
+            2679
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32459,8 +32479,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/senior-moving/",
           "rubricRowRefs": [
-            2670,
-            2673
+            2673,
+            2676
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32477,8 +32497,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/senior-moving/",
           "rubricRowRefs": [
-            2672,
-            2675
+            2675,
+            2678
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32495,8 +32515,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/senior-moving/",
           "rubricRowRefs": [
-            2671,
-            2674
+            2674,
+            2677
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32513,8 +32533,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-cost-guide-winchester-va/",
           "rubricRowRefs": [
-            2661,
-            2662
+            2664,
+            2665
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32531,8 +32551,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/senior-moving/",
           "rubricRowRefs": [
-            2658,
-            2663
+            2661,
+            2666
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32549,8 +32569,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/senior-moving/",
           "rubricRowRefs": [
-            2660,
-            2665
+            2663,
+            2668
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32567,8 +32587,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/senior-moving/",
           "rubricRowRefs": [
-            2659,
-            2664
+            2662,
+            2667
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32584,7 +32604,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/senior-moving/",
           "rubricRowRefs": [
-            2666
+            2669
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32600,7 +32620,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/senior-moving/",
           "rubricRowRefs": [
-            2667
+            2670
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32616,7 +32636,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/senior-moving/",
           "rubricRowRefs": [
-            2669
+            2672
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32632,7 +32652,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/senior-moving/",
           "rubricRowRefs": [
-            2668
+            2671
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32648,7 +32668,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/ai-license/",
           "rubricRowRefs": [
-            2599
+            2602
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32665,8 +32685,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/all-pages/",
           "rubricRowRefs": [
-            2600,
-            2606
+            2603,
+            2609
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32682,7 +32702,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/areas-served/",
           "rubricRowRefs": [
-            2605
+            2608
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32699,8 +32719,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/henry-pitts-jr/",
           "rubricRowRefs": [
-            2624,
-            2625
+            2627,
+            2628
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32716,7 +32736,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/ratemoversgmail-com/",
           "rubricRowRefs": [
-            2613
+            2616
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32732,7 +32752,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/blog/",
           "rubricRowRefs": [
-            2614
+            2617
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32748,7 +32768,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/",
           "rubricRowRefs": [
-            2644
+            2647
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32765,8 +32785,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/answer-evidence/",
           "rubricRowRefs": [
-            2601,
-            2602
+            2604,
+            2605
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32783,8 +32803,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/archive-registry/",
           "rubricRowRefs": [
-            2603,
-            2604
+            2606,
+            2607
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32801,8 +32821,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/crawl-presence/",
           "rubricRowRefs": [
-            2607,
-            2608
+            2610,
+            2611
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32819,8 +32839,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/intent-coverage/",
           "rubricRowRefs": [
-            2626,
-            2648
+            2629,
+            2651
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32837,8 +32857,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/local-graph-registry/",
           "rubricRowRefs": [
-            2632,
-            2633
+            2635,
+            2636
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32855,8 +32875,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/search-index/",
           "rubricRowRefs": [
-            2646,
-            2647
+            2649,
+            2650
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32872,7 +32892,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/senior/",
           "rubricRowRefs": [
-            2654
+            2657
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32888,7 +32908,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/developer/",
           "rubricRowRefs": [
-            2609
+            2612
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32904,7 +32924,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-event-protocol/",
           "rubricRowRefs": [
-            2635
+            2638
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32920,7 +32940,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-ontology/",
           "rubricRowRefs": [
-            2636
+            2639
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32936,7 +32956,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entities/",
           "rubricRowRefs": [
-            2615
+            2618
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32952,7 +32972,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entity-authority-layer/",
           "rubricRowRefs": [
-            2610
+            2613
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32968,7 +32988,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/faq/",
           "rubricRowRefs": [
-            2616
+            2619
           ],
           "clusterSource": "rubric-derived"
         },
@@ -32984,7 +33004,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/find-us/",
           "rubricRowRefs": [
-            2611
+            2614
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33001,8 +33021,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-guarantee/",
           "rubricRowRefs": [
-            2612,
-            2622
+            2615,
+            2625
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33019,8 +33039,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-moving-quote-winchester/",
           "rubricRowRefs": [
-            2620,
-            2621
+            2623,
+            2624
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33036,7 +33056,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/",
           "rubricRowRefs": [
-            2617
+            2620
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33052,7 +33072,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-entities/",
           "rubricRowRefs": [
-            2627
+            2630
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33068,7 +33088,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-equipment/",
           "rubricRowRefs": [
-            2628
+            2631
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33084,7 +33104,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-events/",
           "rubricRowRefs": [
-            2629
+            2632
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33100,7 +33120,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-locations/",
           "rubricRowRefs": [
-            2630
+            2633
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33116,7 +33136,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-services/",
           "rubricRowRefs": [
-            2631
+            2634
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33132,7 +33152,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/logistics-data-engineering-center/",
           "rubricRowRefs": [
-            2634
+            2637
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33149,8 +33169,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "rubricRowRefs": [
-            2637,
-            2638
+            2640,
+            2641
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33166,7 +33186,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-winchester-va/",
           "rubricRowRefs": [
-            2639
+            2642
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33183,8 +33203,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-questions-answers/",
           "rubricRowRefs": [
-            2640,
-            2641
+            2643,
+            2644
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33200,7 +33220,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/online-estimate/",
           "rubricRowRefs": [
-            2642
+            2645
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33216,7 +33236,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/privacy-policy/",
           "rubricRowRefs": [
-            2643
+            2646
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33232,7 +33252,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/quote/",
           "rubricRowRefs": [
-            2623
+            2626
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33248,7 +33268,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/recursive-indexing-layer/",
           "rubricRowRefs": [
-            2645
+            2648
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33266,9 +33286,9 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/senior-moving/",
           "rubricRowRefs": [
-            2649,
             2652,
-            2653
+            2655,
+            2656
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33285,8 +33305,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/service-areas-moving-company/",
           "rubricRowRefs": [
-            2655,
-            2656
+            2658,
+            2659
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33302,7 +33322,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/services/",
           "rubricRowRefs": [
-            2618
+            2621
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33318,7 +33338,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sitemap/",
           "rubricRowRefs": [
-            2619
+            2622
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33334,7 +33354,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/the-flat-rate-logistics-data-hub/",
           "rubricRowRefs": [
-            2657
+            2660
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33350,7 +33370,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/senior-moving/",
           "rubricRowRefs": [
-            2650
+            2653
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33366,7 +33386,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/senior-moving/",
           "rubricRowRefs": [
-            2651
+            2654
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33383,8 +33403,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/heavy/",
           "rubricRowRefs": [
-            2780,
-            2781
+            2783,
+            2784
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33401,8 +33421,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sir-heavy-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2774,
-            2777
+            2777,
+            2780
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33419,8 +33439,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/heavy/",
           "rubricRowRefs": [
-            2776,
-            2779
+            2779,
+            2782
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33437,8 +33457,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/industrial-rigging-high-mass-logistics-hub-winchester-va/",
           "rubricRowRefs": [
-            2775,
-            2778
+            2778,
+            2781
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33455,8 +33475,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-cost-guide-winchester-va/",
           "rubricRowRefs": [
-            2768,
-            2769
+            2771,
+            2772
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33473,8 +33493,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sir-heavy-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2762,
-            2765
+            2765,
+            2768
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33491,8 +33511,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/heavy/",
           "rubricRowRefs": [
-            2764,
-            2767
+            2767,
+            2770
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33509,8 +33529,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/industrial-rigging-high-mass-logistics-hub-winchester-va/",
           "rubricRowRefs": [
-            2763,
-            2766
+            2766,
+            2769
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33526,7 +33546,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/heavy/",
           "rubricRowRefs": [
-            2770
+            2773
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33542,7 +33562,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sir-heavy-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2771
+            2774
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33558,7 +33578,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/heavy/",
           "rubricRowRefs": [
-            2773
+            2776
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33574,7 +33594,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/industrial-rigging-high-mass-logistics-hub-winchester-va/",
           "rubricRowRefs": [
-            2772
+            2775
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33590,7 +33610,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/ai-license/",
           "rubricRowRefs": [
-            2677
+            2680
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33607,8 +33627,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/all-pages/",
           "rubricRowRefs": [
-            2678,
-            2684
+            2681,
+            2687
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33624,7 +33644,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/areas-served/",
           "rubricRowRefs": [
-            2683
+            2686
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33641,8 +33661,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/henry-pitts-jr/",
           "rubricRowRefs": [
-            2710,
-            2711
+            2713,
+            2714
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33658,7 +33678,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/ratemoversgmail-com/",
           "rubricRowRefs": [
-            2693
+            2696
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33674,7 +33694,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/blog/",
           "rubricRowRefs": [
-            2694
+            2697
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33692,9 +33712,9 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/calibration-safe-moving/",
           "rubricRowRefs": [
-            2685,
-            2686,
-            2752
+            2688,
+            2689,
+            2755
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33711,8 +33731,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/category/rigging-sir-2026/",
           "rubricRowRefs": [
-            2741,
-            2742
+            2744,
+            2745
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33729,8 +33749,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/category/rigging-sir-2026/high-value-rigging/",
           "rubricRowRefs": [
-            2713,
-            2715
+            2716,
+            2718
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33746,7 +33766,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/",
           "rubricRowRefs": [
-            2737
+            2740
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33763,8 +33783,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/answer-evidence/",
           "rubricRowRefs": [
-            2679,
-            2680
+            2682,
+            2683
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33781,8 +33801,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/archive-registry/",
           "rubricRowRefs": [
-            2681,
-            2682
+            2684,
+            2685
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33799,8 +33819,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/crawl-presence/",
           "rubricRowRefs": [
-            2687,
-            2688
+            2690,
+            2691
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33817,8 +33837,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/intent-coverage/",
           "rubricRowRefs": [
-            2718,
-            2745
+            2721,
+            2748
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33835,8 +33855,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/local-graph-registry/",
           "rubricRowRefs": [
-            2724,
-            2725
+            2727,
+            2728
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33853,8 +33873,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/search-index/",
           "rubricRowRefs": [
-            2743,
-            2744
+            2746,
+            2747
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33871,8 +33891,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/sir-heavy/",
           "rubricRowRefs": [
-            2751,
-            2755
+            2754,
+            2758
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33888,7 +33908,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/videos/",
           "rubricRowRefs": [
-            2734
+            2737
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33904,7 +33924,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/developer/",
           "rubricRowRefs": [
-            2689
+            2692
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33920,7 +33940,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-event-protocol/",
           "rubricRowRefs": [
-            2727
+            2730
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33936,7 +33956,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-ontology/",
           "rubricRowRefs": [
-            2728
+            2731
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33952,7 +33972,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entities/",
           "rubricRowRefs": [
-            2695
+            2698
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33968,7 +33988,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entity-authority-layer/",
           "rubricRowRefs": [
-            2690
+            2693
           ],
           "clusterSource": "rubric-derived"
         },
@@ -33984,7 +34004,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/faq/",
           "rubricRowRefs": [
-            2696
+            2699
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34000,7 +34020,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/find-us/",
           "rubricRowRefs": [
-            2691
+            2694
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34017,8 +34037,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-guarantee/",
           "rubricRowRefs": [
-            2692,
-            2703
+            2695,
+            2706
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34035,8 +34055,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-moving-quote-winchester/",
           "rubricRowRefs": [
-            2701,
-            2702
+            2704,
+            2705
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34054,9 +34074,9 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/heavy/",
           "rubricRowRefs": [
-            2705,
-            2706,
-            2709
+            2708,
+            2709,
+            2712
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34073,8 +34093,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/high-mass-logistics-long-distance-moving-winchester-va/",
           "rubricRowRefs": [
-            2712,
-            2714
+            2715,
+            2717
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34090,7 +34110,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/",
           "rubricRowRefs": [
-            2697
+            2700
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34107,8 +34127,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/industrial-rigging-high-mass-logistics-hub-winchester-va/",
           "rubricRowRefs": [
-            2716,
-            2717
+            2719,
+            2720
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34124,7 +34144,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-entities/",
           "rubricRowRefs": [
-            2719
+            2722
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34140,7 +34160,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-equipment/",
           "rubricRowRefs": [
-            2720
+            2723
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34156,7 +34176,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-events/",
           "rubricRowRefs": [
-            2721
+            2724
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34172,7 +34192,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-locations/",
           "rubricRowRefs": [
-            2722
+            2725
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34188,7 +34208,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-services/",
           "rubricRowRefs": [
-            2723
+            2726
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34204,7 +34224,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/logistics-data-engineering-center/",
           "rubricRowRefs": [
-            2726
+            2729
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34221,8 +34241,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "rubricRowRefs": [
-            2729,
-            2730
+            2732,
+            2733
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34238,7 +34258,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-winchester-va/",
           "rubricRowRefs": [
-            2731
+            2734
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34255,8 +34275,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-questions-answers/",
           "rubricRowRefs": [
-            2732,
-            2733
+            2735,
+            2736
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34272,7 +34292,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/online-estimate/",
           "rubricRowRefs": [
-            2735
+            2738
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34288,7 +34308,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/privacy-policy/",
           "rubricRowRefs": [
-            2736
+            2739
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34304,7 +34324,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/quote/",
           "rubricRowRefs": [
-            2704
+            2707
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34320,7 +34340,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/recursive-indexing-layer/",
           "rubricRowRefs": [
-            2738
+            2741
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34336,7 +34356,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/relocation-engineering-framework/",
           "rubricRowRefs": [
-            2739
+            2742
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34352,7 +34372,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/relocation-engineering-standards-portal/",
           "rubricRowRefs": [
-            2740
+            2743
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34369,8 +34389,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/service-areas-moving-company/",
           "rubricRowRefs": [
-            2746,
-            2747
+            2749,
+            2750
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34386,7 +34406,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/services/",
           "rubricRowRefs": [
-            2698
+            2701
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34402,7 +34422,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sir-2026-protocol/",
           "rubricRowRefs": [
-            2749
+            2752
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34419,8 +34439,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sir-2026-structural-integrity-relocation-protocol/",
           "rubricRowRefs": [
-            2748,
-            2750
+            2751,
+            2753
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34437,8 +34457,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sir-heavy-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2753,
-            2754
+            2756,
+            2757
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34454,7 +34474,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sitemap/",
           "rubricRowRefs": [
-            2699
+            2702
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34471,8 +34491,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/technical-rigging-high-security-gun-safe-vault-relocation/",
           "rubricRowRefs": [
-            2756,
-            2757
+            2759,
+            2760
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34488,7 +34508,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/technical-rigging-standards/",
           "rubricRowRefs": [
-            2758
+            2761
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34504,7 +34524,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/the-flat-rate-logistics-data-hub/",
           "rubricRowRefs": [
-            2759
+            2762
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34521,8 +34541,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/the-invisible-risk-of-high-mass-relocation/",
           "rubricRowRefs": [
-            2760,
-            2761
+            2763,
+            2764
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34538,7 +34558,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/videos/",
           "rubricRowRefs": [
-            2700
+            2703
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34554,7 +34574,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sir-heavy-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2707
+            2710
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34570,7 +34590,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/industrial-rigging-high-mass-logistics-hub-winchester-va/",
           "rubricRowRefs": [
-            2708
+            2711
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34586,7 +34606,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/how-container-deconsolidation-cross-docking-transloading-supports-virginia-freight-networks/",
           "rubricRowRefs": [
-            3058
+            3061
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34603,8 +34623,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/how-container-loading-unloading-services-improve-port-logistics/",
           "rubricRowRefs": [
-            3059,
-            3060
+            3062,
+            3063
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34620,7 +34640,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/how-port-of-virginia-logistics-supports-east-coast-freight-movement/",
           "rubricRowRefs": [
-            3061
+            3064
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34643,14 +34663,14 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            3051,
-            3052,
-            3053,
             3054,
             3055,
             3056,
             3057,
-            3062
+            3058,
+            3059,
+            3060,
+            3065
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34671,12 +34691,12 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/ports/",
           "rubricRowRefs": [
-            3063,
-            3064,
             3066,
+            3067,
             3069,
-            3070,
-            3072
+            3072,
+            3073,
+            3075
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34695,10 +34715,10 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/ports/",
           "rubricRowRefs": [
-            3065,
-            3067,
-            3071,
-            3073
+            3068,
+            3070,
+            3074,
+            3076
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34714,7 +34734,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/virginia-inland-port-3pl-project-support/",
           "rubricRowRefs": [
-            3075
+            3078
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34731,8 +34751,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/virginia-inland-port-transloading/",
           "rubricRowRefs": [
-            3068,
-            3074
+            3071,
+            3077
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34749,8 +34769,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            3045,
-            3048
+            3048,
+            3051
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34767,8 +34787,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            3047,
-            3050
+            3050,
+            3053
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34785,8 +34805,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3046,
-            3049
+            3049,
+            3052
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34803,8 +34823,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-cost-guide-winchester-va/",
           "rubricRowRefs": [
-            3036,
-            3037
+            3039,
+            3040
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34821,8 +34841,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            3033,
-            3038
+            3036,
+            3041
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34839,8 +34859,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            3035,
-            3040
+            3038,
+            3043
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34857,8 +34877,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3034,
-            3039
+            3037,
+            3042
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34874,7 +34894,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            3041
+            3044
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34890,7 +34910,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            3042
+            3045
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34906,7 +34926,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            3044
+            3047
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34922,7 +34942,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3043
+            3046
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34938,7 +34958,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2960
+            2963
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34954,7 +34974,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            2966
+            2969
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34970,7 +34990,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            2968
+            2971
           ],
           "clusterSource": "rubric-derived"
         },
@@ -34986,7 +35006,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            2969
+            2972
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35002,7 +35022,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2974
+            2977
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35018,7 +35038,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            2976
+            2979
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35034,7 +35054,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2983
+            2986
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35050,7 +35070,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            2986
+            2989
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35066,7 +35086,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2992
+            2995
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35082,7 +35102,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            3000
+            3003
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35098,7 +35118,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            3009
+            3012
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35114,7 +35134,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            3010
+            3013
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35130,7 +35150,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            2979
+            2982
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35146,7 +35166,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            2980
+            2983
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35162,7 +35182,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            2981
+            2984
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35178,7 +35198,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/ai-license/",
           "rubricRowRefs": [
-            2803
+            2806
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35195,8 +35215,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/all-pages/",
           "rubricRowRefs": [
-            2804,
-            2811
+            2807,
+            2814
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35212,7 +35232,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/areas-served/",
           "rubricRowRefs": [
-            2809
+            2812
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35229,8 +35249,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/henry-pitts-jr/",
           "rubricRowRefs": [
-            2879,
-            2880
+            2882,
+            2883
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35246,7 +35266,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/ratemoversgmail-com/",
           "rubricRowRefs": [
-            2856
+            2859
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35262,7 +35282,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/blog/",
           "rubricRowRefs": [
-            2857
+            2860
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35278,7 +35298,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/category/freight-services/",
           "rubricRowRefs": [
-            2876
+            2879
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35294,7 +35314,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/category/logistics/",
           "rubricRowRefs": [
-            2862
+            2865
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35310,7 +35330,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/category/port-logistics/",
           "rubricRowRefs": [
-            2920
+            2923
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35326,7 +35346,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/category/shenandoah-valley-logistics/",
           "rubricRowRefs": [
-            2940
+            2943
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35342,7 +35362,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/category/winchester-va/",
           "rubricRowRefs": [
-            3032
+            3035
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35358,7 +35378,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/category/winchester-va/residential-logistics/relocation-services/",
           "rubricRowRefs": [
-            2933
+            2936
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35374,7 +35394,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/category/winchester-va/residential-logistics/relocation-services/moving/museum-logistics/logistics-transportation/",
           "rubricRowRefs": [
-            2899
+            2902
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35390,7 +35410,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/commercial-freight-handling-solutions/",
           "rubricRowRefs": [
-            2812
+            2815
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35407,8 +35427,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/commercial-freight-handling-white-glove-final-mile-services/",
           "rubricRowRefs": [
-            2813,
-            2814
+            2816,
+            2817
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35426,9 +35446,9 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/container-deconsolidation-cross-docking-transloading-services-virginia/",
           "rubricRowRefs": [
-            2817,
             2820,
-            2888
+            2823,
+            2891
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35445,8 +35465,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/container-deconsolidation-services-virginia-mid-atlantic/",
           "rubricRowRefs": [
-            2818,
-            2819
+            2821,
+            2822
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35463,8 +35483,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/container-loading-unloading-services-port-transload-virginia/",
           "rubricRowRefs": [
-            2827,
-            2828
+            2830,
+            2831
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35480,7 +35500,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/",
           "rubricRowRefs": [
-            2925
+            2928
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35497,8 +35517,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/answer-evidence/",
           "rubricRowRefs": [
-            2805,
-            2806
+            2808,
+            2809
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35515,8 +35535,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/archive-registry/",
           "rubricRowRefs": [
-            2807,
-            2808
+            2810,
+            2811
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35533,8 +35553,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/crawl-presence/",
           "rubricRowRefs": [
-            2838,
-            2839
+            2841,
+            2842
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35551,8 +35571,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/intent-coverage/",
           "rubricRowRefs": [
-            2881,
-            2937
+            2884,
+            2940
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35569,8 +35589,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/local-graph-registry/",
           "rubricRowRefs": [
-            2889,
-            2890
+            2892,
+            2893
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35587,8 +35607,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/ocean-container/",
           "rubricRowRefs": [
-            2912,
-            2913
+            2915,
+            2916
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35607,10 +35627,10 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/ports/",
           "rubricRowRefs": [
-            2829,
-            2840,
-            2923,
-            2945
+            2832,
+            2843,
+            2926,
+            2948
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35627,8 +35647,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/search-index/",
           "rubricRowRefs": [
-            2935,
-            2936
+            2938,
+            2939
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35644,7 +35664,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/transloading/",
           "rubricRowRefs": [
-            2949
+            2952
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35661,8 +35681,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/transloading-inland-port/",
           "rubricRowRefs": [
-            2950,
-            3022
+            2953,
+            3025
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35678,7 +35698,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/videos/",
           "rubricRowRefs": [
-            2911
+            2914
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35694,7 +35714,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/developer/",
           "rubricRowRefs": [
-            2850
+            2853
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35710,7 +35730,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/",
           "rubricRowRefs": [
-            2858
+            2861
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35726,7 +35746,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/container-deconsolidation/",
           "rubricRowRefs": [
-            2816
+            2819
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35742,7 +35762,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-event-protocol/",
           "rubricRowRefs": [
-            2892
+            2895
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35758,7 +35778,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-ontology/",
           "rubricRowRefs": [
-            2893
+            2896
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35775,8 +35795,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/emergency-port-container-recovery-twic-labor-virginia/",
           "rubricRowRefs": [
-            2851,
-            2852
+            2854,
+            2855
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35792,7 +35812,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entities/",
           "rubricRowRefs": [
-            2859
+            2862
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35808,7 +35828,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entity-authority-layer/",
           "rubricRowRefs": [
-            2853
+            2856
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35824,7 +35844,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/faq/",
           "rubricRowRefs": [
-            2860
+            2863
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35840,7 +35860,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/find-us/",
           "rubricRowRefs": [
-            2854
+            2857
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35857,8 +35877,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-guarantee/",
           "rubricRowRefs": [
-            2855,
-            2868
+            2858,
+            2871
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35875,8 +35895,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-moving-quote-winchester/",
           "rubricRowRefs": [
-            2866,
-            2867
+            2869,
+            2870
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35892,7 +35912,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/",
           "rubricRowRefs": [
-            2861
+            2864
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35908,7 +35928,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-entities/",
           "rubricRowRefs": [
-            2882
+            2885
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35924,7 +35944,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-equipment/",
           "rubricRowRefs": [
-            2883
+            2886
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35940,7 +35960,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-events/",
           "rubricRowRefs": [
-            2884
+            2887
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35956,7 +35976,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-locations/",
           "rubricRowRefs": [
-            2885
+            2888
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35972,7 +35992,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-services/",
           "rubricRowRefs": [
-            2886
+            2889
           ],
           "clusterSource": "rubric-derived"
         },
@@ -35988,7 +36008,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/logistics-data-engineering-center/",
           "rubricRowRefs": [
-            2891
+            2894
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36005,8 +36025,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "rubricRowRefs": [
-            2906,
-            2907
+            2909,
+            2910
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36022,7 +36042,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-winchester-va/",
           "rubricRowRefs": [
-            2908
+            2911
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36039,8 +36059,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-questions-answers/",
           "rubricRowRefs": [
-            2909,
-            2910
+            2912,
+            2913
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36056,7 +36076,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/online-estimate/",
           "rubricRowRefs": [
-            2917
+            2920
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36073,8 +36093,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/port-of-virginia-container-loading-unloading-logistics-services/",
           "rubricRowRefs": [
-            2921,
-            2922
+            2924,
+            2925
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36090,7 +36110,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/privacy-policy/",
           "rubricRowRefs": [
-            2924
+            2927
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36106,7 +36126,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/quote/",
           "rubricRowRefs": [
-            2878
+            2881
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36122,7 +36142,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/recursive-indexing-layer/",
           "rubricRowRefs": [
-            2930
+            2933
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36139,8 +36159,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/service-areas-moving-company/",
           "rubricRowRefs": [
-            2938,
-            2939
+            2941,
+            2942
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36156,7 +36176,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/services/",
           "rubricRowRefs": [
-            2863
+            2866
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36172,7 +36192,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sitemap/",
           "rubricRowRefs": [
-            2864
+            2867
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36188,7 +36208,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/the-flat-rate-logistics-data-hub/",
           "rubricRowRefs": [
-            2942
+            2945
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36205,8 +36225,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            2958,
-            3014
+            2961,
+            3017
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36223,8 +36243,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-at-the-virginia-inland-port/",
           "rubricRowRefs": [
-            2946,
-            2947
+            2949,
+            2950
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36241,8 +36261,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2887,
-            2951
+            2890,
+            2954
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36259,8 +36279,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-vs-cross-docking-vs-deconsolidation/",
           "rubricRowRefs": [
-            3015,
-            3016
+            3018,
+            3019
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36276,7 +36296,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3017
+            3020
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36292,7 +36312,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/videos/",
           "rubricRowRefs": [
-            2865
+            2868
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36310,9 +36330,9 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/virginia-inland-port-3pl-project-support/",
           "rubricRowRefs": [
-            2782,
-            2789,
-            3019
+            2785,
+            2792,
+            3022
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36329,8 +36349,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/virginia-inland-port-freight-transloading-operations/",
           "rubricRowRefs": [
-            3018,
-            3020
+            3021,
+            3023
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36350,11 +36370,11 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/virginia-inland-port-transloading/",
           "rubricRowRefs": [
-            2801,
-            2927,
-            2928,
-            2929,
-            3021
+            2804,
+            2930,
+            2931,
+            2932,
+            3024
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36371,8 +36391,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/who-unloads-containers-at-the-virginia-inland-port/",
           "rubricRowRefs": [
-            2948,
-            3031
+            2951,
+            3034
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36388,7 +36408,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2961
+            2964
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36404,7 +36424,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            2962
+            2965
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36420,7 +36440,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            2963
+            2966
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36436,7 +36456,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2964
+            2967
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36452,7 +36472,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2965
+            2968
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36468,7 +36488,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2967
+            2970
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36484,7 +36504,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2970
+            2973
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36500,7 +36520,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            2972
+            2975
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36516,7 +36536,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2973
+            2976
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36532,7 +36552,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2975
+            2978
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36548,7 +36568,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2977
+            2980
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36564,7 +36584,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2978
+            2981
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36580,7 +36600,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2982
+            2985
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36596,7 +36616,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2984
+            2987
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36612,7 +36632,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            2985
+            2988
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36628,7 +36648,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            2987
+            2990
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36644,7 +36664,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2988
+            2991
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36660,7 +36680,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            2989
+            2992
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36676,7 +36696,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            2990
+            2993
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36692,7 +36712,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            2991
+            2994
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36708,7 +36728,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2994
+            2997
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36724,7 +36744,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            2996
+            2999
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36740,7 +36760,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2998
+            3001
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36756,7 +36776,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            2999
+            3002
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36772,7 +36792,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            3001
+            3004
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36788,7 +36808,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3002
+            3005
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36804,7 +36824,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3003
+            3006
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36820,7 +36840,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3004
+            3007
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36836,7 +36856,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3005
+            3008
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36852,7 +36872,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            3006
+            3009
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36868,7 +36888,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            3007
+            3010
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36884,7 +36904,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3008
+            3011
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36900,7 +36920,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3012
+            3015
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36916,7 +36936,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading/",
           "rubricRowRefs": [
-            3013
+            3016
           ],
           "clusterSource": "rubric-derived"
         },
@@ -36970,45 +36990,45 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/ports/",
           "rubricRowRefs": [
-            2784,
             2787,
             2790,
-            2791,
-            2792,
             2793,
+            2794,
+            2795,
             2796,
-            2797,
-            2821,
-            2823,
+            2799,
+            2800,
+            2824,
             2826,
-            2832,
+            2829,
             2835,
-            2837,
-            2841,
+            2838,
+            2840,
             2844,
-            2869,
-            2870,
-            2871,
+            2847,
+            2872,
             2873,
-            2877,
-            2894,
+            2874,
+            2876,
+            2880,
             2897,
             2900,
             2903,
-            2905,
-            2914,
-            2915,
-            2931,
-            2932,
-            2952,
-            2953,
+            2906,
+            2908,
+            2917,
+            2918,
+            2934,
+            2935,
             2955,
-            2959,
-            2995,
-            3011,
-            3023,
-            3024,
-            3026
+            2956,
+            2958,
+            2962,
+            2998,
+            3014,
+            3026,
+            3027,
+            3029
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37027,10 +37047,10 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-movers-martinsburg-wv/",
           "rubricRowRefs": [
-            2830,
-            2846,
-            2848,
-            2943
+            2833,
+            2849,
+            2851,
+            2946
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37070,31 +37090,31 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/ports/",
           "rubricRowRefs": [
-            2786,
-            2794,
-            2795,
+            2789,
+            2797,
             2798,
-            2799,
-            2810,
-            2822,
-            2824,
-            2834,
-            2836,
-            2843,
-            2845,
-            2872,
-            2874,
-            2896,
-            2902,
-            2904,
-            2916,
-            2934,
-            2954,
-            2956,
-            2993,
-            2997,
-            3025,
-            3027
+            2801,
+            2802,
+            2813,
+            2825,
+            2827,
+            2837,
+            2839,
+            2846,
+            2848,
+            2875,
+            2877,
+            2899,
+            2905,
+            2907,
+            2919,
+            2937,
+            2957,
+            2959,
+            2996,
+            3000,
+            3028,
+            3030
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37113,10 +37133,10 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            2831,
-            2847,
-            2849,
-            2944
+            2834,
+            2850,
+            2852,
+            2947
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37139,14 +37159,14 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/virginia-inland-port-3pl-project-support/",
           "rubricRowRefs": [
-            2783,
-            2785,
+            2786,
             2788,
-            2815,
-            2918,
-            2919,
-            2941,
-            3029
+            2791,
+            2818,
+            2921,
+            2922,
+            2944,
+            3032
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37175,20 +37195,20 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/virginia-inland-port-transloading/",
           "rubricRowRefs": [
-            2800,
-            2802,
-            2825,
-            2833,
-            2842,
-            2875,
-            2895,
+            2803,
+            2805,
+            2828,
+            2836,
+            2845,
+            2878,
             2898,
             2901,
-            2926,
-            2957,
-            2971,
-            3028,
-            3030
+            2904,
+            2929,
+            2960,
+            2974,
+            3031,
+            3033
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37204,7 +37224,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3150
+            3153
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37221,8 +37241,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3147,
-            3149
+            3150,
+            3152
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37239,8 +37259,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3146,
-            3148
+            3149,
+            3151
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37257,8 +37277,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-cost-guide-winchester-va/",
           "rubricRowRefs": [
-            3139,
-            3140
+            3142,
+            3143
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37275,8 +37295,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3138,
-            3142
+            3141,
+            3145
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37293,8 +37313,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3137,
-            3141
+            3140,
+            3144
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37310,7 +37330,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3143
+            3146
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37326,7 +37346,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3145
+            3148
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37342,7 +37362,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3144
+            3147
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37358,7 +37378,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/ai-license/",
           "rubricRowRefs": [
-            3076
+            3079
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37375,8 +37395,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/all-pages/",
           "rubricRowRefs": [
-            3077,
-            3083
+            3080,
+            3086
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37392,7 +37412,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/areas-served/",
           "rubricRowRefs": [
-            3082
+            3085
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37409,8 +37429,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/henry-pitts-jr/",
           "rubricRowRefs": [
-            3101,
-            3102
+            3104,
+            3105
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37426,7 +37446,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/ratemoversgmail-com/",
           "rubricRowRefs": [
-            3090
+            3093
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37442,7 +37462,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/blog/",
           "rubricRowRefs": [
-            3091
+            3094
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37458,7 +37478,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/category/shenandoah-valley-logistics/",
           "rubricRowRefs": [
-            3128
+            3131
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37474,7 +37494,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/",
           "rubricRowRefs": [
-            3121
+            3124
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37491,8 +37511,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/answer-evidence/",
           "rubricRowRefs": [
-            3078,
-            3079
+            3081,
+            3082
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37509,8 +37529,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/archive-registry/",
           "rubricRowRefs": [
-            3080,
-            3081
+            3083,
+            3084
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37527,8 +37547,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/crawl-presence/",
           "rubricRowRefs": [
-            3084,
-            3085
+            3087,
+            3088
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37545,8 +37565,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/intent-coverage/",
           "rubricRowRefs": [
-            3103,
-            3125
+            3106,
+            3128
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37563,8 +37583,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/local-graph-registry/",
           "rubricRowRefs": [
-            3109,
-            3110
+            3112,
+            3113
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37581,8 +37601,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/search-index/",
           "rubricRowRefs": [
-            3123,
-            3124
+            3126,
+            3127
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37599,8 +37619,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/transloading-winchester/",
           "rubricRowRefs": [
-            3134,
-            3136
+            3137,
+            3139
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37616,7 +37636,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/developer/",
           "rubricRowRefs": [
-            3086
+            3089
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37632,7 +37652,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-event-protocol/",
           "rubricRowRefs": [
-            3112
+            3115
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37648,7 +37668,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-ontology/",
           "rubricRowRefs": [
-            3113
+            3116
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37664,7 +37684,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entities/",
           "rubricRowRefs": [
-            3092
+            3095
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37680,7 +37700,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entity-authority-layer/",
           "rubricRowRefs": [
-            3087
+            3090
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37696,7 +37716,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/faq/",
           "rubricRowRefs": [
-            3093
+            3096
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37712,7 +37732,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/find-us/",
           "rubricRowRefs": [
-            3088
+            3091
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37729,8 +37749,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-guarantee/",
           "rubricRowRefs": [
-            3089,
-            3099
+            3092,
+            3102
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37747,8 +37767,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-moving-quote-winchester/",
           "rubricRowRefs": [
-            3097,
-            3098
+            3100,
+            3101
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37764,7 +37784,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/",
           "rubricRowRefs": [
-            3094
+            3097
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37780,7 +37800,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-entities/",
           "rubricRowRefs": [
-            3104
+            3107
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37796,7 +37816,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-equipment/",
           "rubricRowRefs": [
-            3105
+            3108
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37812,7 +37832,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-events/",
           "rubricRowRefs": [
-            3106
+            3109
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37828,7 +37848,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-locations/",
           "rubricRowRefs": [
-            3107
+            3110
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37844,7 +37864,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-services/",
           "rubricRowRefs": [
-            3108
+            3111
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37860,7 +37880,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/logistics-data-engineering-center/",
           "rubricRowRefs": [
-            3111
+            3114
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37877,8 +37897,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "rubricRowRefs": [
-            3114,
-            3115
+            3117,
+            3118
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37894,7 +37914,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-winchester-va/",
           "rubricRowRefs": [
-            3116
+            3119
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37911,8 +37931,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-questions-answers/",
           "rubricRowRefs": [
-            3117,
-            3118
+            3120,
+            3121
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37928,7 +37948,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/online-estimate/",
           "rubricRowRefs": [
-            3119
+            3122
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37944,7 +37964,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/privacy-policy/",
           "rubricRowRefs": [
-            3120
+            3123
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37960,7 +37980,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/quote/",
           "rubricRowRefs": [
-            3100
+            3103
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37976,7 +37996,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/recursive-indexing-layer/",
           "rubricRowRefs": [
-            3122
+            3125
           ],
           "clusterSource": "rubric-derived"
         },
@@ -37993,8 +38013,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/service-areas-moving-company/",
           "rubricRowRefs": [
-            3126,
-            3127
+            3129,
+            3130
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38010,7 +38030,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/services/",
           "rubricRowRefs": [
-            3095
+            3098
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38026,7 +38046,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sitemap/",
           "rubricRowRefs": [
-            3096
+            3099
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38042,7 +38062,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/the-flat-rate-logistics-data-hub/",
           "rubricRowRefs": [
-            3129
+            3132
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38061,10 +38081,10 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3130,
-            3132,
             3133,
-            3135
+            3135,
+            3136,
+            3138
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38080,7 +38100,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/transloading-winchester-va/",
           "rubricRowRefs": [
-            3131
+            3134
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38096,7 +38116,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-racking-relocation/",
           "rubricRowRefs": [
-            3228
+            3231
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38113,8 +38133,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-racking-relocation/",
           "rubricRowRefs": [
-            3222,
-            3225
+            3225,
+            3228
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38131,8 +38151,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-racking-relocation/",
           "rubricRowRefs": [
-            3224,
-            3227
+            3227,
+            3230
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38149,8 +38169,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-racking-relocation/",
           "rubricRowRefs": [
-            3223,
-            3226
+            3226,
+            3229
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38167,8 +38187,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-cost-guide-winchester-va/",
           "rubricRowRefs": [
-            3213,
-            3214
+            3216,
+            3217
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38185,8 +38205,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-racking-relocation/",
           "rubricRowRefs": [
-            3210,
-            3215
+            3213,
+            3218
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38203,8 +38223,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-racking-relocation/",
           "rubricRowRefs": [
-            3212,
-            3217
+            3215,
+            3220
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38221,8 +38241,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-racking-relocation/",
           "rubricRowRefs": [
-            3211,
-            3216
+            3214,
+            3219
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38238,7 +38258,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-racking-relocation/",
           "rubricRowRefs": [
-            3218
+            3221
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38254,7 +38274,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-racking-relocation/",
           "rubricRowRefs": [
-            3219
+            3222
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38270,7 +38290,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-racking-relocation/",
           "rubricRowRefs": [
-            3221
+            3224
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38286,7 +38306,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-racking-relocation/",
           "rubricRowRefs": [
-            3220
+            3223
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38302,7 +38322,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/ai-license/",
           "rubricRowRefs": [
-            3151
+            3154
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38319,8 +38339,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/all-pages/",
           "rubricRowRefs": [
-            3152,
-            3158
+            3155,
+            3161
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38336,7 +38356,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/areas-served/",
           "rubricRowRefs": [
-            3157
+            3160
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38353,8 +38373,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/henry-pitts-jr/",
           "rubricRowRefs": [
-            3176,
-            3177
+            3179,
+            3180
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38370,7 +38390,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/ratemoversgmail-com/",
           "rubricRowRefs": [
-            3165
+            3168
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38386,7 +38406,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/blog/",
           "rubricRowRefs": [
-            3166
+            3169
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38402,7 +38422,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/",
           "rubricRowRefs": [
-            3196
+            3199
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38419,8 +38439,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/answer-evidence/",
           "rubricRowRefs": [
-            3153,
-            3154
+            3156,
+            3157
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38437,8 +38457,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/archive-registry/",
           "rubricRowRefs": [
-            3155,
-            3156
+            3158,
+            3159
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38455,8 +38475,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/crawl-presence/",
           "rubricRowRefs": [
-            3159,
-            3160
+            3162,
+            3163
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38473,8 +38493,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/intent-coverage/",
           "rubricRowRefs": [
-            3178,
-            3200
+            3181,
+            3203
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38491,8 +38511,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/local-graph-registry/",
           "rubricRowRefs": [
-            3184,
-            3185
+            3187,
+            3188
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38509,8 +38529,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/search-index/",
           "rubricRowRefs": [
-            3198,
-            3199
+            3201,
+            3202
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38526,7 +38546,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/warehouse-racking-relocation/",
           "rubricRowRefs": [
-            3208
+            3211
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38542,7 +38562,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/developer/",
           "rubricRowRefs": [
-            3161
+            3164
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38558,7 +38578,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-event-protocol/",
           "rubricRowRefs": [
-            3187
+            3190
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38574,7 +38594,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-ontology/",
           "rubricRowRefs": [
-            3188
+            3191
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38590,7 +38610,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entities/",
           "rubricRowRefs": [
-            3167
+            3170
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38606,7 +38626,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entity-authority-layer/",
           "rubricRowRefs": [
-            3162
+            3165
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38622,7 +38642,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/faq/",
           "rubricRowRefs": [
-            3168
+            3171
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38638,7 +38658,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/find-us/",
           "rubricRowRefs": [
-            3163
+            3166
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38655,8 +38675,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-guarantee/",
           "rubricRowRefs": [
-            3164,
-            3174
+            3167,
+            3177
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38673,8 +38693,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-moving-quote-winchester/",
           "rubricRowRefs": [
-            3172,
-            3173
+            3175,
+            3176
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38690,7 +38710,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/",
           "rubricRowRefs": [
-            3169
+            3172
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38706,7 +38726,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-entities/",
           "rubricRowRefs": [
-            3179
+            3182
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38722,7 +38742,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-equipment/",
           "rubricRowRefs": [
-            3180
+            3183
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38738,7 +38758,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-events/",
           "rubricRowRefs": [
-            3181
+            3184
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38754,7 +38774,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-locations/",
           "rubricRowRefs": [
-            3182
+            3185
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38770,7 +38790,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-services/",
           "rubricRowRefs": [
-            3183
+            3186
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38786,7 +38806,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/logistics-data-engineering-center/",
           "rubricRowRefs": [
-            3186
+            3189
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38803,8 +38823,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "rubricRowRefs": [
-            3189,
-            3190
+            3192,
+            3193
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38820,7 +38840,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-winchester-va/",
           "rubricRowRefs": [
-            3191
+            3194
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38837,8 +38857,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-questions-answers/",
           "rubricRowRefs": [
-            3192,
-            3193
+            3195,
+            3196
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38854,7 +38874,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/online-estimate/",
           "rubricRowRefs": [
-            3194
+            3197
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38870,7 +38890,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/privacy-policy/",
           "rubricRowRefs": [
-            3195
+            3198
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38886,7 +38906,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/quote/",
           "rubricRowRefs": [
-            3175
+            3178
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38902,7 +38922,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/recursive-indexing-layer/",
           "rubricRowRefs": [
-            3197
+            3200
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38919,8 +38939,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/service-areas-moving-company/",
           "rubricRowRefs": [
-            3201,
-            3202
+            3204,
+            3205
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38936,7 +38956,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/services/",
           "rubricRowRefs": [
-            3170
+            3173
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38952,7 +38972,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sitemap/",
           "rubricRowRefs": [
-            3171
+            3174
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38968,7 +38988,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/the-flat-rate-logistics-data-hub/",
           "rubricRowRefs": [
-            3203
+            3206
           ],
           "clusterSource": "rubric-derived"
         },
@@ -38986,9 +39006,9 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-racking-relocation/",
           "rubricRowRefs": [
-            3204,
             3207,
-            3209
+            3210,
+            3212
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39004,7 +39024,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-racking-relocation/",
           "rubricRowRefs": [
-            3205
+            3208
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39020,7 +39040,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-racking-relocation/",
           "rubricRowRefs": [
-            3206
+            3209
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39036,7 +39056,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-relocation/",
           "rubricRowRefs": [
-            3308
+            3311
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39053,8 +39073,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-relocation/",
           "rubricRowRefs": [
-            3302,
-            3305
+            3305,
+            3308
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39071,8 +39091,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-relocation/",
           "rubricRowRefs": [
-            3304,
-            3307
+            3307,
+            3310
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39089,8 +39109,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-relocation/",
           "rubricRowRefs": [
-            3303,
-            3306
+            3306,
+            3309
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39107,8 +39127,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-cost-guide-winchester-va/",
           "rubricRowRefs": [
-            3293,
-            3294
+            3296,
+            3297
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39125,8 +39145,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-relocation/",
           "rubricRowRefs": [
-            3290,
-            3295
+            3293,
+            3298
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39143,8 +39163,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-relocation/",
           "rubricRowRefs": [
-            3292,
-            3297
+            3295,
+            3300
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39161,8 +39181,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-relocation/",
           "rubricRowRefs": [
-            3291,
-            3296
+            3294,
+            3299
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39178,7 +39198,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-relocation/",
           "rubricRowRefs": [
-            3298
+            3301
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39194,7 +39214,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-relocation/",
           "rubricRowRefs": [
-            3299
+            3302
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39210,7 +39230,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-relocation/",
           "rubricRowRefs": [
-            3301
+            3304
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39226,7 +39246,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-relocation/",
           "rubricRowRefs": [
-            3300
+            3303
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39242,7 +39262,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/ai-license/",
           "rubricRowRefs": [
-            3229
+            3232
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39259,8 +39279,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/all-pages/",
           "rubricRowRefs": [
-            3230,
-            3236
+            3233,
+            3239
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39276,7 +39296,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/areas-served/",
           "rubricRowRefs": [
-            3235
+            3238
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39293,8 +39313,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/henry-pitts-jr/",
           "rubricRowRefs": [
-            3255,
-            3256
+            3258,
+            3259
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39310,7 +39330,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/ratemoversgmail-com/",
           "rubricRowRefs": [
-            3243
+            3246
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39326,7 +39346,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/blog/",
           "rubricRowRefs": [
-            3244
+            3247
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39342,7 +39362,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/category/logistics/",
           "rubricRowRefs": [
-            3248
+            3251
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39358,7 +39378,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/category/shenandoah-valley-logistics/",
           "rubricRowRefs": [
-            3282
+            3285
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39374,7 +39394,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/",
           "rubricRowRefs": [
-            3275
+            3278
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39391,8 +39411,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/answer-evidence/",
           "rubricRowRefs": [
-            3231,
-            3232
+            3234,
+            3235
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39409,8 +39429,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/archive-registry/",
           "rubricRowRefs": [
-            3233,
-            3234
+            3236,
+            3237
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39427,8 +39447,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/crawl-presence/",
           "rubricRowRefs": [
-            3237,
-            3238
+            3240,
+            3241
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39445,8 +39465,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/intent-coverage/",
           "rubricRowRefs": [
-            3257,
-            3279
+            3260,
+            3282
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39463,8 +39483,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/local-graph-registry/",
           "rubricRowRefs": [
-            3263,
-            3264
+            3266,
+            3267
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39481,8 +39501,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/search-index/",
           "rubricRowRefs": [
-            3277,
-            3278
+            3280,
+            3281
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39498,7 +39518,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/warehouse/",
           "rubricRowRefs": [
-            3285
+            3288
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39514,7 +39534,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/developer/",
           "rubricRowRefs": [
-            3239
+            3242
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39530,7 +39550,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-event-protocol/",
           "rubricRowRefs": [
-            3266
+            3269
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39546,7 +39566,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-ontology/",
           "rubricRowRefs": [
-            3267
+            3270
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39562,7 +39582,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entities/",
           "rubricRowRefs": [
-            3245
+            3248
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39578,7 +39598,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entity-authority-layer/",
           "rubricRowRefs": [
-            3240
+            3243
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39594,7 +39614,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/faq/",
           "rubricRowRefs": [
-            3246
+            3249
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39610,7 +39630,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/find-us/",
           "rubricRowRefs": [
-            3241
+            3244
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39627,8 +39647,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-guarantee/",
           "rubricRowRefs": [
-            3242,
-            3253
+            3245,
+            3256
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39645,8 +39665,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-moving-quote-winchester/",
           "rubricRowRefs": [
-            3251,
-            3252
+            3254,
+            3255
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39662,7 +39682,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/",
           "rubricRowRefs": [
-            3247
+            3250
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39678,7 +39698,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-entities/",
           "rubricRowRefs": [
-            3258
+            3261
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39694,7 +39714,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-equipment/",
           "rubricRowRefs": [
-            3259
+            3262
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39710,7 +39730,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-events/",
           "rubricRowRefs": [
-            3260
+            3263
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39726,7 +39746,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-locations/",
           "rubricRowRefs": [
-            3261
+            3264
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39742,7 +39762,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-services/",
           "rubricRowRefs": [
-            3262
+            3265
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39758,7 +39778,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/logistics-data-engineering-center/",
           "rubricRowRefs": [
-            3265
+            3268
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39775,8 +39795,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "rubricRowRefs": [
-            3268,
-            3269
+            3271,
+            3272
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39792,7 +39812,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-winchester-va/",
           "rubricRowRefs": [
-            3270
+            3273
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39809,8 +39829,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-questions-answers/",
           "rubricRowRefs": [
-            3271,
-            3272
+            3274,
+            3275
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39826,7 +39846,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/online-estimate/",
           "rubricRowRefs": [
-            3273
+            3276
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39842,7 +39862,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/privacy-policy/",
           "rubricRowRefs": [
-            3274
+            3277
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39858,7 +39878,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/quote/",
           "rubricRowRefs": [
-            3254
+            3257
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39874,7 +39894,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/recursive-indexing-layer/",
           "rubricRowRefs": [
-            3276
+            3279
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39891,8 +39911,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/service-areas-moving-company/",
           "rubricRowRefs": [
-            3280,
-            3281
+            3283,
+            3284
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39908,7 +39928,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/services/",
           "rubricRowRefs": [
-            3249
+            3252
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39924,7 +39944,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sitemap/",
           "rubricRowRefs": [
-            3250
+            3253
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39940,7 +39960,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/the-flat-rate-logistics-data-hub/",
           "rubricRowRefs": [
-            3283
+            3286
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39958,9 +39978,9 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-relocation/",
           "rubricRowRefs": [
-            3284,
-            3286,
-            3289
+            3287,
+            3289,
+            3292
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39976,7 +39996,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-relocation/",
           "rubricRowRefs": [
-            3287
+            3290
           ],
           "clusterSource": "rubric-derived"
         },
@@ -39992,7 +40012,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/warehouse-relocation/",
           "rubricRowRefs": [
-            3288
+            3291
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40008,7 +40028,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            3393
+            3396
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40025,8 +40045,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            3387,
-            3390
+            3390,
+            3393
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40043,8 +40063,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            3389,
-            3392
+            3392,
+            3395
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40061,8 +40081,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            3388,
-            3391
+            3391,
+            3394
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40079,8 +40099,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-cost-guide-winchester-va/",
           "rubricRowRefs": [
-            3378,
-            3379
+            3381,
+            3382
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40097,8 +40117,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            3375,
-            3380
+            3378,
+            3383
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40115,8 +40135,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            3377,
-            3382
+            3380,
+            3385
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40133,8 +40153,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            3376,
-            3381
+            3379,
+            3384
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40150,7 +40170,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            3383
+            3386
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40166,7 +40186,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            3384
+            3387
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40182,7 +40202,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            3386
+            3389
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40198,7 +40218,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            3385
+            3388
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40214,7 +40234,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/ai-license/",
           "rubricRowRefs": [
-            3309
+            3312
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40231,8 +40251,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/all-pages/",
           "rubricRowRefs": [
-            3310,
-            3316
+            3313,
+            3319
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40248,7 +40268,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/areas-served/",
           "rubricRowRefs": [
-            3315
+            3318
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40265,8 +40285,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/henry-pitts-jr/",
           "rubricRowRefs": [
-            3338,
-            3339
+            3341,
+            3342
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40282,7 +40302,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/ratemoversgmail-com/",
           "rubricRowRefs": [
-            3327
+            3330
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40298,7 +40318,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/blog/",
           "rubricRowRefs": [
-            3328
+            3331
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40315,8 +40335,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/commercial-freight-handling-white-glove-final-mile-services/",
           "rubricRowRefs": [
-            3317,
-            3318
+            3320,
+            3321
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40333,8 +40353,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/curbside-vs-inside-vs-white-glove-delivery/",
           "rubricRowRefs": [
-            3321,
-            3322
+            3324,
+            3325
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40350,7 +40370,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/",
           "rubricRowRefs": [
-            3358
+            3361
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40367,8 +40387,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/answer-evidence/",
           "rubricRowRefs": [
-            3311,
-            3312
+            3314,
+            3315
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40385,8 +40405,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/archive-registry/",
           "rubricRowRefs": [
-            3313,
-            3314
+            3316,
+            3317
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40403,8 +40423,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/crawl-presence/",
           "rubricRowRefs": [
-            3319,
-            3320
+            3322,
+            3323
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40421,8 +40441,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/intent-coverage/",
           "rubricRowRefs": [
-            3340,
-            3362
+            3343,
+            3365
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40439,8 +40459,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/local-graph-registry/",
           "rubricRowRefs": [
-            3346,
-            3347
+            3349,
+            3350
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40457,8 +40477,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/search-index/",
           "rubricRowRefs": [
-            3360,
-            3361
+            3363,
+            3364
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40475,8 +40495,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/white-glove/",
           "rubricRowRefs": [
-            3366,
-            3374
+            3369,
+            3377
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40492,7 +40512,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/developer/",
           "rubricRowRefs": [
-            3323
+            3326
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40508,7 +40528,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-event-protocol/",
           "rubricRowRefs": [
-            3349
+            3352
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40524,7 +40544,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-ontology/",
           "rubricRowRefs": [
-            3350
+            3353
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40540,7 +40560,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entities/",
           "rubricRowRefs": [
-            3329
+            3332
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40556,7 +40576,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entity-authority-layer/",
           "rubricRowRefs": [
-            3324
+            3327
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40572,7 +40592,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/faq/",
           "rubricRowRefs": [
-            3330
+            3333
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40588,7 +40608,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/find-us/",
           "rubricRowRefs": [
-            3325
+            3328
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40605,8 +40625,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-guarantee/",
           "rubricRowRefs": [
-            3326,
-            3336
+            3329,
+            3339
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40623,8 +40643,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-moving-quote-winchester/",
           "rubricRowRefs": [
-            3334,
-            3335
+            3337,
+            3338
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40640,7 +40660,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/",
           "rubricRowRefs": [
-            3331
+            3334
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40656,7 +40676,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-entities/",
           "rubricRowRefs": [
-            3341
+            3344
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40672,7 +40692,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-equipment/",
           "rubricRowRefs": [
-            3342
+            3345
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40688,7 +40708,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-events/",
           "rubricRowRefs": [
-            3343
+            3346
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40704,7 +40724,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-locations/",
           "rubricRowRefs": [
-            3344
+            3347
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40720,7 +40740,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-services/",
           "rubricRowRefs": [
-            3345
+            3348
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40736,7 +40756,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/logistics-data-engineering-center/",
           "rubricRowRefs": [
-            3348
+            3351
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40753,8 +40773,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "rubricRowRefs": [
-            3351,
-            3352
+            3354,
+            3355
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40770,7 +40790,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-winchester-va/",
           "rubricRowRefs": [
-            3353
+            3356
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40787,8 +40807,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-questions-answers/",
           "rubricRowRefs": [
-            3354,
-            3355
+            3357,
+            3358
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40804,7 +40824,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/online-estimate/",
           "rubricRowRefs": [
-            3356
+            3359
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40820,7 +40840,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/privacy-policy/",
           "rubricRowRefs": [
-            3357
+            3360
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40836,7 +40856,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/quote/",
           "rubricRowRefs": [
-            3337
+            3340
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40852,7 +40872,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/recursive-indexing-layer/",
           "rubricRowRefs": [
-            3359
+            3362
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40869,8 +40889,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/service-areas-moving-company/",
           "rubricRowRefs": [
-            3363,
-            3364
+            3366,
+            3367
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40886,7 +40906,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/services/",
           "rubricRowRefs": [
-            3332
+            3335
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40902,7 +40922,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sitemap/",
           "rubricRowRefs": [
-            3333
+            3336
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40918,7 +40938,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/the-flat-rate-logistics-data-hub/",
           "rubricRowRefs": [
-            3365
+            3368
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40936,9 +40956,9 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            3367,
             3370,
-            3371
+            3373,
+            3374
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40955,8 +40975,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            3372,
-            3373
+            3375,
+            3376
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40972,7 +40992,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            3368
+            3371
           ],
           "clusterSource": "rubric-derived"
         },
@@ -40988,7 +41008,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            3369
+            3372
           ],
           "clusterSource": "rubric-derived"
         }
@@ -41008,7 +41028,7 @@
       "@id": "https://theflatratemovers.com/#dataset-search-index-supply",
       "@type": "Dataset",
       "name": "URL Supply",
-      "description": "The supply side: one generated row per registry page (231 pages), never hand-kept. Each row carries the page type, the served title, the schema @types in the page’s per-page JSON, the page’s word count from the source shell, its internal inlink count with the top anchor texts used across the site, the registry lastmod, the SHA-256 digest and byte size of its per-page JSON, and its indexation state with source and date. Indexation comes only from the Search Console indexing pass of 2026-10-31 (11 URLs inspected); every other page is recorded unobserved, which is a statement about the evidence on file, not about the page.",
+      "description": "The supply side: one generated row per registry page (232 pages), never hand-kept. Each row carries the page type, the served title, the schema @types in the page’s per-page JSON, the page’s word count from the source shell, its internal inlink count with the top anchor texts used across the site, the registry lastmod, the SHA-256 digest and byte size of its per-page JSON, and its indexation state with source and date. Indexation comes only from the Search Console indexing pass of 2026-10-31 (11 URLs inspected); every other page is recorded unobserved, which is a statement about the evidence on file, not about the page.",
       "keywords": [
         "search index",
         "query clusters",
@@ -41101,7 +41121,7 @@
             "Place",
             "WebPage"
           ],
-          "wordCount": 1321,
+          "wordCount": 1320,
           "internalInlinks": 4,
           "topAnchorTexts": [
             "Get My Flat Rate Quote",
@@ -41248,7 +41268,7 @@
             "Organization",
             "WebPage"
           ],
-          "wordCount": 1210,
+          "wordCount": 1217,
           "internalInlinks": 21,
           "topAnchorTexts": [
             "Browse all pages",
@@ -41309,15 +41329,15 @@
             "ProfilePage",
             "WebPage"
           ],
-          "wordCount": 635,
-          "internalInlinks": 13,
+          "wordCount": 651,
+          "internalInlinks": 14,
           "topAnchorTexts": [
             "Henry Pitts Jr."
           ],
           "lastmod": "2026-11-03",
           "perPageJson": "author-henry-pitts-jr.json",
-          "sealedDigest": "be5ef5a97673de2c5261a0ba410840788eaf3656373c0d64f5c2ea895918a0ba",
-          "sealedByteSize": 7820,
+          "sealedDigest": "27c99861779e6d60b55d52cd6961bebab4d8b36a0e8eaf459fc653580a24c543",
+          "sealedByteSize": 8082,
           "indexation": {
             "state": "unobserved",
             "source": "No Search Console inspection verdict on file at generation. Unobserved is recorded as unobserved — never as not-indexed.",
@@ -41363,7 +41383,7 @@
             "Organization",
             "WebPage"
           ],
-          "wordCount": 1971,
+          "wordCount": 2029,
           "internalInlinks": 7,
           "topAnchorTexts": [
             "Blog — Articles &amp; Guides",
@@ -41373,8 +41393,8 @@
           ],
           "lastmod": "2026-11-03",
           "perPageJson": "blog.json",
-          "sealedDigest": "1b0121865ed652e68bf674174d6da0a2004689144eaf8da8a381b47a4c2617d1",
-          "sealedByteSize": 10449,
+          "sealedDigest": "aa575f4d677e5144ba3e183d88e4278ca2ef270f1da84d2a88e7db23ab29bd9b",
+          "sealedByteSize": 10661,
           "indexation": {
             "state": "unobserved",
             "source": "No Search Console inspection verdict on file at generation. Unobserved is recorded as unobserved — never as not-indexed.",
@@ -42803,7 +42823,7 @@
           ],
           "lastmod": "2026-11-03",
           "perPageJson": "dataset-intent-coverage.json",
-          "sealedDigest": "c84f6dc8e1fdb739507b9082b6a90677e6aa3a2b00f395a154cd647b238d76f1",
+          "sealedDigest": "d937d3d115af2b0deadb705aa166af4ce8e279f38c36731ae3d77ecd8b6b5bc9",
           "sealedByteSize": 9144,
           "indexation": {
             "state": "unobserved",
@@ -43563,7 +43583,7 @@
             "Organization",
             "WebPage"
           ],
-          "wordCount": 4056,
+          "wordCount": 4099,
           "internalInlinks": 5,
           "topAnchorTexts": [
             "Developer Resources",
@@ -44064,6 +44084,36 @@
           "perPageJson": "flat-rate-guarantee.json",
           "sealedDigest": "2a7649b88555763b5f3002b62adf1b66925de3f482f35e48cbc1c7249bd29e90",
           "sealedByteSize": 3415,
+          "indexation": {
+            "state": "unobserved",
+            "source": "No Search Console inspection verdict on file at generation. Unobserved is recorded as unobserved — never as not-indexed.",
+            "date": null,
+            "era": null
+          }
+        },
+        {
+          "url": "https://theflatratemovers.com/flat-rate-movers-dataset-estate-citable-doi/",
+          "pageType": "page",
+          "title": "The Flat Rate Movers — The Flat Rate Movers publish their dataset estate with a citable DOI",
+          "schemaTypes": [
+            "BlogPosting",
+            "BreadcrumbList",
+            "FAQPage",
+            "NewsArticle",
+            "Organization"
+          ],
+          "wordCount": 1719,
+          "internalInlinks": 6,
+          "topAnchorTexts": [
+            "The Flat Rate Movers publish their dataset estate with a citable DOI",
+            "Dataset estate announcement — the open record",
+            "Read the article →",
+            "The Flat Rate Movers publish their dataset estate with a citable DOI →"
+          ],
+          "lastmod": "2026-11-03",
+          "perPageJson": "flat-rate-movers-dataset-estate-citable-doi.json",
+          "sealedDigest": "8868622c72f066132286acab3387dd257514172737d89a824265e4f85b2ba813",
+          "sealedByteSize": 6379,
           "indexation": {
             "state": "unobserved",
             "source": "No Search Console inspection verdict on file at generation. Unobserved is recorded as unobserved — never as not-indexed.",
@@ -46349,7 +46399,7 @@
             "WebPage"
           ],
           "wordCount": 724,
-          "internalInlinks": 715,
+          "internalInlinks": 719,
           "topAnchorTexts": [
             "Get My Flat Rate Quote",
             "Get My Flat Rate Quote →",
@@ -46780,7 +46830,7 @@
             "Organization",
             "WebPage"
           ],
-          "wordCount": 3071,
+          "wordCount": 3085,
           "internalInlinks": 2,
           "topAnchorTexts": [
             "Sitemap — All Pages &amp; Redirects"
@@ -47627,12 +47677,11 @@
             "Service"
           ],
           "wordCount": 1774,
-          "internalInlinks": 8,
+          "internalInlinks": 7,
           "topAnchorTexts": [
             "Who unloads containers at the Virginia Inland Port",
             "Transloading at the Virginia Inland Port: the support layer behind the rail ramps",
-            "Read the article →",
-            "Transloading at the Virginia Inland Port: the support layer behind the rail ramps →"
+            "Read the article →"
           ],
           "lastmod": "2026-11-03",
           "perPageJson": "who-unloads-containers-at-the-virginia-inland-port.json",
@@ -49794,7 +49843,7 @@
       "@id": "https://theflatratemovers.com/#dataset-search-index-totals",
       "@type": "Dataset",
       "name": "Search Index Totals",
-      "description": "Totals for this generation of the search-index dataset, computed by the generator from the live estate: 2410 query clusters over 3393 rubric rows, 231 supply rows (one per registry page), 19 standing observations, 27 era-tagged window queries, 23 competitor asset records, 17 third-party records and 9 gap records. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on the operations node.",
+      "description": "Totals for this generation of the search-index dataset, computed by the generator from the live estate: 2411 query clusters over 3396 rubric rows, 232 supply rows (one per registry page), 19 standing observations, 27 era-tagged window queries, 23 competitor asset records, 17 third-party records and 9 gap records. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on the operations node.",
       "keywords": [
         "search index",
         "query clusters",
@@ -49878,10 +49927,10 @@
       "identifier": "https://theflatratemovers.com/datasets/search-index/",
       "isAccessibleForFree": true,
       "totals": {
-        "queryClusters": 2410,
-        "rubricRowsCovered": 3393,
+        "queryClusters": 2411,
+        "rubricRowsCovered": 3396,
         "clustersByIntentClass": {
-          "ai-question": 50,
+          "ai-question": 51,
           "best-choice": 89,
           "cost": 122,
           "how-process": 119,
@@ -49889,7 +49938,7 @@
           "sampled-money-query": 8
         },
         "sampledClusters": 8,
-        "urlSupplyRows": 231,
+        "urlSupplyRows": 232,
         "standingObservations": 19,
         "observationsByMethod": {
           "serp-sample": 6,
@@ -49901,7 +49950,7 @@
         "thirdPartyRecords": 17,
         "gapRecords": 9,
         "indexationStates": {
-          "unobserved": 220,
+          "unobserved": 221,
           "not-indexed": 10,
           "indexed": 1
         }
@@ -49909,7 +49958,7 @@
       "sources": [
         {
           "name": "Intent rubric database",
-          "detail": "3393 rows; rows digest 16922454e9f69f991a3b49c0adf607bdfd632fbd234aa1e299ba6d484762a074; generator build-intent-rubric.js (rubric v2)"
+          "detail": "3396 rows; rows digest d174290737bf455c19049a69e4ba295fd55e70905f9b5688cf1b0a9b95bd5e86; generator build-intent-rubric.js (rubric v2)"
         },
         {
           "name": "Search Console performance export",

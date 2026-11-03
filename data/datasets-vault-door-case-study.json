@@ -1,0 +1,369 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@id": "https://theflatratemovers.com/datasets/vault-door-case-study/#dataset",
+   "@type": "Dataset",
+   "name": "Vault Door Freight Recovery Case Study — Manassas, VA (September 2026)",
+   "description": "The structured case record of one real vault door job, published as data: in September 2026 a reconditioned vault door — 1,475 lbs on one pallet at 41 × 41 × 42 inches, cube 40.86 cubic feet, density 36.1 PCF, freight class 60, NMFC 172360-11, prepaid — was shipped by LTL freight to a carrier terminal in Manassas, VA and held will-call. The Flat Rate Movers' Winchester branch crew recovered it at the loading dock inside the 7:30 AM – 2:00 PM pickup window, ran the final-mile leg to the client, and placed the door under the white-glove standard. The dataset carries the complete end-to-end process as seven structured steps, each mapped to the registered service that performed it, the full transcribed freight record, and the evidence block: the document types and dates behind every figure, with the density cross-check (1,475 lbs ÷ 40.86 cu ft = 36.1 PCF) verified against the bill of lading. Names of individuals, the seller and the client are withheld under the company's privacy rule; geography is published at city level.",
+   "url": "https://theflatratemovers.com/datasets/vault-door-case-study/",
+   "sameAs": "https://theflatratemovers.com/datasets/vault-door-case-study/",
+   "identifier": "https://theflatratemovers.com/datasets/vault-door-case-study/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "includedInDataCatalog": {
+    "@id": "https://theflatratemovers.com/datasets/#collection"
+   },
+   "datePublished": "2026-11-03",
+   "dateModified": "2026-11-03",
+   "temporalCoverage": "2026-09",
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "contentLocation": {
+    "@id": "https://theflatratemovers.com/#place-manassas-va"
+   },
+   "keywords": [
+    "vault door delivery",
+    "vault door freight recovery",
+    "will-call pickup",
+    "final-mile delivery",
+    "white-glove delivery",
+    "Manassas VA",
+    "freight class 60",
+    "NMFC 172360-11"
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-vault-door-case-study.json",
+     "encodingFormat": "application/json"
+    }
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-gun-safe"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-freight-rework-transloading"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-final-mile"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-white-glove"
+    }
+   ]
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/vault-door-case-study/#case-record",
+   "@type": "Dataset",
+   "name": "Case record — 1,475 lb vault door freight recovery, Manassas, VA, September 2026",
+   "description": "Every transcribed field of the job and its seven-step process. The coordination step is modeled as the Organization's own logistics project management process — the estate registers no separate service node for it. Internal carrier and supplier reference numbers are withheld; the record carries the job's data, not its paperwork identifiers.",
+   "url": "https://theflatratemovers.com/datasets/vault-door-case-study/",
+   "sameAs": "https://theflatratemovers.com/datasets/vault-door-case-study/",
+   "identifier": "https://theflatratemovers.com/datasets/vault-door-case-study/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "includedInDataCatalog": {
+    "@id": "https://theflatratemovers.com/datasets/#collection"
+   },
+   "datePublished": "2026-11-03",
+   "dateModified": "2026-11-03",
+   "temporalCoverage": "2026-09",
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "contentLocation": {
+    "@id": "https://theflatratemovers.com/#place-manassas-va"
+   },
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-vault-door-case-study.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-vault-door-case-study.json",
+     "encodingFormat": "application/json"
+    }
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-gun-safe"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-freight-rework-transloading"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-final-mile"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-white-glove"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "commodity",
+     "value": "RecondMegas Infinity Fortress 2518 (reconditioned vault door)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "handlingUnit",
+     "value": "1 pallet"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "packages",
+     "value": 1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "weightLbs",
+     "value": 1475
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "lengthIn",
+     "value": 41
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "widthIn",
+     "value": 41
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "heightIn",
+     "value": 42
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "cubeCubicFeet",
+     "value": 40.86
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "densityPcf",
+     "value": 36.1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "freightClass",
+     "value": 60
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "nmfc",
+     "value": "172360-11"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "freightTerms",
+     "value": "Prepaid"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "pickupTerms",
+     "value": "Will call — carrier terminal, Manassas, VA"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "dockPickupWindow",
+     "value": "7:30 AM – 2:00 PM"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "notificationDate",
+     "value": "2026-09-21"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "estimatedDeliveryDate",
+     "value": "2026-09-24"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "recoveringBranch",
+     "value": "The Flat Rate Movers — Winchester, VA"
+    }
+   ],
+   "hasPart": [
+    {
+     "@type": "HowToStep",
+     "position": 1,
+     "name": "Delivery notification",
+     "text": "The job opened with a delivery notification from the supplier's logistics desk on September 21, 2026, with the estimated delivery date of September 24. That notice is the coordination point: the shipment, its terminal and its pickup terms enter our schedule, and the recovery is planned around the carrier's window before the door ever moves. Multi-party freight work runs on this step — supplier, carrier and crew on one timeline, managed by us.",
+     "about": [
+      {
+       "@id": "https://theflatratemovers.com/#organization"
+      }
+     ]
+    },
+    {
+     "@type": "HowToStep",
+     "position": 2,
+     "name": "The freight record",
+     "text": "The bill of lading fixed the job's data before anyone rolled: a reconditioned vault door, commodity line RecondMegas Infinity Fortress 2518, on one pallet as one package — 1,475 lbs at 41 × 41 × 42 inches, 40.86 cubic feet, density 36.1 pounds per cubic foot, freight class 60, NMFC 172360-11, charges prepaid. The crew plans from these numbers — the weight sets the handling standard, the dimensions set the load plan — and verifies the piece against them at the dock.",
+     "about": [
+      {
+       "@id": "https://theflatratemovers.com/#service-freight-rework-transloading"
+      }
+     ]
+    },
+    {
+     "@type": "HowToStep",
+     "position": 3,
+     "name": "Linehaul transit",
+     "text": "The carrier's LTL network carried the door to its Manassas, Virginia terminal. A freight leg ends at the terminal dock — the carrier's job stops there, and everything the client actually needs (recovery, the run to the address, placement) is a different service that a carrier does not sell. That handoff is where this job changed hands.",
+     "about": [
+      {
+       "@id": "https://theflatratemovers.com/#service-freight-rework-transloading"
+      }
+     ]
+    },
+    {
+     "@type": "HowToStep",
+     "position": 4,
+     "name": "Terminal will-call",
+     "text": "The shipment sat will-call at the terminal: the carrier holds the freight and the consignee collects it. Will-call freight has a window — this terminal's pickup hours ran 7:30 AM to 2:00 PM at the loading dock — and a recovery that misses the window costs a day. Our collection was scheduled inside it, freight record in hand.",
+     "about": [
+      {
+       "@id": "https://theflatratemovers.com/#service-freight-rework-transloading"
+      }
+     ]
+    },
+    {
+     "@type": "HowToStep",
+     "position": 5,
+     "name": "Crew recovery at the dock",
+     "text": "Our Winchester branch crew collected the pallet at the dock and verified the piece against the freight record — one pallet, 1,475 lbs, 41 × 41 × 42 inches — before it was loaded. From this point the door rides as a heavy asset: protected and secured for the road, and handled under the same careful standard we apply across the 1,500 to 3,500 lb SIR band, because a 1,475 lb door is planned the same way as one inside it.",
+     "about": [
+      {
+       "@id": "https://theflatratemovers.com/#service-freight-rework-transloading"
+      },
+      {
+       "@id": "https://theflatratemovers.com/#service-gun-safe"
+      }
+     ]
+    },
+    {
+     "@type": "HowToStep",
+     "position": 6,
+     "name": "Final-mile transport",
+     "text": "From the terminal, the last leg ran on our truck: the final mile from the carrier's dock to the client's address in the Manassas area, on the schedule set at coordination. This is the leg the freight system leaves behind — a terminal is not a doorstep, and the distance between them is a delivery service of its own.",
+     "about": [
+      {
+       "@id": "https://theflatratemovers.com/#service-final-mile"
+      }
+     ]
+    },
+    {
+     "@type": "HowToStep",
+     "position": 7,
+     "name": "White-glove placement",
+     "text": "At the destination the door was brought in and set in its final position under the white-glove standard — the handling level for high-value pieces: protected on the way in, placed where it belongs, its condition verified with the recipient, and the freight packaging removed. A vault door is not dropped at a curb and signed for; it is finished.",
+     "about": [
+      {
+       "@id": "https://theflatratemovers.com/#service-white-glove"
+      },
+      {
+       "@id": "https://theflatratemovers.com/#service-gun-safe"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/vault-door-case-study/#evidence",
+   "@type": "CreativeWork",
+   "name": "Evidence and verification",
+   "description": "Every figure in this dataset traces to one of two job documents held by the company: (1) the supplier's delivery notification, dated September 21, 2026, stating the estimated delivery date of September 24, 2026; (2) the carrier's bill of lading for the shipment, carrying the commodity line, weight, dimensions, cube, density, freight class, NMFC item, prepaid terms and the will-call pickup instruction with the 7:30 AM – 2:00 PM dock window. Cross-check: the bill of lading's printed density is internally consistent with its own weight and cube — 1,475 lbs ÷ 40.86 cu ft = 36.09, which rounds to the printed 36.1 PCF. Withheld under the company's privacy rule: the names of individuals, the name of the selling company, the identity of the client, and all internal reference numbers (carrier PRO, bill of lading, quote and order numbers). Geography is published at city level (Manassas, VA) only.",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "datePublished": "2026-11-03",
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/vault-door-case-study/#case-record"
+    }
+   ]
+  },
+  {
+   "@id": "https://theflatratemovers.com/#place-manassas-va",
+   "@type": "Place",
+   "name": "Manassas, Prince William County, VA",
+   "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US",
+    "addressLocality": "Manassas",
+    "addressRegion": "VA"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.75125,
+    "longitude": -77.47086
+   }
+  }
+ ]
+}

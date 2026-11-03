@@ -7,7 +7,7 @@
       "name": "The Flat Rate Movers — Archive Registry Operations",
       "description": "The standing registry of the archives element for The Flat Rate Movers: every preservation copy of the estate — Internet Archive captures, Zenodo DOI deposits, GitHub repository mirrors, and the local BagIt archive — recorded per URL, per byte-era and per location with fixity state, so “is it preserved, where, since when, in which form, and what is the plan for the ones that are not” is a query over sealed data, not a memory. Built by the Retrieval Machine (Element 6, Dossier 06 design) and verified by a signed runbook execution whose report sits beside the signed index it verified.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-01",
+      "dateModified": "2026-11-03",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -174,7 +174,7 @@
       "name": "Archive Registry — Archive Targets and Capture State",
       "description": "Every URL the preservation program tracks (260): the full live sitemap (247 locs) plus the tracked non-sitemap surfaces (the API root, the signed index’s detached JWS, the published JWKS and the core root files) and both Zenodo record pages — each with its URL class and its computed capture state, computed from CDX data enumerated before and after the E6-B2 re-snapshot wave. The recorded program’s 42 URLs are a subset, each carrying its recorded timestamp. States at generation: 104 current-era (a capture at or after the 2026-10-31T13:14Z per-route boundary — the current estate, archived), 3 old-era (a capture exists and predates the per-route estate), 0 recorded-unverifiable (confirmed by the 2026-10-30/31 runner, no longer served by the Archive — carried in the captures table as missing and re-captured by E6-B2, whose new timestamps stand in the captures table), 1 preservation-by-doi (no Wayback capture; the DOI deposit is the preservation instrument), 152 never-captured (no capture in any era). No target is omitted for having no capture: blanks are impossible by construction.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-01",
+      "dateModified": "2026-11-03",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -2318,7 +2318,7 @@
       "name": "Archive Registry — Captures (Internet Archive)",
       "description": "Every Internet Archive capture on record for the tracked URLs: 141 captures: the recorded set re-verified live against the Wayback CDX index by E6-B1 and the current-era set CDX-confirmed by the E6-B2 re-snapshot wave (104 of them; a sample re-hashed in id_ identity form to their CDX digests under the runbook), all on 2026-11-01 — each with its timestamp, status code, CDX digest, WARC record length, media type, byte-era (per-route for pages and data-version-2026-11-01 for data files in the current era; pre-per-route-shell / pre-current-seal in the older eras) and the A5 fields (payload byte size where an id_ identity fetch measured it, manifest version naming the signed index the capture was taken under, fixity status — a URL can hold verified captures in several byte eras, byte-true to their CDX records; the newest timestamp is its current preservation state). The 5 captures the 2026-10-30/31 program recorded as confirmed but which the Archive no longer serves are carried in the missingCaptures list with their full re-check trail (CDX under all scheme/host variants, Availability API, timemap, direct fetch) and fixity status missing — failures are retained permanently, never deleted; 5 of the 5 were re-captured inside E6-B2 and stand in this table with new timestamps.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-01",
+      "dateModified": "2026-11-03",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -5363,7 +5363,7 @@
       "name": "Archive Registry — DOI Deposits (Zenodo)",
       "description": "Both Zenodo deposits of the estate’s AI authority repo, under concept DOI 10.5281/zenodo.23818766: record 23818767 (v1.1.0, 126 files) and record 23844324 (v1.2.0, 167 files). Each deposit’s archive file was downloaded and MD5-verified against the checksum Zenodo serves for the record; every file inside is then accounted per file — its SHA-256 against the release’s own signed index (carried inside the deposit) and against the current signed index — with the A5 fields and a fixity status (verified, superseded, mismatch, or the recorded basis where the file is not an indexed distribution). The v1.1.0 deposit carries 9 dataset files that diverge from their own release’s signed index (logged as exceptions in the signed verification report; the signed-index lineage agrees against them) and both deposits carry the ai repo’s gist-based data/entity-graph.json, a different artifact from the site-served graph the index names — recorded as itself, never overwritten.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-01",
+      "dateModified": "2026-11-03",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -9298,7 +9298,7 @@
       "name": "Archive Registry — GitHub Repositories",
       "description": "The two GitHub repositories that mirror the sealed estate, with their main-branch HEADs as read at generation (TheFlatRateMovers/theflatratemovers-ai at fc2b3f75; TheFlatRateMovers/the-flat-rate-machine at b0f9cedb). The ai repo carries the datasets, graphs, signed index and llms surfaces; the machine repo carries the generators, the verify suite, the tools and the source-shell mirror. Every estate batch pushes exactly once per repo and reads the pushed files back byte-identical; the gist-based ai-repo data/entity-graph.json is never in any push set.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-01",
+      "dateModified": "2026-11-03",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -9392,7 +9392,7 @@
       "name": "Archive Registry — Local Archive (BagIt)",
       "description": "The local preservation copy of the complete sealed set: the estate archive regenerated from the signed index by scripts/build-estate-archive.py (every one of the 486 distributions’ resolved bytes re-hashed to its signed digest) and packaged as a BagIt bag per RFC 8493 — bagit.txt (BagIt-Version: 1.0), payload under data/, manifest-sha256.txt listing every payload file exactly once, tagmanifest-sha256.txt, and bag-info.txt carrying Bagging-Date, Payload-Oxum, Source-Organization and the External-Identifier naming the signed-index version. The bag validates under full checksum verification (bagit.py reference implementation): Payload-Oxum 125430624.486 — 486 files, 125430624 payload bytes — at the-flat-rate-machine/out/estate-archive/bag.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-01",
+      "dateModified": "2026-11-03",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -9475,7 +9475,7 @@
       "name": "Archive Registry — Verification (signed runbook execution)",
       "description": "The Element 6 verification runbook executed on 2026-11-01 against the signed index as it stood (SHA-256 289d461ae109aee86022f8c575df6d96c25697bbcf4c3e03a084db4a8ac78214, 486 distributions read from the index itself — the count is never hard-coded): signature verified against the published JWKS; every local copy re-hashed (486/486 matched in the regenerated archive); both DOI deposits checksum-verified per file; sampled Wayback captures fetched in id_ identity form and re-hashed to their CDX digests (10/10 — the captures are the indexed bytes, unaltered; all differ from the current seal, classified source-changed). The full report — expected / matched / exceptions, with every exception carrying both digests and its classification — is signed with the estate Ed25519 key and archived beside the index at https://theflatratemovers.com/ai-verification-report-2026-11-01.json (detached JWS alongside). The sampled file × location matrix is carried in this node. A second execution the same day (batch E6-B2) re-ran the runbook’s Internet Archive legs against the signed index as it then stood (SHA-256 3fb30cd7c02debbdc3eaf5d949b44a1e1730d38c74e0296062b5d851c7fafc4e, 491 distributions read from the index): the re-snapshot wave confirmed 103 current-era captures, and 20 of 20 sampled captures re-hashed to their CDX digests in id_ identity form; its report is signed with the same key and stands beside the index at https://theflatratemovers.com/ai-verification-report-2026-11-01-e6b2.json (SHA-256 1b951fc3bf9b4cb284a8821502d83a402e802d2b089b6e280ab86f17aa1e0538). Each execution signs its own report; no report is ever edited.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-01",
+      "dateModified": "2026-11-03",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -9820,7 +9820,7 @@
       "name": "Archive Registry — Snapshot Runs",
       "description": "Every snapshot and verification run on record (4): the 2026-10-30 priority run (12 attempted, 11 confirmed, the Zenodo record failed with HTTP 520), the 2026-10-30/31 polite follow-up (35 attempted, 34 confirmed, Zenodo failed on all six attempts across both runs), the 2026-11-01 E6-B1 verification sweep (43 targets re-queried, 37 captures verified, 5 recorded captures found no longer served), and the 2026-11-01 E6-B2 re-snapshot wave (103 wave URLs attempted, 103 confirmed current-era; tallies and failure records itemized in its run record, and its signed report pinned in the verification node). Failure records are retained permanently; a run counts only what CDX or the Availability API confirms.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-01",
+      "dateModified": "2026-11-03",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -9940,7 +9940,7 @@
       "name": "Archive Registry — Gaps and Designed Solutions (A1–A6)",
       "description": "Dossier 06’s six archive gaps, each with its evidence, its designed solution and its status after this batch: A5 (archive state as sealed data) is resolved by this registry; A3 (the Zenodo Wayback failure) and A6 (unmapped channel classes) are resolved by design, with the proportionate responses and re-entry conditions recorded; A1 (the byte-era re-snapshot) and A2 (capture-state enumeration and the never-captured set) are resolved by batch E6-B2, whose wave and full-sitemap sweep stand in this registry; A4 (the per-release snapshot cadence) is open with its execution batch named (E6-B3).",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-01",
+      "dateModified": "2026-11-03",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -10052,7 +10052,7 @@
       "name": "Archive Registry — Preservation Channels",
       "description": "The preservation channel map, complete: four operating channels (Wayback Machine, Zenodo DOI deposits, GitHub mirrors, the local BagIt archive) and the two designed non-actions from Dossier 06 A6 (archive.today-class services; national/library web archives), each recorded with its reason and its re-entry condition, so the absence of effort there is a decision on record, not an oversight.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-01",
+      "dateModified": "2026-11-03",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -10152,7 +10152,7 @@
       "name": "Archive Registry — Totals",
       "description": "Registry totals, generated: targets by capture state, verified and missing captures, deposits and their per-file populations, GitHub repositories, the local archive’s file and byte totals, the verification run’s exception count, and the gap table’s population. All counts derive from the tables in this file at generation; none is hand-kept.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-01",
+      "dateModified": "2026-11-03",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -10234,7 +10234,7 @@
       "name": "Archive Registry — Method",
       "description": "How this registry is built and kept true. (1) Targets come from the live sitemap plus the tracked non-sitemap surfaces, enumerated from data — never from memory: every capture is re-queried against the live Wayback CDX index at generation, and a capture counts as verified only with a CDX row (timestamp, status, digest, record length); the Availability API, the timemap and a direct snapshot fetch are the cross-checks, and a capture absent from all of them is recorded missing with its trail, never rounded up. (2) Byte-era is computed: page captures before the 2026-10-31 Solution A boundary are pre-per-route-shell (per-shell artifacts whose replayed content depends on JavaScript routing); data-file captures before the current seal are pre-current-seal; sampled captures carry digest-verified era basis (their id_ bytes re-hash to the CDX digest), the rest carry the timestamp basis, labeled as such. (3) Deposits are verified per file against the checksums Zenodo serves and the signed indexes inside and outside the deposit; divergence is classified (source-changed / deposit-divergent / different-artifact), both digests logged, and no copy is ever overwritten. (4) The local archive regenerates from the signed index alone and is packaged and validated as BagIt 1.0. (5) The verification runbook’s report is signed with the estate key and archived beside the index; old indexes are never edited. (6) The registry regenerates and re-seals with every archive batch; the re-snapshot wave (E6-B2) and the release cadence (E6-B3) append captures and runs to these tables.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-01",
+      "dateModified": "2026-11-03",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -10290,7 +10290,7 @@
       "name": "Archive Registry — Sources",
       "description": "The evidence base for this registry: the Wayback CDX and Availability APIs and timemap, queried live 2026-11-01 for every tracked URL; the 2026-10-30/31 snapshot program record (archive-snapshots-2026-10-30.md) as era-tagged history; the Zenodo API records 23818767 and 23844324 and the deposit archives themselves, checksum-verified; the GitHub API for both repositories’ HEADs; the regenerated local estate archive and its BagIt validation; and the signed verification reports of 2026-11-01 (the E6-B1 execution and the E6-B2 re-snapshot execution), which bind these legs together under the estate key.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-01",
+      "dateModified": "2026-11-03",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -10387,7 +10387,7 @@
       "name": "Archive Registry — Boundaries",
       "description": "What this registry will not do. It never presents a capture count — ours or anyone’s — as a standing, quality or authority signal; counts here are preservation observations with dates. It never records a capture, a checksum or a state it did not observe: what could not be verified stands as an explicit state (recorded-unverifiable, missing, not-a-distribution) with its method trail. It never overwrites any preservation copy to force a match, and never edits an old signed index. Unconfirmed expansion items (evidence captures of third-party records; outlet-record snapshots) have no representation here until the owner confirms them.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-01",
+      "dateModified": "2026-11-03",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {

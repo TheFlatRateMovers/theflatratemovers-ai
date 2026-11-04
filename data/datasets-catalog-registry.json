@@ -7,7 +7,7 @@
    "name": "Dataset Catalog Registry — Operations",
    "description": "The operations record for the dataset catalog registry of The Flat Rate Movers: what the registry is, the seats it joins, and the gates that verify it. The registry is the dataset-catalog element (Element 4) of the Retrieval Machine, built from Dossier 04 §5: one joined, computed view of every dataset file the company publishes and every catalog that carries it — the company website, the estate API, the GitHub AI repository, two Hugging Face dataset repositories, the Zenodo DOI deposit, and Google Dataset Search — plus the channels deliberately not used, recorded with their reasons. Presence and version-sync states are computed from primary reads at every generation and sealed in the signed master index; nothing in the file is asserted without a dated observation behind it.",
    "inLanguage": "en-US",
-   "dateModified": "2026-11-03",
+   "dateModified": "2026-11-04",
    "isAccessibleForFree": true,
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "creator": {
@@ -114,7 +114,7 @@
    "name": "Dataset Catalog Registry — Scope Rules",
    "description": "The scope rules of the catalog registry: the join is datasets x seats with exactly one row per dataset per applicable seat; the presence vocabulary (present-verified, absent-observed, present-stale, not-submitted, not-applicable, and unverified-on-read-failure); the sync-computation rule (digests compared, never asserted; an unreadable seat computes stale-unknown); the evidence rule (every present-verified row carries a dated observation with a method); the metadata-completeness encoding in the verify.js DC vocabulary; the DOI discipline (DOIs as data fields only, never as node identifiers); and self-inclusion (the registry joins its own seats with computed states).",
    "inLanguage": "en-US",
-   "dateModified": "2026-11-03",
+   "dateModified": "2026-11-04",
    "isAccessibleForFree": true,
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "creator": {
@@ -211,7 +211,10 @@
    ],
    "datePublished": "2026-11-03",
    "includedInDataCatalog": {
-    "@id": "https://theflatratemovers.com/datasets/#collection"
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
    },
    "scopeRules": [
     {
@@ -250,7 +253,7 @@
    "name": "Dataset Catalog Registry — The Catalogs",
    "description": "The nine catalog rows: seven channels that carry or can carry the estate’s datasets (the company website, the estate API, the GitHub AI repository, the Hugging Face estate repository, the Hugging Face intent repository, the Zenodo DOI deposit, and Google Dataset Search) and two channels recorded as not pursued by design with their re-entry conditions (Kaggle, data.gov). Each row states the channel kind, its URL, exactly what it distributes, its status and the date it was last observed — including the honest states: the Zenodo deposit is a stale snapshot by design, and the Hugging Face seats’ current read state is recorded as it stands.",
    "inLanguage": "en-US",
-   "dateModified": "2026-11-03",
+   "dateModified": "2026-11-04",
    "isAccessibleForFree": true,
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "creator": {
@@ -347,7 +350,10 @@
    ],
    "datePublished": "2026-11-03",
    "includedInDataCatalog": {
-    "@id": "https://theflatratemovers.com/datasets/#collection"
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
    },
    "catalogs": [
     {
@@ -458,7 +464,7 @@
    "name": "Dataset Catalog Registry — The Join: Datasets x Catalog Seats",
    "description": "The join itself: 315 rows at this generation — 45 dataset files x 7 seats. Every row names its dataset file and catalog, the presence state with its dated evidence (method, observed date, source), the computed version-sync state, and — on the website and dataset-search seats — the file’s metadata completeness in the DC vocabulary. Read it as the answer to one question per row: is this dataset in this catalog, and is the copy there the current generation?",
    "inLanguage": "en-US",
-   "dateModified": "2026-11-03",
+   "dateModified": "2026-11-04",
    "isAccessibleForFree": true,
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "creator": {
@@ -555,7 +561,10 @@
    ],
    "datePublished": "2026-11-03",
    "includedInDataCatalog": {
-    "@id": "https://theflatratemovers.com/datasets/#collection"
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
    },
    "catalogDatasets": [
     {
@@ -5338,7 +5347,7 @@
    "name": "Dataset Catalog Registry — Channel Observations",
    "description": "The observation log behind the join: dated, method-carrying observations of the catalogs — live reads of the website files against the signed index, the API dataset list and bundle manifest, the GitHub mirror tree, the Hugging Face repositories, the Zenodo deposit contents, and the Dataset Search surface audits. The log is append-only in the registry’s observation store (data/catalog-observations.json); each generation of this file republishes the standing rows plus its own run’s seat summaries, including read failures exactly as they occurred.",
    "inLanguage": "en-US",
-   "dateModified": "2026-11-03",
+   "dateModified": "2026-11-04",
    "isAccessibleForFree": true,
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "creator": {
@@ -5435,7 +5444,10 @@
    ],
    "datePublished": "2026-11-03",
    "includedInDataCatalog": {
-    "@id": "https://theflatratemovers.com/datasets/#collection"
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
    },
    "catalogObservations": [
     {
@@ -5588,7 +5600,7 @@
    "name": "Dataset Catalog Registry — Dataset Search Diagnostic (T-Series)",
    "description": "The ordered diagnostic for the estate’s one absent surface, Google Dataset Search, run under gate CR-5 (a stage is worked only when every earlier stage has a row): T1 (indexing lag on a young rebuilt estate) is open and under cadence observation; T2 (schema nuance) is eliminated, firm — re-validated from primary sources at this registry’s execution after its original record could not be located (gap CR-G1). T3 and T4 carry no rows yet and are not run out of order.",
    "inLanguage": "en-US",
-   "dateModified": "2026-11-03",
+   "dateModified": "2026-11-04",
    "isAccessibleForFree": true,
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "creator": {
@@ -5685,7 +5697,10 @@
    ],
    "datePublished": "2026-11-03",
    "includedInDataCatalog": {
-    "@id": "https://theflatratemovers.com/datasets/#collection"
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
    },
    "diagnosticRecords": [
     {
@@ -5712,7 +5727,7 @@
    "name": "Dataset Catalog Registry — Gaps and Designed Solutions",
    "description": "The catalog element’s named gaps, each with its evidence, its impact and its designed solution: C1 the un-isolated Dataset Search absence; C2 mirror staleness on the snapshot and repository seats, with the next-release re-sync as its remedy (never hand-edited sync states); C3 the missing joined view, resolved by this file; C4 Croissant depth beyond the intent dataset; C5 the observation cadence, whose scheduling home is the archive program’s E6-B3 batch; C6 the Kaggle non-pursuit, closed by design; CR-G1 the diagnostic’s unlocatable primary record, resolved at execution by re-running the validation; and CR-G2 the structural unobservability of per-dataset Dataset Search presence.",
    "inLanguage": "en-US",
-   "dateModified": "2026-11-03",
+   "dateModified": "2026-11-04",
    "isAccessibleForFree": true,
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "creator": {
@@ -5809,7 +5824,10 @@
    ],
    "datePublished": "2026-11-03",
    "includedInDataCatalog": {
-    "@id": "https://theflatratemovers.com/datasets/#collection"
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
    },
    "gapRecords": [
     {
@@ -5884,7 +5902,7 @@
    "name": "Dataset Catalog Registry — Totals",
    "description": "The registry’s computed totals for this generation: dataset files joined, catalog rows, join rows, the presence and sync counts across all seats and per seat, the metadata-completeness pass counts, and the estate baseline the generation read (signed distributions, dataset files in the index, registered pages) — every figure derived from the join rows and the signed index in the same run, never carried forward from an earlier generation.",
    "inLanguage": "en-US",
-   "dateModified": "2026-11-03",
+   "dateModified": "2026-11-04",
    "isAccessibleForFree": true,
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "creator": {
@@ -5981,7 +5999,10 @@
    ],
    "datePublished": "2026-11-03",
    "includedInDataCatalog": {
-    "@id": "https://theflatratemovers.com/datasets/#collection"
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
    },
    "totals": {
     "datasetFiles": 45,
@@ -6109,7 +6130,7 @@
    "name": "Dataset Catalog Registry — Method",
    "description": "How this registry is generated and how to read it: the generator (scripts/build-catalog-registry.js, a Flat Rate Machine tool) derives the dataset set from the signed master index, reads every seat from its primary source, computes presence and sync, merges the append-only observation store, and writes this file; verify.js gates CR-1..CR-5 check the join’s completeness, its evidence, its digest backing, its DOI discipline and its diagnostic order at every seal.",
    "inLanguage": "en-US",
-   "dateModified": "2026-11-03",
+   "dateModified": "2026-11-04",
    "isAccessibleForFree": true,
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "creator": {
@@ -6212,7 +6233,7 @@
    "name": "Dataset Catalog Registry — Sources",
    "description": "The sources this registry stands on: the prep batch’s specification and seed-evidence record (2026-11-02), Dossier 04 §5, the signed master index, the live channel reads of the generation date, the Hugging Face re-sync record and the Zenodo deposit record (both 2026-11-02), the channels build-out record (2026-11-01), and the T2 re-validation record written at this registry’s execution (2026-11-03) after the 2026-11-01 diagnostic’s primary record could not be located.",
    "inLanguage": "en-US",
-   "dateModified": "2026-11-03",
+   "dateModified": "2026-11-04",
    "isAccessibleForFree": true,
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "creator": {
@@ -6348,7 +6369,7 @@
    "name": "Dataset Catalog Registry — Boundaries",
    "description": "The registry’s boundaries, stated as plainly as its claims: presence is observed or it is not claimed; the registry creates no account and submits nothing anywhere (owner-step channels stand not-pursued with their re-entry conditions); no third-party listing, indexing or citation is claimed beyond a dated observation in this file; mirror seats are copies whose canonical provenance is the signed master index; and internal research material is never described here — the registry covers published dataset files and public catalogs only.",
    "inLanguage": "en-US",
-   "dateModified": "2026-11-03",
+   "dateModified": "2026-11-04",
    "isAccessibleForFree": true,
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "creator": {

@@ -246,7 +246,7 @@
       "@id": "https://theflatratemovers.com/#dataset-search-index-taxonomy",
       "@type": "Dataset",
       "name": "Search Index Taxonomy",
-      "description": "The vocabularies every table in this file uses. Intent classes: the rubric’s five generated classes (ai-question, best-choice, cost, how-process, navigational-local) plus sampled-money-query for the observation-defined clusters. Geo scopes: pattern-family (area-null rows: near-me and national pattern forms), the branch scopes (scope-winchester, scope-martinsburg, scope-shenandoah-valley), town scopes (place-*), corridor scopes (i-81, i-66, i-70), and the sampled state and port scopes. Observation methods: serp-sample, places-sample, gsc-inspection, gsc-export, bing-wmt and prompt-panel (the last two have no observations yet and are named so future rows keep their own method rather than borrowing one). Eras: pre-rebuild (the console window that predates the rebuilt site) and post-rebuild. Indexation states: indexed, not-indexed, unobserved. Third-party record statuses: open, correction sent, corrected-live, parked-owner-step.",
+      "description": "The vocabularies every table in this file uses. Intent classes: the rubric’s five generated classes (ai-question, best-choice, cost, how-process, navigational-local) plus sampled-money-query for the observation-defined clusters. Geo scopes: pattern-family (area-null rows: near-me and national pattern forms), the branch scopes (scope-winchester, scope-martinsburg, scope-shenandoah-valley), town scopes (place-*), corridor scopes (i-81, i-66, i-70), and the sampled state and port scopes. Observation methods: serp-sample, places-sample, gsc-inspection, gsc-export, bing-wmt and prompt-panel (the last two have no observations yet and are named so future rows keep their own method rather than borrowing one). Eras: pre-rebuild (console windows predating the rebuilt site), transition (the console window spanning the rebuild) and post-rebuild. Indexation states: indexed, not-indexed, unobserved. Third-party record statuses: open, correction sent, corrected-live, parked-owner-step.",
       "keywords": [
         "search index",
         "query clusters",
@@ -47738,7 +47738,7 @@
             "Place",
             "WebPage"
           ],
-          "wordCount": 2977,
+          "wordCount": 2996,
           "internalInlinks": 3,
           "topAnchorTexts": [
             "Search Intent Coverage Dataset"
@@ -53477,7 +53477,7 @@
       "@id": "https://theflatratemovers.com/#dataset-search-index-windows",
       "@type": "Dataset",
       "name": "Engine Windows (Era-Tagged Console Overlay)",
-      "description": "The evidence side, second table: the Search Console performance export for 2026-07-29 to 2026-10-31 — the era before this site was rebuilt, kept and labeled as exactly that. 1322 observed queries were imported; 27 matched live rubric rows and are attached here as evidence to 217 rows. Of the 181 exported pages, 137 still exist at the same URL and 44 do not. Metrics attach only to the queries that were actually observed, only inside their window, and never as current performance. Pages launched after the window are awaiting observation — unmeasured, never zero-filled.",
+      "description": "The evidence side, second table: the Search Console performance exports for 2026-07-29 to 2026-10-28 (pre-rebuild era) and 2026-10-04 to 2026-10-31 (transition era) — era-tagged windows, kept and labeled as exactly that. 1322 observed queries were imported; 27 matched live rubric rows and are attached here as evidence to 217 rows. Of the 181 exported pages, 137 still exist at the same URL and 44 do not. Metrics attach only to the queries that were actually observed, only inside their window, and never as current performance. Pages launched after the window are awaiting observation — unmeasured, never zero-filled.",
       "keywords": [
         "search index",
         "query clusters",
@@ -53904,13 +53904,13 @@
           "avgPosition": 10,
           "windowStart": "2026-10-04",
           "windowEnd": "2026-10-31",
-          "era": "pre-rebuild",
+          "era": "transition",
           "linkedPageUrl": "https://theflatratemovers.com/gun-safe-movers/",
           "rubricRowsEnriched": 1,
           "clusterRefs": [
             "cluster-gun-safe-navigational-local-pattern-family-gun-safe-movers"
           ],
-          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (pre-rebuild era), imported into the rubric database as era-tagged evidence"
+          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (transition era), imported into the rubric database as era-tagged evidence"
         },
         {
           "query": "movers in winchester va",
@@ -53920,13 +53920,13 @@
           "avgPosition": 9.11,
           "windowStart": "2026-10-04",
           "windowEnd": "2026-10-31",
-          "era": "pre-rebuild",
+          "era": "transition",
           "linkedPageUrl": "https://theflatratemovers.com/category/winchester-va/top-rated-movers-winchester-va/",
           "rubricRowsEnriched": 1,
           "clusterRefs": [
             "cluster-residential-navigational-local-pattern-family-category-winchester-va-top-rated-movers-winchester-va"
           ],
-          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (pre-rebuild era), imported into the rubric database as era-tagged evidence"
+          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (transition era), imported into the rubric database as era-tagged evidence"
         },
         {
           "query": "gun safe movers",
@@ -53936,13 +53936,13 @@
           "avgPosition": 21.97,
           "windowStart": "2026-10-04",
           "windowEnd": "2026-10-31",
-          "era": "pre-rebuild",
+          "era": "transition",
           "linkedPageUrl": "https://theflatratemovers.com/gun-safe-movers/",
           "rubricRowsEnriched": 1,
           "clusterRefs": [
             "cluster-gun-safe-navigational-local-pattern-family-gun-safe-movers"
           ],
-          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (pre-rebuild era), imported into the rubric database as era-tagged evidence"
+          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (transition era), imported into the rubric database as era-tagged evidence"
         },
         {
           "query": "moving company",
@@ -53952,7 +53952,7 @@
           "avgPosition": 8.6,
           "windowStart": "2026-10-04",
           "windowEnd": "2026-10-31",
-          "era": "pre-rebuild",
+          "era": "transition",
           "linkedPageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "rubricRowsEnriched": 32,
           "clusterRefs": [
@@ -53989,7 +53989,7 @@
             "cluster-warehouse-relocation-navigational-local-pattern-family-moving-company-martinsburg-wv",
             "cluster-white-glove-navigational-local-pattern-family-moving-company-martinsburg-wv"
           ],
-          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (pre-rebuild era), imported into the rubric database as era-tagged evidence"
+          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (transition era), imported into the rubric database as era-tagged evidence"
         },
         {
           "query": "local movers",
@@ -53999,13 +53999,13 @@
           "avgPosition": 9.58,
           "windowStart": "2026-10-04",
           "windowEnd": "2026-10-31",
-          "era": "pre-rebuild",
+          "era": "transition",
           "linkedPageUrl": "https://theflatratemovers.com/local-regional-moving/",
           "rubricRowsEnriched": 1,
           "clusterRefs": [
             "cluster-local-regional-navigational-local-pattern-family-local-regional-moving"
           ],
-          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (pre-rebuild era), imported into the rubric database as era-tagged evidence"
+          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (transition era), imported into the rubric database as era-tagged evidence"
         },
         {
           "query": "gun safe movers winchester va",
@@ -54015,14 +54015,14 @@
           "avgPosition": 31.06,
           "windowStart": "2026-10-04",
           "windowEnd": "2026-10-31",
-          "era": "pre-rebuild",
+          "era": "transition",
           "linkedPageUrl": "https://theflatratemovers.com/gun-safe-movers-winchester-va/",
           "rubricRowsEnriched": 2,
           "clusterRefs": [
             "cluster-gun-safe-navigational-local-pattern-family-gun-safe-movers-winchester-va",
             "cluster-gun-safe-navigational-local-place-winchester-va-gun-safe-movers-winchester-va"
           ],
-          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (pre-rebuild era), imported into the rubric database as era-tagged evidence"
+          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (transition era), imported into the rubric database as era-tagged evidence"
         },
         {
           "query": "moving company winchester va",
@@ -54032,7 +54032,7 @@
           "avgPosition": 7,
           "windowStart": "2026-10-04",
           "windowEnd": "2026-10-31",
-          "era": "pre-rebuild",
+          "era": "transition",
           "linkedPageUrl": "https://theflatratemovers.com/moving-company-winchester-va/",
           "rubricRowsEnriched": 32,
           "clusterRefs": [
@@ -54069,7 +54069,7 @@
             "cluster-warehouse-relocation-navigational-local-pattern-family-moving-company-winchester-va",
             "cluster-white-glove-navigational-local-pattern-family-moving-company-winchester-va"
           ],
-          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (pre-rebuild era), imported into the rubric database as era-tagged evidence"
+          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (transition era), imported into the rubric database as era-tagged evidence"
         },
         {
           "query": "moving company martinsburg wv",
@@ -54079,7 +54079,7 @@
           "avgPosition": 9.62,
           "windowStart": "2026-10-04",
           "windowEnd": "2026-10-31",
-          "era": "pre-rebuild",
+          "era": "transition",
           "linkedPageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "rubricRowsEnriched": 32,
           "clusterRefs": [
@@ -54116,7 +54116,7 @@
             "cluster-warehouse-relocation-navigational-local-pattern-family-moving-company-martinsburg-wv",
             "cluster-white-glove-navigational-local-pattern-family-moving-company-martinsburg-wv"
           ],
-          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (pre-rebuild era), imported into the rubric database as era-tagged evidence"
+          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (transition era), imported into the rubric database as era-tagged evidence"
         },
         {
           "query": "local movers near me",
@@ -54126,13 +54126,13 @@
           "avgPosition": 4.25,
           "windowStart": "2026-10-04",
           "windowEnd": "2026-10-31",
-          "era": "pre-rebuild",
+          "era": "transition",
           "linkedPageUrl": "https://theflatratemovers.com/local-regional-moving/",
           "rubricRowsEnriched": 1,
           "clusterRefs": [
             "cluster-local-regional-navigational-local-pattern-family-local-regional-moving"
           ],
-          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (pre-rebuild era), imported into the rubric database as era-tagged evidence"
+          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (transition era), imported into the rubric database as era-tagged evidence"
         },
         {
           "query": "long distance movers winchester va",
@@ -54142,14 +54142,14 @@
           "avgPosition": 10,
           "windowStart": "2026-10-04",
           "windowEnd": "2026-10-31",
-          "era": "pre-rebuild",
+          "era": "transition",
           "linkedPageUrl": "https://theflatratemovers.com/long-distance-movers-winchester-va/",
           "rubricRowsEnriched": 2,
           "clusterRefs": [
             "cluster-long-distance-navigational-local-pattern-family-long-distance-movers-winchester-va",
             "cluster-long-distance-navigational-local-place-winchester-va-long-distance-movers-winchester-va"
           ],
-          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (pre-rebuild era), imported into the rubric database as era-tagged evidence"
+          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (transition era), imported into the rubric database as era-tagged evidence"
         },
         {
           "query": "best movers near me",
@@ -54159,13 +54159,13 @@
           "avgPosition": 8.5,
           "windowStart": "2026-10-04",
           "windowEnd": "2026-10-31",
-          "era": "pre-rebuild",
+          "era": "transition",
           "linkedPageUrl": "https://theflatratemovers.com/looking-for-the-best-movers-near-me-your-guide-to-stress-free-moving-in-winchester-and-martinsburg/",
           "rubricRowsEnriched": 1,
           "clusterRefs": [
             "cluster-residential-navigational-local-pattern-family-looking-for-the-best-movers-near-me-your-guide-to-stress-free-moving-in-winchester-and-martinsburg"
           ],
-          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (pre-rebuild era), imported into the rubric database as era-tagged evidence"
+          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (transition era), imported into the rubric database as era-tagged evidence"
         },
         {
           "query": "residential movers winchester va",
@@ -54175,13 +54175,13 @@
           "avgPosition": 1,
           "windowStart": "2026-10-04",
           "windowEnd": "2026-10-31",
-          "era": "pre-rebuild",
+          "era": "transition",
           "linkedPageUrl": "https://theflatratemovers.com/residential-moving/",
           "rubricRowsEnriched": 1,
           "clusterRefs": [
             "cluster-residential-navigational-local-place-winchester-va-residential-moving"
           ],
-          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (pre-rebuild era), imported into the rubric database as era-tagged evidence"
+          "sourceRef": "Google Search Console performance export, window 2026-10-04 to 2026-10-31 (transition era), imported into the rubric database as era-tagged evidence"
         }
       ],
       "importMeta": {
@@ -55197,7 +55197,7 @@
       "sources": [
         {
           "name": "Intent rubric database",
-          "detail": "3848 rows; rows digest bd3ba6f69a6386082f479acff3dd4ec91a98391a580c78c2ff465f357dea90dc; generator build-intent-rubric.js (rubric v2)"
+          "detail": "3848 rows; rows digest c09fadec1f79599211e4531fd23305315e970ed3aec51754e0006712c1ab152d; generator build-intent-rubric.js (rubric v2)"
         },
         {
           "name": "Search Console performance export",

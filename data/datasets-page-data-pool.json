@@ -49165,7 +49165,7 @@
    "@id": "https://theflatratemovers.com/datasets/page-data-pool/#services",
    "@type": "ItemList",
    "name": "Layer 1 — the 30-service registry",
-   "numberOfItems": 32,
+   "numberOfItems": 33,
    "itemListElement": [
     {
      "@type": "Service",
@@ -49454,6 +49454,15 @@
      "serviceId": "service-3pl-support",
      "pageCount": 2,
      "source": "Ports & Intermodal Takeover Program, dossier §2.3 (owner directive 2026-11-02); registered batch P4"
+    },
+    {
+     "@type": "Service",
+     "@id": "https://theflatratemovers.com/#service-vault-door",
+     "name": "Vault Door Relocation & Installation",
+     "description": "Vault Door Relocation & Installation — vault doors and high-security enclosures delivered, relocated, and installed at any size, quoted at one flat rate agreed in writing before the job: specified from the door's own standards (UL 608 classes M/1/2/3, GSA Class 5-V / 5-A / 5-B under AA-D-600D, UL 768 lock groups, FF-L-2740B) and its verified weight, planned door by door — rough-opening and swing survey, clear-opening path proof, threshold and step transitions engineered, floor deflection analysis to L/360 inside the SIR 1,500 to 3,500 lb band, setting and leveling to the manufacturer's own installation requirements, contents emptied first, and the combination left in the owner's hands throughout. No locksmith or combination services. Offered from both branches — Winchester VA and Martinsburg WV.",
+     "serviceId": "service-vault-door",
+     "pageCount": 1,
+     "source": "Owner directive 2026-11-02 (Henry): Vault Security & High-Security Enclosures takeover — registered as service #33 with its own hub, Vault Wave 1 batch 2026-11-04"
     }
    ]
   },
@@ -52155,7 +52164,7 @@
    "@id": "https://theflatratemovers.com/datasets/page-data-pool/#datasets",
    "@type": "ItemList",
    "name": "Layer 1 — dataset files metadata (all published dataset files, including this pool)",
-   "numberOfItems": 45,
+   "numberOfItems": 47,
    "itemListElement": [
     {
      "@type": "Dataset",
@@ -52606,6 +52615,26 @@
      "datePublished": "2026-11-03",
      "dateModified": "2026-11-04",
      "description": "This pool itself — the 43rd dataset file. Its record here carries the file URL as its @id so the file holds exactly one node under the summary @id (the FB-2 derivation rule)."
+    },
+    {
+     "@type": "Dataset",
+     "@id": "https://theflatratemovers.com/datasets/vault-security/#dataset",
+     "name": "Vault Door Standards Registry — UL 608, AA-D-600D, FF-L-2740B",
+     "file": "https://theflatratemovers.com/datasets-vault-security.json",
+     "landing": "https://theflatratemovers.com/datasets/vault-security/",
+     "datePublished": "2026-11-04",
+     "dateModified": "2026-11-04",
+     "description": "The verified standards registry for vault doors and high-security enclosures. UL 608 classes M, 1, 2, and 3 carry net working times of 15, 30, 60, and 120 minutes against one identical attack basis — common mechanical tools, electric tools, cutting torches, or any combination — and UL 608 section 1.3 excludes attack with the burning bar (thermal lance) or explosives from every class. GSA Class 5-V under AA-D-600D requires resistance to 20 man-hours of surreptitious entry, 30 man-minutes of covert entry, and 10 man-minutes of forced entry, with no ballistic requirement; Class 5-A drops the surreptitious requirement; Class 5-B adds ballistic resistance tested to SD-STD-01.01 Rev. G level 2, and the specification names no test round. Door lock requirements are recorded as their own fields, never blended into the door figures: Class 5-V and 5-B doors carry a lock meeting FF-L-2740 (Style H or K), while Class 5-A's lock is a UL 768 Group 1 lock. The registry also carries three corrective notes where widely published charts contradict the standards' own text. Every row carries the primary source it was verified against on 2026-11-02."
+    },
+    {
+     "@type": "Dataset",
+     "@id": "https://theflatratemovers.com/datasets/vault-doors/#dataset",
+     "name": "Vault Door Models — Verified Manufacturer Data",
+     "file": "https://theflatratemovers.com/datasets-vault-doors.json",
+     "landing": "https://theflatratemovers.com/datasets/vault-doors/",
+     "datePublished": "2026-11-04",
+     "dateModified": "2026-11-04",
+     "description": "Verified manufacturer data for vault door models — the doors a relocation or installation is planned from. The population carries 8 models from 3 manufacturers (Liberty Safe, Fort Knox, Overly Door Company), with manufacturer-stated weights from 1,225 to 1,610 lbs; 2 of the weighed models fall inside the SIR band of 1,500 to 3,500 lbs. Every row states only what the manufacturer's own documents state: where a manufacturer does not publish a clear opening, a thickness, or a model price, the field is absent from the row and the reason is recorded on the row. The dataset grows by verified rows only; its count is the count the verification protocol has passed, stated as it stands."
     }
    ]
   },
@@ -52975,7 +53004,7 @@
    "@id": "https://theflatratemovers.com/datasets/page-data-pool/#domain-layer",
    "@type": "ItemList",
    "name": "Layer 2 — the researched domain layer: standards, regulations, equipment classes, methods and constraints for logistics and every service, each entry with its primary source",
-   "numberOfItems": 45,
+   "numberOfItems": 49,
    "itemListElement": [
     {
      "@type": "Article",
@@ -55175,6 +55204,184 @@
       "url": "https://www.vedp.org/news/port-virginia-crucial-link-vital-supply-chains",
       "retrieved": "2026-11-03",
       "supports": "The inland port's position at I-66/I-81, its rail link and its market reach."
+     },
+     "layer": 2
+    },
+    {
+     "@type": "Article",
+     "@id": "https://theflatratemovers.com/datasets/page-data-pool/#l2-vault-01",
+     "headline": "UL 608 — net working time is the rating",
+     "name": "L2-VAULT-01",
+     "articleBody": "UL 608 rates burglary-resistant vault doors by net working time: the minutes of actual attack the door withstands, on one identical attack basis for every class — Class M 15 minutes, Class 1 30 minutes, Class 2 60 minutes, Class 3 120 minutes. Net working time counts only the time the attack tools are working on the door; it is the figure the classes are built on, and the four classes differ in minutes alone, not in the kind of attack. The standard's own scope (section 1.3) excludes attacks using a burning bar or explosives, so no UL 608 class is a rating against those methods, whatever secondary charts imply. A door described as 'built to UL 608' without the UL Mark has not been through UL's certification and follow-up surveillance; the class claim and the certification are different things.",
+     "fact": "UL 608 rates burglary-resistant vault doors by net working time: the minutes of actual attack the door withstands, on one identical attack basis for every class — Class M 15 minutes, Class 1 30 minutes, Class 2 60 minutes, Class 3 120 minutes.",
+     "detail": "Net working time counts only the time the attack tools are working on the door; it is the figure the classes are built on, and the four classes differ in minutes alone, not in the kind of attack. The standard's own scope (section 1.3) excludes attacks using a burning bar or explosives, so no UL 608 class is a rating against those methods, whatever secondary charts imply. A door described as 'built to UL 608' without the UL Mark has not been through UL's certification and follow-up surveillance; the class claim and the certification are different things.",
+     "about": [
+      {
+       "@id": "https://theflatratemovers.com/#service-vault-door"
+      }
+     ],
+     "questionsItAnswers": [
+      "How is net working time measured during a UL 608 test?",
+      "Which UL 608 class gives two hours of attack resistance?",
+      "Are explosives attacks covered by UL 608?",
+      "What is the difference between a UL 608 Class 1 and Class 3 vault door?"
+     ],
+     "constraints": [
+      "The class minutes are net working time under the standard's test attack, not a prediction of any real-world attack.",
+      "Section 1.3 of the standard excludes burning-bar and explosives attacks from its scope."
+     ],
+     "relatedServices": [
+      {
+       "@id": "https://theflatratemovers.com/#service-vault-door"
+      }
+     ],
+     "isBasedOn": {
+      "@type": "CreativeWork",
+      "publisher": "UL (Underwriters Laboratories)",
+      "name": "UL 608, Edition 7 — Burglary Resistant Vault Doors and Modular Panels",
+      "url": "https://standards.globalspec.com/std/14542742/ul-608"
+     },
+     "source": {
+      "publisher": "UL (Underwriters Laboratories)",
+      "title": "UL 608, Edition 7 — Burglary Resistant Vault Doors and Modular Panels",
+      "url": "https://standards.globalspec.com/std/14542742/ul-608",
+      "retrieved": "2026-11-04",
+      "supports": "The entry's figures are the standard's own published values, as verified into the vault security standards registry (datasets-vault-security.json)."
+     },
+     "layer": 2
+    },
+    {
+     "@type": "Article",
+     "@id": "https://theflatratemovers.com/datasets/page-data-pool/#l2-vault-02",
+     "headline": "GSA Class 5 vault doors — AA-D-600D and the QPL",
+     "name": "L2-VAULT-02",
+     "articleBody": "Federal vault doors are specified under federal specification AA-D-600D in three classes — Class 5-V, Class 5-A, and Class 5-B — and the manufacturers and model families the government has qualified are listed on Qualified Products List QPL-AA-D-600-12, Revision 12 of April 1, 2026. The three classes resist different attack types and are not a good-better-best ladder: Class 5-V is the full-resistance class (surreptitious, covert, and forced entry), Class 5-A drops the surreptitious requirement, and Class 5-B adds a ballistic requirement stated in the specification itself. Six manufacturers appear on Revision 12 of the QPL, each for named model families and classes — a maker's listing for one class says nothing about the others. A door's class belongs to the door as tested and listed; it is not a credential a mover or installer can hold.",
+     "fact": "Federal vault doors are specified under federal specification AA-D-600D in three classes — Class 5-V, Class 5-A, and Class 5-B — and the manufacturers and model families the government has qualified are listed on Qualified Products List QPL-AA-D-600-12, Revision 12 of April 1, 2026.",
+     "detail": "The three classes resist different attack types and are not a good-better-best ladder: Class 5-V is the full-resistance class (surreptitious, covert, and forced entry), Class 5-A drops the surreptitious requirement, and Class 5-B adds a ballistic requirement stated in the specification itself. Six manufacturers appear on Revision 12 of the QPL, each for named model families and classes — a maker's listing for one class says nothing about the others. A door's class belongs to the door as tested and listed; it is not a credential a mover or installer can hold.",
+     "about": [
+      {
+       "@id": "https://theflatratemovers.com/#service-vault-door"
+      }
+     ],
+     "questionsItAnswers": [
+      "What makes a vault door GSA Class 5?",
+      "Which companies are listed on the GSA vault door QPL?",
+      "What is the difference between Class 5-V and Class 5-B?",
+      "Is a GSA Class 5-V vault door bulletproof?"
+     ],
+     "constraints": [
+      "QPL listings attach to a manufacturer's named model families per class, never to installers or movers.",
+      "Class 5-V carries no ballistic requirement; the ballistic requirement sits in Class 5-B."
+     ],
+     "relatedServices": [
+      {
+       "@id": "https://theflatratemovers.com/#service-vault-door"
+      }
+     ],
+     "isBasedOn": {
+      "@type": "CreativeWork",
+      "publisher": "U.S. General Services Administration, Federal Acquisition Service",
+      "name": "AA-D-600D and QPL-AA-D-600-12, Revision 12 (April 1, 2026)",
+      "url": "https://govtribe.com/file/government-file/encl-5-fed-spec-aa-d-600d-vault-doors-dot-pdf"
+     },
+     "source": {
+      "publisher": "U.S. General Services Administration, Federal Acquisition Service",
+      "title": "AA-D-600D and QPL-AA-D-600-12, Revision 12 (April 1, 2026)",
+      "url": "https://govtribe.com/file/government-file/encl-5-fed-spec-aa-d-600d-vault-doors-dot-pdf",
+      "retrieved": "2026-11-04",
+      "supports": "The entry's figures are the standard's own published values, as verified into the vault security standards registry (datasets-vault-security.json)."
+     },
+     "layer": 2
+    },
+    {
+     "@type": "Article",
+     "@id": "https://theflatratemovers.com/datasets/page-data-pool/#l2-vault-03",
+     "headline": "The lock is rated separately — UL 768 groups and FF-L-2740B",
+     "name": "L2-VAULT-03",
+     "articleBody": "A vault door's burglary rating covers the door; its lock is rated separately. UL 768 groups combination locks by manipulation resistance — Group 1 resists expert manipulation for 20 man-hours, Group 1R adds 20 man-hours of radiological attack resistance, Group 2M resists for 2 man-hours — and the standard states no hour figure for Group 2 at all. Federal Class 5 doors pair the door class with a lock meeting federal specification FF-L-2740B, whose locks resist manipulation, radiological attack, and emanations for 20 man-hours each and covert entry for 30 man-minutes; FF-L-2740B locks are for federal government and authorized-contractor use. Time locks are a separate device class again, standardized under UL 887. Any chart that prints an attack-hours figure for a plain Group 2 lock is publishing a number the standard does not contain.",
+     "fact": "A vault door's burglary rating covers the door; its lock is rated separately. UL 768 groups combination locks by manipulation resistance — Group 1 resists expert manipulation for 20 man-hours, Group 1R adds 20 man-hours of radiological attack resistance, Group 2M resists for 2 man-hours — and the standard states no hour figure for Group 2 at all.",
+     "detail": "Federal Class 5 doors pair the door class with a lock meeting federal specification FF-L-2740B, whose locks resist manipulation, radiological attack, and emanations for 20 man-hours each and covert entry for 30 man-minutes; FF-L-2740B locks are for federal government and authorized-contractor use. Time locks are a separate device class again, standardized under UL 887. Any chart that prints an attack-hours figure for a plain Group 2 lock is publishing a number the standard does not contain.",
+     "about": [
+      {
+       "@id": "https://theflatratemovers.com/#service-vault-door"
+      }
+     ],
+     "questionsItAnswers": [
+      "Why does a vault door have a separate lock rating?",
+      "What does FF-L-2740B require of a combination lock?",
+      "Does UL 768 Group 2 have an attack resistance time?",
+      "What is the difference between a UL 768 Group 1 and Group 2 lock?"
+     ],
+     "constraints": [
+      "UL 768 states no manipulation-hours figure for Group 2; the absence is the standard's own position.",
+      "FF-L-2740B locks are restricted to the federal government and its authorized contractors."
+     ],
+     "relatedServices": [
+      {
+       "@id": "https://theflatratemovers.com/#service-vault-door"
+      }
+     ],
+     "isBasedOn": {
+      "@type": "CreativeWork",
+      "publisher": "UL (Underwriters Laboratories); U.S. General Services Administration",
+      "name": "UL 768 (Combination Locks) and FF-L-2740B",
+      "url": "https://standards.globalspec.com/std/14542742/ul-608"
+     },
+     "source": {
+      "publisher": "UL (Underwriters Laboratories); U.S. General Services Administration",
+      "title": "UL 768 (Combination Locks) and FF-L-2740B",
+      "url": "https://standards.globalspec.com/std/14542742/ul-608",
+      "retrieved": "2026-11-04",
+      "supports": "The entry's figures are the standard's own published values, as verified into the vault security standards registry (datasets-vault-security.json)."
+     },
+     "layer": 2
+    },
+    {
+     "@type": "Article",
+     "@id": "https://theflatratemovers.com/datasets/page-data-pool/#l2-vault-04",
+     "headline": "Vault door weights, openings, and installation planning",
+     "name": "L2-VAULT-04",
+     "articleBody": "A modern residential or commercial vault door is a four-figure load: manufacturer-stated weights for current production doors run from about 1,225 lbs to over 1,600 lbs, and the door must pass through a rough opening larger than the door itself, with clear swing room on the hinge side. Installation planning starts from the manufacturer's own figures: the door's stated weight, its rough-opening dimensions, its walk-through (clear) opening, and its swing direction. The path from the truck to the opening — thresholds, steps, floor spans — carries the same load as the final position, so floor structure is checked before the door moves, not after it arrives. Doors in the 1,500 to 3,500 lb band sit in the weight range where structural relocation method (load spreading and floor-deflection analysis) is the deciding factor in a safe installation.",
+     "fact": "A modern residential or commercial vault door is a four-figure load: manufacturer-stated weights for current production doors run from about 1,225 lbs to over 1,600 lbs, and the door must pass through a rough opening larger than the door itself, with clear swing room on the hinge side.",
+     "detail": "Installation planning starts from the manufacturer's own figures: the door's stated weight, its rough-opening dimensions, its walk-through (clear) opening, and its swing direction. The path from the truck to the opening — thresholds, steps, floor spans — carries the same load as the final position, so floor structure is checked before the door moves, not after it arrives. Doors in the 1,500 to 3,500 lb band sit in the weight range where structural relocation method (load spreading and floor-deflection analysis) is the deciding factor in a safe installation.",
+     "about": [
+      {
+       "@id": "https://theflatratemovers.com/#service-vault-door"
+      },
+      {
+       "@id": "https://theflatratemovers.com/#service-gun-safe"
+      }
+     ],
+     "questionsItAnswers": [
+      "How much does a residential vault door weigh?",
+      "What rough opening does a vault door need?",
+      "How is a vault door installed in an existing home?",
+      "Why does the floor matter when installing a vault door?"
+     ],
+     "constraints": [
+      "Weights and openings are manufacturer-stated per model; no figure generalizes across a maker's range.",
+      "A door's shipping weight exceeds its net installed weight; the two figures answer different questions."
+     ],
+     "relatedServices": [
+      {
+       "@id": "https://theflatratemovers.com/#service-vault-door"
+      },
+      {
+       "@id": "https://theflatratemovers.com/#service-gun-safe"
+      }
+     ],
+     "isBasedOn": {
+      "@type": "CreativeWork",
+      "publisher": "Overly Door Company",
+      "name": "Manufacturer installation documentation for GSA Class 5-V vault doors (Overly Door Company document portal)",
+      "url": "https://door.overly.com/document?DO_Guid=c5f7473f-1527-436e-b5df-f220cb7398c0"
+     },
+     "source": {
+      "publisher": "Overly Door Company",
+      "title": "Manufacturer installation documentation for GSA Class 5-V vault doors (Overly Door Company document portal)",
+      "url": "https://door.overly.com/document?DO_Guid=c5f7473f-1527-436e-b5df-f220cb7398c0",
+      "retrieved": "2026-11-04",
+      "supports": "The entry's figures are the standard's own published values, as verified into the vault security standards registry (datasets-vault-security.json)."
      },
      "layer": 2
     }

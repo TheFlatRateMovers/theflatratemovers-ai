@@ -1,0 +1,832 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://theflatratemovers.com/#dataset-vault-security-operations",
+      "@type": "Service",
+      "name": "Vault Security Standards Registry Operations",
+      "description": "The standards registry behind vault door relocation and installation at The Flat Rate Movers: the verified reference layer for the standards a vault door is specified by — UL 608 vault door and modular panel classes, GSA Class 5-V / 5-A / 5-B under federal specification AA-D-600D, the federal electromechanical lock specification FF-L-2740B, UL 768 combination lock groups, and UL 887 delayed-action timelocks. Every figure in this file is taken from the standards' own published text or the governing body's own pages, and every row carries its source. The registry exists because vault doors are bought against standards, and a door's weight, class, and lock decide how it travels, what floor it can stand on, and how it is installed. The company's work is the movement and installation of the doors themselves — delivery, relocation, and installation at any size, with structural and floor analysis under SIR (Structural Integrity Relocation) and the KIM-GS Protocol where a door's weight falls in the 1,500 to 3,500 lb band, and doors above the band scoped from their own facts. Three routes carry this dataset: the file https://theflatratemovers.com/datasets-vault-security.json, the API inventory at /v1/datasets, and the landing page https://theflatratemovers.com/datasets/vault-security/.",
+      "keywords": [
+        "UL 608",
+        "GSA Class 5-V",
+        "AA-D-600D",
+        "FF-L-2740B",
+        "UL 768",
+        "vault door standards"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-vault-door"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-11-04",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json",
+          "sha256": "c67a1acf409c3c7f2153ed10679aff15da324ab58666794c98f02192c443488a"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json",
+          "sha256": "09e324c2b2a109608650529cdbc762c403bbf4a9756df26b218b9e178fcf74e1"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json",
+          "sha256": "9c26821c3958d4c6ed1c75ff6f2b70463bcdb40c7226937ff6df97f5395eefef"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json",
+          "sha256": "8c234c9c10b3b6b815e6c47af885cf44dba53b430b7407e943b48468eb49f70f"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/vault-doors/",
+      "provider": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://theflatratemovers.com/datasets/vault-security/#dataset-vault-security-standards",
+      "name": "Vault Door Standards Registry — UL 608, AA-D-600D, FF-L-2740B",
+      "description": "The verified standards registry for vault doors and high-security enclosures. UL 608 classes M, 1, 2, and 3 carry net working times of 15, 30, 60, and 120 minutes against one identical attack basis — common mechanical tools, electric tools, cutting torches, or any combination — and UL 608 section 1.3 excludes attack with the burning bar (thermal lance) or explosives from every class. GSA Class 5-V under AA-D-600D requires resistance to 20 man-hours of surreptitious entry, 30 man-minutes of covert entry, and 10 man-minutes of forced entry, with no ballistic requirement; Class 5-A drops the surreptitious requirement; Class 5-B adds ballistic resistance tested to SD-STD-01.01 Rev. G level 2, and the specification names no test round. Door lock requirements are recorded as their own fields, never blended into the door figures: Class 5-V and 5-B doors carry a lock meeting FF-L-2740 (Style H or K), while Class 5-A's lock is a UL 768 Group 1 lock. The registry also carries three corrective notes where widely published charts contradict the standards' own text. Every row carries the primary source it was verified against on 2026-11-02.",
+      "url": "https://theflatratemovers.com/datasets/vault-security/",
+      "sameAs": "https://theflatratemovers.com/datasets/vault-security/",
+      "identifier": "https://theflatratemovers.com/datasets/vault-security/",
+      "isAccessibleForFree": true,
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "foundingDate": "2010-06",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "foundingDate": "2010-06",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "@id": "https://theflatratemovers.com/datasets/#collection",
+        "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+        "url": "https://theflatratemovers.com/datasets/"
+      },
+      "spatialCoverage": [
+        {
+          "@type": "Place",
+          "@id": "https://theflatratemovers.com/#winchester",
+          "name": "The Flat Rate Movers — Winchester",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 39.18711576,
+            "longitude": -78.1668352
+          }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://theflatratemovers.com/#martinsburg",
+          "name": "Flat Rate Movers Martinsburg WV",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 39.48319665,
+            "longitude": -77.94760443
+          }
+        }
+      ],
+      "keywords": [
+        "UL 608 Class M",
+        "UL 608 Class 1",
+        "UL 608 Class 2",
+        "UL 608 Class 3",
+        "GSA Class 5-V",
+        "GSA Class 5-A",
+        "GSA Class 5-B",
+        "AA-D-600D",
+        "QPL-AA-D-600-12",
+        "vault door classes"
+      ],
+      "standardsRegistry": [
+        {
+          "system": "UL 608",
+          "standard": "UL 608, Edition 7 (Nov 30, 2004; ANSI reaffirmation Mar 7, 2022, no technical changes) — Burglary Resistant Vault Doors and Modular Panels",
+          "class": "Class M",
+          "governingBody": "UL (Underwriters Laboratories)",
+          "netWorkingTimeMinutes": 15,
+          "attackBasis": "Resists attack with common mechanical tools, electric tools, cutting torches, or any combination of these means (UL 608 section 1.2). The attack basis is identical for all four classes; net working time is the only class variable.",
+          "exclusions": "UL 608 section 1.3: these requirements do not cover attacks with the burning bar (thermal lance) or explosives. No UL 608 class is a rating against explosives or a thermal lance.",
+          "certificationRoute": "A UL 608 class is legitimate only for a product Certified by UL and bearing the UL Mark (certification category YUSR for vault doors, YUTZC for modular vault panels). 'Built to UL 608' without the UL Mark is a manufacturer self-declaration, not a listing.",
+          "source": "https://standards.globalspec.com/std/14542742/ul-608",
+          "additionalSources": [
+            "https://www.shopulstandards.com/ProductDetail.aspx?productId=UL608_7_S_20041130",
+            "https://www.ul.com/services/anti-theft-device-testing-and-certification"
+          ]
+        },
+        {
+          "system": "UL 608",
+          "standard": "UL 608, Edition 7 (Nov 30, 2004; ANSI reaffirmation Mar 7, 2022, no technical changes) — Burglary Resistant Vault Doors and Modular Panels",
+          "class": "Class 1",
+          "governingBody": "UL (Underwriters Laboratories)",
+          "netWorkingTimeMinutes": 30,
+          "attackBasis": "Resists attack with common mechanical tools, electric tools, cutting torches, or any combination of these means (UL 608 section 1.2). The attack basis is identical for all four classes; net working time is the only class variable.",
+          "exclusions": "UL 608 section 1.3: these requirements do not cover attacks with the burning bar (thermal lance) or explosives. No UL 608 class is a rating against explosives or a thermal lance.",
+          "certificationRoute": "A UL 608 class is legitimate only for a product Certified by UL and bearing the UL Mark (certification category YUSR for vault doors, YUTZC for modular vault panels). 'Built to UL 608' without the UL Mark is a manufacturer self-declaration, not a listing.",
+          "source": "https://standards.globalspec.com/std/14542742/ul-608",
+          "additionalSources": [
+            "https://www.shopulstandards.com/ProductDetail.aspx?productId=UL608_7_S_20041130",
+            "https://www.ul.com/services/anti-theft-device-testing-and-certification"
+          ]
+        },
+        {
+          "system": "UL 608",
+          "standard": "UL 608, Edition 7 (Nov 30, 2004; ANSI reaffirmation Mar 7, 2022, no technical changes) — Burglary Resistant Vault Doors and Modular Panels",
+          "class": "Class 2",
+          "governingBody": "UL (Underwriters Laboratories)",
+          "netWorkingTimeMinutes": 60,
+          "attackBasis": "Resists attack with common mechanical tools, electric tools, cutting torches, or any combination of these means (UL 608 section 1.2). The attack basis is identical for all four classes; net working time is the only class variable.",
+          "exclusions": "UL 608 section 1.3: these requirements do not cover attacks with the burning bar (thermal lance) or explosives. No UL 608 class is a rating against explosives or a thermal lance.",
+          "certificationRoute": "A UL 608 class is legitimate only for a product Certified by UL and bearing the UL Mark (certification category YUSR for vault doors, YUTZC for modular vault panels). 'Built to UL 608' without the UL Mark is a manufacturer self-declaration, not a listing.",
+          "source": "https://standards.globalspec.com/std/14542742/ul-608",
+          "additionalSources": [
+            "https://www.shopulstandards.com/ProductDetail.aspx?productId=UL608_7_S_20041130",
+            "https://www.ul.com/services/anti-theft-device-testing-and-certification"
+          ]
+        },
+        {
+          "system": "UL 608",
+          "standard": "UL 608, Edition 7 (Nov 30, 2004; ANSI reaffirmation Mar 7, 2022, no technical changes) — Burglary Resistant Vault Doors and Modular Panels",
+          "class": "Class 3",
+          "governingBody": "UL (Underwriters Laboratories)",
+          "netWorkingTimeMinutes": 120,
+          "attackBasis": "Resists attack with common mechanical tools, electric tools, cutting torches, or any combination of these means (UL 608 section 1.2). The attack basis is identical for all four classes; net working time is the only class variable.",
+          "exclusions": "UL 608 section 1.3: these requirements do not cover attacks with the burning bar (thermal lance) or explosives. No UL 608 class is a rating against explosives or a thermal lance.",
+          "certificationRoute": "A UL 608 class is legitimate only for a product Certified by UL and bearing the UL Mark (certification category YUSR for vault doors, YUTZC for modular vault panels). 'Built to UL 608' without the UL Mark is a manufacturer self-declaration, not a listing.",
+          "source": "https://standards.globalspec.com/std/14542742/ul-608",
+          "additionalSources": [
+            "https://www.shopulstandards.com/ProductDetail.aspx?productId=UL608_7_S_20041130",
+            "https://www.ul.com/services/anti-theft-device-testing-and-certification"
+          ]
+        },
+        {
+          "system": "AA-D-600D",
+          "standard": "AA-D-600D — Door, Vault, Security (federal specification, May 15, 2000)",
+          "class": "Class 5-V",
+          "governingBody": "GSA (General Services Administration)",
+          "surreptitiousEntryManHours": 20,
+          "covertEntryManMinutes": 30,
+          "forcedEntryManMinutes": 10,
+          "ballistic": "none specified",
+          "lockRequirement": "Lock meeting FF-L-2740, Style H (hand-change) or Style K (key-change) — AA-D-600D section 3.4.1",
+          "qpl": "QPL-AA-D-600-12",
+          "status": "Active — Revision D, Amendment 4 (document date 05-JAN-2010); preparing activity GSA (FAS)",
+          "source": "https://govtribe.com/file/government-file/encl-5-fed-spec-aa-d-600d-vault-doors-dot-pdf",
+          "additionalSources": [
+            "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=49651",
+            "https://exwc.navfac.navy.mil/DoD-Lock-Program/Security-Hardware/GSA-Approved-Vault-Doors/Vault-Door-Order-Info/"
+          ],
+          "qplRevision": "QPL-AA-D-600-12, Revision 12 (April 1, 2026), superseding QPL-AA-D-600-11 (December 18, 2024); six manufacturers listed (Brown Safe Manufacturing, Hamilton Products Group, International Vault, Overly Door Co., Mosler, Diebold) — retrieved and read in full at the V1 execution re-verification, 2026-11-04"
+        },
+        {
+          "system": "AA-D-600D",
+          "standard": "AA-D-600D — Door, Vault, Security (federal specification, May 15, 2000)",
+          "class": "Class 5-A",
+          "governingBody": "GSA (General Services Administration)",
+          "covertEntryManMinutes": 30,
+          "forcedEntryManMinutes": 10,
+          "ballistic": "none specified",
+          "lockRequirement": "UL-listed Group 1 combination lock under UL 768 — AA-D-600D section 3.4.2",
+          "qpl": "QPL-AA-D-600-12",
+          "status": "Active — Revision D, Amendment 4 (document date 05-JAN-2010); preparing activity GSA (FAS)",
+          "source": "https://govtribe.com/file/government-file/encl-5-fed-spec-aa-d-600d-vault-doors-dot-pdf",
+          "additionalSources": [
+            "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=49651",
+            "https://exwc.navfac.navy.mil/DoD-Lock-Program/Security-Hardware/GSA-Approved-Vault-Doors/Vault-Door-Order-Info/"
+          ],
+          "qplRevision": "QPL-AA-D-600-12, Revision 12 (April 1, 2026), superseding QPL-AA-D-600-11 (December 18, 2024); six manufacturers listed (Brown Safe Manufacturing, Hamilton Products Group, International Vault, Overly Door Co., Mosler, Diebold) — retrieved and read in full at the V1 execution re-verification, 2026-11-04"
+        },
+        {
+          "system": "AA-D-600D",
+          "standard": "AA-D-600D — Door, Vault, Security (federal specification, May 15, 2000)",
+          "class": "Class 5-B",
+          "governingBody": "GSA (General Services Administration)",
+          "surreptitiousEntryManHours": 20,
+          "covertEntryManMinutes": 30,
+          "forcedEntryManMinutes": 10,
+          "ballistic": "Ballistic resistance tested to U.S. Department of State SD-STD-01.01 Rev. G level 2 small arms ballistic protection testing (AA-D-600D section 4.4.8.3). AA-D-600D names no test round or calibre.",
+          "lockRequirement": "Lock meeting FF-L-2740, Style H (hand-change) or Style K (key-change) — AA-D-600D section 3.4.1",
+          "qpl": "QPL-AA-D-600-12",
+          "status": "Active — Revision D, Amendment 4 (document date 05-JAN-2010); preparing activity GSA (FAS)",
+          "source": "https://govtribe.com/file/government-file/encl-5-fed-spec-aa-d-600d-vault-doors-dot-pdf",
+          "additionalSources": [
+            "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=49651",
+            "https://exwc.navfac.navy.mil/DoD-Lock-Program/Security-Hardware/GSA-Approved-Vault-Doors/Vault-Door-Order-Info/"
+          ],
+          "qplRevision": "QPL-AA-D-600-12, Revision 12 (April 1, 2026), superseding QPL-AA-D-600-11 (December 18, 2024); six manufacturers listed (Brown Safe Manufacturing, Hamilton Products Group, International Vault, Overly Door Co., Mosler, Diebold) — retrieved and read in full at the V1 execution re-verification, 2026-11-04"
+        },
+        {
+          "system": "FF-L-2740B",
+          "standard": "FF-L-2740B — Locks, Combination, Electromechanical (federal specification, Jun 15, 2011)",
+          "governingBody": "GSA (General Services Administration)",
+          "status": "Active — Revision B, Amendment 2 (21-AUG-2018)",
+          "qpl": "QPL-FF-L-2740-10",
+          "manipulationResistanceManHours": 20,
+          "radiologicalAnalysisManHours": 20,
+          "emanationsAnalysisManHours": 20,
+          "covertEntryManMinutes": 30,
+          "requirementSource": "FF-L-2740B section 3.7 (3.7.2.1 manipulation, 3.7.2.2 radiological analysis, 3.7.2.3 emanations, 3.7.3 covert entry)",
+          "limitedUse": "FF-L-2740B section 1.1.1: these locks are sold only to the Federal Government, specifically authorised Government contractors, or others specifically authorised or required by the Government. They are not retail products.",
+          "ul768Relationship": "FF-L-2740B section 3.3.1: the lock conforms to the applicable sections of ANSI/UL 768, evidenced by a certificate from a recognized U.S. testing facility. The B revision states no UL 768 group requirement. (History: the original FF-L-2740 of 1989 required conformance to UL 768 Group 1R.)",
+          "source": "http://ftp.sargentandgreenleaf.com/2740B/pdf/2740_Federal_Spec_FF-L-2740B.pdf",
+          "additionalSources": [
+            "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=69846",
+            "https://exwc.navfac.navy.mil/DoD-Lock-Program/Security-Hardware/Combination-Locks/"
+          ]
+        }
+      ],
+      "correctiveNotes": [
+        {
+          "id": "CN-1",
+          "subject": "UL 608 to UL 687 equivalence charts",
+          "commonlyPublishedClaim": "Charts circulating online map UL 608 vault-door classes onto UL 687 safe classes and credit the higher UL 608 classes with explosive resistance.",
+          "correction": "UL 608 (vault doors and modular panels) and UL 687 (burglary-resistant safes) are separate standards with separate class systems, and neither standard's published scope states an equivalence between them. UL 608 section 1.3 states that its requirements do not cover attacks with the burning bar (thermal lance) or explosives, so no UL 608 class carries explosive resistance. This registry records the non-equivalence; it does not reproduce the chart mappings, because UL publishes none.",
+          "basis": "UL 608 sections 1.1-1.3 (Scope)",
+          "source": "https://standards.globalspec.com/std/14542742/ul-608"
+        },
+        {
+          "id": "CN-2",
+          "subject": "Class 5-V described as ballistic-rated",
+          "commonlyPublishedClaim": "GSA Class 5-V vault doors are described in sales copy as bulletproof or ballistic-rated, sometimes with a named test round.",
+          "correction": "AA-D-600D assigns Class 5-V no ballistic requirement. Ballistic resistance belongs to Class 5-B alone, tested to SD-STD-01.01 Rev. G level 2, and the specification names no test round or calibre — any published round for Class 5-B goes beyond the specification's text.",
+          "basis": "AA-D-600D sections 1.2.1 and 4.4.8.3",
+          "source": "https://govtribe.com/file/government-file/encl-5-fed-spec-aa-d-600d-vault-doors-dot-pdf"
+        },
+        {
+          "id": "CN-3",
+          "subject": "An hour figure attached to UL 768 Group 2",
+          "commonlyPublishedClaim": "Lock references attach a manipulation-resistance hour figure to UL 768 Group 2 locks.",
+          "correction": "UL 768 states no hour figure for Group 2; it requires a moderate degree of resistance to unauthorized opening. The hour figures UL 768 carries are Group 1 and Group 1R (20 working hours) and Group 2M (2 working hours). Any hour figure attached to Group 2 is invented.",
+          "basis": "UL 768 group definitions (Scope and group requirements)",
+          "source": "https://datasheets.globalspec.com/ds/uls/ul-768/af811c5c-da61-4c34-b3e6-552e2bf0d2dd",
+          "additionalSources": [
+            "https://www.manualslib.com/manual/2017386/Stanley-Sargent-And-Greenleaf-6730.html?page=7",
+            "https://www.kcolefas.com/en/insights/safe-lock",
+            "https://www.lockwiki.com/index.php?title=UL_768"
+          ]
+        }
+      ],
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-vault-security.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json",
+          "sha256": "c67a1acf409c3c7f2153ed10679aff15da324ab58666794c98f02192c443488a"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json",
+          "sha256": "09e324c2b2a109608650529cdbc762c403bbf4a9756df26b218b9e178fcf74e1"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json",
+          "sha256": "9c26821c3958d4c6ed1c75ff6f2b70463bcdb40c7226937ff6df97f5395eefef"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json",
+          "sha256": "8c234c9c10b3b6b815e6c47af885cf44dba53b430b7407e943b48468eb49f70f"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://theflatratemovers.com/datasets/vault-security/#dataset-vault-security-locking",
+      "name": "Vault Locking Systems — UL 768 Groups, FF-L-2740B, UL 887 Timelocks",
+      "description": "The locking-systems table for vault doors, in the standards' own vocabulary. UL 768 combination lock groups: Group 1 resists expert manipulation for 20 working hours; Group 1R adds 20 working hours of radiological (X-ray) resistance; Group 2M resists for 2 working hours; Group 2 requires a moderate degree of resistance and carries no hour figure in UL 768 — any number attached to Group 2 is invented. UL 768 section 1.3 does not cover electronic locks. FF-L-2740B is the federal specification for electromechanical combination locks — 20 man-hours each against manipulation, radiological analysis, and emanations analysis, and 30 man-minutes against covert entry — sold only to the Federal Government and authorised contractors; it is a federal specification, not a UL 768 group. Delayed-action timelocks sit under UL 887, not UL 768: automatic timelocks carry a factory-set delay of at least 5 minutes, and manual timelocks are user-set with delays of 120 hours or more.",
+      "url": "https://theflatratemovers.com/datasets/vault-security/",
+      "sameAs": "https://theflatratemovers.com/datasets/vault-security/",
+      "identifier": "https://theflatratemovers.com/datasets/vault-security/",
+      "isAccessibleForFree": true,
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "foundingDate": "2010-06",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "foundingDate": "2010-06",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "@id": "https://theflatratemovers.com/datasets/#collection",
+        "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+        "url": "https://theflatratemovers.com/datasets/"
+      },
+      "spatialCoverage": [
+        {
+          "@type": "Place",
+          "@id": "https://theflatratemovers.com/#winchester",
+          "name": "The Flat Rate Movers — Winchester",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 39.18711576,
+            "longitude": -78.1668352
+          }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://theflatratemovers.com/#martinsburg",
+          "name": "Flat Rate Movers Martinsburg WV",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 39.48319665,
+            "longitude": -77.94760443
+          }
+        }
+      ],
+      "keywords": [
+        "UL 768 Group 1",
+        "UL 768 Group 1R",
+        "UL 768 Group 2M",
+        "UL 768 Group 2",
+        "FF-L-2740B locks",
+        "UL 887 timelocks",
+        "vault door locks"
+      ],
+      "lockingSystemsScopeNote": "UL 768 (Eighth Edition, Active; ANSI reaffirmation Aug 22, 2023) covers combination locks for doors of safes, chests, and vaults. Section 1.3: these requirements do not cover electronic locks.",
+      "lockingSystems": [
+        {
+          "system": "UL 768",
+          "rating": "Group 1",
+          "manipulationHours": 20,
+          "note": "20 working hours resistance to expert/professional manipulation.",
+          "source": "https://datasheets.globalspec.com/ds/uls/ul-768/af811c5c-da61-4c34-b3e6-552e2bf0d2dd",
+          "additionalSources": [
+            "https://www.manualslib.com/manual/2017386/Stanley-Sargent-And-Greenleaf-6730.html?page=7",
+            "https://www.kcolefas.com/en/insights/safe-lock"
+          ]
+        },
+        {
+          "system": "UL 768",
+          "rating": "Group 1R",
+          "manipulationHours": 20,
+          "radiologicalHours": 20,
+          "note": "Group 1, plus 20 working hours resistance to radiological attack (X-ray imaging).",
+          "source": "https://datasheets.globalspec.com/ds/uls/ul-768/af811c5c-da61-4c34-b3e6-552e2bf0d2dd",
+          "additionalSources": [
+            "https://www.manualslib.com/manual/2017386/Stanley-Sargent-And-Greenleaf-6730.html?page=7",
+            "https://www.kcolefas.com/en/insights/safe-lock"
+          ]
+        },
+        {
+          "system": "UL 768",
+          "rating": "Group 2M",
+          "manipulationHours": 2,
+          "note": "2 working hours manipulation resistance.",
+          "source": "https://datasheets.globalspec.com/ds/uls/ul-768/af811c5c-da61-4c34-b3e6-552e2bf0d2dd",
+          "additionalSources": [
+            "https://www.manualslib.com/manual/2017386/Stanley-Sargent-And-Greenleaf-6730.html?page=7",
+            "https://www.kcolefas.com/en/insights/safe-lock"
+          ]
+        },
+        {
+          "system": "UL 768",
+          "rating": "Group 2",
+          "manipulationHours": null,
+          "note": "A moderate degree of resistance to unauthorized opening. UL 768 states no hour figure for Group 2; none is published here and none may be back-filled.",
+          "source": "https://datasheets.globalspec.com/ds/uls/ul-768/af811c5c-da61-4c34-b3e6-552e2bf0d2dd",
+          "additionalSources": [
+            "https://www.manualslib.com/manual/2017386/Stanley-Sargent-And-Greenleaf-6730.html?page=7",
+            "https://www.kcolefas.com/en/insights/safe-lock"
+          ]
+        },
+        {
+          "system": "FF-L-2740B",
+          "rating": "Federal lock specification — not a UL 768 group",
+          "manipulationManHours": 20,
+          "radiologicalAnalysisManHours": 20,
+          "emanationsAnalysisManHours": 20,
+          "covertEntryManMinutes": 30,
+          "note": "Electromechanical combination locks for GSA-approved security containers and vault doors (FF-L-2740B section 3.7). Limited use (section 1.1.1): sold only to the Federal Government and authorised contractors — never a retail product. Conforms to the applicable sections of UL 768 (section 3.3.1); the B revision states no UL 768 group requirement.",
+          "source": "http://ftp.sargentandgreenleaf.com/2740B/pdf/2740_Federal_Spec_FF-L-2740B.pdf",
+          "additionalSources": [
+            "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=69846",
+            "https://exwc.navfac.navy.mil/DoD-Lock-Program/Security-Hardware/Combination-Locks/"
+          ]
+        },
+        {
+          "system": "UL 887",
+          "rating": "Delayed-action timelocks (time locks)",
+          "automaticDelay": "Factory-set, minimum 5-minute delay",
+          "manualDelay": "User-set, delays of 120 hours or more",
+          "note": "Time locks are covered by UL 887 (Delayed-Action Timelocks, Edition 8, Active), not by UL 768.",
+          "source": "https://www.shopulstandards.com/ProductDetail.aspx?UniqueKey=18485",
+          "additionalSources": [
+            "https://www.osha.gov/nationally-recognized-testing-laboratory-program/list-standards"
+          ]
+        }
+      ],
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-vault-security.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json",
+          "sha256": "c67a1acf409c3c7f2153ed10679aff15da324ab58666794c98f02192c443488a"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json",
+          "sha256": "09e324c2b2a109608650529cdbc762c403bbf4a9756df26b218b9e178fcf74e1"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json",
+          "sha256": "9c26821c3958d4c6ed1c75ff6f2b70463bcdb40c7226937ff6df97f5395eefef"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json",
+          "sha256": "8c234c9c10b3b6b815e6c47af885cf44dba53b430b7407e943b48468eb49f70f"
+        }
+      ]
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-vault-security-method",
+      "@type": "Article",
+      "name": "How the Registry Is Verified",
+      "description": "Method for the vault security standards registry. The registry is maintained from primary sources only: the specification texts of AA-D-600D and FF-L-2740B read in full, the ASSIST QuickSearch records for both specifications, UL's own standard and certification pages, and the standards' Scope text as published by standards distributors; UL 768 group hour figures are corroborated by the lock manufacturer's own published glossary and two independent summaries, because the standard itself is paywalled. A figure enters the registry only when it traces to one of those sources, and each row carries its source URL. Door requirements and lock requirements are kept in separate fields by construction, because the most common error in this space is blending a lock figure into a door rating. Claims that circulate without a primary source are excluded by name in the boundaries node rather than silently dropped: UL 608 to UL 687 equivalence mappings, any hour figure for UL 768 Group 2, any ballistic test round for Class 5-B, and per-class tool lists inside UL 608. A weekly standards-watch observes the ASSIST records, ISOO notices, UL revision summaries, and the two QPL listings; the watch queues changes and never edits data — a changed standard enters this registry only through a sealed batch that re-runs the sourcing for that item.",
+      "keywords": [
+        "standards verification",
+        "primary sources",
+        "vault door standards"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-vault-door"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-11-04",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json",
+          "sha256": "c67a1acf409c3c7f2153ed10679aff15da324ab58666794c98f02192c443488a"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json",
+          "sha256": "09e324c2b2a109608650529cdbc762c403bbf4a9756df26b218b9e178fcf74e1"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json",
+          "sha256": "9c26821c3958d4c6ed1c75ff6f2b70463bcdb40c7226937ff6df97f5395eefef"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json",
+          "sha256": "8c234c9c10b3b6b815e6c47af885cf44dba53b430b7407e943b48468eb49f70f"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/vault-doors/",
+      "headline": "How the Registry Is Verified",
+      "author": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-vault-security-sources",
+      "@type": "Article",
+      "name": "Standards Sources",
+      "description": "Primary sources for every figure in the vault security standards registry, verified 2026-11-02.",
+      "keywords": [
+        "UL 608 source",
+        "AA-D-600D source",
+        "FF-L-2740B source",
+        "UL 768 source",
+        "UL 887 source"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-vault-door"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-11-04",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json",
+          "sha256": "c67a1acf409c3c7f2153ed10679aff15da324ab58666794c98f02192c443488a"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json",
+          "sha256": "09e324c2b2a109608650529cdbc762c403bbf4a9756df26b218b9e178fcf74e1"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json",
+          "sha256": "9c26821c3958d4c6ed1c75ff6f2b70463bcdb40c7226937ff6df97f5395eefef"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json",
+          "sha256": "8c234c9c10b3b6b815e6c47af885cf44dba53b430b7407e943b48468eb49f70f"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/datasets/vault-security/",
+      "headline": "Standards Sources",
+      "author": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "sources": [
+        {
+          "standard": "UL 608 — Scope (sections 1.1-1.3: classes, net working times, attack basis, burning bar and explosives exclusion)",
+          "url": "https://standards.globalspec.com/std/14542742/ul-608"
+        },
+        {
+          "standard": "UL 608, Edition 7 — UL Standards store record (edition and status)",
+          "url": "https://www.shopulstandards.com/ProductDetail.aspx?productId=UL608_7_S_20041130"
+        },
+        {
+          "standard": "UL anti-theft device testing and certification (UL Mark and certification categories YUSR / YUTZC)",
+          "url": "https://www.ul.com/services/anti-theft-device-testing-and-certification"
+        },
+        {
+          "standard": "AA-D-600D — specification text (sections 1.2.1, 3.4.1, 3.4.2, 3.7.1, 3.13.3, 4.4.8.3, 6.5.2)",
+          "url": "https://govtribe.com/file/government-file/encl-5-fed-spec-aa-d-600d-vault-doors-dot-pdf"
+        },
+        {
+          "standard": "AA-D-600D — ASSIST QuickSearch record (Revision D, Amendment 4, Active, QPL-AA-D-600-12)",
+          "url": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=49651"
+        },
+        {
+          "standard": "GSA Global Supply — types of security containers (AA-D-600 programme listing, Class 5 only)",
+          "url": "https://www.gsa.gov/buy-through-us/purchasing-programs/requisition-programs/gsa-global-supply/national-stock-numbers/security-containers/types-of-security-containers"
+        },
+        {
+          "standard": "DoD Lock Program (NAVFAC) — GSA-approved vault door order information (Class 5-V gloss)",
+          "url": "https://exwc.navfac.navy.mil/DoD-Lock-Program/Security-Hardware/GSA-Approved-Vault-Doors/Vault-Door-Order-Info/"
+        },
+        {
+          "standard": "AA-F-363D — security filing cabinets (the shared Class 5 protection level across the GSA spec family)",
+          "url": "https://mbausa.com/content/downloadfiles/Federal_Specifications/AA-F-363D.pdf"
+        },
+        {
+          "standard": "FF-L-2740B — specification text (sections 1.1.1, 3.3.1, 3.7)",
+          "url": "http://ftp.sargentandgreenleaf.com/2740B/pdf/2740_Federal_Spec_FF-L-2740B.pdf"
+        },
+        {
+          "standard": "FF-L-2740B — ASSIST QuickSearch record (Revision B, Amendment 2, Active, QPL-FF-L-2740-10)",
+          "url": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=69846"
+        },
+        {
+          "standard": "DoD Lock Program (NAVFAC) — combination locks (FF-L-2740B locks on GSA containers and vault doors since Feb 15, 2015)",
+          "url": "https://exwc.navfac.navy.mil/DoD-Lock-Program/Security-Hardware/Combination-Locks/"
+        },
+        {
+          "standard": "UL 768, Eighth Edition — UL Standards store record (edition and status)",
+          "url": "https://www.shopulstandards.com/ProductDetail.aspx?UniqueKey=34369"
+        },
+        {
+          "standard": "UL 768 — Scope text (sections 1.1-1.3; electronic locks not covered)",
+          "url": "https://datasheets.globalspec.com/ds/uls/ul-768/af811c5c-da61-4c34-b3e6-552e2bf0d2dd"
+        },
+        {
+          "standard": "UL 768 group definitions — Sargent & Greenleaf glossary, manufacturer of record for UL 768 locks",
+          "url": "https://www.manualslib.com/manual/2017386/Stanley-Sargent-And-Greenleaf-6730.html?page=7"
+        },
+        {
+          "standard": "UL 768 group summary — Kcolefas",
+          "url": "https://www.kcolefas.com/en/insights/safe-lock"
+        },
+        {
+          "standard": "UL 768 test summary — Lockwiki",
+          "url": "https://www.lockwiki.com/index.php?title=UL_768"
+        },
+        {
+          "standard": "UL 887, Edition 8 — UL Standards store record (delayed-action timelocks)",
+          "url": "https://www.shopulstandards.com/ProductDetail.aspx?UniqueKey=18485"
+        },
+        {
+          "standard": "OSHA NRTL standards list (UL 887 listing)",
+          "url": "https://www.osha.gov/nationally-recognized-testing-laboratory-program/list-standards"
+        }
+      ]
+    },
+    {
+      "@id": "https://theflatratemovers.com/#dataset-vault-security-boundaries",
+      "@type": "Service",
+      "name": "Vault Security Scope Boundaries",
+      "description": "Scope boundaries for the vault security category, stated as data. The Flat Rate Movers relocates, delivers, and installs vault doors and high-security enclosures; vault installation is offered at any size. UL and GSA designations in this file are product standards: they describe doors and locks, never the company. The company holds no UL listing, no GSA approval, and no seat on QPL-AA-D-600-12 or QPL-FF-L-2740-10, and no surface of this category states or implies otherwise. The company provides no locksmith or combination services — combination changes, lock opening, and lock replacement are locksmith and manufacturer work. Vault and safe contents are emptied by the customer before any move. FF-L-2740B locks are sold only to the Federal Government and authorised contractors and are never presented as retail products. Not published in this file, by name: UL 608 to UL 687 equivalence mappings; any manipulation-hour figure for UL 768 Group 2; any ballistic test round or calibre for AA-D-600D Class 5-B; per-class tool differentiation inside UL 608; and any door-model specification that has not passed the verification protocol of the companion dataset, datasets-vault-doors.json.",
+      "keywords": [
+        "vault door moving scope",
+        "no locksmith services",
+        "product standards"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-vault-door"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@id": "https://theflatratemovers.com/#winchester"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#martinsburg"
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-11-04",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+          "encodingFormat": "application/json",
+          "sha256": "c67a1acf409c3c7f2153ed10679aff15da324ab58666794c98f02192c443488a"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+          "encodingFormat": "application/json",
+          "sha256": "09e324c2b2a109608650529cdbc762c403bbf4a9756df26b218b9e178fcf74e1"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+          "encodingFormat": "application/ld+json",
+          "sha256": "9c26821c3958d4c6ed1c75ff6f2b70463bcdb40c7226937ff6df97f5395eefef"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+          "encodingFormat": "application/ld+json",
+          "sha256": "8c234c9c10b3b6b815e6c47af885cf44dba53b430b7407e943b48468eb49f70f"
+        }
+      ],
+      "sameAs": "https://theflatratemovers.com/vault-doors/",
+      "provider": {
+        "@id": "https://theflatratemovers.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization"
+      }
+    }
+  ]
+}

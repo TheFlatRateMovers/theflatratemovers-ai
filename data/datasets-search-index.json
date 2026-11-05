@@ -73,7 +73,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/llms-full.txt",
           "encodingFormat": "text/plain",
-          "sha256": "3108e2a40d0174e1ce677f0244d5b588318971795b34835d44ec5ffbd7f46d17"
+          "sha256": "24d3f5840b2c97847d1c885430ee2182417e4171ab6c98da0698c543f1a09221"
         },
         {
           "@type": "DataDownload",
@@ -85,13 +85,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "e54395b3d70ea0526768638a5a37ec58f6ee97b372c30ceda518f8e1f7c48887"
+          "sha256": "33e409367c10e8f8329a919878b9fc7fe9361cb4971da5b05e3ec96d6e4d1333"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "bc0deeeca6605078a5554e78a06ab52c0edba5211a7637fe3c95b89f4ebdc5dc"
+          "sha256": "3bc10f5c07abaec4582edaab16dc1f6fc516a5bd1399d8edde2ec13c9ce8e651"
         }
       ],
       "sameAs": "https://theflatratemovers.com/datasets/search-index/",
@@ -386,7 +386,7 @@
       "@id": "https://theflatratemovers.com/#dataset-search-index-clusters",
       "@type": "Dataset",
       "name": "Query Clusters",
-      "description": "The demand side: 4189 query clusters grouping all 5588 intent-rubric rows by service, intent class, geo scope and target URL. Each cluster carries its canonical query (the shortest variant, the cluster’s representative phrasing), every variant phrasing, the rubric row ids it groups, and a money weight: the sampled money clusters carry the owner’s priority classes from the research dossier (P1 B2B and freight money plus the defended gun-safe #1, P2 the Winchester head terms, P3 the Martinsburg defense and category hubs); generated clusters carry \"standard\", meaning not separately owner-ordered. Cluster derivation is mechanical — no cluster is hand-written, and an observation-defined cluster whose text matches no rubric row carries an empty rubricRowRefs list rather than invented refs.",
+      "description": "The demand side: 4189 query clusters grouping all 5613 intent-rubric rows by service, intent class, geo scope and target URL. Each cluster carries its canonical query (the shortest variant, the cluster’s representative phrasing), every variant phrasing, the rubric row ids it groups, and a money weight: the sampled money clusters carry the owner’s priority classes from the research dossier (P1 B2B and freight money plus the defended gun-safe #1, P2 the Winchester head terms, P3 the Martinsburg defense and category hubs); generated clusters carry \"standard\", meaning not separately owner-ordered. Cluster derivation is mechanical — no cluster is hand-written, and an observation-defined cluster whose text matches no rubric row carries an empty rubricRowRefs list rather than invented refs.",
       "keywords": [
         "search index",
         "query clusters",
@@ -68168,11 +68168,16 @@
         },
         {
           "clusterId": "cluster-white-glove-ai-question-pattern-family-datasets-white-glove",
-          "canonicalQuery": "what is full value protection for a furniture delivery",
+          "canonicalQuery": "can you book threshold delivery by itself",
           "variants": [
+            "can you book threshold delivery by itself",
             "difference between threshold room of choice and white glove delivery",
+            "does white glove delivery include appliance hookups",
             "how are high value items protected during delivery valuation",
-            "what is full value protection for a furniture delivery"
+            "how does carrier terminal pickup work for furniture delivery",
+            "what is a receiving inspection report for delivered furniture",
+            "what is full value protection for a furniture delivery",
+            "what is three stage photo documentation for delivery"
           ],
           "intentClass": "ai-question",
           "serviceId": "service-white-glove",
@@ -68180,9 +68185,14 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/white-glove/",
           "rubricRowRefs": [
-            5581,
-            5584,
-            5586
+            5599,
+            5600,
+            5602,
+            5604,
+            5605,
+            5608,
+            5609,
+            5610
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68192,9 +68202,11 @@
           "variants": [
             "do white glove movers take the packaging away",
             "does white glove delivery include assembly",
+            "how long has the flat rate movers been in business",
             "what does white glove delivery include",
             "what should I ask before hiring white glove delivery",
-            "white glove delivery how it works appointment window"
+            "white glove delivery how it works appointment window",
+            "who delivers high value items for manufacturers and brands"
           ],
           "intentClass": "ai-question",
           "serviceId": "service-white-glove",
@@ -68202,11 +68214,13 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5582,
-            5583,
-            5585,
-            5587,
-            5588
+            5601,
+            5603,
+            5606,
+            5607,
+            5611,
+            5612,
+            5613
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68223,8 +68237,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5575,
-            5578
+            5593,
+            5596
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68241,8 +68255,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5577,
-            5580
+            5595,
+            5598
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68259,8 +68273,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5576,
-            5579
+            5594,
+            5597
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68277,8 +68291,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-cost-guide-winchester-va/",
           "rubricRowRefs": [
-            5566,
-            5567
+            5581,
+            5582
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68286,9 +68300,15 @@
           "clusterId": "cluster-white-glove-cost-pattern-family-white-glove-delivery",
           "canonicalQuery": "flat rate white glove delivery",
           "variants": [
+            "appliance haul away cost with delivery",
+            "final mile delivery pricing per job",
+            "flat rate final mile delivery quote",
             "flat rate white glove delivery",
             "how much does white glove delivery cost",
-            "is white glove delivery worth it for furniture"
+            "is white glove delivery worth it for furniture",
+            "receiving inspection and storage for designers cost",
+            "white glove delivery rates for retailers and brands",
+            "white glove furniture assembly service cost"
           ],
           "intentClass": "cost",
           "serviceId": "service-white-glove",
@@ -68296,9 +68316,15 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5560,
-            5561,
-            5565
+            5572,
+            5573,
+            5574,
+            5575,
+            5576,
+            5580,
+            5583,
+            5587,
+            5588
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68315,8 +68341,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5562,
-            5568
+            5577,
+            5584
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68333,8 +68359,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5564,
-            5570
+            5579,
+            5586
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68351,8 +68377,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5563,
-            5569
+            5578,
+            5585
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68368,7 +68394,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5571
+            5589
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68384,7 +68410,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5572
+            5590
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68400,7 +68426,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5574
+            5592
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68416,7 +68442,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5573
+            5591
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68432,7 +68458,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5489
+            5498
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68448,7 +68474,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5497
+            5506
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68464,7 +68490,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5501
+            5510
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68480,7 +68506,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5502
+            5511
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68496,7 +68522,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5508
+            5517
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68512,7 +68538,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5510
+            5519
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68528,7 +68554,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5516
+            5525
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68544,7 +68570,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5519
+            5528
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68560,7 +68586,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5527
+            5536
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68576,7 +68602,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5534
+            5543
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68592,7 +68618,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5544
+            5553
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68608,7 +68634,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5546
+            5555
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68642,7 +68668,7 @@
           "targetUrl": "https://theflatratemovers.com/all-pages/",
           "rubricRowRefs": [
             5422,
-            5428
+            5429
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68658,7 +68684,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/areas-served/",
           "rubricRowRefs": [
-            5427
+            5428
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68675,8 +68701,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/henry-pitts-jr/",
           "rubricRowRefs": [
-            5453,
-            5454
+            5458,
+            5459
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68692,7 +68718,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/author/ratemoversgmail-com/",
           "rubricRowRefs": [
-            5442
+            5446
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68708,7 +68734,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/blog/",
           "rubricRowRefs": [
-            5443
+            5447
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68725,8 +68751,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/commercial-freight-handling-white-glove-final-mile-services/",
           "rubricRowRefs": [
-            5431,
-            5432
+            5433,
+            5434
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68743,8 +68769,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/curbside-vs-inside-vs-white-glove-delivery/",
           "rubricRowRefs": [
-            5435,
-            5436
+            5437,
+            5438
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68760,7 +68786,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/",
           "rubricRowRefs": [
-            5475
+            5482
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68795,8 +68821,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/archive-registry/",
           "rubricRowRefs": [
-            5425,
-            5426
+            5426,
+            5427
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68813,8 +68839,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/catalog-registry/",
           "rubricRowRefs": [
-            5429,
-            5430
+            5431,
+            5432
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68831,8 +68857,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/crawl-presence/",
           "rubricRowRefs": [
-            5433,
-            5434
+            5435,
+            5436
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68849,8 +68875,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/intent-coverage/",
           "rubricRowRefs": [
-            5455,
-            5481
+            5461,
+            5490
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68867,8 +68893,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/local-graph-registry/",
           "rubricRowRefs": [
-            5461,
-            5462
+            5468,
+            5469
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68885,8 +68911,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/page-data-pool/",
           "rubricRowRefs": [
-            5472,
-            5473
+            5479,
+            5480
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68902,7 +68928,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/quote-tool/",
           "rubricRowRefs": [
-            5477
+            5484
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68919,8 +68945,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/search-index/",
           "rubricRowRefs": [
-            5479,
-            5480
+            5488,
+            5489
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68937,8 +68963,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/datasets/white-glove/",
           "rubricRowRefs": [
-            5486,
-            5558
+            5495,
+            5570
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68954,7 +68980,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/developer/",
           "rubricRowRefs": [
-            5438
+            5441
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68970,7 +68996,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-event-protocol/",
           "rubricRowRefs": [
-            5464
+            5471
           ],
           "clusterSource": "rubric-derived"
         },
@@ -68986,7 +69012,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/docs/logistics-ontology/",
           "rubricRowRefs": [
-            5465
+            5472
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69002,7 +69028,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entities/",
           "rubricRowRefs": [
-            5444
+            5448
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69018,7 +69044,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/entity-authority-layer/",
           "rubricRowRefs": [
-            5439
+            5442
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69034,7 +69060,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/faq/",
           "rubricRowRefs": [
-            5445
+            5449
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69050,7 +69076,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/find-us/",
           "rubricRowRefs": [
-            5440
+            5444
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69067,8 +69093,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-guarantee/",
           "rubricRowRefs": [
-            5441,
-            5451
+            5445,
+            5455
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69085,8 +69111,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/flat-rate-moving-quote-winchester/",
           "rubricRowRefs": [
-            5449,
-            5450
+            5453,
+            5454
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69102,7 +69128,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/",
           "rubricRowRefs": [
-            5446
+            5450
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69118,7 +69144,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-entities/",
           "rubricRowRefs": [
-            5456
+            5462
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69134,7 +69160,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-equipment/",
           "rubricRowRefs": [
-            5457
+            5463
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69150,7 +69176,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-events/",
           "rubricRowRefs": [
-            5458
+            5464
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69166,7 +69192,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-locations/",
           "rubricRowRefs": [
-            5459
+            5465
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69182,7 +69208,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/knowledge-services/",
           "rubricRowRefs": [
-            5460
+            5466
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69198,7 +69224,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/logistics-data-engineering-center/",
           "rubricRowRefs": [
-            5463
+            5470
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69215,8 +69241,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "rubricRowRefs": [
-            5466,
-            5467
+            5473,
+            5474
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69232,7 +69258,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-company-winchester-va/",
           "rubricRowRefs": [
-            5468
+            5475
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69249,8 +69275,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/moving-questions-answers/",
           "rubricRowRefs": [
-            5469,
-            5470
+            5476,
+            5477
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69266,7 +69292,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/online-estimate/",
           "rubricRowRefs": [
-            5471
+            5478
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69282,7 +69308,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/privacy-policy/",
           "rubricRowRefs": [
-            5474
+            5481
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69298,7 +69324,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/quote/",
           "rubricRowRefs": [
-            5452
+            5457
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69315,8 +69341,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/quote-tool/",
           "rubricRowRefs": [
-            5476,
-            5485
+            5483,
+            5494
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69332,7 +69358,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/recursive-indexing-layer/",
           "rubricRowRefs": [
-            5478
+            5486
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69349,8 +69375,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/service-areas-moving-company/",
           "rubricRowRefs": [
-            5482,
-            5483
+            5491,
+            5492
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69366,7 +69392,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/services/",
           "rubricRowRefs": [
-            5447
+            5451
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69382,7 +69408,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/sitemap/",
           "rubricRowRefs": [
-            5448
+            5452
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69398,7 +69424,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/the-flat-rate-logistics-data-hub/",
           "rubricRowRefs": [
-            5484
+            5493
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69406,11 +69432,23 @@
           "clusterId": "cluster-white-glove-navigational-local-pattern-family-white-glove-delivery",
           "canonicalQuery": "white glove delivery",
           "variants": [
+            "appliance delivery with hookup and haul away",
+            "carrier terminal pickup and delivery service",
+            "delivery service that assembles the furniture",
             "designer furniture receiving and delivery virginia",
+            "final mile delivery partner near me",
+            "furniture brand delivery service virginia",
+            "high value furniture delivery service",
+            "last mile delivery company shenandoah valley",
+            "receiving and delivery service for interior designers",
+            "safe delivery and placement service",
             "white glove delivery",
+            "white glove delivery for big box retailers",
             "white glove delivery near me",
+            "white glove delivery partner for manufacturers",
             "white glove delivery service",
-            "white glove furniture delivery near me"
+            "white glove furniture delivery near me",
+            "white glove shipping partner for brands"
           ],
           "intentClass": "navigational-local",
           "serviceId": "service-white-glove",
@@ -69418,11 +69456,23 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5437,
+            5425,
+            5430,
+            5439,
+            5440,
+            5443,
+            5456,
+            5460,
+            5467,
+            5485,
             5487,
-            5552,
-            5553,
-            5556
+            5496,
+            5561,
+            5562,
+            5563,
+            5564,
+            5567,
+            5568
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69439,8 +69489,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-step-by-step/",
           "rubricRowRefs": [
-            5554,
-            5559
+            5565,
+            5571
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69457,8 +69507,8 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5555,
-            5557
+            5566,
+            5569
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69474,7 +69524,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5488
+            5497
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69490,7 +69540,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5490
+            5499
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69506,7 +69556,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5491
+            5500
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69522,7 +69572,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5492
+            5501
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69538,7 +69588,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5493
+            5502
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69554,7 +69604,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5494
+            5503
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69570,7 +69620,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5495
+            5504
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69586,7 +69636,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5496
+            5505
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69602,7 +69652,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5498
+            5507
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69618,7 +69668,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5499
+            5508
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69634,7 +69684,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5500
+            5509
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69650,7 +69700,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5503
+            5512
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69666,7 +69716,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5504
+            5513
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69682,7 +69732,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5505
+            5514
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69698,7 +69748,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5506
+            5515
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69714,7 +69764,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5507
+            5516
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69730,7 +69780,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5509
+            5518
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69746,7 +69796,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5511
+            5520
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69762,7 +69812,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5512
+            5521
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69778,7 +69828,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5513
+            5522
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69794,7 +69844,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5514
+            5523
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69810,7 +69860,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5515
+            5524
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69826,7 +69876,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5517
+            5526
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69842,7 +69892,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5518
+            5527
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69858,7 +69908,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5520
+            5529
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69874,7 +69924,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5521
+            5530
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69890,7 +69940,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5522
+            5531
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69906,7 +69956,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5523
+            5532
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69922,7 +69972,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5524
+            5533
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69938,7 +69988,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5525
+            5534
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69954,7 +70004,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5526
+            5535
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69970,7 +70020,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5528
+            5537
           ],
           "clusterSource": "rubric-derived"
         },
@@ -69986,7 +70036,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5529
+            5538
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70002,7 +70052,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5530
+            5539
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70018,7 +70068,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5531
+            5540
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70034,7 +70084,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5532
+            5541
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70050,7 +70100,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5533
+            5542
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70066,7 +70116,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5535
+            5544
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70082,7 +70132,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5536
+            5545
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70098,7 +70148,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5537
+            5546
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70114,7 +70164,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5538
+            5547
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70130,7 +70180,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5539
+            5548
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70146,7 +70196,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5540
+            5549
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70162,7 +70212,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5541
+            5550
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70178,7 +70228,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5542
+            5551
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70194,7 +70244,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5543
+            5552
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70210,7 +70260,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5545
+            5554
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70226,7 +70276,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5547
+            5556
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70242,7 +70292,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5548
+            5557
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70258,7 +70308,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5549
+            5558
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70274,7 +70324,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery-winchester-va/",
           "rubricRowRefs": [
-            5550
+            5559
           ],
           "clusterSource": "rubric-derived"
         },
@@ -70290,7 +70340,7 @@
           "moneyWeight": "standard",
           "targetUrl": "https://theflatratemovers.com/white-glove-delivery/",
           "rubricRowRefs": [
-            5551
+            5560
           ],
           "clusterSource": "rubric-derived"
         }
@@ -72225,7 +72275,7 @@
           ],
           "lastmod": "2026-11-05",
           "perPageJson": "dataset-intent-coverage.json",
-          "sealedDigest": "a35a5a998b9e751b9a1eab60e8bc118854f41450594f3571a2289db8597f0bd8",
+          "sealedDigest": "81e4cc7917d5c969b09ca9a504eec5866f8ed47cc031331c5104cd7b2021cfef",
           "sealedByteSize": 9144,
           "indexation": {
             "state": "unobserved",
@@ -77606,7 +77656,7 @@
             "Place",
             "Service"
           ],
-          "wordCount": 3362,
+          "wordCount": 3563,
           "internalInlinks": 9,
           "topAnchorTexts": [
             "White-Glove Delivery",
@@ -79847,7 +79897,7 @@
       "@id": "https://theflatratemovers.com/#dataset-search-index-totals",
       "@type": "Dataset",
       "name": "Search Index Totals",
-      "description": "Totals for this generation of the search-index dataset, computed by the generator from the live estate: 4189 query clusters over 5588 rubric rows, 254 supply rows (one per registry page), 19 standing observations, 27 era-tagged window queries, 23 competitor asset records, 17 third-party records and 9 gap records. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on the operations node.",
+      "description": "Totals for this generation of the search-index dataset, computed by the generator from the live estate: 4189 query clusters over 5613 rubric rows, 254 supply rows (one per registry page), 19 standing observations, 27 era-tagged window queries, 23 competitor asset records, 17 third-party records and 9 gap records. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on the operations node.",
       "keywords": [
         "search index",
         "query clusters",
@@ -79932,7 +79982,7 @@
       "isAccessibleForFree": true,
       "totals": {
         "queryClusters": 4189,
-        "rubricRowsCovered": 5588,
+        "rubricRowsCovered": 5613,
         "clustersByIntentClass": {
           "ai-question": 72,
           "best-choice": 102,
@@ -79962,7 +80012,7 @@
       "sources": [
         {
           "name": "Intent rubric database",
-          "detail": "5588 rows; rows digest db0a3d8e94817f6c8df82d5e3cecf685bbeab3962f90e197cc5008ecc0c0bb05; generator build-intent-rubric.js (rubric v2)"
+          "detail": "5613 rows; rows digest 95e0941f5bbfdeabc054cc4e945be5327aa13190a29c878bedd17c0ee4a54541; generator build-intent-rubric.js (rubric v2)"
         },
         {
           "name": "Search Console performance export",

@@ -73,7 +73,7 @@
    "publisher": {
     "@id": "https://theflatratemovers.com/#organization"
    },
-   "serviceType": "White-glove delivery — room-of-choice placement, unpacking, light assembly, debris removal",
+   "serviceType": "White-glove delivery — receiving and inspection, storage hold, install-day delivery, room-of-choice placement, unpacking, full assembly, appliance hookups, haul-away, debris removal",
    "url": "https://theflatratemovers.com/white-glove-delivery/",
    "areaServed": [
     {
@@ -84,10 +84,13 @@
     }
    ],
    "serviceFacts": {
-    "pricingModel": "Every job is surveyed and priced at one flat rate in writing before work begins; the flat rate is the standard offer and the guarantee. The delivery level is part of the written scope. Hourly pricing is available when a client asks for it.",
+    "pricingModel": "Every job is surveyed and priced at one flat rate in writing before work begins — quoted per job; the flat rate is the standard offer and the guarantee. The delivery level is part of the written scope. Hourly pricing is available when a client asks for it.",
     "territory": "The full published footprint — all 71 areas in service-area.geojson; the white-glove capability covers every place feature (cities, counties, both branches) in the map.",
     "itemListing": "High-value pieces are listed individually with declared values before custody changes hands, on the federal extraordinary-value rule (items over $100 per pound must be listed on the shipping documents).",
-    "crewBasis": "Crew size is set by the piece and the path at the survey — weight, stairs, turns, doorways — on the NIOSH 51 lb load-constant arithmetic."
+    "crewBasis": "Crew size is set by the piece and the path at the survey — weight, stairs, turns, doorways — on the NIOSH 51 lb load-constant arithmetic. Stairs run any number of flights, up or down.",
+    "confirmedScope": "Receiving and holding in storage with a receiving inspection report; delivery on the install day; full assembly, including appliance hookups where the job includes appliances; haul-away of the replaced item; carrier-terminal pickup with damage noted on the carrier's ticket; three-stage photo documentation (arrival, unboxed, placed); packaging and pallet removal. Every delivery level — curbside, threshold, room of choice, white glove — is bookable on its own.",
+    "fulfillment": "The company's own crews inside the home territory; a vetted partner, coordinated by the company under the same written scope, when a job is outside it.",
+    "clientele": "Brands and manufacturers using the company as a local delivery arm, retailers and big-box stores, shippers and carriers, businesses, and homeowners through those accounts — high-dollar, heavy, or fragile pieces; every job is different."
    },
    "process": [
     {
@@ -96,34 +99,72 @@
      "text": "The job starts as an item list — each piece named, with dimensions, weight where known, and the rooms they are bound for. The path is surveyed with it: stairs, turns, doorways, floor surfaces. High-value pieces are listed individually, with declared values, the way the federal paperwork will want them."
     },
     {
-     "name": "Level chosen in writing",
+     "name": "Receiving, inspection, and hold (account freight)",
      "step": 2,
+     "text": "When a brand, retailer, or designer ships pieces ahead, the company receives them, inspects each piece on arrival, issues the receiving inspection report, photographs condition, and holds the pieces in storage until the install day. Freight damage is documented while the carrier can still answer for it."
+    },
+    {
+     "name": "Level chosen in writing",
+     "step": 3,
      "text": "The delivery level is chosen per job and written into the flat-rate quote before work begins: white glove in full, or a lower level where the piece honestly allows it. The quote states what the level includes, so the appointment holds no surprises."
     },
     {
      "name": "Appointment window",
-     "step": 3,
+     "step": 4,
      "text": "The delivery runs to a scheduled appointment window, arranged around the customer, the building, or the designer's install day — not an all-day wait at the curb."
     },
     {
      "name": "Protected carry-in",
-     "step": 4,
+     "step": 5,
      "text": "Floors and doorways on the path are protected before the first piece moves. Crew size follows the piece and the path from the survey — heavy or bulky pieces travel with two people, on the NIOSH arithmetic, never on hope."
     },
     {
      "name": "Room-of-choice placement",
-     "step": 5,
+     "step": 6,
      "text": "Each piece goes to the room the customer names and is positioned to the plan — the customer's, or the designer's instructions where a designer is running the install."
     },
     {
-     "name": "Unpack, light assembly, joint inspection",
-     "step": 6,
-     "text": "Pieces are unpacked in the room, light assembly from the maker's kit is completed, and each piece is inspected together with the customer. Condition is noted on the delivery record while both parties are looking at the item."
+     "name": "Unpack, full assembly, joint inspection",
+     "step": 7,
+     "text": "Pieces are unpacked in the room and fully assembled — the complete build the piece needs to stand and function, with appliance hookups completed where the job includes appliances. Each piece is inspected together with the customer, and condition is noted on the delivery record while both parties are looking at the item."
     },
     {
      "name": "Packaging out, sign-off",
-     "step": 7,
+     "step": 8,
      "text": "Every piece of packaging and debris leaves with the crew. The delivery record is signed against the item list, and the room is left finished — furniture standing, nothing to break down, nothing to haul."
+    }
+   ],
+   "completedJob": [
+    {
+     "@type": "Service",
+     "name": "White-glove fire safe delivery to a residence",
+     "description": "A fire safe is heavy, expensive, and easy to damage. This delivery followed the brand's three-stage photo rule, so the customer, the brand, and the carrier all held a record of the condition from arrival to final placement.",
+     "serviceType": "White-glove delivery",
+     "areaServed": "Haslet, TX",
+     "dateCompleted": "2025-12",
+     "customerType": "residential customer of a safe brand, delivered under the brand's white-glove order",
+     "itemHandled": "large residential fire safe",
+     "requirementsMet": [
+      "all boxing materials and pallets removed",
+      "battery keys and accessories removed and handed directly to the customer",
+      "photographs at three stages: arrival in packaging, after unboxing, in final location"
+     ]
+    },
+    {
+     "@type": "Service",
+     "name": "Carrier-terminal pickup and in-room placement of a solid-wood dining table",
+     "description": "A two-piece table weighing 540 lb arrived on a freight carrier, bound for a home with no dock and no forklift access. The pickup was documented at the terminal, the table crossed the state line, and it was set in the room it was bought for.",
+     "serviceType": "White-glove delivery",
+     "areaServed": "Martinsburg, WV",
+     "dateCompleted": "2026-05",
+     "customerType": "residential customer of a furniture brand, delivered under the brand's order",
+     "itemHandled": "solid-wood double-pedestal dining table, two crated pieces, 540 lb total",
+     "pickupOrigin": "freight carrier terminal, Greencastle PA",
+     "requirementsMet": [
+      "visible carton damage noted on the carrier's delivery ticket at pickup",
+      "photographs sent to the brand immediately",
+      "table delivered and placed in the customer's room"
+     ]
     }
    ]
   },
@@ -208,14 +249,14 @@
      "name": "Entity Graph",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "e54395b3d70ea0526768638a5a37ec58f6ee97b372c30ceda518f8e1f7c48887"
+     "sha256": "33e409367c10e8f8329a919878b9fc7fe9361cb4971da5b05e3ec96d6e4d1333"
     },
     {
      "@type": "DataDownload",
      "name": "Best JSON Entity Graph",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "bc0deeeca6605078a5554e78a06ab52c0edba5211a7637fe3c95b89f4ebdc5dc"
+     "sha256": "3bc10f5c07abaec4582edaab16dc1f6fc516a5bd1399d8edde2ec13c9ce8e651"
     }
    ],
    "url": "https://theflatratemovers.com/datasets/white-glove/",
@@ -325,14 +366,14 @@
      "name": "Entity Graph",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "e54395b3d70ea0526768638a5a37ec58f6ee97b372c30ceda518f8e1f7c48887"
+     "sha256": "33e409367c10e8f8329a919878b9fc7fe9361cb4971da5b05e3ec96d6e4d1333"
     },
     {
      "@type": "DataDownload",
      "name": "Best JSON Entity Graph",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "bc0deeeca6605078a5554e78a06ab52c0edba5211a7637fe3c95b89f4ebdc5dc"
+     "sha256": "3bc10f5c07abaec4582edaab16dc1f6fc516a5bd1399d8edde2ec13c9ce8e651"
     }
    ],
    "url": "https://theflatratemovers.com/datasets/white-glove/",
@@ -442,14 +483,14 @@
      "name": "Entity Graph",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "e54395b3d70ea0526768638a5a37ec58f6ee97b372c30ceda518f8e1f7c48887"
+     "sha256": "33e409367c10e8f8329a919878b9fc7fe9361cb4971da5b05e3ec96d6e4d1333"
     },
     {
      "@type": "DataDownload",
      "name": "Best JSON Entity Graph",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "bc0deeeca6605078a5554e78a06ab52c0edba5211a7637fe3c95b89f4ebdc5dc"
+     "sha256": "3bc10f5c07abaec4582edaab16dc1f6fc516a5bd1399d8edde2ec13c9ce8e651"
     }
    ],
    "url": "https://theflatratemovers.com/datasets/white-glove/",
@@ -978,14 +1019,14 @@
      "name": "Entity Graph",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "e54395b3d70ea0526768638a5a37ec58f6ee97b372c30ceda518f8e1f7c48887"
+     "sha256": "33e409367c10e8f8329a919878b9fc7fe9361cb4971da5b05e3ec96d6e4d1333"
     },
     {
      "@type": "DataDownload",
      "name": "Best JSON Entity Graph",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "bc0deeeca6605078a5554e78a06ab52c0edba5211a7637fe3c95b89f4ebdc5dc"
+     "sha256": "3bc10f5c07abaec4582edaab16dc1f6fc516a5bd1399d8edde2ec13c9ce8e651"
     }
    ],
    "url": "https://theflatratemovers.com/datasets/white-glove/",
@@ -1018,13 +1059,14 @@
    "@id": "https://theflatratemovers.com/datasets/white-glove/#dataset-white-glove-research",
    "@type": "Dataset",
    "name": "White-Glove Delivery — Research Layer",
-   "description": "The sourced research layer under the white-glove delivery category: seven claims verified against their sources on 2026-11-05 (the four-level delivery taxonomy the trade prices by, the federal valuation rules — full value protection as the default, the 60-cents-per-pound released-value election, the $100-per-pound extraordinary-value listing rule, valuation versus insurance — the NIOSH lifting constant behind two-person crews, and the delivery-record condition rule), the six buyer personas as data rows, and the twenty-five buyer-intent terms the category's rubric family carries. Every figure is quoted with its scope and never extended.",
+   "description": "The sourced research layer under the white-glove delivery category: thirteen claims — the four-level delivery taxonomy the trade prices by, the federal valuation rules (full value protection as the default, the 60-cents-per-pound released-value election, the $100-per-pound extraordinary-value listing rule, valuation versus insurance), the NIOSH lifting constant behind two-person crews, the delivery-record condition rule, and the company's owner-confirmed scope (receiving with inspection report and storage hold, install-day delivery, full assembly, appliance hookups, haul-away, carrier-terminal pickup, three-stage photo documentation, any stairs) — the ten buyer personas as data rows, and the fifty buyer-intent terms the category's rubric family carries. Every figure is quoted with its scope and never extended.",
    "keywords": [
     "white glove delivery",
     "room of choice",
     "full value protection",
     "delivery levels",
-    "last mile"
+    "last mile",
+    "receiving inspection"
    ],
    "about": {
     "@id": "https://theflatratemovers.com/#service-white-glove"
@@ -1118,20 +1160,20 @@
      "name": "Entity Graph",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "e54395b3d70ea0526768638a5a37ec58f6ee97b372c30ceda518f8e1f7c48887"
+     "sha256": "33e409367c10e8f8329a919878b9fc7fe9361cb4971da5b05e3ec96d6e4d1333"
     },
     {
      "@type": "DataDownload",
      "name": "Best JSON Entity Graph",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "bc0deeeca6605078a5554e78a06ab52c0edba5211a7637fe3c95b89f4ebdc5dc"
+     "sha256": "3bc10f5c07abaec4582edaab16dc1f6fc516a5bd1399d8edde2ec13c9ce8e651"
     }
    ],
    "researchClaims": [
     {
      "detail": "Threshold stops at the first dry covered spot inside; room of choice carries the boxed item to the named room and stops. The levels are priced differently because the work is different — the level is chosen and written into the quote before the truck rolls, never improvised at the door.",
-     "fact": "Last-mile delivery for large items runs in four named levels — curbside, threshold, room of choice, and white glove. White glove is the full level: the item is carried to the room the customer names, unpacked there, lightly assembled, inspected with the customer, and every piece of packaging and debris leaves with the crew.",
+     "fact": "Last-mile delivery for large items runs in four named levels — curbside, threshold, room of choice, and white glove. White glove is the full level: the item is carried to the room the customer names, unpacked there, assembled, inspected with the customer, and every piece of packaging and debris leaves with the crew.",
      "headline": "Four delivery levels, and white glove is the top one",
      "id": "L2-WG-01",
      "scope": "Industry service-level taxonomy for large-item delivery; the levels are domain definitions, quoted as the trade uses them.",
@@ -1202,15 +1244,87 @@
      }
     },
     {
-     "detail": "Naming the line in the quote is what separates a defined service from a slogan: the customer knows which pieces will be standing finished at the end of the appointment and which tasks belong to other trades, before anyone is on site.",
-     "fact": "Across the trade, white-glove assembly means the light assembly a furniture piece needs to stand and function — legs, sections, shelves, hardware from the maker's kit — performed in the room. It does not mean built-ins, anchoring into structure beyond the maker's instructions, or trades work such as plumbing and electrical hookups.",
-     "headline": "Assembly in white glove means light assembly — the line is part of the service definition",
+     "detail": "The trade definition is the floor, not the ceiling: a defined service names its assembly scope in the written quote. This company's scope — full assembly, hookups included where the job calls for them — was confirmed by the owner on 2026-11-05 and is stated here as company practice, superseding any lighter framing.",
+     "fact": "Across the trade, the baseline white-glove assembly promise is light assembly — legs, sections, shelves, hardware from the maker's kit. The Flat Rate Movers' confirmed scope goes further: full assembly of the delivered piece, and appliance hookups where the job includes appliances. The scope is written into the quote per job, so the customer knows which pieces stand finished at the end of the appointment.",
+     "headline": "Assembly scope is set per company, and this company's is full assembly",
      "id": "L2-WG-07",
-     "scope": "Industry scope definition for white-glove delivery services; company scope is set per job in the written quote.",
+     "scope": "Company scope confirmed by the owner 2026-11-05; the trade baseline is quoted from the delivery-industry reference.",
      "source": {
-      "publisher": "Secursus (delivery-industry reference)",
-      "title": "White Glove Delivery Service: What It Is, Cost & Insurance",
-      "url": "https://www.secursus.com/en-us/resource/article/white-glove-delivery/"
+      "publisher": "The Flat Rate Movers",
+      "title": "White-Glove Service Scope and Case Register — owner-confirmed 2026-11-05",
+      "url": "https://theflatratemovers.com/white-glove-delivery/"
+     }
+    },
+    {
+     "id": "L2-WG-08",
+     "headline": "Account freight is received, inspected, reported, and held in storage",
+     "fact": "Brands, retailers, and designers ship pieces ahead to The Flat Rate Movers, which receives them, inspects them on arrival, issues a receiving inspection report, and holds them in leased storage until the install day. The customer never meets a freight truck; the piece is in the room on the day it was promised.",
+     "detail": "Receiving is the half of white glove the customer never sees: the terminal or carrier handoff, the inspection while the carrier can still be charged for damage, and the hold. The inspection report is the document the account and the customer share — condition is a record, not a recollection.",
+     "scope": "Company practice confirmed by the owner 2026-11-05; storage terms are the company's standing storage terms (leased space, 30-day minimum, customer access).",
+     "source": {
+      "publisher": "The Flat Rate Movers",
+      "title": "White-Glove Service Scope and Case Register — owner-confirmed 2026-11-05",
+      "url": "https://theflatratemovers.com/white-glove-delivery/"
+     }
+    },
+    {
+     "id": "L2-WG-09",
+     "headline": "Delivery runs on the install day, not the freight calendar",
+     "fact": "White-glove delivery is scheduled to the install day — the day the designer, the account, or the homeowner needs the piece in the room — and the crew delivers, places, assembles, and finishes in that visit. Freight arrival and customer delivery are two separate events, and the storage hold between them is part of the service.",
+     "detail": "This is what separates a delivery arm from a freight handoff: the account's calendar governs. Pieces received early wait in storage; pieces received late are expedited; the install day does not move because a truck did.",
+     "scope": "Company practice confirmed by the owner 2026-11-05.",
+     "source": {
+      "publisher": "The Flat Rate Movers",
+      "title": "White-Glove Service Scope and Case Register — owner-confirmed 2026-11-05",
+      "url": "https://theflatratemovers.com/white-glove-delivery/"
+     }
+    },
+    {
+     "id": "L2-WG-10",
+     "headline": "The old item leaves with the crew — haul-away is part of the service",
+     "fact": "When a white-glove delivery replaces an existing piece — the old sofa, the old safe, the old appliance — the crew hauls the replaced item away in the same visit. The room ends with the new piece standing and the old one gone; no second truck, no curb pile.",
+     "detail": "Haul-away is the step doorstep delivery never takes: the replacement is only finished when what it replaced is out of the house. It is quoted per job with the delivery, in the same written scope.",
+     "scope": "Company practice confirmed by the owner 2026-11-05.",
+     "source": {
+      "publisher": "The Flat Rate Movers",
+      "title": "White-Glove Service Scope and Case Register — owner-confirmed 2026-11-05",
+      "url": "https://theflatratemovers.com/white-glove-delivery/"
+     }
+    },
+    {
+     "id": "L2-WG-11",
+     "headline": "Carrier-terminal pickup, with the damage noted on the carrier's own ticket",
+     "fact": "For freight that ends at a carrier terminal, the crew picks the piece up at the terminal, notes any visible carton damage on the carrier's delivery ticket before signing, and photographs the piece for the account immediately. Concealed damage found later traces back to that ticket notation.",
+     "detail": "The ticket notation is the claim: damage recorded at pickup, in the carrier's own paperwork, is what makes a later freight claim winnable. Sending the photos to the brand at pickup — not at delivery — starts the account's claim clock while the evidence is fresh.",
+     "scope": "Company practice confirmed by the owner 2026-11-05, and evidenced on the May 2026 dining-table case (case wg-002 in this store).",
+     "source": {
+      "publisher": "The Flat Rate Movers",
+      "title": "White-Glove Service Scope and Case Register — owner-confirmed 2026-11-05",
+      "url": "https://theflatratemovers.com/white-glove-delivery/"
+     }
+    },
+    {
+     "id": "L2-WG-12",
+     "headline": "Three-stage photo documentation: arrival, unboxed, placed",
+     "fact": "On account white-glove work, the piece is photographed at three stages — on arrival still in its packaging, after unboxing, and in its final location — and the photographs go to the account. The customer, the brand, and the carrier share one condition record from the same three moments.",
+     "detail": "The three stages are chosen because each closes a dispute: arrival closes 'it arrived damaged,' unboxed closes 'the damage was concealed,' placed closes 'the install was finished.' It is the documentation standard the safe-brand account required, and the company works to it.",
+     "scope": "Company practice confirmed by the owner 2026-11-05, and evidenced on the December 2025 fire-safe case (case wg-001 in this store).",
+     "source": {
+      "publisher": "The Flat Rate Movers",
+      "title": "White-Glove Service Scope and Case Register — owner-confirmed 2026-11-05",
+      "url": "https://theflatratemovers.com/white-glove-delivery/"
+     }
+    },
+    {
+     "id": "L2-WG-13",
+     "headline": "Any stairs, and a partner network beyond the home territory",
+     "fact": "White-glove delivery runs up and down any number of flights — stairs are surveyed and crewed, never a reason to stop at a door. Inside the home territory the company's own crews deliver; a job outside it is fulfilled by a vetted partner under the same written scope, coordinated by the company.",
+     "detail": "The fulfillment model is how a regional company serves national accounts: the brand's customer in the territory gets the company's own crew, and the brand's customer beyond it gets the same scope through the partner the company coordinates — one standard, stated once, in the quote.",
+     "scope": "Company practice confirmed by the owner 2026-11-05; the home territory is the published 71-area footprint.",
+     "source": {
+      "publisher": "The Flat Rate Movers",
+      "title": "White-Glove Service Scope and Case Register — owner-confirmed 2026-11-05",
+      "url": "https://theflatratemovers.com/white-glove-delivery/"
      }
     }
    ],
@@ -1250,6 +1364,30 @@
      "name": "Offices and clinics receiving statement pieces and equipment",
      "need": "Scheduled delivery inside the building's rules, placement and setup in the room, debris out the same visit so the space is usable immediately.",
      "situation": "A business receives the pieces its rooms are judged by — boardroom tables, reception furniture, sensitive equipment — during business hours, in an occupied building."
+    },
+    {
+     "id": "WG-P7",
+     "name": "Brand and manufacturer account leads (safes, furniture, high-value goods)",
+     "situation": "A brand sells heavy, high-dollar pieces nationally and needs a local delivery arm in each territory: receiving, inspection, storage hold, install-day delivery, full assembly, photo documentation back to the brand.",
+     "need": "One written scope the brand can promise its customers, account-level documentation (inspection report, three-stage photos), and repeat-order reliability — several orders in a single week handled the same way."
+    },
+    {
+     "id": "WG-P8",
+     "name": "Retail and big-box delivery operations",
+     "situation": "A store sells the piece but runs no two-person delivery crew; the customer's experience of the store ends at a doorstep unless a white-glove partner finishes it in the room.",
+     "need": "Room-of-choice and full white-glove levels bookable per order, haul-away of the replaced item, packaging out, and a delivery record the store can stand behind."
+    },
+    {
+     "id": "WG-P9",
+     "name": "Shippers and carriers needing a final-mile arm",
+     "situation": "Freight terminates at a regional carrier terminal with no dock or forklift at the destination; the last leg needs a crew that documents condition at pickup and finishes inside the home.",
+     "need": "Carrier-terminal pickup with damage noted on the carrier's ticket, photos at pickup, liftgate-capable final delivery, and in-room placement under the shipper's paperwork."
+    },
+    {
+     "id": "WG-P10",
+     "name": "Homeowners receiving high-value pieces through an account",
+     "situation": "The piece arrives because a brand, store, or shipper sent it — a fire safe, a solid-wood table — and the homeowner's part is only to open the door: everything else, from terminal pickup to the keys handed over, is handled.",
+     "need": "Accessories and keys handed directly to them, packaging and pallets gone, the piece standing in its final location, and their details kept out of the internet entirely."
     }
    ],
    "buyerIntentTerms": [
@@ -1377,6 +1515,131 @@
      "intentClass": "research",
      "target": "/datasets/white-glove/",
      "term": "white glove delivery how it works appointment window"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "white glove delivery partner for manufacturers"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "final mile delivery partner near me"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "furniture brand delivery service virginia"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "safe delivery and placement service"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "appliance delivery with hookup and haul away"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "delivery service that assembles the furniture"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "receiving and delivery service for interior designers"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "carrier terminal pickup and delivery service"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "white glove delivery for big box retailers"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "last mile delivery company shenandoah valley"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "white glove shipping partner for brands"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "high value furniture delivery service"
+    },
+    {
+     "intentClass": "cost",
+     "target": "/white-glove-delivery/",
+     "term": "white glove delivery rates for retailers and brands"
+    },
+    {
+     "intentClass": "cost",
+     "target": "/white-glove-delivery/",
+     "term": "final mile delivery pricing per job"
+    },
+    {
+     "intentClass": "cost",
+     "target": "/white-glove-delivery/",
+     "term": "appliance haul away cost with delivery"
+    },
+    {
+     "intentClass": "cost",
+     "target": "/white-glove-delivery/",
+     "term": "white glove furniture assembly service cost"
+    },
+    {
+     "intentClass": "cost",
+     "target": "/white-glove-delivery/",
+     "term": "receiving inspection and storage for designers cost"
+    },
+    {
+     "intentClass": "cost",
+     "target": "/white-glove-delivery/",
+     "term": "flat rate final mile delivery quote"
+    },
+    {
+     "intentClass": "research",
+     "target": "/datasets/white-glove/",
+     "term": "what is a receiving inspection report for delivered furniture"
+    },
+    {
+     "intentClass": "research",
+     "target": "/datasets/white-glove/",
+     "term": "does white glove delivery include appliance hookups"
+    },
+    {
+     "intentClass": "research",
+     "target": "/datasets/white-glove/",
+     "term": "can you book threshold delivery by itself"
+    },
+    {
+     "intentClass": "research",
+     "target": "/datasets/white-glove/",
+     "term": "how does carrier terminal pickup work for furniture delivery"
+    },
+    {
+     "intentClass": "research",
+     "target": "/datasets/white-glove/",
+     "term": "what is three stage photo documentation for delivery"
+    },
+    {
+     "intentClass": "research",
+     "target": "/white-glove-delivery/",
+     "term": "how long has the flat rate movers been in business"
+    },
+    {
+     "intentClass": "research",
+     "target": "/white-glove-delivery/",
+     "term": "who delivers high value items for manufacturers and brands"
     }
    ]
   },
@@ -1385,7 +1648,7 @@
    "@type": "Article",
    "name": "White-Glove Delivery — Primary Sources",
    "headline": "The sources under the white-glove delivery research layer",
-   "description": "Every factual claim in the research layer traces to one of these sources, read on 2026-11-05: FMCSA's own consumer-protection pages for the valuation rules, the NIOSH lifting-equation manual for crew ergonomics, and the delivery trade's published service-level definitions for the four-tier taxonomy.",
+   "description": "Every factual claim in the research layer traces to one of these sources: FMCSA's own consumer-protection pages for the valuation rules, the NIOSH lifting-equation manual for crew ergonomics, the delivery trade's published service-level definitions for the four-tier taxonomy, and the company's own owner-confirmed scope and case register (2026-11-05) for the practice claims and the two case records.",
    "keywords": [
     "primary sources",
     "fmcsa",
@@ -1459,14 +1722,14 @@
      "name": "Entity Graph",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "e54395b3d70ea0526768638a5a37ec58f6ee97b372c30ceda518f8e1f7c48887"
+     "sha256": "33e409367c10e8f8329a919878b9fc7fe9361cb4971da5b05e3ec96d6e4d1333"
     },
     {
      "@type": "DataDownload",
      "name": "Best JSON Entity Graph",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "bc0deeeca6605078a5554e78a06ab52c0edba5211a7637fe3c95b89f4ebdc5dc"
+     "sha256": "3bc10f5c07abaec4582edaab16dc1f6fc516a5bd1399d8edde2ec13c9ce8e651"
     }
    ],
    "sameAs": "https://theflatratemovers.com/datasets/white-glove/",
@@ -1498,6 +1761,11 @@
      "@type": "CreativeWork",
      "name": "Secursus — White Glove Delivery Service: What It Is, Cost & Insurance (scope and assembly definitions)",
      "url": "https://www.secursus.com/en-us/resource/article/white-glove-delivery/"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "The Flat Rate Movers — White-Glove Service Scope and Case Register, owner-confirmed 2026-11-05 (company practice claims; case records wg-001 and wg-002, city level)",
+     "url": "https://theflatratemovers.com/white-glove-delivery/"
     }
    ]
   },
@@ -1505,7 +1773,7 @@
    "@id": "https://theflatratemovers.com/datasets/white-glove/#dataset-white-glove-service-levels",
    "@type": "Service",
    "name": "White-Glove Delivery — The Four Delivery Levels",
-   "description": "The delivery-level taxonomy stated as data, because the level is the scope: curbside stops at the curb; threshold stops at the first dry covered spot inside; room of choice carries the boxed item to the named room and stops; white glove finishes the job in the room — placement, unpacking, light assembly from the maker's kit, joint inspection, and every piece of packaging out with the crew. The Flat Rate Movers' white-glove service is the fourth level, across the full 71-area footprint, priced at one flat rate in writing per job.",
+   "description": "The delivery-level taxonomy stated as data, because the level is the scope: curbside stops at the curb; threshold stops at the first dry covered spot inside; room of choice carries the boxed item to the named room and stops; white glove finishes the job in the room — placement, unpacking, full assembly, joint inspection, and every piece of packaging out with the crew. Every level is bookable on its own. The Flat Rate Movers' white-glove service is the fourth level, across the full 71-area footprint, priced at one flat rate in writing per job.",
    "keywords": [
     "curbside",
     "threshold",
@@ -1580,14 +1848,14 @@
      "name": "Entity Graph",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "e54395b3d70ea0526768638a5a37ec58f6ee97b372c30ceda518f8e1f7c48887"
+     "sha256": "33e409367c10e8f8329a919878b9fc7fe9361cb4971da5b05e3ec96d6e4d1333"
     },
     {
      "@type": "DataDownload",
      "name": "Best JSON Entity Graph",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "bc0deeeca6605078a5554e78a06ab52c0edba5211a7637fe3c95b89f4ebdc5dc"
+     "sha256": "3bc10f5c07abaec4582edaab16dc1f6fc516a5bd1399d8edde2ec13c9ce8e651"
     }
    ],
    "sameAs": "https://theflatratemovers.com/datasets/white-glove/",
@@ -1614,28 +1882,207 @@
      "debrisRemoval": false,
      "level": "Curbside",
      "stops": "At the curb or driveway",
-     "unpacking": false
+     "unpacking": false,
+     "bookableAlone": true
     },
     {
      "assembly": false,
      "debrisRemoval": false,
      "level": "Threshold",
      "stops": "Just inside the first door — the first dry covered spot",
-     "unpacking": false
+     "unpacking": false,
+     "bookableAlone": true
     },
     {
      "assembly": false,
      "debrisRemoval": false,
      "level": "Room of choice",
      "stops": "In the room the customer names, still boxed",
-     "unpacking": false
+     "unpacking": false,
+     "bookableAlone": true
     },
     {
-     "assembly": "light assembly from the maker's kit",
+     "assembly": "full assembly, including appliance hookups where the job includes appliances",
      "debrisRemoval": true,
      "level": "White glove",
      "stops": "Placed and set up in the room the customer names",
-     "unpacking": true
+     "unpacking": true,
+     "bookableAlone": true
+    }
+   ]
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/white-glove/#dataset-white-glove-trust-ledger",
+   "@type": "Dataset",
+   "name": "White-Glove Delivery — Trust Ledger",
+   "description": "The trust layer stated as data: a company founded in 2010 with 15+ years operating, serving clientele classes whose work is high-dollar and privacy-first — federal agencies, brands and manufacturers running the company as a local delivery arm, retailers and big-box stores, shippers and carriers, and homeowners. Its evidence is repeat-account work (multiple white-glove orders from a single brand account inside one week, December 2025), a written documentation standard (receiving inspection report, three-stage photographs, carrier-ticket damage notation, delivery record signed against the item list), the value classes actually handled, and this estate's own signed provenance — every claim here is a distribution in an Ed25519-signed index whose digests verify.",
+   "keywords": [
+    "trust ledger",
+    "clientele",
+    "documentation standard",
+    "signed provenance",
+    "repeat accounts"
+   ],
+   "about": {
+    "@id": "https://theflatratemovers.com/#service-white-glove"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2026",
+   "datePublished": "2026-11-02",
+   "dateModified": "2026-11-05",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://theflatratemovers.com/datasets/white-glove/",
+   "sameAs": "https://theflatratemovers.com/datasets/white-glove/",
+   "identifier": "https://theflatratemovers.com/datasets/white-glove/",
+   "isAccessibleForFree": true,
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-white-glove.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "AI Sitemap",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "e927d6da6c791a101953a80b4c3911b32f9ee47d8c7f8fa70fbf9bc72f9c8fa7"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Service Area GeoJSON",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/geo+json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Entity Graph",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "33e409367c10e8f8329a919878b9fc7fe9361cb4971da5b05e3ec96d6e4d1333"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Best JSON Entity Graph",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "3bc10f5c07abaec4582edaab16dc1f6fc516a5bd1399d8edde2ec13c9ce8e651"
+    }
+   ],
+   "trustLedger": {
+    "founded": 2010,
+    "yearsOperating": "15+",
+    "clienteleClasses": [
+     "federal agencies (named at organization level under the owner's authorization)",
+     "brands and manufacturers using the company as a local delivery arm",
+     "retailers and big-box stores",
+     "shippers and carriers",
+     "businesses",
+     "homeowners, including privacy-first clients whose work is never published"
+    ],
+    "repeatAccountEvidence": "Multiple white-glove orders from a single brand account inside one week (December 2025), each completed to the same written scope and documentation standard.",
+    "documentationStandard": [
+     "receiving inspection report on account freight",
+     "three-stage photo documentation (arrival, unboxed, placed)",
+     "carrier-ticket damage notation at terminal pickup",
+     "delivery record signed against the item list"
+    ],
+    "valueClassesHandled": [
+     "residential fire safes and gun safes to 3,500 lb on the company's own crews (SIR band)",
+     "work in the up-to-25,000-lb class through the contractors the company engages",
+     "solid-wood and stone furniture in crated pieces",
+     "high-value single pieces listed individually with declared values"
+    ],
+    "provenance": "Every claim in this dataset is a numbered distribution in the estate's signed index; the index is Ed25519-signed (kid theflatratemovers-2026-10-29-1) and each file's SHA-256 digest verifies against it.",
+    "reviewPosture": "The company's Google reviews are the real ones its customers chose to post — Winchester 5.0 across 2 reviews, Martinsburg 4.7 across 6 — carried at full weight. Nothing is purchased, solicited from privacy-first clients, or fabricated."
+   },
+   "completedJob": [
+    {
+     "@type": "Service",
+     "name": "White-glove fire safe delivery to a residence",
+     "description": "A fire safe is heavy, expensive, and easy to damage. This delivery followed the brand's three-stage photo rule, so the customer, the brand, and the carrier all held a record of the condition from arrival to final placement.",
+     "serviceType": "White-glove delivery",
+     "areaServed": "Haslet, TX",
+     "dateCompleted": "2025-12",
+     "customerType": "residential customer of a safe brand, delivered under the brand's white-glove order",
+     "itemHandled": "large residential fire safe",
+     "requirementsMet": [
+      "all boxing materials and pallets removed",
+      "battery keys and accessories removed and handed directly to the customer",
+      "photographs at three stages: arrival in packaging, after unboxing, in final location"
+     ]
+    },
+    {
+     "@type": "Service",
+     "name": "Carrier-terminal pickup and in-room placement of a solid-wood dining table",
+     "description": "A two-piece table weighing 540 lb arrived on a freight carrier, bound for a home with no dock and no forklift access. The pickup was documented at the terminal, the table crossed the state line, and it was set in the room it was bought for.",
+     "serviceType": "White-glove delivery",
+     "areaServed": "Martinsburg, WV",
+     "dateCompleted": "2026-05",
+     "customerType": "residential customer of a furniture brand, delivered under the brand's order",
+     "itemHandled": "solid-wood double-pedestal dining table, two crated pieces, 540 lb total",
+     "pickupOrigin": "freight carrier terminal, Greencastle PA",
+     "requirementsMet": [
+      "visible carton damage noted on the carrier's delivery ticket at pickup",
+      "photographs sent to the brand immediately",
+      "table delivered and placed in the customer's room"
+     ]
     }
    ]
   }

@@ -2,7 +2,7 @@
  "@context": "https://schema.org",
  "@graph": [
   {
-   "@id": "https://theflatratemovers.com/#dataset-white-glove-operations",
+   "@id": "https://theflatratemovers.com/datasets/white-glove/#dataset-white-glove-operations",
    "@type": "Service",
    "name": "The Flat Rate Movers — White-Glove Delivery Operations Dataset",
    "description": "White-glove delivery operations from The Flat Rate Movers — the top level of final-mile delivery, and the handling standard for high-value, fragile and heavy pieces, dispatched from Winchester, VA and Martinsburg, WV. Company scope (published): white-glove delivery means the item crosses the threshold — brought in on a planned route, set in its final position, packaging removed, and condition verified with the recipient before the crew leaves, never left at a curb. The work runs piece by piece, never bulk: each piece is assessed on its own — weight, fragile points, finish and value at risk — then protected to match: furniture and pieces travel fully covered in padded blankets and sealed with clear stretch wrap, and pieces that need more get a custom crate built around them. Antiques, art, pianos and instruments are the everyday work of this service. Behind the delivery sits the company's own final-mile chain — freight is received and counted on the warehouse floor, staged, deconsolidated or cross-docked, and reworked where needed, then delivered in by the crew that handled it, with no hand-off to an unknown last carrier. A high-value delivery of 1,500 to 3,500 lbs — a safe, a piano, medical equipment — is surveyed and floor-checked to L/360 under SIR Structural Integrity Relocation and the KIM-GS Protocol before it is scheduled. Every job is reviewed in full and quoted at one flat rate agreed in writing before dispatch; no rate schedule is published for this service. Guaranteed Flat Rate or Your Move is Free!",
@@ -72,10 +72,63 @@
    },
    "publisher": {
     "@id": "https://theflatratemovers.com/#organization"
-   }
+   },
+   "serviceType": "White-glove delivery — room-of-choice placement, unpacking, light assembly, debris removal",
+   "url": "https://theflatratemovers.com/white-glove-delivery/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/#place-winchester-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-martinsburg-wv"
+    }
+   ],
+   "serviceFacts": {
+    "pricingModel": "Every job is surveyed and priced at one flat rate in writing before work begins; the flat rate is the standard offer and the guarantee. The delivery level is part of the written scope. Hourly pricing is available when a client asks for it.",
+    "territory": "The full published footprint — all 71 areas in service-area.geojson; the white-glove capability covers every place feature (cities, counties, both branches) in the map.",
+    "itemListing": "High-value pieces are listed individually with declared values before custody changes hands, on the federal extraordinary-value rule (items over $100 per pound must be listed on the shipping documents).",
+    "crewBasis": "Crew size is set by the piece and the path at the survey — weight, stairs, turns, doorways — on the NIOSH 51 lb load-constant arithmetic."
+   },
+   "process": [
+    {
+     "name": "Item list and survey",
+     "step": 1,
+     "text": "The job starts as an item list — each piece named, with dimensions, weight where known, and the rooms they are bound for. The path is surveyed with it: stairs, turns, doorways, floor surfaces. High-value pieces are listed individually, with declared values, the way the federal paperwork will want them."
+    },
+    {
+     "name": "Level chosen in writing",
+     "step": 2,
+     "text": "The delivery level is chosen per job and written into the flat-rate quote before work begins: white glove in full, or a lower level where the piece honestly allows it. The quote states what the level includes, so the appointment holds no surprises."
+    },
+    {
+     "name": "Appointment window",
+     "step": 3,
+     "text": "The delivery runs to a scheduled appointment window, arranged around the customer, the building, or the designer's install day — not an all-day wait at the curb."
+    },
+    {
+     "name": "Protected carry-in",
+     "step": 4,
+     "text": "Floors and doorways on the path are protected before the first piece moves. Crew size follows the piece and the path from the survey — heavy or bulky pieces travel with two people, on the NIOSH arithmetic, never on hope."
+    },
+    {
+     "name": "Room-of-choice placement",
+     "step": 5,
+     "text": "Each piece goes to the room the customer names and is positioned to the plan — the customer's, or the designer's instructions where a designer is running the install."
+    },
+    {
+     "name": "Unpack, light assembly, joint inspection",
+     "step": 6,
+     "text": "Pieces are unpacked in the room, light assembly from the maker's kit is completed, and each piece is inspected together with the customer. Condition is noted on the delivery record while both parties are looking at the item."
+    },
+    {
+     "name": "Packaging out, sign-off",
+     "step": 7,
+     "text": "Every piece of packaging and debris leaves with the crew. The delivery record is signed against the item list, and the room is left finished — furniture standing, nothing to break down, nothing to haul."
+    }
+   ]
   },
   {
-   "@id": "https://theflatratemovers.com/#dataset-white-glove-process-chain",
+   "@id": "https://theflatratemovers.com/datasets/white-glove/#dataset-white-glove-process-chain",
    "@type": "Dataset",
    "name": "The Flat Rate Movers — White-Glove Delivery Process Chain Dataset",
    "description": "The process chain for a white-glove delivery, as published on the service's hub page. Step 1, name the pieces: the client names the pieces, and each piece is assessed on its own — weight, fragile points, finish and value at risk. Step 2, match the protection: padded blankets and clear stretch wrap as the standard, a custom crate built around the piece when it needs more; high-mass pieces are surveyed and floor-checked to L/360 under SIR Structural Integrity Relocation and the KIM-GS Protocol before they move. Step 3, receive and stage: freight arriving through the freight chain is unloaded on the warehouse floor, counted and inventoried as it crosses the dock, and staged for the delivery — deconsolidated or cross-docked where a shipment needs to split or change vehicles, and reworked where needed. Step 4, deliver in on a planned route: the item crosses the threshold — never left at a curb — to homes, offices, industrial sites and retail. Step 5, place: the item is set in its final position, where it belongs. Step 6, remove packaging: the delivered item's packaging is removed, so the recipient is not left with the wrap and the boxes. Step 7, verify: placement and condition are verified with the recipient before the crew leaves. Domain reference (the general delivered-in sequence, labeled as such): appointment scheduling with the recipient and a pre-delivery access check — doorways, stairs, elevators — belong to the same chain in the industry's general practice; the company's published chain above is the company's own, and its deliveries are arranged by appointment, set when the job is scoped and quoted.",
@@ -148,21 +201,21 @@
      "name": "Service Area GeoJSON",
      "contentUrl": "https://theflatratemovers.com/service-area.geojson",
      "encodingFormat": "application/geo+json",
-     "sha256": "f2a0dfbea23ad19ecaa38c71040844f6b92965017c368479e06d3c66edbd4b16"
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
     },
     {
      "@type": "DataDownload",
      "name": "Entity Graph",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "f0fe85a420e02c293bbbdff7ac64ede55ffa4ab3ba37cf8be8d43cef3ffac860"
+     "sha256": "714aad2c56794b99a007948849bb4cb873520170b74a03f72bf9487d89c14e0c"
     },
     {
      "@type": "DataDownload",
      "name": "Best JSON Entity Graph",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "cfbfbf2c5d4b54bfb54b76ca829cdee55c98c65a1d7d440b675205ed37200203"
+     "sha256": "ea524feea891f773685774153255320d73d9c4a31eee191324857c205b7cc82d"
     }
    ],
    "url": "https://theflatratemovers.com/datasets/white-glove/",
@@ -192,7 +245,7 @@
    }
   },
   {
-   "@id": "https://theflatratemovers.com/#dataset-white-glove-delivery-levels",
+   "@id": "https://theflatratemovers.com/datasets/white-glove/#dataset-white-glove-delivery-levels",
    "@type": "Dataset",
    "name": "The Flat Rate Movers — White-Glove Delivery Levels: Domain Reference Dataset",
    "description": "Domain reference — the delivery-level ladder the industry sells, labeled as domain vocabulary, and this company's published position on it. The level describes one thing: how far the crew carries the item. Curbside: the item is left at the curb or driveway. Threshold: the item is carried inside the first door, garage or lobby, no further. Room of choice: the item is carried to the room the recipient picks; unpacking is not included. Room of choice with packaging removal: placement in the room, and the packaging is taken away. White glove: room of choice plus unpacking, inspection with the recipient, and packaging and debris removal — brought in on a planned route, set in its final position, and condition verified with the recipient before the crew leaves. Some providers stack assembly or installation above white glove. The names are not standardized anywhere in the industry — no regulator defines them — so two quotes can both say white glove and deliver different rooms, different unpacking and different debris outcomes; the details confirmed in writing are worth more than the level named on a quote. The company's published position: The Flat Rate Movers publishes the top of the ladder as this service's standard — placed, unpacked and verified, never a curbside drop — and publishes no lower tier as this service's offer. Assembly and installation are named here as domain tier components only; they are not part of this company's published white-glove scope.",
@@ -265,21 +318,21 @@
      "name": "Service Area GeoJSON",
      "contentUrl": "https://theflatratemovers.com/service-area.geojson",
      "encodingFormat": "application/geo+json",
-     "sha256": "f2a0dfbea23ad19ecaa38c71040844f6b92965017c368479e06d3c66edbd4b16"
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
     },
     {
      "@type": "DataDownload",
      "name": "Entity Graph",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "f0fe85a420e02c293bbbdff7ac64ede55ffa4ab3ba37cf8be8d43cef3ffac860"
+     "sha256": "714aad2c56794b99a007948849bb4cb873520170b74a03f72bf9487d89c14e0c"
     },
     {
      "@type": "DataDownload",
      "name": "Best JSON Entity Graph",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "cfbfbf2c5d4b54bfb54b76ca829cdee55c98c65a1d7d440b675205ed37200203"
+     "sha256": "ea524feea891f773685774153255320d73d9c4a31eee191324857c205b7cc82d"
     }
    ],
    "url": "https://theflatratemovers.com/datasets/white-glove/",
@@ -309,7 +362,7 @@
    }
   },
   {
-   "@id": "https://theflatratemovers.com/#dataset-white-glove-settings",
+   "@id": "https://theflatratemovers.com/datasets/white-glove/#dataset-white-glove-settings",
    "@type": "Dataset",
    "name": "The Flat Rate Movers — White-Glove Delivery Settings and Piece Classes Dataset",
    "description": "Delivery settings and piece classes for white-glove delivery. Settings (published): homes and households; businesses and offices; industrial sites; retail — the combined freight page names all four as where its delivered-in freight lands, and the service's hub page publishes deliveries to homes as well as to offices, industrial sites and retail spaces, dispatched from the Winchester and Martinsburg branches. Piece classes (published): antiques, art, pianos and instruments — the everyday work of this service; high-value and fragile freight generally, including the furniture, appliances, electronics and medical equipment households receive by white-glove service; and heavy pieces of 1,500 to 3,500 lbs — the hub page's own examples are a safe, a piano and medical equipment — which are surveyed and floor-checked to L/360 under SIR Structural Integrity Relocation and the KIM-GS Protocol before the delivery is scheduled. Protection classes (published): the blanket-and-stretch-wrap standard — pieces travel fully covered in padded blankets and sealed with clear stretch wrap; a custom crate built around the piece when blankets and wrap are not enough; and ISPM 15 export packing on the same floor when the journey crosses a border. Each piece is assessed on its own — weight, fragile points, finish and value at risk — and the protection is matched to the piece.",
@@ -382,21 +435,21 @@
      "name": "Service Area GeoJSON",
      "contentUrl": "https://theflatratemovers.com/service-area.geojson",
      "encodingFormat": "application/geo+json",
-     "sha256": "f2a0dfbea23ad19ecaa38c71040844f6b92965017c368479e06d3c66edbd4b16"
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
     },
     {
      "@type": "DataDownload",
      "name": "Entity Graph",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "f0fe85a420e02c293bbbdff7ac64ede55ffa4ab3ba37cf8be8d43cef3ffac860"
+     "sha256": "714aad2c56794b99a007948849bb4cb873520170b74a03f72bf9487d89c14e0c"
     },
     {
      "@type": "DataDownload",
      "name": "Best JSON Entity Graph",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "cfbfbf2c5d4b54bfb54b76ca829cdee55c98c65a1d7d440b675205ed37200203"
+     "sha256": "ea524feea891f773685774153255320d73d9c4a31eee191324857c205b7cc82d"
     }
    ],
    "url": "https://theflatratemovers.com/datasets/white-glove/",
@@ -426,7 +479,7 @@
    }
   },
   {
-   "@id": "https://theflatratemovers.com/#dataset-white-glove-terms",
+   "@id": "https://theflatratemovers.com/datasets/white-glove/#dataset-white-glove-terms",
    "@type": "Article",
    "name": "The Flat Rate Movers — White-Glove Delivery Commercial Terms",
    "description": "Commercial terms for white-glove delivery — what is published, and what is not. Published: every white-glove job is reviewed in full — the pieces, the scope, the distance, the manpower and the equipment — and quoted at one flat rate, agreed in writing before dispatch; hourly pricing is available when a client asks for it; the company's guarantee stands behind the rate — Guaranteed Flat Rate or Your Move is Free! The quote path is Get My Flat Rate Quote — the Short (Quick Quote) form by default, the Detailed Project form one toggle away, with From, To and What's moving preserved between them — or phone +1-540-422-2153. Deliveries are arranged by appointment, set when the job is scoped and quoted. Not published, and therefore not claimed anywhere in this dataset: no per-delivery price, rate card or fee schedule for white-glove delivery; no fixed delivery-window length; no failed-delivery or redelivery terms. Assembly and installation are not part of the published scope of this service, and haul-away of old items is not published as part of the service — the published packaging practice covers the delivered item's own packaging only.",
@@ -494,7 +547,7 @@
    }
   },
   {
-   "@id": "https://theflatratemovers.com/#dataset-white-glove-personas",
+   "@id": "https://theflatratemovers.com/datasets/white-glove/#dataset-white-glove-personas",
    "@type": "Article",
    "name": "The Flat Rate Movers — White-Glove Delivery Buyer Personas and Trigger Events",
    "description": "Buyer personas and trigger events for white-glove delivery — roles and situations only; no named business, contract or partnership is claimed. Winchester and Eastern Panhandle clients receiving high-value, fragile or heavy items who need white-glove delivery, not a curbside drop; collectors, estates and high-value households receiving pieces that cannot be replaced; retailers and designers whose delivery promise includes placement in the room — pieces that must be placed, unpacked and inspected with the recipient, with the packaging taken away; households receiving a safe, a piano or medical equipment that must be placed and verified, not signed for at the driveway; retail and e-commerce operations whose big-and-bulky products cannot end at a curb. Trigger events: a purchase whose seller stops at the curb, so the item still has to cross the threshold, climb the stairs and land in its room; a high-value or fragile piece — an antique, art, a piano, an instrument — arriving by freight for a Valley or Panhandle address; a heavy delivery in the 1,500 to 3,500 lb band that needs the SIR survey and L/360 floor check before it is scheduled; a piece that needs more than padding, so a custom crate is built around it before it travels.",
@@ -562,7 +615,7 @@
    }
   },
   {
-   "@id": "https://theflatratemovers.com/#dataset-white-glove-compliance",
+   "@id": "https://theflatratemovers.com/datasets/white-glove/#dataset-white-glove-compliance",
    "@type": "Service",
    "name": "The Flat Rate Movers — White-Glove Delivery Boundaries Dataset",
    "description": "Boundaries for white-glove delivery — the lines this dataset holds. The service is published as the company's own operation end to end: freight is received, staged and delivered in by the crew that handled it, with no hand-off to an unknown last carrier; no carrier partnership, delivery-network membership or named retailer, carrier or 3PL relationship is claimed. Assembly and installation are not published as white-glove scope — industry descriptions list both among the things white-glove service may include, with scope varying by carrier and agreement, and this company's published answer is that they are settled at scoping if a delivery turns on either, not promised in advance. Haul-away of old items is not published as part of the service; the published packaging removal covers the delivered item's own packaging. No curbside or threshold-only tier is published as this service's offer — the published standard starts across the threshold. No national or coast-to-coast coverage is claimed: white-glove delivery is offered from the two branches across the full published 53-place footprint in service-area.geojson. Nothing in this file states a price, a rate, a delivery-window length, or a failed-delivery term. Heavy deliveries of 1,500 to 3,500 lbs run under SIR Structural Integrity Relocation and the KIM-GS Protocol with an L/360 floor check — a handling discipline, not a certification claim.",
@@ -630,7 +683,7 @@
    }
   },
   {
-   "@id": "https://theflatratemovers.com/#dataset-white-glove-areas-quote",
+   "@id": "https://theflatratemovers.com/datasets/white-glove/#dataset-white-glove-areas-quote",
    "@type": "Dataset",
    "name": "The Flat Rate Movers — White-Glove Delivery Service Areas, Dispatch and Quote Dataset",
    "description": "Service areas, dispatch and quote path for white-glove delivery. White-glove delivery is offered from both branches across the company's full published footprint — all 53 places in service-area.geojson — with the branches kept distinct and never blended: Winchester, VA — The Flat Rate Movers, 116 W Piccadilly St Suite 11, Winchester, VA 22601 (geo 39.18711576, -78.1668352; hours Mon-Fri 8-6, Sat 8-4, Sun 9-4) serves 32 of the 53 places: Winchester, VA, Leesburg, VA, Marshall, VA, Sterling, VA, Stephens City, VA, Berryville, VA, Middleburg, VA, Middletown, VA, Moorefield, WV, Round Hill, VA, Stephenson, VA, Upperville, VA, Purcellville, VA, South Riding, VA, Front Royal, VA, Strasburg, VA, Woodstock, VA, Bristow, VA, Frederick County, Loudoun County, Clarke County, Warren County, Shenandoah County, Hardy County, Fauquier County, Port of Virginia, Virginia Inland Port, Shenandoah Valley, Eastern Panhandle of West Virginia, Interstate 81 Corridor, Interstate 66 Corridor, Interstate 70 Corridor. Martinsburg, WV — Flat Rate Movers Martinsburg WV, 736 Williamsport Pike Suite 2, Martinsburg, WV 25404 (geo 39.48319665, -77.94760443; hours Mon-Fri 9-6, Sat 9-4, Sun 9-4) serves 35 of the 53 places: Martinsburg, WV, Moorefield, WV, Inwood, WV, Hagerstown, MD, Hedgesville, WV, Paw Paw, WV, Shepherdstown, WV, Bunker Hill, WV, Charles Town, WV, Clear Spring, MD, Summit Point, WV, Harpers Ferry, WV, Kearneysville, WV, Front Royal, VA, Strasburg, VA, Woodstock, VA, Berkeley Springs, WV, Romney, WV, Frederick, MD, Hancock, MD, Berkeley County, Jefferson County, Morgan County, Warren County, Shenandoah County, Hampshire County, Hardy County, Washington County, Port of Virginia, Virginia Inland Port, Shenandoah Valley, Eastern Panhandle of West Virginia, Interstate 81 Corridor, Interstate 66 Corridor, Interstate 70 Corridor. 14 places are served by both branches — Moorefield 26836 among them. Dispatch runs across the Shenandoah Valley and the Eastern Panhandle along the I-81, I-66 and I-70 corridors, behind the Virginia Inland Port and Port of Virginia chain. The machine-readable areaServed list on this node enumerates all 53 places by their GeoJSON feature ids. Quote path (published): Get My Flat Rate Quote — the Short (Quick Quote) form by default, the Detailed Project form one toggle away, with From, To and What's moving preserved between them — or phone +1-540-422-2153 / email ratemovers@gmail.com; every job is reviewed in full and quoted at one flat rate in writing before dispatch. Founded June 2010. Guaranteed Flat Rate or Your Move is Free!",
@@ -827,8 +880,7 @@
     },
     {
      "@id": "https://theflatratemovers.com/#landmark-interstate-70-corridor"
-    }
-   ,
+    },
     {
      "@id": "https://theflatratemovers.com/#place-ashburn-va"
     },
@@ -882,7 +934,8 @@
     },
     {
      "@id": "https://theflatratemovers.com/#place-washington-dc"
-    }],
+    }
+   ],
    "temporalCoverage": "2010/2026",
    "dateModified": "2026-11-05",
    "creator": {
@@ -918,21 +971,21 @@
      "name": "Service Area GeoJSON",
      "contentUrl": "https://theflatratemovers.com/service-area.geojson",
      "encodingFormat": "application/geo+json",
-     "sha256": "f2a0dfbea23ad19ecaa38c71040844f6b92965017c368479e06d3c66edbd4b16"
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
     },
     {
      "@type": "DataDownload",
      "name": "Entity Graph",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "f0fe85a420e02c293bbbdff7ac64ede55ffa4ab3ba37cf8be8d43cef3ffac860"
+     "sha256": "714aad2c56794b99a007948849bb4cb873520170b74a03f72bf9487d89c14e0c"
     },
     {
      "@type": "DataDownload",
      "name": "Best JSON Entity Graph",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "cfbfbf2c5d4b54bfb54b76ca829cdee55c98c65a1d7d440b675205ed37200203"
+     "sha256": "ea524feea891f773685774153255320d73d9c4a31eee191324857c205b7cc82d"
     }
    ],
    "url": "https://theflatratemovers.com/datasets/white-glove/",
@@ -960,6 +1013,631 @@
     "name": "The Flat Rate Movers — AI Authority Estate Datasets",
     "url": "https://theflatratemovers.com/datasets/"
    }
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/white-glove/#dataset-white-glove-research",
+   "@type": "Dataset",
+   "name": "White-Glove Delivery — Research Layer",
+   "description": "The sourced research layer under the white-glove delivery category: seven claims verified against their sources on 2026-11-05 (the four-level delivery taxonomy the trade prices by, the federal valuation rules — full value protection as the default, the 60-cents-per-pound released-value election, the $100-per-pound extraordinary-value listing rule, valuation versus insurance — the NIOSH lifting constant behind two-person crews, and the delivery-record condition rule), the six buyer personas as data rows, and the twenty-five buyer-intent terms the category's rubric family carries. Every figure is quoted with its scope and never extended.",
+   "keywords": [
+    "white glove delivery",
+    "room of choice",
+    "full value protection",
+    "delivery levels",
+    "last mile"
+   ],
+   "about": {
+    "@id": "https://theflatratemovers.com/#service-white-glove"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2026",
+   "datePublished": "2026-11-02",
+   "dateModified": "2026-11-05",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://theflatratemovers.com/datasets/white-glove/",
+   "sameAs": "https://theflatratemovers.com/datasets/white-glove/",
+   "identifier": "https://theflatratemovers.com/datasets/white-glove/",
+   "isAccessibleForFree": true,
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-white-glove.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "AI Sitemap",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "e927d6da6c791a101953a80b4c3911b32f9ee47d8c7f8fa70fbf9bc72f9c8fa7"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Service Area GeoJSON",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/geo+json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Entity Graph",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "714aad2c56794b99a007948849bb4cb873520170b74a03f72bf9487d89c14e0c"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Best JSON Entity Graph",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "ea524feea891f773685774153255320d73d9c4a31eee191324857c205b7cc82d"
+    }
+   ],
+   "researchClaims": [
+    {
+     "detail": "Threshold stops at the first dry covered spot inside; room of choice carries the boxed item to the named room and stops. The levels are priced differently because the work is different — the level is chosen and written into the quote before the truck rolls, never improvised at the door.",
+     "fact": "Last-mile delivery for large items runs in four named levels — curbside, threshold, room of choice, and white glove. White glove is the full level: the item is carried to the room the customer names, unpacked there, lightly assembled, inspected with the customer, and every piece of packaging and debris leaves with the crew.",
+     "headline": "Four delivery levels, and white glove is the top one",
+     "id": "L2-WG-01",
+     "scope": "Industry service-level taxonomy for large-item delivery; the levels are domain definitions, quoted as the trade uses them.",
+     "source": {
+      "publisher": "Sohnne (delivery-industry reference)",
+      "title": "Doorstep vs Threshold vs Room of Choice vs White Glove Delivery",
+      "url": "https://sohnne.com/blog/furniture-delivery-types-explained/"
+     }
+    },
+    {
+     "detail": "The two levels are set by 49 CFR 375.701 (released value) and 375.703 (full value). For a high-value, low-weight piece — exactly the white-glove profile — the released-value formula returns almost nothing: the protection decision belongs in writing before the move, not after a claim.",
+     "fact": "Federal rules give interstate household-goods customers two liability levels. Full Value Protection is the default: if an article is lost, destroyed, or damaged in the mover's custody, the mover must repair it, replace it with one of like kind, or pay its current market replacement value. Released Value — 60 cents per pound per article — applies only when the customer signs a specific statement choosing it on the bill of lading.",
+     "headline": "On an interstate move, full value protection is the federal default",
+     "id": "L2-WG-02",
+     "scope": "Interstate household-goods moves under FMCSA jurisdiction; intrastate moves follow state law.",
+     "source": {
+      "publisher": "Federal Motor Carrier Safety Administration",
+      "title": "Before Requesting Services from Any Mover (Subpart B) — FMCSA Protect Your Move",
+      "url": "https://www.fmcsa.dot.gov/protect-your-move/how-to/subpartB"
+     }
+    },
+    {
+     "detail": "This is why a white-glove delivery starts with an item list, not a truck: the pieces that most need the careful service are the same pieces the paperwork must name individually, with their values, before custody changes hands.",
+     "fact": "Under the federal full-value rules, an article of extraordinary value is any item worth more than $100 per pound — jewelry, silverware, china, furs, antiques, and artwork are the FMCSA's own examples. A mover may limit its liability for such an article unless the customer specifically lists it on the shipping documents.",
+     "headline": "Items worth more than $100 per pound must be listed in writing",
+     "id": "L2-WG-03",
+     "scope": "Interstate household-goods moves; the $100-per-pound threshold and the listing rule are stated in 49 CFR 375.703(b) as FMCSA presents them.",
+     "source": {
+      "publisher": "Federal Motor Carrier Safety Administration",
+      "title": "Before Requesting Services from Any Mover (Subpart B) — FMCSA Protect Your Move",
+      "url": "https://www.fmcsa.dot.gov/protect-your-move/how-to/subpartB"
+     }
+    },
+    {
+     "detail": "The distinction decides who pays and how much after damage: a valuation claim runs against the carrier under the contract's liability level, while third-party insurance follows its own policy terms. Both can be in play on one delivery; they are never the same instrument.",
+     "fact": "Valuation is the tariff-based level of carrier liability written into the moving contract; it is not an insurance policy and is not governed by state insurance law. FMCSA's consumer booklet states it directly: valuation is simply a tariff-based level of motor carrier liability.",
+     "headline": "Valuation is not insurance — FMCSA says so in those words",
+     "id": "L2-WG-04",
+     "scope": "Federal framing for interstate household-goods carriage, quoted from FMCSA's own consumer guidance.",
+     "source": {
+      "publisher": "Federal Motor Carrier Safety Administration",
+      "title": "Frequently Asked Questions — FMCSA (liability and valuation)",
+      "url": "https://www.fmcsa.dot.gov/faq?keyword=&term_node_tid_depth=23066"
+     }
+    },
+    {
+     "detail": "White-glove work is built around this arithmetic: the crew size is set by the piece and the path — weight, stairs, turns, doorways — at the survey, so the delivery day runs the plan instead of discovering it. The same constant anchors the estate's local-moving research layer (L2-LOC-OPS-01).",
+     "fact": "NIOSH's lifting equation sets a load constant of 51 pounds under ideal conditions — the recommended weight limit is then reduced by posture, reach, frequency, and coupling multipliers. A piece above that constant, or bulky enough to wreck the multipliers, is a two-person carry as a matter of ergonomics, not preference.",
+     "headline": "The 51-pound constant is why heavy pieces move with two people",
+     "id": "L2-WG-05",
+     "scope": "Ergonomic design guidance for manual lifting tasks; the 51 lb load constant is the equation's ideal-conditions starting point.",
+     "source": {
+      "publisher": "National Institute for Occupational Safety and Health",
+      "title": "Applications Manual for the Revised NIOSH Lifting Equation (Publication No. 94-110)",
+      "url": "https://www.cdc.gov/niosh/docs/94-110/"
+     }
+    },
+    {
+     "detail": "A white-glove delivery builds that inspection into the service itself — the piece is unpacked in the room and looked over with the customer present, so condition is recorded while both parties are looking at the same item in the same light.",
+     "fact": "Federal consumer guidance puts the delivery moment at the center of protection: the customer inspects the goods at delivery and notes any damage or missing items on the delivery record before signing, because that notation is the contemporaneous evidence a later claim stands on.",
+     "headline": "Condition is settled at the door, on the delivery record",
+     "id": "L2-WG-06",
+     "scope": "Interstate household-goods delivery practice as FMCSA instructs consumers; the same documentation discipline is sound practice on any high-value delivery.",
+     "source": {
+      "publisher": "Federal Motor Carrier Safety Administration",
+      "title": "Frequently Asked Questions — FMCSA (delivery and claims)",
+      "url": "https://www.fmcsa.dot.gov/faq?keyword=&term_node_tid_depth=23066"
+     }
+    },
+    {
+     "detail": "Naming the line in the quote is what separates a defined service from a slogan: the customer knows which pieces will be standing finished at the end of the appointment and which tasks belong to other trades, before anyone is on site.",
+     "fact": "Across the trade, white-glove assembly means the light assembly a furniture piece needs to stand and function — legs, sections, shelves, hardware from the maker's kit — performed in the room. It does not mean built-ins, anchoring into structure beyond the maker's instructions, or trades work such as plumbing and electrical hookups.",
+     "headline": "Assembly in white glove means light assembly — the line is part of the service definition",
+     "id": "L2-WG-07",
+     "scope": "Industry scope definition for white-glove delivery services; company scope is set per job in the written quote.",
+     "source": {
+      "publisher": "Secursus (delivery-industry reference)",
+      "title": "White Glove Delivery Service: What It Is, Cost & Insurance",
+      "url": "https://www.secursus.com/en-us/resource/article/white-glove-delivery/"
+     }
+    }
+   ],
+   "personas": [
+    {
+     "id": "WG-P1",
+     "name": "Interior designers receiving client pieces",
+     "need": "Appointment-window delivery, room-by-room placement to instructions, condition noted piece by piece at the door.",
+     "situation": "A designer has furniture, lighting, and framed art arriving for an install day and needs each piece inside, placed to the plan, unboxed, and the packaging gone before the client walks in."
+    },
+    {
+     "id": "WG-P2",
+     "name": "Homeowners receiving high-value furniture",
+     "need": "A two-person crew, protection for floors and doorways on the path, placement in the named room, the piece inspected together before sign-off.",
+     "situation": "A household has bought a piece that costs more than the delivery decisions around it — a stone-top table, a sectional, a panel refrigerator — and cannot move it from the curb themselves."
+    },
+    {
+     "id": "WG-P3",
+     "name": "Furniture retailers and brands needing a last-mile arm",
+     "need": "A delivery partner who works to the full white-glove level under a written scope, so the customer's last experience of the brand is the finished room.",
+     "situation": "A retailer sells large items into the Shenandoah Valley and Northern Virginia but runs no delivery crew of its own in the territory."
+    },
+    {
+     "id": "WG-P4",
+     "name": "Fitness-equipment buyers",
+     "need": "Crew sized to the piece and the path, assembly from the maker's kit, packaging removed, the equipment standing where it will be used.",
+     "situation": "A treadmill, rack, or full home-gym order arrives boxed and heavy, bound for a specific room — often up stairs or into a basement gym."
+    },
+    {
+     "id": "WG-P5",
+     "name": "Art buyers, estates, and galleries moving single pieces locally",
+     "need": "Item-by-item listing with values declared in writing, careful carry, condition recorded at both ends of the trip.",
+     "situation": "One framed work or a small group of pieces moves between a home, an estate, a framer, or a gallery inside the region — too valuable for a doorstep handoff, too local for a freight chain."
+    },
+    {
+     "id": "WG-P6",
+     "name": "Offices and clinics receiving statement pieces and equipment",
+     "need": "Scheduled delivery inside the building's rules, placement and setup in the room, debris out the same visit so the space is usable immediately.",
+     "situation": "A business receives the pieces its rooms are judged by — boardroom tables, reception furniture, sensitive equipment — during business hours, in an occupied building."
+    }
+   ],
+   "buyerIntentTerms": [
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "white glove furniture delivery near me"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "white glove delivery winchester va"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "white glove delivery martinsburg wv"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "designer furniture receiving and delivery virginia"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "furniture delivery with assembly and placement"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "art delivery service near me"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "treadmill delivery and setup winchester va"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "appliance delivery room of choice vs white glove"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "sofa delivery with stairs two person crew"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "retailer last mile delivery partner shenandoah valley"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "white glove moving service for antiques"
+    },
+    {
+     "intentClass": "situation",
+     "target": "/white-glove-delivery/",
+     "term": "estate furniture delivery white glove"
+    },
+    {
+     "intentClass": "cost",
+     "target": "/white-glove-delivery/",
+     "term": "how much does white glove delivery cost"
+    },
+    {
+     "intentClass": "cost",
+     "target": "/white-glove-delivery/",
+     "term": "white glove delivery price per item"
+    },
+    {
+     "intentClass": "cost",
+     "target": "/white-glove-delivery/",
+     "term": "is white glove delivery worth it for furniture"
+    },
+    {
+     "intentClass": "cost",
+     "target": "/white-glove-delivery/",
+     "term": "threshold vs white glove delivery cost difference"
+    },
+    {
+     "intentClass": "cost",
+     "target": "/white-glove-delivery/",
+     "term": "white glove delivery quote virginia"
+    },
+    {
+     "intentClass": "cost",
+     "target": "/white-glove-delivery/",
+     "term": "flat rate white glove delivery"
+    },
+    {
+     "intentClass": "research",
+     "target": "/white-glove-delivery/",
+     "term": "what does white glove delivery include"
+    },
+    {
+     "intentClass": "research",
+     "target": "/datasets/white-glove/",
+     "term": "difference between threshold room of choice and white glove delivery"
+    },
+    {
+     "intentClass": "research",
+     "target": "/datasets/white-glove/",
+     "term": "does white glove delivery include assembly"
+    },
+    {
+     "intentClass": "research",
+     "target": "/datasets/white-glove/",
+     "term": "do white glove movers take the packaging away"
+    },
+    {
+     "intentClass": "research",
+     "target": "/datasets/white-glove/",
+     "term": "how are high value items protected during delivery valuation"
+    },
+    {
+     "intentClass": "research",
+     "target": "/datasets/white-glove/",
+     "term": "what is full value protection for a furniture delivery"
+    },
+    {
+     "intentClass": "research",
+     "target": "/datasets/white-glove/",
+     "term": "white glove delivery how it works appointment window"
+    }
+   ]
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/white-glove/#dataset-white-glove-sources",
+   "@type": "Article",
+   "name": "White-Glove Delivery — Primary Sources",
+   "headline": "The sources under the white-glove delivery research layer",
+   "description": "Every factual claim in the research layer traces to one of these sources, read on 2026-11-05: FMCSA's own consumer-protection pages for the valuation rules, the NIOSH lifting-equation manual for crew ergonomics, and the delivery trade's published service-level definitions for the four-tier taxonomy.",
+   "keywords": [
+    "primary sources",
+    "fmcsa",
+    "niosh",
+    "delivery levels"
+   ],
+   "about": {
+    "@id": "https://theflatratemovers.com/#service-white-glove"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2026",
+   "dateModified": "2026-11-05",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-white-glove.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "AI Sitemap",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "e927d6da6c791a101953a80b4c3911b32f9ee47d8c7f8fa70fbf9bc72f9c8fa7"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Service Area GeoJSON",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/geo+json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Entity Graph",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "714aad2c56794b99a007948849bb4cb873520170b74a03f72bf9487d89c14e0c"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Best JSON Entity Graph",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "ea524feea891f773685774153255320d73d9c4a31eee191324857c205b7cc82d"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/white-glove/",
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "citations": [
+    {
+     "@type": "CreativeWork",
+     "name": "FMCSA — Before Requesting Services from Any Mover (Subpart B): full value protection, released value, extraordinary-value items",
+     "url": "https://www.fmcsa.dot.gov/protect-your-move/how-to/subpartB"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "FMCSA — Frequently Asked Questions: mover liability and valuation (valuation is not insurance)",
+     "url": "https://www.fmcsa.dot.gov/faq?keyword=&term_node_tid_depth=23066"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "NIOSH Publication No. 94-110 — Applications Manual for the Revised NIOSH Lifting Equation (51 lb load constant)",
+     "url": "https://www.cdc.gov/niosh/docs/94-110/"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Sohnne — Doorstep vs Threshold vs Room of Choice vs White Glove Delivery (the four levels, at a glance)",
+     "url": "https://sohnne.com/blog/furniture-delivery-types-explained/"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Secursus — White Glove Delivery Service: What It Is, Cost & Insurance (scope and assembly definitions)",
+     "url": "https://www.secursus.com/en-us/resource/article/white-glove-delivery/"
+    }
+   ]
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/white-glove/#dataset-white-glove-service-levels",
+   "@type": "Service",
+   "name": "White-Glove Delivery — The Four Delivery Levels",
+   "description": "The delivery-level taxonomy stated as data, because the level is the scope: curbside stops at the curb; threshold stops at the first dry covered spot inside; room of choice carries the boxed item to the named room and stops; white glove finishes the job in the room — placement, unpacking, light assembly from the maker's kit, joint inspection, and every piece of packaging out with the crew. The Flat Rate Movers' white-glove service is the fourth level, across the full 71-area footprint, priced at one flat rate in writing per job.",
+   "keywords": [
+    "curbside",
+    "threshold",
+    "room of choice",
+    "white glove",
+    "delivery levels"
+   ],
+   "about": {
+    "@id": "https://theflatratemovers.com/#service-white-glove"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2026",
+   "dateModified": "2026-11-05",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-white-glove.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "AI Sitemap",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "e927d6da6c791a101953a80b4c3911b32f9ee47d8c7f8fa70fbf9bc72f9c8fa7"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Service Area GeoJSON",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/geo+json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Entity Graph",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "714aad2c56794b99a007948849bb4cb873520170b74a03f72bf9487d89c14e0c"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Best JSON Entity Graph",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "ea524feea891f773685774153255320d73d9c4a31eee191324857c205b7cc82d"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/white-glove/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "serviceLevels": [
+    {
+     "assembly": false,
+     "debrisRemoval": false,
+     "level": "Curbside",
+     "stops": "At the curb or driveway",
+     "unpacking": false
+    },
+    {
+     "assembly": false,
+     "debrisRemoval": false,
+     "level": "Threshold",
+     "stops": "Just inside the first door — the first dry covered spot",
+     "unpacking": false
+    },
+    {
+     "assembly": false,
+     "debrisRemoval": false,
+     "level": "Room of choice",
+     "stops": "In the room the customer names, still boxed",
+     "unpacking": false
+    },
+    {
+     "assembly": "light assembly from the maker's kit",
+     "debrisRemoval": true,
+     "level": "White glove",
+     "stops": "Placed and set up in the room the customer names",
+     "unpacking": true
+    }
+   ]
   }
  ]
 }

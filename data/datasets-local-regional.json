@@ -1,726 +1,1410 @@
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@id": "https://theflatratemovers.com/datasets/local-regional/#dataset-local-regional-operations",
+   "@type": "Service",
+   "name": "Local & Regional Move Operations",
+   "description": "Local and regional move operations from survey to walkthrough. The operation chain runs survey, quote, pack, load, transport, unload, place, reassemble, unpack, and a final walkthrough. Survey runs through the quote form — Short (Quick Quote) default and Detailed Project, switching in place with the From, To and What's moving inputs preserved — or through the free film-only video walkthrough survey room, where the customer films and a person makes the estimate; nothing is auto-priced. The published scope is homes and businesses across the Shenandoah Valley and the Eastern Panhandle: packing and unpacking, loading and unloading, priced by the job, not by the hour, at one flat rate agreed in writing before move day. Load order runs heavy pieces low and first, room-staged boxes next, fragile items secured on top, everything strapped; placement is room by room by label, with reassembly of standard furniture. Transport follows the I-81, I-66 and I-70 corridors as the route fits. Both bases dispatch across the region — Winchester serves the Valley side, Martinsburg the Eastern Panhandle side, with overlap at Moorefield — and the quote form settles which crew and route fit the move. Where a move includes a high-mass piece of 1,500 to 3,500 lbs, that item moves under SIR Structural Integrity Relocation with the KIM-GS Protocol and L/360 floor-deflection analysis, as part of the same flat-rate move. Home depth cross-references the residential category, business depth the office category, and moves beyond the region the long-distance category — cross-references are links, never duplicated claims.",
+   "keywords": [
+    "movers near me",
+    "movers winchester va",
+    "winchester movers",
+    "winchester local moving company",
+    "local moving",
+    "moving companies winchester va",
+    "movers martinsburg wv"
+   ],
+   "about": [
     {
-      "@id": "https://theflatratemovers.com/#dataset-local-regional-operations",
-      "@type": "Service",
-      "name": "Local & Regional Move Operations",
-      "description": "Local and regional move operations from survey to walkthrough. The operation chain runs survey, quote, pack, load, transport, unload, place, reassemble, unpack, and a final walkthrough. Survey runs through the quote form — Short (Quick Quote) default and Detailed Project, switching in place with the From, To and What's moving inputs preserved — or through the free film-only video walkthrough survey room, where the customer films and a person makes the estimate; nothing is auto-priced. The published scope is homes and businesses across the Shenandoah Valley and the Eastern Panhandle: packing and unpacking, loading and unloading, priced by the job, not by the hour, at one flat rate agreed in writing before move day. Load order runs heavy pieces low and first, room-staged boxes next, fragile items secured on top, everything strapped; placement is room by room by label, with reassembly of standard furniture. Transport follows the I-81, I-66 and I-70 corridors as the route fits. Both bases dispatch across the region — Winchester serves the Valley side, Martinsburg the Eastern Panhandle side, with overlap at Moorefield — and the quote form settles which crew and route fit the move. Where a move includes a high-mass piece of 1,500 to 3,500 lbs, that item moves under SIR Structural Integrity Relocation with the KIM-GS Protocol and L/360 floor-deflection analysis, as part of the same flat-rate move. Home depth cross-references the residential category, business depth the office category, and moves beyond the region the long-distance category — cross-references are links, never duplicated claims.",
-      "keywords": [
-        "movers near me",
-        "movers winchester va",
-        "winchester movers",
-        "winchester local moving company",
-        "local moving",
-        "moving companies winchester va",
-        "movers martinsburg wv"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-local-regional"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@id": "https://theflatratemovers.com/#winchester"
-        },
-        {
-          "@id": "https://theflatratemovers.com/#martinsburg"
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/local-regional-moving/",
-      "provider": {
-        "@id": "https://theflatratemovers.com/#organization"
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization"
-      }
-    },
-    {
-      "@id": "https://theflatratemovers.com/#dataset-local-regional-sizes-access",
-      "@type": "Dataset",
-      "name": "Move Sizes & Access Operations",
-      "description": "Move sizes and access operations for local and regional moves: the size bands, dwelling types, and access conditions that shape a local quote. Size bands, as demand shapes rather than company products: studio and one-bedroom homes, small jobs and partial loads, two-to-three-bedroom homes, four-plus-bedroom homes, and small offices. Dwelling and premises types: apartments, condos, townhomes, houses, estates, offices, and shops. Access conditions are quote inputs, never capability claims: stairs, elevator type and reservation, doorway and hallway width, parking and loading zones, long carry distance, building hours, and HOA rules. Staging runs through the driveway, yard, garage, or loading zone. Market reference data, labeled as such and never company times or prices: market guides plan studio and one-bedroom moves at roughly 3 to 5 hours with 2 movers, two-to-three-bedroom homes at 5 to 8 hours with 2 to 3 movers, and four-plus-bedroom homes at 8 to 12 hours with 3 to 4 movers; walk-up stairs, tight turns, elevator reservation windows, parking permits, and building move windows are the access factors that move a quote. The company publishes homes and businesses, with homeowners, renters, families, and seniors named on the branch pages, and no size-specific crew, equipment, minimum, or access capability is claimed anywhere in this dataset — the survey governs each job. Small-job depth continues as FAQ material on the existing pages, not a separate page, and apartment depth cross-references the residential category.",
-      "keywords": [
-        "movers near me",
-        "local moving",
-        "apartment moves",
-        "movers winchester va",
-        "winchester local moving company",
-        "movers martinsburg wv"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-local-regional"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@type": "Place",
-          "@id": "https://theflatratemovers.com/#winchester",
-          "name": "The Flat Rate Movers — Winchester",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.18711576,
-            "longitude": -78.1668352
-          }
-        },
-        {
-          "@type": "Place",
-          "@id": "https://theflatratemovers.com/#martinsburg",
-          "name": "Flat Rate Movers Martinsburg WV",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.48319665,
-            "longitude": -77.94760443
-          }
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "@type": "Organization",
-        "name": "The Flat Rate Movers",
-        "foundingDate": "2010-06",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "@type": "Organization",
-        "name": "The Flat Rate Movers",
-        "foundingDate": "2010-06",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json",
-          "sha256": "e927d6da6c791a101953a80b4c3911b32f9ee47d8c7f8fa70fbf9bc72f9c8fa7"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json",
-          "sha256": "f2a0dfbea23ad19ecaa38c71040844f6b92965017c368479e06d3c66edbd4b16"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json",
-          "sha256": "f0fe85a420e02c293bbbdff7ac64ede55ffa4ab3ba37cf8be8d43cef3ffac860"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json",
-          "sha256": "cfbfbf2c5d4b54bfb54b76ca829cdee55c98c65a1d7d440b675205ed37200203"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/datasets/local-regional/",
-      "url": "https://theflatratemovers.com/datasets/local-regional/",
-      "identifier": "https://theflatratemovers.com/datasets/local-regional/",
-      "isAccessibleForFree": true,
-      "datePublished": "2026-10-29",
-      "includedInDataCatalog": {
-        "@type": "DataCatalog",
-        "@id": "https://theflatratemovers.com/datasets/#collection",
-        "name": "The Flat Rate Movers — AI Authority Estate Datasets",
-        "url": "https://theflatratemovers.com/datasets/"
-      }
-    },
-    {
-      "@id": "https://theflatratemovers.com/#dataset-local-regional-taxonomy",
-      "@type": "Dataset",
-      "name": "Local & Regional Service Taxonomy",
-      "description": "Local and regional service taxonomy: how the bands, job types, and scope of this category fit together. Bands: local, regional, and long-distance — long-distance is a cross-reference to its own category, not part of this service. Job types: residential local moves, commercial local moves, senior local moves (a cross-reference to the senior category), and specialty work inside a local move, where a heavy piece moves under the conditional SIR handling below. Published scope: residential and commercial moves within the local and regional area; packing and unpacking; loading and unloading; placement; reassembly of standard furniture; and, where the job includes a high-mass piece of 1,500 to 3,500 lbs, SIR Structural Integrity Relocation with L/360 floor-deflection analysis. Areas and corridors — not a mileage cutoff — define the region in the company's published framing. Industry reference, labeled as such: in the wider market, local usually means under roughly 50 to 100 miles, completed in one day with one crew and truck, regional means multi-county, and long-distance means over about 100 miles or across state lines, usually priced by weight and mileage; local moves are priced by the hour in the market, which is the norm the company's flat rate answers (see the commercial terms dataset). Cross-references are links, not duplicated content: residential, long-distance, office, commercial, senior, and the SIR heavy-asset and gun-safe categories own their own claims.",
-      "keywords": [
-        "local moving",
-        "movers near me",
-        "winchester local moving company",
-        "local and regional moving",
-        "movers winchester va"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-local-regional"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@type": "Place",
-          "@id": "https://theflatratemovers.com/#winchester",
-          "name": "The Flat Rate Movers — Winchester",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.18711576,
-            "longitude": -78.1668352
-          }
-        },
-        {
-          "@type": "Place",
-          "@id": "https://theflatratemovers.com/#martinsburg",
-          "name": "Flat Rate Movers Martinsburg WV",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.48319665,
-            "longitude": -77.94760443
-          }
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "@type": "Organization",
-        "name": "The Flat Rate Movers",
-        "foundingDate": "2010-06",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "@type": "Organization",
-        "name": "The Flat Rate Movers",
-        "foundingDate": "2010-06",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json",
-          "sha256": "e927d6da6c791a101953a80b4c3911b32f9ee47d8c7f8fa70fbf9bc72f9c8fa7"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json",
-          "sha256": "f2a0dfbea23ad19ecaa38c71040844f6b92965017c368479e06d3c66edbd4b16"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json",
-          "sha256": "f0fe85a420e02c293bbbdff7ac64ede55ffa4ab3ba37cf8be8d43cef3ffac860"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json",
-          "sha256": "cfbfbf2c5d4b54bfb54b76ca829cdee55c98c65a1d7d440b675205ed37200203"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/datasets/local-regional/",
-      "url": "https://theflatratemovers.com/datasets/local-regional/",
-      "identifier": "https://theflatratemovers.com/datasets/local-regional/",
-      "isAccessibleForFree": true,
-      "datePublished": "2026-10-29",
-      "includedInDataCatalog": {
-        "@type": "DataCatalog",
-        "@id": "https://theflatratemovers.com/datasets/#collection",
-        "name": "The Flat Rate Movers — AI Authority Estate Datasets",
-        "url": "https://theflatratemovers.com/datasets/"
-      }
-    },
-    {
-      "@id": "https://theflatratemovers.com/#dataset-local-regional-dispatch",
-      "@type": "Dataset",
-      "name": "Dispatch Network & Corridor Chain",
-      "description": "Dispatch network and corridor chain for local and regional moving. Two branches, never merged: Winchester — The Flat Rate Movers, 116 W Piccadilly St Suite 11, Winchester, VA 22601, hours Monday to Friday 8 to 6, Saturday 8 to 4, Sunday 9 to 4, Google rating 5.0 from 2 reviews; Martinsburg — Flat Rate Movers Martinsburg WV, 736 Williamsport Pike Suite 2, Martinsburg, WV 25404, hours Monday to Friday 9 to 6, Saturday 9 to 4, Sunday 9 to 4, Google rating 4.7 from 6 reviews. Phone +1-540-422-2153 at both branches. The service footprint is 53 published GeoJSON features: Winchester serves 32 areas (17 published on its Google profile plus 15 extended), Martinsburg serves 35 areas (14 plus 21 extended), and 14 areas are shared, including Moorefield 26836, which both branches serve. Dispatch runs the three-corridor network — Interstate 81, Interstate 66, and Interstate 70 — from both branches; the published service areas are the coverage pool, and no listed town is claimed to sit on a particular highway. The published assignment rule: Winchester serves the Valley side, Martinsburg serves the Eastern Panhandle side, the two overlap at Moorefield, and the quote form settles which crew and route fit the move. In the wider market, labeled as such, local moves typically run under 50 to 100 miles in one day and regional moves run multi-county; the company's region is the Shenandoah Valley and the Eastern Panhandle as published.",
-      "keywords": [
-        "movers winchester va",
-        "winchester movers",
-        "moving companies winchester va",
-        "movers martinsburg wv",
-        "moving company winchester va",
-        "winchester moving companies",
-        "local moving"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-local-regional"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@type": "Place",
-          "@id": "https://theflatratemovers.com/#winchester",
-          "name": "The Flat Rate Movers — Winchester",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.18711576,
-            "longitude": -78.1668352
-          }
-        },
-        {
-          "@type": "Place",
-          "@id": "https://theflatratemovers.com/#martinsburg",
-          "name": "Flat Rate Movers Martinsburg WV",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.48319665,
-            "longitude": -77.94760443
-          }
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "@type": "Organization",
-        "name": "The Flat Rate Movers",
-        "foundingDate": "2010-06",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "@type": "Organization",
-        "name": "The Flat Rate Movers",
-        "foundingDate": "2010-06",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json",
-          "sha256": "e927d6da6c791a101953a80b4c3911b32f9ee47d8c7f8fa70fbf9bc72f9c8fa7"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json",
-          "sha256": "f2a0dfbea23ad19ecaa38c71040844f6b92965017c368479e06d3c66edbd4b16"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json",
-          "sha256": "f0fe85a420e02c293bbbdff7ac64ede55ffa4ab3ba37cf8be8d43cef3ffac860"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json",
-          "sha256": "cfbfbf2c5d4b54bfb54b76ca829cdee55c98c65a1d7d440b675205ed37200203"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/datasets/local-regional/",
-      "url": "https://theflatratemovers.com/datasets/local-regional/",
-      "identifier": "https://theflatratemovers.com/datasets/local-regional/",
-      "isAccessibleForFree": true,
-      "datePublished": "2026-10-29",
-      "includedInDataCatalog": {
-        "@type": "DataCatalog",
-        "@id": "https://theflatratemovers.com/datasets/#collection",
-        "name": "The Flat Rate Movers — AI Authority Estate Datasets",
-        "url": "https://theflatratemovers.com/datasets/"
-      }
-    },
-    {
-      "@id": "https://theflatratemovers.com/#dataset-local-regional-terms",
-      "@type": "Article",
-      "name": "Commercial Terms & Cost Drivers",
-      "description": "Commercial terms and cost drivers for local and regional moves. The company's only pricing term is the published one: a flat rate quoted in writing before move day, priced by the job, not by the hour — hourly pricing is available when a client asks for it — under the standing promise Guaranteed Flat Rate or Your Move is Free! No company price, minimum, deposit, discount, fee, or surcharge is stated anywhere in this dataset. Every figure below is industry market data, researched and labeled as such, never a company term: local moves are priced by the hour in the market, typically a crew rate around $100 an hour for a two-person crew, often with two-to-four-hour minimums, plus travel and truck fees and extras; market totals in published guides run roughly $400 to $750 for a studio or one-bedroom home, $850 to $1,750 for two-to-three bedrooms, and $1,700 to $3,400 for four-plus bedrooms. The pricing models in the market: hourly (crew times hours, where the customer pays for every slow elevator, parking hunt, and delay), binding estimates (a fixed total for a listed scope and inventory), and flat-fee pricing (one guaranteed price set in advance from inventory, access, and distance). Under a flat or binding price the mover assumes the timing risk once the scope is locked; under hourly pricing the customer carries it. Cost drivers: inventory size, packing level, access — stairs, elevator, long carry — distance, and specialty items priced as separate line items. Booking windows in market guides: local moves book 2 to 4 weeks out off-peak and 4 to 8 weeks out in peak season, May through September with June busiest and month-ends and weekends tightest. The fear the flat rate answers is the hourly meter on a short local move; the company answer is one price in writing before the truck is loaded.",
-      "keywords": [
-        "flat rate movers",
-        "flat rate moving quote winchester",
-        "local moving",
-        "movers near me",
-        "moving companies winchester va"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-local-regional"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@id": "https://theflatratemovers.com/#winchester"
-        },
-        {
-          "@id": "https://theflatratemovers.com/#martinsburg"
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/local-regional-moving/",
-      "headline": "Commercial Terms & Cost Drivers",
-      "author": {
-        "@id": "https://theflatratemovers.com/#organization"
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization"
-      }
-    },
-    {
-      "@id": "https://theflatratemovers.com/#dataset-local-regional-personas",
-      "@type": "Article",
-      "name": "Buyer Personas & Trigger Events",
-      "description": "Buyer personas and trigger events for local and regional moves. The personas: renters moving at a lease end, where apartment access and near-me search intent dominate; homeowners buying or selling inside the Shenandoah Valley and the Eastern Panhandle; families whose household is growing or shrinking; seniors relocating locally, cross-referenced to the senior category, which owns its claims; small-business owners changing premises, cross-referenced to the office and commercial categories; and closing-driven movers whose dates are set by a home purchase or sale. Trigger events: lease end, a home closing, a job transfer, household growth, household shrinkage, school-calendar timing, and a business premises change. Seasonality is industry research, labeled as such: peak season runs May through September, June is the most common moving month — one market dataset puts 41 percent of US moves in May through August — and month-end dates and weekends are the tightest; market guides put local booking windows at 2 to 4 weeks off-peak and 4 to 8 weeks in peak season. No availability promise is made anywhere in this dataset: the published branch hours are the hours, in every season. Search behavior from the company's own Search Console record: near-me intent is shared across the local and residential categories and converts fastest — 'movers near me' holds 246 impressions at position 5.0 with 11 clicks, the site's best click source — and Winchester-cluster searchers compare on price certainty and local presence. Every persona plans through the same quote path: the Short or Detailed quote form, or the film-only video walkthrough survey room with a human-made estimate.",
-      "keywords": [
-        "movers near me",
-        "moving companies winchester va",
-        "local moving",
-        "winchester local moving company",
-        "movers martinsburg wv"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-local-regional"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@id": "https://theflatratemovers.com/#winchester"
-        },
-        {
-          "@id": "https://theflatratemovers.com/#martinsburg"
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/local-regional-moving/",
-      "headline": "Buyer Personas & Trigger Events",
-      "author": {
-        "@id": "https://theflatratemovers.com/#organization"
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization"
-      }
-    },
-    {
-      "@id": "https://theflatratemovers.com/#dataset-local-regional-protection-compliance",
-      "@type": "Service",
-      "name": "Protection, Handling & Building Compliance",
-      "description": "Protection, handling, and building compliance for local and regional moves. The published practice: loading and unloading with furniture protection on the path — blanket wrap and stretch wrap on the furniture, floor runners, and doorway and rail protection as the route requires; packing and unpacking as part of the service; disassembly and reassembly of standard furniture, planned up front; and, where a move includes a high-mass piece of 1,500 to 3,500 lbs, SIR Structural Integrity Relocation under the KIM-GS Protocol with L/360 floor-deflection analysis. The survey room is film-only by rule: customers film their rooms and pieces, and never lift, move, open, or climb anything heavy or locked. Building conditions are planning inputs that shape the quote, never capability claims: elevator reservations and their windows, loading-zone reservations, building move hours, advance notice, HOA rules, and the certificate-of-insurance requirement that managed buildings commonly impose — an industry requirement, labeled as such. Industry reference, labeled as such: protection materials in the wider trade include boxes, dish barrels, wardrobe cartons, mattress bags, bubble wrap, stretch wrap, blankets, and labels, and standard market equipment includes dollies, ramps, and straps — an industry inventory, with no deployment claimed for the company. Liability education, labeled as such: valuation is not insurance, and the market's Full Value and Released Value ($0.60 per pound) options are explained in the commercial terms dataset as industry education only; no company coverage is claimed anywhere in this dataset. Heavy assets cross-reference the SIR heavy-asset category, custom crates the crating category, packing depth the packing category, and home-move protection depth the residential category.",
-      "keywords": [
-        "local moving",
-        "movers near me",
-        "furniture protection",
-        "movers winchester va",
-        "white glove moving"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-local-regional"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@id": "https://theflatratemovers.com/#winchester"
-        },
-        {
-          "@id": "https://theflatratemovers.com/#martinsburg"
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/local-regional-moving/",
-      "provider": {
-        "@id": "https://theflatratemovers.com/#organization"
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization"
-      }
-    },
-    {
-      "@id": "https://theflatratemovers.com/#dataset-local-regional-areas-quote",
-      "@type": "Dataset",
-      "name": "Service Areas, Dispatch & Quote Path",
-      "description": "Service areas, dispatch, and quote path for local and regional moving. Two branches, never merged: Winchester — The Flat Rate Movers, 116 W Piccadilly St Suite 11, Winchester, VA 22601, hours Monday to Friday 8 to 6, Saturday 8 to 4, Sunday 9 to 4, Google rating 5.0 from 2 reviews; Martinsburg — Flat Rate Movers Martinsburg WV, 736 Williamsport Pike Suite 2, Martinsburg, WV 25404, hours Monday to Friday 9 to 6, Saturday 9 to 4, Sunday 9 to 4, Google rating 4.7 from 6 reviews. Phone +1-540-422-2153 at both branches; the company was founded in June 2010 and works under the promise Guaranteed Flat Rate or Your Move is Free! The full service footprint is 53 published GeoJSON features — Winchester 32 areas, Martinsburg 35 areas, 14 shared — carried on each branch's own record, never merged into one list. Dispatch runs Interstate 81, Interstate 66, and Interstate 70 from both branches; in the wider market, labeled as such, local moves typically complete in one day and regional moves run multi-county, and the published assignment rule is that the quote form settles which crew and route fit the move. The quote path: Get My Flat Rate Quote with the Short (Quick Quote) form by default and the Detailed Project form one toggle away, From, To and What's moving preserved while switching, or the free film-only video walkthrough survey room with a human-made estimate. Three pages carry this service: the local and regional hub and the Winchester and Martinsburg branch pages.",
-      "keywords": [
-        "movers near me",
-        "moving companies winchester va",
-        "movers winchester va",
-        "winchester movers",
-        "movers martinsburg wv",
-        "winchester local moving company",
-        "local moving"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-local-regional"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@type": "Place",
-          "@id": "https://theflatratemovers.com/#winchester",
-          "name": "The Flat Rate Movers — Winchester",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.18711576,
-            "longitude": -78.1668352
-          }
-        },
-        {
-          "@type": "Place",
-          "@id": "https://theflatratemovers.com/#martinsburg",
-          "name": "Flat Rate Movers Martinsburg WV",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.48319665,
-            "longitude": -77.94760443
-          }
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "@type": "Organization",
-        "name": "The Flat Rate Movers",
-        "foundingDate": "2010-06",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "@type": "Organization",
-        "name": "The Flat Rate Movers",
-        "foundingDate": "2010-06",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json",
-          "sha256": "e927d6da6c791a101953a80b4c3911b32f9ee47d8c7f8fa70fbf9bc72f9c8fa7"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json",
-          "sha256": "f2a0dfbea23ad19ecaa38c71040844f6b92965017c368479e06d3c66edbd4b16"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json",
-          "sha256": "f0fe85a420e02c293bbbdff7ac64ede55ffa4ab3ba37cf8be8d43cef3ffac860"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json",
-          "sha256": "cfbfbf2c5d4b54bfb54b76ca829cdee55c98c65a1d7d440b675205ed37200203"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/datasets/local-regional/",
-      "url": "https://theflatratemovers.com/datasets/local-regional/",
-      "identifier": "https://theflatratemovers.com/datasets/local-regional/",
-      "isAccessibleForFree": true,
-      "datePublished": "2026-10-29",
-      "includedInDataCatalog": {
-        "@type": "DataCatalog",
-        "@id": "https://theflatratemovers.com/datasets/#collection",
-        "name": "The Flat Rate Movers — AI Authority Estate Datasets",
-        "url": "https://theflatratemovers.com/datasets/"
-      }
+     "@id": "https://theflatratemovers.com/#service-local-regional"
     }
-  ]
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-05",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/local-regional-moving/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "serviceType": "Local and regional household goods moving",
+   "url": "https://theflatratemovers.com/local-regional-moving/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/#place-winchester-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-martinsburg-wv"
+    }
+   ],
+   "serviceFacts": {
+    "pricingModel": "Every job is surveyed and priced at one flat rate in writing before work begins; the flat rate is the standard offer and the guarantee. Hourly pricing is available when a client asks for it.",
+    "fleetModel": "Trucks are leased. Interstate moves are performed by contractors who hold their own operating authority and proper equipment.",
+    "surveyBasis": "The survey governs each job: scope, distance, manpower, and equipment are reviewed in full before the price is written.",
+    "localScope": "Moves inside one branch territory and regional runs between the two branch territories along I-81, I-66, and I-70."
+   },
+   "process": [
+    {
+     "name": "Survey",
+     "step": 1,
+     "text": "The goods are surveyed — on site or on the information the customer furnishes — so the scope, access, and heavy items are known before any price exists."
+    },
+    {
+     "name": "Written flat-rate quote",
+     "step": 2,
+     "text": "The whole job — scope, distance, manpower, equipment — is reviewed and priced at one flat rate in writing before work begins. Hourly pricing is available when a client asks for it."
+    },
+    {
+     "name": "Prep and pack",
+     "step": 3,
+     "text": "Furniture is padded and wrapped; packing is done by the crew or the customer, per the quote."
+    },
+    {
+     "name": "Load",
+     "step": 4,
+     "text": "The load is built for the run: weight placed for the corridor drive, heavy items secured first, access constraints at both ends worked as planned at the survey."
+    },
+    {
+     "name": "The run",
+     "step": 5,
+     "text": "Local runs stay inside the town pair; regional runs ride I-81, I-66, or I-70 with corridor timing treated as a scheduling variable."
+    },
+    {
+     "name": "Placement",
+     "step": 6,
+     "text": "Items are placed in the rooms the customer names, not left at the door."
+    },
+    {
+     "name": "If something goes wrong",
+     "step": 7,
+     "text": "A written claim path stands behind every move — in Virginia, acknowledgment within 30 days and a decision or firm offer within 120 (§46.2-2168); the federal and West Virginia paths apply on their own moves."
+    }
+   ],
+   "completedJob": {
+    "@type": "Service",
+    "name": "Winchester residential move with a very heavy item",
+    "areaServed": "Winchester, VA",
+    "description": "A Winchester, VA residential move that included a very heavy item, carried professionally and placed exactly where the customers wanted it; the customers rated the move five stars on the branch’s public Google profile.",
+    "evidence": "Public Google review on the Winchester branch profile; the review itself is carried as a Review node in the entity graph. Recorded at city level only, per the estate’s privacy rules."
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/local-regional/#dataset-local-regional-sizes-access",
+   "@type": "Dataset",
+   "name": "Move Sizes & Access Operations",
+   "description": "Move sizes and access operations for local and regional moves: the size bands, dwelling types, and access conditions that shape a local quote. Size bands, as demand shapes rather than company products: studio and one-bedroom homes, small jobs and partial loads, two-to-three-bedroom homes, four-plus-bedroom homes, and small offices. Dwelling and premises types: apartments, condos, townhomes, houses, estates, offices, and shops. Access conditions are quote inputs, never capability claims: stairs, elevator type and reservation, doorway and hallway width, parking and loading zones, long carry distance, building hours, and HOA rules. Staging runs through the driveway, yard, garage, or loading zone. Market reference data, labeled as such and never company times or prices: market guides plan studio and one-bedroom moves at roughly 3 to 5 hours with 2 movers, two-to-three-bedroom homes at 5 to 8 hours with 2 to 3 movers, and four-plus-bedroom homes at 8 to 12 hours with 3 to 4 movers; walk-up stairs, tight turns, elevator reservation windows, parking permits, and building move windows are the access factors that move a quote. The company publishes homes and businesses, with homeowners, renters, families, and seniors named on the branch pages, and no size-specific crew, equipment, minimum, or access capability is claimed anywhere in this dataset — the survey governs each job. Small-job depth continues as FAQ material on the existing pages, not a separate page, and apartment depth cross-references the residential category.",
+   "keywords": [
+    "movers near me",
+    "local moving",
+    "apartment moves",
+    "movers winchester va",
+    "winchester local moving company",
+    "movers martinsburg wv"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-local-regional"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-05",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "e927d6da6c791a101953a80b4c3911b32f9ee47d8c7f8fa70fbf9bc72f9c8fa7"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "714aad2c56794b99a007948849bb4cb873520170b74a03f72bf9487d89c14e0c"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "ea524feea891f773685774153255320d73d9c4a31eee191324857c205b7cc82d"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/local-regional/",
+   "url": "https://theflatratemovers.com/datasets/local-regional/",
+   "identifier": "https://theflatratemovers.com/datasets/local-regional/",
+   "isAccessibleForFree": true,
+   "datePublished": "2026-10-29",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/local-regional/#dataset-local-regional-taxonomy",
+   "@type": "Dataset",
+   "name": "Local & Regional Service Taxonomy",
+   "description": "Local and regional service taxonomy: how the bands, job types, and scope of this category fit together. Bands: local, regional, and long-distance — long-distance is a cross-reference to its own category, not part of this service. Job types: residential local moves, commercial local moves, senior local moves (a cross-reference to the senior category), and specialty work inside a local move, where a heavy piece moves under the conditional SIR handling below. Published scope: residential and commercial moves within the local and regional area; packing and unpacking; loading and unloading; placement; reassembly of standard furniture; and, where the job includes a high-mass piece of 1,500 to 3,500 lbs, SIR Structural Integrity Relocation with L/360 floor-deflection analysis. Areas and corridors — not a mileage cutoff — define the region in the company's published framing. Industry reference, labeled as such: in the wider market, local usually means under roughly 50 to 100 miles, completed in one day with one crew and truck, regional means multi-county, and long-distance means over about 100 miles or across state lines, usually priced by weight and mileage; local moves are priced by the hour in the market, which is the norm the company's flat rate answers (see the commercial terms dataset). Cross-references are links, not duplicated content: residential, long-distance, office, commercial, senior, and the SIR heavy-asset and gun-safe categories own their own claims.",
+   "keywords": [
+    "local moving",
+    "movers near me",
+    "winchester local moving company",
+    "local and regional moving",
+    "movers winchester va"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-local-regional"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-05",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "e927d6da6c791a101953a80b4c3911b32f9ee47d8c7f8fa70fbf9bc72f9c8fa7"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "714aad2c56794b99a007948849bb4cb873520170b74a03f72bf9487d89c14e0c"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "ea524feea891f773685774153255320d73d9c4a31eee191324857c205b7cc82d"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/local-regional/",
+   "url": "https://theflatratemovers.com/datasets/local-regional/",
+   "identifier": "https://theflatratemovers.com/datasets/local-regional/",
+   "isAccessibleForFree": true,
+   "datePublished": "2026-10-29",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/local-regional/#dataset-local-regional-dispatch",
+   "@type": "Dataset",
+   "name": "Dispatch Network & Corridor Chain",
+   "description": "Dispatch network and corridor chain for local and regional moving. Two branches, never merged: Winchester — The Flat Rate Movers, 116 W Piccadilly St Suite 11, Winchester, VA 22601, hours Monday to Friday 8 to 6, Saturday 8 to 4, Sunday 9 to 4, Google rating 5.0 from 2 reviews; Martinsburg — Flat Rate Movers Martinsburg WV, 736 Williamsport Pike Suite 2, Martinsburg, WV 25404, hours Monday to Friday 9 to 6, Saturday 9 to 4, Sunday 9 to 4, Google rating 4.7 from 6 reviews. Phone +1-540-422-2153 at both branches. The service footprint is 53 published GeoJSON features: Winchester serves 32 areas (17 published on its Google profile plus 15 extended), Martinsburg serves 35 areas (14 plus 21 extended), and 14 areas are shared, including Moorefield 26836, which both branches serve. Dispatch runs the three-corridor network — Interstate 81, Interstate 66, and Interstate 70 — from both branches; the published service areas are the coverage pool, and no listed town is claimed to sit on a particular highway. The published assignment rule: Winchester serves the Valley side, Martinsburg serves the Eastern Panhandle side, the two overlap at Moorefield, and the quote form settles which crew and route fit the move. In the wider market, labeled as such, local moves typically run under 50 to 100 miles in one day and regional moves run multi-county; the company's region is the Shenandoah Valley and the Eastern Panhandle as published.",
+   "keywords": [
+    "movers winchester va",
+    "winchester movers",
+    "moving companies winchester va",
+    "movers martinsburg wv",
+    "moving company winchester va",
+    "winchester moving companies",
+    "local moving"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-local-regional"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-05",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "e927d6da6c791a101953a80b4c3911b32f9ee47d8c7f8fa70fbf9bc72f9c8fa7"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "714aad2c56794b99a007948849bb4cb873520170b74a03f72bf9487d89c14e0c"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "ea524feea891f773685774153255320d73d9c4a31eee191324857c205b7cc82d"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/local-regional/",
+   "url": "https://theflatratemovers.com/datasets/local-regional/",
+   "identifier": "https://theflatratemovers.com/datasets/local-regional/",
+   "isAccessibleForFree": true,
+   "datePublished": "2026-10-29",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/local-regional/#dataset-local-regional-terms",
+   "@type": "Article",
+   "name": "Commercial Terms & Cost Drivers",
+   "description": "Commercial terms and cost drivers for local and regional moves. The company's only pricing term is the published one: a flat rate quoted in writing before move day, priced by the job, not by the hour — hourly pricing is available when a client asks for it — under the standing promise Guaranteed Flat Rate or Your Move is Free! No company price, minimum, deposit, discount, fee, or surcharge is stated anywhere in this dataset. Every figure below is industry market data, researched and labeled as such, never a company term: local moves are priced by the hour in the market, typically a crew rate around $100 an hour for a two-person crew, often with two-to-four-hour minimums, plus travel and truck fees and extras; market totals in published guides run roughly $400 to $750 for a studio or one-bedroom home, $850 to $1,750 for two-to-three bedrooms, and $1,700 to $3,400 for four-plus bedrooms. The pricing models in the market: hourly (crew times hours, where the customer pays for every slow elevator, parking hunt, and delay), binding estimates (a fixed total for a listed scope and inventory), and flat-fee pricing (one guaranteed price set in advance from inventory, access, and distance). Under a flat or binding price the mover assumes the timing risk once the scope is locked; under hourly pricing the customer carries it. Cost drivers: inventory size, packing level, access — stairs, elevator, long carry — distance, and specialty items priced as separate line items. Booking windows in market guides: local moves book 2 to 4 weeks out off-peak and 4 to 8 weeks out in peak season, May through September with June busiest and month-ends and weekends tightest. The fear the flat rate answers is the hourly meter on a short local move; the company answer is one price in writing before the truck is loaded.",
+   "keywords": [
+    "flat rate movers",
+    "flat rate moving quote winchester",
+    "local moving",
+    "movers near me",
+    "moving companies winchester va"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-local-regional"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-05",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/local-regional-moving/",
+   "headline": "Commercial Terms & Cost Drivers",
+   "author": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/local-regional/#dataset-local-regional-personas",
+   "@type": "Article",
+   "name": "Buyer Personas & Trigger Events",
+   "description": "Buyer personas and trigger events for local and regional moves. The personas: renters moving at a lease end, where apartment access and near-me search intent dominate; homeowners buying or selling inside the Shenandoah Valley and the Eastern Panhandle; families whose household is growing or shrinking; seniors relocating locally, cross-referenced to the senior category, which owns its claims; small-business owners changing premises, cross-referenced to the office and commercial categories; and closing-driven movers whose dates are set by a home purchase or sale. Trigger events: lease end, a home closing, a job transfer, household growth, household shrinkage, school-calendar timing, and a business premises change. Seasonality is industry research, labeled as such: peak season runs May through September, June is the most common moving month — one market dataset puts 41 percent of US moves in May through August — and month-end dates and weekends are the tightest; market guides put local booking windows at 2 to 4 weeks off-peak and 4 to 8 weeks in peak season. No availability promise is made anywhere in this dataset: the published branch hours are the hours, in every season. Search behavior from the company's own Search Console record: near-me intent is shared across the local and residential categories and converts fastest — 'movers near me' holds 246 impressions at position 5.0 with 11 clicks, the site's best click source — and Winchester-cluster searchers compare on price certainty and local presence. Every persona plans through the same quote path: the Short or Detailed quote form, or the film-only video walkthrough survey room with a human-made estimate.",
+   "keywords": [
+    "movers near me",
+    "moving companies winchester va",
+    "local moving",
+    "winchester local moving company",
+    "movers martinsburg wv"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-local-regional"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-05",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/local-regional-moving/",
+   "headline": "Buyer Personas & Trigger Events",
+   "author": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/local-regional/#dataset-local-regional-protection-compliance",
+   "@type": "Service",
+   "name": "Protection, Handling & Building Compliance",
+   "description": "Protection, handling, and building compliance for local and regional moves. The published practice: loading and unloading with furniture protection on the path — blanket wrap and stretch wrap on the furniture, floor runners, and doorway and rail protection as the route requires; packing and unpacking as part of the service; disassembly and reassembly of standard furniture, planned up front; and, where a move includes a high-mass piece of 1,500 to 3,500 lbs, SIR Structural Integrity Relocation under the KIM-GS Protocol with L/360 floor-deflection analysis. The survey room is film-only by rule: customers film their rooms and pieces, and never lift, move, open, or climb anything heavy or locked. Building conditions are planning inputs that shape the quote, never capability claims: elevator reservations and their windows, loading-zone reservations, building move hours, advance notice, HOA rules, and the certificate-of-insurance requirement that managed buildings commonly impose — an industry requirement, labeled as such. Industry reference, labeled as such: protection materials in the wider trade include boxes, dish barrels, wardrobe cartons, mattress bags, bubble wrap, stretch wrap, blankets, and labels, and standard market equipment includes dollies, ramps, and straps — an industry inventory, with no deployment claimed for the company. Liability education, labeled as such: valuation is not insurance, and the market's Full Value and Released Value ($0.60 per pound) options are explained in the commercial terms dataset as industry education only; no company coverage is claimed anywhere in this dataset. Heavy assets cross-reference the SIR heavy-asset category, custom crates the crating category, packing depth the packing category, and home-move protection depth the residential category.",
+   "keywords": [
+    "local moving",
+    "movers near me",
+    "furniture protection",
+    "movers winchester va",
+    "white glove moving"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-local-regional"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-05",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/local-regional-moving/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/local-regional/#dataset-local-regional-areas-quote",
+   "@type": "Dataset",
+   "name": "Service Areas, Dispatch & Quote Path",
+   "description": "Service areas, dispatch, and quote path for local and regional moving. Two branches, never merged: Winchester — The Flat Rate Movers, 116 W Piccadilly St Suite 11, Winchester, VA 22601, hours Monday to Friday 8 to 6, Saturday 8 to 4, Sunday 9 to 4, Google rating 5.0 from 2 reviews; Martinsburg — Flat Rate Movers Martinsburg WV, 736 Williamsport Pike Suite 2, Martinsburg, WV 25404, hours Monday to Friday 9 to 6, Saturday 9 to 4, Sunday 9 to 4, Google rating 4.7 from 6 reviews. Phone +1-540-422-2153 at both branches; the company was founded in June 2010 and works under the promise Guaranteed Flat Rate or Your Move is Free! The full service footprint is 53 published GeoJSON features — Winchester 32 areas, Martinsburg 35 areas, 14 shared — carried on each branch's own record, never merged into one list. Dispatch runs Interstate 81, Interstate 66, and Interstate 70 from both branches; in the wider market, labeled as such, local moves typically complete in one day and regional moves run multi-county, and the published assignment rule is that the quote form settles which crew and route fit the move. The quote path: Get My Flat Rate Quote with the Short (Quick Quote) form by default and the Detailed Project form one toggle away, From, To and What's moving preserved while switching, or the free film-only video walkthrough survey room with a human-made estimate. Three pages carry this service: the local and regional hub and the Winchester and Martinsburg branch pages.",
+   "keywords": [
+    "movers near me",
+    "moving companies winchester va",
+    "movers winchester va",
+    "winchester movers",
+    "movers martinsburg wv",
+    "winchester local moving company",
+    "local moving"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-local-regional"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-05",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "e927d6da6c791a101953a80b4c3911b32f9ee47d8c7f8fa70fbf9bc72f9c8fa7"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "714aad2c56794b99a007948849bb4cb873520170b74a03f72bf9487d89c14e0c"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "ea524feea891f773685774153255320d73d9c4a31eee191324857c205b7cc82d"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/local-regional/",
+   "url": "https://theflatratemovers.com/datasets/local-regional/",
+   "identifier": "https://theflatratemovers.com/datasets/local-regional/",
+   "isAccessibleForFree": true,
+   "datePublished": "2026-10-29",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/local-regional/#dataset-local-regional-research",
+   "@type": "Dataset",
+   "name": "Local & Regional Moving — Research Layer",
+   "description": "The sourced research layer under the local and regional category: nine claims verified against primary sources on 2026-11-05 (Virginia and West Virginia mover law, the FMCSA federal/state split, NIOSH/OSHA lifting science, and VDOT corridor operating data), the six buyer personas as data rows, and the twenty-five buyer-intent terms the category’s rubric family carries. Every figure is quoted with its scope and never extended.",
+   "keywords": [
+    "virginia mover law",
+    "certificate of fitness",
+    "flat rate estimate virginia",
+    "local movers",
+    "buyer intent"
+   ],
+   "about": {
+    "@id": "https://theflatratemovers.com/#service-local-regional"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2026",
+   "datePublished": "2026-10-29",
+   "dateModified": "2026-11-05",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "url": "https://theflatratemovers.com/datasets/local-regional/",
+   "sameAs": "https://theflatratemovers.com/datasets/local-regional/",
+   "identifier": "https://theflatratemovers.com/datasets/local-regional/",
+   "isAccessibleForFree": true,
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "e927d6da6c791a101953a80b4c3911b32f9ee47d8c7f8fa70fbf9bc72f9c8fa7"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "714aad2c56794b99a007948849bb4cb873520170b74a03f72bf9487d89c14e0c"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "ea524feea891f773685774153255320d73d9c4a31eee191324857c205b7cc82d"
+    }
+   ],
+   "researchClaims": [
+    {
+     "fact": "A household goods carrier may not engage in intrastate operations on any Virginia highway without first obtaining a certificate of fitness from the Department (Virginia DMV, Motor Carrier Services) — Va. Code §46.2-2150. Carriers transporting household goods less than thirty-one road miles are exempt from most of Article 4 of Chapter 21 — but not from the claims section, §46.2-2168, which applies to them anyway (§46.2-2149).",
+     "headline": "Virginia: certificate of fitness, and the 31-road-mile line",
+     "id": "L2-LOC-VA-01",
+     "scope": "Virginia intrastate household-goods carriage; section texts read in full on LIS 2026-11-05.",
+     "source": "https://law.lis.virginia.gov/vacodefull/title46.2/chapter21/article4/"
+    },
+    {
+     "fact": "Every Virginia household goods carrier must file its tariffs — all rates and charges — with the Department at least thirty days before the effective date and make them available for public inspection (§46.2-2169). Charging or collecting more than the published tariff is unlawful (§46.2-2170), and the Department approves the rates and charges filed (§46.2-2155). Tariffs must separately state each accessorial service and its charge, including packing/unpacking per container or per hundredweight, and may establish an hourly labor charge for miscellaneous labor (§46.2-2173).",
+     "headline": "Virginia: a tariff state — published rates are the legal price",
+     "id": "L2-LOC-VA-02",
+     "scope": "The statute controls what a carrier may charge for Virginia intrastate carriage; it sets no dollar figure itself.",
+     "source": "https://law.lis.virginia.gov/vacodefull/title46.2/chapter21/article4/"
+    },
+    {
+     "fact": "A Virginia estimate may be given only after a visual inspection of the goods by the estimator, or on information the shipper furnishes; a written estimate must be headed, in bold type, \"ESTIMATED COST OF SERVICES\" and carry the statutory notice that it is not a guarantee — but the carrier may bind the estimate and guarantee charges will not exceed it, except for destination accessorial tariff charges unknown until a sight survey at delivery (§46.2-2157). Section 46.2-2161(C) states the same bound/fixed rule. When a written estimate is given, the carrier must also hand the shipper a Department-approved information booklet and obtain a receipt for it (§46.2-2157(B)).",
+     "headline": "Virginia: written-estimate rules, and the bound (flat) estimate",
+     "id": "L2-LOC-VA-03",
+     "scope": "This is the Virginia-law basis on which a guaranteed flat rate rests for intrastate moves — distinct from the federal binding-estimate rule (49 CFR 375.403).",
+     "source": "https://law.lis.virginia.gov/vacodefull/title46.2/chapter21/article4/"
+    },
+    {
+     "fact": "A Virginia household goods carrier that receives a written loss-or-damage claim must acknowledge it in writing within thirty calendar days and must pay, decline, or make a firm compromise settlement offer in writing within 120 days; if the claim is still pending after 120 days, the carrier must advise the claimant in writing of its status at 120 days and every thirty days after. No contract may shorten the claim-filing period below thirty calendar days or the suit period below two years (§46.2-2168).",
+     "headline": "Virginia: the claims clock",
+     "id": "L2-LOC-VA-04",
+     "scope": "Applies even to the under-31-road-mile carriers exempt from the rest of Article 4 (§46.2-2149).",
+     "source": "https://law.lis.virginia.gov/vacodefull/title46.2/chapter21/article4/"
+    },
+    {
+     "fact": "Where charges turn on weight, Virginia requires tare and gross weights taken on certified scales by a certified weighmaster, with the shipper entitled to observe the weighing; the net weight goes on the bill of lading (§46.2-2163). If no certified scale is available, a constructive weight of seven pounds per cubic foot of properly loaded van space may be used (§46.2-2164). Before delivery, the shipper may demand a reweigh, and the lower of the two net weights determines the charges (§46.2-2167). Section 46.2-2101(C) sets the minimum public financial responsibility for certificated household goods carriers at $750,000, and DMV application form OA 142 requires Form E (liability) and Form H (cargo) insurance filings for household-goods authority over 30 miles.",
+     "headline": "Virginia: weights are certified, observable, and re-weighable",
+     "id": "L2-LOC-VA-05",
+     "scope": "Sections read in full on LIS 2026-11-05; OA 142 read at dmv.am.virginia.gov.",
+     "source": "https://law.lis.virginia.gov/vacodefull/title46.2/chapter21/article4/"
+    },
+    {
+     "fact": "Beyond the certificate itself, the West Virginia PSC is vested with power \"to fix, alter, regulate, and determine just, fair, reasonable, and sufficient rates\" and to regulate the service and safety of operations of common carriers by motor vehicle (W. Va. Code §24A-2-3). The PSC's motor carrier rules — 150 CSR 9, \"Rules Governing Motor Carriers, Private Commercial Carriers, and the Filing of Evidence of Insurance and Financial Responsibility by Motor Carriers\" (current version effective January 13, 2022) — govern carriers' insurance and financial-responsibility filings with the Commission.",
+     "headline": "West Virginia: PSC authority reaches rates and insurance, not just the certificate",
+     "id": "L2-LOC-WV-01",
+     "scope": "Claims only the certificate, rate, and insurance-filing layers verified here; §24A-1-3 exemptions were not relied on for any scope sentence.",
+     "source": "https://code.wvlegislature.gov/email/24A/"
+    },
+    {
+     "fact": "FMCSA states that interstate movers must be registered with the federal government and hold a U.S. DOT number, while \"Local moving companies performing moves within a state are regulated by state and local laws\" — and directs consumers moving within one state to their state consumer affairs agency or state moving association, since \"Each state has its own rules and regulations for moving household goods within the state.\" The federal household-goods rulebook (49 CFR Part 375) attaches only when a move crosses a state line. Practical consequence for this footprint: a Winchester-to-Martinsburg move is an interstate (federal) move even though it is a short regional run, while Winchester-to-Front Royal is Virginia-intrastate and Martinsburg-to-Inwood is WV-intrastate — three rulebooks inside one service area.",
+     "headline": "The federal/state split, in FMCSA's own words",
+     "id": "L2-LOC-FED-01",
+     "scope": "Quoted sentences verbatim from the FMCSA FAQ (Protect Your Move program), read 2026-11-05.",
+     "source": "https://www.fmcsa.dot.gov/faq?keyword=&term_node_tid_depth=23066"
+    },
+    {
+     "fact": "The Revised NIOSH Lifting Equation sets its load constant at 51 pounds — the recommended weight limit for a lift under ideal conditions (load close to the body, at about waist height, short vertical travel, no twisting, infrequent, good grip). Six multipliers (horizontal distance, vertical position, travel distance, asymmetry, frequency, coupling) only ever reduce that limit for real tasks, which is why stairs, reach, and repetition push a one-person lift out of the safe band quickly. OSHA's materials-handling guidance is the operational companion: limit manual lifts to no more than about 50 pounds; for loads over 50 pounds use two or more people or mechanical means — hand trucks, dollies, and ramps or lift gates rather than lifting into the truck.",
+     "headline": "Crew sizing rests on a measured limit: 51 lb, ideal conditions only",
+     "id": "L2-LOC-OPS-01",
+     "scope": "51 lb is an ideal-conditions ceiling for a single two-handed lift, not a per-item moving limit; OSHA companion guidance at osha.gov/etools/electrical-contractors/materials-handling/heavy.",
+     "source": "https://stacks.cdc.gov/view/cdc/191840/cdc_191840_DS1.pdf"
+    },
+    {
+     "fact": "VDOT's I-81 Corridor Improvement Plan Final Report (January 2026) records that trucks traveling I-81 accumulate over 40 percent of all interstate truck vehicle-miles traveled statewide, transporting over $300 billion in goods annually along the 325-mile corridor; over the past six years the corridor averaged about 2,750 vehicle crashes per year, approximately one-third involving heavy trucks; and as of November 2025, 78 percent of the corridor is two lanes in each direction, so a single blocked lane cuts capacity sharply. For regional dispatch, corridor timing is a real scheduling variable, not background color.",
+     "headline": "The I-81 operating environment (VDOT)",
+     "id": "L2-LOC-COR-02",
+     "scope": "All figures are corridor-wide (all 325 Virginia miles), not a Shenandoah Valley segment figure.",
+     "source": "https://www.vdot.virginia.gov/media/improve81/documentsacc/corridor-improvement-plan/VDOT-I-81-Corridor-Improvement-Plan-Final-Report_acc01142026.pdf"
+    }
+   ],
+   "personas": [
+    {
+     "crossReference": null,
+     "dominantIntent": "apartment access and near-me search intent dominate; date is fixed by the lease",
+     "persona": "Renters at a lease end",
+     "triggerEvents": [
+      "lease end",
+      "lease non-renewal"
+     ]
+    },
+    {
+     "crossReference": null,
+     "dominantIntent": "dates set by the closing; moves run inside the Shenandoah Valley and the Eastern Panhandle",
+     "persona": "Homeowners buying or selling inside the territory",
+     "triggerEvents": [
+      "home closing",
+      "home purchase",
+      "home sale"
+     ]
+    },
+    {
+     "crossReference": null,
+     "dominantIntent": "upsizing and downsizing moves within the same town or the next town over",
+     "persona": "Families whose household is growing or shrinking",
+     "triggerEvents": [
+      "household growth",
+      "household shrinkage",
+      "new child",
+      "children leaving"
+     ]
+    },
+    {
+     "crossReference": "https://theflatratemovers.com/#service-senior-moving",
+     "dominantIntent": "local relocation with patience and placement care",
+     "persona": "Seniors relocating locally",
+     "triggerEvents": [
+      "downsizing",
+      "moving closer to family",
+      "single-level living"
+     ]
+    },
+    {
+     "crossReference": "https://theflatratemovers.com/#service-commercial",
+     "dominantIntent": "short commercial relocations inside the territory",
+     "persona": "Small-business owners changing premises",
+     "triggerEvents": [
+      "business premises change",
+      "lease change"
+     ]
+    },
+    {
+     "crossReference": null,
+     "dominantIntent": "the settlement date sets the move date; the quote must be fixed before the date is",
+     "persona": "Closing-driven movers",
+     "triggerEvents": [
+      "home closing"
+     ]
+    }
+   ],
+   "buyerIntentTerms": [
+    {
+     "term": "movers to move furniture within the same house",
+     "intentClass": "situation",
+     "target": "https://theflatratemovers.com/local-regional-moving/"
+    },
+    {
+     "term": "apartment movers with stairs winchester va",
+     "intentClass": "situation",
+     "target": "https://theflatratemovers.com/local-regional-movers-winchester-va/"
+    },
+    {
+     "term": "townhouse movers martinsburg wv",
+     "intentClass": "situation",
+     "target": "https://theflatratemovers.com/local-regional-movers-martinsburg-wv/"
+    },
+    {
+     "term": "same day local movers winchester va",
+     "intentClass": "situation",
+     "target": "https://theflatratemovers.com/local-regional-movers-winchester-va/"
+    },
+    {
+     "term": "movers after a house closing",
+     "intentClass": "situation",
+     "target": "https://theflatratemovers.com/local-regional-moving/"
+    },
+    {
+     "term": "local movers for seniors downsizing martinsburg wv",
+     "intentClass": "situation",
+     "target": "https://theflatratemovers.com/local-regional-movers-martinsburg-wv/"
+    },
+    {
+     "term": "movers from winchester va to martinsburg wv",
+     "intentClass": "situation",
+     "target": "https://theflatratemovers.com/local-regional-moving/"
+    },
+    {
+     "term": "movers winchester va to stephens city and strasburg",
+     "intentClass": "situation",
+     "target": "https://theflatratemovers.com/local-regional-movers-winchester-va/"
+    },
+    {
+     "term": "movers martinsburg wv to inwood and charles town",
+     "intentClass": "situation",
+     "target": "https://theflatratemovers.com/local-regional-movers-martinsburg-wv/"
+    },
+    {
+     "term": "storage unit cleanout movers near me",
+     "intentClass": "situation",
+     "target": "https://theflatratemovers.com/local-regional-moving/"
+    },
+    {
+     "term": "movers for one heavy item across town",
+     "intentClass": "situation",
+     "target": "https://theflatratemovers.com/local-regional-moving/"
+    },
+    {
+     "term": "weekend local movers eastern panhandle",
+     "intentClass": "situation",
+     "target": "https://theflatratemovers.com/local-regional-movers-martinsburg-wv/"
+    },
+    {
+     "term": "how much do local movers cost in winchester va",
+     "intentClass": "cost",
+     "target": "https://theflatratemovers.com/local-regional-movers-winchester-va/"
+    },
+    {
+     "term": "cost to move a three bedroom house locally in west virginia",
+     "intentClass": "cost",
+     "target": "https://theflatratemovers.com/local-regional-movers-martinsburg-wv/"
+    },
+    {
+     "term": "flat rate local movers winchester va",
+     "intentClass": "cost",
+     "target": "https://theflatratemovers.com/local-regional-movers-winchester-va/"
+    },
+    {
+     "term": "local movers hourly vs flat rate virginia",
+     "intentClass": "cost",
+     "target": "https://theflatratemovers.com/local-regional-moving/"
+    },
+    {
+     "term": "how much does it cost to move a one bedroom apartment locally",
+     "intentClass": "cost",
+     "target": "https://theflatratemovers.com/local-regional-moving/"
+    },
+    {
+     "term": "movers that charge a flat rate instead of hourly",
+     "intentClass": "cost",
+     "target": "https://theflatratemovers.com/local-regional-moving/"
+    },
+    {
+     "term": "are local movers licensed in virginia",
+     "intentClass": "research",
+     "target": "https://theflatratemovers.com/local-regional-moving/"
+    },
+    {
+     "term": "how to verify a virginia movers certificate of fitness",
+     "intentClass": "research",
+     "target": "https://theflatratemovers.com/local-regional-moving/"
+    },
+    {
+     "term": "is a flat rate moving estimate binding in virginia",
+     "intentClass": "research",
+     "target": "https://theflatratemovers.com/local-regional-moving/"
+    },
+    {
+     "term": "do i need a bill of lading for a local move",
+     "intentClass": "research",
+     "target": "https://theflatratemovers.com/local-regional-moving/"
+    },
+    {
+     "term": "how many movers do i need for a two bedroom apartment",
+     "intentClass": "research",
+     "target": "https://theflatratemovers.com/local-regional-moving/"
+    },
+    {
+     "term": "how long does a local move take",
+     "intentClass": "research",
+     "target": "https://theflatratemovers.com/local-regional-moving/"
+    },
+    {
+     "term": "what size moving truck do i need for a local move",
+     "intentClass": "research",
+     "target": "https://theflatratemovers.com/local-regional-moving/"
+    }
+   ]
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/local-regional/#dataset-local-regional-sources",
+   "@type": "Article",
+   "name": "Local & Regional Moving — Primary Sources",
+   "headline": "The primary sources under the local and regional research layer",
+   "description": "Every factual claim in the research layer traces to one of these primary sources, read in full on 2026-11-05: the Virginia Code’s household-goods article, the West Virginia Code and PSC rules, FMCSA’s own consumer guidance, the NIOSH lifting-equation manual, OSHA’s materials-handling guidance, and VDOT’s I-81 corridor plan.",
+   "keywords": [
+    "primary sources",
+    "virginia code",
+    "fmcsa",
+    "niosh",
+    "vdot"
+   ],
+   "about": {
+    "@id": "https://theflatratemovers.com/#service-local-regional"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2026",
+   "dateModified": "2026-11-05",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "e927d6da6c791a101953a80b4c3911b32f9ee47d8c7f8fa70fbf9bc72f9c8fa7"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "714aad2c56794b99a007948849bb4cb873520170b74a03f72bf9487d89c14e0c"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "ea524feea891f773685774153255320d73d9c4a31eee191324857c205b7cc82d"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/local-regional/",
+   "author": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "citations": [
+    {
+     "@type": "CreativeWork",
+     "name": "Va. Code Title 46.2, Chapter 21, Article 4 — Household Goods Carriers (LIS)",
+     "url": "https://law.lis.virginia.gov/vacodefull/title46.2/chapter21/article4/"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Va. Code Title 46.2, Chapter 21 (incl. §46.2-2101(C) financial responsibility) (LIS)",
+     "url": "https://law.lis.virginia.gov/vacodefull/title46.2/chapter21/"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "Virginia DMV Form OA 142 — Application for Certificate of Fitness (Forms E and H filings)",
+     "url": "https://dmv.am.virginia.gov/sites/default/files/oa142.pdf"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "W. Va. Code Chapter 24A — Motor Carriers (incl. §24A-2-3, §24A-2-5)",
+     "url": "https://code.wvlegislature.gov/email/24A/"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "150 CSR 9 — Rules Governing Motor Carriers and Insurance Filings (WV Secretary of State)",
+     "url": "https://apps.sos.wv.gov/adlaw/csr/rule.aspx?rule=150-09"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "FMCSA FAQ — Protect Your Move (the federal/state split)",
+     "url": "https://www.fmcsa.dot.gov/faq?keyword=&term_node_tid_depth=23066"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "NIOSH Publication No. 94-110 — Applications Manual for the Revised NIOSH Lifting Equation (51 lb load constant)",
+     "url": "https://stacks.cdc.gov/view/cdc/191840/cdc_191840_DS1.pdf"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "OSHA eTool — Materials Handling: Heavy Lifting",
+     "url": "https://www.osha.gov/etools/electrical-contractors/materials-handling/heavy"
+    },
+    {
+     "@type": "CreativeWork",
+     "name": "VDOT — I-81 Corridor Improvement Plan Final Report (January 2026)",
+     "url": "https://www.vdot.virginia.gov/media/improve81/documentsacc/corridor-improvement-plan/VDOT-I-81-Corridor-Improvement-Plan-Final-Report_acc01142026.pdf"
+    }
+   ]
+  },
+  {
+   "@id": "https://theflatratemovers.com/datasets/local-regional/#dataset-local-regional-boundaries",
+   "@type": "Service",
+   "name": "Local & Regional — Jurisdiction Boundaries",
+   "description": "The scope boundaries of the local and regional category stated as data: three rulebooks operate inside one service area. A move that stays inside Virginia is Virginia-intrastate (DMV certificate of fitness, filed tariffs, the bound-estimate rule, the 30/120-day claims clock). A move that stays inside West Virginia is WV-intrastate (PSC certificate, PSC rate regulation, 150 CSR 9 insurance filings). Any move that crosses a state line — including the short Winchester-to-Martinsburg run — is interstate and federal (49 CFR Part 375), performed by contractors holding their own operating authority.",
+   "keywords": [
+    "intrastate",
+    "interstate",
+    "jurisdiction",
+    "virginia dmV",
+    "wv psc"
+   ],
+   "about": {
+    "@id": "https://theflatratemovers.com/#service-local-regional"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2026",
+   "dateModified": "2026-11-05",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "e927d6da6c791a101953a80b4c3911b32f9ee47d8c7f8fa70fbf9bc72f9c8fa7"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "714aad2c56794b99a007948849bb4cb873520170b74a03f72bf9487d89c14e0c"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "ea524feea891f773685774153255320d73d9c4a31eee191324857c205b7cc82d"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/local-regional/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "boundaries": [
+    {
+     "basis": "Certificate of fitness (§46.2-2150); filed tariffs are the legal price (§§46.2-2169, 46.2-2170); bound written estimates permitted (§46.2-2157); claims clock 30/120 days (§46.2-2168). Moves under 31 road miles are exempt from most of Article 4 except the claims section (§46.2-2149).",
+     "jurisdiction": "Virginia intrastate",
+     "regulator": "Virginia DMV, Motor Carrier Services"
+    },
+    {
+     "basis": "Certificate of convenience and necessity (§24A-2-5); PSC rate and service regulation (§24A-2-3); insurance and financial-responsibility filings under 150 CSR 9.",
+     "jurisdiction": "West Virginia intrastate",
+     "regulator": "Public Service Commission of West Virginia"
+    },
+    {
+     "basis": "Federal household-goods rules, 49 CFR Part 375: written estimates after survey, binding vs non-binding, Full Value Protection vs Released Value (see pool entry L2-HHG-01). Interstate work is performed by contractors holding their own operating authority.",
+     "jurisdiction": "Interstate (any state-line crossing, including Winchester to Martinsburg)",
+     "regulator": "FMCSA"
+    }
+   ]
+  }
+ ]
 }

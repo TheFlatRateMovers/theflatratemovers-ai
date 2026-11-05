@@ -1,248 +1,248 @@
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@id": "https://theflatratemovers.com/#service-commercial",
+   "@type": "Service",
+   "alternateName": "Commercial Moving",
+   "areaServed": [
     {
-      "@id": "https://theflatratemovers.com/#service-commercial",
-      "@type": "Service",
-      "alternateName": "Commercial Moving",
-      "areaServed": [
-        {
-          "@id": "https://theflatratemovers.com/#winchester"
-        },
-        {
-          "@id": "https://theflatratemovers.com/#martinsburg"
-        }
-      ],
-      "description": "Business moves, planned around your operation. Commercial relocations are quoted at one flat rate, agreed in writing before move day — planned around your hours, your site, and your equipment, with the warehouse and transload operation behind the job. The operation runs survey, quote, phased plan, pack and label, sequenced move, install and place, verify, and close-out, with a plan core of what moves first, what moves last, and what works on day one. Served from Winchester, VA and Martinsburg, WV across the Shenandoah Valley and Eastern Panhandle. Dispatched along the i-81, i-66, and i-70 corridor network from both branches. Guaranteed Flat Rate or Your Move is Free!",
-      "name": "Commercial and Office Moving",
-      "provider": {
-        "@id": "https://theflatratemovers.com/#organization"
-      },
-      "serviceType": "Commercial Moving",
-      "url": "https://theflatratemovers.com/commercial-moving/"
+     "@id": "https://theflatratemovers.com/#winchester"
     },
     {
-      "@id": "https://theflatratemovers.com/#organization",
-      "@type": "Organization",
-      "email": "ratemovers@gmail.com",
-      "foundingDate": "2010-06",
-      "location": [
-        {
-          "@id": "https://theflatratemovers.com/#winchester"
-        },
-        {
-          "@id": "https://theflatratemovers.com/#martinsburg"
-        }
-      ],
-      "logo": {
-        "@type": "ImageObject",
-        "height": 1024,
-        "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
-        "width": 1024
-      },
-      "name": "The Flat Rate Movers LLC",
-      "sameAs": [
-        "https://www.instagram.com/theflatratemoversllc/",
-        "https://www.threads.com/@theflatratemoversllc",
-        "https://x.com/ratemovers",
-        "https://www.youtube.com/@theflatratemovers",
-        "https://github.com/TheFlatRateMovers",
-        "https://medium.com/@ratemovers"
-      ],
-      "slogan": "Guaranteed Flat Rate or Your Move is Free!",
-      "telephone": "+1-540-422-2153",
-      "url": "https://theflatratemovers.com/"
-    },
-    {
-      "@id": "https://theflatratemovers.com/#winchester",
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "US",
-        "addressLocality": "Winchester",
-        "addressRegion": "VA",
-        "postalCode": "22601",
-        "streetAddress": "116 W Piccadilly St Suite 11"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "1"
-      },
-      "areaServed": [
-        "Berryville, VA",
-        "Bristow, VA",
-        "Clarke County",
-        "Eastern Panhandle of West Virginia",
-        "Fauquier County",
-        "Frederick County, VA",
-        "Front Royal, VA",
-        "Hardy County",
-        "Interstate 66 Corridor",
-        "Interstate 70 Corridor",
-        "Interstate 81 Corridor",
-        "Leesburg, VA",
-        "Loudoun County, VA",
-        "Marshall, VA",
-        "Middleburg, VA",
-        "Middletown, VA",
-        "Moorefield, WV",
-        "Port of Virginia",
-        "Purcellville, VA",
-        "Round Hill, VA",
-        "Shenandoah County",
-        "Shenandoah Valley",
-        "South Riding, VA",
-        "Stephens City, VA",
-        "Stephenson, VA",
-        "Sterling, VA",
-        "Strasburg, VA",
-        "Upperville, VA",
-        "Virginia Inland Port",
-        "Warren County",
-        "Winchester, VA",
-        "Woodstock, VA"
-      ],
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 39.18711576,
-        "longitude": -78.1668352
-      },
-      "name": "The Flat Rate Movers",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "closes": "18:00",
-          "dayOfWeek": "Mon-Fri",
-          "opens": "08:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "closes": "16:00",
-          "dayOfWeek": "Sat",
-          "opens": "08:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "closes": "16:00",
-          "dayOfWeek": "Sun",
-          "opens": "09:00"
-        }
-      ],
-      "telephone": "+1-540-422-2153"
-    },
-    {
-      "@id": "https://theflatratemovers.com/#martinsburg",
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "US",
-        "addressLocality": "Martinsburg",
-        "addressRegion": "WV",
-        "postalCode": "25404",
-        "streetAddress": "736 Williamsport Pike Suite 2"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.7",
-        "reviewCount": "6"
-      },
-      "areaServed": [
-        "Berkeley County, WV",
-        "Berkeley Springs, WV",
-        "Bunker Hill, WV",
-        "Charles Town, WV",
-        "Clear Spring, MD",
-        "Eastern Panhandle of West Virginia",
-        "Frederick, MD",
-        "Front Royal, VA",
-        "Hagerstown, MD",
-        "Hampshire County",
-        "Hancock, MD",
-        "Hardy County",
-        "Harpers Ferry, WV",
-        "Hedgesville, WV",
-        "Interstate 66 Corridor",
-        "Interstate 70 Corridor",
-        "Interstate 81 Corridor",
-        "Inwood, WV",
-        "Jefferson County",
-        "Kearneysville, WV",
-        "Martinsburg, WV",
-        "Moorefield, WV",
-        "Morgan County",
-        "Paw Paw, WV",
-        "Port of Virginia",
-        "Romney, WV",
-        "Shenandoah County",
-        "Shenandoah Valley",
-        "Shepherdstown, WV",
-        "Strasburg, VA",
-        "Summit Point, WV",
-        "Virginia Inland Port",
-        "Warren County",
-        "Washington County",
-        "Woodstock, VA"
-      ],
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 39.48319665,
-        "longitude": -77.94760443
-      },
-      "name": "Flat Rate Movers Martinsburg WV",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "closes": "18:00",
-          "dayOfWeek": "Mon-Fri",
-          "opens": "09:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "closes": "16:00",
-          "dayOfWeek": "Sat",
-          "opens": "09:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "closes": "16:00",
-          "dayOfWeek": "Sun",
-          "opens": "09:00"
-        }
-      ],
-      "telephone": "+1-540-422-2153"
-    },
-    {
-      "@id": "https://theflatratemovers.com/commercial-moving/#breadcrumbs",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "item": "https://theflatratemovers.com/",
-          "name": "Home",
-          "position": 1
-        },
-        {
-          "@type": "ListItem",
-          "item": "https://theflatratemovers.com/commercial-moving/",
-          "name": "Commercial Moving",
-          "position": 2
-        }
-      ]
-    },
-    {
-      "@id": "https://theflatratemovers.com/commercial-moving/#faq",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What does a commercial move with The Flat Rate Movers include?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A commercial move is a business relocation — shops, professional offices and commercial spaces — quoted flat and agreed in writing before move day, planned around your hours, your site and your equipment. Downtime is kept short by planning the order with you up front: what leaves first, what arrives first, and what must be working on day one. The same job can carry the freight behind the move — container loading and unloading, transloading between truck, container and warehouse, and final-mile delivery — backed by the company's own warehouse and transload operation."
-          }
-        }
-      ]
+     "@id": "https://theflatratemovers.com/#martinsburg"
     }
-  ]
+   ],
+   "description": "Business moves, planned around your operation. Commercial relocations are quoted at one flat rate, agreed in writing before move day — planned around your hours, your site, and your equipment, with the warehouse and transload operation behind the job. The operation runs survey, quote, phased plan, pack and label, sequenced move, install and place, verify, and close-out, with a plan core of what moves first, what moves last, and what works on day one. Served from Winchester, VA and Martinsburg, WV across the Shenandoah Valley and Eastern Panhandle. Dispatched along the i-81, i-66, and i-70 corridor network from both branches. Guaranteed Flat Rate or Your Move is Free!",
+   "name": "Commercial and Office Moving",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "serviceType": "Commercial Moving",
+   "url": "https://theflatratemovers.com/commercial-moving/"
+  },
+  {
+   "@id": "https://theflatratemovers.com/#organization",
+   "@type": "Organization",
+   "email": "ratemovers@gmail.com",
+   "foundingDate": "2010-06",
+   "location": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "logo": {
+    "@type": "ImageObject",
+    "height": 1024,
+    "url": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+    "width": 1024
+   },
+   "name": "The Flat Rate Movers LLC",
+   "sameAs": [
+    "https://www.instagram.com/theflatratemoversllc/",
+    "https://www.threads.com/@theflatratemoversllc",
+    "https://x.com/ratemovers",
+    "https://www.youtube.com/@theflatratemovers",
+    "https://github.com/TheFlatRateMovers",
+    "https://medium.com/@ratemovers"
+   ],
+   "slogan": "Guaranteed Flat Rate or Your Move is Free!",
+   "telephone": "+1-540-422-2153",
+   "url": "https://theflatratemovers.com/"
+  },
+  {
+   "@id": "https://theflatratemovers.com/#winchester",
+   "@type": "Place",
+   "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US",
+    "addressLocality": "Winchester",
+    "addressRegion": "VA",
+    "postalCode": "22601",
+    "streetAddress": "116 W Piccadilly St Suite 11"
+   },
+   "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "2"
+   },
+   "areaServed": [
+    "Berryville, VA",
+    "Bristow, VA",
+    "Clarke County",
+    "Eastern Panhandle of West Virginia",
+    "Fauquier County",
+    "Frederick County, VA",
+    "Front Royal, VA",
+    "Hardy County",
+    "Interstate 66 Corridor",
+    "Interstate 70 Corridor",
+    "Interstate 81 Corridor",
+    "Leesburg, VA",
+    "Loudoun County, VA",
+    "Marshall, VA",
+    "Middleburg, VA",
+    "Middletown, VA",
+    "Moorefield, WV",
+    "Port of Virginia",
+    "Purcellville, VA",
+    "Round Hill, VA",
+    "Shenandoah County",
+    "Shenandoah Valley",
+    "South Riding, VA",
+    "Stephens City, VA",
+    "Stephenson, VA",
+    "Sterling, VA",
+    "Strasburg, VA",
+    "Upperville, VA",
+    "Virginia Inland Port",
+    "Warren County",
+    "Winchester, VA",
+    "Woodstock, VA"
+   ],
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.18711576,
+    "longitude": -78.1668352
+   },
+   "name": "The Flat Rate Movers",
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "closes": "18:00",
+     "dayOfWeek": "Mon-Fri",
+     "opens": "08:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "closes": "16:00",
+     "dayOfWeek": "Sat",
+     "opens": "08:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "closes": "16:00",
+     "dayOfWeek": "Sun",
+     "opens": "09:00"
+    }
+   ],
+   "telephone": "+1-540-422-2153"
+  },
+  {
+   "@id": "https://theflatratemovers.com/#martinsburg",
+   "@type": "Place",
+   "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US",
+    "addressLocality": "Martinsburg",
+    "addressRegion": "WV",
+    "postalCode": "25404",
+    "streetAddress": "736 Williamsport Pike Suite 2"
+   },
+   "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "6"
+   },
+   "areaServed": [
+    "Berkeley County, WV",
+    "Berkeley Springs, WV",
+    "Bunker Hill, WV",
+    "Charles Town, WV",
+    "Clear Spring, MD",
+    "Eastern Panhandle of West Virginia",
+    "Frederick, MD",
+    "Front Royal, VA",
+    "Hagerstown, MD",
+    "Hampshire County",
+    "Hancock, MD",
+    "Hardy County",
+    "Harpers Ferry, WV",
+    "Hedgesville, WV",
+    "Interstate 66 Corridor",
+    "Interstate 70 Corridor",
+    "Interstate 81 Corridor",
+    "Inwood, WV",
+    "Jefferson County",
+    "Kearneysville, WV",
+    "Martinsburg, WV",
+    "Moorefield, WV",
+    "Morgan County",
+    "Paw Paw, WV",
+    "Port of Virginia",
+    "Romney, WV",
+    "Shenandoah County",
+    "Shenandoah Valley",
+    "Shepherdstown, WV",
+    "Strasburg, VA",
+    "Summit Point, WV",
+    "Virginia Inland Port",
+    "Warren County",
+    "Washington County",
+    "Woodstock, VA"
+   ],
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.48319665,
+    "longitude": -77.94760443
+   },
+   "name": "Flat Rate Movers Martinsburg WV",
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "closes": "18:00",
+     "dayOfWeek": "Mon-Fri",
+     "opens": "09:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "closes": "16:00",
+     "dayOfWeek": "Sat",
+     "opens": "09:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "closes": "16:00",
+     "dayOfWeek": "Sun",
+     "opens": "09:00"
+    }
+   ],
+   "telephone": "+1-540-422-2153"
+  },
+  {
+   "@id": "https://theflatratemovers.com/commercial-moving/#breadcrumbs",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "item": "https://theflatratemovers.com/",
+     "name": "Home",
+     "position": 1
+    },
+    {
+     "@type": "ListItem",
+     "item": "https://theflatratemovers.com/commercial-moving/",
+     "name": "Commercial Moving",
+     "position": 2
+    }
+   ]
+  },
+  {
+   "@id": "https://theflatratemovers.com/commercial-moving/#faq",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What does a commercial move with The Flat Rate Movers include?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A commercial move is a business relocation — shops, professional offices and commercial spaces — quoted flat and agreed in writing before move day, planned around your hours, your site and your equipment. Downtime is kept short by planning the order with you up front: what leaves first, what arrives first, and what must be working on day one. The same job can carry the freight behind the move — container loading and unloading, transloading between truck, container and warehouse, and final-mile delivery — backed by the company's own warehouse and transload operation."
+     }
+    }
+   ]
+  }
+ ]
 }

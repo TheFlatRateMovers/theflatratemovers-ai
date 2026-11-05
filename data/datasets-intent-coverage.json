@@ -5,7 +5,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-operations",
       "@type": "Service",
       "name": "The Flat Rate Movers — Search Intent Coverage Operations Dataset",
-      "description": "The live intent-coverage rubric of The Flat Rate Movers: 5677 generated rows, each one a query string a customer or an AI assistant can use to find a company service, resolved to the exact page that answers it, that page’s per-page JSON, the dataset files behind the answer, and the service’s node in the entity graph. Rows are generated from the estate’s own registries — 34 services, 264 pages, two branch locations, three corridors and the 71-feature service-area footprint — plus the blog question bank’s 100 real question phrasings, and the rubric is regenerated whenever those registries change. Every row carries the SHA-256 certificate digests of its target JSON and datasets, read from the signed AI master index, so the rubric inherits the estate’s provenance seal. Coverage spans all 34 services of both branches, Winchester, VA and Martinsburg, WV, along the I-81, I-66 and I-70 corridors. Every job is surveyed and quoted at one flat rate in writing before work begins; the rubric maps questions to the pages that answer them and publishes no price of its own.",
+      "description": "The live intent-coverage rubric of The Flat Rate Movers: 24728 generated rows, each one a query string a customer or an AI assistant can use to find a company service, resolved to the exact page that answers it, that page’s per-page JSON, the dataset files behind the answer, and the service’s node in the entity graph. Rows are generated from the estate’s own registries — 34 services, 264 pages, two branch locations, three corridors and the 71-feature service-area footprint — plus the blog question bank’s 100 real question phrasings and the researched per-service question bank v2 (617 questions), and the rubric is regenerated whenever those registries change. Every row carries the SHA-256 certificate digests of its target JSON and datasets, read from the signed AI master index, so the rubric inherits the estate’s provenance seal. Coverage spans all 34 services of both branches, Winchester, VA and Martinsburg, WV, along the I-81, I-66 and I-70 corridors. Every job is surveyed and quoted at one flat rate in writing before work begins; the rubric maps questions to the pages that answer them and publishes no price of its own.",
       "keywords": [
         "search intent coverage",
         "query rubric",
@@ -80,13 +80,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "65c6869cf22e6f9a873f2d111b6e5a4d7f911fa06a0625e1ecb819e1d0329e13"
+          "sha256": "f0747a9292d9f6a0938fc7980d321fc7d94a397be5365e80cf4a7b23442edc78"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "e525f7307f6efec5b945b09b824678fe95d70d69c7b48269f34e1b615d6bb602"
+          "sha256": "fe3049e7aa4dc0ab1e63583b9396ca5356ca90612e561977484fcc72d7556c41"
         }
       ],
       "hasPart": [
@@ -206,7 +206,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-scope",
       "@type": "Dataset",
       "name": "The Flat Rate Movers — Intent Coverage Scope Dataset",
-      "description": "What the intent-coverage rubric covers, and from what sources. Inputs: the machine registries services.json (34 services), pages.json (264 pages), locations.json (the two distinct branches — Winchester, The Flat Rate Movers, and Martinsburg, Flat Rate Movers Martinsburg WV, never blended), corridors.json (Interstate 81, Interstate 66, Interstate 70) and service-area.geojson (71 features: Winchester footprint 44 areas, Martinsburg footprint 41 areas, 14 areas shared); the signed AI master index (certificate digests); and the blog question bank (10 categories of the top-10 questions customers actually ask, 100 phrasings). Output: one row per generated query string across five intent classes — navigational-local (4684), cost (315), how-process (136), best-choice (204), ai-question (320). Rows exist only where the estate has a real page that answers the string; the scope of the rubric is exactly the scope of the published estate, nothing wider.",
+      "description": "What the intent-coverage rubric covers, and from what sources. Inputs: the machine registries services.json (34 services), pages.json (264 pages), locations.json (the two distinct branches — Winchester, The Flat Rate Movers, and Martinsburg, Flat Rate Movers Martinsburg WV, never blended), corridors.json (Interstate 81, Interstate 66, Interstate 70) and service-area.geojson (71 features: Winchester footprint 44 areas, Martinsburg footprint 41 areas, 14 areas shared); the signed AI master index (certificate digests); and the blog question bank (10 categories of the top-10 questions customers actually ask, 100 phrasings) and the per-service question bank v2 (617 researched questions across all 34 services, compiled 2026-11-05 from the estate’s own datasets and page FAQs, completed by live search). Output: one row per generated query string across five intent classes — navigational-local (4711), cost (4087), how-process (1988), best-choice (3969), ai-question (9955). Rows exist only where the estate has a real page that answers the string; the scope of the rubric is exactly the scope of the published estate, nothing wider.",
       "keywords": [
         "coverage scope",
         "service registry",
@@ -293,13 +293,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "65c6869cf22e6f9a873f2d111b6e5a4d7f911fa06a0625e1ecb819e1d0329e13"
+          "sha256": "f0747a9292d9f6a0938fc7980d321fc7d94a397be5365e80cf4a7b23442edc78"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "e525f7307f6efec5b945b09b824678fe95d70d69c7b48269f34e1b615d6bb602"
+          "sha256": "fe3049e7aa4dc0ab1e63583b9396ca5356ca90612e561977484fcc72d7556c41"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -328,7 +328,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-taxonomy",
       "@type": "Dataset",
       "name": "The Flat Rate Movers — Intent Taxonomy and Pattern Rules Dataset",
-      "description": "The five intent classes of the rubric and the generation pattern of each. navigational-local: the service phrase with a place (\"{phrase} {area}\" for every area in the service’s real footprint), the bare phrase, \"{phrase} near me\", and corridor forms \"{phrase} I-81 / I-66 / I-70\" for corridor-applicable services. cost: \"how much do/does {phrase} cost in {scope}\" and \"{phrase} cost in {scope}\" for the scopes Winchester, VA, Martinsburg, WV and the Shenandoah Valley. how-process: \"how to hire {phrase} in {scope}\" per scope and \"how to book {phrase}\". best-choice: \"best {phrase} in {scope}\" and \"top rated {phrase} in {scope}\" per scope. ai-question: the question bank’s full natural-language phrasings, mapped to their service, plus \"what should I ask before hiring {phrase}\" per service. Pattern rules are fixed and bounded: place patterns use the service’s own footprint only, never a blind cross-product of every service with every area.",
+      "description": "The five intent classes of the rubric and the generation pattern of each. navigational-local: the service phrase with a place (\"{phrase} {area}\" for every area in the service’s real footprint), the bare phrase, \"{phrase} near me\", and corridor forms \"{phrase} I-81 / I-66 / I-70\" and \"{phrase} I-81 corridor\" for corridor-applicable services. cost: \"how much do/does {phrase} cost in {area}\" and \"{phrase} cost in {area}\" for every area in the service’s footprint, plus the Winchester, Martinsburg and Shenandoah Valley scopes and the near-me cost forms \"{phrase} cost near me\" and \"how much do/does {phrase} cost near me\". how-process: \"how to hire {phrase} in {area}\" for every footprint area and scope, and \"how to book {phrase}\". best-choice: \"best {phrase} in {area}\" and \"top rated {phrase} in {area}\" for every footprint area and scope, \"best {phrase} near me\", and \"best {phrase} I-81 corridor\" forms. ai-question: the blog question bank’s full natural-language phrasings mapped to their service, \"what should I ask before hiring {phrase}\" per service, and the per-service question bank v2 researched on 2026-11-05 — unbound questions plus, for place-bound questions, one row per footprint area. Pattern rules are fixed and bounded: place patterns use the service’s own footprint only, never a blind cross-product of every service with every area.",
       "keywords": [
         "intent taxonomy",
         "navigational-local",
@@ -417,13 +417,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "65c6869cf22e6f9a873f2d111b6e5a4d7f911fa06a0625e1ecb819e1d0329e13"
+          "sha256": "f0747a9292d9f6a0938fc7980d321fc7d94a397be5365e80cf4a7b23442edc78"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "e525f7307f6efec5b945b09b824678fe95d70d69c7b48269f34e1b615d6bb602"
+          "sha256": "fe3049e7aa4dc0ab1e63583b9396ca5356ca90612e561977484fcc72d7556c41"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -452,7 +452,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-resolution",
       "@type": "Dataset",
       "name": "The Flat Rate Movers — Intent Target Resolution and Coverage Gates Dataset",
-      "description": "How each rubric row resolves its target, and the gates a row must pass to exist. Default target: the service’s hub page. A place or scoped row for a Winchester area targets the service’s Winchester branch page when the estate has one (Martinsburg likewise); a shared area and the Shenandoah Valley scope target the hub. A corridor row targets the corridor’s own page when that page belongs to the service’s page set, else the hub. A question-bank row targets the hub, unless the question’s own slug is a page of that service, which is then the target. The per-page JSON filename is the page slug with slashes replaced by dashes, at the site root; the few pages published under an earlier short name resolve to the file whose own WebPage identifier is the page’s canonical URL (the same mapping the estate’s llms.txt publishes). The graph node is the service’s canonical #service-* @id in the best entity graph when present, else the Service node on the hub page, else the Service node carrying the service’s registry name. Gates, all required: the target page is in pages.json; the per-page JSON file exists in the deployed site tree; the target JSON and every backing dataset file are distributions in the signed master index. In this generation 210 candidate rows failed a gate or deduplication and were excluded (duplicate: 210) — excluded rows are dropped, never pointed at a fallback page.",
+      "description": "How each rubric row resolves its target, and the gates a row must pass to exist. Default target: the service’s hub page. A place or scoped row for a Winchester area targets the service’s Winchester branch page when the estate has one (Martinsburg likewise); a shared area and the Shenandoah Valley scope target the hub. A corridor row targets the corridor’s own page when that page belongs to the service’s page set, else the hub. A question-bank row targets the hub, unless the question’s own slug is a page of that service, which is then the target. The per-page JSON filename is the page slug with slashes replaced by dashes, at the site root; the few pages published under an earlier short name resolve to the file whose own WebPage identifier is the page’s canonical URL (the same mapping the estate’s llms.txt publishes). The graph node is the service’s canonical #service-* @id in the best entity graph when present, else the Service node on the hub page, else the Service node carrying the service’s registry name. Gates, all required: the target page is in pages.json; the per-page JSON file exists in the deployed site tree; the target JSON and every backing dataset file are distributions in the signed master index. In this generation 550 candidate rows failed a gate or deduplication and were excluded (duplicate: 550) — excluded rows are dropped, never pointed at a fallback page.",
       "keywords": [
         "target resolution",
         "coverage gates",
@@ -540,13 +540,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "65c6869cf22e6f9a873f2d111b6e5a4d7f911fa06a0625e1ecb819e1d0329e13"
+          "sha256": "f0747a9292d9f6a0938fc7980d321fc7d94a397be5365e80cf4a7b23442edc78"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "e525f7307f6efec5b945b09b824678fe95d70d69c7b48269f34e1b615d6bb602"
+          "sha256": "fe3049e7aa4dc0ab1e63583b9396ca5356ca90612e561977484fcc72d7556c41"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -575,7 +575,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-method",
       "@type": "Article",
       "name": "The Flat Rate Movers — Intent Rubric Generation Method",
-      "description": "Method. The rubric is generated by build-intent-rubric.js v2.0.0 in the Flat Rate Machine, from the registries named in the scope dataset — no row is hand-typed. Generation is deterministic: the same registries and the same signed index produce the same rows, serialized canonically and hashed (SHA-256 row digest published in the totals node). The working rubric database (rubric.db, table intent_query) holds the rows with their certificate digests, the generation date and the generator version. When any registry, page, dataset or the signed index changes, the generator is re-run in the same batch, the database and this dataset are regenerated, the changed files are re-digested and the master index is re-signed, and the verification suite’s intent checks (verify.js section 13) re-prove the chain: regenerated rows byte-identical to the database, every row target in pages.json, every target JSON and dataset in the signed index, and this dataset’s published counts equal to the database counts.",
+      "description": "Method. The rubric is generated by build-intent-rubric.js v3.0.0 in the Flat Rate Machine, from the registries named in the scope dataset — no row is hand-typed. Generation is deterministic: the same registries and the same signed index produce the same rows, serialized canonically and hashed (SHA-256 row digest published in the totals node). The working rubric database (rubric.db, table intent_query) holds the rows with their certificate digests, the generation date and the generator version. When any registry, page, dataset or the signed index changes, the generator is re-run in the same batch, the database and this dataset are regenerated, the changed files are re-digested and the master index is re-signed, and the verification suite’s intent checks (verify.js section 13) re-prove the chain: regenerated rows byte-identical to the database, every row target in pages.json, every target JSON and dataset in the signed index, and this dataset’s published counts equal to the database counts.",
       "keywords": [
         "generation method",
         "deterministic build",
@@ -648,13 +648,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "65c6869cf22e6f9a873f2d111b6e5a4d7f911fa06a0625e1ecb819e1d0329e13"
+          "sha256": "f0747a9292d9f6a0938fc7980d321fc7d94a397be5365e80cf4a7b23442edc78"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "e525f7307f6efec5b945b09b824678fe95d70d69c7b48269f34e1b615d6bb602"
+          "sha256": "fe3049e7aa4dc0ab1e63583b9396ca5356ca90612e561977484fcc72d7556c41"
         }
       ]
     },
@@ -662,7 +662,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-sources",
       "@type": "Article",
       "name": "The Flat Rate Movers — Intent Query Sources",
-      "description": "Where the query strings come from. The ai-question rows are the phrasings of the company’s blog question bank (compiled 2026-10-30 from live searches of what people ask about pianos and antiques, ISPM 15 export packing, custom crating, final-mile delivery, industrial offices, government moves, military moves, the I-81 / I-66 / I-70 corridors, transloading and workforce services, and packing), carried verbatim apart from American-spelling normalization. The pattern families — service-plus-place, near-me, cost, how-to-hire, best and top-rated forms — are the standard shapes customers use to search for a mover or a logistics service, instantiated only with this company’s real services, real footprint areas and real corridors. No query string in the rubric names a service, area, certification, price or capability the estate does not publish. Version 2 separates the rubric’s sources from its evidence. Every row is generated from the live estate itself — the registries, the pages and what each page is for (rule R13 page-derived rows join the v1 pattern families). Real Google Search Console queries enter only as a historical evidence overlay: the exports on file cover the pre-rebuild era (2026-07-29 to 2026-10-28) and a transition window straddling the rebuild (2026-10-04 to 2026-10-31), and their metrics attach, each era-tagged from its own import window against the 2026-10-29 rebuild cutover, only to rows whose target page existed in that window and is still live at the same URL. Current-era pages carry no borrowed metrics and no zero-filled values; their rows stand as awaiting observation until the new era produces evidence of its own. The deploy generation adds rule R14: hub, category and estate pages that carry no service of their own gain bounded roll-up rows derived from the services they group, so every published page is a rubric target, and the totals node carries the per-area row counts for the whole 71-feature footprint, zero counts included.",
+      "description": "Where the query strings come from. The ai-question rows are the phrasings of the company’s blog question bank (compiled 2026-10-30 from live searches of what people ask about pianos and antiques, ISPM 15 export packing, custom crating, final-mile delivery, industrial offices, government moves, military moves, the I-81 / I-66 / I-70 corridors, transloading and workforce services, and packing), carried verbatim apart from American-spelling normalization. The pattern families — service-plus-place, near-me, cost, how-to-hire, best and top-rated forms — are the standard shapes customers use to search for a mover or a logistics service, instantiated only with this company’s real services, real footprint areas and real corridors. The per-service question bank v2 was researched on 2026-11-05 from the estate’s own category datasets and page FAQs, completed by live searches of what customers and buyers ask in each category. No query string in the rubric names a service, area, certification, price or capability the estate does not publish. Version 2 separates the rubric’s sources from its evidence. Every row is generated from the live estate itself — the registries, the pages and what each page is for (rule R13 page-derived rows join the v1 pattern families). Real Google Search Console queries enter only as a historical evidence overlay: the exports on file cover the pre-rebuild era (2026-07-29 to 2026-10-28) and a transition window straddling the rebuild (2026-10-04 to 2026-10-31), and their metrics attach, each era-tagged from its own import window against the 2026-10-29 rebuild cutover, only to rows whose target page existed in that window and is still live at the same URL. Current-era pages carry no borrowed metrics and no zero-filled values; their rows stand as awaiting observation until the new era produces evidence of its own. The deploy generation adds rule R14: hub, category and estate pages that carry no service of their own gain bounded roll-up rows derived from the services they group, so every published page is a rubric target, and the totals node carries the per-area row counts for the whole 71-feature footprint, zero counts included.",
       "keywords": [
         "question bank",
         "query sources",
@@ -734,13 +734,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "65c6869cf22e6f9a873f2d111b6e5a4d7f911fa06a0625e1ecb819e1d0329e13"
+          "sha256": "f0747a9292d9f6a0938fc7980d321fc7d94a397be5365e80cf4a7b23442edc78"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "e525f7307f6efec5b945b09b824678fe95d70d69c7b48269f34e1b615d6bb602"
+          "sha256": "fe3049e7aa4dc0ab1e63583b9396ca5356ca90612e561977484fcc72d7556c41"
         }
       ]
     },
@@ -821,13 +821,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "65c6869cf22e6f9a873f2d111b6e5a4d7f911fa06a0625e1ecb819e1d0329e13"
+          "sha256": "f0747a9292d9f6a0938fc7980d321fc7d94a397be5365e80cf4a7b23442edc78"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "e525f7307f6efec5b945b09b824678fe95d70d69c7b48269f34e1b615d6bb602"
+          "sha256": "fe3049e7aa4dc0ab1e63583b9396ca5356ca90612e561977484fcc72d7556c41"
         }
       ]
     },
@@ -835,7 +835,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-totals",
       "@type": "Dataset",
       "name": "The Flat Rate Movers — Intent Coverage Totals, Areas and Certificate Dataset",
-      "description": "Totals for this generation of the intent-coverage rubric, computed by the generator run of 2026-11-05: 5677 rows across 34 services — navigational-local (4684), cost (315), how-process (136), best-choice (204), ai-question (320). Per-service row counts are carried on the 34 coverage nodes in this file. Area coverage follows the service-area GeoJSON: 71 features in total; the Winchester footprint is 44 areas and the Martinsburg footprint is 41 areas, with 14 areas served by both branches and recorded as shared. The canonical serialization of the rows hashes to the SHA-256 digest recorded on this node (intentRowsDigest), which is also stored in the rubric database, so any reader can re-prove that the published totals describe the exact row set the generator produced. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on this node.",
+      "description": "Totals for this generation of the intent-coverage rubric, computed by the generator run of 2026-11-05: 24728 rows across 34 services — navigational-local (4711), cost (4087), how-process (1988), best-choice (3969), ai-question (9955). Per-service row counts are carried on the 34 coverage nodes in this file. Area coverage follows the service-area GeoJSON: 71 features in total; the Winchester footprint is 44 areas and the Martinsburg footprint is 41 areas, with 14 areas served by both branches and recorded as shared. The canonical serialization of the rows hashes to the SHA-256 digest recorded on this node (intentRowsDigest), which is also stored in the rubric database, so any reader can re-prove that the published totals describe the exact row set the generator produced. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on this node.",
       "keywords": [
         "coverage totals",
         "rows digest",
@@ -922,19 +922,19 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "65c6869cf22e6f9a873f2d111b6e5a4d7f911fa06a0625e1ecb819e1d0329e13"
+          "sha256": "f0747a9292d9f6a0938fc7980d321fc7d94a397be5365e80cf4a7b23442edc78"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "e525f7307f6efec5b945b09b824678fe95d70d69c7b48269f34e1b615d6bb602"
+          "sha256": "fe3049e7aa4dc0ab1e63583b9396ca5356ca90612e561977484fcc72d7556c41"
         }
       ],
-      "intentRowsDigest": "19fd4fe04d8fe362546791da0f76b82d1f7a1ebc9bcb31b5c6773c5df9dd1b36",
+      "intentRowsDigest": "d70f84283e2d3977c9ce998b6aa9ff7a039c5225ef7425c5b29b09889b7227ad",
       "intentRowsDigestAlgorithm": "SHA-256",
       "rowSources": {
-        "estateGenerated": 5677,
+        "estateGenerated": 24728,
         "pageDerived": 352,
         "gscObservedRows": 0
       },
@@ -946,9 +946,9 @@
         ],
         "basis": "Historical Google Search Console Performance exports. Every attachment is era-tagged from its own import window against the 2026-10-29 rebuild cutover: a window ending on or before 2026-10-28 is pre-rebuild, a window starting on or after 2026-10-29 is current, and a window straddling the cutover is transition. Metrics attach only to rows whose target page existed in the window (present in the export Pages aggregate) and is still live at the same URL; attachments are evidence, never current performance. Pages of the current era carry no borrowed metrics and no zero-filled values.",
         "queriesImported": 1322,
-        "queriesAttachedToRows": 27,
-        "rowsEnriched": 116,
-        "queriesUnattached": 1295,
+        "queriesAttachedToRows": 28,
+        "rowsEnriched": 117,
+        "queriesUnattached": 1294,
         "pagesInExport": 181,
         "pagesStillLive": 137,
         "pagesStale": 44
@@ -987,322 +987,322 @@
           "name": "Winchester, VA",
           "type": "branch",
           "branch": "winchester",
-          "rows": 34
+          "rows": 196
         },
         {
           "area": "place-martinsburg-wv",
           "name": "Martinsburg, WV",
           "type": "branch",
           "branch": "martinsburg",
-          "rows": 34
+          "rows": 196
         },
         {
           "area": "place-leesburg-va",
           "name": "Leesburg, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-marshall-va",
           "name": "Marshall, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 29
+          "rows": 312
         },
         {
           "area": "place-sterling-va",
           "name": "Sterling, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-stephens-city-va",
           "name": "Stephens City, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-berryville-va",
           "name": "Berryville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-middleburg-va",
           "name": "Middleburg, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-middletown-va",
           "name": "Middletown, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-moorefield-wv",
           "name": "Moorefield, WV",
           "type": "city",
           "branch": "both",
-          "rows": 29
+          "rows": 312
         },
         {
           "area": "place-round-hill-va",
           "name": "Round Hill, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 29
+          "rows": 312
         },
         {
           "area": "place-stephenson-va",
           "name": "Stephenson, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 29
+          "rows": 312
         },
         {
           "area": "place-upperville-va",
           "name": "Upperville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 29
+          "rows": 312
         },
         {
           "area": "place-purcellville-va",
           "name": "Purcellville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-south-riding-va",
           "name": "South Riding, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 29
+          "rows": 312
         },
         {
           "area": "place-inwood-wv",
           "name": "Inwood, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-hagerstown-md",
           "name": "Hagerstown, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-hedgesville-wv",
           "name": "Hedgesville, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-paw-paw-wv",
           "name": "Paw Paw, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 29
+          "rows": 312
         },
         {
           "area": "place-shepherdstown-wv",
           "name": "Shepherdstown, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 29
+          "rows": 312
         },
         {
           "area": "place-bunker-hill-wv",
           "name": "Bunker Hill, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 29
+          "rows": 312
         },
         {
           "area": "place-charles-town-wv",
           "name": "Charles Town, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-clear-spring-md",
           "name": "Clear Spring, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 29
+          "rows": 312
         },
         {
           "area": "place-summit-point-wv",
           "name": "Summit Point, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 29
+          "rows": 312
         },
         {
           "area": "place-harpers-ferry-wv",
           "name": "Harpers Ferry, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-kearneysville-wv",
           "name": "Kearneysville, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 29
+          "rows": 312
         },
         {
           "area": "place-front-royal-va",
           "name": "Front Royal, VA",
           "type": "city",
           "branch": "both",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-strasburg-va",
           "name": "Strasburg, VA",
           "type": "city",
           "branch": "both",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-woodstock-va",
           "name": "Woodstock, VA",
           "type": "city",
           "branch": "both",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-bristow-va",
           "name": "Bristow, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 29
+          "rows": 312
         },
         {
           "area": "place-berkeley-springs-wv",
           "name": "Berkeley Springs, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-romney-wv",
           "name": "Romney, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 33
+          "rows": 355
         },
         {
           "area": "place-frederick-md",
           "name": "Frederick, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-hancock-md",
           "name": "Hancock, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 29
+          "rows": 312
         },
         {
           "area": "county-frederick-county",
           "name": "Frederick County",
           "type": "county",
           "branch": "winchester",
-          "rows": 20
+          "rows": 218
         },
         {
           "area": "county-loudoun-county",
           "name": "Loudoun County",
           "type": "county",
           "branch": "winchester",
-          "rows": 20
+          "rows": 218
         },
         {
           "area": "county-berkeley-county",
           "name": "Berkeley County",
           "type": "county",
           "branch": "martinsburg",
-          "rows": 20
+          "rows": 218
         },
         {
           "area": "county-jefferson-county",
           "name": "Jefferson County",
           "type": "county",
           "branch": "martinsburg",
-          "rows": 20
+          "rows": 218
         },
         {
           "area": "county-morgan-county",
           "name": "Morgan County",
           "type": "county",
           "branch": "martinsburg",
-          "rows": 20
+          "rows": 218
         },
         {
           "area": "county-clarke-county",
           "name": "Clarke County",
           "type": "county",
           "branch": "winchester",
-          "rows": 20
+          "rows": 218
         },
         {
           "area": "county-warren-county",
           "name": "Warren County",
           "type": "county",
           "branch": "both",
-          "rows": 20
+          "rows": 218
         },
         {
           "area": "county-shenandoah-county",
           "name": "Shenandoah County",
           "type": "county",
           "branch": "both",
-          "rows": 20
+          "rows": 218
         },
         {
           "area": "county-hampshire-county",
           "name": "Hampshire County",
           "type": "county",
           "branch": "martinsburg",
-          "rows": 20
+          "rows": 218
         },
         {
           "area": "county-hardy-county",
           "name": "Hardy County",
           "type": "county",
           "branch": "both",
-          "rows": 20
+          "rows": 218
         },
         {
           "area": "county-washington-county",
           "name": "Washington County",
           "type": "county",
           "branch": "martinsburg",
-          "rows": 20
+          "rows": 218
         },
         {
           "area": "county-fauquier-county",
           "name": "Fauquier County",
           "type": "county",
           "branch": "winchester",
-          "rows": 20
+          "rows": 218
         },
         {
           "area": "landmark-port-of-virginia",
@@ -1358,140 +1358,140 @@
           "name": "Ashburn, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-chantilly-va",
           "name": "Chantilly, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 32
+          "rows": 345
         },
         {
           "area": "place-herndon-va",
           "name": "Herndon, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 33
+          "rows": 355
         },
         {
           "area": "place-reston-va",
           "name": "Reston, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 33
+          "rows": 355
         },
         {
           "area": "place-tysons-va",
           "name": "Tysons, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 32
+          "rows": 345
         },
         {
           "area": "place-fairfax-va",
           "name": "Fairfax, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 32
+          "rows": 345
         },
         {
           "area": "place-gainesville-va",
           "name": "Gainesville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 33
+          "rows": 355
         },
         {
           "area": "place-haymarket-va",
           "name": "Haymarket, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 33
+          "rows": 355
         },
         {
           "area": "place-manassas-va",
           "name": "Manassas, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 33
+          "rows": 355
         },
         {
           "area": "place-warrenton-va",
           "name": "Warrenton, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-luray-va",
           "name": "Luray, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-falling-waters-wv",
           "name": "Falling Waters, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-williamsport-md",
           "name": "Williamsport, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-chambersburg-pa",
           "name": "Chambersburg, PA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 32
+          "rows": 344
         },
         {
           "area": "place-waynesboro-pa",
           "name": "Waynesboro, PA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 34
+          "rows": 366
         },
         {
           "area": "place-gaithersburg-md",
           "name": "Gaithersburg, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 33
+          "rows": 356
         },
         {
           "area": "place-rockville-md",
           "name": "Rockville, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 33
+          "rows": 356
         },
         {
           "area": "place-washington-dc",
           "name": "Washington, DC",
           "type": "city",
           "branch": "winchester",
-          "rows": 32
+          "rows": 345
         }
       ],
       "rowsByNonFeatureArea": {
         "scope-winchester": 271,
         "scope-martinsburg": 225,
         "scope-shenandoah-valley": 170,
-        "i-66": 9,
-        "i-70": 9,
-        "i-81": 9
+        "i-66": 27,
+        "i-70": 27,
+        "i-81": 27
       },
       "outcomeRollup": {
-        "rows": 5677,
+        "rows": 24728,
         "byHighestGate": {
-          "none": 3206,
+          "none": 22257,
           "crawled": 299,
           "indexed": 2172,
           "understood": 0,
@@ -1499,53 +1499,53 @@
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 1735,
-          "awaiting-observation": 1471,
+          "unknown": 6466,
+          "awaiting-observation": 15791,
           "partial": 2471,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 3206,
+            "unknown": 22257,
             "passed": 2471,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 3206,
+            "unknown": 22257,
             "passed": 2172,
             "failed": 299,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 5677,
+            "unknown": 24728,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 5677,
+            "unknown": 24728,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 5677,
+            "unknown": 24728,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           }
         }
       },
-      "outcomeDigest": "3784707c3cae5484815f4c25346545f5a4da0b1591eea1847987e73ef8b2e030",
+      "outcomeDigest": "52863a8b095aa43f431e19098758a376a9c0523154a810f6147d76d4d0630b3b",
       "certificate": {
         "@type": "PropertyValue",
         "name": "Certificate — signed AI master index distribution",
         "propertyID": "https://theflatratemovers.com/ai-master-index.json",
         "value": "This dataset file is a sealed distribution of the signed AI master index of The Flat Rate Movers. Its SHA-256 digest and byte size are recorded in that index; the index is signed with Ed25519 under key id theflatratemovers-2026-10-29-1 and is verifiable against the key published at https://theflatratemovers.com/.well-known/signing-keys.json using the detached signature at https://theflatratemovers.com/ai-master-index.jws. The certificate digests carried by the rubric rows in the working rubric database are read from the same signed index at generation time."
       },
-      "generatedBy": "build-intent-rubric.js v2.0.0",
+      "generatedBy": "build-intent-rubric.js v3.0.0",
       "areaCoverage": {
         "features": 71,
         "winchesterFootprint": 44,
@@ -1578,7 +1578,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-residential",
       "@type": "Dataset",
       "name": "Intent Coverage — Residential Moving",
-      "description": "Generated intent coverage for Residential Moving: 174 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-residential.",
+      "description": "Generated intent coverage for Residential Moving: 821 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-residential.",
       "keywords": [
         "residential moving questions",
         "residential movers"
@@ -1657,28 +1657,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-residential.json",
           "encodingFormat": "application/json",
-          "sha256": "b32bbf5ed427bbcfadf90ec51fef22914a463bd30e8e11726bc9c49abb0a7d5a"
+          "sha256": "0275af76c7f0a9f2abb9e4c7a11f98f7d8ccc1c1702a2881fb3d6331f64009e2"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-residential",
-      "queryRows": 174,
+      "queryRows": 821,
       "queryRowsByIntentClass": {
         "navigational-local": 149,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 7
+        "cost": 134,
+        "how-process": 66,
+        "best-choice": 131,
+        "ai-question": 341
       },
       "queryRowsBySource": {
-        "generated": 174,
+        "generated": 821,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 7,
       "outcomeRollup": {
-        "rows": 174,
+        "rows": 821,
         "byHighestGate": {
-          "none": 45,
+          "none": 692,
           "crawled": 15,
           "indexed": 114,
           "understood": 0,
@@ -1686,7 +1686,7 @@
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 45,
+          "unknown": 692,
           "awaiting-observation": 0,
           "partial": 129,
           "blocked": 0,
@@ -1694,31 +1694,31 @@
         },
         "byGateState": {
           "crawled": {
-            "unknown": 45,
+            "unknown": 692,
             "passed": 129,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 45,
+            "unknown": 692,
             "passed": 114,
             "failed": 15,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 174,
+            "unknown": 821,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 174,
+            "unknown": 821,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 174,
+            "unknown": 821,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -1750,7 +1750,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-commercial",
       "@type": "Dataset",
       "name": "Intent Coverage — Commercial and Office Moving",
-      "description": "Generated intent coverage for Commercial and Office Moving: 185 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-commercial.",
+      "description": "Generated intent coverage for Commercial and Office Moving: 831 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-commercial.",
       "keywords": [
         "commercial and office moving questions",
         "commercial movers"
@@ -1829,28 +1829,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-commercial.json",
           "encodingFormat": "application/json",
-          "sha256": "708fc0bf8fb93749abf1869134d66450b0a6c5f44cd07f0fc97c3d49d48b4646"
+          "sha256": "8edb083b698834ca68406035603cb94c4b885b87e113299f1cc23cf1a69975c0"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-commercial",
-      "queryRows": 185,
+      "queryRows": 831,
       "queryRowsByIntentClass": {
         "navigational-local": 152,
-        "cost": 14,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 9
+        "cost": 140,
+        "how-process": 66,
+        "best-choice": 131,
+        "ai-question": 342
       },
       "queryRowsBySource": {
-        "generated": 185,
+        "generated": 831,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 185,
+        "rows": 831,
         "byHighestGate": {
-          "none": 92,
+          "none": 738,
           "crawled": 11,
           "indexed": 82,
           "understood": 0,
@@ -1858,39 +1858,39 @@
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 74,
-          "awaiting-observation": 18,
+          "unknown": 425,
+          "awaiting-observation": 313,
           "partial": 93,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 92,
+            "unknown": 738,
             "passed": 93,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 92,
+            "unknown": 738,
             "passed": 82,
             "failed": 11,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 185,
+            "unknown": 831,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 185,
+            "unknown": 831,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 185,
+            "unknown": 831,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -1922,7 +1922,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-local-regional",
       "@type": "Dataset",
       "name": "Intent Coverage — Local and Regional Moving",
-      "description": "Generated intent coverage for Local and Regional Moving: 183 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-local-regional.",
+      "description": "Generated intent coverage for Local and Regional Moving: 835 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-local-regional.",
       "keywords": [
         "local and regional moving questions",
         "local movers"
@@ -2001,28 +2001,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
           "encodingFormat": "application/json",
-          "sha256": "65461a12b385dfcce23869f5fe9dddf15482f625fa9cc01d30e48635a069fe53"
+          "sha256": "f3da003cc41623f5d7f958d8d45f2d3abdf6569305ea9f3f4a2a7cc73719a3a6"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-local-regional",
-      "queryRows": 183,
+      "queryRows": 835,
       "queryRowsByIntentClass": {
-        "navigational-local": 150,
-        "cost": 14,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 9
+        "navigational-local": 153,
+        "cost": 140,
+        "how-process": 66,
+        "best-choice": 134,
+        "ai-question": 342
       },
       "queryRowsBySource": {
-        "generated": 183,
+        "generated": 835,
         "gscObserved": 0
       },
-      "generatedRowsEnrichedByGsc": 5,
+      "generatedRowsEnrichedByGsc": 6,
       "outcomeRollup": {
-        "rows": 183,
+        "rows": 835,
         "byHighestGate": {
-          "none": 111,
+          "none": 763,
           "crawled": 7,
           "indexed": 65,
           "understood": 0,
@@ -2030,39 +2030,39 @@
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 46,
-          "awaiting-observation": 65,
+          "unknown": 138,
+          "awaiting-observation": 625,
           "partial": 72,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 111,
+            "unknown": 763,
             "passed": 72,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 111,
+            "unknown": 763,
             "passed": 65,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 183,
+            "unknown": 835,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 183,
+            "unknown": 835,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 183,
+            "unknown": 835,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -2094,7 +2094,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-long-distance",
       "@type": "Dataset",
       "name": "Intent Coverage — Long-Distance Moving",
-      "description": "Generated intent coverage for Long-Distance Moving: 188 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-long-distance.",
+      "description": "Generated intent coverage for Long-Distance Moving: 841 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-long-distance.",
       "keywords": [
         "long-distance moving questions",
         "long distance movers"
@@ -2173,29 +2173,29 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
           "encodingFormat": "application/json",
-          "sha256": "17a92688c824cc8edfc230093d48f79d81547a7ad7a690caa0240259c459a973"
+          "sha256": "26307825cf5aab71685383895afba11d6fa7cbb0ed2c88e66b4afa6deff11e6e"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-long-distance",
-      "queryRows": 188,
+      "queryRows": 841,
       "queryRowsByIntentClass": {
         "research": 9,
-        "navigational-local": 160,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 1
+        "navigational-local": 163,
+        "cost": 134,
+        "how-process": 66,
+        "best-choice": 134,
+        "ai-question": 335
       },
       "queryRowsBySource": {
-        "generated": 188,
+        "generated": 841,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 7,
       "outcomeRollup": {
-        "rows": 188,
+        "rows": 841,
         "byHighestGate": {
-          "none": 110,
+          "none": 763,
           "crawled": 13,
           "indexed": 65,
           "understood": 0,
@@ -2203,39 +2203,39 @@
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 68,
-          "awaiting-observation": 42,
+          "unknown": 363,
+          "awaiting-observation": 400,
           "partial": 78,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 110,
+            "unknown": 763,
             "passed": 78,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 110,
+            "unknown": 763,
             "passed": 65,
             "failed": 13,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 188,
+            "unknown": 841,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 188,
+            "unknown": 841,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 188,
+            "unknown": 841,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -2267,7 +2267,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-packing",
       "@type": "Dataset",
       "name": "Intent Coverage — Packing and Unpacking",
-      "description": "Generated intent coverage for Packing and Unpacking: 181 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-packing.",
+      "description": "Generated intent coverage for Packing and Unpacking: 833 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-packing.",
       "keywords": [
         "packing and unpacking questions",
         "packing services"
@@ -2346,28 +2346,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-packing.json",
           "encodingFormat": "application/json",
-          "sha256": "c43ce2f7b56f114c6b192fb4ad7cbe43bc518a011839335908aa12e0d346712c"
+          "sha256": "b660c3628a7e51c083059794e6ec013853ca7bf4c50af830defbdf53cafa4c68"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-packing",
-      "queryRows": 181,
+      "queryRows": 833,
       "queryRowsByIntentClass": {
-        "navigational-local": 144,
-        "cost": 12,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 15
+        "navigational-local": 147,
+        "cost": 138,
+        "how-process": 66,
+        "best-choice": 134,
+        "ai-question": 348
       },
       "queryRowsBySource": {
-        "generated": 181,
+        "generated": 833,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 181,
+        "rows": 833,
         "byHighestGate": {
-          "none": 69,
+          "none": 721,
           "crawled": 13,
           "indexed": 99,
           "understood": 0,
@@ -2376,38 +2376,38 @@
         },
         "byStatus": {
           "unknown": 51,
-          "awaiting-observation": 18,
+          "awaiting-observation": 670,
           "partial": 112,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 69,
+            "unknown": 721,
             "passed": 112,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 69,
+            "unknown": 721,
             "passed": 99,
             "failed": 13,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 181,
+            "unknown": 833,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 181,
+            "unknown": 833,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 181,
+            "unknown": 833,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -2439,7 +2439,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-sir-heavy",
       "@type": "Dataset",
       "name": "Intent Coverage — SIR Heavy Asset Relocation (KIM-GS Protocol)",
-      "description": "Generated intent coverage for SIR Heavy Asset Relocation (KIM-GS Protocol): 148 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-sir-heavy.",
+      "description": "Generated intent coverage for SIR Heavy Asset Relocation (KIM-GS Protocol): 534 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-sir-heavy.",
       "keywords": [
         "sir heavy asset relocation (kim-gs protocol) questions",
         "heavy asset movers"
@@ -2518,28 +2518,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-sir-heavy.json",
           "encodingFormat": "application/json",
-          "sha256": "ee02a366475d280c39b4a8ce9febf53e1d963aa16cafc34b142f8d4ca9524b70"
+          "sha256": "55074599e3116589e3e75ff3be4518dc0ac502a078fcb8f3e960c9e7ac99cbb3"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-sir-heavy",
-      "queryRows": 148,
+      "queryRows": 534,
       "queryRowsByIntentClass": {
         "navigational-local": 128,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 2
+        "cost": 82,
+        "how-process": 40,
+        "best-choice": 79,
+        "ai-question": 205
       },
       "queryRowsBySource": {
-        "generated": 148,
+        "generated": 534,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 148,
+        "rows": 534,
         "byHighestGate": {
-          "none": 80,
+          "none": 466,
           "crawled": 19,
           "indexed": 49,
           "understood": 0,
@@ -2548,38 +2548,38 @@
         },
         "byStatus": {
           "unknown": 44,
-          "awaiting-observation": 36,
+          "awaiting-observation": 422,
           "partial": 68,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 80,
+            "unknown": 466,
             "passed": 68,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 80,
+            "unknown": 466,
             "passed": 49,
             "failed": 19,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 148,
+            "unknown": 534,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 148,
+            "unknown": 534,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 148,
+            "unknown": 534,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -2611,7 +2611,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-gun-safe",
       "@type": "Dataset",
       "name": "Intent Coverage — Gun Safe Moving",
-      "description": "Generated intent coverage for Gun Safe Moving: 184 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-gun-safe.",
+      "description": "Generated intent coverage for Gun Safe Moving: 894 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-gun-safe.",
       "keywords": [
         "gun safe moving questions",
         "gun safe movers"
@@ -2690,7 +2690,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-gun-safe.json",
           "encodingFormat": "application/json",
-          "sha256": "7f22dcd3c83770318a0a5f008efaf590c6c3fa2a9dc611e849efede16866e320"
+          "sha256": "74cfe5cb5c58c844efbd5ce8bfc643f01c6daaea0847d00fc7209c6f3bf26529"
         },
         {
           "@type": "DataDownload",
@@ -2701,23 +2701,23 @@
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-gun-safe",
-      "queryRows": 184,
+      "queryRows": 894,
       "queryRowsByIntentClass": {
         "navigational-local": 158,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 8
+        "cost": 134,
+        "how-process": 66,
+        "best-choice": 131,
+        "ai-question": 405
       },
       "queryRowsBySource": {
-        "generated": 184,
+        "generated": 894,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 7,
       "outcomeRollup": {
-        "rows": 184,
+        "rows": 894,
         "byHighestGate": {
-          "none": 100,
+          "none": 810,
           "crawled": 10,
           "indexed": 74,
           "understood": 0,
@@ -2725,39 +2725,39 @@
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 74,
-          "awaiting-observation": 26,
+          "unknown": 492,
+          "awaiting-observation": 318,
           "partial": 84,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 100,
+            "unknown": 810,
             "passed": 84,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 100,
+            "unknown": 810,
             "passed": 74,
             "failed": 10,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 184,
+            "unknown": 894,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 184,
+            "unknown": 894,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 184,
+            "unknown": 894,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -2789,7 +2789,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-piano-antique",
       "@type": "Dataset",
       "name": "Intent Coverage — Piano, Antique and White-Glove Moving",
-      "description": "Generated intent coverage for Piano, Antique and White-Glove Moving: 175 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-piano-antique.",
+      "description": "Generated intent coverage for Piano, Antique and White-Glove Moving: 821 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-piano-antique.",
       "keywords": [
         "piano, antique and white-glove moving questions",
         "piano movers"
@@ -2868,28 +2868,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-piano-antique.json",
           "encodingFormat": "application/json",
-          "sha256": "81692e02666f4dca2cb340b4b4e1700b17e2294f586b0db3528f8fa961cb3868"
+          "sha256": "48bd6cff652f093b4a355ae462abcf4fb13f2c654662e38ccfce332686969fb6"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-piano-antique",
-      "queryRows": 175,
+      "queryRows": 821,
       "queryRowsByIntentClass": {
         "navigational-local": 144,
-        "cost": 9,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 12
+        "cost": 135,
+        "how-process": 66,
+        "best-choice": 131,
+        "ai-question": 345
       },
       "queryRowsBySource": {
-        "generated": 175,
+        "generated": 821,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 175,
+        "rows": 821,
         "byHighestGate": {
-          "none": 102,
+          "none": 748,
           "crawled": 8,
           "indexed": 65,
           "understood": 0,
@@ -2898,38 +2898,38 @@
         },
         "byStatus": {
           "unknown": 40,
-          "awaiting-observation": 62,
+          "awaiting-observation": 708,
           "partial": 73,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 102,
+            "unknown": 748,
             "passed": 73,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 102,
+            "unknown": 748,
             "passed": 65,
             "failed": 8,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 175,
+            "unknown": 821,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 175,
+            "unknown": 821,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 175,
+            "unknown": 821,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -2961,7 +2961,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-ispm15",
       "@type": "Dataset",
       "name": "Intent Coverage — ISPM 15 Export Packing",
-      "description": "Generated intent coverage for ISPM 15 Export Packing: 158 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-ispm15.",
+      "description": "Generated intent coverage for ISPM 15 Export Packing: 690 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-ispm15.",
       "keywords": [
         "ispm 15 export packing questions",
         "ISPM 15 export packing"
@@ -3040,28 +3040,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-ispm15.json",
           "encodingFormat": "application/json",
-          "sha256": "15000f0bd56223cc2438dfcb7ce86150dbe59a6b8df2473bba773f5cb94998d3"
+          "sha256": "ce0571d52c39414f8971fe75ea9fd33f5076f3b24932f90b7737dc513650731d"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-ispm15",
-      "queryRows": 158,
+      "queryRows": 690,
       "queryRowsByIntentClass": {
-        "navigational-local": 127,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 13
+        "navigational-local": 130,
+        "cost": 110,
+        "how-process": 54,
+        "best-choice": 110,
+        "ai-question": 286
       },
       "queryRowsBySource": {
-        "generated": 158,
+        "generated": 690,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 158,
+        "rows": 690,
         "byHighestGate": {
-          "none": 40,
+          "none": 572,
           "crawled": 7,
           "indexed": 111,
           "understood": 0,
@@ -3069,39 +3069,39 @@
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 34,
-          "awaiting-observation": 6,
+          "unknown": 289,
+          "awaiting-observation": 283,
           "partial": 118,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 40,
+            "unknown": 572,
             "passed": 118,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 40,
+            "unknown": 572,
             "passed": 111,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 158,
+            "unknown": 690,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 158,
+            "unknown": 690,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 158,
+            "unknown": 690,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -3133,7 +3133,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-crating",
       "@type": "Dataset",
       "name": "Intent Coverage — Custom Crating",
-      "description": "Generated intent coverage for Custom Crating: 154 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-crating.",
+      "description": "Generated intent coverage for Custom Crating: 686 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-crating.",
       "keywords": [
         "custom crating questions",
         "custom crating"
@@ -3212,28 +3212,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-crating.json",
           "encodingFormat": "application/json",
-          "sha256": "41a96cc78a5898f5a7fa33f98bf5741bf00a718963ca69dda454d9e37cb0d3d7"
+          "sha256": "2c0c7d6521e8b23a7502562a598121f971fcb119ff831f31c6a7e134b2c76d2a"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-crating",
-      "queryRows": 154,
+      "queryRows": 686,
       "queryRowsByIntentClass": {
-        "navigational-local": 121,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 15
+        "navigational-local": 124,
+        "cost": 110,
+        "how-process": 54,
+        "best-choice": 110,
+        "ai-question": 288
       },
       "queryRowsBySource": {
-        "generated": 154,
+        "generated": 686,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 154,
+        "rows": 686,
         "byHighestGate": {
-          "none": 40,
+          "none": 572,
           "crawled": 7,
           "indexed": 107,
           "understood": 0,
@@ -3241,39 +3241,39 @@
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 34,
-          "awaiting-observation": 6,
+          "unknown": 289,
+          "awaiting-observation": 283,
           "partial": 114,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 40,
+            "unknown": 572,
             "passed": 114,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 40,
+            "unknown": 572,
             "passed": 107,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 154,
+            "unknown": 686,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 154,
+            "unknown": 686,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 154,
+            "unknown": 686,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -3305,7 +3305,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-transloading",
       "@type": "Dataset",
       "name": "Intent Coverage — Loading, Transloading and Container Services",
-      "description": "Generated intent coverage for Loading, Transloading and Container Services: 330 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-transloading.",
+      "description": "Generated intent coverage for Loading, Transloading and Container Services: 984 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-transloading.",
       "keywords": [
         "loading, transloading and container services questions",
         "transloading services"
@@ -3384,25 +3384,25 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-transloading.json",
           "encodingFormat": "application/json",
-          "sha256": "564b4de1ac38779995ff54a082ab2b3ede180ab9108c729342070c78f862a91a"
+          "sha256": "8965e82fabb7ac5bfb9197a21f50bc4e67b11dde2736cdc0e2d0e089384678fd"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-transloading-inland-port.json",
           "encodingFormat": "application/json",
-          "sha256": "e933c8004dd7dad4ff7baa1c45153fd4882d7d4bbeff1bb05cec202016075d08"
+          "sha256": "ec3039eb7183c58ad86bacebe41846e52d443bd465170b99d6a914c782002e16"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-ocean-container.json",
           "encodingFormat": "application/json",
-          "sha256": "b859baaba29b1b772a882e30f8c0dcf48592f4aecadd4bdfce5573196179c9a3"
+          "sha256": "a9006f5f3a5afd73f6d0bc5001156b9a1c2cdd1a2999d25ba7023ce766b2363f"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-ports.json",
           "encodingFormat": "application/json",
-          "sha256": "3e62e2f0d219378aa6848298447f6fcb3e3e36464dd3e7a1a9814a962825e000"
+          "sha256": "29ab3be4cdb4e85689886c7caaa3624a5121952cac64c41cecb40a21bf22fad7"
         },
         {
           "@type": "DataDownload",
@@ -3413,23 +3413,23 @@
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-transloading",
-      "queryRows": 330,
+      "queryRows": 984,
       "queryRowsByIntentClass": {
-        "navigational-local": 284,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 28
+        "navigational-local": 287,
+        "cost": 134,
+        "how-process": 66,
+        "best-choice": 134,
+        "ai-question": 363
       },
       "queryRowsBySource": {
-        "generated": 330,
+        "generated": 984,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 330,
+        "rows": 984,
         "byHighestGate": {
-          "none": 220,
+          "none": 874,
           "crawled": 14,
           "indexed": 96,
           "understood": 0,
@@ -3437,39 +3437,39 @@
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 132,
-          "awaiting-observation": 88,
+          "unknown": 427,
+          "awaiting-observation": 447,
           "partial": 110,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 220,
+            "unknown": 874,
             "passed": 110,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 220,
+            "unknown": 874,
             "passed": 96,
             "failed": 14,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 330,
+            "unknown": 984,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 330,
+            "unknown": 984,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 330,
+            "unknown": 984,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -3501,7 +3501,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-final-mile",
       "@type": "Dataset",
       "name": "Intent Coverage — Final-Mile Delivery",
-      "description": "Generated intent coverage for Final-Mile Delivery: 172 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-final-mile.",
+      "description": "Generated intent coverage for Final-Mile Delivery: 762 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-final-mile.",
       "keywords": [
         "final-mile delivery questions",
         "final mile delivery"
@@ -3580,28 +3580,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-final-mile.json",
           "encodingFormat": "application/json",
-          "sha256": "29f1fa3f3efcdddf05aa2db77c166d3408dc02dfde8fce128dcb1760973a50ca"
+          "sha256": "32cf461b50c1b517c8751405d27a217818b88b29bde1d8bb8374d6085f266e05"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-final-mile",
-      "queryRows": 172,
+      "queryRows": 762,
       "queryRowsByIntentClass": {
-        "navigational-local": 143,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 11
+        "navigational-local": 146,
+        "cost": 134,
+        "how-process": 66,
+        "best-choice": 134,
+        "ai-question": 282
       },
       "queryRowsBySource": {
-        "generated": 172,
+        "generated": 762,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 172,
+        "rows": 762,
         "byHighestGate": {
-          "none": 127,
+          "none": 717,
           "crawled": 7,
           "indexed": 38,
           "understood": 0,
@@ -3610,38 +3610,38 @@
         },
         "byStatus": {
           "unknown": 109,
-          "awaiting-observation": 18,
+          "awaiting-observation": 608,
           "partial": 45,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 127,
+            "unknown": 717,
             "passed": 45,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 127,
+            "unknown": 717,
             "passed": 38,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 172,
+            "unknown": 762,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 172,
+            "unknown": 762,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 172,
+            "unknown": 762,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -3673,7 +3673,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-white-glove",
       "@type": "Dataset",
       "name": "Intent Coverage — White-Glove Delivery",
-      "description": "Generated intent coverage for White-Glove Delivery: 202 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-white-glove.",
+      "description": "Generated intent coverage for White-Glove Delivery: 850 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-white-glove.",
       "keywords": [
         "white-glove delivery questions",
         "white glove delivery"
@@ -3752,29 +3752,29 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-white-glove.json",
           "encodingFormat": "application/json",
-          "sha256": "d7388f83ce6406d61b318b319d49235f261a43d4234e5aa665b2547875924c7c"
+          "sha256": "1e418d9787f04b2f8f3e7e99c6221d1bd93f95bdaab6538b89f358a8212671a4"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-white-glove",
-      "queryRows": 202,
+      "queryRows": 850,
       "queryRowsByIntentClass": {
         "research": 9,
         "navigational-local": 151,
-        "cost": 17,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 15
+        "cost": 143,
+        "how-process": 66,
+        "best-choice": 131,
+        "ai-question": 350
       },
       "queryRowsBySource": {
-        "generated": 202,
+        "generated": 850,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 202,
+        "rows": 850,
         "byHighestGate": {
-          "none": 141,
+          "none": 789,
           "crawled": 7,
           "indexed": 54,
           "understood": 0,
@@ -3783,38 +3783,38 @@
         },
         "byStatus": {
           "unknown": 33,
-          "awaiting-observation": 108,
+          "awaiting-observation": 756,
           "partial": 61,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 141,
+            "unknown": 789,
             "passed": 61,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 141,
+            "unknown": 789,
             "passed": 54,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 202,
+            "unknown": 850,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 202,
+            "unknown": 850,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 202,
+            "unknown": 850,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -3846,7 +3846,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-office-moving",
       "@type": "Dataset",
       "name": "Intent Coverage — Office Moving",
-      "description": "Generated intent coverage for Office Moving: 176 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-office-moving.",
+      "description": "Generated intent coverage for Office Moving: 822 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-office-moving.",
       "keywords": [
         "office moving questions",
         "office movers"
@@ -3925,28 +3925,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-office.json",
           "encodingFormat": "application/json",
-          "sha256": "2b5fa3ef0c8900d4c910f4b5a8f650ef97c5af23d94e9846502962e2dcba4336"
+          "sha256": "16d677929eb0ce08267994256707f6c6c3b18b34091f413d68eb0efb45ea2062"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-office-moving",
-      "queryRows": 176,
+      "queryRows": 822,
       "queryRowsByIntentClass": {
         "navigational-local": 143,
-        "cost": 14,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 9
+        "cost": 140,
+        "how-process": 66,
+        "best-choice": 131,
+        "ai-question": 342
       },
       "queryRowsBySource": {
-        "generated": 176,
+        "generated": 822,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 176,
+        "rows": 822,
         "byHighestGate": {
-          "none": 66,
+          "none": 712,
           "crawled": 7,
           "indexed": 103,
           "understood": 0,
@@ -3955,38 +3955,38 @@
         },
         "byStatus": {
           "unknown": 22,
-          "awaiting-observation": 44,
+          "awaiting-observation": 690,
           "partial": 110,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 66,
+            "unknown": 712,
             "passed": 110,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 66,
+            "unknown": 712,
             "passed": 103,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 176,
+            "unknown": 822,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 176,
+            "unknown": 822,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 176,
+            "unknown": 822,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -4018,7 +4018,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-industrial-offices",
       "@type": "Dataset",
       "name": "Intent Coverage — Industrial Offices Moving",
-      "description": "Generated intent coverage for Industrial Offices Moving: 163 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-industrial-offices.",
+      "description": "Generated intent coverage for Industrial Offices Moving: 744 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-industrial-offices.",
       "keywords": [
         "industrial offices moving questions",
         "industrial movers"
@@ -4097,28 +4097,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-industrial-offices.json",
           "encodingFormat": "application/json",
-          "sha256": "4f71cab71004702aff1ca4b3174a6c76444292de60b669d70a51c621b9adf19a"
+          "sha256": "b017743f81fd8fb3293c33b8fa22a197ab18b5f1b3c00b6cfec4d5548bc552e4"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-industrial-offices",
-      "queryRows": 163,
+      "queryRows": 744,
       "queryRowsByIntentClass": {
         "navigational-local": 133,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 12
+        "cost": 134,
+        "how-process": 66,
+        "best-choice": 131,
+        "ai-question": 280
       },
       "queryRowsBySource": {
-        "generated": 163,
+        "generated": 744,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 163,
+        "rows": 744,
         "byHighestGate": {
-          "none": 66,
+          "none": 647,
           "crawled": 7,
           "indexed": 90,
           "understood": 0,
@@ -4127,38 +4127,38 @@
         },
         "byStatus": {
           "unknown": 47,
-          "awaiting-observation": 19,
+          "awaiting-observation": 600,
           "partial": 97,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 66,
+            "unknown": 647,
             "passed": 97,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 66,
+            "unknown": 647,
             "passed": 90,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 163,
+            "unknown": 744,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 163,
+            "unknown": 744,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 163,
+            "unknown": 744,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -4190,7 +4190,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-government",
       "@type": "Dataset",
       "name": "Intent Coverage — Government Moving",
-      "description": "Generated intent coverage for Government Moving: 164 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-government.",
+      "description": "Generated intent coverage for Government Moving: 811 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-government.",
       "keywords": [
         "government moving questions",
         "government movers"
@@ -4269,28 +4269,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-government.json",
           "encodingFormat": "application/json",
-          "sha256": "11dba21c068612aa9bcc33c0206443f0b8fbc55345b3fe7be1531d99b6fcf376"
+          "sha256": "58adf3ffb19389ab4bb9874327b3094042ee909bead0916f80fdaa2d91b32cd8"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-government",
-      "queryRows": 164,
+      "queryRows": 811,
       "queryRowsByIntentClass": {
         "navigational-local": 135,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 11
+        "cost": 134,
+        "how-process": 66,
+        "best-choice": 131,
+        "ai-question": 345
       },
       "queryRowsBySource": {
-        "generated": 164,
+        "generated": 811,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 164,
+        "rows": 811,
         "byHighestGate": {
-          "none": 66,
+          "none": 713,
           "crawled": 9,
           "indexed": 89,
           "understood": 0,
@@ -4299,38 +4299,38 @@
         },
         "byStatus": {
           "unknown": 48,
-          "awaiting-observation": 18,
+          "awaiting-observation": 665,
           "partial": 98,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 66,
+            "unknown": 713,
             "passed": 98,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 66,
+            "unknown": 713,
             "passed": 89,
             "failed": 9,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 164,
+            "unknown": 811,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 164,
+            "unknown": 811,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 164,
+            "unknown": 811,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -4362,7 +4362,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-military",
       "@type": "Dataset",
       "name": "Intent Coverage — Military Moving",
-      "description": "Generated intent coverage for Military Moving: 164 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-military.",
+      "description": "Generated intent coverage for Military Moving: 811 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-military.",
       "keywords": [
         "military moving questions",
         "military movers"
@@ -4441,28 +4441,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-military.json",
           "encodingFormat": "application/json",
-          "sha256": "e5e42de92e2b724e8df0b1f27d0e05066777ba7d5ecfbbc562a375e158f89737"
+          "sha256": "f66360e0560126601f8e766b5e0ee5f076c8f403626a35b483290240fe8a0eae"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-military",
-      "queryRows": 164,
+      "queryRows": 811,
       "queryRowsByIntentClass": {
         "navigational-local": 135,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 11
+        "cost": 134,
+        "how-process": 66,
+        "best-choice": 131,
+        "ai-question": 345
       },
       "queryRowsBySource": {
-        "generated": 164,
+        "generated": 811,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 164,
+        "rows": 811,
         "byHighestGate": {
-          "none": 65,
+          "none": 712,
           "crawled": 9,
           "indexed": 90,
           "understood": 0,
@@ -4471,38 +4471,38 @@
         },
         "byStatus": {
           "unknown": 47,
-          "awaiting-observation": 18,
+          "awaiting-observation": 665,
           "partial": 99,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 65,
+            "unknown": 712,
             "passed": 99,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 65,
+            "unknown": 712,
             "passed": 90,
             "failed": 9,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 164,
+            "unknown": 811,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 164,
+            "unknown": 811,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 164,
+            "unknown": 811,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -4534,7 +4534,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-route81",
       "@type": "Dataset",
       "name": "Intent Coverage — Route 81 Corridor Moving and Dispatch",
-      "description": "Generated intent coverage for Route 81 Corridor Moving and Dispatch: 157 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-route81.",
+      "description": "Generated intent coverage for Route 81 Corridor Moving and Dispatch: 687 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-route81.",
       "keywords": [
         "route 81 corridor moving and dispatch questions",
         "I-81 movers"
@@ -4613,28 +4613,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-route81.json",
           "encodingFormat": "application/json",
-          "sha256": "3930946311868a03e9017cde9e325a8a263f78905fe66493dbf4ec2ede679302"
+          "sha256": "5267ae16198e18998ce9d70c0b0e0cff84a7331782fa929b7b20ecea28957e14"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-route81",
-      "queryRows": 157,
+      "queryRows": 687,
       "queryRowsByIntentClass": {
-        "navigational-local": 127,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 12
+        "navigational-local": 130,
+        "cost": 110,
+        "how-process": 54,
+        "best-choice": 110,
+        "ai-question": 283
       },
       "queryRowsBySource": {
-        "generated": 157,
+        "generated": 687,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 157,
+        "rows": 687,
         "byHighestGate": {
-          "none": 78,
+          "none": 608,
           "crawled": 8,
           "indexed": 71,
           "understood": 0,
@@ -4643,38 +4643,38 @@
         },
         "byStatus": {
           "unknown": 28,
-          "awaiting-observation": 50,
+          "awaiting-observation": 580,
           "partial": 79,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 78,
+            "unknown": 608,
             "passed": 79,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 78,
+            "unknown": 608,
             "passed": 71,
             "failed": 8,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 157,
+            "unknown": 687,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 157,
+            "unknown": 687,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 157,
+            "unknown": 687,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -4706,7 +4706,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-industrial-commercial",
       "@type": "Dataset",
       "name": "Intent Coverage — Industrial & Commercial Services",
-      "description": "Generated intent coverage for Industrial & Commercial Services: 169 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-industrial-commercial.",
+      "description": "Generated intent coverage for Industrial & Commercial Services: 755 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-industrial-commercial.",
       "keywords": [
         "industrial & commercial services questions",
         "industrial and commercial moving services"
@@ -4785,34 +4785,34 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-industrial-commercial.json",
           "encodingFormat": "application/json",
-          "sha256": "1dfbc8d7732c3819a0e1c2b8cc35139eca96514c58bf6b9afd5ecd38772dd2b3"
+          "sha256": "22b4efaf1280360b77a8f3469893f1dc6da409ca96e24fe75827a8f6d2011adf"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-warehouse.json",
           "encodingFormat": "application/json",
-          "sha256": "f4ecaa2c60294d65ec86ebeb54c47c4f203fa65a273a9d7ff253ea754d06760f"
+          "sha256": "8c03d7146dba3760fc38151c7fa9c284ad5d536fd3f4b9568a47c9029956eba2"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-industrial-commercial",
-      "queryRows": 169,
+      "queryRows": 755,
       "queryRowsByIntentClass": {
-        "navigational-local": 146,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 5
+        "navigational-local": 149,
+        "cost": 134,
+        "how-process": 66,
+        "best-choice": 134,
+        "ai-question": 272
       },
       "queryRowsBySource": {
-        "generated": 169,
+        "generated": 755,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 169,
+        "rows": 755,
         "byHighestGate": {
-          "none": 74,
+          "none": 660,
           "crawled": 7,
           "indexed": 88,
           "understood": 0,
@@ -4821,38 +4821,38 @@
         },
         "byStatus": {
           "unknown": 54,
-          "awaiting-observation": 20,
+          "awaiting-observation": 606,
           "partial": 95,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 74,
+            "unknown": 660,
             "passed": 95,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 74,
+            "unknown": 660,
             "passed": 88,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 169,
+            "unknown": 755,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 169,
+            "unknown": 755,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 169,
+            "unknown": 755,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -4884,7 +4884,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-senior-moving",
       "@type": "Dataset",
       "name": "Intent Coverage — Senior Moving",
-      "description": "Generated intent coverage for Senior Moving: 147 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-senior-moving.",
+      "description": "Generated intent coverage for Senior Moving: 793 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-senior-moving.",
       "keywords": [
         "senior moving questions",
         "senior movers"
@@ -4963,28 +4963,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-senior.json",
           "encodingFormat": "application/json",
-          "sha256": "c511e37eb4edd9d950702faff0af68ddf4252e1cba7a68f249fb712c0d836d45"
+          "sha256": "39ae20fe67ab51f593919a5d5861feabe9c194a779219eb77b2cafb3893bd312"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-senior-moving",
-      "queryRows": 147,
+      "queryRows": 793,
       "queryRowsByIntentClass": {
         "navigational-local": 128,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 1
+        "cost": 134,
+        "how-process": 66,
+        "best-choice": 131,
+        "ai-question": 334
       },
       "queryRowsBySource": {
-        "generated": 147,
+        "generated": 793,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 147,
+        "rows": 793,
         "byHighestGate": {
-          "none": 84,
+          "none": 730,
           "crawled": 7,
           "indexed": 56,
           "understood": 0,
@@ -4993,38 +4993,38 @@
         },
         "byStatus": {
           "unknown": 22,
-          "awaiting-observation": 62,
+          "awaiting-observation": 708,
           "partial": 63,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 84,
+            "unknown": 730,
             "passed": 63,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 84,
+            "unknown": 730,
             "passed": 56,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 147,
+            "unknown": 793,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 147,
+            "unknown": 793,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 147,
+            "unknown": 793,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -5056,7 +5056,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-warehouse-relocation",
       "@type": "Dataset",
       "name": "Intent Coverage — Warehouse Relocation",
-      "description": "Generated intent coverage for Warehouse Relocation: 137 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-warehouse-relocation.",
+      "description": "Generated intent coverage for Warehouse Relocation: 612 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-warehouse-relocation.",
       "keywords": [
         "warehouse relocation questions",
         "warehouse relocation services"
@@ -5135,28 +5135,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-warehouse.json",
           "encodingFormat": "application/json",
-          "sha256": "f4ecaa2c60294d65ec86ebeb54c47c4f203fa65a273a9d7ff253ea754d06760f"
+          "sha256": "8c03d7146dba3760fc38151c7fa9c284ad5d536fd3f4b9568a47c9029956eba2"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-warehouse-relocation",
-      "queryRows": 137,
+      "queryRows": 612,
       "queryRowsByIntentClass": {
         "navigational-local": 118,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 1
+        "cost": 110,
+        "how-process": 54,
+        "best-choice": 107,
+        "ai-question": 223
       },
       "queryRowsBySource": {
-        "generated": 137,
+        "generated": 612,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 137,
+        "rows": 612,
         "byHighestGate": {
-          "none": 73,
+          "none": 548,
           "crawled": 7,
           "indexed": 57,
           "understood": 0,
@@ -5165,38 +5165,38 @@
         },
         "byStatus": {
           "unknown": 23,
-          "awaiting-observation": 50,
+          "awaiting-observation": 525,
           "partial": 64,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 73,
+            "unknown": 548,
             "passed": 64,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 73,
+            "unknown": 548,
             "passed": 57,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 137,
+            "unknown": 612,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 137,
+            "unknown": 612,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 137,
+            "unknown": 612,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -5228,7 +5228,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-it-relocation",
       "@type": "Dataset",
       "name": "Intent Coverage — IT Relocation & Setup",
-      "description": "Generated intent coverage for IT Relocation & Setup: 121 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-it-relocation.",
+      "description": "Generated intent coverage for IT Relocation & Setup: 498 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-it-relocation.",
       "keywords": [
         "it relocation & setup questions",
         "IT equipment movers"
@@ -5307,28 +5307,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-it.json",
           "encodingFormat": "application/json",
-          "sha256": "3ac95a1a242b0ebaa05b4929744a80f84a664f82e808dbda8497cb4ca1d4dade"
+          "sha256": "58d91af36fa80951919c8500b0473005e794feff011a1b0e4e77d22d2aab7128"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-it-relocation",
-      "queryRows": 121,
+      "queryRows": 498,
       "queryRowsByIntentClass": {
         "navigational-local": 102,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 1
+        "cost": 80,
+        "how-process": 39,
+        "best-choice": 77,
+        "ai-question": 200
       },
       "queryRowsBySource": {
-        "generated": 121,
+        "generated": 498,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 121,
+        "rows": 498,
         "byHighestGate": {
-          "none": 57,
+          "none": 434,
           "crawled": 30,
           "indexed": 34,
           "understood": 0,
@@ -5337,38 +5337,38 @@
         },
         "byStatus": {
           "unknown": 22,
-          "awaiting-observation": 35,
+          "awaiting-observation": 412,
           "partial": 64,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 57,
+            "unknown": 434,
             "passed": 64,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 57,
+            "unknown": 434,
             "passed": 34,
             "failed": 30,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 121,
+            "unknown": 498,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 121,
+            "unknown": 498,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 121,
+            "unknown": 498,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -5400,7 +5400,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-transloading-winchester-va",
       "@type": "Dataset",
       "name": "Intent Coverage — Transloading Services — Winchester VA",
-      "description": "Generated intent coverage for Transloading Services — Winchester VA: 175 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-transloading-winchester-va.",
+      "description": "Generated intent coverage for Transloading Services — Winchester VA: 821 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-transloading-winchester-va.",
       "keywords": [
         "transloading services — winchester va questions",
         "transloading"
@@ -5479,28 +5479,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-transloading-winchester.json",
           "encodingFormat": "application/json",
-          "sha256": "80931068d51562f5d95e2e5a8b40eb612da6c0506f1112d6ca9356e55b628413"
+          "sha256": "8ac80b3a0b0a208b6b233f0629cf5cad5130cde25ea2f23e1bfe06dfc23f2418"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-transloading-winchester-va",
-      "queryRows": 175,
+      "queryRows": 821,
       "queryRowsByIntentClass": {
         "navigational-local": 143,
-        "cost": 14,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 8
+        "cost": 140,
+        "how-process": 66,
+        "best-choice": 131,
+        "ai-question": 341
       },
       "queryRowsBySource": {
-        "generated": 175,
+        "generated": 821,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 175,
+        "rows": 821,
         "byHighestGate": {
-          "none": 117,
+          "none": 763,
           "crawled": 7,
           "indexed": 51,
           "understood": 0,
@@ -5508,7 +5508,7 @@
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 105,
+          "unknown": 751,
           "awaiting-observation": 12,
           "partial": 58,
           "blocked": 0,
@@ -5516,31 +5516,31 @@
         },
         "byGateState": {
           "crawled": {
-            "unknown": 117,
+            "unknown": 763,
             "passed": 58,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 117,
+            "unknown": 763,
             "passed": 51,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 175,
+            "unknown": 821,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 175,
+            "unknown": 821,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 175,
+            "unknown": 821,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -5572,7 +5572,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-moving-and-storage",
       "@type": "Dataset",
       "name": "Intent Coverage — Moving and Storage",
-      "description": "Generated intent coverage for Moving and Storage: 146 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-moving-and-storage.",
+      "description": "Generated intent coverage for Moving and Storage: 792 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-moving-and-storage.",
       "keywords": [
         "moving and storage questions",
         "moving and storage"
@@ -5651,28 +5651,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-moving-and-storage.json",
           "encodingFormat": "application/json",
-          "sha256": "313ba980ceddf4cea9db643f1922d6370a1d0fade4791e78abd77f4cfe2d114c"
+          "sha256": "b447edf1388c7303dc1367923288ace845078714405e0dd65a627fdc3a956a13"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-moving-and-storage",
-      "queryRows": 146,
+      "queryRows": 792,
       "queryRowsByIntentClass": {
         "navigational-local": 127,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 1
+        "cost": 134,
+        "how-process": 66,
+        "best-choice": 131,
+        "ai-question": 334
       },
       "queryRowsBySource": {
-        "generated": 146,
+        "generated": 792,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 146,
+        "rows": 792,
         "byHighestGate": {
-          "none": 84,
+          "none": 730,
           "crawled": 7,
           "indexed": 55,
           "understood": 0,
@@ -5681,38 +5681,38 @@
         },
         "byStatus": {
           "unknown": 22,
-          "awaiting-observation": 62,
+          "awaiting-observation": 708,
           "partial": 62,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 84,
+            "unknown": 730,
             "passed": 62,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 84,
+            "unknown": 730,
             "passed": 55,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 146,
+            "unknown": 792,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 146,
+            "unknown": 792,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 146,
+            "unknown": 792,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -5744,7 +5744,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-junk-removal",
       "@type": "Dataset",
       "name": "Intent Coverage — Junk Removal",
-      "description": "Generated intent coverage for Junk Removal: 145 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-junk-removal.",
+      "description": "Generated intent coverage for Junk Removal: 791 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-junk-removal.",
       "keywords": [
         "junk removal questions",
         "junk removal"
@@ -5823,28 +5823,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-junk-removal.json",
           "encodingFormat": "application/json",
-          "sha256": "15df5062ffa81c21a0e4df20c728ec11f177dd46c96c3b6d57cde16af6f163ac"
+          "sha256": "52dcbdeefec97a69e73c5ea43f136684aed55d79caafe72350ab52cecc333e91"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-junk-removal",
-      "queryRows": 145,
+      "queryRows": 791,
       "queryRowsByIntentClass": {
         "navigational-local": 126,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 1
+        "cost": 134,
+        "how-process": 66,
+        "best-choice": 131,
+        "ai-question": 334
       },
       "queryRowsBySource": {
-        "generated": 145,
+        "generated": 791,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 145,
+        "rows": 791,
         "byHighestGate": {
-          "none": 83,
+          "none": 729,
           "crawled": 7,
           "indexed": 55,
           "understood": 0,
@@ -5853,38 +5853,38 @@
         },
         "byStatus": {
           "unknown": 21,
-          "awaiting-observation": 62,
+          "awaiting-observation": 708,
           "partial": 62,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 83,
+            "unknown": 729,
             "passed": 62,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 83,
+            "unknown": 729,
             "passed": 55,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 145,
+            "unknown": 791,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 145,
+            "unknown": 791,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 145,
+            "unknown": 791,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -5916,7 +5916,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-warehouse-racking-relocation",
       "@type": "Dataset",
       "name": "Intent Coverage — Warehouse Racking Relocation",
-      "description": "Generated intent coverage for Warehouse Racking Relocation: 135 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-warehouse-racking-relocation.",
+      "description": "Generated intent coverage for Warehouse Racking Relocation: 609 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-warehouse-racking-relocation.",
       "keywords": [
         "warehouse racking relocation questions",
         "warehouse racking relocation"
@@ -5995,28 +5995,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-warehouse-racking-relocation.json",
           "encodingFormat": "application/json",
-          "sha256": "8955e007f424f2bb383704fda42aa63901bf1524d32cf5eb7ad773ab41946471"
+          "sha256": "7eaffdeeb18fb993e4f084ca8efb3b088b3cc544bd4d78f393ba9f78908673d7"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-warehouse-racking-relocation",
-      "queryRows": 135,
+      "queryRows": 609,
       "queryRowsByIntentClass": {
         "navigational-local": 116,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 1
+        "cost": 110,
+        "how-process": 54,
+        "best-choice": 107,
+        "ai-question": 222
       },
       "queryRowsBySource": {
-        "generated": 135,
+        "generated": 609,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 135,
+        "rows": 609,
         "byHighestGate": {
-          "none": 72,
+          "none": 546,
           "crawled": 7,
           "indexed": 56,
           "understood": 0,
@@ -6024,7 +6024,7 @@
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 72,
+          "unknown": 546,
           "awaiting-observation": 0,
           "partial": 63,
           "blocked": 0,
@@ -6032,31 +6032,31 @@
         },
         "byGateState": {
           "crawled": {
-            "unknown": 72,
+            "unknown": 546,
             "passed": 63,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 72,
+            "unknown": 546,
             "passed": 56,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 135,
+            "unknown": 609,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 135,
+            "unknown": 609,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 135,
+            "unknown": 609,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -6088,7 +6088,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-ffe-logistics",
       "@type": "Dataset",
       "name": "Intent Coverage — FF&E Logistics",
-      "description": "Generated intent coverage for FF&E Logistics: 138 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-ffe-logistics.",
+      "description": "Generated intent coverage for FF&E Logistics: 613 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-ffe-logistics.",
       "keywords": [
         "ff&e logistics questions",
         "FF&E logistics"
@@ -6167,28 +6167,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-ffe-logistics.json",
           "encodingFormat": "application/json",
-          "sha256": "60ac0af577ca8ecb59ba99f5bcbada024496732088fe30840b1e7d8e4805a790"
+          "sha256": "72dfb1f12c215ce489d97f226ba99a950e416b2de16f228dcbed6ad78af10de2"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-ffe-logistics",
-      "queryRows": 138,
+      "queryRows": 613,
       "queryRowsByIntentClass": {
         "navigational-local": 119,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 1
+        "cost": 110,
+        "how-process": 54,
+        "best-choice": 107,
+        "ai-question": 223
       },
       "queryRowsBySource": {
-        "generated": 138,
+        "generated": 613,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 138,
+        "rows": 613,
         "byHighestGate": {
-          "none": 72,
+          "none": 547,
           "crawled": 7,
           "indexed": 59,
           "understood": 0,
@@ -6196,7 +6196,7 @@
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 72,
+          "unknown": 547,
           "awaiting-observation": 0,
           "partial": 66,
           "blocked": 0,
@@ -6204,31 +6204,31 @@
         },
         "byGateState": {
           "crawled": {
-            "unknown": 72,
+            "unknown": 547,
             "passed": 66,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 72,
+            "unknown": 547,
             "passed": 59,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 138,
+            "unknown": 613,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 138,
+            "unknown": 613,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 138,
+            "unknown": 613,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -6260,7 +6260,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-data-center-relocation",
       "@type": "Dataset",
       "name": "Intent Coverage — Data Center Relocation — Physical Layer",
-      "description": "Generated intent coverage for Data Center Relocation — Physical Layer: 141 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-data-center-relocation.",
+      "description": "Generated intent coverage for Data Center Relocation — Physical Layer: 519 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-data-center-relocation.",
       "keywords": [
         "data center relocation — physical layer questions",
         "data center movers"
@@ -6339,28 +6339,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-data-center-relocation.json",
           "encodingFormat": "application/json",
-          "sha256": "4cfcff81821cc970a2a58b53967273041360b0f96ce9301b91a1bf4025266c58"
+          "sha256": "71af052431f89ddef285df4c010a23bbed60f56d0b7606eddc96e61e0e8f6464"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-data-center-relocation",
-      "queryRows": 141,
+      "queryRows": 519,
       "queryRowsByIntentClass": {
         "navigational-local": 106,
-        "cost": 13,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 12
+        "cost": 85,
+        "how-process": 39,
+        "best-choice": 77,
+        "ai-question": 212
       },
       "queryRowsBySource": {
-        "generated": 141,
+        "generated": 519,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 141,
+        "rows": 519,
         "byHighestGate": {
-          "none": 77,
+          "none": 455,
           "crawled": 7,
           "indexed": 57,
           "understood": 0,
@@ -6369,38 +6369,38 @@
         },
         "byStatus": {
           "unknown": 22,
-          "awaiting-observation": 55,
+          "awaiting-observation": 433,
           "partial": 64,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 77,
+            "unknown": 455,
             "passed": 64,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 77,
+            "unknown": 455,
             "passed": 57,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 141,
+            "unknown": 519,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 141,
+            "unknown": 519,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 141,
+            "unknown": 519,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -6432,7 +6432,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-medical-lab-relocation",
       "@type": "Dataset",
       "name": "Intent Coverage — Medical & Laboratory Equipment Relocation Logistics",
-      "description": "Generated intent coverage for Medical & Laboratory Equipment Relocation Logistics: 164 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-medical-lab-relocation.",
+      "description": "Generated intent coverage for Medical & Laboratory Equipment Relocation Logistics: 692 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-medical-lab-relocation.",
       "keywords": [
         "medical & laboratory equipment relocation logistics questions",
         "medical equipment movers"
@@ -6511,28 +6511,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-medical-lab-relocation.json",
           "encodingFormat": "application/json",
-          "sha256": "91849c63eda655944685938b7d72bc99863dc03990f48e5fcbb6f14280ec8a73"
+          "sha256": "08d24bd4b3ec443368146945d3379dda769028278e1b5ede053c4a6562e21afb"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-medical-lab-relocation",
-      "queryRows": 164,
+      "queryRows": 692,
       "queryRowsByIntentClass": {
         "navigational-local": 127,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 19
+        "cost": 110,
+        "how-process": 54,
+        "best-choice": 107,
+        "ai-question": 294
       },
       "queryRowsBySource": {
-        "generated": 164,
+        "generated": 692,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 164,
+        "rows": 692,
         "byHighestGate": {
-          "none": 99,
+          "none": 627,
           "crawled": 7,
           "indexed": 58,
           "understood": 0,
@@ -6540,7 +6540,7 @@
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 81,
+          "unknown": 609,
           "awaiting-observation": 18,
           "partial": 65,
           "blocked": 0,
@@ -6548,31 +6548,31 @@
         },
         "byGateState": {
           "crawled": {
-            "unknown": 99,
+            "unknown": 627,
             "passed": 65,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 99,
+            "unknown": 627,
             "passed": 58,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 164,
+            "unknown": 692,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 164,
+            "unknown": 692,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 164,
+            "unknown": 692,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -6604,7 +6604,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-freight-rework-transloading",
       "@type": "Dataset",
       "name": "Intent Coverage — Freight Rework & Transloading",
-      "description": "Generated intent coverage for Freight Rework & Transloading: 129 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-freight-rework-transloading.",
+      "description": "Generated intent coverage for Freight Rework & Transloading: 425 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-freight-rework-transloading.",
       "keywords": [
         "freight rework & transloading questions",
         "freight rework"
@@ -6683,28 +6683,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-freight-rework.json",
           "encodingFormat": "application/json",
-          "sha256": "1b8822216427f8c85adb2523b82e094aa52a2283d06886293c2863d72a9932f2"
+          "sha256": "acb1f082d74f5ce44a2edaa7f7f2cfc5351b6540da78048f7845922eef8910cc"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-freight-rework-transloading",
-      "queryRows": 129,
+      "queryRows": 425,
       "queryRowsByIntentClass": {
         "navigational-local": 110,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 1
+        "cost": 70,
+        "how-process": 34,
+        "best-choice": 67,
+        "ai-question": 144
       },
       "queryRowsBySource": {
-        "generated": 129,
+        "generated": 425,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 129,
+        "rows": 425,
         "byHighestGate": {
-          "none": 87,
+          "none": 383,
           "crawled": 7,
           "indexed": 35,
           "understood": 0,
@@ -6713,38 +6713,38 @@
         },
         "byStatus": {
           "unknown": 57,
-          "awaiting-observation": 30,
+          "awaiting-observation": 326,
           "partial": 42,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 87,
+            "unknown": 383,
             "passed": 42,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 87,
+            "unknown": 383,
             "passed": 35,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 129,
+            "unknown": 425,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 129,
+            "unknown": 425,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 129,
+            "unknown": 425,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -6776,7 +6776,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-logistics-project-management",
       "@type": "Dataset",
       "name": "Intent Coverage — Logistics Project Management",
-      "description": "Generated intent coverage for Logistics Project Management: 154 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-logistics-project-management.",
+      "description": "Generated intent coverage for Logistics Project Management: 627 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-logistics-project-management.",
       "keywords": [
         "logistics project management questions",
         "logistics project management"
@@ -6855,28 +6855,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-ports.json",
           "encodingFormat": "application/json",
-          "sha256": "3e62e2f0d219378aa6848298447f6fcb3e3e36464dd3e7a1a9814a962825e000"
+          "sha256": "29ab3be4cdb4e85689886c7caaa3624a5121952cac64c41cecb40a21bf22fad7"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-logistics-project-management",
-      "queryRows": 154,
+      "queryRows": 627,
       "queryRowsByIntentClass": {
         "navigational-local": 131,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 5
+        "cost": 110,
+        "how-process": 54,
+        "best-choice": 107,
+        "ai-question": 225
       },
       "queryRowsBySource": {
-        "generated": 154,
+        "generated": 627,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 154,
+        "rows": 627,
         "byHighestGate": {
-          "none": 123,
+          "none": 596,
           "crawled": 7,
           "indexed": 24,
           "understood": 0,
@@ -6885,38 +6885,38 @@
         },
         "byStatus": {
           "unknown": 67,
-          "awaiting-observation": 56,
+          "awaiting-observation": 529,
           "partial": 31,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 123,
+            "unknown": 596,
             "passed": 31,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 123,
+            "unknown": 596,
             "passed": 24,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 154,
+            "unknown": 627,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 154,
+            "unknown": 627,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 154,
+            "unknown": 627,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -6948,7 +6948,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-3pl-support",
       "@type": "Dataset",
       "name": "Intent Coverage — 3PL Support Services",
-      "description": "Generated intent coverage for 3PL Support Services: 156 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-3pl-support.",
+      "description": "Generated intent coverage for 3PL Support Services: 629 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-3pl-support.",
       "keywords": [
         "3pl support services questions",
         "3PL support services"
@@ -7027,28 +7027,28 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-ports.json",
           "encodingFormat": "application/json",
-          "sha256": "3e62e2f0d219378aa6848298447f6fcb3e3e36464dd3e7a1a9814a962825e000"
+          "sha256": "29ab3be4cdb4e85689886c7caaa3624a5121952cac64c41cecb40a21bf22fad7"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-3pl-support",
-      "queryRows": 156,
+      "queryRows": 629,
       "queryRowsByIntentClass": {
         "navigational-local": 133,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 5
+        "cost": 110,
+        "how-process": 54,
+        "best-choice": 107,
+        "ai-question": 225
       },
       "queryRowsBySource": {
-        "generated": 156,
+        "generated": 629,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 156,
+        "rows": 629,
         "byHighestGate": {
-          "none": 124,
+          "none": 597,
           "crawled": 7,
           "indexed": 25,
           "understood": 0,
@@ -7057,38 +7057,38 @@
         },
         "byStatus": {
           "unknown": 67,
-          "awaiting-observation": 57,
+          "awaiting-observation": 530,
           "partial": 32,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 124,
+            "unknown": 597,
             "passed": 32,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 124,
+            "unknown": 597,
             "passed": 25,
             "failed": 7,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 156,
+            "unknown": 629,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 156,
+            "unknown": 629,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 156,
+            "unknown": 629,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -7120,7 +7120,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-vault-door",
       "@type": "Dataset",
       "name": "Intent Coverage — Vault Door Relocation & Installation",
-      "description": "Generated intent coverage for Vault Door Relocation & Installation: 183 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-vault-door.",
+      "description": "Generated intent coverage for Vault Door Relocation & Installation: 469 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-vault-door.",
       "keywords": [
         "vault door relocation & installation questions",
         "vault door movers"
@@ -7199,40 +7199,40 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-vault-security.json",
           "encodingFormat": "application/json",
-          "sha256": "fa5dc830238c621fe80bbc011bcf893c0dec4c4267c1c812cec9927c937954e8"
+          "sha256": "9fd42d48f9e73135056a9ffd3b06fc555429731c094e7dffe84beaaf4d83c6cb"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-vault-doors.json",
           "encodingFormat": "application/json",
-          "sha256": "c001d985034115b6258ba265989337b5697d24b4613458a4b7ff0c5432c680cf"
+          "sha256": "77ddaa09ca2e3d4df4f00f7fc91eddacffa210ab1ea1214c3275749588b78459"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-gun-safe.json",
           "encodingFormat": "application/json",
-          "sha256": "7f22dcd3c83770318a0a5f008efaf590c6c3fa2a9dc611e849efede16866e320"
+          "sha256": "74cfe5cb5c58c844efbd5ce8bfc643f01c6daaea0847d00fc7209c6f3bf26529"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-vault-door",
-      "queryRows": 183,
+      "queryRows": 469,
       "queryRowsByIntentClass": {
         "navigational-local": 116,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 49
+        "cost": 62,
+        "how-process": 30,
+        "best-choice": 59,
+        "ai-question": 202
       },
       "queryRowsBySource": {
-        "generated": 183,
+        "generated": 469,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 183,
+        "rows": 469,
         "byHighestGate": {
-          "none": 183,
+          "none": 469,
           "crawled": 0,
           "indexed": 0,
           "understood": 0,
@@ -7241,38 +7241,38 @@
         },
         "byStatus": {
           "unknown": 26,
-          "awaiting-observation": 157,
+          "awaiting-observation": 443,
           "partial": 0,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 183,
+            "unknown": 469,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 183,
+            "unknown": 469,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 183,
+            "unknown": 469,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 183,
+            "unknown": 469,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 183,
+            "unknown": 469,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -7304,7 +7304,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-hoarding-cleanup",
       "@type": "Dataset",
       "name": "Intent Coverage — Hoarding Cleanup & Cleanout",
-      "description": "Generated intent coverage for Hoarding Cleanup & Cleanout: 179 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-hoarding-cleanup.",
+      "description": "Generated intent coverage for Hoarding Cleanup & Cleanout: 826 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-hoarding-cleanup.",
       "keywords": [
         "hoarding cleanup & cleanout questions",
         "hoarding cleanup"
@@ -7383,34 +7383,34 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-hoarding-cleanup.json",
           "encodingFormat": "application/json",
-          "sha256": "e015ed71f3bd8650180950fdc40dc819544e30f4acc094cb6fe3947d98543dec"
+          "sha256": "e23e5613cf8dec33c626f8e0caa0a923682c3c1c4e153fec260c10cee17d357e"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-junk-removal.json",
           "encodingFormat": "application/json",
-          "sha256": "15df5062ffa81c21a0e4df20c728ec11f177dd46c96c3b6d57cde16af6f163ac"
+          "sha256": "52dcbdeefec97a69e73c5ea43f136684aed55d79caafe72350ab52cecc333e91"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-hoarding-cleanup",
-      "queryRows": 179,
+      "queryRows": 826,
       "queryRowsByIntentClass": {
         "navigational-local": 152,
-        "cost": 8,
-        "how-process": 4,
-        "best-choice": 6,
-        "ai-question": 9
+        "cost": 134,
+        "how-process": 66,
+        "best-choice": 131,
+        "ai-question": 343
       },
       "queryRowsBySource": {
-        "generated": 179,
+        "generated": 826,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 3,
       "outcomeRollup": {
-        "rows": 179,
+        "rows": 826,
         "byHighestGate": {
-          "none": 179,
+          "none": 826,
           "crawled": 0,
           "indexed": 0,
           "understood": 0,
@@ -7419,38 +7419,38 @@
         },
         "byStatus": {
           "unknown": 26,
-          "awaiting-observation": 153,
+          "awaiting-observation": 800,
           "partial": 0,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 179,
+            "unknown": 826,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 179,
+            "unknown": 826,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 179,
+            "unknown": 826,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 179,
+            "unknown": 826,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 179,
+            "unknown": 826,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0

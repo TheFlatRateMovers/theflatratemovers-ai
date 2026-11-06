@@ -367768,7 +367768,7 @@
       "@id": "https://theflatratemovers.com/#dataset-answer-evidence-fragments",
       "@type": "Dataset",
       "name": "Answer Fragments",
-      "description": "The estate’s answer fragments — 3389 passages extracted from the live estate (413 FAQ answers from the per-page JSON schema, 2976 heading-led passages from the page texts). Each fragment carries its owning page, heading-path locator, full text, a SHA-256 text hash for drift detection, the schema types present on its page, evidence links to the sealed records backing its facts, its surface copies, and the rubric questions bound to it.",
+      "description": "The estate’s answer fragments — 3400 passages extracted from the live estate (418 FAQ answers from the per-page JSON schema, 2982 heading-led passages from the page texts). Each fragment carries its owning page, heading-path locator, full text, a SHA-256 text hash for drift detection, the schema types present on its page, evidence links to the sealed records backing its facts, its surface copies, and the rubric questions bound to it.",
       "keywords": [
         "answer engines",
         "citation evidence",
@@ -449653,18 +449653,19 @@
         },
         {
           "fragmentId": "frag-martinsburg-1",
-          "source": "passage",
+          "source": "faq-schema",
           "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "pageSlug": "moving-company-martinsburg-wv",
-          "locator": "Your Martinsburg moving company.",
-          "heading": "Your Martinsburg moving company.",
-          "questionShaped": false,
-          "text": "Your Martinsburg moving company. Our West Virginia home base is at 736 Williamsport Pike, Suite 2 in Martinsburg — the Eastern Panhandle’s own crew, on I-81 with the I-70 connection beside us. Flat-rate moves, in writing, since June 2010. Quote a Martinsburg move Town Square, Martinsburg, Berkeley County, WV — downtown of our Eastern Panhandle branch, Flat Rate Movers Martinsburg WV, 736 Williamsport Pike, Suite 2 (39.4832° N, 77.9476° W) · Photo: Jenny DiCola Photography, via WV Living",
-          "textHash": "99224d3e1c9f8161ed88c19d679b5e28543bfe5b1fa2b5ff9bb8248b5f87394c",
-          "bodyChars": 458,
+          "locator": "FAQ schema (per-page JSON FAQPage)",
+          "heading": "Where is the Martinsburg branch?",
+          "questionShaped": true,
+          "text": "Where is the Martinsburg branch? 736 Williamsport Pike, Suite 2, Martinsburg, WV 25404 — on I-81 with the I-70 connection east. Hours: Mon–Fri 9am–6pm, Sat 9am–4pm, Sun 9am–4pm. Phone +1-540-422-2153.",
+          "textHash": "5459b87e6d62692db4d01c43de8ef05666bb35b51f187aea383f427eed052f72",
+          "bodyChars": 167,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "LocalBusiness",
             "Organization",
             "WebPage"
@@ -449673,7 +449674,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
-              "sha256": "0c628f7b2ff8b523a80217b474b693f3675006cbee43bbef051a4c0fc8ca8a75",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -449686,19 +449687,20 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-martinsburg-2",
+          "fragmentId": "frag-martinsburg-10",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "pageSlug": "moving-company-martinsburg-wv",
-          "locator": "Your Martinsburg moving company. › 📍 Visit, call, email — Martinsburg",
-          "heading": "📍 Visit, call, email — Martinsburg",
+          "locator": "Your Martinsburg moving company. › Martinsburg service areas — 41 areas",
+          "heading": "Martinsburg service areas — 41 areas",
           "questionShaped": false,
-          "text": "📍 Visit, call, email — Martinsburg Flat Rate Movers Martinsburg WV 736 Williamsport Pike, Suite 2 Martinsburg, WV 25404 Phone: +1-540-422-2153 Email: ratemovers@gmail.com Hours: Mon–Fri 9am–6pm · Sat 9am–4pm · Sun 9am–4pm — Martinsburg hours, at Flat Rate Movers Martinsburg WV. Call now Get a flat rate quote",
-          "textHash": "e192e5a878cd39c1638294194bed59e831ad092df57ba3cb45931524ee0929d6",
-          "bodyChars": 274,
+          "text": "Martinsburg service areas — 41 areas From 736 Williamsport Pike, Suite 2, Martinsburg, WV 25404, this branch serves 41 of the company's 71 areas — the Eastern Panhandle and the shared Valley and Panhandle map it covers with Winchester. Hours: Mon–Fri 9am–6pm · Sat 9am–4pm · Sun 9am–4pm. Google rating: 4.7 with 6 reviews — this branch's own rating, never blended. Berkeley County Berkeley Springs, WV Bunker Hill, WV Chambersburg, PA Charles Town, WV Clear Spring, MD Eastern Panhandle of West Virginia Falling Waters, WV Frederick, MD Front Royal, VA Gaithersburg, MD Hagerstown, MD Hampshire County Hancock, MD Hardy County Harpers Ferry, WV Hedgesville, WV Interstate 66 Corridor Interstate 70 Corridor Interstate 81 Corridor Inwood, WV Jefferson County Kearneysville, WV Martinsburg, WV Moorefield, WV Morgan County Paw Paw, WV Port of Virginia Rockville, MD Romney, WV Shenandoah County Shenandoah Valley Shepherdstown, WV Strasburg, VA Summit Point, WV Virginia Inland Port Warren County Washington County Waynesboro, PA Williamsport, MD Woodstock, VA",
+          "textHash": "f1335965851bafe833002ba0b9cd78a24eb8a062b4f197b460bd916a59c17bc5",
+          "bodyChars": 1021,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "LocalBusiness",
             "Organization",
             "WebPage"
@@ -449707,7 +449709,77 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
-              "sha256": "0c628f7b2ff8b523a80217b474b693f3675006cbee43bbef051a4c0fc8ca8a75",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-martinsburg-11",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
+          "pageSlug": "moving-company-martinsburg-wv",
+          "locator": "Your Martinsburg moving company. › In depth — Moving Company — Martinsburg, WV",
+          "heading": "In depth — Moving Company — Martinsburg, WV",
+          "questionShaped": false,
+          "text": "In depth — Moving Company — Martinsburg, WV The Flat Rate Movers in Martinsburg, WV — 736 Williamsport Pike Suite 2, Martinsburg, WV 25404. Flat-rate home, business, heavy-asset and freight moving for the Eastern Panhandle, established June 2010.",
+          "textHash": "d9daa6a21b0e2e4a46574888d8ec7f7304ccfd3aba11409689c0df40d3efa832",
+          "bodyChars": 202,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "LocalBusiness",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-martinsburg-12",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
+          "pageSlug": "moving-company-martinsburg-wv",
+          "locator": "Your Martinsburg moving company. › In depth — Moving Company — Martinsburg, WV › The Martinsburg, WV branch, in full",
+          "heading": "The Martinsburg, WV branch, in full",
+          "questionShaped": false,
+          "text": "The Martinsburg, WV branch, in full Flat Rate Movers Martinsburg WV — 736 Williamsport Pike Suite 2, Martinsburg, WV 25404. Hours: Mon–Fri 9am–6pm · Sat 9am–4pm · Sun 9am–4pm. Google rating 4.7 from 6 reviews — this branch's own rating, never blended. Phone +1-540-422-2153. Served from Martinsburg, WV — 41 areas across the Eastern Panhandle, the I-81 and I-70 corridors and the northern Shenandoah Valley, listed in full in the service-areas section above — part of a 71-area, two-branch service map. The other branch: The Flat Rate Movers — 116 W Piccadilly St Suite 11, Winchester, VA 22601; hours Mon–Fri 8am–6pm · Sat 8am–4pm · Sun 9am–4pm; Google rating 5.0 from 2 reviewss. Its own branch, its own record — never blended with this one. All 34 services run from this branch: Residential Moving Commercial and Office Moving Local and Regional Moving Long-Distance Moving Packing and Unpacking SIR Heavy Asset Relocation (KIM-GS Protocol) Gun Safe Moving Piano, Antique and White-Glove Moving ISPM 15 Export Packing Custom Crating Loading, Transloading and Container Services Final-Mile Delivery White-Glove Delivery Office Moving Industrial Offices Moving Government Moving Military Moving Route 81 Corridor Moving and Dispatch Industrial & Commercial Services Senior Moving Warehouse Relocation IT Relocation & Setup Transloading Services — Winchester VA Moving and Storage Junk Removal Warehouse Racking Relocation FF&E Logistics Data Center Relocation — Physical Layer Medical & Laboratory Equipment Relocation Logistics Freight Rework & Transloading Logistics Project Management 3PL Support Services Vault Door Relocation & Installation Hoarding Cleanup & Cleanout Start with the quote: Get My Flat Rate Quote — Short (Quick Quote) by default, or Detailed Project; From, To, and What's moving stay filled in when you switch. Every job is reviewed in full — scope, distance, manpower, equipment — and priced at one flat rate in writing before move day, hourly pricing is available when a client asks for it. Guaranteed Flat Rate or Your Move is Free!",
+          "textHash": "2fc69e5c5ffec2f93b227c424882592f723e8dc567b3d6b190c38b92e5420cb6",
+          "bodyChars": 2023,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "LocalBusiness",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -449724,19 +449796,20 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-martinsburg-3",
+          "fragmentId": "frag-martinsburg-13",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "pageSlug": "moving-company-martinsburg-wv",
-          "locator": "Your Martinsburg moving company. › The Panhandle, covered from home",
-          "heading": "The Panhandle, covered from home",
-          "questionShaped": false,
-          "text": "The Panhandle, covered from home 🏠 Residential 🏢 Commercial 🔐 Gun Safes 🧹 Hoarding Cleanup 🚚 Long-Distance 🎖️ Military & Government 🏗️ Transloading Local moves across Berkeley County, Jefferson County and Morgan County start here — no long deadhead drive before your move even begins. Regional and long-distance runs follow I-81 and I-70, and freight work runs through our warehouse and transload operation.",
-          "textHash": "7851abb9fc62283d273ee85aea22532483320f6abe8c44397f61989fa0535caa",
-          "bodyChars": 381,
+          "locator": "Your Martinsburg moving company. › What Martinsburg customers say",
+          "heading": "What Martinsburg customers say",
+          "questionShaped": true,
+          "text": "What Martinsburg customers say Rated 4.7 on Google from 6 reviews at this branch — every review we have, shown in full: four 5-star and two 4-star. Reviews for our Winchester branch are listed on its own page; the two are never blended. ★★★★ \"The owner was very patient with me and was able to change the dates on my contract. The gentleman coming to my home called ahead of time, let me know they were running late and showed up exactly when they said they would. They did a wonderful job nothing was broken scratch dented etc. I requested the same two guys that moved everything out to come back on Friday and put everything back! Friendly staff goes a long way please support small business!\" Paige Blair · Google review · Martinsburg ★★★★★ \"They were absolutely awesome! Moved a 280 lb. medical bed out to my garage and a grandfather clock to upstairs bedroom. Highly recommend\" Pamela Wilson · Google review · Martinsburg ★★★★★ \"Henry s team moved my heavy safe and whole house, Showed up on time and took care my stressful move.\" Eric Erickson · Google review · Martinsburg ★★★★★ \"The guys were great\" Linda Collins · Google review · Martinsburg ★★★★ \"Our experience with Flat Rate movers was very positive. Henry was professional and helpful in our interactions, and the moving crew was diligent and professional in packing, loading, and moving. We would recommend this business highly.\" Mark Whittle · Google review · Martinsburg ★★★★★ \"From beginning to end, Henry made this stressful time a smooth transaction. Rich and E were kind, courteous and professional. Highly recommend Flat Rate Movers!\" Amy Fansler · Google review · Martinsburg",
+          "textHash": "d9bf0a676b30c1d5ae6a95b286f1fef8715422e61b0e8f111ba5582fa97a2b1f",
+          "bodyChars": 1617,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "LocalBusiness",
             "Organization",
             "WebPage"
@@ -449745,7 +449818,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
-              "sha256": "0c628f7b2ff8b523a80217b474b693f3675006cbee43bbef051a4c0fc8ca8a75",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -449758,19 +449831,20 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-martinsburg-4",
+          "fragmentId": "frag-martinsburg-14",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "pageSlug": "moving-company-martinsburg-wv",
-          "locator": "Your Martinsburg moving company. › Two home bases, one standard",
-          "heading": "Two home bases, one standard",
-          "questionShaped": false,
-          "text": "Two home bases, one standard Martinsburg covers the Eastern Panhandle; our Virginia base in Winchester covers the Valley. Whichever crew starts your move, the deal is the same: a flat rate in writing, and our guarantee — Guaranteed Flat Rate or Your Move is Free!",
-          "textHash": "c366cba826c8ae4a470cbe881f1f274bc433664c3f95690bab4be571dbcbb8d8",
-          "bodyChars": 234,
+          "locator": "Your Martinsburg moving company. › Martinsburg — questions, answered › Where is the Martinsburg branch?",
+          "heading": "Where is the Martinsburg branch?",
+          "questionShaped": true,
+          "text": "Where is the Martinsburg branch? 736 Williamsport Pike, Suite 2, Martinsburg, WV 25404 — on I-81 with the I-70 connection east. Hours: Mon–Fri 9am–6pm, Sat 9am–4pm, Sun 9am–4pm. Phone +1-540-422-2153.",
+          "textHash": "5459b87e6d62692db4d01c43de8ef05666bb35b51f187aea383f427eed052f72",
+          "bodyChars": 167,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "LocalBusiness",
             "Organization",
             "WebPage"
@@ -449779,7 +449853,295 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
-              "sha256": "0c628f7b2ff8b523a80217b474b693f3675006cbee43bbef051a4c0fc8ca8a75",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-martinsburg-15",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
+          "pageSlug": "moving-company-martinsburg-wv",
+          "locator": "Your Martinsburg moving company. › Martinsburg — questions, answered › How many areas does the Martinsburg branch serve?",
+          "heading": "How many areas does the Martinsburg branch serve?",
+          "questionShaped": true,
+          "text": "How many areas does the Martinsburg branch serve? 41 of the company s 71 service areas — the Eastern Panhandle (Berkeley, Jefferson and Morgan counties), the I-81 and I-70 corridors, and the shared Valley and Panhandle areas it covers with Winchester.",
+          "textHash": "5f20dc03bdfba227ffea76dc0901268e18eacf7d18002483be50eecef8b6b74e",
+          "bodyChars": 201,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "LocalBusiness",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-martinsburg-16",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
+          "pageSlug": "moving-company-martinsburg-wv",
+          "locator": "Your Martinsburg moving company. › Martinsburg — questions, answered › Is it really one flat rate?",
+          "heading": "Is it really one flat rate?",
+          "questionShaped": true,
+          "text": "Is it really one flat rate? Yes. Every job is reviewed in full — scope, distance, manpower, equipment — and priced at one flat rate in writing before move day. Hourly pricing is available when a client asks for it. Guaranteed Flat Rate or Your Move is Free!",
+          "textHash": "e5346e1712ce9d65a2fea0f4c97db24bb40b23f41dc71fcf496689b0de526b8a",
+          "bodyChars": 229,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "LocalBusiness",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv/"
+            },
+            {
+              "surface": "llms-full.txt",
+              "url": "https://theflatratemovers.com/llms-full.txt"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-martinsburg-17",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
+          "pageSlug": "moving-company-martinsburg-wv",
+          "locator": "Your Martinsburg moving company. › Martinsburg — questions, answered › Why is Martinsburg rated 4.7 while Winchester shows 5.0?",
+          "heading": "Why is Martinsburg rated 4.7 while Winchester shows 5.0?",
+          "questionShaped": true,
+          "text": "Why is Martinsburg rated 4.7 while Winchester shows 5.0? Because the ratings are kept per branch and never blended. Martinsburg has 6 real Google reviews — four 5-star and two 4-star — and every one is shown on this page. One company, one standard; two branches, two honest records.",
+          "textHash": "09f9920bb71de9b2139d304d4fbe1e9536575aa1cbc254eaf5dec501c807c0bb",
+          "bodyChars": 225,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "LocalBusiness",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-martinsburg-18",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
+          "pageSlug": "moving-company-martinsburg-wv",
+          "locator": "Your Martinsburg moving company. › Martinsburg — questions, answered › Does Martinsburg handle port and intermodal work?",
+          "heading": "Does Martinsburg handle port and intermodal work?",
+          "questionShaped": true,
+          "text": "Does Martinsburg handle port and intermodal work? Yes. This branch binds the northern ports by road distance — Baltimore, Wilmington, DE and PhilaPort — for transloading, cross-docking, container loading and unpacking, and freight rework. Our crews and the contractors we engage hold TWIC cards.",
+          "textHash": "c0e37930096489b05d91874b9992f2cb334e41f6f96b73eaac4728632f9087b1",
+          "bodyChars": 245,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "LocalBusiness",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-martinsburg-19",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
+          "pageSlug": "moving-company-martinsburg-wv",
+          "locator": "Your Martinsburg moving company. › Related pages",
+          "heading": "Related pages",
+          "questionShaped": false,
+          "text": "Related pages Gun Safe Movers — Martinsburg WV SIR Heavy Movers — Martinsburg WV ISPM 15 Export Packing — Martinsburg WV Category — Eastern Panhandle Moving Eastern Panhandle Moving Office Moving",
+          "textHash": "758c6687c6b9ab673d08b9775e48c623cfd80af421dcc376a2b769998ba256d4",
+          "bodyChars": 181,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "LocalBusiness",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-martinsburg-2",
+          "source": "faq-schema",
+          "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
+          "pageSlug": "moving-company-martinsburg-wv",
+          "locator": "FAQ schema (per-page JSON FAQPage)",
+          "heading": "How many areas does the Martinsburg branch serve?",
+          "questionShaped": true,
+          "text": "How many areas does the Martinsburg branch serve? 41 of the company's 71 service areas — the Eastern Panhandle (Berkeley, Jefferson and Morgan counties), the I-81 and I-70 corridors, and the shared Valley and Panhandle areas it covers with Winchester.",
+          "textHash": "c3db98167500b3f9def1e274f92fbb0fcd7d71be05c4f09ef671b7c041425062",
+          "bodyChars": 201,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "LocalBusiness",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-martinsburg-3",
+          "source": "faq-schema",
+          "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
+          "pageSlug": "moving-company-martinsburg-wv",
+          "locator": "FAQ schema (per-page JSON FAQPage)",
+          "heading": "Is it really one flat rate?",
+          "questionShaped": true,
+          "text": "Is it really one flat rate? Yes. Every job is reviewed in full — scope, distance, manpower, equipment — and priced at one flat rate in writing before move day. Hourly pricing is available when a client asks for it. Guaranteed Flat Rate or Your Move is Free!",
+          "textHash": "e5346e1712ce9d65a2fea0f4c97db24bb40b23f41dc71fcf496689b0de526b8a",
+          "bodyChars": 229,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "LocalBusiness",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv/"
+            },
+            {
+              "surface": "llms-full.txt",
+              "url": "https://theflatratemovers.com/llms-full.txt"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-martinsburg-4",
+          "source": "faq-schema",
+          "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
+          "pageSlug": "moving-company-martinsburg-wv",
+          "locator": "FAQ schema (per-page JSON FAQPage)",
+          "heading": "Why is Martinsburg rated 4.7 while Winchester shows 5.0?",
+          "questionShaped": true,
+          "text": "Why is Martinsburg rated 4.7 while Winchester shows 5.0? Because the ratings are kept per branch and never blended. Martinsburg has 6 real Google reviews — four 5-star and two 4-star — and every one is shown on this page. One company, one standard; two branches, two honest records.",
+          "textHash": "09f9920bb71de9b2139d304d4fbe1e9536575aa1cbc254eaf5dec501c807c0bb",
+          "bodyChars": 225,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "LocalBusiness",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -449793,18 +450155,19 @@
         },
         {
           "fragmentId": "frag-martinsburg-5",
-          "source": "passage",
+          "source": "faq-schema",
           "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "pageSlug": "moving-company-martinsburg-wv",
-          "locator": "Your Martinsburg moving company. › Martinsburg service areas",
-          "heading": "Martinsburg service areas",
-          "questionShaped": false,
-          "text": "Martinsburg service areas From 736 Williamsport Pike, Suite 2, Martinsburg, WV 25404 — 14 Google Business Profile areas: Inwood, Hagerstown MD, Hedgesville, Paw Paw 25434, Shepherdstown, Berkeley County, Moorefield 26836, Bunker Hill 25413, Charles Town 25414, Clear Spring MD 21722, Summit Point 25446, Harpers Ferry 25425, Kearneysville 25430, and the Eastern Panhandle of West Virginia. Services: residential, commercial, gun safes, long-distance, military and government moves, and transloading, at one flat rate in writing. Hours: Mon–Fri 9am–6pm, Sat 9am–4pm, Sun 9am–4pm. Google rating: 4.7 with 6 reviews, per branch, never blended.",
-          "textHash": "eaff3b091b70d334cc41888e1c80450f098513f567d2c4aad03755eef9ca67ee",
-          "bodyChars": 614,
+          "locator": "FAQ schema (per-page JSON FAQPage)",
+          "heading": "Does Martinsburg handle port and intermodal work?",
+          "questionShaped": true,
+          "text": "Does Martinsburg handle port and intermodal work? Yes. This branch binds the northern ports by road distance — Baltimore, Wilmington, DE and PhilaPort — for transloading, cross-docking, container loading and unpacking, and freight rework. Our crews and the contractors we engage hold TWIC cards.",
+          "textHash": "c0e37930096489b05d91874b9992f2cb334e41f6f96b73eaac4728632f9087b1",
+          "bodyChars": 245,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "LocalBusiness",
             "Organization",
             "WebPage"
@@ -449813,7 +450176,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
-              "sha256": "0c628f7b2ff8b523a80217b474b693f3675006cbee43bbef051a4c0fc8ca8a75",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -449830,15 +450193,16 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "pageSlug": "moving-company-martinsburg-wv",
-          "locator": "Your Martinsburg moving company. › In depth — Moving Company — Martinsburg, WV",
-          "heading": "In depth — Moving Company — Martinsburg, WV",
+          "locator": "Your Martinsburg moving company.",
+          "heading": "Your Martinsburg moving company.",
           "questionShaped": false,
-          "text": "In depth — Moving Company — Martinsburg, WV The Flat Rate Movers in Martinsburg, WV — 736 Williamsport Pike Suite 2, Martinsburg, WV 25404. Flat-rate home, business, heavy-asset and freight moving for the Eastern Panhandle, established June 2010.",
-          "textHash": "d9daa6a21b0e2e4a46574888d8ec7f7304ccfd3aba11409689c0df40d3efa832",
-          "bodyChars": 202,
+          "text": "Your Martinsburg moving company. Our West Virginia home base is at 736 Williamsport Pike, Suite 2 in Martinsburg — the Eastern Panhandle’s own crew, on I-81 with the I-70 connection beside us. Flat-rate moves, in writing, since June 2010. Quote a Martinsburg move Town Square, Martinsburg, Berkeley County, WV — downtown of our Eastern Panhandle branch, Flat Rate Movers Martinsburg WV, 736 Williamsport Pike, Suite 2 (39.4832° N, 77.9476° W) · Photo: Jenny DiCola Photography, via WV Living",
+          "textHash": "99224d3e1c9f8161ed88c19d679b5e28543bfe5b1fa2b5ff9bb8248b5f87394c",
+          "bodyChars": 458,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "LocalBusiness",
             "Organization",
             "WebPage"
@@ -449847,7 +450211,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
-              "sha256": "0c628f7b2ff8b523a80217b474b693f3675006cbee43bbef051a4c0fc8ca8a75",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -449864,15 +450228,16 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "pageSlug": "moving-company-martinsburg-wv",
-          "locator": "Your Martinsburg moving company. › In depth — Moving Company — Martinsburg, WV › The Martinsburg, WV branch, in full",
-          "heading": "The Martinsburg, WV branch, in full",
+          "locator": "Your Martinsburg moving company. › The Martinsburg branch › 📍 Visit, call, email — Martinsburg",
+          "heading": "📍 Visit, call, email — Martinsburg",
           "questionShaped": false,
-          "text": "The Martinsburg, WV branch, in full Flat Rate Movers Martinsburg WV — 736 Williamsport Pike Suite 2, Martinsburg, WV 25404. Hours: Mon–Fri 9am–6pm · Sat 9am–4pm · Sun 9am–4pm. Google rating 4.7 from 6 reviews — this branch's own rating, never blended. Phone +1-540-422-2153. Served from Martinsburg, WV (35 published areas): Berkeley County, WV, Berkeley Springs, WV, Bunker Hill, WV, Charles Town, WV, Clear Spring, MD, Eastern Panhandle of West Virginia, Frederick, MD, Front Royal, VA, Hagerstown, MD, Hampshire County, Hancock, MD, Hardy County, Harpers Ferry, WV, Hedgesville, WV, Interstate 66 Corridor, Interstate 70 Corridor, Interstate 81 Corridor, Inwood, WV, Jefferson County, Kearneysville, WV, Martinsburg, WV, Moorefield, WV, Morgan County, Paw Paw, WV, Port of Virginia, Romney, WV, Shenandoah County, Shenandoah Valley, Shepherdstown, WV, Strasburg, VA, Summit Point, WV, Virginia Inland Port, Warren County, Washington County, Woodstock, VA. The other branch: The Flat Rate Movers — 116 W Piccadilly St Suite 11, Winchester, VA 22601; hours Mon–Fri 8am–6pm · Sat 8am–4pm · Sun 9am–4pm; Google rating 5.0 from 2 reviewss. Its own branch, its own record — never blended with this one. Services from this branch: Residential Moving, Commercial and Office Moving, Local and Regional Moving, Long-Distance Moving, Packing and Unpacking, SIR Heavy Asset Relocation (KIM-GS Protocol), Gun Safe Moving, Piano, Antique and White-Glove Moving, ISPM 15 Export Packing, Custom Crating, Loading, Transloading and Container Services, Final-Mile Delivery, Office Moving, Industrial Offices Moving, Government Moving, Military Moving, Route 81 Corridor Moving and Dispatch, Industrial & Commercial Services, Senior Moving, Warehouse Relocation, IT Relocation & Setup, Loading, Transloading & Container Services — Martinsburg WV, Moving and Storage. Start with the quote: Get My Flat Rate Quote — Short (Quick Quote) by default, or Detailed Project; From, To, and What's moving stay filled in when you switch. Every job is reviewed in full — scope, distance, manpower, equipment — and priced at one flat rate in writing before move day, hourly pricing is available when a client asks for it. Guaranteed Flat Rate or Your Move is Free!",
-          "textHash": "09ce65ae4b26d15f1d0326e542f463adbea1e15bb1fc5559cd485cd82df5ccf5",
-          "bodyChars": 2198,
+          "text": "📍 Visit, call, email — Martinsburg Flat Rate Movers Martinsburg WV 736 Williamsport Pike, Suite 2 Martinsburg, WV 25404 Phone: +1-540-422-2153 Email: ratemovers@gmail.com Hours: Mon–Fri 9am–6pm · Sat 9am–4pm · Sun 9am–4pm — Martinsburg hours, at Flat Rate Movers Martinsburg WV. Call now Get a flat rate quote",
+          "textHash": "e192e5a878cd39c1638294194bed59e831ad092df57ba3cb45931524ee0929d6",
+          "bodyChars": 274,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "LocalBusiness",
             "Organization",
             "WebPage"
@@ -449881,7 +450246,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
-              "sha256": "0c628f7b2ff8b523a80217b474b693f3675006cbee43bbef051a4c0fc8ca8a75",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -449902,15 +450267,16 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
           "pageSlug": "moving-company-martinsburg-wv",
-          "locator": "Your Martinsburg moving company. › Related pages",
-          "heading": "Related pages",
+          "locator": "Your Martinsburg moving company. › The Martinsburg branch › The Panhandle, covered from home",
+          "heading": "The Panhandle, covered from home",
           "questionShaped": false,
-          "text": "Related pages Gun Safe Movers — Martinsburg WV SIR Heavy Movers — Martinsburg WV ISPM 15 Export Packing — Martinsburg WV Category — Eastern Panhandle Moving Eastern Panhandle Moving Office Moving",
-          "textHash": "758c6687c6b9ab673d08b9775e48c623cfd80af421dcc376a2b769998ba256d4",
-          "bodyChars": 181,
+          "text": "The Panhandle, covered from home 🏠 Residential 🏢 Commercial 🔐 Gun Safes 🧹 Hoarding Cleanup 🚚 Long-Distance 🎖️ Military & Government 🏗️ Transloading Local moves across Berkeley County, Jefferson County and Morgan County start here — no long deadhead drive before your move even begins. Regional and long-distance runs follow I-81 and I-70, and freight work runs through our warehouse and transload operation.",
+          "textHash": "7851abb9fc62283d273ee85aea22532483320f6abe8c44397f61989fa0535caa",
+          "bodyChars": 381,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "LocalBusiness",
             "Organization",
             "WebPage"
@@ -449919,7 +450285,42 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
-              "sha256": "0c628f7b2ff8b523a80217b474b693f3675006cbee43bbef051a4c0fc8ca8a75",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-martinsburg-9",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
+          "pageSlug": "moving-company-martinsburg-wv",
+          "locator": "Your Martinsburg moving company. › The Martinsburg branch › Two home bases, one standard",
+          "heading": "Two home bases, one standard",
+          "questionShaped": false,
+          "text": "Two home bases, one standard Martinsburg covers the Eastern Panhandle; our Virginia base in Winchester covers the Valley. Whichever crew starts your move, the deal is the same: a flat rate in writing, and our guarantee — Guaranteed Flat Rate or Your Move is Free!",
+          "textHash": "c366cba826c8ae4a470cbe881f1f274bc433664c3f95690bab4be571dbcbb8d8",
+          "bodyChars": 234,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "LocalBusiness",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/moving-company-martinsburg-wv.json",
+              "sha256": "b3697e84aa51f06037999ed21ed7fc611ac42c31484999807b86b851fdd0a42a",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -499399,7 +499800,7 @@
       "@id": "https://theflatratemovers.com/#dataset-answer-evidence-totals",
       "@type": "Dataset",
       "name": "Answer Evidence Totals",
-      "description": "Totals for this generation of the answer-evidence dataset, computed by the generator from the live estate: 26245 questions, 3389 fragments, 4 engine profiles, 43 citation observations (6 search-surface method; 37 prompt-panel observations from 4 panel run(s), latest 2026-11-02 — measured, stated per method), 6 review distribution snapshots and 9 gap records. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on the operations node.",
+      "description": "Totals for this generation of the answer-evidence dataset, computed by the generator from the live estate: 26245 questions, 3400 fragments, 4 engine profiles, 43 citation observations (6 search-surface method; 37 prompt-panel observations from 4 panel run(s), latest 2026-11-02 — measured, stated per method), 6 review distribution snapshots and 9 gap records. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on the operations node.",
       "keywords": [
         "answer engines",
         "citation evidence",
@@ -499484,13 +499885,13 @@
       "isAccessibleForFree": true,
       "totals": {
         "questions": 26245,
-        "fragments": 3389,
+        "fragments": 3400,
         "fragmentsBySource": {
-          "faq-schema": 413,
-          "passage": 2976
+          "faq-schema": 418,
+          "passage": 2982
         },
-        "fragmentsQuestionShaped": 1049,
-        "fragmentsSubstantive": 3154,
+        "fragmentsQuestionShaped": 1060,
+        "fragmentsSubstantive": 3165,
         "fragmentsExcludedSelfReferential": 55,
         "coverage": {
           "rubricRows": 26245,
@@ -499526,7 +499927,7 @@
       "sources": [
         {
           "name": "Intent rubric database",
-          "detail": "26245 rows; rows digest bcd7cbff913e7fb858e65328fb67600f018a2e7041340a725494e4e0c2e098fb; generator build-intent-rubric.js (rubric v2)"
+          "detail": "26245 rows; rows digest d21d945a57854466a0394a78b15ccc7adae0d5ac8146a8ccbffa59e9998212b4; generator build-intent-rubric.js (rubric v2)"
         },
         {
           "name": "Source shell + per-page JSONs",

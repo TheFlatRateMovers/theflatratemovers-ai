@@ -5,7 +5,7 @@
    "@id": "https://theflatratemovers.com/#dataset-vault-doors-operations",
    "@type": "Service",
    "name": "Vault Door Model Data Operations",
-   "description": "The verified door-model data behind vault door relocation and installation at The Flat Rate Movers. A vault door job is planned from the door itself \u2014 its clear opening, its weight, its lock, and the wall it sits in \u2014 so this dataset carries manufacturer-stated model data only where the manufacturer's own published specification sheet or federal-specification documentation supports it, with the evidence recorded on every row. Rows enter through a verification protocol, not by editorial choice: a UL 608 class appears only with UL listing evidence behind it, a GSA class only for a QPL-listed door or a manufacturer's federal-spec sheet stating AA-D-600D conformance for that model, and a price only when the manufacturer publishes one, with its source and the date it was observed. Each row's weight is tested against the SIR band of 1,500 to 3,500 lbs by computation, so a specifier can see which doors fall under the SIR structural method and which are scoped from their own facts. Three routes carry this dataset: the file https://theflatratemovers.com/datasets-vault-doors.json, the API inventory at /v1/datasets, and the landing page https://theflatratemovers.com/datasets/vault-doors/. The companion standards registry, datasets-vault-security.json, carries the class and lock definitions these rows cite.",
+   "description": "The verified door-model data behind vault door relocation and installation at The Flat Rate Movers. A vault door job is planned from the door itself — its clear opening, its weight, its lock, and the wall it sits in — so this dataset carries manufacturer-stated model data only where the manufacturer's own published specification sheet or federal-specification documentation supports it, with the evidence recorded on every row. Rows enter through a verification protocol, not by editorial choice: a UL 608 class appears only with UL listing evidence behind it, a GSA class only for a QPL-listed door or a manufacturer's federal-spec sheet stating AA-D-600D conformance for that model, and a price only when the manufacturer publishes one, with its source and the date it was observed. Each row's weight is tested against the SIR band of 1,500 to 3,500 lbs by computation, so a specifier can see which doors fall under the SIR structural method and which are scoped from their own facts. Three routes carry this dataset: the file https://theflatratemovers.com/datasets-vault-doors.json, the API inventory at /v1/datasets, and the landing page https://theflatratemovers.com/datasets/vault-doors/. The companion standards registry, datasets-vault-security.json, carries the class and lock definitions these rows cite.",
    "keywords": [
     "vault door weight",
     "vault door models",
@@ -56,13 +56,13 @@
      "@type": "DataDownload",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "85696db57c108a65855d669fac7fb6c8ec1c58edb0e3c2d38ffb8d97f4e81ae2"
+     "sha256": "d4776dca7ff266ed5bbfa972509a21d34548921cbbf992a4f7955d88e8da2013"
     },
     {
      "@type": "DataDownload",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "c9994eb4bab418fa6fc8b546ba239061e84d3da59b83f514b4b3c8391781cc89"
+     "sha256": "db41d7e130935395696707e648f90e7f387e7f2f18a413f2ceaf7ec6363ef271"
     }
    ],
    "sameAs": "https://theflatratemovers.com/vault-doors/",
@@ -76,8 +76,8 @@
   {
    "@type": "Dataset",
    "@id": "https://theflatratemovers.com/datasets/vault-doors/#dataset-vault-doors",
-   "name": "Vault Door Models \u2014 Verified Manufacturer Data",
-   "description": "Verified manufacturer data for vault door models \u2014 the doors a relocation or installation is planned from. The population carries 8 models from 3 manufacturers (Liberty Safe, Fort Knox, Overly Door Company), with manufacturer-stated weights from 1,225 to 1,610 lbs; 2 of the weighed models fall inside the SIR band of 1,500 to 3,500 lbs. Every row states only what the manufacturer's own documents state: where a manufacturer does not publish a clear opening, a thickness, or a model price, the field is absent from the row and the reason is recorded on the row. The dataset grows by verified rows only; its count is the count the verification protocol has passed, stated as it stands.",
+   "name": "Vault Door Models — Verified Manufacturer Data",
+   "description": "Verified manufacturer data for vault door models — the doors a relocation or installation is planned from. The population carries 8 models from 3 manufacturers (Liberty Safe, Fort Knox, Overly Door Company), with manufacturer-stated weights from 1,225 to 1,610 lbs; 2 of the weighed models fall inside the SIR band of 1,500 to 3,500 lbs. Every row states only what the manufacturer's own documents state: where a manufacturer does not publish a clear opening, a thickness, or a model price, the field is absent from the row and the reason is recorded on the row. The dataset grows by verified rows only; its count is the count the verification protocol has passed, stated as it stands.",
    "url": "https://theflatratemovers.com/datasets/vault-doors/",
    "sameAs": "https://theflatratemovers.com/datasets/vault-doors/",
    "identifier": "https://theflatratemovers.com/datasets/vault-doors/",
@@ -116,14 +116,14 @@
    "includedInDataCatalog": {
     "@type": "DataCatalog",
     "@id": "https://theflatratemovers.com/datasets/#collection",
-    "name": "The Flat Rate Movers \u2014 AI Authority Estate Datasets",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
     "url": "https://theflatratemovers.com/datasets/"
    },
    "spatialCoverage": [
     {
      "@type": "Place",
      "@id": "https://theflatratemovers.com/#winchester",
-     "name": "The Flat Rate Movers \u2014 Winchester",
+     "name": "The Flat Rate Movers — Winchester",
      "geo": {
       "@type": "GeoCoordinates",
       "latitude": 39.18711576,
@@ -155,7 +155,7 @@
       "name": "Liberty Safe",
       "url": "https://www.libertysafe.com/"
      },
-     "model": "The Beast \u2014 Outswing",
+     "model": "The Beast — Outswing",
      "useCase": "Residential Safe Room",
      "classification": {
       "system": "manufacturer-stated construction",
@@ -190,7 +190,7 @@
       "name": "Liberty Safe",
       "url": "https://www.libertysafe.com/"
      },
-     "model": "The Beast \u2014 Inswing",
+     "model": "The Beast — Inswing",
      "useCase": "Residential Safe Room",
      "classification": {
       "system": "manufacturer-stated construction",
@@ -225,7 +225,7 @@
       "name": "Fort Knox",
       "url": "https://www.ftknox.com/"
      },
-     "model": "Vault Door 8240 \u2014 Out-Swing",
+     "model": "Vault Door 8240 — Out-Swing",
      "useCase": "Residential Safe Room",
      "classification": {
       "system": "manufacturer-stated construction",
@@ -246,7 +246,7 @@
      },
      "verification": {
       "specSheetUrl": "https://www.thesafemanllc.com/wp-content/uploads/2025/01/2025_Digital_Catalog_Vault_Doors.pdf",
-      "listingEvidence": "No listing applies: classification is manufacturer-stated construction. The catalog is Fort Knox's own published specification document (2025 Digital Catalog \u2014 Vault Doors), mirrored on a dealer domain; authorship is the manufacturer's, and the bolt count is corroborated on the manufacturer's own product page.",
+      "listingEvidence": "No listing applies: classification is manufacturer-stated construction. The catalog is Fort Knox's own published specification document (2025 Digital Catalog — Vault Doors), mirrored on a dealer domain; authorship is the manufacturer's, and the bolt count is corroborated on the manufacturer's own product page.",
       "corroboratingSource": "https://www.ftknox.com/vaults/vault-room-doors-outswing/",
       "verifiedDate": "2026-11-02",
       "verifier": "Vault V1 prep research pass, 2026-11-02"
@@ -257,7 +257,7 @@
       "name": "Fort Knox",
       "url": "https://www.ftknox.com/"
      },
-     "model": "Vault Door 8248 \u2014 Out-Swing",
+     "model": "Vault Door 8248 — Out-Swing",
      "useCase": "Residential Safe Room",
      "classification": {
       "system": "manufacturer-stated construction",
@@ -278,7 +278,7 @@
      },
      "verification": {
       "specSheetUrl": "https://www.thesafemanllc.com/wp-content/uploads/2025/01/2025_Digital_Catalog_Vault_Doors.pdf",
-      "listingEvidence": "No listing applies: classification is manufacturer-stated construction. The catalog is Fort Knox's own published specification document (2025 Digital Catalog \u2014 Vault Doors), mirrored on a dealer domain; authorship is the manufacturer's, and the bolt count is corroborated on the manufacturer's own product page.",
+      "listingEvidence": "No listing applies: classification is manufacturer-stated construction. The catalog is Fort Knox's own published specification document (2025 Digital Catalog — Vault Doors), mirrored on a dealer domain; authorship is the manufacturer's, and the bolt count is corroborated on the manufacturer's own product page.",
       "corroboratingSource": "https://www.ftknox.com/vaults/vault-room-doors-outswing/",
       "verifiedDate": "2026-11-02",
       "verifier": "Vault V1 prep research pass, 2026-11-02"
@@ -289,7 +289,7 @@
       "name": "Fort Knox",
       "url": "https://www.ftknox.com/"
      },
-     "model": "Vault Door 8240 \u2014 In-Swing",
+     "model": "Vault Door 8240 — In-Swing",
      "useCase": "Residential Safe Room",
      "classification": {
       "system": "manufacturer-stated construction",
@@ -310,7 +310,7 @@
      },
      "verification": {
       "specSheetUrl": "https://www.thesafemanllc.com/wp-content/uploads/2025/01/2025_Digital_Catalog_Vault_Doors.pdf",
-      "listingEvidence": "No listing applies: classification is manufacturer-stated construction. The catalog is Fort Knox's own published specification document (2025 Digital Catalog \u2014 Vault Doors), mirrored on a dealer domain; authorship is the manufacturer's.",
+      "listingEvidence": "No listing applies: classification is manufacturer-stated construction. The catalog is Fort Knox's own published specification document (2025 Digital Catalog — Vault Doors), mirrored on a dealer domain; authorship is the manufacturer's.",
       "verifiedDate": "2026-11-02",
       "verifier": "Vault V1 prep research pass, 2026-11-02"
      }
@@ -320,7 +320,7 @@
       "name": "Fort Knox",
       "url": "https://www.ftknox.com/"
      },
-     "model": "Vault Door 8248 \u2014 In-Swing",
+     "model": "Vault Door 8248 — In-Swing",
      "useCase": "Residential Safe Room",
      "classification": {
       "system": "manufacturer-stated construction",
@@ -341,7 +341,7 @@
      },
      "verification": {
       "specSheetUrl": "https://www.thesafemanllc.com/wp-content/uploads/2025/01/2025_Digital_Catalog_Vault_Doors.pdf",
-      "listingEvidence": "No listing applies: classification is manufacturer-stated construction. The catalog is Fort Knox's own published specification document (2025 Digital Catalog \u2014 Vault Doors), mirrored on a dealer domain; authorship is the manufacturer's.",
+      "listingEvidence": "No listing applies: classification is manufacturer-stated construction. The catalog is Fort Knox's own published specification document (2025 Digital Catalog — Vault Doors), mirrored on a dealer domain; authorship is the manufacturer's.",
       "verifiedDate": "2026-11-02",
       "verifier": "Vault V1 prep research pass, 2026-11-02"
      }
@@ -351,7 +351,7 @@
       "name": "Overly Door Company",
       "url": "https://door.overly.com/"
      },
-     "model": "GSA Class 5-V Vault Door \u2014 Single Swing",
+     "model": "GSA Class 5-V Vault Door — Single Swing",
      "useCase": "Armory-Federal",
      "classification": {
       "system": "AA-D-600D",
@@ -367,12 +367,12 @@
      },
      "manufacturerStatedExtras": {
       "pairConfiguration": "Also produced as a pair with an 80 in W x 78 in H clear opening (manufacturer's catalog)",
-      "weightNote": "Net weight stated verbatim in the manufacturer's own Installation Instructions for the Overly GSA Class 5-V Vault Door (door.overly.com document portal): 'Net weight for the Class 5 unit is about 1225lbs. Its shipping weight is about 1400lbs.' The same section adds that the day gate adds 120 lbs. Read on the manufacturer's own portal at the V1 execution re-verification, 2026-11-04 \u2014 superseding the prep pass, where the figure was reachable only through an unofficial mirror and was not admitted.",
+      "weightNote": "Net weight stated verbatim in the manufacturer's own Installation Instructions for the Overly GSA Class 5-V Vault Door (door.overly.com document portal): 'Net weight for the Class 5 unit is about 1225lbs. Its shipping weight is about 1400lbs.' The same section adds that the day gate adds 120 lbs. Read on the manufacturer's own portal at the V1 execution re-verification, 2026-11-04 — superseding the prep pass, where the figure was reachable only through an unofficial mirror and was not admitted.",
       "weightQualifier": "The manufacturer states the unit weight as 'approximately 1,225 LBS' (door and frame unit, masonry opening basis in the same document)."
      },
      "verification": {
       "specSheetUrl": "https://www.thomasnet.com/company/overly-door-co-10028953/catalog?family=doors&category=doors",
-      "listingEvidence": "Manufacturer's federal-specification documentation (Overly catalog entry for the GSA Class 5-V High Security Vault Door: produced to the exact requirements of AA-D-600D, with the specification's clear-opening sizes). QPL-AA-D-600-12 Revision 12 (2026-04-01) read in full 2026-11-04: Overly is listed for Class 5-A and 5-B only \u2014 no Class 5-V listing is claimed for this row.",
+      "listingEvidence": "Manufacturer's federal-specification documentation (Overly catalog entry for the GSA Class 5-V High Security Vault Door: produced to the exact requirements of AA-D-600D, with the specification's clear-opening sizes). QPL-AA-D-600-12 Revision 12 (2026-04-01) read in full 2026-11-04: Overly is listed for Class 5-A and 5-B only — no Class 5-V listing is claimed for this row.",
       "verifiedDate": "2026-11-04",
       "verifier": "Vault V1 execution re-verification, 2026-11-04",
       "corroboratingSource": "https://door.overly.com/document?DO_Guid=c5f7473f-1527-436e-b5df-f220cb7398c0"
@@ -389,7 +389,7 @@
      "classification": {
       "system": "AA-D-600D",
       "class": "Class 5-B",
-      "evidence": "Listed on QPL-AA-D-600-12 (Revision 12, April 1, 2026) for Class 5-B under the manufacturer's OV2133-9 brand family (types IR, IIR, IL, IIL, IIIL), retrieved and read at the V1 execution re-verification, 2026-11-04; and Overly Door Company's own installation instructions for this model (document ENGD-013, Rev. 03, 07/16/2025) state the door and frame unit meets federal specification AA-D-600D (Class 5-B). Protocol section 3.3(2) admits a GSA class on QPL-AA-D-600-12 listing or the manufacturer's federal-specification documentation stating AA-D-600D conformance for the model \u2014 this row carries both."
+      "evidence": "Listed on QPL-AA-D-600-12 (Revision 12, April 1, 2026) for Class 5-B under the manufacturer's OV2133-9 brand family (types IR, IIR, IL, IIL, IIIL), retrieved and read at the V1 execution re-verification, 2026-11-04; and Overly Door Company's own installation instructions for this model (document ENGD-013, Rev. 03, 07/16/2025) state the door and frame unit meets federal specification AA-D-600D (Class 5-B). Protocol section 3.3(2) admits a GSA class on QPL-AA-D-600-12 listing or the manufacturer's federal-specification documentation stating AA-D-600D conformance for the model — this row carries both."
      },
      "clearOpeningHeightIn": 78,
      "clearOpeningWidthIn": 40,
@@ -413,7 +413,7 @@
      }
     }
    ],
-   "verificationProtocol": "Dossier section 3.3: a row publishes only when (1) the manufacturer's own published spec sheet covers the stated dimensions, thickness, weight, and lock as fitted (a retailer listing is not a spec sheet); (2) a UL 608 class carries UL listing evidence and a GSA class carries QPL-AA-D-600-12 listing or the manufacturer's federal-spec sheet stating AA-D-600D conformance for that model \u2014 everything else classifies as manufacturer-stated construction; (3) antique rows enter as manufacturer-stated/historical with named evidence and true weights; (4) the file ships at the verified count.",
+   "verificationProtocol": "Dossier section 3.3: a row publishes only when (1) the manufacturer's own published spec sheet covers the stated dimensions, thickness, weight, and lock as fitted (a retailer listing is not a spec sheet); (2) a UL 608 class carries UL listing evidence and a GSA class carries QPL-AA-D-600-12 listing or the manufacturer's federal-spec sheet stating AA-D-600D conformance for that model — everything else classifies as manufacturer-stated construction; (3) antique rows enter as manufacturer-stated/historical with named evidence and true weights; (4) the file ships at the verified count.",
    "distribution": [
     {
      "@type": "DataDownload",
@@ -436,13 +436,13 @@
      "@type": "DataDownload",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "85696db57c108a65855d669fac7fb6c8ec1c58edb0e3c2d38ffb8d97f4e81ae2"
+     "sha256": "d4776dca7ff266ed5bbfa972509a21d34548921cbbf992a4f7955d88e8da2013"
     },
     {
      "@type": "DataDownload",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "c9994eb4bab418fa6fc8b546ba239061e84d3da59b83f514b4b3c8391781cc89"
+     "sha256": "db41d7e130935395696707e648f90e7f387e7f2f18a413f2ceaf7ec6363ef271"
     }
    ]
   },
@@ -450,7 +450,7 @@
    "@id": "https://theflatratemovers.com/#dataset-vault-doors-method",
    "@type": "Article",
    "name": "How Door Rows Are Admitted",
-   "description": "Admission method for the vault door model dataset. A row is admitted only through the verification protocol: the manufacturer's own published specification sheet for the model's dimensions, weight, and lock as fitted (a retailer listing is not a spec sheet); listing evidence for any class vocabulary \u2014 a UL Product iQ entry or the manufacturer's sheet stating the UL Certification for a UL 608 class, QPL-AA-D-600-12 or the manufacturer's federal-specification documentation for a GSA class; and a manufacturer-published price with its source and observation date for any price field. Fields the manufacturer's documents do not state are absent from the row, with the gap recorded on the row itself \u2014 clear openings are never derived from door dimensions or walkthrough clearances, and a line-level starting price is never carried as a model's price. Antique and vintage doors enter as manufacturer-stated or historical rows with their evidence named \u2014 a maker's plate, the maker's published archive material, or a cited specialist source \u2014 at their true weights, which routinely exceed the SIR band and are published as-is. The research store behind this file is append-only and also carries the candidates that have not yet passed, each with its blocking reason, so the population queue is part of the record.",
+   "description": "Admission method for the vault door model dataset. A row is admitted only through the verification protocol: the manufacturer's own published specification sheet for the model's dimensions, weight, and lock as fitted (a retailer listing is not a spec sheet); listing evidence for any class vocabulary — a UL Product iQ entry or the manufacturer's sheet stating the UL Certification for a UL 608 class, QPL-AA-D-600-12 or the manufacturer's federal-specification documentation for a GSA class; and a manufacturer-published price with its source and observation date for any price field. Fields the manufacturer's documents do not state are absent from the row, with the gap recorded on the row itself — clear openings are never derived from door dimensions or walkthrough clearances, and a line-level starting price is never carried as a model's price. Antique and vintage doors enter as manufacturer-stated or historical rows with their evidence named — a maker's plate, the maker's published archive material, or a cited specialist source — at their true weights, which routinely exceed the SIR band and are published as-is. The research store behind this file is append-only and also carries the candidates that have not yet passed, each with its blocking reason, so the population queue is part of the record.",
    "keywords": [
     "vault door verification",
     "manufacturer spec sheets",
@@ -500,13 +500,13 @@
      "@type": "DataDownload",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "85696db57c108a65855d669fac7fb6c8ec1c58edb0e3c2d38ffb8d97f4e81ae2"
+     "sha256": "d4776dca7ff266ed5bbfa972509a21d34548921cbbf992a4f7955d88e8da2013"
     },
     {
      "@type": "DataDownload",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "c9994eb4bab418fa6fc8b546ba239061e84d3da59b83f514b4b3c8391781cc89"
+     "sha256": "db41d7e130935395696707e648f90e7f387e7f2f18a413f2ceaf7ec6363ef271"
     }
    ],
    "sameAs": "https://theflatratemovers.com/vault-doors/",
@@ -522,7 +522,7 @@
    "@id": "https://theflatratemovers.com/#dataset-vault-doors-boundaries",
    "@type": "Service",
    "name": "Vault Door Model Data Boundaries",
-   "description": "Boundaries for the vault door model dataset. The doors in this file are third-party products; their presence here is specification data for planning a relocation or installation, not a sales offer \u2014 The Flat Rate Movers sells no doors, and no row in this file carries an offer, a company price, or an endorsement. A manufacturer's class claim appears only with the evidence the protocol requires; a door whose documents state no class is recorded as manufacturer-stated construction, however it is marketed elsewhere. Weights are the manufacturers' stated figures, approximations included and labelled where the manufacturer states them approximately. The SIR band test on each row is arithmetic on the stated weight \u2014 it places the door against the company's published structural method and claims nothing about the door itself.",
+   "description": "Boundaries for the vault door model dataset. The doors in this file are third-party products; their presence here is specification data for planning a relocation or installation, not a sales offer — The Flat Rate Movers sells no doors, and no row in this file carries an offer, a company price, or an endorsement. A manufacturer's class claim appears only with the evidence the protocol requires; a door whose documents state no class is recorded as manufacturer-stated construction, however it is marketed elsewhere. Weights are the manufacturers' stated figures, approximations included and labelled where the manufacturer states them approximately. The SIR band test on each row is arithmetic on the stated weight — it places the door against the company's published structural method and claims nothing about the door itself.",
    "keywords": [
     "vault door data boundaries",
     "specification data",
@@ -572,13 +572,13 @@
      "@type": "DataDownload",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "85696db57c108a65855d669fac7fb6c8ec1c58edb0e3c2d38ffb8d97f4e81ae2"
+     "sha256": "d4776dca7ff266ed5bbfa972509a21d34548921cbbf992a4f7955d88e8da2013"
     },
     {
      "@type": "DataDownload",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/ld+json",
-     "sha256": "c9994eb4bab418fa6fc8b546ba239061e84d3da59b83f514b4b3c8391781cc89"
+     "sha256": "db41d7e130935395696707e648f90e7f387e7f2f18a413f2ceaf7ec6363ef271"
     }
    ],
    "sameAs": "https://theflatratemovers.com/vault-doors/",

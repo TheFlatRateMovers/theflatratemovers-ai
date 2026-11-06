@@ -1,663 +1,1230 @@
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@id": "https://theflatratemovers.com/#dataset-long-distance-operations",
+   "@type": "Service",
+   "name": "Long-Distance Move Operations",
+   "description": "Long-distance move operations from survey to walkthrough, in eight steps. Survey and quote: a room-by-room survey in person or through the free film-only video walkthrough survey room, where the customer films and a person makes the estimate — nothing is auto-priced — and one flat price agreed in writing before the truck rolls. Inventory: itemized, room by room (published process education: items worth more than $100 per pound are declared in writing under the federal high-value rule — a domain standard, labeled as such). Pack: full or partial packing with furniture fully covered, cross-referenced to the packing category and the interstate pack guide. Load: sequenced loading with blanket and stretch wrap protection; where a move includes a high-mass piece of 1,500 to 3,500 lbs, that piece moves under SIR Structural Integrity Relocation with the KIM-GS Protocol and L/360 floor-deflection analysis. Linehaul: transport along the published I-81, I-66 and I-70 corridor dispatch network from both branches (domain practice, labeled: certified scale weights and consolidated or exclusive-use routing shape the run). Delivery: handled inside a delivery window — the window models are published as domain education in the delivery windows dataset; no company delivery spread, date, or tracking practice is published. Placement: room-by-room placement on the residential pattern, cross-referenced. Walkthrough and claims: a final walkthrough with damage noted on the delivery paperwork, and the valuation level governing any claim — domain education, with no company claims procedure published. Shipment size sets the linehaul inputs (distance bands dataset), the delivery step uses a window model (delivery windows dataset), and the quote step rests on the estimate terms explained in the commercial terms dataset.",
+   "keywords": [
+    "winchester long distance moving company",
+    "long distance movers",
+    "cross country moving company",
+    "cross country movers",
+    "cross country moving services"
+   ],
+   "about": [
     {
-      "@id": "https://theflatratemovers.com/#dataset-long-distance-operations",
-      "@type": "Service",
-      "name": "Long-Distance Move Operations",
-      "description": "Long-distance move operations from survey to walkthrough, in eight steps. Survey and quote: a room-by-room survey in person or through the free film-only video walkthrough survey room, where the customer films and a person makes the estimate — nothing is auto-priced — and one flat price agreed in writing before the truck rolls. Inventory: itemized, room by room (published process education: items worth more than $100 per pound are declared in writing under the federal high-value rule — a domain standard, labeled as such). Pack: full or partial packing with furniture fully covered, cross-referenced to the packing category and the interstate pack guide. Load: sequenced loading with blanket and stretch wrap protection; where a move includes a high-mass piece of 1,500 to 3,500 lbs, that piece moves under SIR Structural Integrity Relocation with the KIM-GS Protocol and L/360 floor-deflection analysis. Linehaul: transport along the published I-81, I-66 and I-70 corridor dispatch network from both branches (domain practice, labeled: certified scale weights and consolidated or exclusive-use routing shape the run). Delivery: handled inside a delivery window — the window models are published as domain education in the delivery windows dataset; no company delivery spread, date, or tracking practice is published. Placement: room-by-room placement on the residential pattern, cross-referenced. Walkthrough and claims: a final walkthrough with damage noted on the delivery paperwork, and the valuation level governing any claim — domain education, with no company claims procedure published. Shipment size sets the linehaul inputs (distance bands dataset), the delivery step uses a window model (delivery windows dataset), and the quote step rests on the estimate terms explained in the commercial terms dataset.",
-      "keywords": [
-        "winchester long distance moving company",
-        "long distance movers",
-        "cross country moving company",
-        "cross country movers",
-        "cross country moving services"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-long-distance"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@id": "https://theflatratemovers.com/#winchester"
-        },
-        {
-          "@id": "https://theflatratemovers.com/#martinsburg"
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/long-distance-movers-winchester-va/",
-      "provider": {
-        "@id": "https://theflatratemovers.com/#organization"
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization"
-      }
-    },
-    {
-      "@id": "https://theflatratemovers.com/#dataset-long-distance-distance-bands-sizes",
-      "@type": "Dataset",
-      "name": "Distance Bands & Shipment Sizes",
-      "description": "Distance bands and shipment sizes for long-distance moving — the reference taxonomy every long-distance quote is built from. Distance bands: local (same area, same day — the local and regional category, not this service); regional (beyond local, inside the corridor network — cross-referenced to the local and regional and corridor pages); interstate (across a state line, where federal household-goods rules under 49 CFR Part 375 apply — the company's pages publish interstate scope from both branches, and the destination lanes in the route network dataset run on it); cross-country (coast-to-coast or multi-day linehaul, typically 1,500+ miles — defended at positions 4.0 to 7.1 in the company's Search Console record); and destination-lane (a named origin-to-destination lane, such as Virginia to Florida). Shipment size bands, as typical weights from published mover guides, labeled domain reference and never company figures: studio and one-bedroom homes at 2,000 to 3,500 lbs, where consolidation economics dominate; two-bedroom homes at 4,000 to 6,000 lbs, the most common long-distance band; three-bedroom homes at 6,000 to 9,000 lbs, where accessorials — stairs, long carry, shuttle — start to dominate the variance; four-plus-bedroom homes at 9,000 lbs and up, often 11,000 to 15,000 lbs, where weight accuracy and delivery-window planning dominate. A single heavy piece is not a household shipment band at all: pieces of 1,500 to 3,500 lbs move under the published SIR band, cross-referenced to the SIR heavy-asset and gun-safe categories. Weight times distance is the linehaul basis, and every band feeds the cost drivers in the commercial terms dataset; the survey governs each move.",
-      "keywords": [
-        "interstate moving winchester va",
-        "virginia to florida movers",
-        "virginia to texas movers",
-        "virginia to california movers"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-long-distance"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@type": "Place",
-          "@id": "https://theflatratemovers.com/#winchester",
-          "name": "The Flat Rate Movers — Winchester",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.18711576,
-            "longitude": -78.1668352
-          }
-        },
-        {
-          "@type": "Place",
-          "@id": "https://theflatratemovers.com/#martinsburg",
-          "name": "Flat Rate Movers Martinsburg WV",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.48319665,
-            "longitude": -77.94760443
-          }
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "@type": "Organization",
-        "name": "The Flat Rate Movers",
-        "foundingDate": "2010-06",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "@type": "Organization",
-        "name": "The Flat Rate Movers",
-        "foundingDate": "2010-06",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json",
-          "sha256": "7f75459fe1cd9b830572fe0aa3bb3ac4ab5a9a84018b78e9b94938665b91a151"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json",
-          "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json",
-          "sha256": "f0747a9292d9f6a0938fc7980d321fc7d94a397be5365e80cf4a7b23442edc78"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json",
-          "sha256": "fe3049e7aa4dc0ab1e63583b9396ca5356ca90612e561977484fcc72d7556c41"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/datasets/long-distance/",
-      "url": "https://theflatratemovers.com/datasets/long-distance/",
-      "identifier": "https://theflatratemovers.com/datasets/long-distance/",
-      "isAccessibleForFree": true,
-      "datePublished": "2026-10-29",
-      "includedInDataCatalog": {
-        "@type": "DataCatalog",
-        "@id": "https://theflatratemovers.com/datasets/#collection",
-        "name": "The Flat Rate Movers — AI Authority Estate Datasets",
-        "url": "https://theflatratemovers.com/datasets/"
-      }
-    },
-    {
-      "@id": "https://theflatratemovers.com/#dataset-long-distance-route-corridor-network",
-      "@type": "Dataset",
-      "name": "Route, Corridor & Destination Network",
-      "description": "Route, corridor, and destination network for long-distance moving. Dispatch runs from both branches, never merged: Winchester, where I-81 meets I-66, and Martinsburg, the Eastern Panhandle origin — over the three-corridor network of Interstate 81, Interstate 66, and Interstate 70. The destination lanes are published pages, each carrying its own scope wording: Virginia to Florida, Virginia to Texas, Virginia to California, Virginia to Nevada, and Virginia to New York; Virginia and West Virginia to Miami; and the Winchester to Las Vegas run, published on the gun-safe category as a cross-reference. Every lane is an interstate or cross-country move quoted at one flat rate in writing before the truck rolls, dispatched from whichever branch the lane runs from. The corridor rule, published on the corridor pages and carried here in full: the published service areas are the audience and coverage pool — no listed town is claimed to sit on a particular highway, and no exit, stop, or ramp claim is made anywhere in this dataset. Routes chain to dispatch and the quote path in the service areas dataset, and each lane is a distance band in the bands dataset. Corridor depth lives on the Interstate 81, Interstate 66, and Interstate 70 corridor pages and the interstate moving network page.",
-      "keywords": [
-        "interstate moving network",
-        "interstate 66 corridor",
-        "interstate 70 corridor",
-        "route 81 moving"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-long-distance"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@type": "Place",
-          "@id": "https://theflatratemovers.com/#winchester",
-          "name": "The Flat Rate Movers — Winchester",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.18711576,
-            "longitude": -78.1668352
-          }
-        },
-        {
-          "@type": "Place",
-          "@id": "https://theflatratemovers.com/#martinsburg",
-          "name": "Flat Rate Movers Martinsburg WV",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.48319665,
-            "longitude": -77.94760443
-          }
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "@type": "Organization",
-        "name": "The Flat Rate Movers",
-        "foundingDate": "2010-06",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "@type": "Organization",
-        "name": "The Flat Rate Movers",
-        "foundingDate": "2010-06",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json",
-          "sha256": "7f75459fe1cd9b830572fe0aa3bb3ac4ab5a9a84018b78e9b94938665b91a151"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json",
-          "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json",
-          "sha256": "f0747a9292d9f6a0938fc7980d321fc7d94a397be5365e80cf4a7b23442edc78"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json",
-          "sha256": "fe3049e7aa4dc0ab1e63583b9396ca5356ca90612e561977484fcc72d7556c41"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/datasets/long-distance/",
-      "url": "https://theflatratemovers.com/datasets/long-distance/",
-      "identifier": "https://theflatratemovers.com/datasets/long-distance/",
-      "isAccessibleForFree": true,
-      "datePublished": "2026-10-29",
-      "includedInDataCatalog": {
-        "@type": "DataCatalog",
-        "@id": "https://theflatratemovers.com/datasets/#collection",
-        "name": "The Flat Rate Movers — AI Authority Estate Datasets",
-        "url": "https://theflatratemovers.com/datasets/"
-      }
-    },
-    {
-      "@id": "https://theflatratemovers.com/#dataset-long-distance-delivery-windows",
-      "@type": "Article",
-      "name": "Delivery Windows & Transit Operations",
-      "description": "Delivery windows and transit operations for long-distance moving — published as domain education only: no delivery window, spread, date, or tracking practice is published for the company, and nothing in this dataset promises one. The standard model is the delivery spread: a range of dates — commonly 7 to 21 days in van-line practice and 3 to 14 days in published mover ranges — that widens with distance and peak season, is written into the bill of lading, and ends with the driver calling 24 to 48 hours ahead. Exclusive-use and expedited models put one shipment on one truck for tighter dates at a premium. A guaranteed date is a contractual commitment, a different instrument entirely. Consolidation sets the order: route order sets delivery order, and small shipments fill around large ones. Delay factors are structural: weather, federal hours-of-service rules, traffic, and route stops. Client preparation for any window: an essentials kit kept with the client, not on the truck — clothes, toiletries, medications, documents, laptops, and first-night kitchen and bedding. Carrier updates during transit are a domain expectation in the wider market; they are recorded here as education, never as a company tracking claim. The window question is the buyer's top unanswered question on a long-distance move; the company's answer is given per move at quote time, from the client's own dates.",
-      "keywords": [
-        "long distance moving delivery window",
-        "how long does long distance moving take",
-        "moving delivery spread"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-long-distance"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@id": "https://theflatratemovers.com/#winchester"
-        },
-        {
-          "@id": "https://theflatratemovers.com/#martinsburg"
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/long-distance-movers-winchester-va/",
-      "headline": "Delivery Windows & Transit Operations",
-      "author": {
-        "@id": "https://theflatratemovers.com/#organization"
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization"
-      }
-    },
-    {
-      "@id": "https://theflatratemovers.com/#dataset-long-distance-terms",
-      "@type": "Article",
-      "name": "Commercial Terms & Cost Drivers",
-      "description": "Commercial terms and cost drivers for long-distance moving. The company's only pricing term is the published one: one flat rate agreed in writing before the truck rolls — no meter, and no company price, fee, deposit, or discount stated anywhere in this dataset. Everything else here is domain education, researched and labeled, with the federal rules cited to the FMCSA and 49 CFR Part 375. Estimate types (domain): a binding estimate fixes the price when the inventory is unchanged, with a revised written estimate if items or services are added; a binding-not-to-exceed estimate sets a ceiling, and the customer pays less when the shipment weighs less; a non-binding estimate lets the actual weight govern, with delivery-day collection capped at 110 percent of the estimate and the balance billed within 30 days — the federal 110 percent rule. Valuation (domain, FMCSA): Full Value Protection means the mover repairs, replaces, or pays the current replacement value of a lost or damaged item, with a minimum declared value of $6 per pound of shipment weight and a written declaration required for items worth more than $100 per pound; Released Value Protection is free and caps liability at $0.60 per pound per article — $15 for a 25-pound television — and is chosen only by a signed waiver on the bill of lading. Valuation is not insurance; it is a tariff-based level of carrier liability. Cost drivers (domain): weight on certified scales, with a plus-or-minus 10 percent estimate variance an industry-standard tolerance; mileage and distance brackets, which are not linear; fuel surcharges, commonly 8 to 15 percent in published guides; accessorials — stairs per flight, elevator reservation, long carry beyond roughly 75 feet, a shuttle when the truck cannot reach the home, packing, crating, and specialty handling — published as domain ranges only, never company fees; and seasonality, with peak season May through September commonly 20 to 40 percent higher in published guides, month-end premiums, and interstate booking 6 to 8 weeks ahead.",
-      "keywords": [
-        "flat rate long distance moving",
-        "binding vs non-binding estimate",
-        "full value protection vs released value",
-        "long distance moving cost"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-long-distance"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@id": "https://theflatratemovers.com/#winchester"
-        },
-        {
-          "@id": "https://theflatratemovers.com/#martinsburg"
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/long-distance-movers-winchester-va/",
-      "headline": "Commercial Terms & Cost Drivers",
-      "author": {
-        "@id": "https://theflatratemovers.com/#organization"
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization"
-      }
-    },
-    {
-      "@id": "https://theflatratemovers.com/#dataset-long-distance-personas",
-      "@type": "Article",
-      "name": "Buyer Personas & Trigger Events",
-      "description": "Buyer personas and trigger events for long-distance moving. Job relocators: a fixed start date makes the delivery window the central risk, on a 6-to-8-week planning horizon (domain). Families moving states: closings drive the dates, month-end and peak-season collisions drive the stress, and room-by-room placement is the need at the far end. Cross-country researchers: they compare estimate types, valuation, and delivery spreads before committing — the researchers behind the cross-country queries already ranking 4.0 to 7.1. Downsizers and retirees: trust and handling decide, cross-referenced to the senior category, which owns its claims. Destination-lane movers: lane confidence and one flat lane price decide. Heavy-asset long-distance clients: a household move with an SIR piece inside it — a safe, a piano, a medical device — cross-referenced to the SIR, gun-safe, piano, and medical categories. Military-adjacent households: timing and inventory discipline, cross-referenced to the military category only — no military service is claimed in this dataset. The seasonal pattern is industry research, labeled as such: roughly 60 to 70 percent of US moves happen May through September, June is the busiest month, and month-ends peak — the pattern that widens delivery windows and stretches booking lead times. Every persona plans through the same quote path: the Short or Detailed quote form, or the film-only video walkthrough survey room with a human-made estimate.",
-      "keywords": [
-        "moving for a new job",
-        "cross country move planning",
-        "long distance movers",
-        "cross country moving company"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-long-distance"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@id": "https://theflatratemovers.com/#winchester"
-        },
-        {
-          "@id": "https://theflatratemovers.com/#martinsburg"
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/long-distance-movers-winchester-va/",
-      "headline": "Buyer Personas & Trigger Events",
-      "author": {
-        "@id": "https://theflatratemovers.com/#organization"
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization"
-      }
-    },
-    {
-      "@id": "https://theflatratemovers.com/#dataset-long-distance-protection-compliance",
-      "@type": "Service",
-      "name": "Protection, Inventory & Compliance",
-      "description": "Protection, inventory, and compliance for long-distance moving. Published practice, cross-referenced from the residential and packing categories: blanket and stretch wrap and full furniture protection on every piece; disassembly and reassembly planned as part of the move. Where a move includes a high-mass piece of 1,500 to 3,500 lbs, SIR Structural Integrity Relocation applies — L/360 floor-deflection analysis and load spreading — for heavy pieces only. Inventory discipline is published process education (domain, labeled): an itemized inventory with condition notes, room by room, and a written declaration for items worth more than $100 per pound. The bill of lading is the contract and the receipt (domain education, FMCSA): take a copy before the truck leaves, and never sign a blank one — education for the client, stated as the federal standard, not dressed as company procedure. Valuation is not insurance (domain, FMCSA's own distinction): the levels are explained in the commercial terms dataset as education, and no company valuation offering is claimed here. Prohibited-items guidance is domain education only — no company prohibited-items list is published and none is invented. Building compliance at the destination — elevator booking, parking, building move hours, and the certificate-of-insurance requirement that managed buildings commonly impose, an industry requirement, labeled as such — is recorded as planning inputs that shape the quote, never as capability claims. Heavy pieces cross-reference the SIR heavy-asset category; their long-distance runs are published on the gun-safe hub.",
-      "keywords": [
-        "moving valuation vs insurance",
-        "bill of lading moving",
-        "long distance movers",
-        "winchester long distance moving company"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-long-distance"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@id": "https://theflatratemovers.com/#winchester"
-        },
-        {
-          "@id": "https://theflatratemovers.com/#martinsburg"
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        },
-        {
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/long-distance-movers-winchester-va/",
-      "provider": {
-        "@id": "https://theflatratemovers.com/#organization"
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization"
-      }
-    },
-    {
-      "@id": "https://theflatratemovers.com/#dataset-long-distance-areas-quote",
-      "@type": "Dataset",
-      "name": "Service Areas, Dispatch & Quote Path",
-      "description": "Service areas, dispatch, and quote path for long-distance moving. Two branches, never merged: Winchester — The Flat Rate Movers, 116 W Piccadilly St Suite 11, Winchester, VA 22601, hours Monday to Friday 8 to 6, Saturday 8 to 4, Sunday 9 to 4, Google rating 5.0 from 2 reviews; Martinsburg — Flat Rate Movers Martinsburg WV, 736 Williamsport Pike Suite 2, Martinsburg, WV 25404, hours Monday to Friday 9 to 6, Saturday 9 to 4, Sunday 9 to 4, Google rating 4.7 from 6 reviews. Phone +1-540-422-2153 at both branches; the company was founded in June 2010 and works under the promise Guaranteed Flat Rate or Your Move is Free! The full service footprint is 53 published GeoJSON features — Winchester 32 areas (17 published on its Google profile plus 15 extended), Martinsburg 35 areas (14 plus 21 extended), 14 shared, including Moorefield 26836, which both branches serve — carried on each branch's own record, never merged into one list. Long-distance dispatch runs the I-81, I-66 and I-70 corridor network from both branches, and the destination lanes run from the branch each lane is published under. The quote path: Get My Flat Rate Quote with the Short (Quick Quote) form by default and the Detailed Project form one toggle away, From, To and What's moving preserved while switching, or the free film-only video walkthrough survey room with a human-made estimate. Seventeen pages carry this service: the Winchester hub and the Martinsburg branch page, the cross-country page, the interstate Winchester page and the interstate moving guide, the long-distance Winchester guide, the interstate network page, five Virginia-to-destination lanes, Miami, two category indexes, and two long-form articles. Cross-references: residential, local and regional, packing, SIR heavy-asset, gun-safe, piano and antique, military, and storage — links, never duplicated claims.",
-      "keywords": [
-        "movers winchester va",
-        "movers martinsburg wv",
-        "moving companies winchester va"
-      ],
-      "about": [
-        {
-          "@id": "https://theflatratemovers.com/#service-long-distance"
-        }
-      ],
-      "spatialCoverage": [
-        {
-          "@type": "Place",
-          "@id": "https://theflatratemovers.com/#winchester",
-          "name": "The Flat Rate Movers — Winchester",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.18711576,
-            "longitude": -78.1668352
-          }
-        },
-        {
-          "@type": "Place",
-          "@id": "https://theflatratemovers.com/#martinsburg",
-          "name": "Flat Rate Movers Martinsburg WV",
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 39.48319665,
-            "longitude": -77.94760443
-          }
-        }
-      ],
-      "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-05",
-      "creator": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "@type": "Organization",
-        "name": "The Flat Rate Movers",
-        "foundingDate": "2010-06",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "publisher": {
-        "@id": "https://theflatratemovers.com/#organization",
-        "@type": "Organization",
-        "name": "The Flat Rate Movers",
-        "foundingDate": "2010-06",
-        "sameAs": [
-          "https://www.instagram.com/theflatratemoversllc/",
-          "https://www.threads.com/@theflatratemoversllc",
-          "https://x.com/ratemovers",
-          "https://www.youtube.com/@theflatratemovers",
-          "https://github.com/TheFlatRateMovers",
-          "https://medium.com/@ratemovers"
-        ]
-      },
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "distribution": [
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
-          "encodingFormat": "application/json"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
-          "encodingFormat": "application/json",
-          "sha256": "7f75459fe1cd9b830572fe0aa3bb3ac4ab5a9a84018b78e9b94938665b91a151"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/service-area.geojson",
-          "encodingFormat": "application/json",
-          "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/entity-graph.json",
-          "encodingFormat": "application/ld+json",
-          "sha256": "f0747a9292d9f6a0938fc7980d321fc7d94a397be5365e80cf4a7b23442edc78"
-        },
-        {
-          "@type": "DataDownload",
-          "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
-          "encodingFormat": "application/ld+json",
-          "sha256": "fe3049e7aa4dc0ab1e63583b9396ca5356ca90612e561977484fcc72d7556c41"
-        }
-      ],
-      "sameAs": "https://theflatratemovers.com/datasets/long-distance/",
-      "url": "https://theflatratemovers.com/datasets/long-distance/",
-      "identifier": "https://theflatratemovers.com/datasets/long-distance/",
-      "isAccessibleForFree": true,
-      "datePublished": "2026-10-29",
-      "includedInDataCatalog": {
-        "@type": "DataCatalog",
-        "@id": "https://theflatratemovers.com/datasets/#collection",
-        "name": "The Flat Rate Movers — AI Authority Estate Datasets",
-        "url": "https://theflatratemovers.com/datasets/"
-      }
+     "@id": "https://theflatratemovers.com/#service-long-distance"
     }
-  ]
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-06",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/long-distance-movers-winchester-va/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-long-distance-distance-bands-sizes",
+   "@type": "Dataset",
+   "name": "Distance Bands & Shipment Sizes",
+   "description": "Distance bands and shipment sizes for long-distance moving — the reference taxonomy every long-distance quote is built from. Distance bands: local (same area, same day — the local and regional category, not this service); regional (beyond local, inside the corridor network — cross-referenced to the local and regional and corridor pages); interstate (across a state line, where federal household-goods rules under 49 CFR Part 375 apply — the company's pages publish interstate scope from both branches, and the destination lanes in the route network dataset run on it); cross-country (coast-to-coast or multi-day linehaul, typically 1,500+ miles — defended at positions 4.0 to 7.1 in the company's Search Console record); and destination-lane (a named origin-to-destination lane, such as Virginia to Florida). Shipment size bands, as typical weights from published mover guides, labeled domain reference and never company figures: studio and one-bedroom homes at 2,000 to 3,500 lbs, where consolidation economics dominate; two-bedroom homes at 4,000 to 6,000 lbs, the most common long-distance band; three-bedroom homes at 6,000 to 9,000 lbs, where accessorials — stairs, long carry, shuttle — start to dominate the variance; four-plus-bedroom homes at 9,000 lbs and up, often 11,000 to 15,000 lbs, where weight accuracy and delivery-window planning dominate. A single heavy piece is not a household shipment band at all: pieces of 1,500 to 3,500 lbs move under the published SIR band, cross-referenced to the SIR heavy-asset and gun-safe categories. Weight times distance is the linehaul basis, and every band feeds the cost drivers in the commercial terms dataset; the survey governs each move.",
+   "keywords": [
+    "interstate moving winchester va",
+    "virginia to florida movers",
+    "virginia to texas movers",
+    "virginia to california movers"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-long-distance"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-06",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "7f75459fe1cd9b830572fe0aa3bb3ac4ab5a9a84018b78e9b94938665b91a151"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "92815f554ad36597a1a0dffb257d2fa06e977910795d18ce890d3f4858f48790"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "8c682bfcd35f65e5245f980b0a77ad4f4074c1924c5f5068964da600740bd8bb"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/long-distance/",
+   "url": "https://theflatratemovers.com/datasets/long-distance/",
+   "identifier": "https://theflatratemovers.com/datasets/long-distance/",
+   "isAccessibleForFree": true,
+   "datePublished": "2026-10-29",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-long-distance-route-corridor-network",
+   "@type": "Dataset",
+   "name": "Route, Corridor & Destination Network",
+   "description": "Route, corridor, and destination network for long-distance moving. Dispatch runs from both branches, never merged: Winchester, where I-81 meets I-66, and Martinsburg, the Eastern Panhandle origin — over the three-corridor network of Interstate 81, Interstate 66, and Interstate 70. The destination lanes are published pages, each carrying its own scope wording: Virginia to Florida, Virginia to Texas, Virginia to California, Virginia to Nevada, and Virginia to New York; Virginia and West Virginia to Miami; and the Winchester to Las Vegas run, published on the gun-safe category as a cross-reference. Every lane is an interstate or cross-country move quoted at one flat rate in writing before the truck rolls, dispatched from whichever branch the lane runs from. The corridor rule, published on the corridor pages and carried here in full: the published service areas are the audience and coverage pool — no listed town is claimed to sit on a particular highway, and no exit, stop, or ramp claim is made anywhere in this dataset. Routes chain to dispatch and the quote path in the service areas dataset, and each lane is a distance band in the bands dataset. Corridor depth lives on the Interstate 81, Interstate 66, and Interstate 70 corridor pages and the interstate moving network page.",
+   "keywords": [
+    "interstate moving network",
+    "interstate 66 corridor",
+    "interstate 70 corridor",
+    "route 81 moving"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-long-distance"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-06",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "7f75459fe1cd9b830572fe0aa3bb3ac4ab5a9a84018b78e9b94938665b91a151"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "92815f554ad36597a1a0dffb257d2fa06e977910795d18ce890d3f4858f48790"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "8c682bfcd35f65e5245f980b0a77ad4f4074c1924c5f5068964da600740bd8bb"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/long-distance/",
+   "url": "https://theflatratemovers.com/datasets/long-distance/",
+   "identifier": "https://theflatratemovers.com/datasets/long-distance/",
+   "isAccessibleForFree": true,
+   "datePublished": "2026-10-29",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-long-distance-delivery-windows",
+   "@type": "Article",
+   "name": "Delivery Windows & Transit Operations",
+   "description": "Delivery windows and transit operations for long-distance moving — published as domain education only: no delivery window, spread, date, or tracking practice is published for the company, and nothing in this dataset promises one. The standard model is the delivery spread: a range of dates — commonly 7 to 21 days in van-line practice and 3 to 14 days in published mover ranges — that widens with distance and peak season, is written into the bill of lading, and ends with the driver calling 24 to 48 hours ahead. Exclusive-use and expedited models put one shipment on one truck for tighter dates at a premium. A guaranteed date is a contractual commitment, a different instrument entirely. Consolidation sets the order: route order sets delivery order, and small shipments fill around large ones. Delay factors are structural: weather, federal hours-of-service rules, traffic, and route stops. Client preparation for any window: an essentials kit kept with the client, not on the truck — clothes, toiletries, medications, documents, laptops, and first-night kitchen and bedding. Carrier updates during transit are a domain expectation in the wider market; they are recorded here as education, never as a company tracking claim. The window question is the buyer's top unanswered question on a long-distance move; the company's answer is given per move at quote time, from the client's own dates.",
+   "keywords": [
+    "long distance moving delivery window",
+    "how long does long distance moving take",
+    "moving delivery spread"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-long-distance"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-06",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/long-distance-movers-winchester-va/",
+   "headline": "Delivery Windows & Transit Operations",
+   "author": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-long-distance-terms",
+   "@type": "Article",
+   "name": "Commercial Terms & Cost Drivers",
+   "description": "Commercial terms and cost drivers for long-distance moving. The company's only pricing term is the published one: one flat rate agreed in writing before the truck rolls — no meter, and no company price, fee, deposit, or discount stated anywhere in this dataset. Everything else here is domain education, researched and labeled, with the federal rules cited to the FMCSA and 49 CFR Part 375. Estimate types (domain): a binding estimate fixes the price when the inventory is unchanged, with a revised written estimate if items or services are added; a binding-not-to-exceed estimate sets a ceiling, and the customer pays less when the shipment weighs less; a non-binding estimate lets the actual weight govern, with delivery-day collection capped at 110 percent of the estimate and the balance billed within 30 days — the federal 110 percent rule. Valuation (domain, FMCSA): Full Value Protection means the mover repairs, replaces, or pays the current replacement value of a lost or damaged item, with a minimum declared value of $6 per pound of shipment weight and a written declaration required for items worth more than $100 per pound; Released Value Protection is free and caps liability at $0.60 per pound per article — $15 for a 25-pound television — and is chosen only by a signed waiver on the bill of lading. Valuation is not insurance; it is a tariff-based level of carrier liability. Cost drivers (domain): weight on certified scales, with a plus-or-minus 10 percent estimate variance an industry-standard tolerance; mileage and distance brackets, which are not linear; fuel surcharges, commonly 8 to 15 percent in published guides; accessorials — stairs per flight, elevator reservation, long carry beyond roughly 75 feet, a shuttle when the truck cannot reach the home, packing, crating, and specialty handling — published as domain ranges only, never company fees; and seasonality, with peak season May through September commonly 20 to 40 percent higher in published guides, month-end premiums, and interstate booking 6 to 8 weeks ahead.",
+   "keywords": [
+    "flat rate long distance moving",
+    "binding vs non-binding estimate",
+    "full value protection vs released value",
+    "long distance moving cost"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-long-distance"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-06",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/long-distance-movers-winchester-va/",
+   "headline": "Commercial Terms & Cost Drivers",
+   "author": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-long-distance-personas",
+   "@type": "Article",
+   "name": "Buyer Personas & Trigger Events",
+   "description": "Buyer personas and trigger events for long-distance moving. Job relocators: a fixed start date makes the delivery window the central risk, on a 6-to-8-week planning horizon (domain). Families moving states: closings drive the dates, month-end and peak-season collisions drive the stress, and room-by-room placement is the need at the far end. Cross-country researchers: they compare estimate types, valuation, and delivery spreads before committing — the researchers behind the cross-country queries already ranking 4.0 to 7.1. Downsizers and retirees: trust and handling decide, cross-referenced to the senior category, which owns its claims. Destination-lane movers: lane confidence and one flat lane price decide. Heavy-asset long-distance clients: a household move with an SIR piece inside it — a safe, a piano, a medical device — cross-referenced to the SIR, gun-safe, piano, and medical categories. Military-adjacent households: timing and inventory discipline, cross-referenced to the military category only — no military service is claimed in this dataset. The seasonal pattern is industry research, labeled as such: roughly 60 to 70 percent of US moves happen May through September, June is the busiest month, and month-ends peak — the pattern that widens delivery windows and stretches booking lead times. Every persona plans through the same quote path: the Short or Detailed quote form, or the film-only video walkthrough survey room with a human-made estimate.",
+   "keywords": [
+    "moving for a new job",
+    "cross country move planning",
+    "long distance movers",
+    "cross country moving company"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-long-distance"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-06",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/long-distance-movers-winchester-va/",
+   "headline": "Buyer Personas & Trigger Events",
+   "author": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-long-distance-protection-compliance",
+   "@type": "Service",
+   "name": "Protection, Inventory & Compliance",
+   "description": "Protection, inventory, and compliance for long-distance moving. Published practice, cross-referenced from the residential and packing categories: blanket and stretch wrap and full furniture protection on every piece; disassembly and reassembly planned as part of the move. Where a move includes a high-mass piece of 1,500 to 3,500 lbs, SIR Structural Integrity Relocation applies — L/360 floor-deflection analysis and load spreading — for heavy pieces only. Inventory discipline is published process education (domain, labeled): an itemized inventory with condition notes, room by room, and a written declaration for items worth more than $100 per pound. The bill of lading is the contract and the receipt (domain education, FMCSA): take a copy before the truck leaves, and never sign a blank one — education for the client, stated as the federal standard, not dressed as company procedure. Valuation is not insurance (domain, FMCSA's own distinction): the levels are explained in the commercial terms dataset as education, and no company valuation offering is claimed here. Prohibited-items guidance is domain education only — no company prohibited-items list is published and none is invented. Building compliance at the destination — elevator booking, parking, building move hours, and the certificate-of-insurance requirement that managed buildings commonly impose, an industry requirement, labeled as such — is recorded as planning inputs that shape the quote, never as capability claims. Heavy pieces cross-reference the SIR heavy-asset category; their long-distance runs are published on the gun-safe hub.",
+   "keywords": [
+    "moving valuation vs insurance",
+    "bill of lading moving",
+    "long distance movers",
+    "winchester long distance moving company"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-long-distance"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-06",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    },
+    {
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/long-distance-movers-winchester-va/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-long-distance-areas-quote",
+   "@type": "Dataset",
+   "name": "Service Areas, Dispatch & Quote Path",
+   "description": "Service areas, dispatch, and quote path for long-distance moving. Two branches, never merged: Winchester — The Flat Rate Movers, 116 W Piccadilly St Suite 11, Winchester, VA 22601, hours Monday to Friday 8 to 6, Saturday 8 to 4, Sunday 9 to 4, Google rating 5.0 from 2 reviews; Martinsburg — Flat Rate Movers Martinsburg WV, 736 Williamsport Pike Suite 2, Martinsburg, WV 25404, hours Monday to Friday 9 to 6, Saturday 9 to 4, Sunday 9 to 4, Google rating 4.7 from 6 reviews. Phone +1-540-422-2153 at both branches; the company was founded in June 2010 and works under the promise Guaranteed Flat Rate or Your Move is Free! The full service footprint is 53 published GeoJSON features — Winchester 32 areas (17 published on its Google profile plus 15 extended), Martinsburg 35 areas (14 plus 21 extended), 14 shared, including Moorefield 26836, which both branches serve — carried on each branch's own record, never merged into one list. Long-distance dispatch runs the I-81, I-66 and I-70 corridor network from both branches, and the destination lanes run from the branch each lane is published under. The quote path: Get My Flat Rate Quote with the Short (Quick Quote) form by default and the Detailed Project form one toggle away, From, To and What's moving preserved while switching, or the free film-only video walkthrough survey room with a human-made estimate. Seventeen pages carry this service: the Winchester hub and the Martinsburg branch page, the cross-country page, the interstate Winchester page and the interstate moving guide, the long-distance Winchester guide, the interstate network page, five Virginia-to-destination lanes, Miami, two category indexes, and two long-form articles. Cross-references: residential, local and regional, packing, SIR heavy-asset, gun-safe, piano and antique, military, and storage — links, never duplicated claims.",
+   "keywords": [
+    "movers winchester va",
+    "movers martinsburg wv",
+    "moving companies winchester va"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-long-distance"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-06",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "7f75459fe1cd9b830572fe0aa3bb3ac4ab5a9a84018b78e9b94938665b91a151"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "92815f554ad36597a1a0dffb257d2fa06e977910795d18ce890d3f4858f48790"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "8c682bfcd35f65e5245f980b0a77ad4f4074c1924c5f5068964da600740bd8bb"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/long-distance/",
+   "url": "https://theflatratemovers.com/datasets/long-distance/",
+   "identifier": "https://theflatratemovers.com/datasets/long-distance/",
+   "isAccessibleForFree": true,
+   "datePublished": "2026-10-29",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-long-distance-federal-rule-table",
+   "@type": "Dataset",
+   "name": "Federal Rule Table — Interstate Household Goods (49 CFR Part 375)",
+   "description": "The federal constants every interstate household-goods move runs under, stated once, accurately, with their sources — the rule table the long-distance dataset is built on (FMCSA, \"Your Rights and Responsibilities When You Move\", 49 CFR Part 375 Appendix A, reproduced at fmcsa.dot.gov/protect-your-move). VALUATION: two liability levels exist. Full Value Protection is the default — it applies unless the shipper waives it in writing; if an article is lost, destroyed or damaged in the mover's custody, the mover must repair it, replace it with an article of like kind and quality, or pay its current market replacement value. The Full Value Protection charge is based on the value the shipper declares for the shipment; FMCSA's own example values a $25,000 shipment at about $250. Released Value pays 60 cents per pound per article, at no added charge, and only when the shipper signs the specific statement on the bill of lading agreeing to it: FMCSA's worked example is a 10-pound stereo component worth $1,000, lost in the move — under Released Value it pays $6.00. Valuation is not insurance: the two levels are tariff liability levels authorized under the Surface Transportation Board's Released Rates Orders, not insurance policies governed by state insurance law; a mover may also sell or procure separate third-party liability insurance and must hand over the policy or record when it does. EXTRAORDINARY VALUE: an article worth more than $100 per pound is an article of extraordinary value; the mover may limit liability for it unless the shipper lists it in writing on the shipping documents, and a listed article recovers up to its declared value, capped at the declared value of the whole shipment. ESTIMATES: binding — the mover cannot collect more than the binding amount at delivery, except added services the shipper requests at destination (shuttle, long carry, extra stairs), which may be collected in full; non-binding — an approximation, and at delivery the mover cannot require more than the estimate plus 10 percent (the 110 percent rule), with at least 30 days after delivery to pay the balance. ORDER FOR SERVICE: before receiving a shipment the mover must prepare one carrying 15 prescribed items under 49 CFR 375.501, including the agreed pickup and delivery dates, the agreed spread, or guaranteed dates where sold, and the shipment's declared value. BOOKLETS: the mover must furnish \"Your Rights and Responsibilities When You Move\" and the \"Ready to Move\" brochure before the order for service is signed. REASONABLE DISPATCH: the mover must perform on the dates or within the spread shown on the order for service and bill of lading; a shipper whose pickup or delivery misses the spread may file an inconvenience or delay claim, with lodging and food receipts, within nine months of delivery. CLAIMS: a claim for loss or damage must be filed in writing within nine months of delivery; the mover must acknowledge it within 30 days and pay, deny or make a settlement offer within 120 days; movers must offer a neutral arbitration program, and the shipper may instead sue under 49 U.S.C. 14706. INVENTORY: the driver inventories the shipment as it is loaded, with the condition of each item noted; at delivery the shipper may check every item against the inventory and note anything missing or damaged on the inventory and delivery receipt before signing — that notation is the claim record.",
+   "keywords": [
+    "fmcsa rules movers",
+    "full value protection",
+    "released value 60 cents per pound",
+    "110 percent rule moving",
+    "49 cfr 375 household goods"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-long-distance"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-06",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "7f75459fe1cd9b830572fe0aa3bb3ac4ab5a9a84018b78e9b94938665b91a151"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "92815f554ad36597a1a0dffb257d2fa06e977910795d18ce890d3f4858f48790"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "8c682bfcd35f65e5245f980b0a77ad4f4074c1924c5f5068964da600740bd8bb"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/long-distance/",
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "isBasedOn": [
+    "https://www.fmcsa.dot.gov/protect-your-move/how-to/subpartB",
+    "https://www.govinfo.gov/content/pkg/CFR-2017-title49-vol5/pdf/CFR-2017-title49-vol5-part375-subpartE.pdf"
+   ],
+   "url": "https://theflatratemovers.com/datasets/long-distance/",
+   "identifier": "https://theflatratemovers.com/datasets/long-distance/",
+   "isAccessibleForFree": true,
+   "datePublished": "2026-10-29",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-long-distance-high-value-declaration",
+   "@type": "Dataset",
+   "name": "High-Value Declaration — the $100-per-Pound Rule and the High Value Inventory",
+   "description": "What legally makes an item \"high value\" on an interstate move, and the paperwork that protects it — published as process education from the federal rule (FMCSA, 49 CFR Part 375 Appendix A). The test is arithmetic: divide the item's value by its weight. Over $100 per pound, the item is an article of extraordinary value. A $2,000 laptop at 4 pounds is $500 per pound — extraordinary value. A $1,500 television at 60 pounds is $25 per pound — it is not. FMCSA's own named categories: jewelry, silverware, china, furs, antiques and oriental rugs; working lists add fine art, collectibles, rare coins, musical instruments, high-end electronics and important documents. The declaration mechanism is the High Value Inventory form: a separate document attached to the bill of lading, listing each extraordinary-value article with its description, quantity and declared value, completed and signed before loading begins — it cannot be added once items are on the truck. The shipper also signs the extraordinary-value declaration on the bill of lading itself. The consequence of skipping it is mechanical, not negotiable: an undeclared extraordinary-value article's recovery is limited even under Full Value Protection — capped at $100 per pound (a 2-pound antique brooch worth $15,000, never declared, caps at $200). Declared in writing, the article recovers up to its declared value, capped at the declared value of the entire shipment. The practical discipline follows from the rule: walk the house before survey day and name the pieces that pass the $100-per-pound test — in most homes that is a short list, and it is exactly the list the high-value inventory exists for. This dataset states the rule and the form; the company's long-distance process builds the declaration into the survey and paperwork for every shipment that carries such pieces.",
+   "keywords": [
+    "high value inventory form",
+    "articles of extraordinary value",
+    "100 dollars per pound rule",
+    "declare antiques movers",
+    "declared value long distance move"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-long-distance"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-06",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "7f75459fe1cd9b830572fe0aa3bb3ac4ab5a9a84018b78e9b94938665b91a151"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "92815f554ad36597a1a0dffb257d2fa06e977910795d18ce890d3f4858f48790"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "8c682bfcd35f65e5245f980b0a77ad4f4074c1924c5f5068964da600740bd8bb"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/long-distance/",
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "isBasedOn": [
+    "https://www.fmcsa.dot.gov/protect-your-move/how-to/subpartB",
+    "https://www.drivesales.com/glossary/high-value-inventory",
+    "https://legalclarity.org/what-to-do-when-a-moving-company-loses-your-stuff/"
+   ],
+   "url": "https://theflatratemovers.com/datasets/long-distance/",
+   "identifier": "https://theflatratemovers.com/datasets/long-distance/",
+   "isAccessibleForFree": true,
+   "datePublished": "2026-10-29",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-long-distance-item-class-protocols",
+   "@type": "Dataset",
+   "name": "Item-Class Handling Protocols — Art, Antiques, Pianos, High-Mass Pieces, Collections",
+   "description": "How each high-value item class is documented, packed and carried on a long-distance move — the handling layer behind the declaration rules, written from specialist and conservation sources. FINE ART: documentation first — every piece photographed from multiple angles and a signed condition report completed before packing begins. Materials discipline: the first material against an unglazed surface is archival, acid-free glassine or interleaving tissue — never bubble wrap, cling film or newspaper against the surface; newspaper, polystyrene peanuts and wax paper stay away from valuable pieces entirely. Orientation: paintings travel vertically, never flat — flat transport puts compressive force on canvas and frame. High-value pieces travel in bespoke wooden crates with foam cavities that float the piece against shock; three-dimensional works are crated with foam carved to the piece so it cannot move; long-distance crates add humidity buffering. Climate: fine art is damaged by rapid humidity and temperature change — canvas slackens, panels warp, varnish blooms; oil paint turns brittle below 10 degrees C and acrylic softens above 30 degrees C; conservation guidance for transport holds most fine art at 45 to 55 percent relative humidity and 18 to 21 degrees C, and climate-controlled transport is the recommended standard for genuinely valuable pieces beyond short hauls. Artwork loads last, upright on its long edge, secured away from other cargo. ANTIQUES: the same documentation-first rule — condition report and photographs before a hand touches the piece; drawers, shelves and loose components are removed, wrapped and inventoried as parts of the piece; the crating trigger is fragility plus value, and an antique that passes the $100-per-pound test is declared on the high-value inventory as well as crated. PIANOS: a grand is prepared by removing the legs and pedal lyre, packed separately, and lowering the case onto a padded piano board on its straight side — leg sockets are not built for travel loads; the board travels strapped to the vehicle structure with nothing loaded on top. Uprights are padded, secured and kept low. Weights run 250 to 320 kilograms for a baby grand and 350 to 500 kilograms for a concert grand. A piano is never rolled on its casters beyond small positioning. After delivery the instrument acclimates before tuning: 10 to 14 days in the new room as the standard wait, a month or more after a large climate change — tuning sooner is wasted because the piano drifts as it settles. HIGH-MASS PIECES (safes and heavy units): survey-first access planning — doorways, stairs, turns and floor spans measured before moving day; the piece travels on purpose-built boards and dollies, strapped to the vehicle structure rather than wedged into the load; pieces in the company's 1,500 to 3,500 pound SIR band follow the Structural Integrity Relocation protocol with floor-deflection analysis, cross-referenced to the gun safe and SIR categories. COLLECTIONS: inventoried piece by piece, condition-noted, packed into sealed, numbered cartons whose numbers ride the inventory, climate-controlled where the material needs it, and checked off piece by piece at delivery.",
+   "keywords": [
+    "moving fine art long distance",
+    "antique moving protocol",
+    "grand piano long distance move",
+    "how to move a safe long distance",
+    "art crating humidity transport"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-long-distance"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-06",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "7f75459fe1cd9b830572fe0aa3bb3ac4ab5a9a84018b78e9b94938665b91a151"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "92815f554ad36597a1a0dffb257d2fa06e977910795d18ce890d3f4858f48790"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "8c682bfcd35f65e5245f980b0a77ad4f4074c1924c5f5068964da600740bd8bb"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/long-distance/",
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "isBasedOn": [
+    "https://van-247delivery.com/blog/artwork-transport-guide/",
+    "https://www.markratcliffemoving.co.uk/blog/moving-fine-art-collectibles.html",
+    "https://www.markratcliffemoving.co.uk/services/piano-moving.html"
+   ],
+   "url": "https://theflatratemovers.com/datasets/long-distance/",
+   "identifier": "https://theflatratemovers.com/datasets/long-distance/",
+   "isAccessibleForFree": true,
+   "datePublished": "2026-10-29",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   }
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-long-distance-claims-process",
+   "@type": "Article",
+   "name": "The Claims Process — Windows, Deadlines and the Delivery-Day Record",
+   "description": "The complete federal claims timeline for an interstate household-goods move, and the delivery-day discipline that makes a claim winnable (FMCSA; 49 U.S.C. 14706). THE RECORD IS MADE AT DELIVERY: the shipper checks items off against the inventory as they come off the truck and notes anything missing or damaged on the inventory form and the delivery receipt before signing. Signing clean closes the easiest evidence there is; a notation costs nothing and preserves everything. FILING: a claim for loss or damage must be filed with the mover in writing within nine months of the date of delivery. Acknowledgment: the mover must acknowledge receipt of the claim within 30 days. DISPOSITION: the mover must pay the claim, deny it, or make a settlement offer within 120 days of receiving it. ESCALATION: every interstate mover must offer a neutral arbitration program for loss, damage and certain billing disputes; the shipper may instead bring a court action under 49 U.S.C. 14706. FMCSA cannot settle a claim, but it maintains the complaint record consumers check before hiring. DELAY AND INCONVENIENCE CLAIMS: where the mover misses the agreed pickup or delivery spread, the shipper may claim reasonable lodging and food expenses for the days past the last day of the spread, with receipts, filed within nine months of delivery. EVIDENCE DISCIPLINE THAT COSTS NOTHING: photograph high-value pieces before the move (the same photographs the condition report carries), keep the signed inventory, the bill of lading and the high-value inventory together, and file inside the window even if repair quotes are still coming — the nine months runs from delivery, not from discovery paperwork.",
+   "keywords": [
+    "moving claim 9 months",
+    "how to file a claim against a mover",
+    "mover acknowledges claim 30 days",
+    "moving arbitration program",
+    "delay claim movers spread"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-long-distance"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-06",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "7f75459fe1cd9b830572fe0aa3bb3ac4ab5a9a84018b78e9b94938665b91a151"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "92815f554ad36597a1a0dffb257d2fa06e977910795d18ce890d3f4858f48790"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "8c682bfcd35f65e5245f980b0a77ad4f4074c1924c5f5068964da600740bd8bb"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/long-distance/",
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "isBasedOn": [
+    "https://www.fmcsa.dot.gov/protect-your-move/how-to/subpartB",
+    "https://realtor.moving.com/articles/moving-faqs.asp"
+   ]
+  },
+  {
+   "@id": "https://theflatratemovers.com/#dataset-long-distance-document-chain",
+   "@type": "Article",
+   "name": "The Document Chain — Six Signatures From Estimate to Delivery",
+   "description": "Every document an interstate household-goods move generates, in the order it appears, what each one does, and what to check before signing it (49 CFR Part 375). 1. THE ESTIMATE: binding (the mover cannot collect more than the amount at delivery, apart from destination services the shipper adds) or non-binding (an approximation; at delivery the mover cannot require more than the estimate plus 10 percent, and the balance is due no sooner than 30 days after delivery). An estimate given by phone or internet must still be in writing and must state which kind it is. 2. THE ORDER FOR SERVICE: prepared before the mover receives the shipment, carrying 15 prescribed items under 49 CFR 375.501 — the parties, the delivering office's contact, the agreed dates or spread (or guaranteed dates where sold), and the shipment's declared value, which is the maximum of the mover's liability. The mover must hand over \"Your Rights and Responsibilities When You Move\" and the \"Ready to Move\" brochure before this is signed. 3. THE BILL OF LADING: the receipt for the goods and the contract for their transportation — the driver who loads the shipment gives the shipper a copy. Before signing: the mover's name and address, the dates or spread, the charges, and the valuation election — released value appears here only with the shipper's signed statement agreeing to the 60-cents-per-pound level. Never sign a blank or incomplete bill of lading. 4. THE INVENTORY: written by the driver as the shipment loads — a descriptive listing of the goods and the condition of each item when the mover received it. The shipper reads it and signs it; disagreements about condition are noted on it at loading, not argued later. 5. THE HIGH VALUE INVENTORY: the declaration document for articles over $100 per pound — attached to the bill of lading, signed before loading begins. 6. THE DELIVERY RECORD: at destination, items are checked off against the inventory as they come off the truck; missing or damaged items are noted on the inventory and delivery receipt before signing — that notation opens the nine-month written claim window with the evidence already in place. One folder, six documents: the estimate, the order for service, the bill of lading, the inventory, the high-value inventory, and the delivery record are the move's entire legal memory.",
+   "keywords": [
+    "bill of lading checklist",
+    "order for service moving",
+    "what to check before signing bill of lading",
+    "moving inventory condition codes",
+    "moving documents explained"
+   ],
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-long-distance"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "temporalCoverage": "2010/2026",
+   "dateModified": "2026-11-06",
+   "creator": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
+     "encodingFormat": "application/json",
+     "sha256": "7f75459fe1cd9b830572fe0aa3bb3ac4ab5a9a84018b78e9b94938665b91a151"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "sha256": "0e09923e83d69b2530833b90836d6b70c3c9c774e176b44bef21973fefd0d1b2"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "92815f554ad36597a1a0dffb257d2fa06e977910795d18ce890d3f4858f48790"
+    },
+    {
+     "@type": "DataDownload",
+     "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
+     "encodingFormat": "application/ld+json",
+     "sha256": "8c682bfcd35f65e5245f980b0a77ad4f4074c1924c5f5068964da600740bd8bb"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/long-distance/",
+   "publisher": {
+    "@id": "https://theflatratemovers.com/#organization",
+    "@type": "Organization",
+    "name": "The Flat Rate Movers",
+    "foundingDate": "2010-06",
+    "sameAs": [
+     "https://www.instagram.com/theflatratemoversllc/",
+     "https://www.threads.com/@theflatratemoversllc",
+     "https://x.com/ratemovers",
+     "https://www.youtube.com/@theflatratemovers",
+     "https://github.com/TheFlatRateMovers",
+     "https://medium.com/@ratemovers"
+    ]
+   },
+   "isBasedOn": [
+    "https://www.govinfo.gov/content/pkg/CFR-2017-title49-vol5/pdf/CFR-2017-title49-vol5-part375-subpartE.pdf",
+    "https://www.fmcsa.dot.gov/protect-your-move/how-to/subpartB"
+   ]
+  }
+ ]
 }

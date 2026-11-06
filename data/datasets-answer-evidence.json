@@ -367768,7 +367768,7 @@
       "@id": "https://theflatratemovers.com/#dataset-answer-evidence-fragments",
       "@type": "Dataset",
       "name": "Answer Fragments",
-      "description": "The estate’s answer fragments — 3516 passages extracted from the live estate (435 FAQ answers from the per-page JSON schema, 3081 heading-led passages from the page texts). Each fragment carries its owning page, heading-path locator, full text, a SHA-256 text hash for drift detection, the schema types present on its page, evidence links to the sealed records backing its facts, its surface copies, and the rubric questions bound to it.",
+      "description": "The estate’s answer fragments — 3523 passages extracted from the live estate (439 FAQ answers from the per-page JSON schema, 3084 heading-led passages from the page texts). Each fragment carries its owning page, heading-path locator, full text, a SHA-256 text hash for drift detection, the schema types present on its page, evidence links to the sealed records backing its facts, its surface copies, and the rubric questions bound to it.",
       "keywords": [
         "answer engines",
         "citation evidence",
@@ -446389,18 +446389,19 @@
         },
         {
           "fragmentId": "frag-local-regional-moving-1",
-          "source": "passage",
+          "source": "faq-schema",
           "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
           "pageSlug": "local-regional-moving",
-          "locator": "Local & regional moving, at one flat rate.",
-          "heading": "Local & regional moving, at one flat rate.",
-          "questionShaped": false,
-          "text": "Local & regional moving, at one flat rate. Local and regional moves along the I-81, I-66 and I-70 corridors, from our two home bases in Winchester, VA and Martinsburg, WV — homes and businesses, at a flat rate agreed in writing before move day. Hourly pricing is available when a client asks for it. Get My Flat Rate Quote",
-          "textHash": "b3b1bfb3bed0cd1194323616eeedc31f5c3abf5cdc09977028e2fd00c8c0161d",
-          "bodyChars": 279,
+          "locator": "FAQ schema (per-page JSON FAQPage)",
+          "heading": "Is the price really flat, even for a short local move?",
+          "questionShaped": true,
+          "text": "Is the price really flat, even for a short local move? Yes. The Flat Rate Movers price by the job, not by the hour — the rate is agreed in writing before move day, and the tagline is the guarantee: Guaranteed Flat Rate or Your Move is Free!",
+          "textHash": "e855af8dacab37166dc404d6f3f23e4c48d4b4a38b2d20c1db4171fdb4c38761",
+          "bodyChars": 185,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "Place",
             "Service"
@@ -446409,7 +446410,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/local-regional-moving.json",
-              "sha256": "68d2e4458cd9ca5e2d11473dcd56287ac316d615e6fc9fe13dced0c719ddc9c4",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -446430,6 +446431,279 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
           "pageSlug": "local-regional-moving",
+          "locator": "Local & regional moving, at one flat rate. › Questions, answered › Which base serves my move?",
+          "heading": "Which base serves my move?",
+          "questionShaped": true,
+          "text": "Which base serves my move? Both bases dispatch across the region. Winchester serves the Shenandoah Valley side and Martinsburg serves the Eastern Panhandle side, and the service areas overlap at Moorefield — the quote form settles which crew and route fit your move.",
+          "textHash": "5c2e3ec36592d4bb665c972dd4bbed3c3bd9f6ca4b838af2019cad34bda9dcfb",
+          "bodyChars": 239,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "Place",
+            "Service"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/local-regional-moving.json",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/local-regional-moving/"
+            },
+            {
+              "surface": "llms-full.txt",
+              "url": "https://theflatratemovers.com/llms-full.txt"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-local-regional-moving-11",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
+          "pageSlug": "local-regional-moving",
+          "locator": "Local & regional moving, at one flat rate. › Questions, answered › What if my move includes a gun safe, piano or medical device?",
+          "heading": "What if my move includes a gun safe, piano or medical device?",
+          "questionShaped": true,
+          "text": "What if my move includes a gun safe, piano or medical device? High-mass assets of 1,500 to 3,500 lbs move under SIR and the KIM-GS Protocol, with floor-deflection analysis to L/360 — the same standard as our dedicated heavy-asset work, applied inside a local or regional move.",
+          "textHash": "8495a43ad86a39713d0590a67070f6120b399fa811b8402ae56153931407dec9",
+          "bodyChars": 214,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "Place",
+            "Service"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/local-regional-moving.json",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/local-regional-moving/"
+            },
+            {
+              "surface": "llms-full.txt",
+              "url": "https://theflatratemovers.com/llms-full.txt"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-local-regional-moving-12",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
+          "pageSlug": "local-regional-moving",
+          "locator": "Local & regional moving, at one flat rate. › Questions, answered › How do I get the quote?",
+          "heading": "How do I get the quote?",
+          "questionShaped": true,
+          "text": "How do I get the quote? Get My Flat Rate Quote — Short Quick Quote by default, Detailed Project one toggle away, preserving From, To and What’s moving. Phone +1-540-422-2153, email ratemovers@gmail.com.",
+          "textHash": "99aeff4e22704243e49e4129050924e4779169bee7b8144110ccfbd048a1c985",
+          "bodyChars": 178,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "Place",
+            "Service"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/local-regional-moving.json",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/local-regional-moving/"
+            },
+            {
+              "surface": "llms-full.txt",
+              "url": "https://theflatratemovers.com/llms-full.txt"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-local-regional-moving-13",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
+          "pageSlug": "local-regional-moving",
+          "locator": "Local & regional moving, at one flat rate. › One service area, three rulebooks",
+          "heading": "One service area, three rulebooks",
+          "questionShaped": false,
+          "text": "One service area, three rulebooks A short move is not automatically a simple one in the eyes of the law, and this territory holds three rulebooks at once.",
+          "textHash": "6492ba7de3b156fbebabff97d102b69b934b3d93e93194b9d2c5ff9ff83fd765",
+          "bodyChars": 120,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "Place",
+            "Service"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/local-regional-moving.json",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/local-regional-moving/"
+            },
+            {
+              "surface": "llms-full.txt",
+              "url": "https://theflatratemovers.com/llms-full.txt"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-local-regional-moving-14",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
+          "pageSlug": "local-regional-moving",
+          "locator": "Local & regional moving, at one flat rate. › One service area, three rulebooks › Inside Virginia",
+          "heading": "Inside Virginia",
+          "questionShaped": false,
+          "text": "Inside Virginia A move that stays inside Virginia runs under Virginia's household-goods law: the carrier holds a certificate of fitness from the DMV, files its rates as a public tariff, and may bind its written estimate so the price cannot exceed it — that bound estimate is the Virginia-law footing our flat rate stands on. If something is lost or damaged, Virginia's claims clock runs: acknowledgment in writing within 30 days, and payment, a refusal, or a firm settlement offer within 120.",
+          "textHash": "799f544c1407ef20bc583a01f168851bc149d0a4ab95b199fc712d5cdde2db03",
+          "bodyChars": 476,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "Place",
+            "Service"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/local-regional-moving.json",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/local-regional-moving/"
+            },
+            {
+              "surface": "llms-full.txt",
+              "url": "https://theflatratemovers.com/llms-full.txt"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-local-regional-moving-15",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
+          "pageSlug": "local-regional-moving",
+          "locator": "Local & regional moving, at one flat rate. › One service area, three rulebooks › Inside West Virginia",
+          "heading": "Inside West Virginia",
+          "questionShaped": false,
+          "text": "Inside West Virginia A move that stays inside West Virginia runs under the Public Service Commission instead — its certificate, its rate authority, its insurance filings.",
+          "textHash": "dd3b35d3ca6bdd9de4ba8baf777a59790139ec924aae337231d51af7ff6c96ff",
+          "bodyChars": 149,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "Place",
+            "Service"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/local-regional-moving.json",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/local-regional-moving/"
+            },
+            {
+              "surface": "llms-full.txt",
+              "url": "https://theflatratemovers.com/llms-full.txt"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-local-regional-moving-16",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
+          "pageSlug": "local-regional-moving",
+          "locator": "Local & regional moving, at one flat rate. › One service area, three rulebooks › Across a State Line",
+          "heading": "Across a State Line",
+          "questionShaped": false,
+          "text": "Across a State Line And a move that crosses a state line is a federal move even when it is short: Winchester to Martinsburg crosses into West Virginia, so the federal household-goods rules govern it, and the work rides with contractors who hold their own operating authority. Same crews, same flat rate in writing — the paperwork follows the line the truck crosses.",
+          "textHash": "b155a0bdc1dd1e33511bbfc376ba691f607698c0e5cd1c155e4e519507a62fbb",
+          "bodyChars": 345,
+          "substantive": true,
+          "schemaTypes": [
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "Place",
+            "Service"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/local-regional-moving.json",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/local-regional-moving/"
+            },
+            {
+              "surface": "llms-full.txt",
+              "url": "https://theflatratemovers.com/llms-full.txt"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-local-regional-moving-17",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
+          "pageSlug": "local-regional-moving",
           "locator": "Local & regional moving, at one flat rate. › One service area, three rulebooks › Service area, published data & quote",
           "heading": "Service area, published data & quote",
           "questionShaped": false,
@@ -446439,6 +446713,7 @@
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "Place",
             "Service"
@@ -446447,7 +446722,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/local-regional-moving.json",
-              "sha256": "68d2e4458cd9ca5e2d11473dcd56287ac316d615e6fc9fe13dced0c719ddc9c4",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -446465,18 +446740,19 @@
         },
         {
           "fragmentId": "frag-local-regional-moving-2",
-          "source": "passage",
+          "source": "faq-schema",
           "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
           "pageSlug": "local-regional-moving",
-          "locator": "Local & regional moving, at one flat rate. › What it includes",
-          "heading": "What it includes",
+          "locator": "FAQ schema (per-page JSON FAQPage)",
+          "heading": "Which base serves my move?",
           "questionShaped": true,
-          "text": "What it includes Residential and commercial moves within the local and regional area, packing and unpacking, loading and unloading, and — where the job includes a high-mass piece — SIR Structural Integrity Relocation under the KIM-GS Protocol for assets of 1,500 to 3,500 lbs, with L/360 floor-deflection analysis. One standard, one price in writing, whether the move is across town or across the region.",
-          "textHash": "10da7f2dbc39b5169d43bb06078a43d0d90eee13912b965e2768c6f39fc474b3",
-          "bodyChars": 387,
+          "text": "Which base serves my move? Both bases dispatch across the region. Winchester serves the Shenandoah Valley side and Martinsburg serves the Eastern Panhandle side, and the service areas overlap at Moorefield — the quote form settles which crew and route fit your move.",
+          "textHash": "5c2e3ec36592d4bb665c972dd4bbed3c3bd9f6ca4b838af2019cad34bda9dcfb",
+          "bodyChars": 239,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "Place",
             "Service"
@@ -446485,7 +446761,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/local-regional-moving.json",
-              "sha256": "68d2e4458cd9ca5e2d11473dcd56287ac316d615e6fc9fe13dced0c719ddc9c4",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -446503,18 +446779,19 @@
         },
         {
           "fragmentId": "frag-local-regional-moving-3",
-          "source": "passage",
+          "source": "faq-schema",
           "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
           "pageSlug": "local-regional-moving",
-          "locator": "Local & regional moving, at one flat rate. › Who it is for",
-          "heading": "Who it is for",
+          "locator": "FAQ schema (per-page JSON FAQPage)",
+          "heading": "What if my move includes a gun safe, piano or medical device?",
           "questionShaped": true,
-          "text": "Who it is for Households moving within the Shenandoah Valley and the Eastern Panhandle, and businesses relocating offices or operations locally or regionally — anyone who wants the price settled before the truck is loaded, not metered by the hour.",
-          "textHash": "bbf1efab0e16e2f7d2cd7c3a80bfa5d82ebfb7d3e4ad55deb821b4a49d0008a3",
-          "bodyChars": 233,
+          "text": "What if my move includes a gun safe, piano or medical device? High-mass assets of 1,500 to 3,500 lbs move under SIR and the KIM-GS Protocol, with floor-deflection analysis to L/360 — the same standard as our dedicated heavy-asset work, applied inside a local or regional move.",
+          "textHash": "8495a43ad86a39713d0590a67070f6120b399fa811b8402ae56153931407dec9",
+          "bodyChars": 214,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "Place",
             "Service"
@@ -446523,7 +446800,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/local-regional-moving.json",
-              "sha256": "68d2e4458cd9ca5e2d11473dcd56287ac316d615e6fc9fe13dced0c719ddc9c4",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -446541,18 +446818,19 @@
         },
         {
           "fragmentId": "frag-local-regional-moving-4",
-          "source": "passage",
+          "source": "faq-schema",
           "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
           "pageSlug": "local-regional-moving",
-          "locator": "Local & regional moving, at one flat rate. › Where we serve",
-          "heading": "Where we serve",
+          "locator": "FAQ schema (per-page JSON FAQPage)",
+          "heading": "How do I get the quote?",
           "questionShaped": true,
-          "text": "Where we serve From Winchester, VA — Leesburg, Marshall, Sterling, Stephens City, Loudoun County, Berryville 22611, Frederick County, Middleburg 20117, Middletown 22645, Moorefield 26836, Round Hill 20141, Stephenson 22656, Upperville 20184, Winchester 22601, Purcellville 20132, South Riding 20152. From Martinsburg, WV — Inwood, Hagerstown MD, Hedgesville, Paw Paw 25434, Shepherdstown, Berkeley County, Moorefield 26836, Bunker Hill 25413, Charles Town 25414, Clear Spring MD 21722, Summit Point 25446, Harpers Ferry 25425, Kearneysville 25430, Eastern Panhandle of West Virginia. Service areas are published as machine-readable GeoJSON in service-area.geojson (71 features, per branch, verified 2026-10-28).",
-          "textHash": "a30648210d957b0013f155b7b76fe1fdba983f56ea4df598724fa0d18aeb9848",
-          "bodyChars": 696,
+          "text": "How do I get the quote? Get My Flat Rate Quote — Short Quick Quote by default, Detailed Project one toggle away, preserving From, To and What's moving. Phone +1-540-422-2153, email ratemovers@gmail.com.",
+          "textHash": "2eda06f0e7cac03ad89b3ef57971d18fdd7f3960e21cd7c5ba5f6bcd6ba102ac",
+          "bodyChars": 178,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "Place",
             "Service"
@@ -446561,7 +446839,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/local-regional-moving.json",
-              "sha256": "68d2e4458cd9ca5e2d11473dcd56287ac316d615e6fc9fe13dced0c719ddc9c4",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -446582,15 +446860,16 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
           "pageSlug": "local-regional-moving",
-          "locator": "Local & regional moving, at one flat rate. › Questions, answered › Is the price really flat, even for a short local move?",
-          "heading": "Is the price really flat, even for a short local move?",
-          "questionShaped": true,
-          "text": "Is the price really flat, even for a short local move? Yes. The Flat Rate Movers price by the job, not by the hour — the rate is agreed in writing before move day, and the tagline is the guarantee: Guaranteed Flat Rate or Your Move is Free!",
-          "textHash": "e855af8dacab37166dc404d6f3f23e4c48d4b4a38b2d20c1db4171fdb4c38761",
-          "bodyChars": 185,
+          "locator": "Local & regional moving, at one flat rate.",
+          "heading": "Local & regional moving, at one flat rate.",
+          "questionShaped": false,
+          "text": "Local & regional moving, at one flat rate. Local and regional moves along the I-81, I-66 and I-70 corridors, from our two home bases in Winchester, VA and Martinsburg, WV — homes and businesses, at a flat rate agreed in writing before move day. Hourly pricing is available when a client asks for it. Get My Flat Rate Quote",
+          "textHash": "b3b1bfb3bed0cd1194323616eeedc31f5c3abf5cdc09977028e2fd00c8c0161d",
+          "bodyChars": 279,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "Place",
             "Service"
@@ -446599,7 +446878,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/local-regional-moving.json",
-              "sha256": "68d2e4458cd9ca5e2d11473dcd56287ac316d615e6fc9fe13dced0c719ddc9c4",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -446620,15 +446899,16 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
           "pageSlug": "local-regional-moving",
-          "locator": "Local & regional moving, at one flat rate. › Questions, answered › Which base serves my move?",
-          "heading": "Which base serves my move?",
+          "locator": "Local & regional moving, at one flat rate. › What it includes",
+          "heading": "What it includes",
           "questionShaped": true,
-          "text": "Which base serves my move? Both bases dispatch across the region. Winchester serves the Shenandoah Valley side and Martinsburg serves the Eastern Panhandle side, and the service areas overlap at Moorefield — the quote form settles which crew and route fit your move.",
-          "textHash": "5c2e3ec36592d4bb665c972dd4bbed3c3bd9f6ca4b838af2019cad34bda9dcfb",
-          "bodyChars": 239,
+          "text": "What it includes Residential and commercial moves within the local and regional area, packing and unpacking, loading and unloading, and — where the job includes a high-mass piece — SIR Structural Integrity Relocation under the KIM-GS Protocol for assets of 1,500 to 3,500 lbs, with L/360 floor-deflection analysis. One standard, one price in writing, whether the move is across town or across the region.",
+          "textHash": "10da7f2dbc39b5169d43bb06078a43d0d90eee13912b965e2768c6f39fc474b3",
+          "bodyChars": 387,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "Place",
             "Service"
@@ -446637,7 +446917,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/local-regional-moving.json",
-              "sha256": "68d2e4458cd9ca5e2d11473dcd56287ac316d615e6fc9fe13dced0c719ddc9c4",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -446658,15 +446938,16 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
           "pageSlug": "local-regional-moving",
-          "locator": "Local & regional moving, at one flat rate. › Questions, answered › What if my move includes a gun safe, piano or medical device?",
-          "heading": "What if my move includes a gun safe, piano or medical device?",
+          "locator": "Local & regional moving, at one flat rate. › Who it is for",
+          "heading": "Who it is for",
           "questionShaped": true,
-          "text": "What if my move includes a gun safe, piano or medical device? High-mass assets of 1,500 to 3,500 lbs move under SIR and the KIM-GS Protocol, with floor-deflection analysis to L/360 — the same standard as our dedicated heavy-asset work, applied inside a local or regional move.",
-          "textHash": "8495a43ad86a39713d0590a67070f6120b399fa811b8402ae56153931407dec9",
-          "bodyChars": 214,
+          "text": "Who it is for Households moving within the Shenandoah Valley and the Eastern Panhandle, and businesses relocating offices or operations locally or regionally — anyone who wants the price settled before the truck is loaded, not metered by the hour.",
+          "textHash": "bbf1efab0e16e2f7d2cd7c3a80bfa5d82ebfb7d3e4ad55deb821b4a49d0008a3",
+          "bodyChars": 233,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "Place",
             "Service"
@@ -446675,7 +446956,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/local-regional-moving.json",
-              "sha256": "68d2e4458cd9ca5e2d11473dcd56287ac316d615e6fc9fe13dced0c719ddc9c4",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -446696,15 +446977,16 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
           "pageSlug": "local-regional-moving",
-          "locator": "Local & regional moving, at one flat rate. › Questions, answered › How do I get the quote?",
-          "heading": "How do I get the quote?",
+          "locator": "Local & regional moving, at one flat rate. › Where we serve",
+          "heading": "Where we serve",
           "questionShaped": true,
-          "text": "How do I get the quote? Get My Flat Rate Quote — Short Quick Quote by default, Detailed Project one toggle away, preserving From, To and What’s moving. Phone +1-540-422-2153, email ratemovers@gmail.com.",
-          "textHash": "99aeff4e22704243e49e4129050924e4779169bee7b8144110ccfbd048a1c985",
-          "bodyChars": 178,
+          "text": "Where we serve From Winchester, VA — 44 published areas: Winchester, VA Leesburg, VA Marshall, VA Sterling, VA Stephens City, VA Berryville, VA Middleburg, VA Middletown, VA Moorefield, WV Round Hill, VA Stephenson, VA Upperville, VA Purcellville, VA South Riding, VA Front Royal, VA Strasburg, VA Woodstock, VA Bristow, VA Frederick County Loudoun County Clarke County Warren County Shenandoah County Hardy County Fauquier County Port of Virginia Virginia Inland Port Shenandoah Valley Eastern Panhandle of West Virginia Interstate 81 Corridor Interstate 66 Corridor Interstate 70 Corridor Ashburn, VA Chantilly, VA Herndon, VA Reston, VA Tysons, VA Fairfax, VA Gainesville, VA Haymarket, VA Manassas, VA Warrenton, VA Luray, VA Washington, DC From Martinsburg, WV — 41 published areas: Martinsburg, WV Moorefield, WV Inwood, WV Hagerstown, MD Hedgesville, WV Paw Paw, WV Shepherdstown, WV Bunker Hill, WV Charles Town, WV Clear Spring, MD Summit Point, WV Harpers Ferry, WV Kearneysville, WV Front Royal, VA Strasburg, VA Woodstock, VA Berkeley Springs, WV Romney, WV Frederick, MD Hancock, MD Berkeley County Jefferson County Morgan County Warren County Shenandoah County Hampshire County Hardy County Washington County Port of Virginia Virginia Inland Port Shenandoah Valley Eastern Panhandle of West Virginia Interstate 81 Corridor Interstate 66 Corridor Interstate 70 Corridor Falling Waters, WV Williamsport, MD Chambersburg, PA Waynesboro, PA Gaithersburg, MD Rockville, MD Service areas are published as machine-readable GeoJSON in service-area.geojson (71 features, per branch, verified 2026-10-28).",
+          "textHash": "fb82557a543d90cb53fcc017d784737e26d75ff8a9bfe25d6465e51f351c7a96",
+          "bodyChars": 1594,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "Place",
             "Service"
@@ -446713,7 +446995,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/local-regional-moving.json",
-              "sha256": "68d2e4458cd9ca5e2d11473dcd56287ac316d615e6fc9fe13dced0c719ddc9c4",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -446721,10 +447003,6 @@
             {
               "surface": "page",
               "url": "https://theflatratemovers.com/local-regional-moving/"
-            },
-            {
-              "surface": "llms-full.txt",
-              "url": "https://theflatratemovers.com/llms-full.txt"
             }
           ],
           "questionIdsAnswered": []
@@ -446734,15 +447012,16 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/local-regional-moving/",
           "pageSlug": "local-regional-moving",
-          "locator": "Local & regional moving, at one flat rate. › One service area, three rulebooks",
-          "heading": "One service area, three rulebooks",
-          "questionShaped": false,
-          "text": "One service area, three rulebooks A short move is not automatically a simple one in the eyes of the law, and this territory holds three rulebooks at once. A move that stays inside Virginia runs under Virginia's household-goods law: the carrier holds a certificate of fitness from the DMV, files its rates as a public tariff, and may bind its written estimate so the price cannot exceed it — that bound estimate is the Virginia-law footing our flat rate stands on. If something is lost or damaged, Virginia's claims clock runs: acknowledgment in writing within 30 days, and payment, a refusal, or a firm settlement offer within 120. A move that stays inside West Virginia runs under the Public Service Commission instead — its certificate, its rate authority, its insurance filings. And a move that crosses a state line is a federal move even when it is short: Winchester to Martinsburg crosses into West Virginia, so the federal household-goods rules govern it, and the work rides with contractors who hold their own operating authority. Same crews, same flat rate in writing — the paperwork follows the line the truck crosses.",
-          "textHash": "0d5ceef0c0957c3e0de33fe1b2f16bc2a0cbaa1a8c06a95b913dcca02c8bc9cd",
-          "bodyChars": 1093,
+          "locator": "Local & regional moving, at one flat rate. › Questions, answered › Is the price really flat, even for a short local move?",
+          "heading": "Is the price really flat, even for a short local move?",
+          "questionShaped": true,
+          "text": "Is the price really flat, even for a short local move? Yes. The Flat Rate Movers price by the job, not by the hour — the rate is agreed in writing before move day, and the tagline is the guarantee: Guaranteed Flat Rate or Your Move is Free!",
+          "textHash": "e855af8dacab37166dc404d6f3f23e4c48d4b4a38b2d20c1db4171fdb4c38761",
+          "bodyChars": 185,
           "substantive": true,
           "schemaTypes": [
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "Place",
             "Service"
@@ -446751,7 +447030,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/local-regional-moving.json",
-              "sha256": "68d2e4458cd9ca5e2d11473dcd56287ac316d615e6fc9fe13dced0c719ddc9c4",
+              "sha256": "4ce097c5bdc6c335d9445e1102f060b1d1827532715b20530ae1be908ee956c7",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -504033,7 +504312,7 @@
       "@id": "https://theflatratemovers.com/#dataset-answer-evidence-totals",
       "@type": "Dataset",
       "name": "Answer Evidence Totals",
-      "description": "Totals for this generation of the answer-evidence dataset, computed by the generator from the live estate: 26245 questions, 3516 fragments, 4 engine profiles, 43 citation observations (6 search-surface method; 37 prompt-panel observations from 4 panel run(s), latest 2026-11-02 — measured, stated per method), 6 review distribution snapshots and 9 gap records. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on the operations node.",
+      "description": "Totals for this generation of the answer-evidence dataset, computed by the generator from the live estate: 26245 questions, 3523 fragments, 4 engine profiles, 43 citation observations (6 search-surface method; 37 prompt-panel observations from 4 panel run(s), latest 2026-11-02 — measured, stated per method), 6 review distribution snapshots and 9 gap records. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on the operations node.",
       "keywords": [
         "answer engines",
         "citation evidence",
@@ -504118,13 +504397,13 @@
       "isAccessibleForFree": true,
       "totals": {
         "questions": 26245,
-        "fragments": 3516,
+        "fragments": 3523,
         "fragmentsBySource": {
-          "faq-schema": 435,
-          "passage": 3081
+          "faq-schema": 439,
+          "passage": 3084
         },
-        "fragmentsQuestionShaped": 1096,
-        "fragmentsSubstantive": 3220,
+        "fragmentsQuestionShaped": 1100,
+        "fragmentsSubstantive": 3227,
         "fragmentsExcludedSelfReferential": 55,
         "coverage": {
           "rubricRows": 26245,
@@ -504160,7 +504439,7 @@
       "sources": [
         {
           "name": "Intent rubric database",
-          "detail": "26245 rows; rows digest 6214046699debf9b9b8fc69816548bac7934903c1c20120837df607e081c078f; generator build-intent-rubric.js (rubric v2)"
+          "detail": "26245 rows; rows digest 206bdff1e09cb11289450aeeed621b8d2ade21ed742e329cc8ac4f5bac060a0c; generator build-intent-rubric.js (rubric v2)"
         },
         {
           "name": "Source shell + per-page JSONs",

@@ -367768,7 +367768,7 @@
       "@id": "https://theflatratemovers.com/#dataset-answer-evidence-fragments",
       "@type": "Dataset",
       "name": "Answer Fragments",
-      "description": "The estate’s answer fragments — 3414 passages extracted from the live estate (423 FAQ answers from the per-page JSON schema, 2991 heading-led passages from the page texts). Each fragment carries its owning page, heading-path locator, full text, a SHA-256 text hash for drift detection, the schema types present on its page, evidence links to the sealed records backing its facts, its surface copies, and the rubric questions bound to it.",
+      "description": "The estate’s answer fragments — 3440 passages extracted from the live estate (427 FAQ answers from the per-page JSON schema, 3013 heading-led passages from the page texts). Each fragment carries its owning page, heading-path locator, full text, a SHA-256 text hash for drift detection, the schema types present on its page, evidence links to the sealed records backing its facts, its surface copies, and the rubric questions bound to it.",
       "keywords": [
         "answer engines",
         "citation evidence",
@@ -368638,19 +368638,20 @@
         },
         {
           "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-1",
-          "source": "passage",
+          "source": "faq-schema",
           "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
           "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
-          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV.",
-          "heading": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV.",
-          "questionShaped": false,
-          "text": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. This article is for the owner of a 1,600 lb gun safe relocating from Winchester, VA to Las Vegas, NV who needs that specific job planned, not approximated: at 1,600 lbs the safe sits inside the SIR band of 1,500–3,500 lbs, so it moves under SIR and the KIM-GS Protocol — surveyed and floor-checked to L/360 at both ends of a cross-country run, at one flat rate in writing. Get My Flat Rate Quote",
-          "textHash": "5e6ce4a6be8b94ab1c7ea6ee3613c49c1a594ff6cfd532b9bde00ac321cbffba",
-          "bodyChars": 395,
+          "locator": "FAQ schema (per-page JSON FAQPage)",
+          "heading": "Is a 1,600 lb gun safe inside the SIR band?",
+          "questionShaped": true,
+          "text": "Is a 1,600 lb gun safe inside the SIR band? Yes. The published SIR band is 1,500 to 3,500 lbs, so a 1,600 lb safe moves under SIR (Structural Integrity Relocation) and the KIM-GS Protocol — surveyed, and floor-checked to L/360 at both ends of the run.",
+          "textHash": "5671b28f90d31296eb175315922ec024a76e5f47e01e5d6556f580c51dbbcb1c",
+          "bodyChars": 207,
           "substantive": true,
           "schemaTypes": [
             "Article",
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "WebPage"
           ],
@@ -368658,7 +368659,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
-              "sha256": "6bfb2b1c5a3ac6735da1f7355b4386896e6d580d4030cf21068ce33ada63a0cc",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -368675,16 +368676,17 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
           "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
-          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Gun Safe Move Operations",
-          "heading": "Gun Safe Move Operations",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › The job, planned end to end › Service area, published data & quote",
+          "heading": "Service area, published data & quote",
           "questionShaped": false,
-          "text": "Gun Safe Move Operations Gun safe and high-mass safe moving under SIR Structural Integrity Relocation and the KIM-GS Protocol, for safes of 1,500 to 3,500 lbs. The published operation chain runs quote intake (make, model, or approximate weight; pickup and delivery addresses; access at both ends) to route and clearance survey, floor deflection analysis to L/360 with a load-spreading plan, floor protection, controlled move, secured upright transport, and verified placement exactly where the owner wants it, quoted at one flat rate in writing before move day. The protocol page states the same five steps in order: survey and floor check, protect and move, place and verify. Quote intake runs through the Short (Quick Quote) default and Detailed Project toggle, inputs preserved, and a film-only video walkthrough where a walkthrough fits: film only, never lift, move, open, or climb anything heavy or locked, with a human-made estimate. Published service practice: safes under 1,500 lbs handled the same careful way; the safe is emptied first, always; stairs go up and down; equipment matched to the project; re-anchoring at the destination available on request; vault work covers any size; standard safe classes; no locksmith services.",
-          "textHash": "f2cb7dc6bef1f3b2af99fa3e39b1cc0dce9729c63b0b695f4378f1538c82e3e0",
-          "bodyChars": 1214,
+          "text": "Service area, published data & quote Dispatched from two home bases: Winchester, VA — The Flat Rate Movers, 116 W Piccadilly St, Suite 11, Winchester, VA 22601, Mon–Fri 8am–6pm, Sat 8am–4pm, Sun 9am–4pm, Google rating 5.0 with 2 reviews; and Martinsburg, WV — Flat Rate Movers Martinsburg WV, 736 Williamsport Pike, Suite 2, Martinsburg, WV 25404, Mon–Fri 9am–6pm, Sat 9am–4pm, Sun 9am–4pm, Google rating 4.7 with 6 reviews. Ratings are per branch, never blended. Phone +1-540-422-2153, email ratemovers@gmail.com. Service areas are published as machine-readable GeoJSON — service-area.geojson (71 features, per branch, verified 2026-10-28) — with the full verified data in the-flat-rate-movers-data.txt and llms.txt . Heavy assets of 1,500 to 3,500 lbs move under SIR Structural Integrity Relocation and the KIM-GS Protocol, with L/360 floor-deflection analysis, at one flat rate in writing. Get My Flat Rate Quote — Short Quick Quote by default, Detailed Project one toggle away, preserving From, To and What’s moving.",
+          "textHash": "415682963fafc9404a18b02e84f12dc4630c6040c9748e889bb6312b7be1528a",
+          "bodyChars": 983,
           "substantive": true,
           "schemaTypes": [
             "Article",
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "WebPage"
           ],
@@ -368692,7 +368694,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
-              "sha256": "6bfb2b1c5a3ac6735da1f7355b4386896e6d580d4030cf21068ce33ada63a0cc",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -368713,16 +368715,17 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
           "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
-          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Where we serve",
-          "heading": "Where we serve",
-          "questionShaped": true,
-          "text": "Where we serve The Flat Rate Movers — 116 W Piccadilly St Suite 11, Winchester, VA 22601. Hours: Mon–Fri 8am–6pm · Sat 8am–4pm · Sun 9am–4pm. Google rating 5.0 from 2 reviews — this branch's own rating, never blended. Phone +1-540-422-2153. Served from Winchester, VA (32 published areas): Berryville, VA, Bristow, VA, Clarke County, Eastern Panhandle of West Virginia, Fauquier County, Frederick County, VA, Front Royal, VA, Hardy County, Interstate 66 Corridor, Interstate 70 Corridor, Interstate 81 Corridor, Leesburg, VA, Loudoun County, VA, Marshall, VA, Middleburg, VA, Middletown, VA, Moorefield, WV, Port of Virginia, Purcellville, VA, Round Hill, VA, Shenandoah County, Shenandoah Valley, South Riding, VA, Stephens City, VA, Stephenson, VA, Sterling, VA, Strasburg, VA, Upperville, VA, Virginia Inland Port, Warren County, Winchester, VA, Woodstock, VA. Start with the quote: Get My Flat Rate Quote — Short (Quick Quote) by default, or Detailed Project; From, To, and What's moving stay filled in when you switch. Every job is reviewed in full — scope, distance, manpower, equipment — and priced at one flat rate in writing before move day, hourly pricing is available when a client asks for it. Guaranteed Flat Rate or Your Move is Free!",
-          "textHash": "303914f3fc577e1c9fcfd0a06b03d123d89c73eee6ec19932df47b4d7ed36ab2",
-          "bodyChars": 1233,
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV",
+          "heading": "In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV",
+          "questionShaped": false,
+          "text": "In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV Moving a 1,600 lb gun safe from Winchester VA to Las Vegas NV — inside the SIR band of 1,500 to 3,500 lbs, L/360 floor checks at both ends, cross-country transport and verified placement.",
+          "textHash": "bf6d8ca9595b05019ca57a6747e3e3c675dcbce45206c631bb0c00a4b1c80f61",
+          "bodyChars": 187,
           "substantive": true,
           "schemaTypes": [
             "Article",
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "WebPage"
           ],
@@ -368730,7 +368733,217 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
-              "sha256": "6bfb2b1c5a3ac6735da1f7355b4386896e6d580d4030cf21068ce33ada63a0cc",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-12",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Quick-access pistol safes",
+          "heading": "Quick-access pistol safes",
+          "questionShaped": false,
+          "text": "Quick-access pistol safes 15 to 100 lbs. Domain weight context, labeled as such.",
+          "textHash": "8ab19ae9403435793beb6956128c6b14a32e5d1b96d21c1fa80d852145508eb8",
+          "bodyChars": 54,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-13",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Entry-level rifle safes",
+          "heading": "Entry-level rifle safes",
+          "questionShaped": false,
+          "text": "Entry-level rifle safes 200 to 600 lbs. Domain weight context.",
+          "textHash": "e2dbe2337571fae0bd4522b48120033bfc3d68efb0e3e8a94270c9046a0131ed",
+          "bodyChars": 38,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-14",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Mid-range safes",
+          "heading": "Mid-range safes",
+          "questionShaped": false,
+          "text": "Mid-range safes 600 to 1,000 lbs. Domain weight context.",
+          "textHash": "d7ee6625d2a80ac549e34d43f30c57b360a7771d3d5b86e7afe41d7ecb1a731c",
+          "bodyChars": 40,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-15",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Large & high-end safes",
+          "heading": "Large & high-end safes",
+          "questionShaped": false,
+          "text": "Large & high-end safes 1,000 to 1,600+ lbs. This case — 1,600 lbs — sits at the top of this band and inside the SIR band, so it moves under the full protocol.",
+          "textHash": "c9ea2b6a5e1101bd40d74142ded48d4a579977d08b86bc67389efb16fc76141b",
+          "bodyChars": 135,
+          "substantive": true,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-16",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Commercial & vault units",
+          "heading": "Commercial & vault units",
+          "questionShaped": false,
+          "text": "Commercial & vault units 1,500 to 5,000 lbs. Domain weight context.",
+          "textHash": "e17d7bc829ec4674fd43feba3771c02ea041a2f36c1758e9263f8dee43061af2",
+          "bodyChars": 42,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-17",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Specs govern",
+          "heading": "Specs govern",
+          "questionShaped": false,
+          "text": "Specs govern Manufacturer specs govern each safe, never size-class guesses. Safes below 1,500 lbs are handled the same careful way; units above the SIR band are scoped from weight at quote.",
+          "textHash": "9006c310aedcbfc05f5b20bc245644d8008207a2157ac49d932ab17e75ed8a6b",
+          "bodyChars": 176,
+          "substantive": true,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -368747,20 +368960,21 @@
           "questionIdsAnswered": []
         },
         {
-          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-2",
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-18",
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
           "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
-          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › Why 1,600 lbs is a SIR job",
-          "heading": "Why 1,600 lbs is a SIR job",
-          "questionShaped": true,
-          "text": "Why 1,600 lbs is a SIR job Just inside the SIR band is still the band: a 1,600 lb safe concentrates its load on a small footprint with a high centre of mass. Route, stairs and floors are surveyed in Winchester and in Las Vegas before the safe is committed to either path.",
-          "textHash": "821871b2371581ac7c197098a8e1891493bd03f309fe7b381d86bfe121e65c70",
-          "bodyChars": 244,
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Access operations",
+          "heading": "Access operations",
+          "questionShaped": false,
+          "text": "Access operations Quote inputs, not capability claims: ground floor and garage; basement down-stairs descent; upper-floor up-stairs ascent; elevator-served upper floors where the elevator is rated for the weight; tight turns and narrow doorways, including handle and hinge footprint; truck-to-door carry distance; floor type — concrete slab versus wood joist upper floors.",
+          "textHash": "4adcbfc65dbbf0b68a4c35f0a937113b64794f2a7f5820d97df6dbe8f3390982",
+          "bodyChars": 354,
           "substantive": true,
           "schemaTypes": [
             "Article",
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "WebPage"
           ],
@@ -368768,7 +368982,435 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
-              "sha256": "6bfb2b1c5a3ac6735da1f7355b4386896e6d580d4030cf21068ce33ada63a0cc",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            },
+            {
+              "surface": "llms-full.txt",
+              "url": "https://theflatratemovers.com/llms-full.txt"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-19",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › The floor check",
+          "heading": "The floor check",
+          "questionShaped": false,
+          "text": "The floor check Deflection analysis to L/360 with a load-spreading plan. Domain context, labeled: typical living areas are designed for a 40 pounds-per-square-foot live load with a 300-pound concentrated load on a six-inch square; domain placement guidance sets the safe perpendicular across joists near a load-bearing wall, on a plywood pad.",
+          "textHash": "fb7f447ee9da1fdd8c6d3eaf550a9526863e0daf2656745b3bf013fc0f8b16cb",
+          "bodyChars": 326,
+          "substantive": true,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-2",
+          "source": "faq-schema",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "FAQ schema (per-page JSON FAQPage)",
+          "heading": "Do I need to empty the safe before the move?",
+          "questionShaped": true,
+          "text": "Do I need to empty the safe before the move? Yes — the safe is emptied first, always. That is standing service practice on every safe job, whatever the weight.",
+          "textHash": "758265bf30689210d8ed6759b75f42f3f233ccd54f940764490e5b3ba0eb5879",
+          "bodyChars": 114,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-20",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Stairs",
+          "heading": "Stairs",
+          "questionShaped": false,
+          "text": "Stairs The highest-risk step in any safe move, in domain consensus. Stairs go up and down, and the route is surveyed before move day.",
+          "textHash": "10e863a6e074243d42f9e86b65bbc79c6fa2ae3265b287db2dd27b7596bbcfbc",
+          "bodyChars": 126,
+          "substantive": true,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            },
+            {
+              "surface": "llms-full.txt",
+              "url": "https://theflatratemovers.com/llms-full.txt"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-21",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › 1 · Survey & floor check",
+          "heading": "1 · Survey & floor check",
+          "questionShaped": false,
+          "text": "1 · Survey & floor check Quote intake first: make, model or approximate weight; pickup and delivery addresses; access at both ends. Then the route and clearance survey, floor deflection analysis to L/360, and the load-spreading plan.",
+          "textHash": "cee1d32ea743c06cc55f813055ce11ed6d92a3679a85bfe3b23ea6913e4e91f2",
+          "bodyChars": 208,
+          "substantive": true,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-22",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › 2 · Protect",
+          "heading": "2 · Protect",
+          "questionShaped": false,
+          "text": "2 · Protect Floor protection in place at both homes before anything moves.",
+          "textHash": "d73599b3bb5b707db16816969200da2f276d6718dcf68eeac3aca64cea0d4771",
+          "bodyChars": 62,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-23",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › 3 · Controlled move",
+          "heading": "3 · Controlled move",
+          "questionShaped": false,
+          "text": "3 · Controlled move The safe moves under SIR (Structural Integrity Relocation) and the KIM-GS Protocol.",
+          "textHash": "7fd7332a5c484a90879fef4123b00387bd2ab15a5ec5462fc97d65cecd912a65",
+          "bodyChars": 83,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-24",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › 4 · Secured transport",
+          "heading": "4 · Secured transport",
+          "questionShaped": false,
+          "text": "4 · Secured transport Secured upright, strapped and controlled for the cross-country run west.",
+          "textHash": "da3358da6f59733d62e83c304710c3efd249afb79a6c6f5620041437ba86f089",
+          "bodyChars": 72,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-25",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › 5 · Verified placement",
+          "heading": "5 · Verified placement",
+          "questionShaped": false,
+          "text": "5 · Verified placement Placed exactly where the owner wants it at the Las Vegas end — placement, not delivery-to-curb — and verified.",
+          "textHash": "40ef02c5bc6e15ebb50778b516ff0ca7390c1d6ebd4ccaae17b00be80832035e",
+          "bodyChars": 110,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-26",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Service practice",
+          "heading": "Service practice",
+          "questionShaped": false,
+          "text": "Service practice The safe is emptied first, always. Stairs go up and down. Equipment is matched to the project. Re-anchoring at the destination is available on request. Vault work covers any size. No locksmith services.",
+          "textHash": "bfc4b54ad2ec13adebf7d2aa5e3f1d5c2c198d331c1c7f798b0351e3fe89db06",
+          "bodyChars": 202,
+          "substantive": true,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-27",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Home gun safes",
+          "heading": "Home gun safes",
+          "questionShaped": false,
+          "text": "Home gun safes The core category — this case is one.",
+          "textHash": "7eaf8d971389c1bb7956e4eabf7e42c5c2192bae876559d0450a09c0d2586e14",
+          "bodyChars": 37,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-28",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Commercial safes",
+          "heading": "Commercial safes",
+          "questionShaped": false,
+          "text": "Commercial safes Published via high-mass safe moving and the 3,500 lb case.",
+          "textHash": "04f864d2149da9ff6fa41c3d58ba8ab34ac1ee257ce9fd3d2d8f0bddcf784b33",
+          "bodyChars": 58,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-29",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Vaults & vault doors",
+          "heading": "Vaults & vault doors",
+          "questionShaped": false,
+          "text": "Vaults & vault doors Relocation under SIR, on the technical-rigging page; vault work covers any size.",
+          "textHash": "79af19d8ba7f8c6d80b7092a25592790b1a1cf3989e8c7f618e9eedf3359645c",
+          "bodyChars": 80,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -368782,19 +369424,20 @@
         },
         {
           "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-3",
-          "source": "passage",
+          "source": "faq-schema",
           "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
           "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
-          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › The cross-country leg",
-          "heading": "The cross-country leg",
-          "questionShaped": false,
-          "text": "The cross-country leg The safe travels strapped and controlled for the long run west, dispatched from our Winchester base onto the interstate network — the same corridor logic as our Virginia to Nevada route — with placement, not delivery-to-curb, at the Las Vegas end.",
-          "textHash": "189f5d0264754dda4d5e7452d5f5867c80608878f787af5de2ced03ef924290f",
-          "bodyChars": 247,
+          "locator": "FAQ schema (per-page JSON FAQPage)",
+          "heading": "How is a cross-country safe move priced?",
+          "questionShaped": true,
+          "text": "How is a cross-country safe move priced? The job is reviewed in full — scope, distance, manpower, equipment — and priced at one flat rate in writing before move day. Guaranteed Flat Rate or Your Move is Free!",
+          "textHash": "377224aa3b94a4d78d3a43975cedab09b4526e6779d4ebb1d7c699cbaddb59b0",
+          "bodyChars": 167,
           "substantive": true,
           "schemaTypes": [
             "Article",
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "WebPage"
           ],
@@ -368802,7 +369445,291 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
-              "sha256": "6bfb2b1c5a3ac6735da1f7355b4386896e6d580d4030cf21068ce33ada63a0cc",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-30",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Calibration-sensitive safes",
+          "heading": "Calibration-sensitive safes",
+          "questionShaped": false,
+          "text": "Calibration-sensitive safes SIR-method handling on the calibration page; standard classes.",
+          "textHash": "65535767613284ba7b5790fc2372913780d31f6d975e5ea79f7d42d7b40fd8b5",
+          "bodyChars": 62,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-31",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Fire safes",
+          "heading": "Fire safes",
+          "questionShaped": false,
+          "text": "Fire safes A domain class only, with no dedicated company page.",
+          "textHash": "ff539067e873ddbed9b4fc9ab631933175eb7f6fc94c00a6ca1e8898e6d086c4",
+          "bodyChars": 52,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-32",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Long-distance scope",
+          "heading": "Long-distance scope",
+          "questionShaped": false,
+          "text": "Long-distance scope Published today as the Winchester to Las Vegas case pages — this 1,600 lb case and the long-distance version. Nine pages carry the gun-safe service: the hub, two branch pages, the protocol page, the case pages, the vault-moving category and the technical-rigging page, with the SIR method docs and the heavy hub as authority cross-references.",
+          "textHash": "2cc0361c52c8555207c914a1b576c5e9dfb261f90e9b8f8ee9f3c0b5c794d137",
+          "bodyChars": 342,
+          "substantive": true,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-33",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Where we serve",
+          "heading": "Where we serve",
+          "questionShaped": true,
+          "text": "Where we serve The Flat Rate Movers — 116 W Piccadilly St Suite 11, Winchester, VA 22601. Hours: Mon–Fri 8am–6pm · Sat 8am–4pm · Sun 9am–4pm. Google rating 5.0 from 2 reviews — this branch's own rating, never blended. Phone +1-540-422-2153. Served from Winchester, VA — 44 published areas: Winchester, VA Leesburg, VA Marshall, VA Sterling, VA Stephens City, VA Berryville, VA Middleburg, VA Middletown, VA Moorefield, WV Round Hill, VA Stephenson, VA Upperville, VA Purcellville, VA South Riding, VA Front Royal, VA Strasburg, VA Woodstock, VA Bristow, VA Frederick County Loudoun County Clarke County Warren County Shenandoah County Hardy County Fauquier County Port of Virginia Virginia Inland Port Shenandoah Valley Eastern Panhandle of West Virginia Interstate 81 Corridor Interstate 66 Corridor Interstate 70 Corridor Ashburn, VA Chantilly, VA Herndon, VA Reston, VA Tysons, VA Fairfax, VA Gainesville, VA Haymarket, VA Manassas, VA Warrenton, VA Luray, VA Washington, DC Start with the quote: Get My Flat Rate Quote — Short (Quick Quote) by default, or Detailed Project; From, To, and What's moving stay filled in when you switch. Every job is reviewed in full — scope, distance, manpower, equipment — and priced at one flat rate in writing before move day; hourly pricing is available when a client asks for it. Guaranteed Flat Rate or Your Move is Free!",
+          "textHash": "5c2aefe745a98b774a65901148bedcbe28119a22174ee4ecc94e36e36354e19d",
+          "bodyChars": 1347,
+          "substantive": true,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            },
+            {
+              "surface": "llms-full.txt",
+              "url": "https://theflatratemovers.com/llms-full.txt"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-34",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › Questions about this move › Is a 1,600 lb gun safe inside the SIR band?",
+          "heading": "Is a 1,600 lb gun safe inside the SIR band?",
+          "questionShaped": true,
+          "text": "Is a 1,600 lb gun safe inside the SIR band? Yes. The published SIR band is 1,500 to 3,500 lbs, so a 1,600 lb safe moves under SIR (Structural Integrity Relocation) and the KIM-GS Protocol — surveyed, and floor-checked to L/360 at both ends of the run.",
+          "textHash": "5671b28f90d31296eb175315922ec024a76e5f47e01e5d6556f580c51dbbcb1c",
+          "bodyChars": 207,
+          "substantive": true,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-35",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › Questions about this move › Do I need to empty the safe before the move?",
+          "heading": "Do I need to empty the safe before the move?",
+          "questionShaped": true,
+          "text": "Do I need to empty the safe before the move? Yes — the safe is emptied first, always. That is standing service practice on every safe job, whatever the weight.",
+          "textHash": "758265bf30689210d8ed6759b75f42f3f233ccd54f940764490e5b3ba0eb5879",
+          "bodyChars": 114,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-36",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › Questions about this move › How is a cross-country safe move priced?",
+          "heading": "How is a cross-country safe move priced?",
+          "questionShaped": true,
+          "text": "How is a cross-country safe move priced? The job is reviewed in full — scope, distance, manpower, equipment — and priced at one flat rate in writing before move day. Guaranteed Flat Rate or Your Move is Free!",
+          "textHash": "377224aa3b94a4d78d3a43975cedab09b4526e6779d4ebb1d7c699cbaddb59b0",
+          "bodyChars": 167,
+          "substantive": true,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
+              "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
+            }
+          ],
+          "surfaceCopies": [
+            {
+              "surface": "page",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
+            }
+          ],
+          "questionIdsAnswered": []
+        },
+        {
+          "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-37",
+          "source": "passage",
+          "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
+          "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › Questions about this move › Is the safe placed where I want it in Las Vegas, or dropped at the curb?",
+          "heading": "Is the safe placed where I want it in Las Vegas, or dropped at the curb?",
+          "questionShaped": true,
+          "text": "Is the safe placed where I want it in Las Vegas, or dropped at the curb? Placed. Verified placement exactly where you want it at the Las Vegas end — not delivery-to-curb.",
+          "textHash": "5cd934a094f4464ec2baf712f3ca7d2743cf46a8de66fb343882f954668a2a48",
+          "bodyChars": 97,
+          "substantive": false,
+          "schemaTypes": [
+            "Article",
+            "BreadcrumbList",
+            "FAQPage",
+            "Organization",
+            "WebPage"
+          ],
+          "evidenceLinks": [
+            {
+              "kind": "per-page-json",
+              "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -368816,19 +369743,20 @@
         },
         {
           "fragmentId": "frag-1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv-4",
-          "source": "passage",
+          "source": "faq-schema",
           "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
           "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
-          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › What to tell the quote",
-          "heading": "What to tell the quote",
+          "locator": "FAQ schema (per-page JSON FAQPage)",
+          "heading": "Is the safe placed where I want it in Las Vegas, or dropped at the curb?",
           "questionShaped": true,
-          "text": "What to tell the quote Make and model if you know them, weight and dimensions, and stairs, turns and floor type at both homes — in the Detailed Project form, toggle Detailed on the Get My Flat Rate Quote button. The price comes back as one flat rate in writing.",
-          "textHash": "3f771ee0b629695674d9acaa928402f535364d6192f1b85b7c8db070257b06e6",
-          "bodyChars": 238,
-          "substantive": true,
+          "text": "Is the safe placed where I want it in Las Vegas, or dropped at the curb? Placed. Verified placement exactly where you want it at the Las Vegas end — not delivery-to-curb.",
+          "textHash": "5cd934a094f4464ec2baf712f3ca7d2743cf46a8de66fb343882f954668a2a48",
+          "bodyChars": 97,
+          "substantive": false,
           "schemaTypes": [
             "Article",
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "WebPage"
           ],
@@ -368836,7 +369764,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
-              "sha256": "6bfb2b1c5a3ac6735da1f7355b4386896e6d580d4030cf21068ce33ada63a0cc",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -368853,16 +369781,17 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
           "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
-          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › 📞 Start here",
-          "heading": "📞 Start here",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV.",
+          "heading": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV.",
           "questionShaped": false,
-          "text": "📞 Start here Phone: +1-540-422-2153 · Email: ratemovers@gmail.com Hours by location — Winchester: Mon–Fri 8am–6pm · Sat 8am–4pm · Sun 9am–4pm. Martinsburg: Mon–Fri 9am–6pm · Sat 9am–4pm · Sun 9am–4pm. Winchester, VA: 116 W Piccadilly St, Suite 11, 22601 · Martinsburg, WV: 736 Williamsport Pike, Suite 2, 25404. Guaranteed Flat Rate or Your Move is Free! Get My Flat Rate Quote →",
-          "textHash": "cb296c12493deeb98ac28ab2d0414e5f7aa70967ff493a4b60945abd92c1daec",
-          "bodyChars": 366,
+          "text": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. This article is for the owner of a 1,600 lb gun safe relocating from Winchester, VA to Las Vegas, NV who needs that specific job planned, not approximated: at 1,600 lbs the safe sits inside the SIR band of 1,500–3,500 lbs, so it moves under SIR and the KIM-GS Protocol — surveyed and floor-checked to L/360 at both ends of a cross-country run, at one flat rate in writing. Get My Flat Rate Quote",
+          "textHash": "5e6ce4a6be8b94ab1c7ea6ee3613c49c1a594ff6cfd532b9bde00ac321cbffba",
+          "bodyChars": 395,
           "substantive": true,
           "schemaTypes": [
             "Article",
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "WebPage"
           ],
@@ -368870,7 +369799,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
-              "sha256": "6bfb2b1c5a3ac6735da1f7355b4386896e6d580d4030cf21068ce33ada63a0cc",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -368887,16 +369816,17 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
           "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
-          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › Service area, published data & quote",
-          "heading": "Service area, published data & quote",
-          "questionShaped": false,
-          "text": "Service area, published data & quote Dispatched from two home bases: Winchester, VA — The Flat Rate Movers, 116 W Piccadilly St, Suite 11, Winchester, VA 22601, Mon–Fri 8am–6pm, Sat 8am–4pm, Sun 9am–4pm, Google rating 5.0 with 2 reviews; and Martinsburg, WV — Flat Rate Movers Martinsburg WV, 736 Williamsport Pike, Suite 2, Martinsburg, WV 25404, Mon–Fri 9am–6pm, Sat 9am–4pm, Sun 9am–4pm, Google rating 4.7 with 6 reviews. Ratings are per branch, never blended. Phone +1-540-422-2153, email ratemovers@gmail.com. Service areas are published as machine-readable GeoJSON — service-area.geojson (71 features, per branch, verified 2026-10-28) — with the full verified data in the-flat-rate-movers-data.txt and llms.txt . Heavy assets of 1,500 to 3,500 lbs move under SIR Structural Integrity Relocation and the KIM-GS Protocol, with L/360 floor-deflection analysis, at one flat rate in writing. Get My Flat Rate Quote — Short Quick Quote by default, Detailed Project one toggle away, preserving From, To and What’s moving.",
-          "textHash": "415682963fafc9404a18b02e84f12dc4630c6040c9748e889bb6312b7be1528a",
-          "bodyChars": 983,
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › The job, planned end to end › Why 1,600 lbs is a SIR job",
+          "heading": "Why 1,600 lbs is a SIR job",
+          "questionShaped": true,
+          "text": "Why 1,600 lbs is a SIR job Just inside the SIR band is still the band: a 1,600 lb safe concentrates its load on a small footprint with a high centre of mass. Route, stairs and floors are surveyed in Winchester and in Las Vegas before the safe is committed to either path.",
+          "textHash": "821871b2371581ac7c197098a8e1891493bd03f309fe7b381d86bfe121e65c70",
+          "bodyChars": 244,
           "substantive": true,
           "schemaTypes": [
             "Article",
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "WebPage"
           ],
@@ -368904,7 +369834,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
-              "sha256": "6bfb2b1c5a3ac6735da1f7355b4386896e6d580d4030cf21068ce33ada63a0cc",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -368912,10 +369842,6 @@
             {
               "surface": "page",
               "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
-            },
-            {
-              "surface": "llms-full.txt",
-              "url": "https://theflatratemovers.com/llms-full.txt"
             }
           ],
           "questionIdsAnswered": []
@@ -368925,16 +369851,17 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
           "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
-          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV",
-          "heading": "In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › The job, planned end to end › The cross-country leg",
+          "heading": "The cross-country leg",
           "questionShaped": false,
-          "text": "In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV Moving a 1,600 lb gun safe from Winchester VA to Las Vegas NV — inside the SIR band of 1,500 to 3,500 lbs, L/360 floor checks at both ends, cross-country transport and verified placement.",
-          "textHash": "bf6d8ca9595b05019ca57a6747e3e3c675dcbce45206c631bb0c00a4b1c80f61",
-          "bodyChars": 187,
+          "text": "The cross-country leg The safe travels strapped and controlled for the long run west, dispatched from our Winchester base onto the interstate network — the same corridor logic as our Virginia to Nevada route — with placement, not delivery-to-curb, at the Las Vegas end.",
+          "textHash": "189f5d0264754dda4d5e7452d5f5867c80608878f787af5de2ced03ef924290f",
+          "bodyChars": 247,
           "substantive": true,
           "schemaTypes": [
             "Article",
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "WebPage"
           ],
@@ -368942,7 +369869,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
-              "sha256": "6bfb2b1c5a3ac6735da1f7355b4386896e6d580d4030cf21068ce33ada63a0cc",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -368959,16 +369886,17 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
           "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
-          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › Gun Safe Weight Bands and Access Operations",
-          "heading": "Gun Safe Weight Bands and Access Operations",
-          "questionShaped": false,
-          "text": "Gun Safe Weight Bands and Access Operations Weight bands and access operations for gun safe moving. The published SIR band covers safes of 1,500 to 3,500 lbs; the hub notes most gun safes it is called about land in that band. Domain weight context, labeled: quick-access pistol safes 15 to 100 lbs, entry-level rifle safes 200 to 600 lbs, mid-range 600 to 1,000 lbs, large and high-end 1,000 to 1,600 plus lbs, commercial and vault units 1,500 to 5,000 lbs; manufacturer specs govern each safe, never size-class guesses. Safes below 1,500 lbs are handled the same careful way; units above the band are scoped from weight at quote. Access operations are quote inputs, not capability claims: ground floor and garage, basement down-stairs descent, upper-floor up-stairs ascent, elevator-served upper floors where the elevator is rated for the weight, tight turns and narrow doorways including handle and hinge footprint, truck-to-door carry distance, and floor type (concrete slab versus wood joist upper floors). The published floor check is deflection analysis to L/360 with load spreading; domain context, labeled: typical living areas designed for a 40 pounds-per-square-foot live load with a 300-pound concentrated load on a six-inch square, and domain placement guidance to set the safe perpendicular across joists near a load-bearing wall with a plywood pad. Stairs are the highest-risk step in any safe move in domain consensus; stairs go up and down, and the route is surveyed before move day. Service practice: safes under 1,500 lbs are handled the same careful way as the 1,500 to 3,500 lb SIR band; stairs go up and down.",
-          "textHash": "241caff8c1122d68702759294a59de1cddb788baf042ec97874df209c4721d1e",
-          "bodyChars": 1586,
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › The job, planned end to end › What to tell the quote",
+          "heading": "What to tell the quote",
+          "questionShaped": true,
+          "text": "What to tell the quote Make and model if you know them, weight and dimensions, and stairs, turns and floor type at both homes — in the Detailed Project form, toggle Detailed on the Get My Flat Rate Quote button. The price comes back as one flat rate in writing.",
+          "textHash": "3f771ee0b629695674d9acaa928402f535364d6192f1b85b7c8db070257b06e6",
+          "bodyChars": 238,
           "substantive": true,
           "schemaTypes": [
             "Article",
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "WebPage"
           ],
@@ -368976,7 +369904,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
-              "sha256": "6bfb2b1c5a3ac6735da1f7355b4386896e6d580d4030cf21068ce33ada63a0cc",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -368984,10 +369912,6 @@
             {
               "surface": "page",
               "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/"
-            },
-            {
-              "surface": "llms-full.txt",
-              "url": "https://theflatratemovers.com/llms-full.txt"
             }
           ],
           "questionIdsAnswered": []
@@ -368997,16 +369921,17 @@
           "source": "passage",
           "pageUrl": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv/",
           "pageSlug": "1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv",
-          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › In depth — 1,600 lb Gun Safe Moving — Winchester VA to Las Vegas NV › The detail behind this page",
-          "heading": "The detail behind this page",
+          "locator": "Moving a 1,600 lb gun safe from Winchester, VA to Las Vegas, NV. › The job, planned end to end › 📞 Start here",
+          "heading": "📞 Start here",
           "questionShaped": false,
-          "text": "The detail behind this page Safe types: home gun safes (the core category), commercial safes (published via high-mass safe moving and the 3,500 lb case), vaults and vault doors (relocation under SIR on the technical-rigging page; vault work covers any size), calibration-sensitive safes and precision equipment (SIR-method handling on the calibration page; standard classes), and fire safes as a domain class only with no dedicated company page. Long-distance safe scope published today is the Winchester to Las Vegas case pages (1,600 lb and long-distance versions); Published long-distance safe runs include Winchester to Las Vegas. Likely-search questions: move a gun safe long distance; long-distance safe movers collectors dealers estates; safe with household long distance; long-distance gun safe areas. Nine pages carry the service: the gun-safe-movers hub, two branch pages, the safe-moving-protocol page, two case pages, the long-distance Winchester to Las Vegas page, the vault-moving category page, and the technical-rigging vault relocation page, with SIR method docs and the heavy hub as authority cross-references. Likely-search questions: can you move a gun safe under 1,500 pounds; is a 500-pound safe easier to move; safes outside the 1,500 to 3,500 pound range; smallest safe moved.",
-          "textHash": "6e3dbdfa6838ef0735d4803aa27839b3d4fd321b04c5a9f5ee66c50e5eefdfa4",
-          "bodyChars": 1272,
+          "text": "📞 Start here Phone: +1-540-422-2153 · Email: ratemovers@gmail.com Hours by location — Winchester: Mon–Fri 8am–6pm · Sat 8am–4pm · Sun 9am–4pm. Martinsburg: Mon–Fri 9am–6pm · Sat 9am–4pm · Sun 9am–4pm. Winchester, VA: 116 W Piccadilly St, Suite 11, 22601 · Martinsburg, WV: 736 Williamsport Pike, Suite 2, 25404. Guaranteed Flat Rate or Your Move is Free! Get My Flat Rate Quote →",
+          "textHash": "cb296c12493deeb98ac28ab2d0414e5f7aa70967ff493a4b60945abd92c1daec",
+          "bodyChars": 366,
           "substantive": true,
           "schemaTypes": [
             "Article",
             "BreadcrumbList",
+            "FAQPage",
             "Organization",
             "WebPage"
           ],
@@ -369014,7 +369939,7 @@
             {
               "kind": "per-page-json",
               "url": "https://theflatratemovers.com/1600-lb-gun-safe-moving-winchester-va-to-las-vegas-nv.json",
-              "sha256": "6bfb2b1c5a3ac6735da1f7355b4386896e6d580d4030cf21068ce33ada63a0cc",
+              "sha256": "83b705d2de60c6ff07e286dc7c0171c9a6aa579a86cb40686ca0fb77b112bff5",
               "note": "The page’s own structured record (digest = the SHA-256 the signed index seals)."
             }
           ],
@@ -500278,7 +501203,7 @@
       "@id": "https://theflatratemovers.com/#dataset-answer-evidence-totals",
       "@type": "Dataset",
       "name": "Answer Evidence Totals",
-      "description": "Totals for this generation of the answer-evidence dataset, computed by the generator from the live estate: 26245 questions, 3414 fragments, 4 engine profiles, 43 citation observations (6 search-surface method; 37 prompt-panel observations from 4 panel run(s), latest 2026-11-02 — measured, stated per method), 6 review distribution snapshots and 9 gap records. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on the operations node.",
+      "description": "Totals for this generation of the answer-evidence dataset, computed by the generator from the live estate: 26245 questions, 3440 fragments, 4 engine profiles, 43 citation observations (6 search-surface method; 37 prompt-panel observations from 4 panel run(s), latest 2026-11-02 — measured, stated per method), 6 review distribution snapshots and 9 gap records. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on the operations node.",
       "keywords": [
         "answer engines",
         "citation evidence",
@@ -500363,13 +501288,13 @@
       "isAccessibleForFree": true,
       "totals": {
         "questions": 26245,
-        "fragments": 3414,
+        "fragments": 3440,
         "fragmentsBySource": {
-          "faq-schema": 423,
-          "passage": 2991
+          "faq-schema": 427,
+          "passage": 3013
         },
-        "fragmentsQuestionShaped": 1070,
-        "fragmentsSubstantive": 3179,
+        "fragmentsQuestionShaped": 1078,
+        "fragmentsSubstantive": 3188,
         "fragmentsExcludedSelfReferential": 55,
         "coverage": {
           "rubricRows": 26245,
@@ -500405,7 +501330,7 @@
       "sources": [
         {
           "name": "Intent rubric database",
-          "detail": "26245 rows; rows digest be1d9d6a61754fbcbfb487143f7a9a288c65dcf01c53cd13d442d4d48fa7c280; generator build-intent-rubric.js (rubric v2)"
+          "detail": "26245 rows; rows digest 72f2e51c2ab5eee8a54a30800531bbfba15836d31561acfec59b6065327730ab; generator build-intent-rubric.js (rubric v2)"
         },
         {
           "name": "Source shell + per-page JSONs",

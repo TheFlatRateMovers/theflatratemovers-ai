@@ -127,144 +127,11 @@
     }
    ],
    "keywords": "service coverage, Port of Huntington Tri-State, delivery points, branch binding, transloading coverage, Winchester VA",
-   "coverageMatrix": [
+   "additionalProperty": [
     {
-     "port": "port-of-huntington-tri-state",
-     "serviceColumn": "TR",
-     "serviceLabel": "Transloading",
-     "service": "service-transloading",
-     "offered": true,
-     "deliveryPoints": [
-      "port-adjacent-warehouse",
-      "receivers-dock",
-      "yard",
-      "leased-space",
-      "on-terminal-by-arrangement"
-     ],
-     "boundBranch": "winchester",
-     "treatment": "H",
-     "hubSection": true
-    },
-    {
-     "port": "port-of-huntington-tri-state",
-     "serviceColumn": "OC",
-     "serviceLabel": "Ocean container packing and unpacking (stuffing, destuffing, devanning)",
-     "service": "service-transloading",
-     "offered": true,
-     "deliveryPoints": [
-      "port-adjacent-warehouse",
-      "receivers-dock",
-      "yard",
-      "leased-space",
-      "on-terminal-by-arrangement"
-     ],
-     "boundBranch": "winchester",
-     "treatment": "H",
-     "hubSection": true
-    },
-    {
-     "port": "port-of-huntington-tri-state",
-     "serviceColumn": "LU",
-     "serviceLabel": "Loading and unloading / container labor",
-     "service": "service-transloading",
-     "offered": true,
-     "deliveryPoints": [
-      "port-adjacent-warehouse",
-      "receivers-dock",
-      "yard",
-      "leased-space",
-      "on-terminal-by-arrangement"
-     ],
-     "boundBranch": "winchester",
-     "treatment": "H",
-     "hubSection": true
-    },
-    {
-     "port": "port-of-huntington-tri-state",
-     "serviceColumn": "XD",
-     "serviceLabel": "Cross-docking",
-     "service": "service-freight-rework-transloading",
-     "offered": true,
-     "deliveryPoints": [
-      "port-adjacent-warehouse",
-      "receivers-dock",
-      "yard",
-      "leased-space",
-      "on-terminal-by-arrangement"
-     ],
-     "boundBranch": "winchester",
-     "treatment": "H",
-     "hubSection": true
-    },
-    {
-     "port": "port-of-huntington-tri-state",
-     "serviceColumn": "RW",
-     "serviceLabel": "Freight rework",
-     "service": "service-freight-rework-transloading",
-     "offered": true,
-     "deliveryPoints": [
-      "port-adjacent-warehouse",
-      "receivers-dock",
-      "yard",
-      "leased-space",
-      "on-terminal-by-arrangement"
-     ],
-     "boundBranch": "winchester",
-     "treatment": "H",
-     "hubSection": true
-    },
-    {
-     "port": "port-of-huntington-tri-state",
-     "serviceColumn": "WF",
-     "serviceLabel": "Specialized workforce",
-     "service": "service-industrial-commercial",
-     "offered": true,
-     "deliveryPoints": [
-      "port-adjacent-warehouse",
-      "receivers-dock",
-      "yard",
-      "leased-space",
-      "on-terminal-by-arrangement"
-     ],
-     "boundBranch": "winchester",
-     "treatment": "H",
-     "hubSection": true
-    },
-    {
-     "port": "port-of-huntington-tri-state",
-     "serviceColumn": "PM",
-     "serviceLabel": "Logistics project management",
-     "service": "service-logistics-project-management",
-     "offered": true,
-     "deliveryPoints": [
-      "port-adjacent-warehouse",
-      "receivers-dock",
-      "yard",
-      "leased-space",
-      "on-terminal-by-arrangement"
-     ],
-     "boundBranch": "winchester",
-     "treatment": "H",
-     "hubSection": true,
-     "serviceStatus": "registered in batch P4"
-    },
-    {
-     "port": "port-of-huntington-tri-state",
-     "serviceColumn": "3P",
-     "serviceLabel": "3PL support services",
-     "service": "service-3pl-support",
-     "offered": true,
-     "deliveryPoints": [
-      "port-adjacent-warehouse",
-      "receivers-dock",
-      "yard",
-      "leased-space",
-      "on-terminal-by-arrangement"
-     ],
-     "boundBranch": "winchester",
-     "treatment": "H",
-     "hubSection": true,
-     "serviceStatus": "registered in batch P4"
+     "@type": "PropertyValue",
+     "name": "coverageMatrix",
+     "value": "[{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"serviceStatus\":\"registered in batch P4\"},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"serviceStatus\":\"registered in batch P4\"}]"
     }
    ],
    "distribution": [
@@ -293,155 +160,63 @@
     "latitude": 38.41925,
     "longitude": -82.44515
    },
-   "portAuthority": "Huntington District Waterways Association (the district is a Port Statistical Area, not a single port authority)",
-   "operator": "Multiple private terminal and dock operators across the district (no single operator)",
-   "terminals": [
+   "additionalProperty": [
     {
-     "name": "Marathon Petroleum Catlettsburg Refinery docks",
-     "port": "port-of-huntington-tri-state",
-     "operatorName": "Marathon Petroleum",
-     "cargoTypes": [
-      "petroleum products",
-      "crude oil"
-     ],
-     "specs": [
-      {
-       "label": "Docks",
-       "value": "three docks on the west bank of the Big Sandy River, about 2 mi south of the Ohio River, at the I-64 / US-23 junction",
-       "source": "Kentucky Transportation Cabinet Maritime doc M-23, Feb 2025, via WV program research verification 2026-11-07"
-      },
-      {
-       "label": "Operations",
-       "value": "refinery processes crude into gasoline, distillates, asphalt, NGLs and petrochemicals; Marathon also runs inland marine operations and a Marine Repair Facility at Catlettsburg",
-       "source": "WV program research verification 2026-11-07"
-      }
-     ],
-     "railAccess": {
-      "railroads": [
-       "Norfolk Southern",
-       "CSX"
-      ],
-      "onDock": false,
-      "note": "Big Sandy: NS mainline on the WV shore, CSX on the KY shore"
-     },
-     "gateHours": null
+     "@type": "PropertyValue",
+     "name": "portAuthority",
+     "value": "Huntington District Waterways Association (the district is a Port Statistical Area, not a single port authority)"
     },
     {
-     "name": "McGinnis Inc. — South Point",
-     "port": "port-of-huntington-tri-state",
-     "operatorName": "McGinnis Inc.",
-     "cargoTypes": [
-      "barge repair",
-      "marine services"
-     ],
-     "specs": [
-      {
-       "label": "Facilities",
-       "value": "headquarters at South Point, OH near the Big Sandy mouth: barge repair plus a fully enclosed blast-and-paint facility",
-       "source": "Professional Mariner, via WV program research verification 2026-11-07"
-      }
-     ],
-     "railAccess": {
-      "railroads": [
-       "Norfolk Southern",
-       "CSX"
-      ],
-      "onDock": false
-     },
-     "gateHours": null
+     "@type": "PropertyValue",
+     "name": "operator",
+     "value": "Multiple private terminal and dock operators across the district (no single operator)"
     },
     {
-     "name": "Ohio-side freight docks (district reach)",
-     "port": "port-of-huntington-tri-state",
-     "operatorName": "Multiple private operators",
-     "cargoTypes": [
-      "coal",
-      "petroleum products",
-      "chemicals",
-      "aggregates",
-      "steel"
-     ],
-     "specs": [
-      {
-       "label": "Active freight docks (Ohio side, 2022)",
-       "value": "18 active freight docks handling 7.2M tons; 12 of the 18 have rail access",
-       "source": "Ohio DOT Port Statistical Area profile, via WV program research verification 2026-11-07"
-      }
-     ],
-     "railAccess": {
-      "railroads": [
-       "Norfolk Southern",
-       "CSX"
-      ],
-      "onDock": false,
-      "note": "NS primarily serves the Ohio-side docks"
-     },
-     "gateHours": null
-    }
-   ],
-   "cargoSpecialties": [
-    "coal and lignite",
-    "gasoline, distillate fuel oil and petroleum products",
-    "chemicals",
-    "limestone and aggregates",
-    "steel-related cargo",
-    "crude materials"
-   ],
-   "railService": [
-    {
-     "railroad": "Norfolk Southern",
-     "qualifier": "serves the Ohio-side docks; mainline on the WV shore of the Big Sandy"
+     "@type": "PropertyValue",
+     "name": "terminals",
+     "value": "[{\"name\":\"Marathon Petroleum Catlettsburg Refinery docks\",\"port\":\"port-of-huntington-tri-state\",\"operatorName\":\"Marathon Petroleum\",\"cargoTypes\":[\"petroleum products\",\"crude oil\"],\"specs\":[{\"label\":\"Docks\",\"value\":\"three docks on the west bank of the Big Sandy River, about 2 mi south of the Ohio River, at the I-64 / US-23 junction\",\"source\":\"Kentucky Transportation Cabinet Maritime doc M-23, Feb 2025, via WV program research verification 2026-11-07\"},{\"label\":\"Operations\",\"value\":\"refinery processes crude into gasoline, distillates, asphalt, NGLs and petrochemicals; Marathon also runs inland marine operations and a Marine Repair Facility at Catlettsburg\",\"source\":\"WV program research verification 2026-11-07\"}],\"railAccess\":{\"railroads\":[\"Norfolk Southern\",\"CSX\"],\"onDock\":false,\"note\":\"Big Sandy: NS mainline on the WV shore, CSX on the KY shore\"},\"gateHours\":null},{\"name\":\"McGinnis Inc. — South Point\",\"port\":\"port-of-huntington-tri-state\",\"operatorName\":\"McGinnis Inc.\",\"cargoTypes\":[\"barge repair\",\"marine services\"],\"specs\":[{\"label\":\"Facilities\",\"value\":\"headquarters at South Point, OH near the Big Sandy mouth: barge repair plus a fully enclosed blast-and-paint facility\",\"source\":\"Professional Mariner, via WV program research verification 2026-11-07\"}],\"railAccess\":{\"railroads\":[\"Norfolk Southern\",\"CSX\"],\"onDock\":false},\"gateHours\":null},{\"name\":\"Ohio-side freight docks (district reach)\",\"port\":\"port-of-huntington-tri-state\",\"operatorName\":\"Multiple private operators\",\"cargoTypes\":[\"coal\",\"petroleum products\",\"chemicals\",\"aggregates\",\"steel\"],\"specs\":[{\"label\":\"Active freight docks (Ohio side, 2022)\",\"value\":\"18 active freight docks handling 7.2M tons; 12 of the 18 have rail access\",\"source\":\"Ohio DOT Port Statistical Area profile, via WV program research verification 2026-11-07\"}],\"railAccess\":{\"railroads\":[\"Norfolk Southern\",\"CSX\"],\"onDock\":false,\"note\":\"NS primarily serves the Ohio-side docks\"},\"gateHours\":null}]"
     },
     {
-     "railroad": "CSX",
-     "qualifier": "serves the district; mainline on the KY shore of the Big Sandy"
-    }
-   ],
-   "corridors": [
-    "US-52",
-    "I-64",
-    "US-23",
-    "US-60",
-    "US-32"
-   ],
-   "volumes": [
+     "@type": "PropertyValue",
+     "name": "cargoSpecialties",
+     "value": "[\"coal and lignite\",\"gasoline, distillate fuel oil and petroleum products\",\"chemicals\",\"limestone and aggregates\",\"steel-related cargo\",\"crude materials\"]"
+    },
     {
-     "value": 29699657,
-     "unit": "short tons",
-     "period": "CY2023",
-     "fiscalOrCalendar": "calendar",
-     "scope": "Port Statistical Area basis — the district moves tens of millions of tons annually on every published basis; this is the USACE figure on the PSA basis",
-     "source": "USACE Top-50 ports list (2023), via WV program research verification 2026-11-07"
-    }
-   ],
-   "statusItems": [
+     "@type": "PropertyValue",
+     "name": "railService",
+     "value": "[{\"railroad\":\"Norfolk Southern\",\"qualifier\":\"serves the Ohio-side docks; mainline on the WV shore of the Big Sandy\"},{\"railroad\":\"CSX\",\"qualifier\":\"serves the district; mainline on the KY shore of the Big Sandy\"}]"
+    },
     {
-     "title": "District form",
-     "state": "The Port of Huntington Tri-State is a Port Statistical Area overseen by the Huntington District Waterways Association — 100 navigable miles on the Ohio River, 90 on the Kanawha and 9 on the Big Sandy (199 total), anchored by Huntington and Kenova, WV, Catlettsburg, KY and South Point, OH. It is not a single port authority, and no port tenancy or authority relationship is claimed.",
-     "asOf": "2026-11-07",
-     "source": "Ohio DOT PSA profile; U.S. EPA port fact sheet; HDWA (huntingtonwaterways.com), via WV program research verification 2026-11-07"
+     "@type": "PropertyValue",
+     "name": "corridors",
+     "value": "[\"US-52\",\"I-64\",\"US-23\",\"US-60\",\"US-32\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "volumes",
+     "value": "[{\"value\":29699657,\"unit\":\"short tons\",\"period\":\"CY2023\",\"fiscalOrCalendar\":\"calendar\",\"scope\":\"Port Statistical Area basis — the district moves tens of millions of tons annually on every published basis; this is the USACE figure on the PSA basis\",\"source\":\"USACE Top-50 ports list (2023), via WV program research verification 2026-11-07\"}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "statusItems",
+     "value": "[{\"title\":\"District form\",\"state\":\"The Port of Huntington Tri-State is a Port Statistical Area overseen by the Huntington District Waterways Association — 100 navigable miles on the Ohio River, 90 on the Kanawha and 9 on the Big Sandy (199 total), anchored by Huntington and Kenova, WV, Catlettsburg, KY and South Point, OH. It is not a single port authority, and no port tenancy or authority relationship is claimed.\",\"asOf\":\"2026-11-07\",\"source\":\"Ohio DOT PSA profile; U.S. EPA port fact sheet; HDWA (huntingtonwaterways.com), via WV program research verification 2026-11-07\"}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "{\"branch\":\"winchester\",\"bindingBasis\":\"miles\",\"milesFromWinchester\":312.8,\"timeFromWinchester\":\"5:46\",\"milesFromMartinsburg\":359,\"timeFromMartinsburg\":\"about 6:00\",\"routeFromBindingBranch\":\"I-81 S to I-64 W (Lexington, VA) to Huntington\",\"marginNote\":\"about 45 mi closer from Winchester (measured range 357.7-360.4 mi from Martinsburg)\",\"branchPageUrl\":\"https://theflatratemovers.com/locations/winchester-va/\"}"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "sources",
+     "value": "[\"https://huntingtonwaterways.com\",\"https://en.wikipedia.org/wiki/Port_of_Huntington_Tri-State\",\"Ohio DOT Port Statistical Area profile (Port of Huntington Tri-State)\",\"U.S. EPA port fact sheet — Port of Huntington Tri-State\",\"USACE Top-50 ports list, 2023\",\"Kentucky Transportation Cabinet Maritime doc M-23 (Feb 2025)\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "lastVerified",
+     "value": "2026-11-07"
     }
    ],
-   "branchBinding": {
-    "branch": "winchester",
-    "bindingBasis": "miles",
-    "milesFromWinchester": 312.8,
-    "timeFromWinchester": "5:46",
-    "milesFromMartinsburg": 359,
-    "timeFromMartinsburg": "about 6:00",
-    "routeFromBindingBranch": "I-81 S to I-64 W (Lexington, VA) to Huntington",
-    "marginNote": "about 45 mi closer from Winchester (measured range 357.7-360.4 mi from Martinsburg)",
-    "branchPageUrl": "https://theflatratemovers.com/locations/winchester-va/"
-   },
-   "sources": [
-    "https://huntingtonwaterways.com",
-    "https://en.wikipedia.org/wiki/Port_of_Huntington_Tri-State",
-    "Ohio DOT Port Statistical Area profile (Port of Huntington Tri-State)",
-    "U.S. EPA port fact sheet — Port of Huntington Tri-State",
-    "USACE Top-50 ports list, 2023",
-    "Kentucky Transportation Cabinet Maritime doc M-23 (Feb 2025)"
-   ],
-   "lastVerified": "2026-11-07",
    "sameAs": "https://theflatratemovers.com/datasets/ports/#port-of-huntington-tri-state"
   }
  ]

@@ -53377,8 +53377,8 @@
   {
    "@id": "https://theflatratemovers.com/datasets/page-data-pool/#ports",
    "@type": "ItemList",
-   "name": "Layer 1 — the ports matrix: 6 ports, offered services, branch bindings",
-   "numberOfItems": 6,
+   "name": "Layer 1 — the ports matrix: 7 ports, offered services, branch bindings",
+   "numberOfItems": 7,
    "itemListElement": [
     {
      "@type": "Place",
@@ -53543,6 +53543,35 @@
      "milesFromWinchester": 193,
      "milesFromMartinsburg": 191,
      "routeFromBindingBranch": "I-81 N to I-70 E to I-95 N, Philadelphia",
+     "offeredServices": [
+      "Transloading",
+      "Ocean container packing and unpacking (stuffing, destuffing, devanning)",
+      "Loading and unloading / container labor",
+      "Cross-docking",
+      "Freight rework",
+      "Specialized workforce",
+      "Logistics project management",
+      "3PL support services"
+     ]
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#port-of-huntington-tri-state",
+     "name": "Port of Huntington Tri-State",
+     "portType": "inland river port district (barge, bulk, breakbulk) — U.S. Port Statistical Area",
+     "authority": "Huntington District Waterways Association",
+     "authorityUrl": "https://huntingtonwaterways.com",
+     "city": "Huntington",
+     "state": "WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.41925,
+      "longitude": -82.44515
+     },
+     "boundBranch": "winchester",
+     "milesFromWinchester": 312.8,
+     "milesFromMartinsburg": 359,
+     "routeFromBindingBranch": "I-81 S to I-64 W (Lexington, VA) to Huntington",
      "offeredServices": [
       "Transloading",
       "Ocean container packing and unpacking (stuffing, destuffing, devanning)",
@@ -54468,7 +54497,7 @@
        "@type": "DataDownload",
        "contentUrl": "https://theflatratemovers.com/datasets-hoarding-cleanup.json",
        "encodingFormat": "application/json",
-       "sha256": "c4535c5dc406eee7529ac0a2d666b7a547acb7f06cf4b283904fae87fa8de808"
+       "sha256": "11c438f916fb3281e78ad16ed45c44eac045ebc1e389e66fd64c17ba951f9087"
       }
      ]
     },
@@ -54491,6 +54520,16 @@
      "datePublished": "2026-11-07",
      "dateModified": "2026-11-07",
      "description": "The destination dataset for luxury estate relocation into three gated West Virginia communities — The Greenbrier Sporting Club, The Resort at Glade Springs, and The Retreat at White Rock Mountain — served as long-distance destination work from Winchester VA and Martinsburg WV, with the twenty-service LERSI index stating the company's position on every service: offered, coordinated, or market-context-only."
+    },
+    {
+     "@type": "Dataset",
+     "@id": "https://theflatratemovers.com/datasets/port-of-huntington/#dataset-port-of-huntington",
+     "name": "Port of Huntington Tri-State Logistics Dataset",
+     "file": "https://theflatratemovers.com/datasets-port-of-huntington.json",
+     "landing": "https://theflatratemovers.com/datasets/port-of-huntington/",
+     "datePublished": "2026-11-07",
+     "dateModified": "2026-11-07",
+     "description": "The per-port dataset for the Port of Huntington Tri-State: the river port district record (199 navigable miles across WV, OH and KY), its sourced facilities and cargo, its eight-service coverage cells, and its Winchester branch binding."
     }
    ]
   },
@@ -59578,6 +59617,56 @@
        "@id": "https://theflatratemovers.com/#service-sir-heavy"
       }
      ]
+    },
+    {
+     "@type": "Article",
+     "@id": "https://theflatratemovers.com/datasets/page-data-pool/#l2-port-02",
+     "headline": "The Port of Huntington Tri-State — the inland river district and its reach",
+     "name": "L2-PORT-02",
+     "articleBody": "The Port of Huntington Tri-State is a U.S. Port Statistical Area overseen by the Huntington District Waterways Association, covering 199 navigable river miles — 100 on the Ohio River, 90 on the Kanawha and 9 on the Big Sandy — across West Virginia, Ohio and Kentucky. Its anchors are Huntington and Kenova, WV, Catlettsburg, KY and South Point, OH. The cargo base is coal, gasoline and petroleum products, chemicals, limestone and aggregates, and steel; on the USACE Port Statistical Area basis it moved 29,699,657 short tons in CY2023. Marathon Petroleum's Catlettsburg refinery operates three docks on the Big Sandy; McGinnis Inc. runs barge repair at South Point; Ohio DOT counts 18 active Ohio-side freight docks, 12 with rail access. Norfolk Southern and CSX both serve the district; US-52 runs its length, with I-64 crossing at Huntington. The Flat Rate Movers serves the district from Winchester, VA (about 312.8 road miles), which binds it under the program's nearer-branch rule.",
+     "fact": "The Port of Virginia, owned by the Virginia Port Authority, operates four Hampton Roads marine terminals — Norfolk International Terminals, Virginia International Gateway, Portsmouth Marine Terminal and Newport News Marine Terminal — plus two inland facilities: the Virginia Inland Port at Front Royal, an intermodal container transfer facility at the I-66/I-81 junction that receives containers by rail from the coast, and the Richmond Marine Terminal on the James River, linked to Norfolk Harbor by container-on-barge service.",
+     "detail": "Norfolk Harbor is the deepest harbor on the U.S. East Coast (50 ft, authorized to 55 ft), and NIT and VIG both offer on-dock double-stack rail with CSX and Norfolk Southern. The Virginia Inland Port — the first inland port established in the United States — puts the port's gate 220 highway miles inland, inside the Shenandoah Valley's distribution cluster, which is why Valley warehouses treat Front Royal as their port terminal.",
+     "about": [
+      {
+       "@id": "https://theflatratemovers.com/#service-transloading"
+      },
+      {
+       "@id": "https://theflatratemovers.com/#service-transloading-winchester-va"
+      },
+      {
+       "@id": "https://theflatratemovers.com/#service-freight-rework-transloading"
+      }
+     ],
+     "questionsItAnswers": [
+      "What terminals does the Port of Virginia operate?",
+      "What is the Virginia Inland Port?",
+      "How do containers get from Norfolk to Front Royal?"
+     ],
+     "constraints": [
+      "Terminal capabilities differ by facility — break-bulk and ro-ro concentrate at Portsmouth and Newport News, containers at NIT/VIG and the inland terminals."
+     ],
+     "relatedServices": [
+      {
+       "@id": "https://theflatratemovers.com/#service-transloading-winchester-va"
+      },
+      {
+       "@id": "https://theflatratemovers.com/#service-warehouse-relocation"
+      }
+     ],
+     "isBasedOn": {
+      "@type": "CreativeWork",
+      "publisher": "Virginia Economic Development Partnership (VEDP)",
+      "name": "The Port of Virginia: A Crucial Link in Vital Supply Chains",
+      "url": "https://www.vedp.org/news/port-virginia-crucial-link-vital-supply-chains"
+     },
+     "source": {
+      "publisher": "Virginia Economic Development Partnership (VEDP)",
+      "title": "The Port of Virginia: A Crucial Link in Vital Supply Chains",
+      "url": "https://www.vedp.org/news/port-virginia-crucial-link-vital-supply-chains",
+      "retrieved": "2026-11-03",
+      "supports": "The Commonwealth's account of the VPA terminal system, the inland ports, rail service and the barge link to Richmond."
+     },
+     "layer": 2
     }
    ]
   }

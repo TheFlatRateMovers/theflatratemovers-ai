@@ -1,0 +1,2936 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/coverage/#dataset",
+   "name": "Territory Matrix — Service Coverage by Place",
+   "description": "The Flat Rate Movers service-coverage matrix: every place in the company footprint as a typed schema.org Place node with coordinates and branch binding (Winchester VA and Martinsburg WV), the full feature-by-service coverage table reconciled to the 34-service registry, and the place-to-place distance table (centroid distances, computed and labeled as computed; road miles only where separately researched). Generated from service-area.geojson by build-coverage.js.",
+   "url": "https://theflatratemovers.com/datasets/coverage/",
+   "identifier": "https://theflatratemovers.com/datasets/coverage/",
+   "isAccessibleForFree": true,
+   "datePublished": "2026-11-09",
+   "dateModified": "2026-11-09",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "sameAs": "https://theflatratemovers.com/datasets/coverage/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-residential"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-commercial"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-local-regional"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-long-distance"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-packing"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-gun-safe"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-piano-antique"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-ispm15"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-crating"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-transloading"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-final-mile"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-white-glove"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-office-moving"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-industrial-offices"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-government"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-military"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-route81"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-industrial-commercial"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-senior-moving"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-warehouse-relocation"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-it-relocation"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-transloading-winchester-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-moving-and-storage"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-junk-removal"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-warehouse-racking-relocation"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-ffe-logistics"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-data-center-relocation"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-medical-lab-relocation"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-freight-rework-transloading"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-logistics-project-management"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-3pl-support"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-vault-door"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-hoarding-cleanup"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#martinsburg"
+    }
+   ],
+   "keywords": "service coverage, territory matrix, places, branch binding, Winchester VA, Martinsburg WV, Shenandoah Valley, Eastern Panhandle, I-81, I-66, I-70, coverage matrix, place-to-place distance, The Flat Rate Movers",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-coverage.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-coverage.json",
+     "encodingFormat": "application/json"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Coverage table (feature x service)",
+     "contentUrl": "https://theflatratemovers.com/datasets/coverage/coverage-table.json",
+     "encodingFormat": "application/json",
+     "contentSize": 543157,
+     "sha256": "c9178cb882d4c537f1422bcb12f065e6eaca65fba3599e6bd318762a1fd188d6"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Place pairs distance table",
+     "contentUrl": "https://theflatratemovers.com/datasets/coverage/pairs-table.json",
+     "encodingFormat": "application/json",
+     "contentSize": 1050953,
+     "sha256": "632da447c285403b323137b88e90502d44db43309f071814e6a8b627e883fa79"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Features table",
+     "contentUrl": "https://theflatratemovers.com/datasets/coverage/features-table.json",
+     "encodingFormat": "application/json",
+     "contentSize": 42811,
+     "sha256": "47c996492ec255eac208ffd0dca5407b434c079a58653416a466ca086cd42b3c"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Service-area GeoJSON (the source map)",
+     "contentUrl": "https://theflatratemovers.com/service-area.geojson",
+     "encodingFormat": "application/json",
+     "contentSize": 151187,
+     "sha256": "edb0cb55f202459bcf6c85f616f6e59c85bbefdf87990b87bbdcb05ba062a9ca"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/#place-winchester-va",
+   "name": "Winchester, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.18711576,
+    "longitude": -78.1668352
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-winchester-city-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "branch"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/#place-martinsburg-wv",
+   "name": "Martinsburg, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.48319665,
+    "longitude": -77.94760443
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-berkeley-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "branch"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-leesburg-va",
+   "name": "Leesburg, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.1158,
+    "longitude": -77.56578
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-loudoun-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-marshall-va",
+   "name": "Marshall, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86661,
+    "longitude": -77.84966
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-fauquier-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-sterling-va",
+   "name": "Sterling, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.03336,
+    "longitude": -77.40713
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-loudoun-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-stephens-city-va",
+   "name": "Stephens City, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.084,
+    "longitude": -78.21752
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-frederick-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-berryville-va",
+   "name": "Berryville, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.15167,
+    "longitude": -77.98264
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-clarke-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-middleburg-va",
+   "name": "Middleburg, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.96967,
+    "longitude": -77.73618
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-loudoun-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-middletown-va",
+   "name": "Middletown, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.03354,
+    "longitude": -78.27257
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-frederick-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-moorefield-wv",
+   "name": "Moorefield, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.06215,
+    "longitude": -78.96862
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-hardy-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-round-hill-va",
+   "name": "Round Hill, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.13526,
+    "longitude": -77.769
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-loudoun-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-stephenson-va",
+   "name": "Stephenson, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.2387,
+    "longitude": -78.10874
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-frederick-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-upperville-va",
+   "name": "Upperville, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.99433,
+    "longitude": -77.88471
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-fauquier-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-purcellville-va",
+   "name": "Purcellville, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.13668,
+    "longitude": -77.71437
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-loudoun-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-south-riding-va",
+   "name": "South Riding, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.90592,
+    "longitude": -77.48713
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-loudoun-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-inwood-wv",
+   "name": "Inwood, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.35869,
+    "longitude": -78.04374
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-berkeley-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-hagerstown-md",
+   "name": "Hagerstown, MD",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.6425,
+    "longitude": -77.71758
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-washington-md"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-md"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-hedgesville-wv",
+   "name": "Hedgesville, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.55387,
+    "longitude": -77.99512
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-berkeley-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-paw-paw-wv",
+   "name": "Paw Paw, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.43944,
+    "longitude": -78.45118
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-morgan-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-shepherdstown-wv",
+   "name": "Shepherdstown, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.43079,
+    "longitude": -77.80562
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-jefferson-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-bunker-hill-wv",
+   "name": "Bunker Hill, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.33615,
+    "longitude": -78.0528
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-berkeley-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-charles-town-wv",
+   "name": "Charles Town, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.28944,
+    "longitude": -77.8588
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-jefferson-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-clear-spring-md",
+   "name": "Clear Spring, MD",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.65639,
+    "longitude": -77.93005
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-washington-md"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-md"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-summit-point-wv",
+   "name": "Summit Point, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.25093,
+    "longitude": -77.95621
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-jefferson-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-harpers-ferry-wv",
+   "name": "Harpers Ferry, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.32546,
+    "longitude": -77.73907
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-jefferson-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-kearneysville-wv",
+   "name": "Kearneysville, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.37064,
+    "longitude": -77.90795
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-jefferson-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-front-royal-va",
+   "name": "Front Royal, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.91798,
+    "longitude": -78.19355
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-warren-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-strasburg-va",
+   "name": "Strasburg, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.98905,
+    "longitude": -78.35865
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-shenandoah-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-woodstock-va",
+   "name": "Woodstock, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.89021,
+    "longitude": -78.49849
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-shenandoah-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-bristow-va",
+   "name": "Bristow, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.73258,
+    "longitude": -77.54573
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-prince-william-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-berkeley-springs-wv",
+   "name": "Berkeley Springs, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.62814,
+    "longitude": -78.22685
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-morgan-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-romney-wv",
+   "name": "Romney, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.34224,
+    "longitude": -78.75745
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-hampshire-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-frederick-md",
+   "name": "Frederick, MD",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.41574,
+    "longitude": -77.41203
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-frederick-md"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-md"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-hancock-md",
+   "name": "Hancock, MD",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.70004,
+    "longitude": -78.18181
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-washington-md"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-md"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#county-frederick-county",
+   "name": "Frederick County",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.18711576,
+    "longitude": -78.1668352
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "county"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#county-loudoun-county",
+   "name": "Loudoun County",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.1158,
+    "longitude": -77.56578
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "county"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#county-berkeley-county",
+   "name": "Berkeley County",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.48319665,
+    "longitude": -77.94760443
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "county"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#county-jefferson-county",
+   "name": "Jefferson County",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.28944,
+    "longitude": -77.8588
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "county"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#county-morgan-county",
+   "name": "Morgan County",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.62814,
+    "longitude": -78.22685
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "county"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#county-clarke-county",
+   "name": "Clarke County",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.15167,
+    "longitude": -77.98264
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "county"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#county-warren-county",
+   "name": "Warren County",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.91798,
+    "longitude": -78.19355
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "county"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#county-shenandoah-county",
+   "name": "Shenandoah County",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.89021,
+    "longitude": -78.49849
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "county"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#county-hampshire-county",
+   "name": "Hampshire County",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.34224,
+    "longitude": -78.75745
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "county"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#county-hardy-county",
+   "name": "Hardy County",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.06215,
+    "longitude": -78.96862
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "county"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#county-washington-county",
+   "name": "Washington County",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.6425,
+    "longitude": -77.71758
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-md"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "county"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#county-fauquier-county",
+   "name": "Fauquier County",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86661,
+    "longitude": -77.84966
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "county"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/#landmark-port-of-virginia",
+   "name": "Port of Virginia",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.84647,
+    "longitude": -76.29325
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "landmark-port"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/#landmark-virginia-inland-port",
+   "name": "Virginia Inland Port",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.9878,
+    "longitude": -78.17829
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "landmark-port"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#landmark-shenandoah-valley",
+   "name": "Shenandoah Valley",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.95,
+    "longitude": -78.35
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "region"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#landmark-eastern-panhandle-of-west-virginia",
+   "name": "Eastern Panhandle of West Virginia",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.45,
+    "longitude": -78
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "region"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/#landmark-interstate-81-corridor",
+   "name": "Interstate 81 Corridor",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.2,
+    "longitude": -78.1
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-country-us"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "corridor"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/#landmark-interstate-66-corridor",
+   "name": "Interstate 66 Corridor",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.95,
+    "longitude": -77.9
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-country-us"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "corridor"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/#landmark-interstate-70-corridor",
+   "name": "Interstate 70 Corridor",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.6,
+    "longitude": -77.8
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-country-us"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "corridor"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-ashburn-va",
+   "name": "Ashburn, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.05232,
+    "longitude": -77.4827
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-loudoun-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-chantilly-va",
+   "name": "Chantilly, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.88675,
+    "longitude": -77.43892
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-fairfax-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-herndon-va",
+   "name": "Herndon, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.96973,
+    "longitude": -77.385
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-fairfax-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-reston-va",
+   "name": "Reston, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.95979,
+    "longitude": -77.35453
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-fairfax-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-tysons-va",
+   "name": "Tysons, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.92339,
+    "longitude": -77.2221
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-fairfax-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-fairfax-va",
+   "name": "Fairfax, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.84185,
+    "longitude": -77.30905
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-fairfax-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-gainesville-va",
+   "name": "Gainesville, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.79538,
+    "longitude": -77.61478
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-prince-william-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-haymarket-va",
+   "name": "Haymarket, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.81259,
+    "longitude": -77.63731
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-prince-william-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-manassas-va",
+   "name": "Manassas, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.75125,
+    "longitude": -77.47086
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-manassas-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-warrenton-va",
+   "name": "Warrenton, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.71362,
+    "longitude": -77.79551
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-fauquier-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-luray-va",
+   "name": "Luray, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.66552,
+    "longitude": -78.45943
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-page-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-falling-waters-wv",
+   "name": "Falling Waters, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.56179,
+    "longitude": -77.89718
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-berkeley-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-williamsport-md",
+   "name": "Williamsport, MD",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.59603,
+    "longitude": -77.8212
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-washington-md"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-md"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-chambersburg-pa",
+   "name": "Chambersburg, PA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.93743,
+    "longitude": -77.66075
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-franklin-pa"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-pa"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-waynesboro-pa",
+   "name": "Waynesboro, PA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.75621,
+    "longitude": -77.57855
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-franklin-pa"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-pa"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-gaithersburg-md",
+   "name": "Gaithersburg, MD",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.14033,
+    "longitude": -77.19373
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-montgomery-md"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-md"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-rockville-md",
+   "name": "Rockville, MD",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.08196,
+    "longitude": -77.15118
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-montgomery-md"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-md"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-washington-dc",
+   "name": "Washington, DC",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.89037,
+    "longitude": -77.03196
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-district-of-columbia-dc"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-dc"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-petersburg-wv",
+   "name": "Petersburg, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.99261,
+    "longitude": -79.12392
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-grant-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-keyser-wv",
+   "name": "Keyser, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.4416,
+    "longitude": -78.97652
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-mineral-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-cumberland-md",
+   "name": "Cumberland, MD",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.65284,
+    "longitude": -78.76279
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-allegany-md"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-md"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-harrisonburg-va",
+   "name": "Harrisonburg, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.44957,
+    "longitude": -78.86892
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-harrisonburg-city-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-staunton-va",
+   "name": "Staunton, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.149576,
+    "longitude": -79.071696
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-staunton-city-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-old-fields-wv",
+   "name": "Old Fields, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.13472,
+    "longitude": -78.94972
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-hardy-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-fisher-wv",
+   "name": "Fisher, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.051497,
+    "longitude": -79.003363
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-hardy-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-fort-run-wv",
+   "name": "Fort Run, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.06667,
+    "longitude": -78.9225
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-hardy-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-durgon-wv",
+   "name": "Durgon, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.9931653,
+    "longitude": -79.0455872
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-hardy-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-kessel-wv",
+   "name": "Kessel, WV",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.07483,
+    "longitude": -79.03642
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-hardy-wv"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-wv"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "both"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-winchester-city-va",
+   "name": "Winchester City",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-berkeley-wv",
+   "name": "Berkeley County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-loudoun-va",
+   "name": "Loudoun County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-fauquier-va",
+   "name": "Fauquier County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-frederick-va",
+   "name": "Frederick County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-clarke-va",
+   "name": "Clarke County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-hardy-wv",
+   "name": "Hardy County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-washington-md",
+   "name": "Washington County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-morgan-wv",
+   "name": "Morgan County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-jefferson-wv",
+   "name": "Jefferson County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-warren-va",
+   "name": "Warren County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-shenandoah-va",
+   "name": "Shenandoah County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-prince-william-va",
+   "name": "Prince William County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-hampshire-wv",
+   "name": "Hampshire County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-frederick-md",
+   "name": "Frederick County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-fairfax-va",
+   "name": "Fairfax County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-manassas-va",
+   "name": "Manassas County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-page-va",
+   "name": "Page County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-franklin-pa",
+   "name": "Franklin County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-montgomery-md",
+   "name": "Montgomery County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-district-of-columbia-dc",
+   "name": "District of Columbia County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-grant-wv",
+   "name": "Grant County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-mineral-wv",
+   "name": "Mineral County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-allegany-md",
+   "name": "Allegany County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-harrisonburg-city-va",
+   "name": "Harrisonburg City",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-staunton-city-va",
+   "name": "Staunton City",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-va",
+   "name": "Virginia",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   }
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-wv",
+   "name": "West Virginia",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   }
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-md",
+   "name": "Maryland",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   }
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-pa",
+   "name": "Pennsylvania",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   }
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-dc",
+   "name": "District of Columbia",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   }
+  },
+  {
+   "@type": "Country",
+   "@id": "https://theflatratemovers.com/#place-country-us",
+   "name": "United States"
+  }
+ ]
+}

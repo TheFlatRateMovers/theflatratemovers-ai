@@ -7,7 +7,7 @@
       "name": "The Flat Rate Movers — Local Graph Registry Operations",
       "description": "The standing registry of the local-business graph for The Flat Rate Movers’ two branches: the canonical branch entities (generated from the estate), every public third-party record with its observed value, correct value, status, verification date, method and crawl age, the source-by-branch coverage matrix, per-platform review-distribution snapshots, the name-collision DO-NOT-TOUCH class, the gap records L1–L11 each with its designed solution, and the consolidated owner-step list generated from the rows it blocks. Query it three ways: the full JSON file; ?table= on the API route; and the ?table= form of /v1/datasets for the estate inventory.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-09",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -221,7 +221,7 @@
       "name": "Local Graph Registry Dataset — Scope",
       "description": "What this registry is and the rules it runs on. The graph’s center (Google) resolves both branches correctly; the graph’s edges (aggregators, directories, stale scrapes) corrupt them — and the edges are the layer answer engines and secondary directories actually read. This dataset is the permanent corrections worklist for that layer: branch truth generated from the estate; every public record as a field-level row with a status from a controlled vocabulary; propagation parents so a downstream row is never demanded fixed before its upstream; corrected-live earned only on direct-fetch proof; verification aging flagged, never silently trusted; collisions catalogued DO-NOT-TOUCH; and the owner’s action list generated from the rows it blocks so it cannot drift.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-09",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -321,7 +321,7 @@
       "name": "Local Graph Registry Dataset — Branch Entities (canonical)",
       "description": "The canonical side of the registry: the two branch entities, generated from the estate’s own registries (locations + service-area GeoJSON) so the truth every third-party record is compared against can never be hand-edited in this file. The branches are distinct — different names, hours, addresses, coordinates and Google place identifiers — and are always both present.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-09",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -438,8 +438,8 @@
           ],
           "gbpListedServiceAreaCount": 17,
           "geojsonFeatureCount": 54,
-          "geojsonOwnFeatureCount": 40,
-          "geojsonSharedFeatureCount": 14,
+          "geojsonOwnFeatureCount": 33,
+          "geojsonSharedFeatureCount": 21,
           "footprintAreas": [
             "Berryville, VA",
             "Bristow, VA",
@@ -552,9 +552,9 @@
             "Eastern Panhandle of West Virginia"
           ],
           "gbpListedServiceAreaCount": 14,
-          "geojsonFeatureCount": 41,
+          "geojsonFeatureCount": 48,
           "geojsonOwnFeatureCount": 27,
-          "geojsonSharedFeatureCount": 14,
+          "geojsonSharedFeatureCount": 21,
           "footprintAreas": [
             "Berkeley County, WV",
             "Berkeley Springs, WV",
@@ -624,7 +624,7 @@
       "name": "Local Graph Registry Dataset — Third-Party Records",
       "description": "One row per public record per field: source, branch, field, the observed value exactly as the evidence base recorded it, the correct value traced to its canonical source, the status from the controlled vocabulary, the last-verified date with method (direct-fetch / search-surface / owner-manager-read) and the crawl age of the underlying page where the observation rests on one, the designed solution’s gap, the owner step where one blocks, the propagation parent where the fix flows from upstream, and the append-only status history. 120 records: 36 verified-correct, 5 correction-sent, 8 parked on an owner step, 45 absences with a creation path, and the remainder open or unverifiable-today — each with its fix designed in the gap records.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-09",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -4959,7 +4959,7 @@
       "name": "Local Graph Registry Dataset — Coverage Matrix",
       "description": "The generated source-by-branch matrix: 49 sources x 2 branches = 98 cells, every cell carrying a state (the worst status among its records) and the recordIds behind it. A source with no record for a branch fails generation — the branch-parity rule made structural. Company-scope records cover both branches and their cells are marked company-level.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-09",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -6267,7 +6267,7 @@
       "name": "Local Graph Registry Dataset — Review Distribution Snapshots",
       "description": "Per-platform review displays as distribution and arithmetic — the shared snapshot schema with the answer-evidence dataset: displayed average, displayed count, the perfect-score total and the star deficit the average implies, the minimum below-five-star construction, and the measurement state. 8 company snapshots (per branch, per platform — never blended) and 1 competitor-namespace snapshot whose arithmetic shows why a raw review count is not an authority signal. Histogram and authenticity fields are null-marked unmeasured wherever no instrumented collection exists.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-09",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -6604,7 +6604,7 @@
       "name": "Local Graph Registry Dataset — Name Collisions (DO-NOT-TOUCH)",
       "description": "The name-collision class: 6 other companies whose names collide with The Flat Rate Movers, catalogued with their distinguishing facts so a conflation event — their identifiers, ratings or complaints landing on this company’s records, or the reverse — is detectable in one query. Action on every record is none: this registry never edits another company’s record. No conflation event has been observed to date (0 events recorded).",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-09",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -6757,7 +6757,7 @@
       "name": "Local Graph Registry Dataset — Gaps and Designed Solutions (L1–L11)",
       "description": "The element’s gap records, each with its evidence rows, its impact, and its designed solution — solutions, not problem lists (owner ruling 2026-10-31). Resolution runs through this element’s build sequence: the re-verification pass, the Data Axle root fix, the one consolidated owner sitting, the our-side stale-artifact retirements, the expansion wave, and the propagation proof pass.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-09",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -6979,7 +6979,7 @@
       "name": "Local Graph Registry Dataset — Consolidated Owner Steps (generated)",
       "description": "The owner’s entire action list for this element — 6 items — GENERATED from the record rows that carry an owner step, so the list can never drift from the registry: each step names its system, the exact action, and the recordIds it unblocks. One sitting covers the sign-in items; the Data Axle confirmation and the CB Insights mailbox decision stand as their own items. No other owner action exists anywhere in this element’s worklist.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-09",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -7126,7 +7126,7 @@
       "name": "Local Graph Registry Dataset — Totals",
       "description": "Registry totals, generated: records by status and by branch, coverage cells, snapshots by namespace, collisions, gaps by status, owner steps, and the stale-verification count under the 35-day window.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-09",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -7234,7 +7234,7 @@
         "backlinkEntriesTotal": 33,
         "backlinkDomains": 23,
         "geojsonFeaturesTotal": 81,
-        "dateModified": "2026-11-07"
+        "dateModified": "2026-11-09"
       },
       "datePublished": "2026-10-31",
       "includedInDataCatalog": {
@@ -7256,7 +7256,7 @@
       "name": "Local Graph Registry Dataset — Verified Backlink Tier",
       "description": "The verified backlink tier, added 2026-11-02: referring pages recorded in the estate backlink ledger (Bing Webmaster export 2026-11-01) and the review-tier rows fetch-verified the same day. Entries whose domain already carries a registry source ride on that source’s holder record as a backlinks array; the rest stand here as their own class beside the third-party records — never inside the coverage matrix and never inside the record count. Fetch verification is direct-fetch evidence only: a page earns a review-tier record only when the fetched page itself carries the link.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-09",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -7741,7 +7741,7 @@
       "name": "Local Graph Registry — Method",
       "description": "How the registry is built and maintained. (1) The canonical side is generated from the estate registries; (2) the observation side is transcribed from the evidence base — Dossier 03’s audit of 2026-10-31 and the backlink program’s records — with every row carrying its evidence reference, and the fresher source governing conflicts (conflicts are noted on the row, never silently resolved); (3) statuses follow the controlled vocabulary and the direct-fetch rule for corrected-live; (4) the coverage matrix, owner-step list and totals are computed from the rows at generation, so the published views cannot drift from the underlying records; (5) maintenance runs on the measurement cadence — re-verification passes update rows only on page evidence, stale-verification flags mark rows past the window, and every regeneration re-seals the file in the estate’s signed index in the same motion.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-09",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -7808,7 +7808,7 @@
       "name": "Local Graph Registry — Sources",
       "description": "The evidence base for this registry: Retrieval Machine Dossier 03 (the local-business graph audit and design, reads of 2026-10-31); the backlink program’s Phase 1 citation audit (2026-10-30), Wave 1 execution record (2026-10-30) and Phase 2 plan with its Wave 2 prep re-verification note (2026-10-31); the estate’s canonical registries (locations, service-area GeoJSON, the signed ai-master-index); and the branch submission data packets the program corrects from. Where the audit and the dossier conflict, the dossier’s fresher reading governs and the conflict is noted on the affected row (one instance: the Chamber directory’s Winchester review display — dossier 4.8 over 30 governs over the audit’s 4.9 over 34).",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-09",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -7896,7 +7896,7 @@
       "name": "Local Graph Registry — Boundaries",
       "description": "What this registry will not do. It never edits, claims or corrects another company’s record (the collision class is detection-only). It never presents a review count — ours or a competitor’s — as a quality or authority signal. It never marks a row corrected on snippet evidence. It never blends the two branches. It carries no client names, no prices beyond the estate’s already-published industrial schedule (which appears nowhere in this file), no contracts, no clearances and no certification claims. Paid corrections and paid placements are outside the program’s no-paid rule; where a platform paywalls an edit (Judy’s Book), the registry records the free propagation path instead.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-07",
+      "dateModified": "2026-11-09",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {

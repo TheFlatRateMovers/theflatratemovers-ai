@@ -5,7 +5,7 @@
    "@type": "Dataset",
    "@id": "https://theflatratemovers.com/datasets/coverage/#dataset",
    "name": "Territory Matrix — Service Coverage by Place",
-   "description": "The Flat Rate Movers service-coverage matrix: every place in the company footprint as a typed schema.org Place node with coordinates and branch binding (Winchester VA and Martinsburg WV), the full feature-by-service coverage table reconciled to the 34-service registry, and the place-to-place distance table (centroid distances, computed and labeled as computed; road miles only where separately researched). Generated from service-area.geojson by build-coverage.js.",
+   "description": "The Flat Rate Movers service-coverage matrix: every place in the company footprint as a typed schema.org Place node with coordinates and branch binding (Winchester VA and Martinsburg WV), the full feature-by-service coverage table reconciled to the 34-service registry, and the place-to-place distance table (centroid distances, computed and labeled as computed; road miles only where separately researched). A national layer records the company performed-work record at state level: State nodes for the 49 states where the company has moved clients and performed job work — every state except Hawaii — published as the national table, kept separate from the branch footprint (state rows are the work record, not branch service areas). Generated from service-area.geojson and data/national-scope.json by build-coverage.js.",
    "url": "https://theflatratemovers.com/datasets/coverage/",
    "identifier": "https://theflatratemovers.com/datasets/coverage/",
    "isAccessibleForFree": true,
@@ -191,6 +191,14 @@
      "encodingFormat": "application/json",
      "contentSize": 42811,
      "sha256": "47c996492ec255eac208ffd0dca5407b434c079a58653416a466ca086cd42b3c"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "National work record table (state level)",
+     "contentUrl": "https://theflatratemovers.com/datasets/coverage/national-table.json",
+     "encodingFormat": "application/json",
+     "contentSize": 17069,
+     "sha256": "8c7dcc644f2e4b3c04005b0bbdf35680ccf69aea83747597411587a353ad65f5"
     },
     {
      "@type": "DataDownload",
@@ -2893,7 +2901,34 @@
    "name": "Virginia",
    "containedInPlace": {
     "@id": "https://theflatratemovers.com/#place-country-us"
-   }
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "completed"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Winchester\",\"Front Royal\",\"Cross Junction\",\"Clear Brook\",\"Gainesboro\",\"Gore\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2013-10-08"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2026-10-30"
+    }
+   ]
   },
   {
    "@type": "State",
@@ -2901,7 +2936,39 @@
    "name": "West Virginia",
    "containedInPlace": {
     "@id": "https://theflatratemovers.com/#place-country-us"
-   }
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "completed"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 69
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Martinsburg\",\"Moorefield\",\"Petersburg\",\"Shepherdstown\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2012-03-04"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2026-11-03"
+    }
+   ]
   },
   {
    "@type": "State",
@@ -2909,7 +2976,34 @@
    "name": "Maryland",
    "containedInPlace": {
     "@id": "https://theflatratemovers.com/#place-country-us"
-   }
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "booked"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Owings\",\"Frederick\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2023-09-22"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2026-10-07"
+    }
+   ]
   },
   {
    "@type": "State",
@@ -2917,7 +3011,39 @@
    "name": "Pennsylvania",
    "containedInPlace": {
     "@id": "https://theflatratemovers.com/#place-country-us"
-   }
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "completed"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 3
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Philadelphia\",\"Willow Street\",\"Greencastle\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2019-12-17"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2026-05"
+    }
+   ]
   },
   {
    "@type": "State",
@@ -2926,6 +3052,1461 @@
    "containedInPlace": {
     "@id": "https://theflatratemovers.com/#place-country-us"
    }
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-al",
+   "name": "Alabama",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "booked"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 2
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2018-03-18"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2023-06-05"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-ak",
+   "name": "Alaska",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-az",
+   "name": "Arizona",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "completed"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 7
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2019-07-03"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2020-03-17"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-ar",
+   "name": "Arkansas",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-ca",
+   "name": "California",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-co",
+   "name": "Colorado",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "booked"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Lakewood\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2020-06-02"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2020-06-02"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-ct",
+   "name": "Connecticut",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "inquiry"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 2
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2017-05-03"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2017-05-07"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-de",
+   "name": "Delaware",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 4
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Wilmington\",\"Middletown\",\"Newark\",\"Rehoboth Beach\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2016-10-10"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2020-01-14"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-fl",
+   "name": "Florida",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 4
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Saint Petersburg\",\"Melbourne\",\"Jacksonville\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2013-05-19"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2025-08-08"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-ga",
+   "name": "Georgia",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 3
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Stone Mountain\",\"Marietta\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2014-10-06"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2021-04-09"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-id",
+   "name": "Idaho",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Jerome\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2017-06-04"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2017-06-04"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-il",
+   "name": "Illinois",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "booked"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 2
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Hanover Park\",\"Fox River Grove\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2011-12-01"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2026-11-02"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-in",
+   "name": "Indiana",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 2
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Indianapolis\",\"Columbus\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2026-11-02"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2026-11-02"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-ia",
+   "name": "Iowa",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Waterloo\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2015-03-11"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2015-03-11"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-ks",
+   "name": "Kansas",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-ky",
+   "name": "Kentucky",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 3
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Erlanger\",\"Louisville\",\"Lexington\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2019-01-12"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2025-12-23"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-la",
+   "name": "Louisiana",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"New Orleans\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2018-06-04"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2018-06-04"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-me",
+   "name": "Maine",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "booked"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Bangor\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2011-06-30"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2011-06-30"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-ma",
+   "name": "Massachusetts",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "booked"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 2
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Brockton\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2026-10-30"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2026-10-30"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-mi",
+   "name": "Michigan",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2021-03-13"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2021-03-26"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-mn",
+   "name": "Minnesota",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-ms",
+   "name": "Mississippi",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Hattiesburg\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2015-04-05"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2015-04-05"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-mo",
+   "name": "Missouri",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-mt",
+   "name": "Montana",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "inquiry"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2020-04-06"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2020-04-06"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-ne",
+   "name": "Nebraska",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2016-04-11"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2016-04-11"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-nv",
+   "name": "Nevada",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "completed"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 3
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Las Vegas\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2015-03-10"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-nh",
+   "name": "New Hampshire",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 2
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Manchester\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2012-11-03"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2020-05-26"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-nj",
+   "name": "New Jersey",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 3
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Clifton\",\"Toms River\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2014-10-06"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2023-08-08"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-nm",
+   "name": "New Mexico",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "booked"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Gallup\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2026-10-29"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2026-10-29"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-ny",
+   "name": "New York",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "inquiry"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 2
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2012-04-20"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2017-05-07"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-nc",
+   "name": "North Carolina",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 2
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Wilson\",\"Raleigh\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2018-06-05"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2021-01-25"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-nd",
+   "name": "North Dakota",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Fargo\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2018-03-25"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2018-03-25"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-oh",
+   "name": "Ohio",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Columbus\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2015-07-11"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2015-07-11"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-ok",
+   "name": "Oklahoma",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 2
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Oklahoma City\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2013-07-04"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2014-12-09"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-or",
+   "name": "Oregon",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-ri",
+   "name": "Rhode Island",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-sc",
+   "name": "South Carolina",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "completed"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 5
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Charleston\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2012-01-11"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2023-04-01"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-sd",
+   "name": "South Dakota",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-tn",
+   "name": "Tennessee",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "completed"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 4
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Franklin\",\"Memphis\",\"Collierville\",\"Kingsport\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2013-07-11"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2025-12-16"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-tx",
+   "name": "Texas",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "completed"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 3
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Haslet\",\"Laguna Heights\",\"Albany\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2025-12-18"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2026-10-31"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-ut",
+   "name": "Utah",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-vt",
+   "name": "Vermont",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-wa",
+   "name": "Washington",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "quoted"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordCities",
+     "value": "[\"Seattle\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2016-04-03"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2016-04-03"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-wi",
+   "name": "Wisconsin",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordTier",
+     "value": "inquiry"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordJobs",
+     "value": 1
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordFirstDate",
+     "value": "2019-12-03"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "workRecordLastDate",
+     "value": "2019-12-04"
+    }
+   ]
+  },
+  {
+   "@type": "State",
+   "@id": "https://theflatratemovers.com/#place-state-wy",
+   "name": "Wyoming",
+   "containedInPlace": {
+    "@id": "https://theflatratemovers.com/#place-country-us"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "national-layer — state in the company performed-work record (not a branch service area)"
+    }
+   ]
   },
   {
    "@type": "Country",

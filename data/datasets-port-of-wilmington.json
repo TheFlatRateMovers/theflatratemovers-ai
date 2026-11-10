@@ -1,0 +1,225 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/port-of-wilmington/#dataset-port-of-wilmington",
+   "name": "Port of Wilmington Logistics Dataset",
+   "description": "The per-port dataset for the Port of Wilmington (Delaware) in the Ports & Intermodal program of The Flat Rate Movers: the full port record for the deepwater port at 1 Hausel Rd, Wilmington, DE — owned by the Diamond State Port Corporation (State of Delaware) and operated by Enstructure since 31 July 2023 under a long-term concession (the former GT USA Wilmington / Gulftainer concession was cancelled) — North America's top port for imports of fresh fruit, bananas and juice concentrate, where Dole and Chiquita together handle more than 1M tons of bananas a year and Citrosuco operates the largest dockside juice terminal in the USA, with refrigerated cargo, breakbulk and project cargo and auto (RoRo) work at the main terminal, Norfolk Southern direct access per the operator (CSX serves the Wilmington area via Wilsmere Yard), the I-495, I-95 and I-295 corridors, the future Edgemoor / Delaware Container Terminal (137 acres, 45-ft depth, 1.2M TEU/yr at full build; groundbreaking 14 September 2026, opening targeted early 2029, litigation live), and the branch binding: the port is served from the Martinsburg, WV branch, about 150 road miles away (Winchester measures 165). No annual volume figure is published for this port — none is verified. The company's eight attached port services are recorded cell by cell in the companion coverage dataset. No port tenancy or port-authority relationship is claimed; the company's crews hold TWIC cards and its contractors hold valid TWIC cards.",
+   "url": "https://theflatratemovers.com/datasets/port-of-wilmington/",
+   "sameAs": "https://theflatratemovers.com/datasets/port-of-wilmington/",
+   "identifier": "https://theflatratemovers.com/datasets/port-of-wilmington/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "datePublished": "2026-11-10",
+   "dateModified": "2026-11-10",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "keywords": "Port of Wilmington, Wilmington Delaware, Diamond State Port Corporation, Enstructure, fruit port, bananas, juice concentrate, reefer cargo, Edgemoor, Delaware Container Terminal, breakbulk, transloading, freight rework, Martinsburg WV",
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-transloading"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-freight-rework-transloading"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-port-of-wilmington.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-port-of-wilmington.json",
+     "encodingFormat": "application/json"
+    }
+   ],
+   "isPartOf": {
+    "@id": "https://theflatratemovers.com/datasets/ports/#dataset-ports"
+   }
+  },
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/port-of-wilmington/#dataset-port-of-wilmington-coverage",
+   "name": "Port of Wilmington Service Coverage Dataset",
+   "description": "The service-coverage cells for the Port of Wilmington in the Ports & Intermodal program: the eight attached services (transloading; ocean container packing and unpacking; loading and unloading / container labor; cross-docking; freight rework; specialized workforce; logistics project management; 3PL support services), each recorded as offered with its delivery points (port-adjacent warehouse, receiver's dock, yard, leased space, and on-terminal by arrangement — on-terminal work happens only by arrangement through the terminal's own processes, never as a bare claim) and its bound branch, Martinsburg, WV. Drayage is not offered at any port in the program.",
+   "url": "https://theflatratemovers.com/datasets/port-of-wilmington/",
+   "sameAs": "https://theflatratemovers.com/datasets/port-of-wilmington/",
+   "identifier": "https://theflatratemovers.com/datasets/port-of-wilmington/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "datePublished": "2026-11-10",
+   "dateModified": "2026-11-10",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "keywords": "service coverage, Port of Wilmington, delivery points, branch binding, transloading coverage, Martinsburg, WV",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "coverageMatrix",
+     "value": "[{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"serviceStatus\":\"registered in batch P4\",\"datasetOnly\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"serviceStatus\":\"registered in batch P4\",\"datasetOnly\":true}]"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-port-of-wilmington.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-port-of-wilmington.json",
+     "encodingFormat": "application/json"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/port-of-wilmington/#port-of-wilmington-de",
+   "name": "Port of Wilmington",
+   "alternateName": "Port of Wilmington, DE",
+   "description": "Port of Wilmington (Wilmington, DE) — deepwater marine port (fruit, reefer, breakbulk, RoRo). Authority: Diamond State Port Corporation (State of Delaware). Operator: Enstructure (operator since 31 July 2023 under a long-term concession; the former GT USA Wilmington / Gulftainer concession was cancelled). Cargo: fresh fruit, bananas and juice concentrate (verified claim form only: North America's top port for imports of fresh fruit, bananas and juice concentrate); refrigerated cargo; breakbulk and project cargo; autos (RoRo). Rail: Norfolk Southern — direct access per operator material; CSX — serves the Wilmington area via Wilsmere Yard; on-dock status unverified. Highway corridors: I-495, I-95, I-295. Branch binding: this port is served from the Martinsburg, WV branch of The Flat Rate Movers — about 165 road miles from Winchester and 150 from Martinsburg; bound to Martinsburg on miles. about 16 mi closer from Martinsburg; drive time near-tied.",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1 Hausel Rd",
+    "addressLocality": "Wilmington",
+    "addressRegion": "DE",
+    "postalCode": "19801",
+    "addressCountry": "US"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.71517,
+    "longitude": -75.52987
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "portAuthority",
+     "value": "Diamond State Port Corporation (State of Delaware)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "operator",
+     "value": "Enstructure (operator since 31 July 2023 under a long-term concession; the former GT USA Wilmington / Gulftainer concession was cancelled)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "terminals",
+     "value": "[{\"name\":\"Port of Wilmington main terminal\",\"port\":\"port-of-wilmington-de\",\"operatorName\":\"Enstructure\",\"cargoTypes\":[\"fresh fruit\",\"bananas\",\"juice concentrate\",\"autos\",\"steel\",\"forest products\",\"livestock\",\"containers\",\"breakbulk and project cargo\"],\"specs\":[{\"label\":\"Fruit position\",\"value\":\"North America's top port for imports of fresh fruit, bananas and juice concentrate; the largest U.S. banana-import facility (Dole); second worldwide for bananas, after Antwerp\",\"source\":\"Choose Delaware / CLUI / Site Selection, via ports program dossier §1.6\"},{\"label\":\"Banana throughput\",\"value\":\"Dole and Chiquita together handle more than 1M tons of bananas a year; Chiquita renewed Wilmington as its mid-Atlantic hub in June 2025\",\"source\":\"Choose Delaware, via ports program dossier §1.6\"},{\"label\":\"Juice\",\"value\":\"Citrosuco operates the largest dockside juice terminal in the USA here\",\"source\":\"Ports program dossier §1.6\"}],\"railAccess\":{\"railroads\":[\"Norfolk Southern\"],\"onDock\":true,\"note\":\"operator material lists direct access to Norfolk Southern; CSX serves the Wilmington area via Wilsmere Yard — on-dock CSX status unverified\"},\"gateHours\":null},{\"name\":\"Edgemoor / Delaware Container Terminal (DCT) — future capacity\",\"port\":\"port-of-wilmington-de\",\"operatorName\":\"Enstructure (DSPC-owned site)\",\"cargoTypes\":[\"containers (future)\"],\"specs\":[{\"label\":\"Site\",\"value\":\"137 acres, 45-ft depth, 16,000-TEU vessels, 1.2M TEU/yr at full build (Phase 1 about 520,000 TEU)\",\"source\":\"WorldCargo News / Delaware state releases, via ports program dossier §1.6\"},{\"label\":\"Schedule\",\"value\":\"groundbreaking 14 Sept 2026; opening targeted early 2029; litigation remains live, so the schedule is not risk-free; final funding $669M ($225M Enstructure + $325M State + $119M federal)\",\"source\":\"Delaware state release, 2026-09-14; WorldCargo News, via ports program dossier §1.6\"}],\"railAccess\":{\"railroads\":[],\"onDock\":null},\"gateHours\":null}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "cargoSpecialties",
+     "value": "[\"fresh fruit, bananas and juice concentrate (verified claim form only: North America's top port for imports of fresh fruit, bananas and juice concentrate)\",\"refrigerated cargo\",\"breakbulk and project cargo\",\"autos (RoRo)\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "railService",
+     "value": "[{\"railroad\":\"Norfolk Southern\",\"qualifier\":\"direct access per operator material\"},{\"railroad\":\"CSX\",\"qualifier\":\"serves the Wilmington area via Wilsmere Yard; on-dock status unverified\"}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "corridors",
+     "value": "[\"I-495\",\"I-95\",\"I-295\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "volumes",
+     "value": "[]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "statusItems",
+     "value": "[{\"title\":\"No verified current volume — none published\",\"state\":\"No verified current annual figure exists for the Port of Wilmington (operator material circulates conflicting figures; the last clean published series is 2018). No Wilmington volume figure is published anywhere in this program.\",\"asOf\":\"2026-11-02\",\"source\":\"Ports program dossier §1.6\"},{\"title\":\"Edgemoor / Delaware Container Terminal\",\"state\":\"Future container capacity: groundbreaking 14 Sept 2026, opening targeted early 2029, litigation live. Wilmington is a fruit and breakbulk port today and a container port from 2029.\",\"asOf\":\"2026-11-02\",\"source\":\"Delaware state release, 2026-09-14, via ports program dossier §1.6\"}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "{\"branch\":\"martinsburg\",\"bindingBasis\":\"miles\",\"milesFromWinchester\":165,\"timeFromWinchester\":\"about 3:11\",\"milesFromMartinsburg\":150,\"timeFromMartinsburg\":\"about 3:04\",\"routeFromBindingBranch\":\"I-81 N to I-70 E to I-95 N, Wilmington\",\"marginNote\":\"about 16 mi closer from Martinsburg; drive time near-tied\",\"branchPageUrl\":\"https://theflatratemovers.com/locations/martinsburg-wv/\"}"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "sources",
+     "value": "[\"https://documents.dnrec.delaware.gov/Admin/Orders/Secretarys-Order-No-2025-A-0033.pdf\",\"https://breakbulk.news/enstructure-completes-transfer-of-port-of-wilmington-operations-from-gt-usa/\",\"https://www.choosedelaware.com/success-stories/chiquita-deal-a-boon-for-port-wilmington/\",\"https://clui.org/ludb/site/port-wilmington\",\"https://news.delaware.gov/2026/09/14/enstructure-diamond-state-port-corporation-stakeholders-celebrate-groundbreaking-of-the-delaware-container-terminal/\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "lastVerified",
+     "value": "2026-11-03"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/ports/#port-of-wilmington-de"
+  }
+ ]
+}

@@ -5,7 +5,7 @@
    "@type": "Dataset",
    "@id": "https://theflatratemovers.com/datasets/port-of-virginia/#dataset-port-of-virginia",
    "name": "Port of Virginia Logistics Dataset",
-   "description": "The per-port dataset for the Port of Virginia in the Ports & Intermodal program of The Flat Rate Movers: the four Norfolk Harbor terminals — Norfolk International Terminals (NIT) and Virginia International Gateway (VIG), the port’s container terminals; Newport News Marine Terminal (NNMT), its primary RoRo and breakbulk terminal; and Portsmouth Marine Terminal (PMT), recorded as what it is, a deep-water heavy-lift and offshore-wind hub, not a container terminal — plus Richmond Marine Terminal (RMT) as a covered facility, the James River barge terminal the City of Richmond owns and the Virginia Port Authority leases to 2056. Virginia International Gateway is recorded as leased, not port-authority-owned. Each entity carries authority and operator of record, terminal facts with their sources, cargo specialties, rail service with on-dock and interchange qualifiers, highway corridors, foreign-trade-zone facts, labeled volume figures with period and source (the Port of Virginia system moved 3,499,639 TEUs in FY2024 and 3,239,638 TEUs in calendar 2025; no standalone volume is published for Richmond Marine Terminal because none is published by the port), current status items, and the branch binding that assigns both ports to the Winchester, VA branch by verified road distance (Norfolk about 222 miles, Richmond about 135 miles). The companion coverage node maps all 16 coverage cells for the two ports. The company’s crews hold TWIC cards and its contractors hold valid TWIC cards. The offer set does not include drayage: freight moves on the customer’s or carrier’s trucks, and the company’s crews do the hands-on work at port-adjacent warehouses, receivers’ docks, yards, leased space, and on-terminal only by arrangement through the terminal’s own processes. Every fact carries its source.",
+   "description": "The per-port dataset for the Port of Virginia in the Ports & Intermodal program of The Flat Rate Movers: the four Norfolk Harbor terminals — Norfolk International Terminals (NIT) and Virginia International Gateway (VIG), the port’s container terminals; Newport News Marine Terminal (NNMT), its primary RoRo and breakbulk terminal; and Portsmouth Marine Terminal (PMT), recorded as what it is, a deep-water heavy-lift and offshore-wind hub, not a container terminal. Richmond Marine Terminal (RMT), formerly recorded in this file as a covered facility, carries its own per-port dataset (datasets-richmond-marine-terminal.json) and hub page since the ports-completion build (2026-11-10) Virginia International Gateway is recorded as leased, not port-authority-owned. Each entity carries authority and operator of record, terminal facts with their sources, cargo specialties, rail service with on-dock and interchange qualifiers, highway corridors, foreign-trade-zone facts, labeled volume figures with period and source (the Port of Virginia system moved 3,499,639 TEUs in FY2024 and 3,239,638 TEUs in calendar 2025; no standalone volume is published for Richmond Marine Terminal because none is published by the port), current status items, and the branch binding that assigns the port to the Winchester, VA branch by verified road distance (Norfolk about 222 miles). The companion coverage node maps the port's 8 coverage cells. The company’s crews hold TWIC cards and its contractors hold valid TWIC cards. The offer set does not include drayage: freight moves on the customer’s or carrier’s trucks, and the company’s crews do the hands-on work at port-adjacent warehouses, receivers’ docks, yards, leased space, and on-terminal only by arrangement through the terminal’s own processes. Every fact carries its source.",
    "url": "https://theflatratemovers.com/datasets/port-of-virginia/",
    "sameAs": "https://theflatratemovers.com/datasets/port-of-virginia/",
    "identifier": "https://theflatratemovers.com/datasets/port-of-virginia/",
@@ -24,7 +24,7 @@
     "url": "https://theflatratemovers.com/"
    },
    "datePublished": "2026-11-03",
-   "dateModified": "2026-11-07",
+   "dateModified": "2026-11-10",
    "includedInDataCatalog": {
     "@type": "DataCatalog",
     "@id": "https://theflatratemovers.com/datasets/#collection",
@@ -53,7 +53,7 @@
      }
     }
    ],
-   "keywords": "Port of Virginia, Norfolk, Norfolk International Terminals, NIT, Virginia International Gateway, VIG, Portsmouth Marine Terminal, Newport News Marine Terminal, Richmond Marine Terminal, Richmond Express, barge, transloading, container labor, devanning, cross-docking, freight rework, 3PL support, logistics project management, branch binding, TWIC card",
+   "keywords": "Port of Virginia, Norfolk, Norfolk International Terminals, NIT, Virginia International Gateway, VIG, Portsmouth Marine Terminal, Newport News Marine Terminal, transloading, container labor, devanning, cross-docking, freight rework, 3PL support, logistics project management, branch binding, TWIC card",
    "about": [
     {
      "@id": "https://theflatratemovers.com/#service-transloading"
@@ -78,7 +78,7 @@
    "@type": "Dataset",
    "@id": "https://theflatratemovers.com/datasets/port-of-virginia/#dataset-port-of-virginia-coverage",
    "name": "Port of Virginia Service Coverage Dataset",
-   "description": "The service-coverage cells for the Port of Virginia and Richmond Marine Terminal in the Ports & Intermodal program: 16 cells — two ports by the eight attached services (transloading; ocean container packing and unpacking; loading and unloading / container labor; cross-docking; freight rework; specialized workforce; logistics project management; 3PL support services) — each recording whether the service is offered, the treatment the program gives it (S, a dedicated spoke page; H, a hub section on /port-of-virginia-logistics/; D, dataset presence only, the deliberate treatment for Richmond’s secondary cells), the delivery points, and the bound branch. Norfolk: transloading and ocean container work carry spoke treatment (the container-labor spoke already live; the transloading spoke lands in the same wave), the remaining six services are hub sections. Richmond Marine Terminal, a secondary node: transloading and cross-docking are hub sections on the Norfolk hub; the other six cells are dataset-only. Delivery points come from one enum only: port-adjacent warehouse, receiver’s dock, yard, leased space, and on-terminal by arrangement — on-terminal work happens only by arrangement through the terminal’s own processes, never as a bare claim. Both ports bind to Winchester, VA.",
+   "description": "The service-coverage cells for the Port of Virginia in the Ports & Intermodal program: 8 cells — the eight attached services (transloading; ocean container packing and unpacking; loading and unloading / container labor; cross-docking; freight rework; specialized workforce; logistics project management; 3PL support services) — each recording whether the service is offered, the treatment the program gives it (S, a dedicated spoke page; H, a hub section on /port-of-virginia-logistics/; D, dataset presence only), the delivery points, and the bound branch. Norfolk: transloading and ocean container work carry spoke treatment (the container-labor spoke is live), the remaining six services are hub sections. Delivery points come from one enum only: port-adjacent warehouse, receiver’s dock, yard, leased space, and on-terminal by arrangement — on-terminal work happens only by arrangement through the terminal’s own processes, never as a bare claim. The port binds to Winchester, VA.",
    "url": "https://theflatratemovers.com/datasets/port-of-virginia/",
    "sameAs": "https://theflatratemovers.com/datasets/port-of-virginia/",
    "identifier": "https://theflatratemovers.com/datasets/port-of-virginia/",
@@ -97,7 +97,7 @@
     "url": "https://theflatratemovers.com/"
    },
    "datePublished": "2026-11-03",
-   "dateModified": "2026-11-07",
+   "dateModified": "2026-11-10",
    "includedInDataCatalog": {
     "@type": "DataCatalog",
     "@id": "https://theflatratemovers.com/datasets/#collection",
@@ -126,12 +126,12 @@
      }
     }
    ],
-   "keywords": "service coverage, Port of Virginia, Richmond Marine Terminal, delivery points, branch binding, transloading coverage, cross-docking coverage",
+   "keywords": "service coverage, Port of Virginia, delivery points, branch binding, transloading coverage, cross-docking coverage",
    "additionalProperty": [
     {
      "@type": "PropertyValue",
      "name": "coverageMatrix",
-     "value": "[{\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"TR\", \"serviceLabel\": \"Transloading\", \"service\": \"service-transloading\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"S\", \"spokePage\": true, \"treatmentNote\": \"new spoke lands in batch P3\"}, {\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"OC\", \"serviceLabel\": \"Ocean container packing and unpacking (stuffing, destuffing, devanning)\", \"service\": \"service-transloading\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"S\", \"spokePage\": true, \"treatmentNote\": \"spoke treatment already live (existing labor page)\"}, {\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"LU\", \"serviceLabel\": \"Loading and unloading / container labor\", \"service\": \"service-transloading\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"H\", \"hubSection\": true}, {\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"XD\", \"serviceLabel\": \"Cross-docking\", \"service\": \"service-freight-rework-transloading\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"H\", \"hubSection\": true}, {\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"RW\", \"serviceLabel\": \"Freight rework\", \"service\": \"service-freight-rework-transloading\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"H\", \"hubSection\": true}, {\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"WF\", \"serviceLabel\": \"Specialized workforce\", \"service\": \"service-industrial-commercial\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"H\", \"hubSection\": true}, {\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"PM\", \"serviceLabel\": \"Logistics project management\", \"service\": \"service-logistics-project-management\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"H\", \"serviceStatus\": \"registered in batch P4\", \"hubSection\": true}, {\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"3P\", \"serviceLabel\": \"3PL support services\", \"service\": \"service-3pl-support\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"H\", \"serviceStatus\": \"registered in batch P4\", \"hubSection\": true}, {\"port\": \"port-richmond-marine-terminal\", \"serviceColumn\": \"TR\", \"serviceLabel\": \"Transloading\", \"service\": \"service-transloading\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"H\", \"hubSection\": true, \"treatmentNote\": \"hub section live (batch P3)\"}, {\"port\": \"port-richmond-marine-terminal\", \"serviceColumn\": \"OC\", \"serviceLabel\": \"Ocean container packing and unpacking (stuffing, destuffing, devanning)\", \"service\": \"service-transloading\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\"], \"boundBranch\": \"winchester\", \"treatment\": \"D\", \"datasetOnly\": true}, {\"port\": \"port-richmond-marine-terminal\", \"serviceColumn\": \"LU\", \"serviceLabel\": \"Loading and unloading / container labor\", \"service\": \"service-transloading\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\"], \"boundBranch\": \"winchester\", \"treatment\": \"D\", \"datasetOnly\": true}, {\"port\": \"port-richmond-marine-terminal\", \"serviceColumn\": \"XD\", \"serviceLabel\": \"Cross-docking\", \"service\": \"service-freight-rework-transloading\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"H\", \"hubSection\": true, \"treatmentNote\": \"hub section live (batch P3)\"}, {\"port\": \"port-richmond-marine-terminal\", \"serviceColumn\": \"RW\", \"serviceLabel\": \"Freight rework\", \"service\": \"service-freight-rework-transloading\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\"], \"boundBranch\": \"winchester\", \"treatment\": \"D\", \"datasetOnly\": true}, {\"port\": \"port-richmond-marine-terminal\", \"serviceColumn\": \"WF\", \"serviceLabel\": \"Specialized workforce\", \"service\": \"service-industrial-commercial\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\"], \"boundBranch\": \"winchester\", \"treatment\": \"D\", \"datasetOnly\": true}, {\"port\": \"port-richmond-marine-terminal\", \"serviceColumn\": \"PM\", \"serviceLabel\": \"Logistics project management\", \"service\": \"service-logistics-project-management\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\"], \"boundBranch\": \"winchester\", \"treatment\": \"D\", \"serviceStatus\": \"registered in batch P4\", \"datasetOnly\": true}, {\"port\": \"port-richmond-marine-terminal\", \"serviceColumn\": \"3P\", \"serviceLabel\": \"3PL support services\", \"service\": \"service-3pl-support\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\"], \"boundBranch\": \"winchester\", \"treatment\": \"D\", \"serviceStatus\": \"registered in batch P4\", \"datasetOnly\": true}]"
+     "value": "[{\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"TR\", \"serviceLabel\": \"Transloading\", \"service\": \"service-transloading\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"S\", \"spokePage\": true, \"treatmentNote\": \"new spoke lands in batch P3\"}, {\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"OC\", \"serviceLabel\": \"Ocean container packing and unpacking (stuffing, destuffing, devanning)\", \"service\": \"service-transloading\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"S\", \"spokePage\": true, \"treatmentNote\": \"spoke treatment already live (existing labor page)\"}, {\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"LU\", \"serviceLabel\": \"Loading and unloading / container labor\", \"service\": \"service-transloading\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"H\", \"hubSection\": true}, {\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"XD\", \"serviceLabel\": \"Cross-docking\", \"service\": \"service-freight-rework-transloading\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"H\", \"hubSection\": true}, {\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"RW\", \"serviceLabel\": \"Freight rework\", \"service\": \"service-freight-rework-transloading\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"H\", \"hubSection\": true}, {\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"WF\", \"serviceLabel\": \"Specialized workforce\", \"service\": \"service-industrial-commercial\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"H\", \"hubSection\": true}, {\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"PM\", \"serviceLabel\": \"Logistics project management\", \"service\": \"service-logistics-project-management\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"H\", \"serviceStatus\": \"registered in batch P4\", \"hubSection\": true}, {\"port\": \"port-of-virginia-norfolk\", \"serviceColumn\": \"3P\", \"serviceLabel\": \"3PL support services\", \"service\": \"service-3pl-support\", \"offered\": true, \"deliveryPoints\": [\"port-adjacent-warehouse\", \"receivers-dock\", \"yard\", \"leased-space\", \"on-terminal-by-arrangement\"], \"boundBranch\": \"winchester\", \"treatment\": \"H\", \"serviceStatus\": \"registered in batch P4\", \"hubSection\": true}]"
     }
    ],
    "distribution": [
@@ -225,86 +225,6 @@
      "@type": "PropertyValue",
      "name": "sources",
      "value": "[\"https://www.portofvirginia.com/wp-content/uploads/2026/08/POV_2026-NIT.pdf\", \"https://www.portofvirginia.com/wp-content/uploads/2026/08/POV_2026-PMT.pdf\", \"https://www.portofvirginia.com/wp-content/uploads/2025/03/POV_2025-NNMT.pdf\", \"https://www.ajot.com/news/virginia-completes-fy-2024-with-growth-in-cargo-volumes-and-progress-on-infrastructure-projects\"]"
-    },
-    {
-     "@type": "PropertyValue",
-     "name": "lastVerified",
-     "value": "2026-11-03"
-    }
-   ]
-  },
-  {
-   "@type": "Place",
-   "@id": "https://theflatratemovers.com/datasets/port-of-virginia/#port-richmond-marine-terminal",
-   "name": "Richmond Marine Terminal",
-   "alternateName": "RMT",
-   "description": "Richmond Marine Terminal (Richmond, VA) — river barge terminal (inland port). Authority: Virginia Port Authority (operator under lease). Operator: Virginia International Terminals, LLC — the City of Richmond owns the terminal; the Virginia Port Authority leases it under a 40-year lease signed 2016 (to 2056). Cargo: barge containers on the Richmond Express (64 Express) James River barge service linking Richmond with NIT, VIG and PMT; breakbulk. Rail: CSX — direct; Norfolk Southern — via local switch. Highway corridors: I-95, I-64, I-85, I-295. Branch binding: this port is served from the Winchester, VA branch of The Flat Rate Movers — about 135 road miles from Winchester and 158 from Martinsburg; bound to Winchester on miles. about 23 mi / about 20 min closer from Winchester; secondary node (section of the Port of Virginia hub, no dedicated hub page or dataset file in wave 1).",
-   "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "5000 Deepwater Terminal Rd",
-    "addressLocality": "Richmond",
-    "addressRegion": "VA",
-    "postalCode": "23234",
-    "addressCountry": "US"
-   },
-   "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 37.45564,
-    "longitude": -77.42259
-   },
-   "sameAs": [
-    "https://theflatratemovers.com/datasets/ports/#port-richmond-marine-terminal"
-   ],
-   "additionalProperty": [
-    {
-     "@type": "PropertyValue",
-     "name": "portAuthority",
-     "value": "Virginia Port Authority (operator under lease)"
-    },
-    {
-     "@type": "PropertyValue",
-     "name": "operator",
-     "value": "Virginia International Terminals, LLC — the City of Richmond owns the terminal; the Virginia Port Authority leases it under a 40-year lease signed 2016 (to 2056)"
-    },
-    {
-     "@type": "PropertyValue",
-     "name": "terminals",
-     "value": "[{\"name\": \"Richmond Marine Terminal\", \"port\": \"port-richmond-marine-terminal\", \"operatorName\": \"Virginia International Terminals, LLC\", \"cargoTypes\": [\"containers (barge)\", \"breakbulk\"], \"specs\": [{\"label\": \"Site size\", \"value\": \"124 acres\", \"source\": \"Port of Virginia RMT terminal sheet, 2026 (the 2023 sheet said 121 acres; the 2026 sheet governs)\"}, {\"label\": \"Storage\", \"value\": \"300,000 sq ft covered and uncovered\", \"source\": \"Port of Virginia RMT terminal sheet, 2026\"}, {\"label\": \"Crane\", \"value\": \"mobile harbor crane, 124-ton class\", \"source\": \"Port of Virginia RMT terminal sheet, 2026\"}, {\"label\": \"On-terminal capability\", \"value\": \"on-terminal transload and cross-docking for container cargo to and from railcars or domestic trucks\", \"source\": \"Port of Virginia RMT terminal sheet, 2026\"}], \"railAccess\": {\"railroads\": [\"CSX\"], \"onDock\": true, \"note\": \"CSX direct; NS via local switch\"}, \"gateHours\": \"Monday-Friday 0700-1600\"}]"
-    },
-    {
-     "@type": "PropertyValue",
-     "name": "cargoSpecialties",
-     "value": "[\"barge containers on the Richmond Express (64 Express) James River barge service linking Richmond with NIT, VIG and PMT\", \"breakbulk\"]"
-    },
-    {
-     "@type": "PropertyValue",
-     "name": "railService",
-     "value": "[{\"railroad\": \"CSX\", \"qualifier\": \"direct\"}, {\"railroad\": \"Norfolk Southern\", \"qualifier\": \"via local switch\"}]"
-    },
-    {
-     "@type": "PropertyValue",
-     "name": "corridors",
-     "value": "[\"I-95\", \"I-64\", \"I-85\", \"I-295\"]"
-    },
-    {
-     "@type": "PropertyValue",
-     "name": "volumes",
-     "value": "[]"
-    },
-    {
-     "@type": "PropertyValue",
-     "name": "statusItems",
-     "value": "[{\"title\": \"No standalone volume published\", \"state\": \"No standalone annual TEU is published for Richmond Marine Terminal; no volume figure is published for it.\", \"asOf\": \"2026-11-02\", \"source\": \"Ports program dossier §1.3\"}, {\"title\": \"Barge service\", \"state\": \"The Richmond Express (64 Express, James River Barge Line for VIT) links RMT with NIT, VIG and PMT — three barges in rotation, 500 FEU combined capacity, about 12-hour overnight transit; the Port's 2025 growth report credits the 2024 barge service with keeping 30,000 trucks off the road.\", \"asOf\": \"2026-11-02\", \"source\": \"Port of Virginia RMT sheets and 2025 growth report, via ports program dossier §1.3\"}]"
-    },
-    {
-     "@type": "PropertyValue",
-     "name": "branchBinding",
-     "value": "{\"branch\": \"winchester\", \"bindingBasis\": \"miles\", \"milesFromWinchester\": 135, \"timeFromWinchester\": \"about 2:39\", \"milesFromMartinsburg\": 158, \"timeFromMartinsburg\": \"about 3:00\", \"routeFromBindingBranch\": \"I-81 S to I-64 E to I-95 S, Richmond\", \"marginNote\": \"about 23 mi / about 20 min closer from Winchester; secondary node (section of the Port of Virginia hub, no dedicated hub page or dataset file in wave 1)\", \"branchPageUrl\": \"https://theflatratemovers.com/locations/winchester-va/\"}"
-    },
-    {
-     "@type": "PropertyValue",
-     "name": "sources",
-     "value": "[\"https://www.portofvirginia.com/wp-content/uploads/2026/08/POV_2026-RMT.pdf\", \"https://portofvirginia.com/wp-content/uploads/2023/09/2023-RMT-1-Pager.pdf\", \"https://www.portofvirginia.com/wp-content/uploads/2025/10/POV_2025_RMT_GrowthReport_v14.pdf\", \"https://www.freightwaves.com/news/city-of-richmond-leases-port-to-state-for-40-years\"]"
     },
     {
      "@type": "PropertyValue",

@@ -1,0 +1,225 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/philaport/#dataset-philaport",
+   "name": "PhilaPort Logistics Dataset",
+   "description": "The per-port dataset for PhilaPort — the Port of Philadelphia — in the Ports & Intermodal program of The Flat Rate Movers: the full port record for the landlord port of the Philadelphia Regional Port Authority (PhilaPort, Commonwealth of Pennsylvania), run by private terminal operators under lease — Packer Avenue Marine Terminal (Greenwich Terminals LLC; 160 acres, 6 berths plus 1 RoRo berth, 45 ft depth, on-dock refrigeration), Tioga Marine Terminal (Delaware River Stevedores; 116 acres) and the Southport Auto Terminal (Glovis America; opened October 2019) — the port's container volume on PhilaPort's named bases (889,268 TEU in CY2025, a port record, up 6 percent and up 39 percent since 2020; 64 percent of containerized imports refrigerated in CY2025; ranked #1 in North America for productivity in the World Bank/S&P Container Port Performance Index, 2024 index), CSX and Norfolk Southern service at every PhilaPort terminal via Conrail Shared Assets switching, the I-95, I-76, I-70 and I-81 corridors, and the branch binding: the port is bound to the Martinsburg, WV branch on drive time (about 3:23), the road distances being effectively tied at about 191 miles from Martinsburg and 193 from Winchester — no mileage advantage is claimed. No port-wide total tonnage is published. The company's eight attached port services are recorded cell by cell in the companion coverage dataset. No port tenancy or port-authority relationship is claimed; the company's crews hold TWIC cards and its contractors hold valid TWIC cards.",
+   "url": "https://theflatratemovers.com/datasets/philaport/",
+   "sameAs": "https://theflatratemovers.com/datasets/philaport/",
+   "identifier": "https://theflatratemovers.com/datasets/philaport/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "datePublished": "2026-11-10",
+   "dateModified": "2026-11-10",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "keywords": "PhilaPort, Port of Philadelphia, Philadelphia Regional Port Authority, Packer Avenue Marine Terminal, Greenwich Terminals, Tioga Marine Terminal, Southport Auto Terminal, reefer cargo, refrigerated imports, Conrail Shared Assets, container terminal, transloading, freight rework, Martinsburg WV",
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-transloading"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-freight-rework-transloading"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-philaport.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-philaport.json",
+     "encodingFormat": "application/json"
+    }
+   ],
+   "isPartOf": {
+    "@id": "https://theflatratemovers.com/datasets/ports/#dataset-ports"
+   }
+  },
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/philaport/#dataset-philaport-coverage",
+   "name": "PhilaPort Service Coverage Dataset",
+   "description": "The service-coverage cells for the PhilaPort in the Ports & Intermodal program: the eight attached services (transloading; ocean container packing and unpacking; loading and unloading / container labor; cross-docking; freight rework; specialized workforce; logistics project management; 3PL support services), each recorded as offered with its delivery points (port-adjacent warehouse, receiver's dock, yard, leased space, and on-terminal by arrangement — on-terminal work happens only by arrangement through the terminal's own processes, never as a bare claim) and its bound branch, Martinsburg, WV. Drayage is not offered at any port in the program.",
+   "url": "https://theflatratemovers.com/datasets/philaport/",
+   "sameAs": "https://theflatratemovers.com/datasets/philaport/",
+   "identifier": "https://theflatratemovers.com/datasets/philaport/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "datePublished": "2026-11-10",
+   "dateModified": "2026-11-10",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "keywords": "service coverage, PhilaPort, delivery points, branch binding, transloading coverage, Martinsburg, WV",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "coverageMatrix",
+     "value": "[{\"port\":\"port-philaport\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true,\"treatmentNote\":\"the perishable and breakbulk spoke carries PM and 3P for this port\"},{\"port\":\"port-philaport\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true,\"treatmentNote\":\"the perishable and breakbulk spoke carries PM and 3P for this port\"}]"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-philaport.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-philaport.json",
+     "encodingFormat": "application/json"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/philaport/#port-philaport",
+   "name": "PhilaPort — Port of Philadelphia",
+   "alternateName": "PhilaPort",
+   "description": "PhilaPort — Port of Philadelphia (Philadelphia, PA) — deepwater marine port (containers, reefer, breakbulk, forest products, autos). Authority: PhilaPort (Philadelphia Regional Port Authority, Commonwealth of Pennsylvania). Operator: Private terminal operators under lease (landlord port): Packer Avenue — Greenwich Terminals LLC; Tioga — Delaware River Stevedores; Southport Auto — Glovis America. Cargo: refrigerated and perishable cargo — 64 percent of containerized imports were refrigerated (CY2025); containers; forest products (newsprint, coated paper, wood pulp); breakbulk and project cargo; cocoa (Pier 84); autos. Rail: CSX — at every PhilaPort terminal, via Conrail Shared Assets switching; Norfolk Southern — at every PhilaPort terminal, via Conrail Shared Assets switching. Highway corridors: I-95, I-76, I-70, I-81. Volume (CY2025, calendar): 889,268 TEU — PhilaPort containers — a port record (+6 percent; +39 percent since 2020) (source: The Produce News / PhilaPort, CY2025 results, via ports program dossier §1.5). Branch binding: this port is served from the Martinsburg, WV branch of The Flat Rate Movers — about 193 road miles from Winchester and 191 from Martinsburg; bound to Martinsburg on time. bound on drive time only — road miles are tied (difference 0-3 mi); no mileage advantage is claimed.",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3301 S Christopher Columbus Blvd",
+    "addressLocality": "Philadelphia",
+    "addressRegion": "PA",
+    "postalCode": "19148",
+    "addressCountry": "US"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.90606,
+    "longitude": -75.13803
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "portAuthority",
+     "value": "PhilaPort (Philadelphia Regional Port Authority, Commonwealth of Pennsylvania)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "operator",
+     "value": "Private terminal operators under lease (landlord port): Packer Avenue — Greenwich Terminals LLC; Tioga — Delaware River Stevedores; Southport Auto — Glovis America"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "terminals",
+     "value": "[{\"name\":\"Packer Avenue Marine Terminal\",\"port\":\"port-philaport\",\"operatorName\":\"Greenwich Terminals LLC\",\"cargoTypes\":[\"containers\",\"steel\",\"frozen meat\",\"fruit\",\"heavy-lift\",\"project cargo\",\"paper\"],\"specs\":[{\"label\":\"Site size\",\"value\":\"160 acres\",\"source\":\"PhilaPort, Packer Avenue Marine Terminal page\"},{\"label\":\"Berths\",\"value\":\"6 berths + 1 RoRo berth\",\"source\":\"PhilaPort, Packer Avenue Marine Terminal page\"},{\"label\":\"Depth\",\"value\":\"45 ft\",\"source\":\"PhilaPort, Packer Avenue Marine Terminal page\"},{\"label\":\"Refrigeration\",\"value\":\"on-dock refrigeration; immediate I-95/I-76 access\",\"source\":\"PhilaPort, Packer Avenue Marine Terminal page\"},{\"label\":\"Largest vessel call\",\"value\":\"CMA CGM Marco Polo, 16,200 TEU, March 2024\",\"source\":\"PhilaPort, via ports program dossier §1.5\"}],\"railAccess\":{\"railroads\":[\"CSX\",\"Norfolk Southern\",\"CN\"],\"onDock\":true},\"gateHours\":null},{\"name\":\"Tioga Marine Terminal\",\"port\":\"port-philaport\",\"operatorName\":\"Delaware River Stevedores\",\"cargoTypes\":[\"forest products\",\"containers\",\"steel\",\"over-dimensional\",\"project and breakbulk cargo\"],\"specs\":[{\"label\":\"Site size\",\"value\":\"116 acres; long-standing Chilean fruit and Brazilian eucalyptus pulp base; cold storage\",\"source\":\"PhilaPort / Delaware River Stevedores, via ports program dossier §1.5\"}],\"railAccess\":{\"railroads\":[\"CSX\",\"Norfolk Southern\"],\"onDock\":true},\"gateHours\":null},{\"name\":\"Southport Auto Terminal\",\"port\":\"port-philaport\",\"operatorName\":\"Glovis America\",\"cargoTypes\":[\"autos\"],\"specs\":[{\"label\":\"Opened\",\"value\":\"October 2019; 155 acres; about 350,000 autos/yr capacity; Glovis signed an MOU in Oct 2026 to extend its lease through 2056 and expand\",\"source\":\"AJOT / Baird Maritime, via ports program dossier §1.5\"}],\"railAccess\":{\"railroads\":[\"CSX\",\"Norfolk Southern\"],\"onDock\":true},\"gateHours\":null}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "cargoSpecialties",
+     "value": "[\"refrigerated and perishable cargo — 64 percent of containerized imports were refrigerated (CY2025)\",\"containers\",\"forest products (newsprint, coated paper, wood pulp)\",\"breakbulk and project cargo\",\"cocoa (Pier 84)\",\"autos\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "railService",
+     "value": "[{\"railroad\":\"CSX\",\"qualifier\":\"at every PhilaPort terminal, via Conrail Shared Assets switching\"},{\"railroad\":\"Norfolk Southern\",\"qualifier\":\"at every PhilaPort terminal, via Conrail Shared Assets switching\"}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "corridors",
+     "value": "[\"I-95\",\"I-76\",\"I-70\",\"I-81\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "volumes",
+     "value": "[{\"value\":889268,\"unit\":\"TEU\",\"period\":\"CY2025\",\"fiscalOrCalendar\":\"calendar\",\"scope\":\"PhilaPort containers — a port record (+6 percent; +39 percent since 2020)\",\"source\":\"The Produce News / PhilaPort, CY2025 results, via ports program dossier §1.5\"}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "statusItems",
+     "value": "[{\"title\":\"Productivity ranking\",\"state\":\"Ranked #1 in North America for productivity in the World Bank/S&P Container Port Performance Index (2024 index). Port-wide total tonnage for 2024/2025 is unverified — none is published.\",\"asOf\":\"2026-11-02\",\"source\":\"PhilaPort, via ports program dossier §1.5\"},{\"title\":\"Southport Marine Terminal expansion (distinct from the Southport Auto Terminal)\",\"state\":\"Announced 13 Oct 2026: $371.5M state within an $837M package, a new 2,000-ft berth (first in 50 years), +122 percent container-capacity projection, and development of the 152-acre Mustin Yard acquired from Norfolk Southern (Sept 2025).\",\"asOf\":\"2026-11-02\",\"source\":\"Baird Maritime, via ports program dossier §1.5\"}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "{\"branch\":\"martinsburg\",\"bindingBasis\":\"time\",\"milesFromWinchester\":193,\"timeFromWinchester\":\"3:36-3:45\",\"milesFromMartinsburg\":191,\"timeFromMartinsburg\":\"about 3:23\",\"routeFromBindingBranch\":\"I-81 N to I-70 E to I-95 N, Philadelphia\",\"marginNote\":\"bound on drive time only — road miles are tied (difference 0-3 mi); no mileage advantage is claimed\",\"branchPageUrl\":\"https://theflatratemovers.com/locations/martinsburg-wv/\"}"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "sources",
+     "value": "[\"https://www.philaport.com/facilities/packer-avenue-marine-terminal/\",\"https://www.theproducenews.com/philaport-sets-record-container-volume-2025\",\"https://www.philaport.com/philadelphia-named-most-productive-port-in-north-america/\",\"https://d-r-s.com/Philadelphia.aspx\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "lastVerified",
+     "value": "2026-11-03"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/ports/#port-philaport"
+  }
+ ]
+}

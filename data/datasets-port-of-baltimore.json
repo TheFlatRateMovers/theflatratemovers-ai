@@ -1,0 +1,225 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/port-of-baltimore/#dataset-port-of-baltimore",
+   "name": "Port of Baltimore Logistics Dataset",
+   "description": "The per-port dataset for the Port of Baltimore in the Ports & Intermodal program of The Flat Rate Movers: the full port record for the Helen Delich Bentley Port of Baltimore — the public terminals owned by the State of Maryland and managed by the Maryland Port Administration (MDOT MPA), with Seagirt Marine Terminal operated by Ports America Chesapeake under a 50-year public-private partnership from 2010 — its terminals (Seagirt Marine Terminal, 4 berths at 50 ft with 1.5M TEU/yr capacity; the Intermodal Container Transfer Facility, CSX Intermodal, on-dock at Seagirt; Dundalk Marine Terminal, 570 acres; North and South Locust Point; and the Fairfield / Masonville auto and RoRo complex), the port's container volume and cargo rankings on the Maryland Port Administration's named bases (1,113,309 TEU in CY2025, a port record; the highest RoRo farm and construction equipment tonnage of any U.S. port, 887,513 short tons in CY2025; first among U.S. ports for forest products, 1.1M short tons in CY2025; second in the U.S. for autos and light trucks, 728,225 units in CY2025), on-dock CSX service at the ICTF with Norfolk Southern serving the port via interchange and the Canton Railroad, the I-95, I-695, I-70, I-83 and I-81 corridors, and the branch binding: the port is served from the Martinsburg, WV branch, about 91-96 road miles away (Winchester measures 106-116). The company's eight attached port services are recorded cell by cell in the companion coverage dataset. No port tenancy or port-authority relationship is claimed; the company's crews hold TWIC cards and its contractors hold valid TWIC cards.",
+   "url": "https://theflatratemovers.com/datasets/port-of-baltimore/",
+   "sameAs": "https://theflatratemovers.com/datasets/port-of-baltimore/",
+   "identifier": "https://theflatratemovers.com/datasets/port-of-baltimore/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "datePublished": "2026-11-10",
+   "dateModified": "2026-11-10",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "keywords": "Port of Baltimore, Helen Delich Bentley Port of Baltimore, Maryland Port Administration, MDOT MPA, Seagirt Marine Terminal, Ports America Chesapeake, Dundalk Marine Terminal, Intermodal Container Transfer Facility, ICTF, Locust Point, Fairfield Masonville, RoRo, forest products, container terminal, transloading, freight rework, Martinsburg WV",
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-transloading"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-freight-rework-transloading"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-port-of-baltimore.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-port-of-baltimore.json",
+     "encodingFormat": "application/json"
+    }
+   ],
+   "isPartOf": {
+    "@id": "https://theflatratemovers.com/datasets/ports/#dataset-ports"
+   }
+  },
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/port-of-baltimore/#dataset-port-of-baltimore-coverage",
+   "name": "Port of Baltimore Service Coverage Dataset",
+   "description": "The service-coverage cells for the Port of Baltimore in the Ports & Intermodal program: the eight attached services (transloading; ocean container packing and unpacking; loading and unloading / container labor; cross-docking; freight rework; specialized workforce; logistics project management; 3PL support services), each recorded as offered with its delivery points (port-adjacent warehouse, receiver's dock, yard, leased space, and on-terminal by arrangement — on-terminal work happens only by arrangement through the terminal's own processes, never as a bare claim) and its bound branch, Martinsburg, WV. Drayage is not offered at any port in the program.",
+   "url": "https://theflatratemovers.com/datasets/port-of-baltimore/",
+   "sameAs": "https://theflatratemovers.com/datasets/port-of-baltimore/",
+   "identifier": "https://theflatratemovers.com/datasets/port-of-baltimore/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "datePublished": "2026-11-10",
+   "dateModified": "2026-11-10",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "keywords": "service coverage, Port of Baltimore, delivery points, branch binding, transloading coverage, Martinsburg, WV",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "coverageMatrix",
+     "value": "[{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"S\",\"spokePage\":true,\"treatmentNote\":\"new spoke lands in batch P5\"},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"S\",\"spokePage\":true,\"treatmentNote\":\"new spoke lands in batch P5\"},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true}]"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-port-of-baltimore.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-port-of-baltimore.json",
+     "encodingFormat": "application/json"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/port-of-baltimore/#port-of-baltimore",
+   "name": "Helen Delich Bentley Port of Baltimore",
+   "alternateName": "Port of Baltimore",
+   "description": "Helen Delich Bentley Port of Baltimore (Baltimore, MD) — deepwater marine port (containers, RoRo, autos, forest products, breakbulk). Authority: Maryland Port Administration (MDOT MPA). Operator: Maryland Port Administration (public terminals are state-owned and MPA-managed; Seagirt is operated by Ports America Chesapeake under a 50-year public-private partnership from 2010). Cargo: containers (Seagirt); RoRo farm and construction equipment — highest tonnage of any U.S. port (887,513 tons, 2025); forest products — first among U.S. ports (1.1M tons, 2025); autos and light trucks — second in the U.S. (728,225 units, 2025). Rail: CSX — on-dock at the ICTF adjacent to Seagirt (CSX Intermodal); CSX direct to all North Locust Point berths; Norfolk Southern — serves the port via interchange / Canton Railroad — not an on-dock Seagirt operator. Highway corridors: I-95, I-695, I-70, I-83, I-81. Volume (CY2025, calendar): 1,113,309 TEU — Port of Baltimore containers — a port record (source: Maryland Port Administration 2025 results release, 2026-03-24). Volume (CY2025, calendar): 887,513 short tons — RoRo farm and construction equipment — highest of any U.S. port (source: Maryland Port Administration 2025 results release, 2026-03-24). Volume (CY2025, calendar): 1,100,000 short tons — Forest products — first among U.S. ports (published as 1.1M tons) (source: Maryland Port Administration 2025 results release, 2026-03-24). Volume (CY2025, calendar): 728,225 units — Autos and light trucks — second in the U.S. (source: Maryland Port Administration 2025 results release, 2026-03-24). Branch binding: this port is served from the Martinsburg, WV branch of The Flat Rate Movers — about 106-116 road miles from Winchester and 91-96 from Martinsburg; bound to Martinsburg on miles. modest margin, about 12-18 mi; Winchester is a credible support branch.",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2600 Broening Hwy",
+    "addressLocality": "Baltimore",
+    "addressRegion": "MD",
+    "postalCode": "21224",
+    "addressCountry": "US"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.25707,
+    "longitude": -76.5378
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "portAuthority",
+     "value": "Maryland Port Administration (MDOT MPA)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "operator",
+     "value": "Maryland Port Administration (public terminals are state-owned and MPA-managed; Seagirt is operated by Ports America Chesapeake under a 50-year public-private partnership from 2010)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "terminals",
+     "value": "[{\"name\":\"Seagirt Marine Terminal\",\"port\":\"port-of-baltimore\",\"operatorName\":\"Ports America Chesapeake\",\"cargoTypes\":[\"containers\"],\"specs\":[{\"label\":\"Berths\",\"value\":\"4\",\"source\":\"Maryland Port Administration, Seagirt Marine Terminal page\"},{\"label\":\"Depth\",\"value\":\"50 ft\",\"source\":\"Maryland Port Administration, Seagirt Marine Terminal page\"},{\"label\":\"Capacity\",\"value\":\"1.5M TEU/yr\",\"source\":\"Maryland Port Administration, Seagirt Marine Terminal page\"},{\"label\":\"Grain transload facility\",\"value\":\"opened in 2026 reporting (Ports America Chesapeake with Frey Commodities: 3 silos, 60,000 bushels, 200+ containers/week, Canton Railroad interchange with CSX and NS)\",\"source\":\"Governor of Maryland press release, 2026, via ports program dossier §1.4\"}],\"railAccess\":{\"railroads\":[\"CSX\"],\"onDock\":true,\"note\":\"on-dock rail is the adjacent ICTF (CSX Intermodal); Norfolk Southern serves the port via interchange / Canton Railroad and is not an on-dock Seagirt operator\"},\"gateHours\":null},{\"name\":\"Intermodal Container Transfer Facility (ICTF)\",\"port\":\"port-of-baltimore\",\"operatorName\":\"CSX Intermodal\",\"cargoTypes\":[\"intermodal containers (rail)\"],\"specs\":[{\"label\":\"Site size\",\"value\":\"68 acres\",\"source\":\"Maryland Port Administration, Intermodal page\"},{\"label\":\"Service\",\"value\":\"CSX direct service only, about 6 trains/day; a $42M expansion is in construction (5 new working tracks, electrified RTGs) taking design lift capacity from about 60-70k/yr toward 160,000+\",\"source\":\"Maryland Port Administration, Intermodal page; Progressive Railroading, via ports program dossier §1.4\"}],\"railAccess\":{\"railroads\":[\"CSX\"],\"onDock\":true},\"gateHours\":null},{\"name\":\"Dundalk Marine Terminal\",\"port\":\"port-of-baltimore\",\"operatorName\":\"Maryland Port Administration\",\"cargoTypes\":[\"containers\",\"breakbulk\",\"wood pulp\",\"RoRo\",\"autos\",\"project cargo\",\"farm and construction equipment\"],\"specs\":[{\"label\":\"Site size\",\"value\":\"570 acres\",\"source\":\"Maryland State Archives / MPA terminal data, via ports program dossier §1.4\"},{\"label\":\"Berths\",\"value\":\"13\",\"source\":\"Maryland State Archives / MPA terminal data, via ports program dossier §1.4\"},{\"label\":\"Inside storage\",\"value\":\"about 790,000 sq ft\",\"source\":\"Maryland State Archives / MPA terminal data, via ports program dossier §1.4\"}],\"railAccess\":{\"railroads\":[\"CSX\",\"Norfolk Southern\"],\"onDock\":\"interchange\"},\"gateHours\":null},{\"name\":\"North Locust Point\",\"port\":\"port-of-baltimore\",\"operatorName\":\"Maryland Port Administration\",\"cargoTypes\":[\"forest products\",\"steel\",\"breakbulk\",\"project cargo\",\"wood pulp\",\"lumber\",\"latex\",\"paper\"],\"specs\":[{\"label\":\"Heavy-lift\",\"value\":\"45-long-ton container crane and two 75-ton whirley cranes; CSX direct to all berths; 2.25 mi to I-95\",\"source\":\"Maryland Port Administration, North Locust Point page\"}],\"railAccess\":{\"railroads\":[\"CSX\"],\"onDock\":true},\"gateHours\":null},{\"name\":\"South Locust Point (incl. Maryland Cruise Terminal)\",\"port\":\"port-of-baltimore\",\"operatorName\":\"Maryland Port Administration\",\"cargoTypes\":[\"forest products\",\"cruise\"],\"specs\":[{\"label\":\"Inside storage\",\"value\":\"about 935,000 sq ft\",\"source\":\"Maryland State Archives / MPA terminal data, via ports program dossier §1.4\"}],\"railAccess\":{\"railroads\":[\"CSX\"],\"onDock\":\"interchange\"},\"gateHours\":null},{\"name\":\"Fairfield / Masonville (auto and RoRo complex)\",\"port\":\"port-of-baltimore\",\"operatorName\":\"Maryland Port Administration\",\"cargoTypes\":[\"autos\",\"RoRo\"],\"specs\":[{\"label\":\"Footprint\",\"value\":\"160-acre public Fairfield/Masonville terminals adjacent to 250 acres of private auto terminals; combined port auto/RoRo footprint 710 acres\",\"source\":\"Maryland Port Administration, auto page\"}],\"railAccess\":{\"railroads\":[\"CSX\",\"Norfolk Southern\"],\"onDock\":\"interchange\"},\"gateHours\":null}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "cargoSpecialties",
+     "value": "[\"containers (Seagirt)\",\"RoRo farm and construction equipment — highest tonnage of any U.S. port (887,513 tons, 2025)\",\"forest products — first among U.S. ports (1.1M tons, 2025)\",\"autos and light trucks — second in the U.S. (728,225 units, 2025)\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "railService",
+     "value": "[{\"railroad\":\"CSX\",\"qualifier\":\"on-dock at the ICTF adjacent to Seagirt (CSX Intermodal); CSX direct to all North Locust Point berths\"},{\"railroad\":\"Norfolk Southern\",\"qualifier\":\"serves the port via interchange / Canton Railroad — not an on-dock Seagirt operator\"}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "corridors",
+     "value": "[\"I-95\",\"I-695\",\"I-70\",\"I-83\",\"I-81\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "volumes",
+     "value": "[{\"value\":1113309,\"unit\":\"TEU\",\"period\":\"CY2025\",\"fiscalOrCalendar\":\"calendar\",\"scope\":\"Port of Baltimore containers — a port record\",\"source\":\"Maryland Port Administration 2025 results release, 2026-03-24\"},{\"value\":887513,\"unit\":\"short tons\",\"period\":\"CY2025\",\"fiscalOrCalendar\":\"calendar\",\"scope\":\"RoRo farm and construction equipment — highest of any U.S. port\",\"source\":\"Maryland Port Administration 2025 results release, 2026-03-24\"},{\"value\":1100000,\"unit\":\"short tons\",\"period\":\"CY2025\",\"fiscalOrCalendar\":\"calendar\",\"scope\":\"Forest products — first among U.S. ports (published as 1.1M tons)\",\"source\":\"Maryland Port Administration 2025 results release, 2026-03-24\"},{\"value\":728225,\"unit\":\"units\",\"period\":\"CY2025\",\"fiscalOrCalendar\":\"calendar\",\"scope\":\"Autos and light trucks — second in the U.S.\",\"source\":\"Maryland Port Administration 2025 results release, 2026-03-24\"}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "statusItems",
+     "value": "[{\"title\":\"Francis Scott Key Bridge rebuild\",\"state\":\"MDTA's current position is $4.3-5.2B with opening late 2030; the channel was fully restored 10 June 2024 (700 ft x 50 ft). Until late 2030 the I-695 beltway's south-east quadrant stays severed; port trucks route via the I-95/I-895 tunnels and the I-695 west side.\",\"asOf\":\"2026-11-02\",\"source\":\"MDTA / USACE reporting, via ports program dossier §1.4\"},{\"title\":\"Howard Street Tunnel double-stack\",\"state\":\"The $518M CSX clearance project reopened the tunnel Sept 2025; double-stack service formally began June 2026 (about 160,000 containers/yr expected gain).\",\"asOf\":\"2026-11-10\",\"source\":\"Maryland Port Administration CY2025 results release, 2026-03-24 (ports-completion audit §1.2)\"}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "{\"branch\":\"martinsburg\",\"bindingBasis\":\"miles\",\"milesFromWinchester\":\"106-116\",\"timeFromWinchester\":\"1:51-1:56\",\"milesFromMartinsburg\":\"91-96\",\"timeFromMartinsburg\":\"1:37-1:46\",\"routeFromBindingBranch\":\"I-81 N to I-70 E to I-695 (west side) / I-95, Baltimore\",\"marginNote\":\"modest margin, about 12-18 mi; Winchester is a credible support branch\",\"branchPageUrl\":\"https://theflatratemovers.com/locations/martinsburg-wv/\"}"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "sources",
+     "value": "[\"https://mpa.maryland.gov/Press%20Releases/Press03242026.pdf\",\"https://mpa.maryland.gov/pages/seagirt-marine-terminal.aspx\",\"https://mpa.maryland.gov/Pages/intermodal.aspx\",\"https://mpa.maryland.gov/Pages/north-locust-point.aspx\",\"https://msa.maryland.gov/msa/mdmanual/01glance/html/port.html\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "lastVerified",
+     "value": "2026-11-03"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/ports/#port-of-baltimore"
+  }
+ ]
+}

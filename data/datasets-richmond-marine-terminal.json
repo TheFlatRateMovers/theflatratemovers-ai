@@ -1,0 +1,225 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/richmond-marine-terminal/#dataset-richmond-marine-terminal",
+   "name": "Richmond Marine Terminal Logistics Dataset",
+   "description": "The per-port dataset for Richmond Marine Terminal in the Ports & Intermodal program of The Flat Rate Movers: the full port record for the James River barge terminal at 5000 Deepwater Terminal Rd, Richmond, VA — owned by the City of Richmond, leased by the Virginia Port Authority under a 40-year lease signed 2016 (to 2056) and operated by Virginia International Terminals, LLC as part of the Port of Virginia system — 124 acres with 300,000 sq ft of storage, a mobile harbor crane in the 124-ton class, three reefer plugs, a Monday-Friday 0700-1600 gate, on-terminal transload and cross-docking, CSX direct rail with Norfolk Southern via local switch, and the Richmond Express (64 Express) barge service: three barges in rotation, 500 FEU combined capacity, running six days a week with about a 12-hour overnight transit to Norfolk International Terminals, the Virginia International Gateway and Portsmouth Marine Terminal. No standalone annual volume is published for this terminal. The I-95, I-64, I-85 and I-295 corridors, and the branch binding: the terminal is served from the Winchester, VA branch, about 135 road miles away (Martinsburg measures about 158). The company's eight attached port services are recorded cell by cell in the companion coverage dataset. No port tenancy or port-authority relationship is claimed; the company's crews hold TWIC cards and its contractors hold valid TWIC cards.",
+   "url": "https://theflatratemovers.com/datasets/richmond-marine-terminal/",
+   "sameAs": "https://theflatratemovers.com/datasets/richmond-marine-terminal/",
+   "identifier": "https://theflatratemovers.com/datasets/richmond-marine-terminal/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "datePublished": "2026-11-10",
+   "dateModified": "2026-11-10",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "keywords": "Richmond Marine Terminal, RMT, Port of Virginia, Virginia Port Authority, Virginia International Terminals, Richmond Express, 64 Express, James River barge, Deepwater Terminal, barge containers, transloading, cross-docking, freight rework, Winchester VA",
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-transloading"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-freight-rework-transloading"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-richmond-marine-terminal.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-richmond-marine-terminal.json",
+     "encodingFormat": "application/json"
+    }
+   ],
+   "isPartOf": {
+    "@id": "https://theflatratemovers.com/datasets/ports/#dataset-ports"
+   }
+  },
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/richmond-marine-terminal/#dataset-richmond-marine-terminal-coverage",
+   "name": "Richmond Marine Terminal Service Coverage Dataset",
+   "description": "The service-coverage cells for the Richmond Marine Terminal in the Ports & Intermodal program: the eight attached services (transloading; ocean container packing and unpacking; loading and unloading / container labor; cross-docking; freight rework; specialized workforce; logistics project management; 3PL support services), each recorded as offered with its delivery points (port-adjacent warehouse, receiver's dock, yard, leased space, and on-terminal by arrangement — on-terminal work happens only by arrangement through the terminal's own processes, never as a bare claim) and its bound branch, Winchester, VA. Drayage is not offered at any port in the program.",
+   "url": "https://theflatratemovers.com/datasets/richmond-marine-terminal/",
+   "sameAs": "https://theflatratemovers.com/datasets/richmond-marine-terminal/",
+   "identifier": "https://theflatratemovers.com/datasets/richmond-marine-terminal/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "datePublished": "2026-11-10",
+   "dateModified": "2026-11-10",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "keywords": "service coverage, Richmond Marine Terminal, delivery points, branch binding, transloading coverage, Winchester, VA",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "coverageMatrix",
+     "value": "[{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"treatmentNote\":\"hub section live (batch P3)\"},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"treatmentNote\":\"hub section live (batch P3)\"},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"serviceStatus\":\"registered in batch P4\",\"datasetOnly\":true},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"serviceStatus\":\"registered in batch P4\",\"datasetOnly\":true}]"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-richmond-marine-terminal.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-richmond-marine-terminal.json",
+     "encodingFormat": "application/json"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/richmond-marine-terminal/#port-richmond-marine-terminal",
+   "name": "Richmond Marine Terminal",
+   "alternateName": "RMT",
+   "description": "Richmond Marine Terminal (Richmond, VA) — river barge terminal (inland port). Authority: Virginia Port Authority (operator under lease). Operator: Virginia International Terminals, LLC — the City of Richmond owns the terminal; the Virginia Port Authority leases it under a 40-year lease signed 2016 (to 2056). Cargo: barge containers on the Richmond Express (64 Express) James River barge service linking Richmond with NIT, VIG and PMT; breakbulk. Rail: CSX — direct; Norfolk Southern — via local switch. Highway corridors: I-95, I-64, I-85, I-295. Branch binding: this port is served from the Winchester, VA branch of The Flat Rate Movers — about 135 road miles from Winchester and 158 from Martinsburg; bound to Winchester on miles. about 23 mi / about 20 min closer from Winchester; secondary node (section of the Port of Virginia hub, no dedicated hub page or dataset file in wave 1).",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5000 Deepwater Terminal Rd",
+    "addressLocality": "Richmond",
+    "addressRegion": "VA",
+    "postalCode": "23234",
+    "addressCountry": "US"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.45564,
+    "longitude": -77.42259
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "portAuthority",
+     "value": "Virginia Port Authority (operator under lease)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "operator",
+     "value": "Virginia International Terminals, LLC — the City of Richmond owns the terminal; the Virginia Port Authority leases it under a 40-year lease signed 2016 (to 2056)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "terminals",
+     "value": "[{\"name\":\"Richmond Marine Terminal\",\"port\":\"port-richmond-marine-terminal\",\"operatorName\":\"Virginia International Terminals, LLC\",\"cargoTypes\":[\"containers (barge)\",\"breakbulk\"],\"specs\":[{\"label\":\"Site size\",\"value\":\"124 acres\",\"source\":\"Port of Virginia RMT terminal sheet, 2026 (the 2023 sheet said 121 acres; the 2026 sheet governs)\"},{\"label\":\"Storage\",\"value\":\"300,000 sq ft covered and uncovered\",\"source\":\"Port of Virginia RMT terminal sheet, 2026\"},{\"label\":\"Crane\",\"value\":\"mobile harbor crane, 124-ton class\",\"source\":\"Port of Virginia RMT terminal sheet, 2026\"},{\"label\":\"On-terminal capability\",\"value\":\"on-terminal transload and cross-docking for container cargo to and from railcars or domestic trucks\",\"source\":\"Port of Virginia RMT terminal sheet, 2026\"}],\"railAccess\":{\"railroads\":[\"CSX\"],\"onDock\":true,\"note\":\"CSX direct; NS via local switch\"},\"gateHours\":\"Monday-Friday 0700-1600\"}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "cargoSpecialties",
+     "value": "[\"barge containers on the Richmond Express (64 Express) James River barge service linking Richmond with NIT, VIG and PMT\",\"breakbulk\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "railService",
+     "value": "[{\"railroad\":\"CSX\",\"qualifier\":\"direct\"},{\"railroad\":\"Norfolk Southern\",\"qualifier\":\"via local switch\"}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "corridors",
+     "value": "[\"I-95\",\"I-64\",\"I-85\",\"I-295\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "volumes",
+     "value": "[]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "statusItems",
+     "value": "[{\"title\":\"No standalone volume published\",\"state\":\"No standalone annual TEU is published for Richmond Marine Terminal; no volume figure is published for it.\",\"asOf\":\"2026-11-02\",\"source\":\"Ports program dossier §1.3\"},{\"title\":\"Barge service\",\"state\":\"The Richmond Express (64 Express, James River Barge Line for VIT) links RMT with NIT, VIG and PMT — three barges in rotation, 500 FEU combined capacity, about 12-hour overnight transit; the Port's 2025 growth report credits the 2024 barge service with keeping 30,000 trucks off the road.\",\"asOf\":\"2026-11-02\",\"source\":\"Port of Virginia RMT sheets and 2025 growth report, via ports program dossier §1.3\"}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "{\"branch\":\"winchester\",\"bindingBasis\":\"miles\",\"milesFromWinchester\":135,\"timeFromWinchester\":\"about 2:39\",\"milesFromMartinsburg\":158,\"timeFromMartinsburg\":\"about 3:00\",\"routeFromBindingBranch\":\"I-81 S to I-64 E to I-95 S, Richmond\",\"marginNote\":\"about 23 mi / about 20 min closer from Winchester; secondary node (section of the Port of Virginia hub, no dedicated hub page or dataset file in wave 1)\",\"branchPageUrl\":\"https://theflatratemovers.com/locations/winchester-va/\"}"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "sources",
+     "value": "[\"https://www.portofvirginia.com/wp-content/uploads/2026/08/POV_2026-RMT.pdf\",\"https://portofvirginia.com/wp-content/uploads/2023/09/2023-RMT-1-Pager.pdf\",\"https://www.portofvirginia.com/wp-content/uploads/2025/10/POV_2025_RMT_GrowthReport_v14.pdf\",\"https://www.freightwaves.com/news/city-of-richmond-leases-port-to-state-for-40-years\"]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "lastVerified",
+     "value": "2026-11-03"
+    }
+   ],
+   "sameAs": "https://theflatratemovers.com/datasets/ports/#port-richmond-marine-terminal"
+  }
+ ]
+}

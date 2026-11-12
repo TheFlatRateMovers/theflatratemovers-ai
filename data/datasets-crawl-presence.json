@@ -7,7 +7,7 @@
       "name": "The Flat Rate Movers — Crawl Presence Registry Operations",
       "description": "The standing registry of the training/research-corpora element for The Flat Rate Movers: every Common Crawl collection’s recorded answer for this domain — captures classified by URL class and content era, with the query state and method on every collection — the recorded robots posture under which crawling happens (owner decision, 2026-10-31: Option 1, open training), the signed signal-observation log that proves what the estate’s robots file said and when, and the element’s gap records P1–P6 each with its designed solution. Query it three ways: the full JSON file; ?table= on the API route; and the ?table= form of /v1/datasets for the estate inventory.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-12",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -238,7 +238,7 @@
       "name": "Crawl Presence Registry Dataset — Scope",
       "description": "What this registry is and the rules it runs on. Corpus presence is per-collection, era-tagged and method-honest: the registry joins three things — the Common Crawl collection list, the per-collection capture sets classified by URL class and content era, and the robots posture under which each crawl happened — so “what does the crawl hold about us” is a query result with dates, not folklore. The current estate (cutover 2026-10-28, per-route form 2026-10-31) is present in zero collections until a post-cutover collection carries it; everything the crawl holds today describes predecessor sites, and this registry says so in its era fields rather than letting the counts imply otherwise.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-12",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -339,7 +339,7 @@
       "name": "Crawl Presence Registry Dataset — Collections",
       "description": "Every collection in Common Crawl’s collinfo at seed time (129), each with its query state, the verbatim query method, the attempt count under the retry discipline, and the crawl window observed for this domain (first/last capture timestamps among this domain’s rows; where the domain returned no captures, no window is derivable and none is invented). 129 collections answered cleanly, 0 partially, 0 stand as unverifiable-index-error — visible states, retried on the cadence.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-12",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -2583,7 +2583,7 @@
       "name": "Crawl Presence Registry Dataset — Crawl Presence (capture rows)",
       "description": "One row per capture the index returned for this domain: 16197 rows (14822 with status 200), each carrying its collection, URL, capture timestamp, status, WARC digest, computed URL class and computed content era. 0 rows are current-era: until a post-cutover collection exists, the crawl’s entire holding about this domain is predecessor-era, and this table is the proof of that statement rather than its summary.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-12",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -180828,7 +180828,7 @@
       "name": "Crawl Presence Registry Dataset — Presence Summary",
       "description": "The generated view over the capture rows: per collection × URL class capture counts and 200-counts, per-era totals, and per-class totals. This is the P5 dilution curve (predecessor-era captures vs current-era, per collection, over time) and the P2 sampling mix (which URL classes the frontier actually took), as data.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-12",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -186121,7 +186121,7 @@
       "name": "Crawl Presence Registry Dataset — Robots Policy (decision record)",
       "description": "The robots posture under which crawling of this estate happens, recorded as the owner’s decision: Option 1 — open training — chosen 2026-10-31, and declared in-band in the file itself on 2026-11-02 (sitemap-extensions batch). The record carries the per-agent table parsed from the live file (agent, purpose class — training / retrieval / archive / other — and posture), the served file’s digest from the signed signal observation, the deployed source file’s digest, the drift-gate result, the Content-Signal fields read from the served file (search=yes, ai-input=yes, ai-train=yes as declared 2026-11-02), and the __usage_ai-training token state (present, Allow: / — the affirmative in-band form of the same open-training decision).",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-12",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -186469,7 +186469,7 @@
       "name": "Crawl Presence Registry Dataset — Signal Observations (signed log)",
       "description": "The append-only, hash-chained signal log in the reconciliation’s 22-field shape: each entry records one observation of a preference signal exactly as served — response-headers digest, body digest, byte size, the stored raw artifact, the parsed directives, and the validity window — with entry_digest = SHA-256 over the entry’s JCS-canonical form (digest/signature fields omitted) and an Ed25519 signature over the digest bytes, verifiable against the estate’s published JWKS (https://theflatratemovers.com/.well-known/signing-keys.json, kid theflatratemovers-2026-10-29-1). The optional RFC 3161 timestamp_token field stands unpopulated: no Time-Stamp Authority has been adopted. First entry: the served robots.txt of 2026-10-31. The log’s latest entry (2026-11-02, sig-2026-11-02-robots-003, recorded after the sitemap-extensions batch’s deliberate in-band declaration of the standing open-training posture) records the currently served file — its body digest equals the deployed source file’s digest, which is the drift gate’s no-drift evidence.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-12",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -187120,7 +187120,7 @@
       "name": "Crawl Presence Registry Dataset — Filter Inspections",
       "description": "Extraction inspections of real WET records (Dossier 05 P4): what corpus builders’ extraction actually makes of this domain’s pages — completeness, boilerplate share, repeated-line fraction — scored per sampled URL. The table stands empty by design: no current-estate capture exists to inspect yet, and no row may be written from inference. The first inspection runs against the debut post-cutover capture in batch E5-B4.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-12",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -187198,7 +187198,7 @@
       "name": "Crawl Presence Registry Dataset — Corpus Release Checks",
       "description": "Checks of named downstream corpus releases (FineWeb-class) for this domain’s documents. State: not-checked — no downstream release has been queried for this domain as of 2026-10-31, and nothing here claims or denies presence in any named training set. Rows are added only when a real check runs, with its method and date (§5.1 honesty rule). Private and licensed corpora publish no membership and are beyond measurement; the registry’s honest scope is the open ecosystem.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-12",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -187277,7 +187277,7 @@
       "name": "Crawl Presence Registry Dataset — Gaps and Designed Solutions (P1–P6)",
       "description": "The element’s gap records, each with its evidence, its impact and its designed solution — solutions, not problem lists (owner ruling 2026-10-31). P3 (the training-posture decision) is resolved by the owner’s 2026-10-31 decision; P6 (the unverifiable 2026 collections) is resolved or narrowed by this batch’s seed sweep, with any still-unreadable collection standing as an explicit row rather than a hole.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-12",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -187422,7 +187422,7 @@
       "name": "Crawl Presence Registry Dataset — Mechanism Pins",
       "description": "The verified mechanism facts this element’s decisions rest on, pinned by the crosscheck reconciliation (2026-10-31) against primary sources: what TDMRep and the IETF aipref drafts are and are not, where the only living C2PA-adjacent training assertion lives, the shared __usage_ai-training token’s honoring commitments, and the adherence standing of per-purpose signals generally. Stated as facts with sources, so the posture debate never has to be re-litigated from memory.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-12",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -187530,7 +187530,7 @@
       "name": "Crawl Presence Registry Dataset — Totals",
       "description": "Registry totals, generated: collections by query state, capture rows by era and URL class, the era-review flag count, robots agents by purpose class, and the table populations (signal observations, filter inspections, corpus release checks, gaps, mechanism pins).",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-12",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -187647,7 +187647,7 @@
       "name": "Crawl Presence Registry — Method",
       "description": "How the registry is built and maintained. (1) A seed sweep queries every Common Crawl collection in collinfo for the domain wildcard, 2026 series first, under a retry/back-off discipline; each collection’s answer — captures, a clean “No Captures”, a partial read, or an index error after all retries — is frozen as the generator’s seed with the verbatim method and attempt counts. (2) URL class and content era are computed from the returned rows by fixed rules (URL-form marker lists; capture timestamp vs the 2026-10-28 cutover); contradictions are flagged, not smoothed. (3) The robots policy is parsed from the deployed source file, and generation fails if the served file’s digest — carried by the signed signal observation — differs from the source’s: the drift gate. (4) Signal observations are appended by observing, digest-chaining and signing; historical entries are never edited. (5) Cadence: monthly, aligned to collection releases, plus a run whenever collinfo gains a collection; every regeneration re-seals the file in the estate’s signed index in the same motion.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-12",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -187715,7 +187715,7 @@
       "name": "Crawl Presence Registry — Sources",
       "description": "The evidence base for this registry: Common Crawl’s collinfo and per-collection indexes, queried live 2026-10-31 (the seed sweep recorded on every collection row); the estate’s live robots.txt, fetched and signed as signal observation sig-2026-10-31-robots-001; an Internet Archive CDX check for captures of the current robots.txt (none exists — the latest, 2026-03-03/04, are of the predecessor file; recorded on the observation, not used as its snapshot); Retrieval Machine Dossier 05 (the corpora audit and design, reads of 2026-10-31); the crosscheck reconciliation’s Element 5 build inputs (mechanism pins and the signal-observation shape, verified against primary sources); and the owner’s P3 decision of 2026-10-31 (Option 1, open training).",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-12",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {
@@ -187808,7 +187808,7 @@
       "name": "Crawl Presence Registry — Boundaries",
       "description": "What this registry will not do. It never presents a capture count — ours or anyone’s — as a standing, quality or authority signal; counts here are crawl-coverage observations with dates. It never records a capture, a window, a snapshot or an adherence claim it did not observe: unverifiable states are rows, absences are zeros on collection rows, and unrun checks are labeled not-checked. It never edits the recorded past: historical rows and signed observations are immutable. It makes no claim about private or licensed corpora, which publish no membership. And it does not decide posture: the training decision is the owner’s, recorded here exactly as made (Option 1, 2026-10-31) and enforced by the drift gate, never editorialized.",
       "inLanguage": "en-US",
-      "dateModified": "2026-11-04",
+      "dateModified": "2026-11-12",
       "isAccessibleForFree": true,
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "creator": {

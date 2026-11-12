@@ -173,24 +173,24 @@
      "name": "Coverage table (feature x service)",
      "contentUrl": "https://theflatratemovers.com/datasets/coverage/coverage-table.json",
      "encodingFormat": "application/json",
-     "contentSize": 551251,
-     "sha256": "98b4cfc10390c0848c1d3459fb917cf92e87e2f03621beb9ff8c987476ba2ec6"
+     "contentSize": 560377,
+     "sha256": "ddf6f67022748b4d1b2d4a60e066c89d9b146c72ad30ca9f3320d7ec958077ae"
     },
     {
      "@type": "DataDownload",
      "name": "Place pairs distance table",
      "contentUrl": "https://theflatratemovers.com/datasets/coverage/pairs-table.json",
      "encodingFormat": "application/json",
-     "contentSize": 1077067,
-     "sha256": "c154d3f9c5c3fd4529c5304d10e42d790a853c412b06434383f9b724e21c95f5"
+     "contentSize": 1103519,
+     "sha256": "7da58c481fa884bef66a1ac0ba176f6712ea1d2d22c2c7509e76db7079bb5c8c"
     },
     {
      "@type": "DataDownload",
      "name": "Features table",
      "contentUrl": "https://theflatratemovers.com/datasets/coverage/features-table.json",
      "encodingFormat": "application/json",
-     "contentSize": 43346,
-     "sha256": "2fee87976a39f2538437a0193dd64ea55668530d3ccf16c6a6773ae9510307cf"
+     "contentSize": 43907,
+     "sha256": "e7f7a3c4de5a0287adc5a2cf3a27c19ff63d9b70e04e5e0dd6d5c5de78687e1b"
     },
     {
      "@type": "DataDownload",
@@ -205,8 +205,8 @@
      "name": "Service-area GeoJSON (the source map)",
      "contentUrl": "https://theflatratemovers.com/service-area.geojson",
      "encodingFormat": "application/json",
-     "contentSize": 153324,
-     "sha256": "736b7755ba0316049bc2f3ec37cdcc29db2fee5b6c208229f43954cef8febca6"
+     "contentSize": 155386,
+     "sha256": "8d7e44780deacdfcf23e3bebdf68718752adf012d461be9a442b25ac1dccd177"
     }
    ]
   },
@@ -2595,6 +2595,36 @@
    "containedInPlace": [
     {
      "@id": "https://theflatratemovers.com/#place-county-rappahannock-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-new-market-va",
+   "name": "New Market, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.64641,
+    "longitude": -78.67235
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-shenandoah-va"
     },
     {
      "@id": "https://theflatratemovers.com/#place-state-va"

@@ -370,7 +370,7 @@
      "name": "Estate API (api.theflatratemovers.com)",
      "kind": "first-party read API",
      "url": "https://api.theflatratemovers.com/v1/datasets",
-     "distributionScope": "The API worker bundles every dataset file at each refresh (refresh-bundle.py derives the set from the signed index) and serves it byte-identical at /v1/datasets and per-registry routes. At this generation the live bundle lists 57 of 57 files; a file published after the last refresh joins at the next batch close.",
+     "distributionScope": "The API worker bundles every dataset file at each refresh (refresh-bundle.py derives the set from the signed index) and serves it byte-identical at /v1/datasets and per-registry routes. At this generation the live bundle lists 57 of 69 files; a file published after the last refresh joins at the next batch close.",
      "status": "live-current",
      "lastObserved": "2026-11-12"
     },
@@ -379,7 +379,7 @@
      "name": "GitHub — theflatratemovers-ai (data/)",
      "kind": "public repository mirror",
      "url": "https://github.com/TheFlatRateMovers/theflatratemovers-ai/tree/main/data",
-     "distributionScope": "Every dataset file is mirrored under data/ in the public AI repository at each batch close (push-mirrors glob rule). At this generation the mirror tree (origin/main @ abca7cd) carries 57 of 57 files, 15 blob-current.",
+     "distributionScope": "Every dataset file is mirrored under data/ in the public AI repository at each batch close (push-mirrors glob rule). At this generation the mirror tree (origin/main @ 33287bc) carries 57 of 69 files, 14 blob-current.",
      "status": "live-current",
      "lastObserved": "2026-11-12"
     },
@@ -421,7 +421,7 @@
      "name": "Zenodo — dataset line (record 23879049)",
      "kind": "DOI deposit (versioned snapshot)",
      "url": "https://zenodo.org/records/23879049",
-     "distributionScope": "The dataset deposit is a versioned snapshot zip (the-flat-rate-movers-datasets-2026-11-02.zip), not a live mirror: at this generation’s read it holds 38 of 57 dataset files, 0 digest-current. A new-version deposit at the next release is the recorded remedy (gap C2). The record’s concept DOI is the citable dataset DOI; it is carried here as data fields only and never as an identifier of any node in this file (gate CR-4).",
+     "distributionScope": "The dataset deposit is a versioned snapshot zip (the-flat-rate-movers-datasets-2026-11-02.zip), not a live mirror: at this generation’s read it holds 38 of 69 dataset files, 0 digest-current. A new-version deposit at the next release is the recorded remedy (gap C2). The record’s concept DOI is the citable dataset DOI; it is carried here as data fields only and never as an identifier of any node in this file (gate CR-4).",
      "recordVersionDoi": "10.5281/zenodo.23879049",
      "recordConceptDoi": "10.5281/zenodo.23879048",
      "status": "live-stale (snapshot of 2026-11-02)",
@@ -462,7 +462,7 @@
    "@type": "Dataset",
    "@id": "https://theflatratemovers.com/datasets-catalog-registry.json#dataset-catalog-registry-datasets",
    "name": "Dataset Catalog Registry — The Join: Datasets x Catalog Seats",
-   "description": "The join itself: 399 rows at this generation — 57 dataset files x 7 seats. Every row names its dataset file and catalog, the presence state with its dated evidence (method, observed date, source), the computed version-sync state, and — on the website and dataset-search seats — the file’s metadata completeness in the DC vocabulary. Read it as the answer to one question per row: is this dataset in this catalog, and is the copy there the current generation?",
+   "description": "The join itself: 483 rows at this generation — 69 dataset files x 7 seats. Every row names its dataset file and catalog, the presence state with its dated evidence (method, observed date, source), the computed version-sync state, and — on the website and dataset-search seats — the file’s metadata completeness in the DC vocabulary. Read it as the answer to one question per row: is this dataset in this catalog, and is the copy there the current generation?",
    "inLanguage": "en-US",
    "dateModified": "2026-11-12",
    "isAccessibleForFree": true,
@@ -607,7 +607,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -713,7 +713,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -819,7 +819,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -864,6 +864,218 @@
     },
     {
      "dataset_id": "datasets-b2b-specialty-rubric.json",
+     "catalog_id": "dataset-search",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Estate-level recorded audits only: the surface exposes no per-dataset presence signal (gap CR-G2), so every file carries the estate-level recorded state — absent at the last full audit (2026-10-31), with sampled re-checks since; the cadence re-checks from this registry’s observation store.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-10-31",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-berkeley-springs-wv.json",
+     "catalog_id": "website",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "Local file SHA-256 compared to the signed master index digest at generation.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "current",
+     "last_observed": "2026-11-12",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-berkeley-springs-wv.json",
+     "catalog_id": "api",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-berkeley-springs-wv.json",
+     "catalog_id": "github-ai",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok): data/datasets-berkeley-springs-wv.json is not in the tree.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-berkeley-springs-wv.json",
+     "catalog_id": "huggingface-estate",
+     "presence_state": "unverified (read failed)",
+     "presenceEvidence": {
+      "method": "Hub API tree read failed at generation (surrogate returned no credential); the seat computes stale-unknown, never current. Last verified state stands in the catalogs node (2026-11-02 observation).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale-unknown",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-berkeley-springs-wv.json",
+     "catalog_id": "huggingface-intent",
+     "presence_state": "not-applicable",
+     "presenceEvidence": {
+      "method": "This repo carries the intent dataset only; every other dataset file is not-applicable on this seat by design.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-berkeley-springs-wv.json",
+     "catalog_id": "zenodo",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "The current dataset-line deposit zip (record 23879049) was downloaded and listed at generation: this file is not in it. The deposit predates the file’s publication; a new-version deposit is the recorded remedy (gap C2).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-berkeley-springs-wv.json",
+     "catalog_id": "dataset-search",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Estate-level recorded audits only: the surface exposes no per-dataset presence signal (gap CR-G2), so every file carries the estate-level recorded state — absent at the last full audit (2026-10-31), with sampled re-checks since; the cadence re-checks from this registry’s observation store.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-10-31",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-berryville-va.json",
+     "catalog_id": "website",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "Local file SHA-256 compared to the signed master index digest at generation.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "current",
+     "last_observed": "2026-11-12",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-berryville-va.json",
+     "catalog_id": "api",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-berryville-va.json",
+     "catalog_id": "github-ai",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok): data/datasets-berryville-va.json is not in the tree.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-berryville-va.json",
+     "catalog_id": "huggingface-estate",
+     "presence_state": "unverified (read failed)",
+     "presenceEvidence": {
+      "method": "Hub API tree read failed at generation (surrogate returned no credential); the seat computes stale-unknown, never current. Last verified state stands in the catalogs node (2026-11-02 observation).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale-unknown",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-berryville-va.json",
+     "catalog_id": "huggingface-intent",
+     "presence_state": "not-applicable",
+     "presenceEvidence": {
+      "method": "This repo carries the intent dataset only; every other dataset file is not-applicable on this seat by design.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-berryville-va.json",
+     "catalog_id": "zenodo",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "The current dataset-line deposit zip (record 23879049) was downloaded and listed at generation: this file is not in it. The deposit predates the file’s publication; a new-version deposit is the recorded remedy (gap C2).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-berryville-va.json",
      "catalog_id": "dataset-search",
      "presence_state": "absent-observed",
      "presenceEvidence": {
@@ -925,7 +1137,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd) lists data/datasets-catalog-registry.json; the mirror holds the previous sealed generation of this file — the registry trails itself by one generation on mirror seats by construction (see the method node); the post-close blob equality is recorded in the batch record.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc) lists data/datasets-catalog-registry.json; the mirror holds the previous sealed generation of this file — the registry trails itself by one generation on mirror seats by construction (see the method node); the post-close blob equality is recorded in the batch record.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -992,6 +1204,112 @@
      }
     },
     {
+     "dataset_id": "datasets-charles-town-wv.json",
+     "catalog_id": "website",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "Local file SHA-256 compared to the signed master index digest at generation.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "current",
+     "last_observed": "2026-11-12",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-charles-town-wv.json",
+     "catalog_id": "api",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-charles-town-wv.json",
+     "catalog_id": "github-ai",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok): data/datasets-charles-town-wv.json is not in the tree.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-charles-town-wv.json",
+     "catalog_id": "huggingface-estate",
+     "presence_state": "unverified (read failed)",
+     "presenceEvidence": {
+      "method": "Hub API tree read failed at generation (surrogate returned no credential); the seat computes stale-unknown, never current. Last verified state stands in the catalogs node (2026-11-02 observation).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale-unknown",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-charles-town-wv.json",
+     "catalog_id": "huggingface-intent",
+     "presence_state": "not-applicable",
+     "presenceEvidence": {
+      "method": "This repo carries the intent dataset only; every other dataset file is not-applicable on this seat by design.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-charles-town-wv.json",
+     "catalog_id": "zenodo",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "The current dataset-line deposit zip (record 23879049) was downloaded and listed at generation: this file is not in it. The deposit predates the file’s publication; a new-version deposit is the recorded remedy (gap C2).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-charles-town-wv.json",
+     "catalog_id": "dataset-search",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Estate-level recorded audits only: the surface exposes no per-dataset presence signal (gap CR-G2), so every file carries the estate-level recorded state — absent at the last full audit (2026-10-31), with sampled re-checks since; the cadence re-checks from this registry’s observation store.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-10-31",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
      "dataset_id": "datasets-commercial.json",
      "catalog_id": "website",
      "presence_state": "present-verified",
@@ -1031,7 +1349,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -1129,7 +1447,7 @@
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
-     "version_sync_state": "current",
+     "version_sync_state": "stale",
      "last_observed": "2026-11-12"
     },
     {
@@ -1137,11 +1455,11 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
-     "version_sync_state": "current",
+     "version_sync_state": "stale",
      "last_observed": "2026-11-12"
     },
     {
@@ -1243,7 +1561,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -1349,7 +1667,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -1455,7 +1773,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -1561,7 +1879,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -1667,7 +1985,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -1773,7 +2091,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -1818,6 +2136,112 @@
     },
     {
      "dataset_id": "datasets-freight-rework.json",
+     "catalog_id": "dataset-search",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Estate-level recorded audits only: the surface exposes no per-dataset presence signal (gap CR-G2), so every file carries the estate-level recorded state — absent at the last full audit (2026-10-31), with sampled re-checks since; the cadence re-checks from this registry’s observation store.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-10-31",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-front-royal-va.json",
+     "catalog_id": "website",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "Local file SHA-256 compared to the signed master index digest at generation.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "current",
+     "last_observed": "2026-11-12",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-front-royal-va.json",
+     "catalog_id": "api",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-front-royal-va.json",
+     "catalog_id": "github-ai",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok): data/datasets-front-royal-va.json is not in the tree.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-front-royal-va.json",
+     "catalog_id": "huggingface-estate",
+     "presence_state": "unverified (read failed)",
+     "presenceEvidence": {
+      "method": "Hub API tree read failed at generation (surrogate returned no credential); the seat computes stale-unknown, never current. Last verified state stands in the catalogs node (2026-11-02 observation).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale-unknown",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-front-royal-va.json",
+     "catalog_id": "huggingface-intent",
+     "presence_state": "not-applicable",
+     "presenceEvidence": {
+      "method": "This repo carries the intent dataset only; every other dataset file is not-applicable on this seat by design.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-front-royal-va.json",
+     "catalog_id": "zenodo",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "The current dataset-line deposit zip (record 23879049) was downloaded and listed at generation: this file is not in it. The deposit predates the file’s publication; a new-version deposit is the recorded remedy (gap C2).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-front-royal-va.json",
      "catalog_id": "dataset-search",
      "presence_state": "absent-observed",
      "presenceEvidence": {
@@ -1879,7 +2303,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -1985,7 +2409,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -2091,7 +2515,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -2197,7 +2621,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -2303,7 +2727,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -2409,7 +2833,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -2476,6 +2900,112 @@
      }
     },
     {
+     "dataset_id": "datasets-inwood-wv.json",
+     "catalog_id": "website",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "Local file SHA-256 compared to the signed master index digest at generation.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "current",
+     "last_observed": "2026-11-12",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-inwood-wv.json",
+     "catalog_id": "api",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-inwood-wv.json",
+     "catalog_id": "github-ai",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok): data/datasets-inwood-wv.json is not in the tree.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-inwood-wv.json",
+     "catalog_id": "huggingface-estate",
+     "presence_state": "unverified (read failed)",
+     "presenceEvidence": {
+      "method": "Hub API tree read failed at generation (surrogate returned no credential); the seat computes stale-unknown, never current. Last verified state stands in the catalogs node (2026-11-02 observation).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale-unknown",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-inwood-wv.json",
+     "catalog_id": "huggingface-intent",
+     "presence_state": "not-applicable",
+     "presenceEvidence": {
+      "method": "This repo carries the intent dataset only; every other dataset file is not-applicable on this seat by design.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-inwood-wv.json",
+     "catalog_id": "zenodo",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "The current dataset-line deposit zip (record 23879049) was downloaded and listed at generation: this file is not in it. The deposit predates the file’s publication; a new-version deposit is the recorded remedy (gap C2).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-inwood-wv.json",
+     "catalog_id": "dataset-search",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Estate-level recorded audits only: the surface exposes no per-dataset presence signal (gap CR-G2), so every file carries the estate-level recorded state — absent at the last full audit (2026-10-31), with sampled re-checks since; the cadence re-checks from this registry’s observation store.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-10-31",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
      "dataset_id": "datasets-ispm15.json",
      "catalog_id": "website",
      "presence_state": "present-verified",
@@ -2515,7 +3045,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -2621,7 +3151,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -2727,7 +3257,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -2833,7 +3363,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -2939,7 +3469,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -3045,7 +3575,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -3151,7 +3681,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -3218,6 +3748,112 @@
      }
     },
     {
+     "dataset_id": "datasets-martinsburg-wv.json",
+     "catalog_id": "website",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "Local file SHA-256 compared to the signed master index digest at generation.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "current",
+     "last_observed": "2026-11-12",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-martinsburg-wv.json",
+     "catalog_id": "api",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-martinsburg-wv.json",
+     "catalog_id": "github-ai",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok): data/datasets-martinsburg-wv.json is not in the tree.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-martinsburg-wv.json",
+     "catalog_id": "huggingface-estate",
+     "presence_state": "unverified (read failed)",
+     "presenceEvidence": {
+      "method": "Hub API tree read failed at generation (surrogate returned no credential); the seat computes stale-unknown, never current. Last verified state stands in the catalogs node (2026-11-02 observation).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale-unknown",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-martinsburg-wv.json",
+     "catalog_id": "huggingface-intent",
+     "presence_state": "not-applicable",
+     "presenceEvidence": {
+      "method": "This repo carries the intent dataset only; every other dataset file is not-applicable on this seat by design.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-martinsburg-wv.json",
+     "catalog_id": "zenodo",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "The current dataset-line deposit zip (record 23879049) was downloaded and listed at generation: this file is not in it. The deposit predates the file’s publication; a new-version deposit is the recorded remedy (gap C2).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-martinsburg-wv.json",
+     "catalog_id": "dataset-search",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Estate-level recorded audits only: the surface exposes no per-dataset presence signal (gap CR-G2), so every file carries the estate-level recorded state — absent at the last full audit (2026-10-31), with sampled re-checks since; the cadence re-checks from this registry’s observation store.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-10-31",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
      "dataset_id": "datasets-medical-lab-relocation.json",
      "catalog_id": "website",
      "presence_state": "present-verified",
@@ -3257,7 +3893,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -3363,7 +3999,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -3469,7 +4105,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -3536,6 +4172,112 @@
      }
     },
     {
+     "dataset_id": "datasets-new-market-va.json",
+     "catalog_id": "website",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "Local file SHA-256 compared to the signed master index digest at generation.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "current",
+     "last_observed": "2026-11-12",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-new-market-va.json",
+     "catalog_id": "api",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-new-market-va.json",
+     "catalog_id": "github-ai",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok): data/datasets-new-market-va.json is not in the tree.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-new-market-va.json",
+     "catalog_id": "huggingface-estate",
+     "presence_state": "unverified (read failed)",
+     "presenceEvidence": {
+      "method": "Hub API tree read failed at generation (surrogate returned no credential); the seat computes stale-unknown, never current. Last verified state stands in the catalogs node (2026-11-02 observation).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale-unknown",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-new-market-va.json",
+     "catalog_id": "huggingface-intent",
+     "presence_state": "not-applicable",
+     "presenceEvidence": {
+      "method": "This repo carries the intent dataset only; every other dataset file is not-applicable on this seat by design.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-new-market-va.json",
+     "catalog_id": "zenodo",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "The current dataset-line deposit zip (record 23879049) was downloaded and listed at generation: this file is not in it. The deposit predates the file’s publication; a new-version deposit is the recorded remedy (gap C2).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-new-market-va.json",
+     "catalog_id": "dataset-search",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Estate-level recorded audits only: the surface exposes no per-dataset presence signal (gap CR-G2), so every file carries the estate-level recorded state — absent at the last full audit (2026-10-31), with sampled re-checks since; the cadence re-checks from this registry’s observation store.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-10-31",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
      "dataset_id": "datasets-ocean-container.json",
      "catalog_id": "website",
      "presence_state": "present-verified",
@@ -3575,7 +4317,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -3681,7 +4423,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -3787,7 +4529,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -3893,7 +4635,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -3999,7 +4741,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -4105,7 +4847,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -4211,7 +4953,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -4317,7 +5059,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -4423,7 +5165,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -4529,7 +5271,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -4635,7 +5377,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -4741,7 +5483,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -4847,7 +5589,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -4953,7 +5695,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -5059,7 +5801,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -5165,7 +5907,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -5271,7 +6013,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -5339,112 +6081,6 @@
     },
     {
      "dataset_id": "datasets-senior.json",
-     "catalog_id": "website",
-     "presence_state": "present-verified",
-     "presenceEvidence": {
-      "method": "Local file SHA-256 compared to the signed master index digest at generation.",
-      "observedAt": "2026-11-12",
-      "source": "catalog registry generator run, 2026-11-12"
-     },
-     "version_sync_state": "current",
-     "last_observed": "2026-11-12",
-     "metadata_completeness": {
-      "DC-1": "pass",
-      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
-      "DC-3": "pass",
-      "DC-4": "pass",
-      "DC-5": {
-       "carriesSoftwareConceptDOI": false,
-       "carriesDatasetConceptDOI": false,
-       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
-      }
-     }
-    },
-    {
-     "dataset_id": "datasets-senior.json",
-     "catalog_id": "api",
-     "presence_state": "present-verified",
-     "presenceEvidence": {
-      "method": "Live GET /v1/datasets lists this file; sync computed from the refresh-bundle manifest digest record (bundle-manifest.json) against the signed master index digest.",
-      "observedAt": "2026-11-12",
-      "source": "catalog registry generator run, 2026-11-12"
-     },
-     "version_sync_state": "stale",
-     "last_observed": "2026-11-12"
-    },
-    {
-     "dataset_id": "datasets-senior.json",
-     "catalog_id": "github-ai",
-     "presence_state": "present-verified",
-     "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
-      "observedAt": "2026-11-12",
-      "source": "catalog registry generator run, 2026-11-12"
-     },
-     "version_sync_state": "stale",
-     "last_observed": "2026-11-12"
-    },
-    {
-     "dataset_id": "datasets-senior.json",
-     "catalog_id": "huggingface-estate",
-     "presence_state": "unverified (read failed)",
-     "presenceEvidence": {
-      "method": "Hub API tree read failed at generation (surrogate returned no credential); the seat computes stale-unknown, never current. Last verified state stands in the catalogs node (2026-11-02 observation).",
-      "observedAt": "2026-11-12",
-      "source": "catalog registry generator run, 2026-11-12"
-     },
-     "version_sync_state": "stale-unknown",
-     "last_observed": "2026-11-12"
-    },
-    {
-     "dataset_id": "datasets-senior.json",
-     "catalog_id": "huggingface-intent",
-     "presence_state": "not-applicable",
-     "presenceEvidence": {
-      "method": "This repo carries the intent dataset only; every other dataset file is not-applicable on this seat by design.",
-      "observedAt": "2026-11-12",
-      "source": "catalog registry generator run, 2026-11-12"
-     },
-     "version_sync_state": null,
-     "last_observed": "2026-11-12"
-    },
-    {
-     "dataset_id": "datasets-senior.json",
-     "catalog_id": "zenodo",
-     "presence_state": "present-verified",
-     "presenceEvidence": {
-      "method": "The current dataset-line deposit zip (record 23879049) was downloaded at generation; sync = SHA-256 of the zipped copy vs the signed master index digest.",
-      "observedAt": "2026-11-12",
-      "source": "catalog registry generator run, 2026-11-12"
-     },
-     "version_sync_state": "stale",
-     "last_observed": "2026-11-12"
-    },
-    {
-     "dataset_id": "datasets-senior.json",
-     "catalog_id": "dataset-search",
-     "presence_state": "absent-observed",
-     "presenceEvidence": {
-      "method": "Estate-level recorded audits only: the surface exposes no per-dataset presence signal (gap CR-G2), so every file carries the estate-level recorded state — absent at the last full audit (2026-10-31), with sampled re-checks since; the cadence re-checks from this registry’s observation store.",
-      "observedAt": "2026-11-12",
-      "source": "catalog registry generator run, 2026-11-12"
-     },
-     "version_sync_state": null,
-     "last_observed": "2026-10-31",
-     "metadata_completeness": {
-      "DC-1": "pass",
-      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
-      "DC-3": "pass",
-      "DC-4": "pass",
-      "DC-5": {
-       "carriesSoftwareConceptDOI": false,
-       "carriesDatasetConceptDOI": false,
-       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
-      }
-     }
-    },
-    {
-     "dataset_id": "datasets-sir-heavy.json",
      "catalog_id": "website",
      "presence_state": "present-verified",
      "presenceEvidence": {
@@ -5467,6 +6103,218 @@
      }
     },
     {
+     "dataset_id": "datasets-senior.json",
+     "catalog_id": "api",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "Live GET /v1/datasets lists this file; sync computed from the refresh-bundle manifest digest record (bundle-manifest.json) against the signed master index digest.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-senior.json",
+     "catalog_id": "github-ai",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-senior.json",
+     "catalog_id": "huggingface-estate",
+     "presence_state": "unverified (read failed)",
+     "presenceEvidence": {
+      "method": "Hub API tree read failed at generation (surrogate returned no credential); the seat computes stale-unknown, never current. Last verified state stands in the catalogs node (2026-11-02 observation).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale-unknown",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-senior.json",
+     "catalog_id": "huggingface-intent",
+     "presence_state": "not-applicable",
+     "presenceEvidence": {
+      "method": "This repo carries the intent dataset only; every other dataset file is not-applicable on this seat by design.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-senior.json",
+     "catalog_id": "zenodo",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "The current dataset-line deposit zip (record 23879049) was downloaded at generation; sync = SHA-256 of the zipped copy vs the signed master index digest.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-senior.json",
+     "catalog_id": "dataset-search",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Estate-level recorded audits only: the surface exposes no per-dataset presence signal (gap CR-G2), so every file carries the estate-level recorded state — absent at the last full audit (2026-10-31), with sampled re-checks since; the cadence re-checks from this registry’s observation store.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-10-31",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-shepherdstown-wv.json",
+     "catalog_id": "website",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "Local file SHA-256 compared to the signed master index digest at generation.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "current",
+     "last_observed": "2026-11-12",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-shepherdstown-wv.json",
+     "catalog_id": "api",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-shepherdstown-wv.json",
+     "catalog_id": "github-ai",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok): data/datasets-shepherdstown-wv.json is not in the tree.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-shepherdstown-wv.json",
+     "catalog_id": "huggingface-estate",
+     "presence_state": "unverified (read failed)",
+     "presenceEvidence": {
+      "method": "Hub API tree read failed at generation (surrogate returned no credential); the seat computes stale-unknown, never current. Last verified state stands in the catalogs node (2026-11-02 observation).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale-unknown",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-shepherdstown-wv.json",
+     "catalog_id": "huggingface-intent",
+     "presence_state": "not-applicable",
+     "presenceEvidence": {
+      "method": "This repo carries the intent dataset only; every other dataset file is not-applicable on this seat by design.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-shepherdstown-wv.json",
+     "catalog_id": "zenodo",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "The current dataset-line deposit zip (record 23879049) was downloaded and listed at generation: this file is not in it. The deposit predates the file’s publication; a new-version deposit is the recorded remedy (gap C2).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-shepherdstown-wv.json",
+     "catalog_id": "dataset-search",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Estate-level recorded audits only: the surface exposes no per-dataset presence signal (gap CR-G2), so every file carries the estate-level recorded state — absent at the last full audit (2026-10-31), with sampled re-checks since; the cadence re-checks from this registry’s observation store.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-10-31",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-sir-heavy.json",
+     "catalog_id": "website",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "Local file SHA-256 compared to the signed master index digest at generation.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "current",
+     "last_observed": "2026-11-12",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
      "dataset_id": "datasets-sir-heavy.json",
      "catalog_id": "api",
      "presence_state": "present-verified",
@@ -5483,7 +6331,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -5528,6 +6376,112 @@
     },
     {
      "dataset_id": "datasets-sir-heavy.json",
+     "catalog_id": "dataset-search",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Estate-level recorded audits only: the surface exposes no per-dataset presence signal (gap CR-G2), so every file carries the estate-level recorded state — absent at the last full audit (2026-10-31), with sampled re-checks since; the cadence re-checks from this registry’s observation store.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-10-31",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-strasburg-va.json",
+     "catalog_id": "website",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "Local file SHA-256 compared to the signed master index digest at generation.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "current",
+     "last_observed": "2026-11-12",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-strasburg-va.json",
+     "catalog_id": "api",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-strasburg-va.json",
+     "catalog_id": "github-ai",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok): data/datasets-strasburg-va.json is not in the tree.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-strasburg-va.json",
+     "catalog_id": "huggingface-estate",
+     "presence_state": "unverified (read failed)",
+     "presenceEvidence": {
+      "method": "Hub API tree read failed at generation (surrogate returned no credential); the seat computes stale-unknown, never current. Last verified state stands in the catalogs node (2026-11-02 observation).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale-unknown",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-strasburg-va.json",
+     "catalog_id": "huggingface-intent",
+     "presence_state": "not-applicable",
+     "presenceEvidence": {
+      "method": "This repo carries the intent dataset only; every other dataset file is not-applicable on this seat by design.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-strasburg-va.json",
+     "catalog_id": "zenodo",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "The current dataset-line deposit zip (record 23879049) was downloaded and listed at generation: this file is not in it. The deposit predates the file’s publication; a new-version deposit is the recorded remedy (gap C2).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-strasburg-va.json",
      "catalog_id": "dataset-search",
      "presence_state": "absent-observed",
      "presenceEvidence": {
@@ -5589,7 +6543,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -5695,7 +6649,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -5801,7 +6755,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -5907,7 +6861,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -6013,7 +6967,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -6119,7 +7073,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -6226,7 +7180,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -6333,7 +7287,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -6439,7 +7393,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -6506,6 +7460,112 @@
      }
     },
     {
+     "dataset_id": "datasets-washington-va.json",
+     "catalog_id": "website",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "Local file SHA-256 compared to the signed master index digest at generation.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "current",
+     "last_observed": "2026-11-12",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-washington-va.json",
+     "catalog_id": "api",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-washington-va.json",
+     "catalog_id": "github-ai",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok): data/datasets-washington-va.json is not in the tree.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-washington-va.json",
+     "catalog_id": "huggingface-estate",
+     "presence_state": "unverified (read failed)",
+     "presenceEvidence": {
+      "method": "Hub API tree read failed at generation (surrogate returned no credential); the seat computes stale-unknown, never current. Last verified state stands in the catalogs node (2026-11-02 observation).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale-unknown",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-washington-va.json",
+     "catalog_id": "huggingface-intent",
+     "presence_state": "not-applicable",
+     "presenceEvidence": {
+      "method": "This repo carries the intent dataset only; every other dataset file is not-applicable on this seat by design.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-washington-va.json",
+     "catalog_id": "zenodo",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "The current dataset-line deposit zip (record 23879049) was downloaded and listed at generation: this file is not in it. The deposit predates the file’s publication; a new-version deposit is the recorded remedy (gap C2).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-washington-va.json",
+     "catalog_id": "dataset-search",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Estate-level recorded audits only: the surface exposes no per-dataset presence signal (gap CR-G2), so every file carries the estate-level recorded state — absent at the last full audit (2026-10-31), with sampled re-checks since; the cadence re-checks from this registry’s observation store.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-10-31",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
      "dataset_id": "datasets-white-glove.json",
      "catalog_id": "website",
      "presence_state": "present-verified",
@@ -6545,7 +7605,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ abca7cd, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-12",
       "source": "catalog registry generator run, 2026-11-12"
      },
@@ -6590,6 +7650,218 @@
     },
     {
      "dataset_id": "datasets-white-glove.json",
+     "catalog_id": "dataset-search",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Estate-level recorded audits only: the surface exposes no per-dataset presence signal (gap CR-G2), so every file carries the estate-level recorded state — absent at the last full audit (2026-10-31), with sampled re-checks since; the cadence re-checks from this registry’s observation store.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-10-31",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-winchester-va.json",
+     "catalog_id": "website",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "Local file SHA-256 compared to the signed master index digest at generation.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "current",
+     "last_observed": "2026-11-12",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-winchester-va.json",
+     "catalog_id": "api",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-winchester-va.json",
+     "catalog_id": "github-ai",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok): data/datasets-winchester-va.json is not in the tree.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-winchester-va.json",
+     "catalog_id": "huggingface-estate",
+     "presence_state": "unverified (read failed)",
+     "presenceEvidence": {
+      "method": "Hub API tree read failed at generation (surrogate returned no credential); the seat computes stale-unknown, never current. Last verified state stands in the catalogs node (2026-11-02 observation).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale-unknown",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-winchester-va.json",
+     "catalog_id": "huggingface-intent",
+     "presence_state": "not-applicable",
+     "presenceEvidence": {
+      "method": "This repo carries the intent dataset only; every other dataset file is not-applicable on this seat by design.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-winchester-va.json",
+     "catalog_id": "zenodo",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "The current dataset-line deposit zip (record 23879049) was downloaded and listed at generation: this file is not in it. The deposit predates the file’s publication; a new-version deposit is the recorded remedy (gap C2).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-winchester-va.json",
+     "catalog_id": "dataset-search",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Estate-level recorded audits only: the surface exposes no per-dataset presence signal (gap CR-G2), so every file carries the estate-level recorded state — absent at the last full audit (2026-10-31), with sampled re-checks since; the cadence re-checks from this registry’s observation store.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-10-31",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-woodstock-va.json",
+     "catalog_id": "website",
+     "presence_state": "present-verified",
+     "presenceEvidence": {
+      "method": "Local file SHA-256 compared to the signed master index digest at generation.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "current",
+     "last_observed": "2026-11-12",
+     "metadata_completeness": {
+      "DC-1": "pass",
+      "DC-2": "suite-gate (verify.js DC-2 corpus verdict)",
+      "DC-3": "pass",
+      "DC-4": "pass",
+      "DC-5": {
+       "carriesSoftwareConceptDOI": false,
+       "carriesDatasetConceptDOI": false,
+       "placement": "suite-gate (verify.js DC-5: identifier-field placement on exactly the lawful holder nodes; content presence recorded here as a scan fact)"
+      }
+     }
+    },
+    {
+     "dataset_id": "datasets-woodstock-va.json",
+     "catalog_id": "api",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-woodstock-va.json",
+     "catalog_id": "github-ai",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "git ls-tree of the local mirror clone (origin/main @ 33287bc, fetch ok): data/datasets-woodstock-va.json is not in the tree.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-woodstock-va.json",
+     "catalog_id": "huggingface-estate",
+     "presence_state": "unverified (read failed)",
+     "presenceEvidence": {
+      "method": "Hub API tree read failed at generation (surrogate returned no credential); the seat computes stale-unknown, never current. Last verified state stands in the catalogs node (2026-11-02 observation).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": "stale-unknown",
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-woodstock-va.json",
+     "catalog_id": "huggingface-intent",
+     "presence_state": "not-applicable",
+     "presenceEvidence": {
+      "method": "This repo carries the intent dataset only; every other dataset file is not-applicable on this seat by design.",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-woodstock-va.json",
+     "catalog_id": "zenodo",
+     "presence_state": "absent-observed",
+     "presenceEvidence": {
+      "method": "The current dataset-line deposit zip (record 23879049) was downloaded and listed at generation: this file is not in it. The deposit predates the file’s publication; a new-version deposit is the recorded remedy (gap C2).",
+      "observedAt": "2026-11-12",
+      "source": "catalog registry generator run, 2026-11-12"
+     },
+     "version_sync_state": null,
+     "last_observed": "2026-11-12"
+    },
+    {
+     "dataset_id": "datasets-woodstock-va.json",
      "catalog_id": "dataset-search",
      "presence_state": "absent-observed",
      "presenceEvidence": {
@@ -9566,6 +10838,18 @@
     },
     {
      "date": "2026-11-12",
+     "catalog_id": "api",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-12: live /v1/datasets lists 57 of 69 dataset files; 56 digest-current per the refresh-bundle manifest record, 1 stale, 12 absent (published after the last bundle refresh; the batch-close refresh is the remedy)."
+    },
+    {
+     "date": "2026-11-12",
+     "catalog_id": "api",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-12: live /v1/datasets lists 57 of 69 dataset files; 14 digest-current per the refresh-bundle manifest record, 43 stale, 12 absent (published after the last bundle refresh; the batch-close refresh is the remedy)."
+    },
+    {
+     "date": "2026-11-12",
      "catalog_id": "dataset-search",
      "kind": "diagnostic-test",
      "result": "T2 re-validated from primary sources on 2026-11-12 (the 2026-11-01 diagnostic’s primary record file could not be located — only its outcome statement survives in the 2026-11-01 daily log — so the test was RE-RUN, per the prep’s remedy): required Dataset properties per Google’s own dataset documentation (name; description 50–5,000 chars; DataDownload contentUrl) PASS on all three representative landings’ primary Dataset nodes (datasets hub, intent-coverage, gun-safe), and no required-property form difference exists against the Zenodo record page’s embedded Dataset node. Recommended-property deltas only (datePublished, version on landing-primary nodes). T2 ELIMINATED, firm. Full record: batch-catalog-registry-2026-11-03/work/T2-VALIDATION-2026-11-03.md."
@@ -9629,6 +10913,18 @@
      "catalog_id": "github-ai",
      "kind": "sync-check",
      "result": "Generating run 2026-11-12: mirror clone origin/main @ abca7cd (fetch ok) carries 57 of 57 dataset files under data/; 15 blob-current, 42 stale, 0 absent."
+    },
+    {
+     "date": "2026-11-12",
+     "catalog_id": "github-ai",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-12: mirror clone origin/main @ 33287bc (fetch ok) carries 57 of 69 dataset files under data/; 15 blob-current, 42 stale, 12 absent."
+    },
+    {
+     "date": "2026-11-12",
+     "catalog_id": "github-ai",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-12: mirror clone origin/main @ 33287bc (fetch ok) carries 57 of 69 dataset files under data/; 14 blob-current, 43 stale, 12 absent."
     },
     {
      "date": "2026-11-12",
@@ -9710,6 +11006,48 @@
     },
     {
      "date": "2026-11-12",
+     "catalog_id": "website",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-12: 16 of 69 dataset files byte-identical to the signed master index (SHA-256); the registry file’s own digest joins the index in this batch’s seal."
+    },
+    {
+     "date": "2026-11-12",
+     "catalog_id": "website",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-12: 15 of 69 dataset files byte-identical to the signed master index (SHA-256); the registry file’s own digest joins the index in this batch’s seal."
+    },
+    {
+     "date": "2026-11-12",
+     "catalog_id": "website",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-12: 65 of 69 dataset files byte-identical to the signed master index (SHA-256); the registry file’s own digest joins the index in this batch’s seal."
+    },
+    {
+     "date": "2026-11-12",
+     "catalog_id": "website",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-12: 17 of 69 dataset files byte-identical to the signed master index (SHA-256); the registry file’s own digest joins the index in this batch’s seal."
+    },
+    {
+     "date": "2026-11-12",
+     "catalog_id": "website",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-12: 68 of 69 dataset files byte-identical to the signed master index (SHA-256); the registry file’s own digest joins the index in this batch’s seal."
+    },
+    {
+     "date": "2026-11-12",
+     "catalog_id": "website",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-12: 66 of 69 dataset files byte-identical to the signed master index (SHA-256); the registry file’s own digest joins the index in this batch’s seal."
+    },
+    {
+     "date": "2026-11-12",
+     "catalog_id": "website",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-12: 69 of 69 dataset files byte-identical to the signed master index (SHA-256); the registry file’s own digest joins the index in this batch’s seal."
+    },
+    {
+     "date": "2026-11-12",
      "catalog_id": "zenodo",
      "kind": "sync-check",
      "result": "Generating run 2026-11-12: dataset-line deposit (record 23879049) holds 38 of 57 dataset files; 0 digest-current, 38 stale, 19 absent. Record stats at read: 21 views, 4 downloads."
@@ -9719,6 +11057,12 @@
      "catalog_id": "zenodo",
      "kind": "sync-check",
      "result": "Generating run 2026-11-12: dataset-line deposit (record 23879049) holds 38 of 57 dataset files; 0 digest-current, 38 stale, 19 absent. Record stats at read: 22 views, 5 downloads."
+    },
+    {
+     "date": "2026-11-12",
+     "catalog_id": "zenodo",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-12: dataset-line deposit (record 23879049) holds 38 of 69 dataset files; 0 digest-current, 38 stale, 31 absent. Record stats at read: 23 views, 5 downloads."
     }
    ]
   },
@@ -9969,7 +11313,7 @@
     {
      "id": "C2",
      "title": "Mirror staleness on the snapshot and repository seats",
-     "evidence": "Computed at this generation (2026-11-12): the Zenodo dataset deposit (a 2026-11-02 snapshot) holds 38 of 57 dataset files, 0 digest-current; the Hugging Face seats’ last verified state (2026-11-02) was likewise behind the sealed estate, and their 2026-11-12 reads failed (HTTP 401), so their rows compute stale-unknown this generation. The website, API and GitHub seats refresh at every batch close and are current by construction.",
+     "evidence": "Computed at this generation (2026-11-12): the Zenodo dataset deposit (a 2026-11-02 snapshot) holds 38 of 69 dataset files, 0 digest-current; the Hugging Face seats’ last verified state (2026-11-02) was likewise behind the sealed estate, and their 2026-11-12 reads failed (HTTP 401), so their rows compute stale-unknown this generation. The website, API and GitHub seats refresh at every batch close and are current by construction.",
      "impact": "A researcher landing on a mirror seat can meet an older generation of a dataset; the canonical signed index is unaffected.",
      "designedSolution": "Re-sync the mirrors at the next release motion: new-version Zenodo deposit of the full current file set, Hugging Face repo refresh (after its read access is restored) — then this registry’s next generation records the computed improvement. Sync states are never edited by hand; they recompute from digests.",
      "status": "open"
@@ -10133,65 +11477,65 @@
     "url": "https://theflatratemovers.com/datasets/"
    },
    "totals": {
-    "datasetFiles": 57,
+    "datasetFiles": 69,
     "catalogs": 9,
     "catalogChannels": 7,
     "nonChannels": 2,
-    "joinRows": 399,
+    "joinRows": 483,
     "rowsPerDataset": 7,
     "presence": {
-     "present-verified": 209,
-     "absent-observed": 76,
-     "not-applicable": 56,
-     "unverified (read failed)": 58
+     "present-verified": 221,
+     "absent-observed": 124,
+     "not-applicable": 68,
+     "unverified (read failed)": 70
     },
     "sync": {
-     "current": 84,
-     "stale": 125,
-     "stale-unknown": 58,
-     "not-measured (no digest on this seat)": 132
+     "current": 94,
+     "stale": 127,
+     "stale-unknown": 70,
+     "not-measured (no digest on this seat)": 192
     },
     "seats": {
      "website": {
-      "present": 57,
+      "present": 69,
       "absent": 0,
       "na": 0,
       "unverified": 0,
-      "current": 54,
+      "current": 66,
       "stale": 3,
       "unknown": 0
      },
      "api": {
       "present": 57,
-      "absent": 0,
+      "absent": 12,
       "na": 0,
       "unverified": 0,
-      "current": 15,
-      "stale": 42,
+      "current": 14,
+      "stale": 43,
       "unknown": 0
      },
      "github-ai": {
       "present": 57,
-      "absent": 0,
+      "absent": 12,
       "na": 0,
       "unverified": 0,
-      "current": 15,
-      "stale": 42,
+      "current": 14,
+      "stale": 43,
       "unknown": 0
      },
      "huggingface-estate": {
       "present": 0,
       "absent": 0,
       "na": 0,
-      "unverified": 57,
+      "unverified": 69,
       "current": 0,
       "stale": 0,
-      "unknown": 57
+      "unknown": 69
      },
      "huggingface-intent": {
       "present": 0,
       "absent": 0,
-      "na": 56,
+      "na": 68,
       "unverified": 1,
       "current": 0,
       "stale": 0,
@@ -10199,7 +11543,7 @@
      },
      "zenodo": {
       "present": 38,
-      "absent": 19,
+      "absent": 31,
       "na": 0,
       "unverified": 0,
       "current": 0,
@@ -10208,7 +11552,7 @@
      },
      "dataset-search": {
       "present": 0,
-      "absent": 57,
+      "absent": 69,
       "na": 0,
       "unverified": 0,
       "current": 0,
@@ -10217,27 +11561,27 @@
      }
     },
     "completeness": {
-     "filesMeasured": 56,
+     "filesMeasured": 68,
      "DC-1": {
-      "pass": 55,
+      "pass": 67,
       "fail": 0,
       "not-applicable": 1
      },
      "DC-3": {
-      "pass": 56,
+      "pass": 68,
       "fail": 0
      },
      "DC-4": {
-      "pass": 55,
+      "pass": 67,
       "fail": 0,
       "not-applicable": 1
      },
      "note": "Computed per file at generation over the pre-existing dataset files; the registry file’s own rows carry its completeness computed over its own nodes in the same run (website and dataset-search rows). DC-2 and DC-5 are suite-gate verdicts (verify.js) with per-file DOI content scans computed in each row."
     },
     "baselineAtGeneration": {
-     "signedDistributions": 1310,
-     "signedIndexSha256Prefix": "5e2543dc",
-     "datasetFilesInIndex": 57,
+     "signedDistributions": 1371,
+     "signedIndexSha256Prefix": "1ba320ee",
+     "datasetFilesInIndex": 69,
      "note": "The estate baseline as read by this generation (2026-11-12), before this batch’s own seal adds the registry’s distributions."
     },
     "openGaps": [
@@ -10470,7 +11814,7 @@
      "date": "2026-11-12"
     },
     {
-     "name": "Live channel reads at generation: estate API /v1/datasets + bundle-manifest.json; GitHub mirror clone tree (origin/main @ abca7cd); Zenodo record 23879049 + deposit zip",
+     "name": "Live channel reads at generation: estate API /v1/datasets + bundle-manifest.json; GitHub mirror clone tree (origin/main @ 33287bc); Zenodo record 23879049 + deposit zip",
      "date": "2026-11-12"
     },
     {

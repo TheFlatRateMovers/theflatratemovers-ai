@@ -173,24 +173,24 @@
      "name": "Coverage table (feature x service)",
      "contentUrl": "https://theflatratemovers.com/datasets/coverage/coverage-table.json",
      "encodingFormat": "application/json",
-     "contentSize": 577043,
-     "sha256": "c87aae4e25b531795c471b37d993e65cb1128100f11d5a10c3e7d7948de83fac"
+     "contentSize": 609501,
+     "sha256": "c265331c0dec41e9b88aa8dfbbf559a68d128f05896431aef50e16e976ef9bcc"
     },
     {
      "@type": "DataDownload",
      "name": "Place pairs distance table",
      "contentUrl": "https://theflatratemovers.com/datasets/coverage/pairs-table.json",
      "encodingFormat": "application/json",
-     "contentSize": 1103519,
-     "sha256": "7da58c481fa884bef66a1ac0ba176f6712ea1d2d22c2c7509e76db7079bb5c8c"
+     "contentSize": 1212809,
+     "sha256": "d71a461a5069364c939d6ed9992bf0de7d179a81682580dd3d19ab8572dac95c"
     },
     {
      "@type": "DataDownload",
      "name": "Features table",
      "contentUrl": "https://theflatratemovers.com/datasets/coverage/features-table.json",
      "encodingFormat": "application/json",
-     "contentSize": 43899,
-     "sha256": "bcbebf552c35c5a8f28f23ec622050fdf7cacee78c6169de8fe0a1854ee79cb7"
+     "contentSize": 45948,
+     "sha256": "b369c2d7d1f04450405b7d08e9497d62a0df39275528ca8cadb4be303200821e"
     },
     {
      "@type": "DataDownload",
@@ -205,8 +205,8 @@
      "name": "Service-area GeoJSON (the source map)",
      "contentUrl": "https://theflatratemovers.com/service-area.geojson",
      "encodingFormat": "application/json",
-     "contentSize": 157369,
-     "sha256": "4520784257bc965aaf9fafccd895db7a86077053312a2ccddddd48e2da45ec97"
+     "contentSize": 164936,
+     "sha256": "f8c895bde0c0354128b237755749309258ebf2fdfb495a8185473a6eca8ba5e2"
     }
    ]
   },
@@ -2644,6 +2644,126 @@
    ]
   },
   {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-charlottesville-va",
+   "name": "Charlottesville, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.03219,
+    "longitude": -78.47777
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-charlottesville-city-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-great-falls-va",
+   "name": "Great Falls, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.99709,
+    "longitude": -77.28224
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-fairfax-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-mclean-va",
+   "name": "McLean, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.93098,
+    "longitude": -77.17776
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-fairfax-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
+   "@type": "City",
+   "@id": "https://theflatratemovers.com/#place-the-plains-va",
+   "name": "The Plains, VA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.86205,
+    "longitude": -77.77322
+   },
+   "containedInPlace": [
+    {
+     "@id": "https://theflatratemovers.com/#place-county-fauquier-va"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#place-state-va"
+    }
+   ],
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "branchBinding",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "featureKind",
+     "value": "city"
+    }
+   ]
+  },
+  {
    "@type": "AdministrativeArea",
    "@id": "https://theflatratemovers.com/#place-county-winchester-city-va",
    "name": "Winchester City",
@@ -2959,6 +3079,18 @@
    "@type": "AdministrativeArea",
    "@id": "https://theflatratemovers.com/#place-county-rappahannock-va",
    "name": "Rappahannock County",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "matrixRole",
+     "value": "containment-only (geography scaffolding, not a coverage claim)"
+    }
+   ]
+  },
+  {
+   "@type": "AdministrativeArea",
+   "@id": "https://theflatratemovers.com/#place-county-charlottesville-city-va",
+   "name": "Charlottesville City",
    "additionalProperty": [
     {
      "@type": "PropertyValue",

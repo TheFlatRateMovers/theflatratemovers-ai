@@ -1,0 +1,465 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#dataset-office-decommissioning",
+   "name": "Office Decommissioning & Liquidation Dataset",
+   "description": "The dedicated dataset of the Office Decommissioning & Liquidation program of The Flat Rate Movers: one engagement — decommissioning, furniture and equipment removal, liquidation and value-recovery coordination, transport, storage, and broom-clean lease-surrender handback — at one flat rate in writing, across the six high-volume office markets of Washington DC and Northern Virginia: Downtown Washington DC, Crystal City / National Landing and Pentagon City in Arlington, Reston and Herndon, Tysons, Alexandria, and Bethesda MD. The dataset carries the six market Places with their office-stock and vacancy evidence, the ten service doors of the category (decommissioning services, liquidation, lease surrender, federal and GSA surrender, conversion cleanout, cubicle removal, cost, process, best-choice, and IT/e-waste coordination), the per-area Service nodes bound to the dedicated pages that own each market, and the coverage matrix of areas by doors. Liquidation in this program means removal plus value-recovery coordination and disposition — resale coordination, donation, recycling, disposal; the company does not buy furniture and does not pay cash for assets. Pricing is per job: one flat rate agreed in writing before work starts; no rate is published in this dataset.",
+   "url": "https://theflatratemovers.com/datasets/office-decommissioning/",
+   "sameAs": "https://theflatratemovers.com/datasets/office-decommissioning/",
+   "identifier": "https://theflatratemovers.com/datasets/office-decommissioning/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "datePublished": "2026-11-14",
+   "dateModified": "2026-11-14",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "keywords": "office decommissioning, office liquidation, office furniture liquidation, lease surrender cleanout, broom-clean handback, GSA lease surrender, federal office decommissioning, office conversion cleanout, cubicle removal, Washington DC, Crystal City, National Landing, Reston, Herndon, Tysons, Alexandria, Bethesda",
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-office-moving"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-industrial-offices"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-government"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-commercial"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-office-decommissioning.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-office-decommissioning.json",
+     "encodingFormat": "application/json"
+    }
+   ]
+  },
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#dataset-office-decommissioning-coverage",
+   "name": "Office Decommissioning Area × Door Coverage Matrix Dataset",
+   "description": "The coverage matrix of the Office Decommissioning & Liquidation program: six high-volume office markets by the ten service doors of the category — 60 cells, every cell offered, each bound to the dedicated page that owns the market and dispatched from the Winchester, VA branch on contract runs. The matrix is generated from data/office-decom.json by scripts/build-office-decom-dataset.js; it is the same matrix the program pages and the intent-rubric lane R41 are built from.",
+   "url": "https://theflatratemovers.com/datasets/office-decommissioning/",
+   "sameAs": "https://theflatratemovers.com/datasets/office-decommissioning/",
+   "identifier": "https://theflatratemovers.com/datasets/office-decommissioning/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "datePublished": "2026-11-14",
+   "dateModified": "2026-11-14",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "keywords": "office decommissioning coverage matrix, areas by service doors, Washington DC, Northern Virginia",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "coverageMatrix",
+     "value": "[{\"area\":\"decom-washington-dc\",\"areaName\":\"Downtown Washington DC\",\"page\":\"https://theflatratemovers.com/office-decommissioning-washington-dc/\",\"branch\":\"winchester\",\"doors\":[{\"door\":\"decom-core\",\"label\":\"Office decommissioning services\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"liquidation\",\"label\":\"Office liquidation & furniture liquidation\",\"service\":\"service-industrial-offices\",\"offered\":true},{\"door\":\"surrender\",\"label\":\"Lease surrender cleanout & broom-clean handback\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"federal\",\"label\":\"Federal & GSA lease surrender\",\"service\":\"service-government\",\"offered\":true},{\"door\":\"conversion\",\"label\":\"Office-to-residential conversion cleanout\",\"service\":\"service-commercial\",\"offered\":true},{\"door\":\"cubicle\",\"label\":\"Cubicle & workstation removal\",\"service\":\"service-industrial-offices\",\"offered\":true},{\"door\":\"cost\",\"label\":\"Decommissioning cost & pricing intent\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"process\",\"label\":\"Process, phases & timeline\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"best\",\"label\":\"Best-choice & comparison\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"it-ewaste\",\"label\":\"Office IT & e-waste decommissioning coordination\",\"service\":\"service-it-relocation\",\"offered\":true}]},{\"area\":\"decom-crystal-city\",\"areaName\":\"Crystal City / National Landing + Pentagon City, Arlington VA\",\"page\":\"https://theflatratemovers.com/office-decommissioning-crystal-city-va/\",\"branch\":\"winchester\",\"doors\":[{\"door\":\"decom-core\",\"label\":\"Office decommissioning services\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"liquidation\",\"label\":\"Office liquidation & furniture liquidation\",\"service\":\"service-industrial-offices\",\"offered\":true},{\"door\":\"surrender\",\"label\":\"Lease surrender cleanout & broom-clean handback\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"federal\",\"label\":\"Federal & GSA lease surrender\",\"service\":\"service-government\",\"offered\":true},{\"door\":\"conversion\",\"label\":\"Office-to-residential conversion cleanout\",\"service\":\"service-commercial\",\"offered\":true},{\"door\":\"cubicle\",\"label\":\"Cubicle & workstation removal\",\"service\":\"service-industrial-offices\",\"offered\":true},{\"door\":\"cost\",\"label\":\"Decommissioning cost & pricing intent\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"process\",\"label\":\"Process, phases & timeline\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"best\",\"label\":\"Best-choice & comparison\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"it-ewaste\",\"label\":\"Office IT & e-waste decommissioning coordination\",\"service\":\"service-it-relocation\",\"offered\":true}]},{\"area\":\"decom-reston-herndon\",\"areaName\":\"Reston / Herndon VA\",\"page\":\"https://theflatratemovers.com/office-decommissioning-reston-va/\",\"branch\":\"winchester\",\"doors\":[{\"door\":\"decom-core\",\"label\":\"Office decommissioning services\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"liquidation\",\"label\":\"Office liquidation & furniture liquidation\",\"service\":\"service-industrial-offices\",\"offered\":true},{\"door\":\"surrender\",\"label\":\"Lease surrender cleanout & broom-clean handback\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"federal\",\"label\":\"Federal & GSA lease surrender\",\"service\":\"service-government\",\"offered\":true},{\"door\":\"conversion\",\"label\":\"Office-to-residential conversion cleanout\",\"service\":\"service-commercial\",\"offered\":true},{\"door\":\"cubicle\",\"label\":\"Cubicle & workstation removal\",\"service\":\"service-industrial-offices\",\"offered\":true},{\"door\":\"cost\",\"label\":\"Decommissioning cost & pricing intent\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"process\",\"label\":\"Process, phases & timeline\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"best\",\"label\":\"Best-choice & comparison\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"it-ewaste\",\"label\":\"Office IT & e-waste decommissioning coordination\",\"service\":\"service-it-relocation\",\"offered\":true}]},{\"area\":\"decom-tysons\",\"areaName\":\"Tysons VA\",\"page\":\"https://theflatratemovers.com/office-decommissioning-tysons-va/\",\"branch\":\"winchester\",\"doors\":[{\"door\":\"decom-core\",\"label\":\"Office decommissioning services\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"liquidation\",\"label\":\"Office liquidation & furniture liquidation\",\"service\":\"service-industrial-offices\",\"offered\":true},{\"door\":\"surrender\",\"label\":\"Lease surrender cleanout & broom-clean handback\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"federal\",\"label\":\"Federal & GSA lease surrender\",\"service\":\"service-government\",\"offered\":true},{\"door\":\"conversion\",\"label\":\"Office-to-residential conversion cleanout\",\"service\":\"service-commercial\",\"offered\":true},{\"door\":\"cubicle\",\"label\":\"Cubicle & workstation removal\",\"service\":\"service-industrial-offices\",\"offered\":true},{\"door\":\"cost\",\"label\":\"Decommissioning cost & pricing intent\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"process\",\"label\":\"Process, phases & timeline\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"best\",\"label\":\"Best-choice & comparison\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"it-ewaste\",\"label\":\"Office IT & e-waste decommissioning coordination\",\"service\":\"service-it-relocation\",\"offered\":true}]},{\"area\":\"decom-alexandria\",\"areaName\":\"Alexandria VA\",\"page\":\"https://theflatratemovers.com/office-decommissioning-alexandria-va/\",\"branch\":\"winchester\",\"doors\":[{\"door\":\"decom-core\",\"label\":\"Office decommissioning services\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"liquidation\",\"label\":\"Office liquidation & furniture liquidation\",\"service\":\"service-industrial-offices\",\"offered\":true},{\"door\":\"surrender\",\"label\":\"Lease surrender cleanout & broom-clean handback\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"federal\",\"label\":\"Federal & GSA lease surrender\",\"service\":\"service-government\",\"offered\":true},{\"door\":\"conversion\",\"label\":\"Office-to-residential conversion cleanout\",\"service\":\"service-commercial\",\"offered\":true},{\"door\":\"cubicle\",\"label\":\"Cubicle & workstation removal\",\"service\":\"service-industrial-offices\",\"offered\":true},{\"door\":\"cost\",\"label\":\"Decommissioning cost & pricing intent\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"process\",\"label\":\"Process, phases & timeline\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"best\",\"label\":\"Best-choice & comparison\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"it-ewaste\",\"label\":\"Office IT & e-waste decommissioning coordination\",\"service\":\"service-it-relocation\",\"offered\":true}]},{\"area\":\"decom-bethesda\",\"areaName\":\"Bethesda MD\",\"page\":\"https://theflatratemovers.com/office-decommissioning-bethesda-md/\",\"branch\":\"winchester\",\"doors\":[{\"door\":\"decom-core\",\"label\":\"Office decommissioning services\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"liquidation\",\"label\":\"Office liquidation & furniture liquidation\",\"service\":\"service-industrial-offices\",\"offered\":true},{\"door\":\"surrender\",\"label\":\"Lease surrender cleanout & broom-clean handback\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"federal\",\"label\":\"Federal & GSA lease surrender\",\"service\":\"service-government\",\"offered\":true},{\"door\":\"conversion\",\"label\":\"Office-to-residential conversion cleanout\",\"service\":\"service-commercial\",\"offered\":true},{\"door\":\"cubicle\",\"label\":\"Cubicle & workstation removal\",\"service\":\"service-industrial-offices\",\"offered\":true},{\"door\":\"cost\",\"label\":\"Decommissioning cost & pricing intent\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"process\",\"label\":\"Process, phases & timeline\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"best\",\"label\":\"Best-choice & comparison\",\"service\":\"service-office-moving\",\"offered\":true},{\"door\":\"it-ewaste\",\"label\":\"Office IT & e-waste decommissioning coordination\",\"service\":\"service-it-relocation\",\"offered\":true}]}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "cellCount",
+     "value": "60"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-office-decommissioning.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-office-decommissioning.json",
+     "encodingFormat": "application/json"
+    }
+   ],
+   "isPartOf": {
+    "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#dataset-office-decommissioning"
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#service-office-decommissioning",
+   "name": "Office Decommissioning & Liquidation",
+   "serviceType": "Office decommissioning and liquidation",
+   "description": "Office decommissioning and liquidation as one engagement from The Flat Rate Movers: survey and written flat rate, furniture and equipment removal, cubicle and workstation teardown, liquidation and value-recovery coordination (resale coordination, donation, recycling, disposal — the company does not buy furniture), office IT and e-waste coordination through certified partners inside the same engagement, transport and storage of removed assets, and broom-clean handback at surrender condition. Own crews — the work is performed, not coordinated away.",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/office-decommissioning/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-washington-dc"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-crystal-city"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-reston-herndon"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-tysons"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-alexandria"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-bethesda"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-decom-washington-dc",
+   "name": "Office Decommissioning & Liquidation — Downtown Washington DC",
+   "serviceType": "Office decommissioning and liquidation",
+   "description": "Office decommissioning, liquidation and lease-surrender handback in downtown Washington DC from The Flat Rate Movers — one engagement, own crews, one flat rate in writing: 111.5M square feet of downtown office stock with the East End near 25% vacancy and the CBD near 26%, the federal lease base working through the USE IT Act utilization-reduction cycle, a planned 1.1M square foot HUD headquarters disposal, and the District's 13.37M square foot office-to-residential conversion pipeline — every conversion starting with a full decommission. The dedicated page for this market is https://theflatratemovers.com/office-decommissioning-washington-dc/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/office-decommissioning-washington-dc/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-washington-dc"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-decom-crystal-city",
+   "name": "Office Decommissioning & Liquidation — Crystal City / National Landing + Pentagon City, Arlington VA",
+   "serviceType": "Office decommissioning and liquidation",
+   "description": "Office decommissioning, liquidation and lease-surrender handback in Crystal City and National Landing in Arlington from The Flat Rate Movers — one engagement, own crews, one flat rate in writing: a 34.2% vacancy rate — the highest of any major submarket in the region — 5.2M square feet of GSA-leased space in Arlington, one landlord (JBG Smith) holding 31 GSA leases at roughly 1.5M square feet in National Landing alone, and conversions like 2100 + 2200 Crystal Drive removing over half a million vacant square feet at a time. The dedicated page for this market is https://theflatratemovers.com/office-decommissioning-crystal-city-va/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/office-decommissioning-crystal-city-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-crystal-city"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-decom-reston-herndon",
+   "name": "Office Decommissioning & Liquidation — Reston / Herndon VA",
+   "serviceType": "Office decommissioning and liquidation",
+   "description": "Office decommissioning, liquidation and lease-surrender handback in Reston and Herndon from The Flat Rate Movers — one engagement, own crews, one flat rate in writing: roughly 26M square feet at 24% vacancy and the region's heaviest churn — 1.2M square feet of new leasing and 776K of renewals in 2025 alone, every move-out paired with a surrender, and headquarters contractions like Booz Allen's move into Reston Row vacating whole floors behind them. The dedicated page for this market is https://theflatratemovers.com/office-decommissioning-reston-va/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/office-decommissioning-reston-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-reston-herndon"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-decom-tysons",
+   "name": "Office Decommissioning & Liquidation — Tysons VA",
+   "serviceType": "Office decommissioning and liquidation",
+   "description": "Office decommissioning, liquidation and lease-surrender handback in Tysons from The Flat Rate Movers — one engagement, own crews, one flat rate in writing: 22M square feet at roughly 26% vacancy, negative absorption leading Fairfax County's decline, and large contractor contractions — Leidos alone shed 54,000 square feet — feeding a steady stream of full-floor and full-building surrenders. The dedicated page for this market is https://theflatratemovers.com/office-decommissioning-tysons-va/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/office-decommissioning-tysons-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-tysons"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-decom-alexandria",
+   "name": "Office Decommissioning & Liquidation — Alexandria VA",
+   "serviceType": "Office decommissioning and liquidation",
+   "description": "Office decommissioning, liquidation and lease-surrender handback in Alexandria from The Flat Rate Movers — one engagement, own crews, one flat rate in writing: 13.6M square feet at 24.6–28.1% vacancy, driven by private churn — associations and nonprofits resizing, consolidating and surrendering — with no lease-surrender specialist currently answering the search. The dedicated page for this market is https://theflatratemovers.com/office-decommissioning-alexandria-va/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/office-decommissioning-alexandria-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-alexandria"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-decom-bethesda",
+   "name": "Office Decommissioning & Liquidation — Bethesda MD",
+   "serviceType": "Office decommissioning and liquidation",
+   "description": "Office decommissioning, liquidation and lease-surrender handback in Bethesda from The Flat Rate Movers — one engagement, own crews, one flat rate in writing: the most oversupplied submarket in Suburban Maryland at 27–29.5% vacancy across 9.8–12.1M square feet, with announced conversions of the Crescent and Towers stock — built last in this program, against a local specialist already in place. The dedicated page for this market is https://theflatratemovers.com/office-decommissioning-bethesda-md/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/office-decommissioning-bethesda-md/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-bethesda"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-washington-dc",
+   "name": "Downtown Washington DC",
+   "description": "Office decommissioning market — 111.5M sf downtown office stock; East End ~25% vacancy, CBD ~26% (Cushman & Wakefield, 2026). Served on contract runs from the Winchester, VA branch.",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.89037,
+    "longitude": -77.03196
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Downtown Washington DC",
+    "addressRegion": "DC",
+    "postalCode": "20004",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "officeStockAndVacancy",
+     "value": "111.5M sf downtown office stock; East End ~25% vacancy, CBD ~26% (Cushman & Wakefield, 2026)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "county",
+     "value": "District of Columbia"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-crystal-city",
+   "name": "Crystal City / National Landing + Pentagon City, Arlington VA",
+   "description": "Office decommissioning market — 10.26M sf at 34.2% vacancy — highest major submarket read (Cushman & Wakefield NoVA Q1 2026). Served on contract runs from the Winchester, VA branch.",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.8504,
+    "longitude": -77.0516
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Crystal City / National Landing + Pentagon City",
+    "addressRegion": "VA",
+    "postalCode": "22202",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "officeStockAndVacancy",
+     "value": "10.26M sf at 34.2% vacancy — highest major submarket read (Cushman & Wakefield NoVA Q1 2026)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "county",
+     "value": "Arlington"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-reston-herndon",
+   "name": "Reston / Herndon VA",
+   "description": "Office decommissioning market — 25.9–26.1M sf at 24.0% vacancy; top NoVA churn 2025 (Cushman & Wakefield). Served on contract runs from the Winchester, VA branch.",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.95979,
+    "longitude": -77.35453
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Reston / Herndon VA",
+    "addressRegion": "VA",
+    "postalCode": "20190",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "officeStockAndVacancy",
+     "value": "25.9–26.1M sf at 24.0% vacancy; top NoVA churn 2025 (Cushman & Wakefield)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "county",
+     "value": "Fairfax"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-tysons",
+   "name": "Tysons VA",
+   "description": "Office decommissioning market — 22.06M sf at ~26% vacancy; Q2 2026 negative absorption −174K sf (Cushman & Wakefield). Served on contract runs from the Winchester, VA branch.",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.92339,
+    "longitude": -77.2221
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tysons VA",
+    "addressRegion": "VA",
+    "postalCode": "22102",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "officeStockAndVacancy",
+     "value": "22.06M sf at ~26% vacancy; Q2 2026 negative absorption −174K sf (Cushman & Wakefield)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "county",
+     "value": "Fairfax"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-alexandria",
+   "name": "Alexandria VA",
+   "description": "Office decommissioning market — 13.6M sf at 24.6–28.1% vacancy (Cushman & Wakefield). Served on contract runs from the Winchester, VA branch.",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.8048,
+    "longitude": -77.0469
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Alexandria VA",
+    "addressRegion": "VA",
+    "postalCode": "22314",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "officeStockAndVacancy",
+     "value": "13.6M sf at 24.6–28.1% vacancy (Cushman & Wakefield)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "county",
+     "value": "Alexandria (city)"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/office-decommissioning/#decom-bethesda",
+   "name": "Bethesda MD",
+   "description": "Office decommissioning market — 9.8–12.1M sf at 27–29.5% vacancy — most oversupplied in Suburban MD (Cushman & Wakefield / Transwestern). Served on contract runs from the Winchester, VA branch.",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.9847,
+    "longitude": -77.0947
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bethesda MD",
+    "addressRegion": "MD",
+    "postalCode": "20814",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "officeStockAndVacancy",
+     "value": "9.8–12.1M sf at 27–29.5% vacancy — most oversupplied in Suburban MD (Cushman & Wakefield / Transwestern)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "county",
+     "value": "Montgomery"
+    }
+   ]
+  }
+ ]
+}

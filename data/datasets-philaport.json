@@ -5,7 +5,7 @@
    "@type": "Dataset",
    "@id": "https://theflatratemovers.com/datasets/philaport/#dataset-philaport",
    "name": "PhilaPort Logistics Dataset",
-   "description": "The per-port dataset for PhilaPort — the Port of Philadelphia — in the Ports & Intermodal program of The Flat Rate Movers: the full port record for the landlord port of the Philadelphia Regional Port Authority (PhilaPort, Commonwealth of Pennsylvania), run by private terminal operators under lease — Packer Avenue Marine Terminal (Greenwich Terminals LLC; 160 acres, 6 berths plus 1 RoRo berth, 45 ft depth, on-dock refrigeration), Tioga Marine Terminal (Delaware River Stevedores; 116 acres) and the Southport Auto Terminal (Glovis America; opened October 2019) — the port's container volume on PhilaPort's named bases (889,268 TEU in CY2025, a port record, up 6 percent and up 39 percent since 2020; 64 percent of containerized imports refrigerated in CY2025; ranked #1 in North America for productivity in the World Bank/S&P Container Port Performance Index, 2024 index), CSX and Norfolk Southern service at every PhilaPort terminal via Conrail Shared Assets switching, the I-95, I-76, I-70 and I-81 corridors, and the branch binding: the port is bound to the Martinsburg, WV branch on drive time (about 3:23), the road distances being effectively tied at about 191 miles from Martinsburg and 193 from Winchester — no mileage advantage is claimed. No port-wide total tonnage is published. The company's eight attached port services are recorded cell by cell in the companion coverage dataset. No port tenancy or port-authority relationship is claimed; the company's crews hold TWIC cards and its contractors hold valid TWIC cards.",
+   "description": "The per-port dataset for PhilaPort — the Port of Philadelphia — in the Ports & Intermodal program of The Flat Rate Movers: the full port record for the landlord port of the Philadelphia Regional Port Authority (PhilaPort, Commonwealth of Pennsylvania), run by private terminal operators under lease — Packer Avenue Marine Terminal (Greenwich Terminals LLC; 160 acres, 6 berths plus 1 RoRo berth, 45 ft depth, on-dock refrigeration), Tioga Marine Terminal (Delaware River Stevedores; 116 acres) and the Southport Auto Terminal (Glovis America; opened October 2019) — the port's container volume on PhilaPort's named bases (889,268 TEU in CY2025, a port record, up 6 percent and up 39 percent since 2020; 64 percent of containerized imports refrigerated in CY2025; ranked #1 in North America for productivity in the World Bank/S&P Container Port Performance Index, 2024 index), CSX and Norfolk Southern service at every PhilaPort terminal via Conrail Shared Assets switching, the I-95, I-76, I-70 and I-81 corridors, and the branch binding: the port is bound to the Martinsburg, WV branch on drive time (about 3:23), the road distances being effectively tied at about 191 miles from Martinsburg and 193 from Winchester — no mileage advantage is claimed. No port-wide total tonnage is published. The company's eight attached port services are recorded cell by cell in the companion coverage dataset. No port tenancy or port-authority relationship is claimed; the company's crews hold TWIC cards and its contractors hold valid TWIC cards. The dedicated labor layer for this port is published at https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/ — Container Unloading Labor — Philadelphia PA: TWIC-carded crews, dispatched 24/7, at contract scale up to 1,000 crew.",
    "url": "https://theflatratemovers.com/datasets/philaport/",
    "sameAs": "https://theflatratemovers.com/datasets/philaport/",
    "identifier": "https://theflatratemovers.com/datasets/philaport/",
@@ -24,7 +24,7 @@
     "url": "https://theflatratemovers.com/"
    },
    "datePublished": "2026-11-10",
-   "dateModified": "2026-11-12",
+   "dateModified": "2026-11-14",
    "includedInDataCatalog": {
     "@type": "DataCatalog",
     "@id": "https://theflatratemovers.com/datasets/#collection",
@@ -60,6 +60,15 @@
     },
     {
      "@id": "https://theflatratemovers.com/#service-freight-rework-transloading"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-industrial-commercial"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-logistics-project-management"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-3pl-support"
     }
    ],
    "distribution": [
@@ -78,7 +87,7 @@
    "@type": "Dataset",
    "@id": "https://theflatratemovers.com/datasets/philaport/#dataset-philaport-coverage",
    "name": "PhilaPort Service Coverage Dataset",
-   "description": "The service-coverage cells for the PhilaPort in the Ports & Intermodal program: the eight attached services (transloading; ocean container packing and unpacking; loading and unloading / container labor; cross-docking; freight rework; specialized workforce; logistics project management; 3PL support services), each recorded as offered with its delivery points (port-adjacent warehouse, receiver's dock, yard, leased space, and on-terminal by arrangement — on-terminal work happens only by arrangement through the terminal's own processes, never as a bare claim) and its bound branch, Martinsburg, WV. Drayage is not offered at any port in the program.",
+   "description": "The service-coverage cells for the PhilaPort in the Ports & Intermodal program: the eight attached services (transloading; ocean container packing and unpacking; loading and unloading / container labor; cross-docking; freight rework; specialized workforce; logistics project management; 3PL support services), each recorded as offered with its delivery points (port-adjacent warehouse, receiver's dock, yard, leased space, and on-terminal by arrangement — on-terminal work happens only by arrangement through the terminal's own processes, never as a bare claim) and its bound branch, Martinsburg, WV. Drayage is not offered at any port in the program. The dedicated labor layer for this port is published at https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/ — Container Unloading Labor — Philadelphia PA: TWIC-carded crews, dispatched 24/7, at contract scale up to 1,000 crew.",
    "url": "https://theflatratemovers.com/datasets/philaport/",
    "sameAs": "https://theflatratemovers.com/datasets/philaport/",
    "identifier": "https://theflatratemovers.com/datasets/philaport/",
@@ -97,7 +106,7 @@
     "url": "https://theflatratemovers.com/"
    },
    "datePublished": "2026-11-10",
-   "dateModified": "2026-11-12",
+   "dateModified": "2026-11-14",
    "includedInDataCatalog": {
     "@type": "DataCatalog",
     "@id": "https://theflatratemovers.com/datasets/#collection",
@@ -131,7 +140,7 @@
     {
      "@type": "PropertyValue",
      "name": "coverageMatrix",
-     "value": "[{\"port\":\"port-philaport\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true,\"treatmentNote\":\"the perishable and breakbulk spoke carries PM and 3P for this port\"},{\"port\":\"port-philaport\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true,\"treatmentNote\":\"the perishable and breakbulk spoke carries PM and 3P for this port\"}]"
+     "value": "[{\"port\":\"port-philaport\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/\"},{\"port\":\"port-philaport\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/\"},{\"port\":\"port-philaport\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/\"},{\"port\":\"port-philaport\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/\"},{\"port\":\"port-philaport\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true,\"treatmentNote\":\"the perishable and breakbulk spoke carries PM and 3P for this port\"},{\"port\":\"port-philaport\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true,\"treatmentNote\":\"the perishable and breakbulk spoke carries PM and 3P for this port\"}]"
     }
    ],
    "distribution": [
@@ -220,6 +229,101 @@
     }
    ],
    "sameAs": "https://theflatratemovers.com/datasets/ports/#port-philaport"
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/philaport/#labor-3pl-support",
+   "name": "3PL support services at PhilaPort — Port of Philadelphia",
+   "serviceType": "3PL support services",
+   "description": "Port labor at PhilaPort — Port of Philadelphia from The Flat Rate Movers — 3pl support services, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/philaport/#port-philaport"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/philaport/#labor-freight-rework-transloading",
+   "name": "Cross-docking at PhilaPort — Port of Philadelphia",
+   "serviceType": "Cross-docking; Freight rework",
+   "description": "Port labor at PhilaPort — Port of Philadelphia from The Flat Rate Movers — cross-docking, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/philaport/#port-philaport"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/philaport/#labor-industrial-commercial",
+   "name": "Specialized workforce at PhilaPort — Port of Philadelphia",
+   "serviceType": "Specialized workforce",
+   "description": "Port labor at PhilaPort — Port of Philadelphia from The Flat Rate Movers — specialized workforce, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/philaport/#port-philaport"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/philaport/#labor-logistics-project-management",
+   "name": "Logistics project management at PhilaPort — Port of Philadelphia",
+   "serviceType": "Logistics project management",
+   "description": "Port labor at PhilaPort — Port of Philadelphia from The Flat Rate Movers — logistics project management, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/philaport/#port-philaport"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/philaport/#labor-transloading",
+   "name": "Transloading at PhilaPort — Port of Philadelphia",
+   "serviceType": "Transloading; Ocean container packing and unpacking (stuffing, destuffing, devanning); Loading and unloading / container labor",
+   "description": "Port labor at PhilaPort — Port of Philadelphia from The Flat Rate Movers — transloading, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/philaport/#port-philaport"
+    }
+   ]
   }
  ]
 }

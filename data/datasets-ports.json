@@ -5,7 +5,7 @@
    "@type": "Dataset",
    "@id": "https://theflatratemovers.com/datasets/ports/#dataset-ports",
    "name": "Ports & Intermodal Logistics Dataset",
-   "description": "The master dataset of the Ports & Intermodal program of The Flat Rate Movers: the eight ports the company's crews serve with logistics project management, specialized labor, ocean container packing and unpacking, loading and unloading, cross-docking, transloading, 3PL support and freight rework — the Virginia Inland Port at Front Royal, the Port of Virginia at Norfolk (Norfolk International Terminals, Virginia International Gateway, Portsmouth Marine Terminal and Newport News Marine Terminal), Richmond Marine Terminal, the Port of Baltimore, the Port of Wilmington, Delaware, PhilaPort at Philadelphia, the Port of Huntington Tri-State river district, and the Port of New York and New Jersey. Each port is a full entity: authority and operator of record, terminal facts with acreage, berths, depth and capacity where the port authority publishes them, cargo specialties, rail service with on-dock and interchange qualifiers, highway corridors, foreign-trade-zone facts where designated, labeled volume figures with their sources and periods, current status items, and the branch binding that assigns the port to Winchester, VA or Martinsburg, WV by verified road distance. Portsmouth Marine Terminal is recorded as what it is — a heavy-lift and offshore-wind hub, not a container terminal; Virginia International Gateway is recorded as leased, not port-authority-owned; the Port of Wilmington's operator of record is Enstructure. No volume figure is published for the Virginia Inland Port, Richmond Marine Terminal or the Port of Wilmington, because none is verified. The company's crews hold TWIC cards and its contractors hold valid TWIC cards. The offer set does not include drayage: the company does not run port drayage — freight moves on the customer's or carrier's trucks, and the company's crews do the hands-on work at port-adjacent warehouses, receivers' docks, yards, leased space, and on-terminal only by arrangement through the terminal's own processes. Every fact carries its source; the companion coverage-matrix node in this file maps all 64 port-by-service cells.",
+   "description": "The master dataset of the Ports & Intermodal program of The Flat Rate Movers: the eight ports the company's crews serve with logistics project management, specialized labor, ocean container packing and unpacking, loading and unloading, cross-docking, transloading, 3PL support and freight rework — the Virginia Inland Port at Front Royal, the Port of Virginia at Norfolk (Norfolk International Terminals, Virginia International Gateway, Portsmouth Marine Terminal and Newport News Marine Terminal), Richmond Marine Terminal, the Port of Baltimore, the Port of Wilmington, Delaware, PhilaPort at Philadelphia, the Port of Huntington Tri-State river district, and the Port of New York and New Jersey. Each port is a full entity: authority and operator of record, terminal facts with acreage, berths, depth and capacity where the port authority publishes them, cargo specialties, rail service with on-dock and interchange qualifiers, highway corridors, foreign-trade-zone facts where designated, labeled volume figures with their sources and periods, current status items, and the branch binding that assigns the port to Winchester, VA or Martinsburg, WV by verified road distance. Portsmouth Marine Terminal is recorded as what it is — a heavy-lift and offshore-wind hub, not a container terminal; Virginia International Gateway is recorded as leased, not port-authority-owned; the Port of Wilmington's operator of record is Enstructure. No volume figure is published for the Virginia Inland Port, Richmond Marine Terminal or the Port of Wilmington, because none is verified. The company's crews hold TWIC cards and its contractors hold valid TWIC cards. The offer set does not include drayage: the company does not run port drayage — freight moves on the customer's or carrier's trucks, and the company's crews do the hands-on work at port-adjacent warehouses, receivers' docks, yards, leased space, and on-terminal only by arrangement through the terminal's own processes. Every fact carries its source; the companion coverage-matrix node in this file maps all 64 port-by-service cells. Each port’s dedicated labor layer rides this file as typed Service nodes and on the port’s own labor page — TWIC-carded crews, dispatched 24/7, at contract scale up to 1,000 crew.",
    "url": "https://theflatratemovers.com/datasets/ports/",
    "sameAs": "https://theflatratemovers.com/datasets/ports/",
    "identifier": "https://theflatratemovers.com/datasets/ports/",
@@ -60,6 +60,15 @@
     },
     {
      "@id": "https://theflatratemovers.com/#service-freight-rework-transloading"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-3pl-support"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-industrial-commercial"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-logistics-project-management"
     }
    ],
    "distribution": [
@@ -74,24 +83,24 @@
      "name": "ai-sitemap.json",
      "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
      "encodingFormat": "application/json",
-     "contentSize": 74278,
-     "sha256": "d2d4a73cc53f7bcc2397422e328195f29005c1ae17c6cd36aba4f4cb269a6fb1"
+     "contentSize": 76237,
+     "sha256": "46032ad0a0b011041fa9d80a602b63980b3ea800bb17107d61ee537dfc7439be"
     },
     {
      "@type": "DataDownload",
      "name": "entity-graph.json",
      "contentUrl": "https://theflatratemovers.com/entity-graph.json",
      "encodingFormat": "application/json",
-     "contentSize": 559302,
-     "sha256": "d694739b8614f11b865c0894af500ab2840e8703a8c87b5c98408592dced3a22"
+     "contentSize": 562789,
+     "sha256": "9bd4ffc528a034539aedc0163d0d3f30e07b332a842428599659be8a8b584699"
     },
     {
      "@type": "DataDownload",
      "name": "best-json-entity-graph.json",
      "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
      "encodingFormat": "application/json",
-     "contentSize": 583093,
-     "sha256": "fc142c2183177916685b1954a06ffadef005debab03f1d4f7cc8d0e551eb4be2"
+     "contentSize": 586580,
+     "sha256": "2d489f30583a7efb84fab15211a6c50638f9edff565ecbdf9e0a848f47d09f3e"
     },
     {
      "@type": "DataDownload",
@@ -160,7 +169,7 @@
     {
      "@type": "PropertyValue",
      "name": "coverageMatrix",
-     "value": "[{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"S\",\"spokePage\":true,\"treatmentNote\":\"spoke treatment already live (existing VIP pages)\"},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"treatmentNote\":\"hub section; existing labor page\"},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"S\",\"serviceStatus\":\"registered in batch P4\",\"spokePage\":true,\"treatmentNote\":\"spoke live (batch P2)\"},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"S\",\"spokePage\":true,\"treatmentNote\":\"new spoke lands in batch P3\"},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"S\",\"spokePage\":true,\"treatmentNote\":\"spoke treatment already live (existing labor page)\"},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"treatmentNote\":\"hub section live (batch P3)\"},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"treatmentNote\":\"hub section live (batch P3)\"},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"serviceStatus\":\"registered in batch P4\",\"datasetOnly\":true},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"serviceStatus\":\"registered in batch P4\",\"datasetOnly\":true},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"S\",\"spokePage\":true,\"treatmentNote\":\"new spoke lands in batch P5\"},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"S\",\"spokePage\":true,\"treatmentNote\":\"new spoke lands in batch P5\"},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"serviceStatus\":\"registered in batch P4\",\"datasetOnly\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"serviceStatus\":\"registered in batch P4\",\"datasetOnly\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true,\"treatmentNote\":\"the perishable and breakbulk spoke carries PM and 3P for this port\"},{\"port\":\"port-philaport\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true,\"treatmentNote\":\"the perishable and breakbulk spoke carries PM and 3P for this port\"},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"serviceStatus\":\"registered in batch P4\"},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"serviceStatus\":\"registered in batch P4\"},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"serviceStatus\":\"registered in batch P4\"},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"serviceStatus\":\"registered in batch P4\"}]"
+     "value": "[{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"S\",\"spokePage\":true,\"treatmentNote\":\"spoke treatment already live (existing VIP pages)\",\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-front-royal-va/\"},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"treatmentNote\":\"hub section; existing labor page\",\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-front-royal-va/\"},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-front-royal-va/\"},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-front-royal-va/\"},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"S\",\"serviceStatus\":\"registered in batch P4\",\"spokePage\":true,\"treatmentNote\":\"spoke live (batch P2)\"},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"S\",\"spokePage\":true,\"treatmentNote\":\"new spoke lands in batch P3\",\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-norfolk-va/\"},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"S\",\"spokePage\":true,\"treatmentNote\":\"spoke treatment already live (existing labor page)\",\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-norfolk-va/\"},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-norfolk-va/\"},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-norfolk-va/\"},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"treatmentNote\":\"hub section live (batch P3)\",\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-richmond-va/\"},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"datasetOnly\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-richmond-va/\"},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"datasetOnly\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-richmond-va/\"},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"treatmentNote\":\"hub section live (batch P3)\"},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"datasetOnly\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-richmond-va/\"},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"serviceStatus\":\"registered in batch P4\",\"datasetOnly\":true},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"winchester\",\"treatment\":\"D\",\"serviceStatus\":\"registered in batch P4\",\"datasetOnly\":true},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"S\",\"spokePage\":true,\"treatmentNote\":\"new spoke lands in batch P5\",\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-baltimore-md/\"},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-baltimore-md/\"},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"S\",\"spokePage\":true,\"treatmentNote\":\"new spoke lands in batch P5\",\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-baltimore-md/\"},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-baltimore-md/\"},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-wilmington-de/\"},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-wilmington-de/\"},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-wilmington-de/\"},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-wilmington-de/\"},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"serviceStatus\":\"registered in batch P4\",\"datasetOnly\":true},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"serviceStatus\":\"registered in batch P4\",\"datasetOnly\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/\"},{\"port\":\"port-philaport\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/\"},{\"port\":\"port-philaport\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/\"},{\"port\":\"port-philaport\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"D\",\"datasetOnly\":true},{\"port\":\"port-philaport\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/\"},{\"port\":\"port-philaport\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true,\"treatmentNote\":\"the perishable and breakbulk spoke carries PM and 3P for this port\"},{\"port\":\"port-philaport\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"serviceStatus\":\"registered in batch P4\",\"hubSection\":true,\"treatmentNote\":\"the perishable and breakbulk spoke carries PM and 3P for this port\"},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-huntington-wv/\"},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-huntington-wv/\"},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-huntington-wv/\"},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-huntington-wv/\"},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"serviceStatus\":\"registered in batch P4\"},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"winchester\",\"treatment\":\"H\",\"hubSection\":true,\"serviceStatus\":\"registered in batch P4\"},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-newark-nj/\"},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-newark-nj/\"},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-newark-nj/\"},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"laborPage\":\"https://theflatratemovers.com/container-unloading-labor-newark-nj/\"},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"serviceStatus\":\"registered in batch P4\"},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"],\"boundBranch\":\"martinsburg\",\"treatment\":\"H\",\"hubSection\":true,\"serviceStatus\":\"registered in batch P4\"}]"
     }
    ],
    "distribution": [
@@ -811,6 +820,766 @@
      "@type": "PropertyValue",
      "name": "lastVerified",
      "value": "2026-11-10"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-3pl-support-port-virginia-inland-port",
+   "name": "3PL support services at Virginia Inland Port",
+   "serviceType": "3PL support services",
+   "description": "Port labor at Virginia Inland Port from The Flat Rate Movers — 3pl support services, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-front-royal-va/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-front-royal-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-virginia-inland-port"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-freight-rework-transloading-port-virginia-inland-port",
+   "name": "Cross-docking at Virginia Inland Port",
+   "serviceType": "Cross-docking; Freight rework",
+   "description": "Port labor at Virginia Inland Port from The Flat Rate Movers — cross-docking, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-front-royal-va/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-front-royal-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-virginia-inland-port"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-industrial-commercial-port-virginia-inland-port",
+   "name": "Specialized workforce at Virginia Inland Port",
+   "serviceType": "Specialized workforce",
+   "description": "Port labor at Virginia Inland Port from The Flat Rate Movers — specialized workforce, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-front-royal-va/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-front-royal-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-virginia-inland-port"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-logistics-project-management-port-virginia-inland-port",
+   "name": "Logistics project management at Virginia Inland Port",
+   "serviceType": "Logistics project management",
+   "description": "Port labor at Virginia Inland Port from The Flat Rate Movers — logistics project management, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-front-royal-va/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-front-royal-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-virginia-inland-port"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-transloading-port-virginia-inland-port",
+   "name": "Transloading at Virginia Inland Port",
+   "serviceType": "Transloading; Ocean container packing and unpacking (stuffing, destuffing, devanning); Loading and unloading / container labor",
+   "description": "Port labor at Virginia Inland Port from The Flat Rate Movers — transloading, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-front-royal-va/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-front-royal-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-virginia-inland-port"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-3pl-support-port-of-virginia-norfolk",
+   "name": "3PL support services at Port of Virginia — Norfolk Harbor",
+   "serviceType": "3PL support services",
+   "description": "Port labor at Port of Virginia — Norfolk Harbor from The Flat Rate Movers — 3pl support services, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-norfolk-va/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-norfolk-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-virginia-norfolk"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-freight-rework-transloading-port-of-virginia-norfolk",
+   "name": "Cross-docking at Port of Virginia — Norfolk Harbor",
+   "serviceType": "Cross-docking; Freight rework",
+   "description": "Port labor at Port of Virginia — Norfolk Harbor from The Flat Rate Movers — cross-docking, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-norfolk-va/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-norfolk-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-virginia-norfolk"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-industrial-commercial-port-of-virginia-norfolk",
+   "name": "Specialized workforce at Port of Virginia — Norfolk Harbor",
+   "serviceType": "Specialized workforce",
+   "description": "Port labor at Port of Virginia — Norfolk Harbor from The Flat Rate Movers — specialized workforce, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-norfolk-va/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-norfolk-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-virginia-norfolk"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-logistics-project-management-port-of-virginia-norfolk",
+   "name": "Logistics project management at Port of Virginia — Norfolk Harbor",
+   "serviceType": "Logistics project management",
+   "description": "Port labor at Port of Virginia — Norfolk Harbor from The Flat Rate Movers — logistics project management, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-norfolk-va/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-norfolk-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-virginia-norfolk"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-transloading-port-of-virginia-norfolk",
+   "name": "Transloading at Port of Virginia — Norfolk Harbor",
+   "serviceType": "Transloading; Ocean container packing and unpacking (stuffing, destuffing, devanning); Loading and unloading / container labor",
+   "description": "Port labor at Port of Virginia — Norfolk Harbor from The Flat Rate Movers — transloading, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-norfolk-va/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-norfolk-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-virginia-norfolk"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-3pl-support-port-richmond-marine-terminal",
+   "name": "3PL support services at Richmond Marine Terminal",
+   "serviceType": "3PL support services",
+   "description": "Port labor at Richmond Marine Terminal from The Flat Rate Movers — 3pl support services, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-richmond-va/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-richmond-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-richmond-marine-terminal"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-freight-rework-transloading-port-richmond-marine-terminal",
+   "name": "Cross-docking at Richmond Marine Terminal",
+   "serviceType": "Cross-docking; Freight rework",
+   "description": "Port labor at Richmond Marine Terminal from The Flat Rate Movers — cross-docking, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-richmond-va/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-richmond-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-richmond-marine-terminal"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-industrial-commercial-port-richmond-marine-terminal",
+   "name": "Specialized workforce at Richmond Marine Terminal",
+   "serviceType": "Specialized workforce",
+   "description": "Port labor at Richmond Marine Terminal from The Flat Rate Movers — specialized workforce, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-richmond-va/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-richmond-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-richmond-marine-terminal"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-logistics-project-management-port-richmond-marine-terminal",
+   "name": "Logistics project management at Richmond Marine Terminal",
+   "serviceType": "Logistics project management",
+   "description": "Port labor at Richmond Marine Terminal from The Flat Rate Movers — logistics project management, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-richmond-va/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-richmond-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-richmond-marine-terminal"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-transloading-port-richmond-marine-terminal",
+   "name": "Transloading at Richmond Marine Terminal",
+   "serviceType": "Transloading; Ocean container packing and unpacking (stuffing, destuffing, devanning); Loading and unloading / container labor",
+   "description": "Port labor at Richmond Marine Terminal from The Flat Rate Movers — transloading, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-richmond-va/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-richmond-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-richmond-marine-terminal"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-3pl-support-port-of-baltimore",
+   "name": "3PL support services at Helen Delich Bentley Port of Baltimore",
+   "serviceType": "3PL support services",
+   "description": "Port labor at Helen Delich Bentley Port of Baltimore from The Flat Rate Movers — 3pl support services, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-baltimore-md/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-baltimore-md/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-baltimore"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-freight-rework-transloading-port-of-baltimore",
+   "name": "Cross-docking at Helen Delich Bentley Port of Baltimore",
+   "serviceType": "Cross-docking; Freight rework",
+   "description": "Port labor at Helen Delich Bentley Port of Baltimore from The Flat Rate Movers — cross-docking, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-baltimore-md/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-baltimore-md/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-baltimore"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-industrial-commercial-port-of-baltimore",
+   "name": "Specialized workforce at Helen Delich Bentley Port of Baltimore",
+   "serviceType": "Specialized workforce",
+   "description": "Port labor at Helen Delich Bentley Port of Baltimore from The Flat Rate Movers — specialized workforce, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-baltimore-md/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-baltimore-md/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-baltimore"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-logistics-project-management-port-of-baltimore",
+   "name": "Logistics project management at Helen Delich Bentley Port of Baltimore",
+   "serviceType": "Logistics project management",
+   "description": "Port labor at Helen Delich Bentley Port of Baltimore from The Flat Rate Movers — logistics project management, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-baltimore-md/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-baltimore-md/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-baltimore"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-transloading-port-of-baltimore",
+   "name": "Transloading at Helen Delich Bentley Port of Baltimore",
+   "serviceType": "Transloading; Ocean container packing and unpacking (stuffing, destuffing, devanning); Loading and unloading / container labor",
+   "description": "Port labor at Helen Delich Bentley Port of Baltimore from The Flat Rate Movers — transloading, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-baltimore-md/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-baltimore-md/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-baltimore"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-3pl-support-port-of-wilmington-de",
+   "name": "3PL support services at Port of Wilmington",
+   "serviceType": "3PL support services",
+   "description": "Port labor at Port of Wilmington from The Flat Rate Movers — 3pl support services, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-wilmington-de/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-wilmington-de/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-wilmington-de"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-freight-rework-transloading-port-of-wilmington-de",
+   "name": "Cross-docking at Port of Wilmington",
+   "serviceType": "Cross-docking; Freight rework",
+   "description": "Port labor at Port of Wilmington from The Flat Rate Movers — cross-docking, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-wilmington-de/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-wilmington-de/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-wilmington-de"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-industrial-commercial-port-of-wilmington-de",
+   "name": "Specialized workforce at Port of Wilmington",
+   "serviceType": "Specialized workforce",
+   "description": "Port labor at Port of Wilmington from The Flat Rate Movers — specialized workforce, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-wilmington-de/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-wilmington-de/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-wilmington-de"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-logistics-project-management-port-of-wilmington-de",
+   "name": "Logistics project management at Port of Wilmington",
+   "serviceType": "Logistics project management",
+   "description": "Port labor at Port of Wilmington from The Flat Rate Movers — logistics project management, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-wilmington-de/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-wilmington-de/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-wilmington-de"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-transloading-port-of-wilmington-de",
+   "name": "Transloading at Port of Wilmington",
+   "serviceType": "Transloading; Ocean container packing and unpacking (stuffing, destuffing, devanning); Loading and unloading / container labor",
+   "description": "Port labor at Port of Wilmington from The Flat Rate Movers — transloading, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-wilmington-de/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-wilmington-de/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-wilmington-de"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-3pl-support-port-philaport",
+   "name": "3PL support services at PhilaPort — Port of Philadelphia",
+   "serviceType": "3PL support services",
+   "description": "Port labor at PhilaPort — Port of Philadelphia from The Flat Rate Movers — 3pl support services, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-philaport"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-freight-rework-transloading-port-philaport",
+   "name": "Cross-docking at PhilaPort — Port of Philadelphia",
+   "serviceType": "Cross-docking; Freight rework",
+   "description": "Port labor at PhilaPort — Port of Philadelphia from The Flat Rate Movers — cross-docking, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-philaport"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-industrial-commercial-port-philaport",
+   "name": "Specialized workforce at PhilaPort — Port of Philadelphia",
+   "serviceType": "Specialized workforce",
+   "description": "Port labor at PhilaPort — Port of Philadelphia from The Flat Rate Movers — specialized workforce, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-philaport"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-logistics-project-management-port-philaport",
+   "name": "Logistics project management at PhilaPort — Port of Philadelphia",
+   "serviceType": "Logistics project management",
+   "description": "Port labor at PhilaPort — Port of Philadelphia from The Flat Rate Movers — logistics project management, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-philaport"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-transloading-port-philaport",
+   "name": "Transloading at PhilaPort — Port of Philadelphia",
+   "serviceType": "Transloading; Ocean container packing and unpacking (stuffing, destuffing, devanning); Loading and unloading / container labor",
+   "description": "Port labor at PhilaPort — Port of Philadelphia from The Flat Rate Movers — transloading, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-philadelphia-pa/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-philaport"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-3pl-support-port-of-huntington-tri-state",
+   "name": "3PL support services at Port of Huntington Tri-State",
+   "serviceType": "3PL support services",
+   "description": "Port labor at Port of Huntington Tri-State from The Flat Rate Movers — 3pl support services, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-huntington-wv/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-huntington-wv/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-huntington-tri-state"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-freight-rework-transloading-port-of-huntington-tri-state",
+   "name": "Cross-docking at Port of Huntington Tri-State",
+   "serviceType": "Cross-docking; Freight rework",
+   "description": "Port labor at Port of Huntington Tri-State from The Flat Rate Movers — cross-docking, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-huntington-wv/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-huntington-wv/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-huntington-tri-state"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-industrial-commercial-port-of-huntington-tri-state",
+   "name": "Specialized workforce at Port of Huntington Tri-State",
+   "serviceType": "Specialized workforce",
+   "description": "Port labor at Port of Huntington Tri-State from The Flat Rate Movers — specialized workforce, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-huntington-wv/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-huntington-wv/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-huntington-tri-state"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-logistics-project-management-port-of-huntington-tri-state",
+   "name": "Logistics project management at Port of Huntington Tri-State",
+   "serviceType": "Logistics project management",
+   "description": "Port labor at Port of Huntington Tri-State from The Flat Rate Movers — logistics project management, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-huntington-wv/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-huntington-wv/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-huntington-tri-state"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-transloading-port-of-huntington-tri-state",
+   "name": "Transloading at Port of Huntington Tri-State",
+   "serviceType": "Transloading; Ocean container packing and unpacking (stuffing, destuffing, devanning); Loading and unloading / container labor",
+   "description": "Port labor at Port of Huntington Tri-State from The Flat Rate Movers — transloading, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Winchester, VA branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-huntington-wv/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-huntington-wv/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-huntington-tri-state"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-3pl-support-port-of-new-york-new-jersey",
+   "name": "3PL support services at Port of New York and New Jersey",
+   "serviceType": "3PL support services",
+   "description": "Port labor at Port of New York and New Jersey from The Flat Rate Movers — 3pl support services, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-newark-nj/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-newark-nj/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-new-york-new-jersey"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-freight-rework-transloading-port-of-new-york-new-jersey",
+   "name": "Cross-docking at Port of New York and New Jersey",
+   "serviceType": "Cross-docking; Freight rework",
+   "description": "Port labor at Port of New York and New Jersey from The Flat Rate Movers — cross-docking, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-newark-nj/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-newark-nj/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-new-york-new-jersey"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-industrial-commercial-port-of-new-york-new-jersey",
+   "name": "Specialized workforce at Port of New York and New Jersey",
+   "serviceType": "Specialized workforce",
+   "description": "Port labor at Port of New York and New Jersey from The Flat Rate Movers — specialized workforce, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-newark-nj/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-newark-nj/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-new-york-new-jersey"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-logistics-project-management-port-of-new-york-new-jersey",
+   "name": "Logistics project management at Port of New York and New Jersey",
+   "serviceType": "Logistics project management",
+   "description": "Port labor at Port of New York and New Jersey from The Flat Rate Movers — logistics project management, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-newark-nj/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-newark-nj/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-new-york-new-jersey"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/ports/#labor-transloading-port-of-new-york-new-jersey",
+   "name": "Transloading at Port of New York and New Jersey",
+   "serviceType": "Transloading; Ocean container packing and unpacking (stuffing, destuffing, devanning); Loading and unloading / container labor",
+   "description": "Port labor at Port of New York and New Jersey from The Flat Rate Movers — transloading, performed by TWIC-carded crews: every crew member holds a TWIC card, and the company’s contractors hold valid TWIC cards. Crews are background-checked, escort-ready, and dispatched 24/7 from the Martinsburg, WV branch at contract scale up to 1,000 crew; flat rate in writing before work starts. The dedicated labor page for this port is https://theflatratemovers.com/container-unloading-labor-newark-nj/. Labor only: the company does not perform drayage.",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "url": "https://theflatratemovers.com/container-unloading-labor-newark-nj/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/ports/#port-of-new-york-new-jersey"
     }
    ]
   }

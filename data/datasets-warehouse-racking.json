@@ -1,0 +1,465 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#dataset",
+   "name": "Warehouse Racking & Distribution-Center Decommissioning Dataset — I-81 Corridor",
+   "description": "The dedicated dataset of the Warehouse Racking + Distribution-Center Decommissioning program of The Flat Rate Movers: one engagement — pallet-rack teardown and removal, used-rack buyback with the credit shown as a line item against the fixed flat-rate total, anchor removal and slab patch for a landlord-ready handback, transport between buildings, reinstallation and re-anchoring, inventory and product relay — at one flat rate in writing, across the six distribution markets of the I-81 corridor: Hagerstown and Washington County MD, Winchester and Frederick County VA, Martinsburg and Berkeley County WV, Front Royal and Warren County VA, Harrisonburg and Rockingham County VA, and Staunton and Augusta County VA. The dataset carries the six market Places with their named industrial stock and sources, the eleven service doors of the category (decommissioning, rack teardown, racking relocation, reinstallation and re-anchoring, buyback, lease handback, inventory relay, transport, cost, process, and best-choice), the per-area Service nodes bound to the dedicated pages that own each market, and the coverage matrix of areas by doors. Pricing is per job: one flat rate agreed in writing before work starts; no per-bay or per-beam rate and no resale benchmark is published in this dataset.",
+   "url": "https://theflatratemovers.com/datasets/warehouse-racking/",
+   "sameAs": "https://theflatratemovers.com/datasets/warehouse-racking/",
+   "identifier": "https://theflatratemovers.com/datasets/warehouse-racking/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "datePublished": "2026-11-15",
+   "dateModified": "2026-11-15",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "keywords": "warehouse racking relocation, pallet rack teardown and removal, distribution center decommissioning, used pallet rack buyback, anchor removal and slab patch, warehouse lease handback, rack reinstallation and re-anchoring, I-81 corridor, Hagerstown, Winchester, Martinsburg, Front Royal, Harrisonburg, Staunton",
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-warehouse-racking-relocation"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-warehouse-relocation"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-industrial-commercial"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-transloading"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-warehouse-racking.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-warehouse-racking.json",
+     "encodingFormat": "application/json"
+    }
+   ]
+  },
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#coverage",
+   "name": "Warehouse Racking Coverage Matrix — 6 Areas x 11 Doors (66 Cells)",
+   "description": "The coverage matrix of the Warehouse Racking + Distribution-Center Decommissioning program: six I-81 corridor distribution markets by the eleven service doors of the category — 66 cells, every cell offered, each bound to the dedicated page that owns the market and dispatched from its corridor branch on contract runs. The matrix is generated from data/warehouse-racking.json by scripts/build-warehouse-racking-dataset.js; it is the same matrix the program pages and the intent-rubric lane R42 are built from.",
+   "url": "https://theflatratemovers.com/datasets/warehouse-racking/",
+   "sameAs": "https://theflatratemovers.com/datasets/warehouse-racking/",
+   "identifier": "https://theflatratemovers.com/datasets/warehouse-racking/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "datePublished": "2026-11-15",
+   "dateModified": "2026-11-15",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "keywords": "warehouse racking coverage matrix, areas by service doors, I-81 corridor, distribution center decommissioning",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "coverageMatrix",
+     "value": "[{\"area\":\"racking-hagerstown\",\"areaName\":\"Hagerstown / Washington County, MD\",\"page\":\"https://theflatratemovers.com/distribution-center-decommissioning-hagerstown-md/\",\"branch\":\"martinsburg\",\"doors\":[{\"door\":\"dc-decommissioning\",\"label\":\"Distribution center decommissioning\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"rack-teardown\",\"label\":\"Pallet rack teardown & removal\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"racking-relocation\",\"label\":\"Warehouse racking relocation\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"reinstall\",\"label\":\"Rack reinstallation & re-anchoring\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"buyback\",\"label\":\"Used pallet rack buyback — credit as a line item\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"handback\",\"label\":\"Anchor removal, slab patch & landlord-ready handback\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"inventory-relay\",\"label\":\"Inventory & product relay and pack-out\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"transport\",\"label\":\"Transport & storage between buildings\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"cost\",\"label\":\"Decommissioning cost & pricing intent\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"process\",\"label\":\"Process, phases & timeline\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"best\",\"label\":\"Best-choice & comparison\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true}]},{\"area\":\"racking-winchester\",\"areaName\":\"Winchester / Frederick County, VA\",\"page\":\"https://theflatratemovers.com/distribution-center-decommissioning-winchester-va/\",\"branch\":\"winchester\",\"doors\":[{\"door\":\"dc-decommissioning\",\"label\":\"Distribution center decommissioning\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"rack-teardown\",\"label\":\"Pallet rack teardown & removal\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"racking-relocation\",\"label\":\"Warehouse racking relocation\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"reinstall\",\"label\":\"Rack reinstallation & re-anchoring\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"buyback\",\"label\":\"Used pallet rack buyback — credit as a line item\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"handback\",\"label\":\"Anchor removal, slab patch & landlord-ready handback\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"inventory-relay\",\"label\":\"Inventory & product relay and pack-out\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"transport\",\"label\":\"Transport & storage between buildings\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"cost\",\"label\":\"Decommissioning cost & pricing intent\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"process\",\"label\":\"Process, phases & timeline\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"best\",\"label\":\"Best-choice & comparison\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true}]},{\"area\":\"racking-martinsburg\",\"areaName\":\"Martinsburg / Berkeley County, WV\",\"page\":\"https://theflatratemovers.com/distribution-center-decommissioning-martinsburg-wv/\",\"branch\":\"martinsburg\",\"doors\":[{\"door\":\"dc-decommissioning\",\"label\":\"Distribution center decommissioning\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"rack-teardown\",\"label\":\"Pallet rack teardown & removal\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"racking-relocation\",\"label\":\"Warehouse racking relocation\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"reinstall\",\"label\":\"Rack reinstallation & re-anchoring\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"buyback\",\"label\":\"Used pallet rack buyback — credit as a line item\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"handback\",\"label\":\"Anchor removal, slab patch & landlord-ready handback\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"inventory-relay\",\"label\":\"Inventory & product relay and pack-out\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"transport\",\"label\":\"Transport & storage between buildings\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"cost\",\"label\":\"Decommissioning cost & pricing intent\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"process\",\"label\":\"Process, phases & timeline\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"best\",\"label\":\"Best-choice & comparison\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true}]},{\"area\":\"racking-front-royal\",\"areaName\":\"Front Royal / Warren County, VA\",\"page\":\"https://theflatratemovers.com/distribution-center-decommissioning-front-royal-va/\",\"branch\":\"winchester\",\"doors\":[{\"door\":\"dc-decommissioning\",\"label\":\"Distribution center decommissioning\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"rack-teardown\",\"label\":\"Pallet rack teardown & removal\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"racking-relocation\",\"label\":\"Warehouse racking relocation\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"reinstall\",\"label\":\"Rack reinstallation & re-anchoring\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"buyback\",\"label\":\"Used pallet rack buyback — credit as a line item\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"handback\",\"label\":\"Anchor removal, slab patch & landlord-ready handback\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"inventory-relay\",\"label\":\"Inventory & product relay and pack-out\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"transport\",\"label\":\"Transport & storage between buildings\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"cost\",\"label\":\"Decommissioning cost & pricing intent\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"process\",\"label\":\"Process, phases & timeline\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"best\",\"label\":\"Best-choice & comparison\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true}]},{\"area\":\"racking-harrisonburg\",\"areaName\":\"Harrisonburg / Rockingham County, VA\",\"page\":\"https://theflatratemovers.com/distribution-center-decommissioning-harrisonburg-va/\",\"branch\":\"winchester\",\"doors\":[{\"door\":\"dc-decommissioning\",\"label\":\"Distribution center decommissioning\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"rack-teardown\",\"label\":\"Pallet rack teardown & removal\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"racking-relocation\",\"label\":\"Warehouse racking relocation\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"reinstall\",\"label\":\"Rack reinstallation & re-anchoring\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"buyback\",\"label\":\"Used pallet rack buyback — credit as a line item\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"handback\",\"label\":\"Anchor removal, slab patch & landlord-ready handback\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"inventory-relay\",\"label\":\"Inventory & product relay and pack-out\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"transport\",\"label\":\"Transport & storage between buildings\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"cost\",\"label\":\"Decommissioning cost & pricing intent\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"process\",\"label\":\"Process, phases & timeline\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"best\",\"label\":\"Best-choice & comparison\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true}]},{\"area\":\"racking-staunton\",\"areaName\":\"Staunton / Augusta County, VA\",\"page\":\"https://theflatratemovers.com/distribution-center-decommissioning-staunton-va/\",\"branch\":\"winchester\",\"doors\":[{\"door\":\"dc-decommissioning\",\"label\":\"Distribution center decommissioning\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"rack-teardown\",\"label\":\"Pallet rack teardown & removal\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"racking-relocation\",\"label\":\"Warehouse racking relocation\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"reinstall\",\"label\":\"Rack reinstallation & re-anchoring\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"buyback\",\"label\":\"Used pallet rack buyback — credit as a line item\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"handback\",\"label\":\"Anchor removal, slab patch & landlord-ready handback\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"inventory-relay\",\"label\":\"Inventory & product relay and pack-out\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"transport\",\"label\":\"Transport & storage between buildings\",\"service\":\"service-warehouse-relocation\",\"offered\":true},{\"door\":\"cost\",\"label\":\"Decommissioning cost & pricing intent\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"process\",\"label\":\"Process, phases & timeline\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true},{\"door\":\"best\",\"label\":\"Best-choice & comparison\",\"service\":\"service-warehouse-racking-relocation\",\"offered\":true}]}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "cellCount",
+     "value": "66"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-warehouse-racking.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-warehouse-racking.json",
+     "encodingFormat": "application/json"
+    }
+   ],
+   "isPartOf": {
+    "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#dataset"
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#service-warehouse-racking-decommissioning",
+   "name": "Warehouse Racking & Distribution-Center Decommissioning",
+   "serviceType": "Warehouse racking relocation and distribution-center decommissioning",
+   "description": "Warehouse racking + distribution-center decommissioning, priced as one flat rate in writing: as-built rack inventory and condition survey; phased pallet-rack dismantling bay by bay; anchor removal and slab patch for a landlord-ready handback; banding, palletizing and load-out; used-rack buyback with the credit shown as a line item against the fixed flat-rate total; transport between buildings; reinstallation and re-anchoring at the destination; inventory and product relay, pack-out and re-slotting support; storage in leased space between buildings; phased work in live buildings, nights and weekends included.",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/distribution-center-decommissioning/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-hagerstown"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-winchester"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-martinsburg"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-front-royal"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-harrisonburg"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-staunton"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#svc-racking-hagerstown",
+   "name": "Warehouse Racking & Distribution-Center Decommissioning — Hagerstown MD",
+   "serviceType": "Warehouse racking relocation and distribution-center decommissioning",
+   "description": "Distribution-center decommissioning and warehouse racking work in Hagerstown and Washington County from The Flat Rate Movers — one engagement, own crews, one flat rate in writing: pallet-rack teardown and removal, used-rack buyback with the credit shown as a line item against the fixed flat-rate total, anchor removal and slab patch for a landlord-ready handback, transport, reinstallation and re-anchoring, and inventory relay. Local stock: >5.8M sf in six named facilities — Currwood Logistics Park ~2.0M sf, WebstaurantStore 1.2M sf, Lifetime Brands ~1.0M sf new East Coast DC, Maryland 81 Logistics Point 801K sf, Mid-Atlantic Crossroads 797.5K sf, NewCold 400K sf (Clayco / MD Dept. of Commerce / LoopNet, 2025–2026). The dedicated page for this market is https://theflatratemovers.com/distribution-center-decommissioning-hagerstown-md/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/distribution-center-decommissioning-hagerstown-md/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-hagerstown"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#svc-racking-winchester",
+   "name": "Warehouse Racking & Distribution-Center Decommissioning — Winchester VA",
+   "serviceType": "Warehouse racking relocation and distribution-center decommissioning",
+   "description": "Distribution-center decommissioning and warehouse racking work in Winchester and Frederick County from The Flat Rate Movers — one engagement, own crews, one flat rate in writing: pallet-rack teardown and removal, used-rack buyback with the credit shown as a line item against the fixed flat-rate total, anchor removal and slab patch for a landlord-ready handback, transport, reinstallation and re-anchoring, and inventory relay. Local stock: One Logistics Park 2.8M sf master-planned (Bldg 1 ~1.02M sf cross-dock), Amazon 1M sf, three Home Depot DCs, Stonewall Industrial Park roster — FedEx Ground, Rite Aid Distribution, Ward Trucking, PCA, Rubbermaid 287K sf (LoopNet / CoStar / Frederick County EDA, 2025–2026). The dedicated page for this market is https://theflatratemovers.com/distribution-center-decommissioning-winchester-va/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/distribution-center-decommissioning-winchester-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-winchester"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#svc-racking-martinsburg",
+   "name": "Warehouse Racking & Distribution-Center Decommissioning — Martinsburg WV",
+   "serviceType": "Warehouse racking relocation and distribution-center decommissioning",
+   "description": "Distribution-center decommissioning and warehouse racking work in Martinsburg and Berkeley County from The Flat Rate Movers — one engagement, own crews, one flat rate in writing: pallet-rack teardown and removal, used-rack buyback with the credit shown as a line item against the fixed flat-rate total, anchor removal and slab patch for a landlord-ready handback, transport, reinstallation and re-anchoring, and inventory relay. Local stock: Tabler Station Bldg A 365,400 sf + Bldg C 860,720 sf; Mid-Atlantic I-81 Logistics Park up to 1.92M sf planned; Macy's Logistics ~2,000 employees, FedEx Ground ~1,600, P&G and Clorox plants, GM Parts DC (Berkeley County Development Authority / LoopNet, 2025–2026). The dedicated page for this market is https://theflatratemovers.com/distribution-center-decommissioning-martinsburg-wv/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/distribution-center-decommissioning-martinsburg-wv/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-martinsburg"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#svc-racking-front-royal",
+   "name": "Warehouse Racking & Distribution-Center Decommissioning — Front Royal VA",
+   "serviceType": "Warehouse racking relocation and distribution-center decommissioning",
+   "description": "Distribution-center decommissioning and warehouse racking work in Front Royal and Warren County from The Flat Rate Movers — one engagement, own crews, one flat rate in writing: pallet-rack teardown and removal, used-rack buyback with the credit shown as a line item against the fixed flat-rate total, anchor removal and slab patch for a landlord-ready handback, transport, reinstallation and re-anchoring, and inventory relay. Local stock: Sysco redistribution center 800K sf (expandable to 1.2M), Family Dollar 900K sf, Ferguson 630K sf, Virginia Inland Port Logistics Center 339,450 sf, plus the Virginia Inland Port (Warren County EDA / VEDP / LoopNet, 2025–2026). The dedicated page for this market is https://theflatratemovers.com/distribution-center-decommissioning-front-royal-va/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/distribution-center-decommissioning-front-royal-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-front-royal"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#svc-racking-harrisonburg",
+   "name": "Warehouse Racking & Distribution-Center Decommissioning — Harrisonburg VA",
+   "serviceType": "Warehouse racking relocation and distribution-center decommissioning",
+   "description": "Distribution-center decommissioning and warehouse racking work in Harrisonburg and Rockingham County from The Flat Rate Movers — one engagement, own crews, one flat rate in writing: pallet-rack teardown and removal, used-rack buyback with the credit shown as a line item against the fixed flat-rate total, anchor removal and slab patch for a landlord-ready handback, transport, reinstallation and re-anchoring, and inventory relay. Local stock: Walmart DC 7045, Marshalls DC, Sysco Virginia, Merck plant (1,000–1,500 employees), Molson Coors DC (Rockingham County / Harrisonburg EDA, 2025–2026). The dedicated page for this market is https://theflatratemovers.com/distribution-center-decommissioning-harrisonburg-va/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/distribution-center-decommissioning-harrisonburg-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-harrisonburg"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#svc-racking-staunton",
+   "name": "Warehouse Racking & Distribution-Center Decommissioning — Staunton VA",
+   "serviceType": "Warehouse racking relocation and distribution-center decommissioning",
+   "description": "Distribution-center decommissioning and warehouse racking work in Staunton, Stuarts Draft and Augusta County from The Flat Rate Movers — one engagement, own crews, one flat rate in writing: pallet-rack teardown and removal, used-rack buyback with the credit shown as a line item against the fixed flat-rate total, anchor removal and slab patch for a landlord-ready handback, transport, reinstallation and re-anchoring, and inventory relay. Local stock: Target DC T-0588, Fishersville (~1,000 staff, regional hub) plus the Hershey, Hollister and McKee Foods plant cluster in Stuarts Draft (Augusta County EDA, 2025–2026). The dedicated page for this market is https://theflatratemovers.com/distribution-center-decommissioning-staunton-va/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/distribution-center-decommissioning-staunton-va/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-staunton"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-hagerstown",
+   "name": "Hagerstown / Washington County, MD",
+   "description": "Warehouse racking and distribution-center decommissioning market — >5.8M sf in six named facilities — Currwood Logistics Park ~2.0M sf, WebstaurantStore 1.2M sf, Lifetime Brands ~1.0M sf new East Coast DC, Maryland 81 Logistics Point 801K sf, Mid-Atlantic Crossroads 797.5K sf, NewCold 400K sf (Clayco / MD Dept. of Commerce / LoopNet, 2025–2026). Served on contract runs from the Martinsburg, WV branch.",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.6425,
+    "longitude": -77.71758
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Hagerstown",
+    "addressRegion": "MD",
+    "postalCode": "21740",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "industrialStockAndFacilities",
+     "value": ">5.8M sf in six named facilities — Currwood Logistics Park ~2.0M sf, WebstaurantStore 1.2M sf, Lifetime Brands ~1.0M sf new East Coast DC, Maryland 81 Logistics Point 801K sf, Mid-Atlantic Crossroads 797.5K sf, NewCold 400K sf (Clayco / MD Dept. of Commerce / LoopNet, 2025–2026)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "county",
+     "value": "Washington County"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-winchester",
+   "name": "Winchester / Frederick County, VA",
+   "description": "Warehouse racking and distribution-center decommissioning market — One Logistics Park 2.8M sf master-planned (Bldg 1 ~1.02M sf cross-dock), Amazon 1M sf, three Home Depot DCs, Stonewall Industrial Park roster — FedEx Ground, Rite Aid Distribution, Ward Trucking, PCA, Rubbermaid 287K sf (LoopNet / CoStar / Frederick County EDA, 2025–2026). Served on contract runs from the Winchester, VA branch.",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.18711576,
+    "longitude": -78.1668352
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Winchester",
+    "addressRegion": "VA",
+    "postalCode": "22601",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "industrialStockAndFacilities",
+     "value": "One Logistics Park 2.8M sf master-planned (Bldg 1 ~1.02M sf cross-dock), Amazon 1M sf, three Home Depot DCs, Stonewall Industrial Park roster — FedEx Ground, Rite Aid Distribution, Ward Trucking, PCA, Rubbermaid 287K sf (LoopNet / CoStar / Frederick County EDA, 2025–2026)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "county",
+     "value": "Frederick County"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-martinsburg",
+   "name": "Martinsburg / Berkeley County, WV",
+   "description": "Warehouse racking and distribution-center decommissioning market — Tabler Station Bldg A 365,400 sf + Bldg C 860,720 sf; Mid-Atlantic I-81 Logistics Park up to 1.92M sf planned; Macy's Logistics ~2,000 employees, FedEx Ground ~1,600, P&G and Clorox plants, GM Parts DC (Berkeley County Development Authority / LoopNet, 2025–2026). Served on contract runs from the Martinsburg, WV branch.",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.48319665,
+    "longitude": -77.94760443
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Martinsburg",
+    "addressRegion": "WV",
+    "postalCode": "25401",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "industrialStockAndFacilities",
+     "value": "Tabler Station Bldg A 365,400 sf + Bldg C 860,720 sf; Mid-Atlantic I-81 Logistics Park up to 1.92M sf planned; Macy's Logistics ~2,000 employees, FedEx Ground ~1,600, P&G and Clorox plants, GM Parts DC (Berkeley County Development Authority / LoopNet, 2025–2026)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "county",
+     "value": "Berkeley County"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-front-royal",
+   "name": "Front Royal / Warren County, VA",
+   "description": "Warehouse racking and distribution-center decommissioning market — Sysco redistribution center 800K sf (expandable to 1.2M), Family Dollar 900K sf, Ferguson 630K sf, Virginia Inland Port Logistics Center 339,450 sf, plus the Virginia Inland Port (Warren County EDA / VEDP / LoopNet, 2025–2026). Served on contract runs from the Winchester, VA branch.",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.91798,
+    "longitude": -78.19355
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Front Royal",
+    "addressRegion": "VA",
+    "postalCode": "22630",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "industrialStockAndFacilities",
+     "value": "Sysco redistribution center 800K sf (expandable to 1.2M), Family Dollar 900K sf, Ferguson 630K sf, Virginia Inland Port Logistics Center 339,450 sf, plus the Virginia Inland Port (Warren County EDA / VEDP / LoopNet, 2025–2026)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "county",
+     "value": "Warren County"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-harrisonburg",
+   "name": "Harrisonburg / Rockingham County, VA",
+   "description": "Warehouse racking and distribution-center decommissioning market — Walmart DC 7045, Marshalls DC, Sysco Virginia, Merck plant (1,000–1,500 employees), Molson Coors DC (Rockingham County / Harrisonburg EDA, 2025–2026). Served on contract runs from the Winchester, VA branch.",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.44957,
+    "longitude": -78.86892
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Harrisonburg",
+    "addressRegion": "VA",
+    "postalCode": "22801",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "industrialStockAndFacilities",
+     "value": "Walmart DC 7045, Marshalls DC, Sysco Virginia, Merck plant (1,000–1,500 employees), Molson Coors DC (Rockingham County / Harrisonburg EDA, 2025–2026)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "county",
+     "value": "Rockingham County"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/warehouse-racking/#racking-staunton",
+   "name": "Staunton / Augusta County, VA",
+   "description": "Warehouse racking and distribution-center decommissioning market — Target DC T-0588, Fishersville (~1,000 staff, regional hub) plus the Hershey, Hollister and McKee Foods plant cluster in Stuarts Draft (Augusta County EDA, 2025–2026). Served on contract runs from the Winchester, VA branch.",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.149576,
+    "longitude": -79.071696
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Staunton",
+    "addressRegion": "VA",
+    "postalCode": "24401",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "industrialStockAndFacilities",
+     "value": "Target DC T-0588, Fishersville (~1,000 staff, regional hub) plus the Hershey, Hollister and McKee Foods plant cluster in Stuarts Draft (Augusta County EDA, 2025–2026)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "county",
+     "value": "Augusta County"
+    }
+   ]
+  }
+ ]
+}

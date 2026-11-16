@@ -1,0 +1,843 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#dataset-logistics-project-management",
+   "name": "Logistics Project Management Dataset",
+   "description": "The dedicated dataset of the Logistics Project Management program of The Flat Rate Movers: scoped project execution for port, warehouse and industrial projects — survey, full scope, crew and sequence planning, supervised execution and closeout — at one flat rate in writing, with a single point of contact at the branch each project binds to. The dataset carries the eight ports of the company's port registry as typed Places with their bound branches and road bindings, the per-port Logistics Project Management Service nodes bound to the program hub, the bridge services the program runs on (transloading and container services, freight rework and cross-docking, specialized workforce, and 3PL support), and the 64-cell coverage matrix of ports by service columns generated from data/ports.json. Project types: container programs, warehouse load-outs and resets, surge programs, freight-rework campaigns and port-adjacent staging. Port work runs on TWIC-carded crews — every individual sent onsite holds their own TWIC card and proper ID — dispatched 24/7 at contract scale. Scoped project execution only: the company does not sell transportation management, brokerage or drayage, and no rate is published in this dataset; pricing is per job, one flat rate agreed in writing before work starts.",
+   "url": "https://theflatratemovers.com/datasets/logistics-project-management/",
+   "sameAs": "https://theflatratemovers.com/datasets/logistics-project-management/",
+   "identifier": "https://theflatratemovers.com/datasets/logistics-project-management/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "datePublished": "2026-11-16",
+   "dateModified": "2026-11-16",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "keywords": "project logistics, logistics project management, logistics program management, turnkey project logistics, port project logistics, container programs, warehouse load-outs, warehouse resets, surge programs, freight-rework campaigns, port-adjacent staging, single point of contact, transloading, cross-docking, 3PL support, TWIC-carded labor, Winchester VA, Martinsburg WV, Port of Virginia, Virginia Inland Port",
+   "about": [
+    {
+     "@id": "https://theflatratemovers.com/#service-logistics-project-management"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-transloading"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-freight-rework-transloading"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-3pl-support"
+    },
+    {
+     "@id": "https://theflatratemovers.com/#service-industrial-commercial"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-logistics-project-management.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-logistics-project-management.json",
+     "encodingFormat": "application/json"
+    }
+   ]
+  },
+  {
+   "@type": "Dataset",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#dataset-logistics-project-management-coverage",
+   "name": "Logistics Project Management Port × Service Coverage Matrix Dataset",
+   "description": "The coverage matrix of the Logistics Project Management program: the eight ports of the company port registry by the eight service columns of the ports × 3PL bridge — transloading, ocean container packing and unpacking, loading and unloading / container labor, cross-docking, freight rework, specialized workforce, logistics project management, and 3PL support services — 64 cells carrying the offered flag, the bound branch and the delivery points of each cell, generated from data/ports.json by scripts/build-logistics-dataset.js. It is the same matrix the program pages and the intent-rubric rows for this category are built from. Project types run under the program: container programs, warehouse load-outs and resets, surge programs, freight-rework campaigns and port-adjacent staging.",
+   "url": "https://theflatratemovers.com/datasets/logistics-project-management/",
+   "sameAs": "https://theflatratemovers.com/datasets/logistics-project-management/",
+   "identifier": "https://theflatratemovers.com/datasets/logistics-project-management/",
+   "isAccessibleForFree": true,
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "creator": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "@id": "https://theflatratemovers.com/#organization",
+    "name": "The Flat Rate Movers LLC",
+    "url": "https://theflatratemovers.com/"
+   },
+   "datePublished": "2026-11-16",
+   "dateModified": "2026-11-16",
+   "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "@id": "https://theflatratemovers.com/datasets/#collection",
+    "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+    "url": "https://theflatratemovers.com/datasets/"
+   },
+   "spatialCoverage": [
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#winchester",
+     "name": "The Flat Rate Movers — Winchester",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.18711576,
+      "longitude": -78.1668352
+     }
+    },
+    {
+     "@type": "Place",
+     "@id": "https://theflatratemovers.com/#martinsburg",
+     "name": "Flat Rate Movers Martinsburg WV",
+     "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.48319665,
+      "longitude": -77.94760443
+     }
+    }
+   ],
+   "keywords": "logistics project management coverage matrix, ports by service columns, bound branch, delivery points, project logistics coverage",
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "coverageMatrix",
+     "value": "[{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-virginia-inland-port\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-virginia-norfolk\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"]},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"]},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"]},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"]},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"]},{\"port\":\"port-richmond-marine-terminal\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"]},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-baltimore\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"]},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"]},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"]},{\"port\":\"port-of-wilmington-de\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"]},{\"port\":\"port-philaport\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-philaport\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-philaport\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-philaport\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-philaport\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"]},{\"port\":\"port-philaport\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-philaport\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-philaport\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-huntington-tri-state\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"boundBranch\":\"winchester\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"TR\",\"serviceLabel\":\"Transloading\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"OC\",\"serviceLabel\":\"Ocean container packing and unpacking (stuffing, destuffing, devanning)\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"LU\",\"serviceLabel\":\"Loading and unloading / container labor\",\"service\":\"service-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"XD\",\"serviceLabel\":\"Cross-docking\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"RW\",\"serviceLabel\":\"Freight rework\",\"service\":\"service-freight-rework-transloading\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"WF\",\"serviceLabel\":\"Specialized workforce\",\"service\":\"service-industrial-commercial\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"PM\",\"serviceLabel\":\"Logistics project management\",\"service\":\"service-logistics-project-management\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]},{\"port\":\"port-of-new-york-new-jersey\",\"serviceColumn\":\"3P\",\"serviceLabel\":\"3PL support services\",\"service\":\"service-3pl-support\",\"offered\":true,\"boundBranch\":\"martinsburg\",\"deliveryPoints\":[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]}]"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "cellCount",
+     "value": "64"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "projectTypes",
+     "value": "[\"container programs\",\"warehouse load-outs\",\"warehouse resets\",\"surge programs\",\"freight-rework campaigns\",\"port-adjacent staging\"]"
+    }
+   ],
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "datasets-logistics-project-management.json — this file",
+     "contentUrl": "https://theflatratemovers.com/datasets-logistics-project-management.json",
+     "encodingFormat": "application/json"
+    }
+   ],
+   "isPartOf": {
+    "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#dataset-logistics-project-management"
+   }
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#service-logistics-project-management",
+   "name": "Logistics Project Management",
+   "serviceType": "Logistics project management",
+   "description": "Logistics project management for port, warehouse and industrial projects: survey, full scope, crew and sequence planning, supervised execution and closeout for container programs, warehouse load-outs and resets, surge programs, freight-rework campaigns and port-adjacent staging — run from the bound branch at the six ports the company serves. Scoped project execution only; not transportation management, brokerage or drayage. Every engagement is quoted per job at one flat rate in writing, with a single point of contact at the bound branch from survey through closeout.",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/logistics-project-management/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-virginia-inland-port"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-virginia-norfolk"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-richmond-marine-terminal"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-baltimore"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-wilmington-de"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-philaport"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-huntington-tri-state"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-new-york-new-jersey"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#service-transloading",
+   "name": "Loading, Transloading and Container Services",
+   "serviceType": "Loading, Transloading and Container Services",
+   "description": "Container loading and unloading, and transloading between truck, container and warehouse — counted, sorted and restacked for the inland leg, with cross-docking and warehouse staging. Run inside the logistics project management program at one flat rate in writing.",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/transloading/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-virginia-inland-port"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-virginia-norfolk"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-richmond-marine-terminal"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-baltimore"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-wilmington-de"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-philaport"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-huntington-tri-state"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-new-york-new-jersey"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#service-freight-rework",
+   "name": "Freight Rework & Transloading",
+   "serviceType": "Freight Rework & Transloading",
+   "description": "Freight rework and transloading from Winchester, VA and Martinsburg, WV — shifted loads, loads refused at a receiver's dock, damaged or collapsed pallets, and overweight or axle-illegal loads, unloaded under control, documented as found, rebuilt to the receiver's specification and re-secured to the federal cargo securement standard, plus planned cross-docking and container and rail-to-truck transloading — for drivers, carriers, brokers, 3PLs, warehouses and receivers, quoted at one flat rate before work begins, with emergency and after-hours response available at premium rates. The work is performed where the job requires: leased space, the receiver's dock, or a yard. No rate schedule is published for this service. Quoted flat in writing through the same flat-rate quote path, from Winchester VA and Martinsburg WV. Run inside the logistics project management program at one flat rate in writing.",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/freight-rework-transloading/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-virginia-inland-port"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-virginia-norfolk"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-richmond-marine-terminal"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-baltimore"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-wilmington-de"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-philaport"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-huntington-tri-state"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-new-york-new-jersey"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#service-specialized-workforce",
+   "name": "Industrial & Commercial Services",
+   "serviceType": "Industrial & Commercial Services",
+   "description": "Industrial & Commercial Services — Trained, Supervised Moving and Warehouse Teams for industrial and commercial project support: warehouse and distribution, commercial relocation and logistics including white-glove/blanket-wrap, FF&E installation and project support, and flexible workforce deployment, priced per job with no required contract duration. Standard Job Pricing: Unload $8.00/CWT, Load $10.00/CWT, APU $12.00/CWT, Residential/Driver Meet $400-$425 per man. Run inside the logistics project management program at one flat rate in writing.",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/industrial-commercial-services/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-virginia-inland-port"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-virginia-norfolk"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-richmond-marine-terminal"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-baltimore"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-wilmington-de"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-philaport"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-huntington-tri-state"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-new-york-new-jersey"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#service-3pl-support",
+   "name": "3PL Support Services",
+   "serviceType": "3PL Support Services",
+   "description": "3PL support services: supervised crews that support operations run by 3PLs, distribution centers and carriers — receiving support, sort and segregation, container crews, freight rework, surge labor and project support. Support, not operator: the company holds no warehouse network, leases no warehouse space for clients and takes no custody of client freight as an operator. Run inside the logistics project management program at one flat rate in writing.",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/3pl-support-services/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-virginia-inland-port"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-virginia-norfolk"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-richmond-marine-terminal"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-baltimore"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-wilmington-de"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-philaport"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-huntington-tri-state"
+    },
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-new-york-new-jersey"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#pm-port-virginia-inland-port",
+   "name": "Logistics Project Management — VIP",
+   "serviceType": "Logistics project management",
+   "description": "Logistics project management at Virginia Inland Port from The Flat Rate Movers — survey, full scope, crew and sequence planning, supervised execution and closeout for container programs, warehouse load-outs and resets, surge programs, freight-rework campaigns and port-adjacent staging, run from the Winchester, VA branch (I-81 S to I-66 E (Exit 300), Front Royal), one flat rate in writing, TWIC-carded crews dispatched 24/7. The dedicated hub for this program is https://theflatratemovers.com/logistics-project-management/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/logistics-project-management/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-virginia-inland-port"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#pm-port-of-virginia-norfolk",
+   "name": "Logistics Project Management — Port of Virginia (Norfolk)",
+   "serviceType": "Logistics project management",
+   "description": "Logistics project management at Port of Virginia — Norfolk Harbor from The Flat Rate Movers — survey, full scope, crew and sequence planning, supervised execution and closeout for container programs, warehouse load-outs and resets, surge programs, freight-rework campaigns and port-adjacent staging, run from the Winchester, VA branch (I-81 S to I-64 E to Norfolk), one flat rate in writing, TWIC-carded crews dispatched 24/7. The dedicated hub for this program is https://theflatratemovers.com/logistics-project-management/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/logistics-project-management/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-virginia-norfolk"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#pm-port-richmond-marine-terminal",
+   "name": "Logistics Project Management — RMT",
+   "serviceType": "Logistics project management",
+   "description": "Logistics project management at Richmond Marine Terminal from The Flat Rate Movers — survey, full scope, crew and sequence planning, supervised execution and closeout for container programs, warehouse load-outs and resets, surge programs, freight-rework campaigns and port-adjacent staging, run from the Winchester, VA branch (I-81 S to I-64 E to I-95 S, Richmond), one flat rate in writing, TWIC-carded crews dispatched 24/7. The dedicated hub for this program is https://theflatratemovers.com/logistics-project-management/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/logistics-project-management/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-richmond-marine-terminal"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#pm-port-of-baltimore",
+   "name": "Logistics Project Management — Port of Baltimore",
+   "serviceType": "Logistics project management",
+   "description": "Logistics project management at Helen Delich Bentley Port of Baltimore from The Flat Rate Movers — survey, full scope, crew and sequence planning, supervised execution and closeout for container programs, warehouse load-outs and resets, surge programs, freight-rework campaigns and port-adjacent staging, run from the Martinsburg, WV branch (I-81 N to I-70 E to I-695 (west side) / I-95, Baltimore), one flat rate in writing, TWIC-carded crews dispatched 24/7. The dedicated hub for this program is https://theflatratemovers.com/logistics-project-management/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/logistics-project-management/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-baltimore"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#pm-port-of-wilmington-de",
+   "name": "Logistics Project Management — Port of Wilmington, DE",
+   "serviceType": "Logistics project management",
+   "description": "Logistics project management at Port of Wilmington from The Flat Rate Movers — survey, full scope, crew and sequence planning, supervised execution and closeout for container programs, warehouse load-outs and resets, surge programs, freight-rework campaigns and port-adjacent staging, run from the Martinsburg, WV branch (I-81 N to I-70 E to I-95 N, Wilmington), one flat rate in writing, TWIC-carded crews dispatched 24/7. The dedicated hub for this program is https://theflatratemovers.com/logistics-project-management/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/logistics-project-management/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-wilmington-de"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#pm-port-philaport",
+   "name": "Logistics Project Management — PhilaPort",
+   "serviceType": "Logistics project management",
+   "description": "Logistics project management at PhilaPort — Port of Philadelphia from The Flat Rate Movers — survey, full scope, crew and sequence planning, supervised execution and closeout for container programs, warehouse load-outs and resets, surge programs, freight-rework campaigns and port-adjacent staging, run from the Martinsburg, WV branch (I-81 N to I-70 E to I-95 N, Philadelphia), one flat rate in writing, TWIC-carded crews dispatched 24/7. The dedicated hub for this program is https://theflatratemovers.com/logistics-project-management/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/logistics-project-management/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-philaport"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#pm-port-of-huntington-tri-state",
+   "name": "Logistics Project Management — Port of Huntington (Tri-State)",
+   "serviceType": "Logistics project management",
+   "description": "Logistics project management at Port of Huntington Tri-State from The Flat Rate Movers — survey, full scope, crew and sequence planning, supervised execution and closeout for container programs, warehouse load-outs and resets, surge programs, freight-rework campaigns and port-adjacent staging, run from the Winchester, VA branch (I-81 S to I-64 W (Lexington, VA) to Huntington), one flat rate in writing, TWIC-carded crews dispatched 24/7. The dedicated hub for this program is https://theflatratemovers.com/logistics-project-management/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/logistics-project-management/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-huntington-tri-state"
+    }
+   ]
+  },
+  {
+   "@type": "Service",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#pm-port-of-new-york-new-jersey",
+   "name": "Logistics Project Management — Port of New York and New Jersey",
+   "serviceType": "Logistics project management",
+   "description": "Logistics project management at Port of New York and New Jersey from The Flat Rate Movers — survey, full scope, crew and sequence planning, supervised execution and closeout for container programs, warehouse load-outs and resets, surge programs, freight-rework campaigns and port-adjacent staging, run from the Martinsburg, WV branch (I-81 N to I-78 E (Harrisburg) to I-95 / NJ Turnpike at Newark Bay, Elizabeth), one flat rate in writing, TWIC-carded crews dispatched 24/7. The dedicated hub for this program is https://theflatratemovers.com/logistics-project-management/",
+   "provider": {
+    "@id": "https://theflatratemovers.com/#organization"
+   },
+   "url": "https://theflatratemovers.com/logistics-project-management/",
+   "areaServed": [
+    {
+     "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-new-york-new-jersey"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-virginia-inland-port",
+   "name": "Virginia Inland Port",
+   "description": "inland intermodal terminal (dry port) — Front Royal, VA. Logistics projects at this port run from the Winchester, VA branch (I-81 S to I-66 E (Exit 300), Front Royal).",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.9878,
+    "longitude": -78.17829
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7685 Winchester Rd",
+    "addressLocality": "Front Royal",
+    "addressRegion": "VA",
+    "postalCode": "22630",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "portAuthority",
+     "value": "Virginia Port Authority"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "operator",
+     "value": "Virginia Port Authority"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "boundBranch",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "routeFromBindingBranch",
+     "value": "I-81 S to I-66 E (Exit 300), Front Royal"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "deliveryPoints",
+     "value": "[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-virginia-norfolk",
+   "name": "Port of Virginia — Norfolk Harbor",
+   "description": "deepwater marine port (container, RoRo, breakbulk) — Norfolk, VA. Logistics projects at this port run from the Winchester, VA branch (I-81 S to I-64 E to Norfolk).",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.91683,
+    "longitude": -76.3098
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7737 Hampton Blvd",
+    "addressLocality": "Norfolk",
+    "addressRegion": "VA",
+    "postalCode": "23505",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "portAuthority",
+     "value": "Virginia Port Authority"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "operator",
+     "value": "Virginia International Terminals, LLC (operating arm of the Virginia Port Authority)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "boundBranch",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "routeFromBindingBranch",
+     "value": "I-81 S to I-64 E to Norfolk"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "deliveryPoints",
+     "value": "[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-richmond-marine-terminal",
+   "name": "Richmond Marine Terminal",
+   "description": "river barge terminal (inland port) — Richmond, VA. Logistics projects at this port run from the Winchester, VA branch (I-81 S to I-64 E to I-95 S, Richmond).",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.45564,
+    "longitude": -77.42259
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5000 Deepwater Terminal Rd",
+    "addressLocality": "Richmond",
+    "addressRegion": "VA",
+    "postalCode": "23234",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "portAuthority",
+     "value": "Virginia Port Authority (operator under lease)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "operator",
+     "value": "Virginia International Terminals, LLC — the City of Richmond owns the terminal; the Virginia Port Authority leases it under a 40-year lease signed 2016 (to 2056)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "boundBranch",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "routeFromBindingBranch",
+     "value": "I-81 S to I-64 E to I-95 S, Richmond"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "deliveryPoints",
+     "value": "[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"]"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-baltimore",
+   "name": "Helen Delich Bentley Port of Baltimore",
+   "description": "deepwater marine port (containers, RoRo, autos, forest products, breakbulk) — Baltimore, MD. Logistics projects at this port run from the Martinsburg, WV branch (I-81 N to I-70 E to I-695 (west side) / I-95, Baltimore).",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.25707,
+    "longitude": -76.5378
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2600 Broening Hwy",
+    "addressLocality": "Baltimore",
+    "addressRegion": "MD",
+    "postalCode": "21224",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "portAuthority",
+     "value": "Maryland Port Administration (MDOT MPA)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "operator",
+     "value": "Maryland Port Administration (public terminals are state-owned and MPA-managed; Seagirt is operated by Ports America Chesapeake under a 50-year public-private partnership from 2010)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "boundBranch",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "routeFromBindingBranch",
+     "value": "I-81 N to I-70 E to I-695 (west side) / I-95, Baltimore"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "deliveryPoints",
+     "value": "[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-wilmington-de",
+   "name": "Port of Wilmington",
+   "description": "deepwater marine port (fruit, reefer, breakbulk, RoRo) — Wilmington, DE. Logistics projects at this port run from the Martinsburg, WV branch (I-81 N to I-70 E to I-95 N, Wilmington).",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.71517,
+    "longitude": -75.52987
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1 Hausel Rd",
+    "addressLocality": "Wilmington",
+    "addressRegion": "DE",
+    "postalCode": "19801",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "portAuthority",
+     "value": "Diamond State Port Corporation (State of Delaware)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "operator",
+     "value": "Enstructure (operator since 31 July 2023 under a long-term concession; the former GT USA Wilmington / Gulftainer concession was cancelled)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "boundBranch",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "routeFromBindingBranch",
+     "value": "I-81 N to I-70 E to I-95 N, Wilmington"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "deliveryPoints",
+     "value": "[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\"]"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-philaport",
+   "name": "PhilaPort — Port of Philadelphia",
+   "description": "deepwater marine port (containers, reefer, breakbulk, forest products, autos) — Philadelphia, PA. Logistics projects at this port run from the Martinsburg, WV branch (I-81 N to I-70 E to I-95 N, Philadelphia).",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.90606,
+    "longitude": -75.13803
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3301 S Christopher Columbus Blvd",
+    "addressLocality": "Philadelphia",
+    "addressRegion": "PA",
+    "postalCode": "19148",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "portAuthority",
+     "value": "PhilaPort (Philadelphia Regional Port Authority, Commonwealth of Pennsylvania)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "operator",
+     "value": "Private terminal operators under lease (landlord port): Packer Avenue — Greenwich Terminals LLC; Tioga — Delaware River Stevedores; Southport Auto — Glovis America"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "boundBranch",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "routeFromBindingBranch",
+     "value": "I-81 N to I-70 E to I-95 N, Philadelphia"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "deliveryPoints",
+     "value": "[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-huntington-tri-state",
+   "name": "Port of Huntington Tri-State",
+   "description": "inland river port district (barge, bulk, breakbulk) — a U.S. Port Statistical Area spanning the Ohio, Kanawha and Big Sandy rivers in West Virginia, Ohio and Kentucky — Huntington, WV. Logistics projects at this port run from the Winchester, VA branch (I-81 S to I-64 W (Lexington, VA) to Huntington).",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.41925,
+    "longitude": -82.44515
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Huntington",
+    "addressRegion": "WV",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "portAuthority",
+     "value": "Huntington District Waterways Association (the district is a Port Statistical Area, not a single port authority)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "operator",
+     "value": "Multiple private terminal and dock operators across the district (no single operator)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "boundBranch",
+     "value": "winchester"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "routeFromBindingBranch",
+     "value": "I-81 S to I-64 W (Lexington, VA) to Huntington"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "deliveryPoints",
+     "value": "[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]"
+    }
+   ]
+  },
+  {
+   "@type": "Place",
+   "@id": "https://theflatratemovers.com/datasets/logistics-project-management/#port-of-new-york-new-jersey",
+   "name": "Port of New York and New Jersey",
+   "description": "deepwater marine port (containers, autos and RoRo, bulk, breakbulk) — the largest container port on the U.S. East Coast and the third-largest in the United States — Elizabeth, NJ. Logistics projects at this port run from the Martinsburg, WV branch (I-81 N to I-78 E (Harrisburg) to I-95 / NJ Turnpike at Newark Bay, Elizabeth).",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.68155,
+    "longitude": -74.1505
+   },
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Elizabeth",
+    "addressRegion": "NJ",
+    "addressCountry": "US"
+   },
+   "additionalProperty": [
+    {
+     "@type": "PropertyValue",
+     "name": "portAuthority",
+     "value": "The Port Authority of New York and New Jersey"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "operator",
+     "value": "Multiple private terminal operators running Port Authority terminals under long-term leases (landlord port — the Port Authority owns the terminals, the operators run them)"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "boundBranch",
+     "value": "martinsburg"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "routeFromBindingBranch",
+     "value": "I-81 N to I-78 E (Harrisburg) to I-95 / NJ Turnpike at Newark Bay, Elizabeth"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "deliveryPoints",
+     "value": "[\"port-adjacent-warehouse\",\"receivers-dock\",\"yard\",\"leased-space\",\"on-terminal-by-arrangement\"]"
+    }
+   ]
+  }
+ ]
+}

@@ -18,7 +18,7 @@
       "serviceType": "Packing and Unpacking"
     },
     {
-      "@type": "LocalBusiness",
+      "@type": "Place",
       "@id": "https://theflatratemovers.com/#martinsburg",
       "name": "Flat Rate Movers Martinsburg WV",
       "foundingDate": "2010-06",
@@ -27,7 +27,8 @@
         "streetAddress": "736 Williamsport Pike Suite 2",
         "addressLocality": "Martinsburg",
         "addressRegion": "WV",
-        "postalCode": "25404"
+        "postalCode": "25404",
+        "addressCountry": "US"
       },
       "geo": {
         "@type": "GeoCoordinates",
@@ -38,27 +39,33 @@
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Mon-Fri",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
           "opens": "09:00",
           "closes": "18:00"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sat",
+          "dayOfWeek": "Saturday",
           "opens": "09:00",
           "closes": "16:00"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sun",
+          "dayOfWeek": "Sunday",
           "opens": "09:00",
           "closes": "16:00"
         }
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": 4.7,
-        "reviewCount": 6
+        "ratingValue": "4.7",
+        "reviewCount": "6"
       },
       "areaServed": [
         "Inwood",
@@ -100,7 +107,16 @@
       "priceRange": "$$",
       "parentOrganization": {
         "@id": "https://theflatratemovers.com/#organization"
-      }
+      },
+      "email": "ratemovers@gmail.com",
+      "url": "https://theflatratemovers.com/moving-company-martinsburg-wv/",
+      "image": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+      "logo": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+      "sameAs": [
+        "https://www.openstreetmap.org/node/14340286373",
+        "https://www.google.com/maps/place/Flat+Rate+Movers+Martinsburg+WV/@39.483194,-77.9476095,17z/data=!3m1!4b1!4m6!3m5!1s0x89ca0332e77cbbc1:0xd2c09b12100029f5!8m2!3d39.483194!4d-77.9476095!16s%2Fg%2F11l5ssn0bk"
+      ],
+      "hasMap": "https://www.google.com/maps/place/Flat+Rate+Movers+Martinsburg+WV/@39.483194,-77.9476095,17z/data=!3m1!4b1!4m6!3m5!1s0x89ca0332e77cbbc1:0xd2c09b12100029f5!8m2!3d39.483194!4d-77.9476095!16s%2Fg%2F11l5ssn0bk"
     },
     {
       "@type": "Organization",
@@ -112,7 +128,7 @@
     {
       "@type": "WebPage",
       "@id": "https://theflatratemovers.com/packing-movers-martinsburg-wv/",
-      "dateModified": "2026-11-18",
+      "dateModified": "2026-11-19",
       "url": "https://theflatratemovers.com/packing-movers-martinsburg-wv/",
       "name": "Packing Movers — Martinsburg WV",
       "image": {

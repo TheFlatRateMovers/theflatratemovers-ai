@@ -18,16 +18,17 @@
       "serviceType": "Commercial and Office Moving"
     },
     {
-      "@type": "LocalBusiness",
+      "@type": "Place",
       "@id": "https://theflatratemovers.com/#winchester",
-      "name": "The Flat Rate Movers",
+      "name": "The Flat Rate Movers — Winchester, VA",
       "foundingDate": "2010-06",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "116 W Piccadilly St Suite 11",
         "addressLocality": "Winchester",
         "addressRegion": "VA",
-        "postalCode": "22601"
+        "postalCode": "22601",
+        "addressCountry": "US"
       },
       "geo": {
         "@type": "GeoCoordinates",
@@ -38,27 +39,33 @@
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Mon-Fri",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
           "opens": "08:00",
           "closes": "18:00"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sat",
+          "dayOfWeek": "Saturday",
           "opens": "08:00",
           "closes": "16:00"
         },
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sun",
+          "dayOfWeek": "Sunday",
           "opens": "09:00",
           "closes": "16:00"
         }
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": 5,
-        "reviewCount": 2
+        "ratingValue": "5.0",
+        "reviewCount": "2"
       },
       "areaServed": [
         "Leesburg",
@@ -97,7 +104,16 @@
       "priceRange": "$$",
       "parentOrganization": {
         "@id": "https://theflatratemovers.com/#organization"
-      }
+      },
+      "email": "ratemovers@gmail.com",
+      "url": "https://theflatratemovers.com/moving-company-winchester-va/",
+      "image": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+      "logo": "https://theflatratemovers.com/assets/img-01-9c77693ba66b.png",
+      "sameAs": [
+        "https://www.openstreetmap.org/node/14340286372",
+        "https://www.google.com/maps/place/The+Flat+Rate+Movers/data=!4m2!3m1!1s0x0:0x8c22a1ade42613b0"
+      ],
+      "hasMap": "https://www.google.com/maps/place/The+Flat+Rate+Movers/data=!4m2!3m1!1s0x0:0x8c22a1ade42613b0"
     },
     {
       "@type": "Organization",
@@ -109,7 +125,7 @@
     {
       "@type": "WebPage",
       "@id": "https://theflatratemovers.com/commercial-movers-winchester-va/",
-      "dateModified": "2026-11-18",
+      "dateModified": "2026-11-19",
       "url": "https://theflatratemovers.com/commercial-movers-winchester-va/",
       "name": "Commercial and Office Movers — Winchester VA",
       "image": {

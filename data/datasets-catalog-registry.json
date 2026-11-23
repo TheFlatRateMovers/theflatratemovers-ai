@@ -370,7 +370,7 @@
      "name": "Estate API (api.theflatratemovers.com)",
      "kind": "first-party read API",
      "url": "https://api.theflatratemovers.com/v1/datasets",
-     "distributionScope": "The API worker bundles every dataset file at each refresh (refresh-bundle.py derives the set from the signed index) and serves it byte-identical at /v1/datasets and per-registry routes. At this generation the live bundle lists 80 of 88 files; a file published after the last refresh joins at the next batch close.",
+     "distributionScope": "The API worker bundles every dataset file at each refresh (refresh-bundle.py derives the set from the signed index) and serves it byte-identical at /v1/datasets and per-registry routes. At this generation the live bundle lists 88 of 88 files; a file published after the last refresh joins at the next batch close.",
      "status": "live-current",
      "lastObserved": "2026-11-22"
     },
@@ -379,7 +379,7 @@
      "name": "GitHub — theflatratemovers-ai (data/)",
      "kind": "public repository mirror",
      "url": "https://github.com/TheFlatRateMovers/theflatratemovers-ai/tree/main/data",
-     "distributionScope": "Every dataset file is mirrored under data/ in the public AI repository at each batch close (push-mirrors glob rule). At this generation the mirror tree (origin/main @ b92b6fa) carries 80 of 88 files, 14 blob-current.",
+     "distributionScope": "Every dataset file is mirrored under data/ in the public AI repository at each batch close (push-mirrors glob rule). At this generation the mirror tree (origin/main @ 0a783e4) carries 88 of 88 files, 17 blob-current.",
      "status": "live-current",
      "lastObserved": "2026-11-22"
     },
@@ -607,7 +607,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -713,7 +713,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -819,7 +819,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -925,7 +925,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -1017,25 +1017,25 @@
     {
      "dataset_id": "datasets-answer-evidence-questions-6.json",
      "catalog_id": "api",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "method": "Live GET /v1/datasets lists this file; sync computed from the refresh-bundle manifest digest record (bundle-manifest.json) against the signed master index digest.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
      "dataset_id": "datasets-answer-evidence-questions-6.json",
      "catalog_id": "github-ai",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok): data/datasets-answer-evidence-questions-6.json is not in the tree.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
@@ -1123,25 +1123,25 @@
     {
      "dataset_id": "datasets-answer-evidence-questions-7.json",
      "catalog_id": "api",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "method": "Live GET /v1/datasets lists this file; sync computed from the refresh-bundle manifest digest record (bundle-manifest.json) against the signed master index digest.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
      "dataset_id": "datasets-answer-evidence-questions-7.json",
      "catalog_id": "github-ai",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok): data/datasets-answer-evidence-questions-7.json is not in the tree.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
@@ -1229,25 +1229,25 @@
     {
      "dataset_id": "datasets-answer-evidence-questions-8.json",
      "catalog_id": "api",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "method": "Live GET /v1/datasets lists this file; sync computed from the refresh-bundle manifest digest record (bundle-manifest.json) against the signed master index digest.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
      "dataset_id": "datasets-answer-evidence-questions-8.json",
      "catalog_id": "github-ai",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok): data/datasets-answer-evidence-questions-8.json is not in the tree.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
@@ -1335,25 +1335,25 @@
     {
      "dataset_id": "datasets-answer-evidence-questions-9.json",
      "catalog_id": "api",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "method": "Live GET /v1/datasets lists this file; sync computed from the refresh-bundle manifest digest record (bundle-manifest.json) against the signed master index digest.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
      "dataset_id": "datasets-answer-evidence-questions-9.json",
      "catalog_id": "github-ai",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok): data/datasets-answer-evidence-questions-9.json is not in the tree.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
@@ -1455,7 +1455,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -1561,7 +1561,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -1667,7 +1667,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -1773,7 +1773,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -1879,7 +1879,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -1985,7 +1985,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -2091,7 +2091,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa) lists data/datasets-catalog-registry.json; the mirror holds the previous sealed generation of this file — the registry trails itself by one generation on mirror seats by construction (see the method node); the post-close blob equality is recorded in the batch record.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4) lists data/datasets-catalog-registry.json; the mirror holds the previous sealed generation of this file — the registry trails itself by one generation on mirror seats by construction (see the method node); the post-close blob equality is recorded in the batch record.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -2197,7 +2197,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -2303,7 +2303,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -2409,7 +2409,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -2515,7 +2515,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -2621,7 +2621,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -2727,7 +2727,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -2833,7 +2833,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -2939,7 +2939,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -3045,7 +3045,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -3151,7 +3151,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -3257,7 +3257,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -3363,7 +3363,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -3469,7 +3469,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -3575,7 +3575,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -3681,7 +3681,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -3787,7 +3787,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -3879,25 +3879,25 @@
     {
      "dataset_id": "datasets-intent-rows-2.json",
      "catalog_id": "api",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "method": "Live GET /v1/datasets lists this file; sync computed from the refresh-bundle manifest digest record (bundle-manifest.json) against the signed master index digest.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
      "dataset_id": "datasets-intent-rows-2.json",
      "catalog_id": "github-ai",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok): data/datasets-intent-rows-2.json is not in the tree.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
@@ -3985,25 +3985,25 @@
     {
      "dataset_id": "datasets-intent-rows-3.json",
      "catalog_id": "api",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "method": "Live GET /v1/datasets lists this file; sync computed from the refresh-bundle manifest digest record (bundle-manifest.json) against the signed master index digest.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
      "dataset_id": "datasets-intent-rows-3.json",
      "catalog_id": "github-ai",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok): data/datasets-intent-rows-3.json is not in the tree.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
@@ -4091,25 +4091,25 @@
     {
      "dataset_id": "datasets-intent-rows-4.json",
      "catalog_id": "api",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "method": "Live GET /v1/datasets lists this file; sync computed from the refresh-bundle manifest digest record (bundle-manifest.json) against the signed master index digest.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
      "dataset_id": "datasets-intent-rows-4.json",
      "catalog_id": "github-ai",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok): data/datasets-intent-rows-4.json is not in the tree.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
@@ -4197,25 +4197,25 @@
     {
      "dataset_id": "datasets-intent-rows.json",
      "catalog_id": "api",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "Live GET https://api.theflatratemovers.com/v1/datasets at generation does not list this file (the API bundle refreshes with each estate batch close; a file published after the last refresh is absent until the next one).",
+      "method": "Live GET /v1/datasets lists this file; sync computed from the refresh-bundle manifest digest record (bundle-manifest.json) against the signed master index digest.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
      "dataset_id": "datasets-intent-rows.json",
      "catalog_id": "github-ai",
-     "presence_state": "absent-observed",
+     "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok): data/datasets-intent-rows.json is not in the tree.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": null,
+     "version_sync_state": "stale",
      "last_observed": "2026-11-22"
     },
     {
@@ -4317,7 +4317,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -4423,7 +4423,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -4529,7 +4529,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -4635,7 +4635,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -4741,7 +4741,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -4847,7 +4847,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -4953,7 +4953,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -5059,7 +5059,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -5165,7 +5165,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -5271,7 +5271,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -5377,7 +5377,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -5483,7 +5483,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -5589,7 +5589,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -5695,7 +5695,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -5801,7 +5801,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -5907,7 +5907,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -6013,7 +6013,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -6119,7 +6119,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -6225,7 +6225,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -6331,7 +6331,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -6437,7 +6437,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -6543,7 +6543,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -6649,7 +6649,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -6755,7 +6755,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -6861,7 +6861,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -6967,7 +6967,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -7073,7 +7073,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -7179,7 +7179,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -7285,7 +7285,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -7391,7 +7391,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -7497,7 +7497,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -7595,7 +7595,7 @@
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": "stale",
+     "version_sync_state": "current",
      "last_observed": "2026-11-22"
     },
     {
@@ -7603,11 +7603,11 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": "stale",
+     "version_sync_state": "current",
      "last_observed": "2026-11-22"
     },
     {
@@ -7701,7 +7701,7 @@
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": "stale",
+     "version_sync_state": "current",
      "last_observed": "2026-11-22"
     },
     {
@@ -7709,11 +7709,11 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": "stale",
+     "version_sync_state": "current",
      "last_observed": "2026-11-22"
     },
     {
@@ -7807,7 +7807,7 @@
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": "stale",
+     "version_sync_state": "current",
      "last_observed": "2026-11-22"
     },
     {
@@ -7815,11 +7815,11 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
-     "version_sync_state": "stale",
+     "version_sync_state": "current",
      "last_observed": "2026-11-22"
     },
     {
@@ -7921,7 +7921,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -8027,7 +8027,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -8133,7 +8133,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -8239,7 +8239,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -8345,7 +8345,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -8451,7 +8451,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -8557,7 +8557,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -8663,7 +8663,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -8769,7 +8769,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -8875,7 +8875,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -8981,7 +8981,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -9088,7 +9088,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -9195,7 +9195,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -9301,7 +9301,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -9407,7 +9407,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -9513,7 +9513,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -9619,7 +9619,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -9725,7 +9725,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -9831,7 +9831,7 @@
      "catalog_id": "github-ai",
      "presence_state": "present-verified",
      "presenceEvidence": {
-      "method": "git ls-tree of the local mirror clone (origin/main @ b92b6fa, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
+      "method": "git ls-tree of the local mirror clone (origin/main @ 0a783e4, fetch ok); sync = git blob SHA-1 of the mirror copy vs the local file.",
       "observedAt": "2026-11-22",
       "source": "catalog registry generator run, 2026-11-22"
      },
@@ -15198,6 +15198,18 @@
     },
     {
      "date": "2026-11-22",
+     "catalog_id": "api",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-22: live /v1/datasets lists 88 of 88 dataset files; 87 digest-current per the refresh-bundle manifest record, 1 stale, 0 absent (published after the last bundle refresh; the batch-close refresh is the remedy)."
+    },
+    {
+     "date": "2026-11-22",
+     "catalog_id": "api",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-22: live /v1/datasets lists 88 of 88 dataset files; 17 digest-current per the refresh-bundle manifest record, 71 stale, 0 absent (published after the last bundle refresh; the batch-close refresh is the remedy)."
+    },
+    {
+     "date": "2026-11-22",
      "catalog_id": "dataset-search",
      "kind": "diagnostic-test",
      "result": "T2 re-validated from primary sources on 2026-11-22 (the 2026-11-01 diagnostic’s primary record file could not be located — only its outcome statement survives in the 2026-11-01 daily log — so the test was RE-RUN, per the prep’s remedy): required Dataset properties per Google’s own dataset documentation (name; description 50–5,000 chars; DataDownload contentUrl) PASS on all three representative landings’ primary Dataset nodes (datasets hub, intent-coverage, gun-safe), and no required-property form difference exists against the Zenodo record page’s embedded Dataset node. Recommended-property deltas only (datePublished, version on landing-primary nodes). T2 ELIMINATED, firm. Full record: batch-catalog-registry-2026-11-03/work/T2-VALIDATION-2026-11-03.md."
@@ -15207,6 +15219,36 @@
      "catalog_id": "github-ai",
      "kind": "sync-check",
      "result": "Generating run 2026-11-22: mirror clone origin/main @ b92b6fa (fetch ok) carries 80 of 88 dataset files under data/; 14 blob-current, 66 stale, 8 absent."
+    },
+    {
+     "date": "2026-11-22",
+     "catalog_id": "github-ai",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-22: mirror clone origin/main @ 0a783e4 (fetch ok) carries 88 of 88 dataset files under data/; 87 blob-current, 1 stale, 0 absent."
+    },
+    {
+     "date": "2026-11-22",
+     "catalog_id": "github-ai",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-22: mirror clone origin/main @ 0a783e4 (fetch ok) carries 88 of 88 dataset files under data/; 81 blob-current, 7 stale, 0 absent."
+    },
+    {
+     "date": "2026-11-22",
+     "catalog_id": "github-ai",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-22: mirror clone origin/main @ 0a783e4 (fetch ok) carries 88 of 88 dataset files under data/; 67 blob-current, 21 stale, 0 absent."
+    },
+    {
+     "date": "2026-11-22",
+     "catalog_id": "github-ai",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-22: mirror clone origin/main @ 0a783e4 (fetch ok) carries 88 of 88 dataset files under data/; 18 blob-current, 70 stale, 0 absent."
+    },
+    {
+     "date": "2026-11-22",
+     "catalog_id": "github-ai",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-22: mirror clone origin/main @ 0a783e4 (fetch ok) carries 88 of 88 dataset files under data/; 17 blob-current, 71 stale, 0 absent."
     },
     {
      "date": "2026-11-22",
@@ -15252,6 +15294,30 @@
     },
     {
      "date": "2026-11-22",
+     "catalog_id": "website",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-22: 82 of 88 dataset files byte-identical to the signed master index (SHA-256); the registry file’s own digest joins the index in this batch’s seal."
+    },
+    {
+     "date": "2026-11-22",
+     "catalog_id": "website",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-22: 68 of 88 dataset files byte-identical to the signed master index (SHA-256); the registry file’s own digest joins the index in this batch’s seal."
+    },
+    {
+     "date": "2026-11-22",
+     "catalog_id": "website",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-22: 19 of 88 dataset files byte-identical to the signed master index (SHA-256); the registry file’s own digest joins the index in this batch’s seal."
+    },
+    {
+     "date": "2026-11-22",
+     "catalog_id": "website",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-22: 18 of 88 dataset files byte-identical to the signed master index (SHA-256); the registry file’s own digest joins the index in this batch’s seal."
+    },
+    {
+     "date": "2026-11-22",
      "catalog_id": "zenodo",
      "kind": "sync-check",
      "result": "Generating run 2026-11-22: dataset-line deposit (record 23879049) holds 38 of 88 dataset files; 0 digest-current, 38 stale, 50 absent. Record stats at read: 122 views, 35 downloads."
@@ -15261,6 +15327,18 @@
      "catalog_id": "zenodo",
      "kind": "sync-check",
      "result": "Generating run 2026-11-22: dataset-line deposit (record 23879049) holds 38 of 88 dataset files; 0 digest-current, 38 stale, 50 absent. Record stats at read: 125 views, 36 downloads."
+    },
+    {
+     "date": "2026-11-22",
+     "catalog_id": "zenodo",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-22: dataset-line deposit (record 23879049) holds 38 of 88 dataset files; 0 digest-current, 38 stale, 50 absent. Record stats at read: 126 views, 36 downloads."
+    },
+    {
+     "date": "2026-11-22",
+     "catalog_id": "zenodo",
+     "kind": "sync-check",
+     "result": "Generating run 2026-11-22: dataset-line deposit (record 23879049) holds 38 of 88 dataset files; 0 digest-current, 38 stale, 50 absent. Record stats at read: 129 views, 37 downloads."
     }
    ]
   },
@@ -15682,16 +15760,16 @@
     "joinRows": 616,
     "rowsPerDataset": 7,
     "presence": {
-     "present-verified": 286,
-     "absent-observed": 154,
+     "present-verified": 302,
+     "absent-observed": 138,
      "not-applicable": 87,
      "unverified (read failed)": 89
     },
     "sync": {
-     "current": 109,
-     "stale": 177,
+     "current": 115,
+     "stale": 187,
      "stale-unknown": 89,
-     "not-measured (no digest on this seat)": 241
+     "not-measured (no digest on this seat)": 225
     },
     "seats": {
      "website": {
@@ -15704,21 +15782,21 @@
       "unknown": 0
      },
      "api": {
-      "present": 80,
-      "absent": 8,
+      "present": 88,
+      "absent": 0,
       "na": 0,
       "unverified": 0,
-      "current": 14,
-      "stale": 66,
+      "current": 17,
+      "stale": 71,
       "unknown": 0
      },
      "github-ai": {
-      "present": 80,
-      "absent": 8,
+      "present": 88,
+      "absent": 0,
       "na": 0,
       "unverified": 0,
-      "current": 14,
-      "stale": 66,
+      "current": 17,
+      "stale": 71,
       "unknown": 0
      },
      "huggingface-estate": {
@@ -15778,7 +15856,7 @@
     },
     "baselineAtGeneration": {
      "signedDistributions": 1636,
-     "signedIndexSha256Prefix": "12340944",
+     "signedIndexSha256Prefix": "66191232",
      "datasetFilesInIndex": 88,
      "note": "The estate baseline as read by this generation (2026-11-22), before this batch’s own seal adds the registry’s distributions."
     },
@@ -16012,7 +16090,7 @@
      "date": "2026-11-22"
     },
     {
-     "name": "Live channel reads at generation: estate API /v1/datasets + bundle-manifest.json; GitHub mirror clone tree (origin/main @ b92b6fa); Zenodo record 23879049 + deposit zip",
+     "name": "Live channel reads at generation: estate API /v1/datasets + bundle-manifest.json; GitHub mirror clone tree (origin/main @ 0a783e4); Zenodo record 23879049 + deposit zip",
      "date": "2026-11-22"
     },
     {

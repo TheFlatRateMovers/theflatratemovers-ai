@@ -28,27 +28,11 @@
       ]
     },
     {
-      "identifier": "urn:air:theflatratemovers.com:data:llms",
-      "displayName": "The Flat Rate Movers llms.txt",
-      "type": "text/plain",
-      "url": "https://theflatratemovers.com/llms.txt",
-      "description": "Plain-text summary of The Flat Rate Movers facts for AI systems: flat-rate moving, both branches with hours and Google ratings, services, corridors, and links to the full data file, GeoJSON, and entity graphs.",
-      "tags": [
-        "moving",
-        "llms.txt",
-        "facts"
-      ],
-      "representativeQueries": [
-        "Summarize The Flat Rate Movers business facts for an AI assistant",
-        "What are the Winchester and Martinsburg branch hours and ratings?"
-      ]
-    },
-    {
       "identifier": "urn:air:theflatratemovers.com:data:service-area-geojson",
       "displayName": "The Flat Rate Movers Service Area GeoJSON",
       "type": "application/geo+json",
       "url": "https://theflatratemovers.com/service-area.geojson",
-      "description": "Service areas as GeoJSON: 71 features, per branch (Winchester, VA and Martinsburg, WV), with rubric scores and published source data, verified 2026-10-28.",
+      "description": "Service areas as GeoJSON: 335 features, per branch (Winchester, VA and Martinsburg, WV), with rubric scores and published source data.",
       "tags": [
         "moving",
         "geojson",
@@ -77,6 +61,263 @@
       "representativeQueries": [
         "Show the entity graph for The Flat Rate Movers",
         "How are The Flat Rate Movers services linked to their branches?"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:best-json-entity-graph",
+      "displayName": "The Flat Rate Movers Best JSON Entity Graph",
+      "type": "application/ld+json",
+      "url": "https://theflatratemovers.com/best-json-entity-graph.json",
+      "description": "The estate's best-JSON entity graph for The Flat Rate Movers: organization, both branches, services, corridors, and protocols linked by stable @id.",
+      "tags": [
+        "moving",
+        "entity-graph",
+        "json-ld",
+        "knowledge-graph"
+      ],
+      "representativeQueries": [
+        "Show the full entity graph for The Flat Rate Movers"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:llms",
+      "displayName": "The Flat Rate Movers llms.txt",
+      "type": "text/plain",
+      "url": "https://theflatratemovers.com/llms.txt",
+      "description": "Plain-text summary of The Flat Rate Movers facts for AI systems: flat-rate moving, both branches with hours and Google ratings, services, corridors, and links to the full data file, GeoJSON, and entity graphs.",
+      "tags": [
+        "moving",
+        "llms.txt",
+        "facts"
+      ],
+      "representativeQueries": [
+        "Summarize The Flat Rate Movers business facts for an AI assistant",
+        "What are the Winchester and Martinsburg branch hours and ratings?"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:rest-api",
+      "displayName": "The Flat Rate Machine \u2014 REST API",
+      "type": "application/json",
+      "url": "https://api.theflatratemovers.com/",
+      "description": "Live read-only REST API for The Flat Rate Movers: 34 services, 88 dataset files, the entity graph, the signed master index, and the 518,217-row search-intent rubric. Landing page lists every endpoint; no key required.",
+      "tags": [
+        "api",
+        "rest",
+        "services",
+        "datasets",
+        "intent-rubric"
+      ],
+      "representativeQueries": [
+        "What API endpoints does The Flat Rate Movers publish?",
+        "List The Flat Rate Movers services from its API"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:openapi-spec",
+      "displayName": "The Flat Rate Machine \u2014 OpenAPI Specification",
+      "type": "application/json",
+      "url": "https://api.theflatratemovers.com/openapi.json",
+      "description": "OpenAPI 3.0.3 specification of the Flat Rate Machine API: every /v1 endpoint and the /mcp endpoint, machine-readable for client generation and agent tooling.",
+      "tags": [
+        "api",
+        "openapi",
+        "specification"
+      ],
+      "representativeQueries": [
+        "What is the OpenAPI spec URL for The Flat Rate Movers API?"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:mcp-server",
+      "displayName": "The Flat Rate Machine \u2014 MCP Server",
+      "type": "application/json",
+      "url": "https://api.theflatratemovers.com/mcp",
+      "description": "Model Context Protocol (MCP) server, POST, stateless JSON-RPC: 7 tools \u2014 list_services, get_coverage, get_service, list_datasets, get_dataset, search_intent, verify_file.",
+      "tags": [
+        "mcp",
+        "model-context-protocol",
+        "agent-tools",
+        "json-rpc"
+      ],
+      "representativeQueries": [
+        "What MCP tools does The Flat Rate Movers expose?",
+        "Search The Flat Rate Movers intent rubric via MCP"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:signed-master-index",
+      "displayName": "The Flat Rate Movers Signed Master Index",
+      "type": "application/json",
+      "url": "https://theflatratemovers.com/ai-master-index.json",
+      "description": "Signed master index of the whole published estate: 1,637 distributions, each with a SHA-256 digest of the exact bytes served, signed with the company's Ed25519 key (key id theflatratemovers-2026-10-29-1).",
+      "tags": [
+        "signed-index",
+        "provenance",
+        "sha-256",
+        "ed25519"
+      ],
+      "representativeQueries": [
+        "How can a machine verify The Flat Rate Movers data is genuine and unaltered?",
+        "List every signed distribution The Flat Rate Movers publishes"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:index-signature",
+      "displayName": "The Flat Rate Movers Index Signature (JWS)",
+      "type": "application/octet-stream",
+      "url": "https://theflatratemovers.com/ai-master-index.jws",
+      "description": "Detached-style JWS signature (EdDSA over the RFC 8785 canonical form) for ai-master-index.json. Verification key: https://theflatratemovers.com/.well-known/signing-keys.json.",
+      "tags": [
+        "jws",
+        "signature",
+        "provenance",
+        "ed25519"
+      ],
+      "representativeQueries": [
+        "Verify the signature of The Flat Rate Movers master index"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:signing-keys",
+      "displayName": "The Flat Rate Movers Signing Keys (JWKS)",
+      "type": "application/json",
+      "url": "https://theflatratemovers.com/.well-known/signing-keys.json",
+      "description": "Ed25519 verification key for the signed master index: key id theflatratemovers-2026-10-29-1, SHA-256 fingerprint k_HfnSkokedjQMSjLj-X8ftw40CUr92dBgecXsP14y4.",
+      "tags": [
+        "jwks",
+        "signing-keys",
+        "ed25519",
+        "provenance"
+      ],
+      "representativeQueries": [
+        "What key signs The Flat Rate Movers master index?"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:datasets-catalog",
+      "displayName": "The Flat Rate Movers Datasets Catalog (datasets.json)",
+      "type": "application/json",
+      "url": "https://theflatratemovers.com/datasets.json",
+      "description": "Schema.org DataCatalog of every dataset The Flat Rate Movers publishes (CC BY 4.0): 88 dataset files with canonical landing pages, node inventories, downloads and signed SHA-256 certificates.",
+      "tags": [
+        "datasets",
+        "data-catalog",
+        "schema.org"
+      ],
+      "representativeQueries": [
+        "What datasets does The Flat Rate Movers publish?"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:dcat-catalog",
+      "displayName": "The Flat Rate Movers DCAT Catalog (catalog.json)",
+      "type": "application/json",
+      "url": "https://theflatratemovers.com/catalog.json",
+      "description": "Project Open Data / DCAT catalog feed (data.json format): one dcat:Dataset per published dataset file (88), each with its landing page and a distribution carrying the download URL, media type, byte size and the signed SHA-256 from the master index. Created by the AI-to-AI signal batch, 2026-11-23.",
+      "tags": [
+        "datasets",
+        "dcat",
+        "project-open-data",
+        "data.json"
+      ],
+      "representativeQueries": [
+        "Give me The Flat Rate Movers datasets in DCAT / Project Open Data format"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:catalog-registry-dataset",
+      "displayName": "The Flat Rate Movers Catalog Registry Dataset",
+      "type": "application/json",
+      "url": "https://theflatratemovers.com/datasets-catalog-registry.json",
+      "description": "The dataset-catalog registry dataset: one computed join of every dataset file the company publishes across the seats that carry it, with presence and version-sync states computed from digest comparisons.",
+      "tags": [
+        "datasets",
+        "catalog-registry",
+        "provenance"
+      ],
+      "representativeQueries": [
+        "Which channels carry each Flat Rate Movers dataset file?"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:catalog-registry-api",
+      "displayName": "The Flat Rate Machine \u2014 Catalog Registry API (/v1/catalog)",
+      "type": "application/json",
+      "url": "https://api.theflatratemovers.com/v1/catalog",
+      "description": "The API seat of the catalog-registry dataset: GET serves the full catalog-registry dataset, byte-identical to datasets-catalog-registry.json on the site.",
+      "tags": [
+        "api",
+        "catalog-registry",
+        "datasets"
+      ],
+      "representativeQueries": [
+        "Get The Flat Rate Movers catalog registry from the API"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:updates-feed",
+      "displayName": "The Flat Rate Movers Estate Updates Feed (RSS)",
+      "type": "application/rss+xml",
+      "url": "https://theflatratemovers.com/updates.xml",
+      "description": "Every sealed change to the estate \u2014 pages, datasets, and data surfaces \u2014 recorded from the signed ai-master-index at each seal. Declares the WebSub hub https://pubsubhubbub.appspot.com/ for push notification of updates.",
+      "tags": [
+        "rss",
+        "feed",
+        "websub",
+        "updates"
+      ],
+      "representativeQueries": [
+        "What changed most recently in The Flat Rate Movers data estate?",
+        "Subscribe to Flat Rate Movers estate updates via WebSub"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:article-feed",
+      "displayName": "The Flat Rate Movers Article Feed (RSS)",
+      "type": "application/rss+xml",
+      "url": "https://theflatratemovers.com/feed.xml",
+      "description": "Every published article, newest first; generated from the same ledger and schema as the News sitemap, and signed in the estate index. Declares the WebSub hub https://pubsubhubbub.appspot.com/.",
+      "tags": [
+        "rss",
+        "feed",
+        "websub",
+        "articles"
+      ],
+      "representativeQueries": [
+        "What are the latest Flat Rate Movers articles?"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:coverage-dataset",
+      "displayName": "The Flat Rate Movers Territory Matrix Coverage Dataset",
+      "type": "application/json",
+      "url": "https://theflatratemovers.com/datasets-coverage.json",
+      "description": "Territory Matrix \u2014 service coverage by place: the coverage dataset graph over 335 places and 34 services, served by the API at /v1/coverage.",
+      "tags": [
+        "coverage",
+        "territory-matrix",
+        "places",
+        "services"
+      ],
+      "representativeQueries": [
+        "Which services does The Flat Rate Movers offer in a given town?",
+        "What places does The Flat Rate Movers cover?"
+      ]
+    },
+    {
+      "identifier": "urn:air:theflatratemovers.com:data:answer-evidence-dataset",
+      "displayName": "The Flat Rate Movers Answer-Engine Evidence Dataset",
+      "type": "application/json",
+      "url": "https://theflatratemovers.com/datasets-answer-evidence.json",
+      "description": "Answer-engine evidence dataset: the estate's buyer questions with answers and section evidence, drawn from the 518,217-row search-intent rubric; also served by the API at /v1/answer-evidence.",
+      "tags": [
+        "answer-evidence",
+        "questions",
+        "intent-rubric"
+      ],
+      "representativeQueries": [
+        "What evidence backs The Flat Rate Movers answers for buyer questions?"
       ]
     }
   ]

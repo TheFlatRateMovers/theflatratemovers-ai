@@ -5,7 +5,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-operations",
       "@type": "Service",
       "name": "The Flat Rate Movers — Search Intent Coverage Operations Dataset",
-      "description": "The live intent-coverage rubric of The Flat Rate Movers: 518219 generated rows, each one a query string a customer or an AI assistant can use to find a company service, resolved to the exact page that answers it, that page’s per-page JSON, the dataset files behind the answer, and the service’s node in the entity graph. Rows are generated from the estate’s own registries — 34 services, 369 pages, two branch locations, three corridors and the 335-feature service-area footprint — plus the blog question bank’s 100 real question phrasings and the researched per-service question bank v2 (694 questions), and the rubric is regenerated whenever those registries change. Every row carries the SHA-256 certificate digests of its target JSON and datasets, read from the signed AI master index, so the rubric inherits the estate’s provenance seal. Coverage spans all 34 services of both branches, Winchester, VA and Martinsburg, WV, along the I-81, I-66 and I-70 corridors. Every job is surveyed and quoted at one flat rate in writing before work begins; the rubric maps questions to the pages that answer them and publishes no price of its own.",
+      "description": "The live intent-coverage rubric of The Flat Rate Movers: 533927 generated rows, each one a query string a customer or an AI assistant can use to find a company service, resolved to the exact page that answers it, that page’s per-page JSON, the dataset files behind the answer, and the service’s node in the entity graph. Rows are generated from the estate’s own registries — 35 services, 387 pages, two branch locations, three corridors and the 335-feature service-area footprint — plus the blog question bank’s 100 real question phrasings and the researched per-service question bank v2 (706 questions), and the rubric is regenerated whenever those registries change. Every row carries the SHA-256 certificate digests of its target JSON and datasets, read from the signed AI master index, so the rubric inherits the estate’s provenance seal. Coverage spans all 35 services of both branches, Winchester, VA and Martinsburg, WV, along the I-81, I-66 and I-70 corridors. Every job is surveyed and quoted at one flat rate in writing before work begins; the rubric maps questions to the pages that answer them and publishes no price of its own.",
       "keywords": [
         "search intent coverage",
         "query rubric",
@@ -28,7 +28,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -68,25 +68,25 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json",
-          "sha256": "b20c83ebf54e8187bb8159d49409599f54e2a1d63eea2e931936e915df34c340"
+          "sha256": "a0322f25c379f1030bd94d7510cce50f74afa88b40f3117458931f5bd83615da"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json",
-          "sha256": "3d581242c6ac04b4b32961fed45d23bddf108912782dc9a8ffb01d414fdbde23"
+          "sha256": "8c48fa02e20eb510875cf75c960858c6e7d5078e329cba3381ae6aa001f60ef9"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "a149ad1160b13920074b7e6d9898c05f1f8ebc5f337307114695ec2130ed2c83"
+          "sha256": "bfd7972aa07634bf434a7101afecab9e6cf02b9c1dc8670bd0418e8c425d23ca"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "eca131987212643527687e1d6c27a9cf84d5e8df04d3beaa0a9c2c06efddaad4"
+          "sha256": "3d3229c26ced36ebcdba1cf1c0d3e5fef94cd8f6128c58fb8d1ea37cda0178f8"
         }
       ],
       "hasPart": [
@@ -191,6 +191,9 @@
         },
         {
           "@id": "https://theflatratemovers.com/#intent-coverage-hoarding-cleanup"
+        },
+        {
+          "@id": "https://theflatratemovers.com/#intent-coverage-vaulted-storage"
         }
       ],
       "certificate": {
@@ -206,7 +209,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-scope",
       "@type": "Dataset",
       "name": "The Flat Rate Movers — Intent Coverage Scope Dataset",
-      "description": "What the intent-coverage rubric covers, and from what sources. Inputs: the machine registries services.json (34 services), pages.json (369 pages), locations.json (the two distinct branches — Winchester, The Flat Rate Movers, and Martinsburg, Flat Rate Movers Martinsburg WV, never blended), corridors.json (Interstate 81, Interstate 66, Interstate 70) and service-area.geojson (335 features: Winchester footprint 267 areas, Martinsburg footprint 89 areas, 21 areas shared); the signed AI master index (certificate digests); and the blog question bank (10 categories of the top-10 questions customers actually ask, 100 phrasings) and the per-service question bank v2 (694 researched questions across all 34 services, compiled 2026-11-05 from the estate’s own datasets and page FAQs, completed by live search). Output: one row per generated query string across five intent classes — navigational-local (331226), cost (28856), how-process (19419), best-choice (30134), ai-question (108564). Rows exist only where the estate has a real page that answers the string; the scope of the rubric is exactly the scope of the published estate, nothing wider.",
+      "description": "What the intent-coverage rubric covers, and from what sources. Inputs: the machine registries services.json (35 services), pages.json (387 pages), locations.json (the two distinct branches — Winchester, The Flat Rate Movers, and Martinsburg, Flat Rate Movers Martinsburg WV, never blended), corridors.json (Interstate 81, Interstate 66, Interstate 70) and service-area.geojson (335 features: Winchester footprint 267 areas, Martinsburg footprint 89 areas, 21 areas shared); the signed AI master index (certificate digests); and the blog question bank (10 categories of the top-10 questions customers actually ask, 100 phrasings) and the per-service question bank v2 (706 researched questions across all 35 services, compiled 2026-11-05 from the estate’s own datasets and page FAQs, completed by live search). Output: one row per generated query string across five intent classes — navigational-local (340039), cost (29625), how-process (19792), best-choice (30902), ai-question (113549). Rows exist only where the estate has a real page that answers the string; the scope of the rubric is exactly the scope of the published estate, nothing wider.",
       "keywords": [
         "coverage scope",
         "service registry",
@@ -241,7 +244,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -281,25 +284,25 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json",
-          "sha256": "b20c83ebf54e8187bb8159d49409599f54e2a1d63eea2e931936e915df34c340"
+          "sha256": "a0322f25c379f1030bd94d7510cce50f74afa88b40f3117458931f5bd83615da"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json",
-          "sha256": "3d581242c6ac04b4b32961fed45d23bddf108912782dc9a8ffb01d414fdbde23"
+          "sha256": "8c48fa02e20eb510875cf75c960858c6e7d5078e329cba3381ae6aa001f60ef9"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "a149ad1160b13920074b7e6d9898c05f1f8ebc5f337307114695ec2130ed2c83"
+          "sha256": "bfd7972aa07634bf434a7101afecab9e6cf02b9c1dc8670bd0418e8c425d23ca"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "eca131987212643527687e1d6c27a9cf84d5e8df04d3beaa0a9c2c06efddaad4"
+          "sha256": "3d3229c26ced36ebcdba1cf1c0d3e5fef94cd8f6128c58fb8d1ea37cda0178f8"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -365,7 +368,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -405,25 +408,25 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json",
-          "sha256": "b20c83ebf54e8187bb8159d49409599f54e2a1d63eea2e931936e915df34c340"
+          "sha256": "a0322f25c379f1030bd94d7510cce50f74afa88b40f3117458931f5bd83615da"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json",
-          "sha256": "3d581242c6ac04b4b32961fed45d23bddf108912782dc9a8ffb01d414fdbde23"
+          "sha256": "8c48fa02e20eb510875cf75c960858c6e7d5078e329cba3381ae6aa001f60ef9"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "a149ad1160b13920074b7e6d9898c05f1f8ebc5f337307114695ec2130ed2c83"
+          "sha256": "bfd7972aa07634bf434a7101afecab9e6cf02b9c1dc8670bd0418e8c425d23ca"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "eca131987212643527687e1d6c27a9cf84d5e8df04d3beaa0a9c2c06efddaad4"
+          "sha256": "3d3229c26ced36ebcdba1cf1c0d3e5fef94cd8f6128c58fb8d1ea37cda0178f8"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -452,7 +455,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-resolution",
       "@type": "Dataset",
       "name": "The Flat Rate Movers — Intent Target Resolution and Coverage Gates Dataset",
-      "description": "How each rubric row resolves its target, and the gates a row must pass to exist. Default target: the service’s hub page. A place or scoped row for a Winchester area targets the service’s Winchester branch page when the estate has one (Martinsburg likewise); a shared area and the Shenandoah Valley scope target the hub. A corridor row targets the corridor’s own page when that page belongs to the service’s page set, else the hub. A question-bank row targets the hub, unless the question’s own slug is a page of that service, which is then the target. The per-page JSON filename is the page slug with slashes replaced by dashes, at the site root; the few pages published under an earlier short name resolve to the file whose own WebPage identifier is the page’s canonical URL (the same mapping the estate’s llms.txt publishes). The graph node is the service’s canonical #service-* @id in the best entity graph when present, else the Service node on the hub page, else the Service node carrying the service’s registry name. Gates, all required: the target page is in pages.json; the per-page JSON file exists in the deployed site tree; the target JSON and every backing dataset file are distributions in the signed master index. In this generation 33236 candidate rows failed a gate or deduplication and were excluded (duplicate: 1832; r30-collision-bank-kept: 64; r40-collision-bank-kept: 8; r41-collision-bank-kept: 44; r42-collision-bank-kept: 230; r43-demand-only-never-binds: 60; r43-collision-bank-kept: 346; r44-collision-bank-kept: 2167; r45-collision-bank-kept: 2792; r46-collision-bank-kept: 1425; r47-collision-bank-kept: 3054; r48-collision-bank-kept: 4253; r49-collision-bank-kept: 4135; r50-collision-bank-kept: 3700; r51-collision-bank-kept: 5834; r52-collision-bank-kept: 3123; r53-collision-bank-kept: 169) — excluded rows are dropped, never pointed at a fallback page.",
+      "description": "How each rubric row resolves its target, and the gates a row must pass to exist. Default target: the service’s hub page. A place or scoped row for a Winchester area targets the service’s Winchester branch page when the estate has one (Martinsburg likewise); a shared area and the Shenandoah Valley scope target the hub. A corridor row targets the corridor’s own page when that page belongs to the service’s page set, else the hub. A question-bank row targets the hub, unless the question’s own slug is a page of that service, which is then the target. The per-page JSON filename is the page slug with slashes replaced by dashes, at the site root; the few pages published under an earlier short name resolve to the file whose own WebPage identifier is the page’s canonical URL (the same mapping the estate’s llms.txt publishes). The graph node is the service’s canonical #service-* @id in the best entity graph when present, else the Service node on the hub page, else the Service node carrying the service’s registry name. Gates, all required: the target page is in pages.json; the per-page JSON file exists in the deployed site tree; the target JSON and every backing dataset file are distributions in the signed master index. In this generation 33315 candidate rows failed a gate or deduplication and were excluded (duplicate: 1911; r30-collision-bank-kept: 64; r40-collision-bank-kept: 8; r41-collision-bank-kept: 44; r42-collision-bank-kept: 230; r43-demand-only-never-binds: 60; r43-collision-bank-kept: 346; r44-collision-bank-kept: 2167; r45-collision-bank-kept: 2792; r46-collision-bank-kept: 1425; r47-collision-bank-kept: 3054; r48-collision-bank-kept: 4253; r49-collision-bank-kept: 4135; r50-collision-bank-kept: 3700; r51-collision-bank-kept: 5834; r52-collision-bank-kept: 3123; r53-collision-bank-kept: 169) — excluded rows are dropped, never pointed at a fallback page.",
       "keywords": [
         "target resolution",
         "coverage gates",
@@ -488,7 +491,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -528,25 +531,25 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json",
-          "sha256": "b20c83ebf54e8187bb8159d49409599f54e2a1d63eea2e931936e915df34c340"
+          "sha256": "a0322f25c379f1030bd94d7510cce50f74afa88b40f3117458931f5bd83615da"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json",
-          "sha256": "3d581242c6ac04b4b32961fed45d23bddf108912782dc9a8ffb01d414fdbde23"
+          "sha256": "8c48fa02e20eb510875cf75c960858c6e7d5078e329cba3381ae6aa001f60ef9"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "a149ad1160b13920074b7e6d9898c05f1f8ebc5f337307114695ec2130ed2c83"
+          "sha256": "bfd7972aa07634bf434a7101afecab9e6cf02b9c1dc8670bd0418e8c425d23ca"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "eca131987212643527687e1d6c27a9cf84d5e8df04d3beaa0a9c2c06efddaad4"
+          "sha256": "3d3229c26ced36ebcdba1cf1c0d3e5fef94cd8f6128c58fb8d1ea37cda0178f8"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -596,7 +599,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -636,25 +639,25 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json",
-          "sha256": "b20c83ebf54e8187bb8159d49409599f54e2a1d63eea2e931936e915df34c340"
+          "sha256": "a0322f25c379f1030bd94d7510cce50f74afa88b40f3117458931f5bd83615da"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json",
-          "sha256": "3d581242c6ac04b4b32961fed45d23bddf108912782dc9a8ffb01d414fdbde23"
+          "sha256": "8c48fa02e20eb510875cf75c960858c6e7d5078e329cba3381ae6aa001f60ef9"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "a149ad1160b13920074b7e6d9898c05f1f8ebc5f337307114695ec2130ed2c83"
+          "sha256": "bfd7972aa07634bf434a7101afecab9e6cf02b9c1dc8670bd0418e8c425d23ca"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "eca131987212643527687e1d6c27a9cf84d5e8df04d3beaa0a9c2c06efddaad4"
+          "sha256": "3d3229c26ced36ebcdba1cf1c0d3e5fef94cd8f6128c58fb8d1ea37cda0178f8"
         }
       ]
     },
@@ -682,7 +685,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -722,25 +725,25 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json",
-          "sha256": "b20c83ebf54e8187bb8159d49409599f54e2a1d63eea2e931936e915df34c340"
+          "sha256": "a0322f25c379f1030bd94d7510cce50f74afa88b40f3117458931f5bd83615da"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json",
-          "sha256": "3d581242c6ac04b4b32961fed45d23bddf108912782dc9a8ffb01d414fdbde23"
+          "sha256": "8c48fa02e20eb510875cf75c960858c6e7d5078e329cba3381ae6aa001f60ef9"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "a149ad1160b13920074b7e6d9898c05f1f8ebc5f337307114695ec2130ed2c83"
+          "sha256": "bfd7972aa07634bf434a7101afecab9e6cf02b9c1dc8670bd0418e8c425d23ca"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "eca131987212643527687e1d6c27a9cf84d5e8df04d3beaa0a9c2c06efddaad4"
+          "sha256": "3d3229c26ced36ebcdba1cf1c0d3e5fef94cd8f6128c58fb8d1ea37cda0178f8"
         }
       ]
     },
@@ -769,7 +772,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -809,25 +812,25 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json",
-          "sha256": "b20c83ebf54e8187bb8159d49409599f54e2a1d63eea2e931936e915df34c340"
+          "sha256": "a0322f25c379f1030bd94d7510cce50f74afa88b40f3117458931f5bd83615da"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json",
-          "sha256": "3d581242c6ac04b4b32961fed45d23bddf108912782dc9a8ffb01d414fdbde23"
+          "sha256": "8c48fa02e20eb510875cf75c960858c6e7d5078e329cba3381ae6aa001f60ef9"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "a149ad1160b13920074b7e6d9898c05f1f8ebc5f337307114695ec2130ed2c83"
+          "sha256": "bfd7972aa07634bf434a7101afecab9e6cf02b9c1dc8670bd0418e8c425d23ca"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "eca131987212643527687e1d6c27a9cf84d5e8df04d3beaa0a9c2c06efddaad4"
+          "sha256": "3d3229c26ced36ebcdba1cf1c0d3e5fef94cd8f6128c58fb8d1ea37cda0178f8"
         }
       ]
     },
@@ -835,7 +838,7 @@
       "@id": "https://theflatratemovers.com/#dataset-intent-coverage-totals",
       "@type": "Dataset",
       "name": "The Flat Rate Movers — Intent Coverage Totals, Areas and Certificate Dataset",
-      "description": "Totals for this generation of the intent-coverage rubric, computed by the generator run of 2026-11-25: 518219 rows across 34 services — navigational-local (331226), cost (28856), how-process (19419), best-choice (30134), ai-question (108564). Per-service row counts are carried on the 34 coverage nodes in this file. Area coverage follows the service-area GeoJSON: 335 features in total; the Winchester footprint is 267 areas and the Martinsburg footprint is 89 areas, with 21 areas served by both branches and recorded as shared. The canonical serialization of the rows hashes to the SHA-256 digest recorded on this node (intentRowsDigest), which is also stored in the rubric database, so any reader can re-prove that the published totals describe the exact row set the generator produced. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on this node.",
+      "description": "Totals for this generation of the intent-coverage rubric, computed by the generator run of 2026-11-27: 533927 rows across 35 services — navigational-local (340039), cost (29625), how-process (19792), best-choice (30902), ai-question (113549). Per-service row counts are carried on the 35 coverage nodes in this file. Area coverage follows the service-area GeoJSON: 335 features in total; the Winchester footprint is 267 areas and the Martinsburg footprint is 89 areas, with 21 areas served by both branches and recorded as shared. The canonical serialization of the rows hashes to the SHA-256 digest recorded on this node (intentRowsDigest), which is also stored in the rubric database, so any reader can re-prove that the published totals describe the exact row set the generator produced. This file is itself a sealed distribution of the signed AI master index, under the certificate block recorded on this node.",
       "keywords": [
         "coverage totals",
         "rows digest",
@@ -870,7 +873,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -910,32 +913,32 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ai-sitemap.json",
           "encodingFormat": "application/json",
-          "sha256": "b20c83ebf54e8187bb8159d49409599f54e2a1d63eea2e931936e915df34c340"
+          "sha256": "a0322f25c379f1030bd94d7510cce50f74afa88b40f3117458931f5bd83615da"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/service-area.geojson",
           "encodingFormat": "application/geo+json",
-          "sha256": "3d581242c6ac04b4b32961fed45d23bddf108912782dc9a8ffb01d414fdbde23"
+          "sha256": "8c48fa02e20eb510875cf75c960858c6e7d5078e329cba3381ae6aa001f60ef9"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "a149ad1160b13920074b7e6d9898c05f1f8ebc5f337307114695ec2130ed2c83"
+          "sha256": "bfd7972aa07634bf434a7101afecab9e6cf02b9c1dc8670bd0418e8c425d23ca"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/best-json-entity-graph.json",
           "encodingFormat": "application/ld+json",
-          "sha256": "eca131987212643527687e1d6c27a9cf84d5e8df04d3beaa0a9c2c06efddaad4"
+          "sha256": "3d3229c26ced36ebcdba1cf1c0d3e5fef94cd8f6128c58fb8d1ea37cda0178f8"
         }
       ],
-      "intentRowsDigest": "78e51fe0082430dc005ca4a396413098d97242b70d69e9f5007804e10a04823b",
+      "intentRowsDigest": "a52fbbc2dc8704a131b40d917203a29c7b79f693bd427a144859ab0bcf6d5a80",
       "intentRowsDigestAlgorithm": "SHA-256",
       "rowSources": {
-        "estateGenerated": 518219,
-        "pageDerived": 576,
+        "estateGenerated": 533927,
+        "pageDerived": 597,
         "gscObservedRows": 0
       },
       "gscEvidence": {
@@ -947,24 +950,24 @@
         "basis": "Historical Google Search Console Performance exports. Every attachment is era-tagged from its own import window against the 2026-10-29 rebuild cutover: a window ending on or before 2026-10-28 is pre-rebuild, a window starting on or after 2026-10-29 is current, and a window straddling the cutover is transition. Metrics attach only to rows whose target page existed in the window (present in the export Pages aggregate) and is still live at the same URL; attachments are evidence, never current performance. Pages of the current era carry no borrowed metrics and no zero-filled values.",
         "queriesImported": 1322,
         "queriesAttachedToRows": 112,
-        "rowsEnriched": 648,
+        "rowsEnriched": 665,
         "queriesUnattached": 1210,
         "pagesInExport": 181,
         "pagesStillLive": 137,
         "pagesStale": 44
       },
       "pageDerived": {
-        "pagesConsidered": 302,
-        "pagesWithRows": 275,
-        "rowsEmitted": 576,
-        "duplicatesSkipped": 308,
+        "pagesConsidered": 320,
+        "pagesWithRows": 293,
+        "rowsEmitted": 597,
+        "duplicatesSkipped": 340,
         "gateExcluded": 0
       },
       "rollup": {
         "pagesGrouped": 51,
         "pagesWithRows": 51,
-        "rowsEmitted": 2048,
-        "duplicatesSkipped": 34,
+        "rowsEmitted": 2107,
+        "duplicatesSkipped": 35,
         "gateExcluded": 0,
         "uncoveredPages": [
           "datasets/berkeley-springs-wv",
@@ -988,8 +991,8 @@
         }
       },
       "pageCoverage": {
-        "pagesTargeted": 369,
-        "pagesTotal": 369,
+        "pagesTargeted": 387,
+        "pagesTotal": 387,
         "uncoveredPages": []
       },
       "rowsByArea": [
@@ -998,336 +1001,336 @@
           "name": "Winchester, VA",
           "type": "branch",
           "branch": "winchester",
-          "rows": 2616
+          "rows": 2725
         },
         {
           "area": "place-martinsburg-wv",
           "name": "Martinsburg, WV",
           "type": "branch",
           "branch": "martinsburg",
-          "rows": 2654
+          "rows": 2764
         },
         {
           "area": "place-leesburg-va",
           "name": "Leesburg, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 2520
+          "rows": 2583
         },
         {
           "area": "place-marshall-va",
           "name": "Marshall, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1518
+          "rows": 1562
         },
         {
           "area": "place-sterling-va",
           "name": "Sterling, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1786
+          "rows": 1869
         },
         {
           "area": "place-stephens-city-va",
           "name": "Stephens City, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1385
+          "rows": 1426
         },
         {
           "area": "place-berryville-va",
           "name": "Berryville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1514
+          "rows": 1557
         },
         {
           "area": "place-middleburg-va",
           "name": "Middleburg, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1580
+          "rows": 1624
         },
         {
           "area": "place-middletown-va",
           "name": "Middletown, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1382
+          "rows": 1422
         },
         {
           "area": "place-moorefield-wv",
           "name": "Moorefield, WV",
           "type": "city",
           "branch": "both",
-          "rows": 1519
+          "rows": 1564
         },
         {
           "area": "place-round-hill-va",
           "name": "Round Hill, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1498
+          "rows": 1542
         },
         {
           "area": "place-stephenson-va",
           "name": "Stephenson, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1351
+          "rows": 1390
         },
         {
           "area": "place-upperville-va",
           "name": "Upperville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1543
+          "rows": 1585
         },
         {
           "area": "place-purcellville-va",
           "name": "Purcellville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1537
+          "rows": 1582
         },
         {
           "area": "place-south-riding-va",
           "name": "South Riding, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1507
+          "rows": 1552
         },
         {
           "area": "place-inwood-wv",
           "name": "Inwood, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1644
+          "rows": 1692
         },
         {
           "area": "place-hagerstown-md",
           "name": "Hagerstown, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 2318
+          "rows": 2364
         },
         {
           "area": "place-hedgesville-wv",
           "name": "Hedgesville, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1351
+          "rows": 1389
         },
         {
           "area": "place-paw-paw-wv",
           "name": "Paw Paw, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1468
+          "rows": 1512
         },
         {
           "area": "place-shepherdstown-wv",
           "name": "Shepherdstown, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1402
+          "rows": 1442
         },
         {
           "area": "place-bunker-hill-wv",
           "name": "Bunker Hill, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1278
+          "rows": 1315
         },
         {
           "area": "place-charles-town-wv",
           "name": "Charles Town, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1520
+          "rows": 1563
         },
         {
           "area": "place-clear-spring-md",
           "name": "Clear Spring, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1380
+          "rows": 1420
         },
         {
           "area": "place-summit-point-wv",
           "name": "Summit Point, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1380
+          "rows": 1420
         },
         {
           "area": "place-harpers-ferry-wv",
           "name": "Harpers Ferry, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1387
+          "rows": 1428
         },
         {
           "area": "place-kearneysville-wv",
           "name": "Kearneysville, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1352
+          "rows": 1390
         },
         {
           "area": "place-front-royal-va",
           "name": "Front Royal, VA",
           "type": "city",
           "branch": "both",
-          "rows": 1471
+          "rows": 1514
         },
         {
           "area": "place-strasburg-va",
           "name": "Strasburg, VA",
           "type": "city",
           "branch": "both",
-          "rows": 1411
+          "rows": 1452
         },
         {
           "area": "place-woodstock-va",
           "name": "Woodstock, VA",
           "type": "city",
           "branch": "both",
-          "rows": 1460
+          "rows": 1502
         },
         {
           "area": "place-bristow-va",
           "name": "Bristow, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1507
+          "rows": 1552
         },
         {
           "area": "place-berkeley-springs-wv",
           "name": "Berkeley Springs, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1442
+          "rows": 1484
         },
         {
           "area": "place-romney-wv",
           "name": "Romney, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1482
+          "rows": 1525
         },
         {
           "area": "place-frederick-md",
           "name": "Frederick, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 2645
+          "rows": 2701
         },
         {
           "area": "place-hancock-md",
           "name": "Hancock, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1361
+          "rows": 1400
         },
         {
           "area": "county-frederick-county",
           "name": "Frederick County",
           "type": "county",
           "branch": "winchester",
-          "rows": 1011
+          "rows": 1062
         },
         {
           "area": "county-loudoun-county",
           "name": "Loudoun County",
           "type": "county",
           "branch": "winchester",
-          "rows": 1369
+          "rows": 1441
         },
         {
           "area": "county-berkeley-county",
           "name": "Berkeley County",
           "type": "county",
           "branch": "martinsburg",
-          "rows": 1009
+          "rows": 1059
         },
         {
           "area": "county-jefferson-county",
           "name": "Jefferson County",
           "type": "county",
           "branch": "martinsburg",
-          "rows": 943
+          "rows": 989
         },
         {
           "area": "county-morgan-county",
           "name": "Morgan County",
           "type": "county",
           "branch": "martinsburg",
-          "rows": 863
+          "rows": 905
         },
         {
           "area": "county-clarke-county",
           "name": "Clarke County",
           "type": "county",
           "branch": "winchester",
-          "rows": 847
+          "rows": 889
         },
         {
           "area": "county-warren-county",
           "name": "Warren County",
           "type": "county",
           "branch": "both",
-          "rows": 883
+          "rows": 926
         },
         {
           "area": "county-shenandoah-county",
           "name": "Shenandoah County",
           "type": "county",
           "branch": "both",
-          "rows": 1215
+          "rows": 1281
         },
         {
           "area": "county-hampshire-county",
           "name": "Hampshire County",
           "type": "county",
           "branch": "martinsburg",
-          "rows": 1111
+          "rows": 1167
         },
         {
           "area": "county-hardy-county",
           "name": "Hardy County",
           "type": "county",
           "branch": "both",
-          "rows": 911
+          "rows": 957
         },
         {
           "area": "county-washington-county",
           "name": "Washington County",
           "type": "county",
           "branch": "martinsburg",
-          "rows": 1709
+          "rows": 1794
         },
         {
           "area": "county-fauquier-county",
           "name": "Fauquier County",
           "type": "county",
           "branch": "winchester",
-          "rows": 1423
+          "rows": 1501
         },
         {
           "area": "landmark-port-of-virginia",
           "name": "Port of Virginia",
           "type": "landmark-port",
           "branch": "both",
-          "rows": 170
+          "rows": 175
         },
         {
           "area": "landmark-virginia-inland-port",
           "name": "Virginia Inland Port",
           "type": "landmark-port",
           "branch": "both",
-          "rows": 170
+          "rows": 175
         },
         {
           "area": "landmark-shenandoah-valley",
@@ -1341,7 +1344,7 @@
           "name": "Eastern Panhandle of West Virginia",
           "type": "region",
           "branch": "both",
-          "rows": 238
+          "rows": 245
         },
         {
           "area": "landmark-interstate-81-corridor",
@@ -1369,1974 +1372,1974 @@
           "name": "Ashburn, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1747
+          "rows": 1807
         },
         {
           "area": "place-chantilly-va",
           "name": "Chantilly, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1631
+          "rows": 1711
         },
         {
           "area": "place-herndon-va",
           "name": "Herndon, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1488
+          "rows": 1529
         },
         {
           "area": "place-reston-va",
           "name": "Reston, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1937
+          "rows": 2008
         },
         {
           "area": "place-tysons-va",
           "name": "Tysons, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1631
+          "rows": 1694
         },
         {
           "area": "place-fairfax-va",
           "name": "Fairfax, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1753
+          "rows": 1803
         },
         {
           "area": "place-gainesville-va",
           "name": "Gainesville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1562
+          "rows": 1606
         },
         {
           "area": "place-haymarket-va",
           "name": "Haymarket, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1399
+          "rows": 1438
         },
         {
           "area": "place-manassas-va",
           "name": "Manassas, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1506
+          "rows": 1547
         },
         {
           "area": "place-warrenton-va",
           "name": "Warrenton, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1493
+          "rows": 1535
         },
         {
           "area": "place-luray-va",
           "name": "Luray, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1506
+          "rows": 1551
         },
         {
           "area": "place-falling-waters-wv",
           "name": "Falling Waters, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1327
+          "rows": 1363
         },
         {
           "area": "place-williamsport-md",
           "name": "Williamsport, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1361
+          "rows": 1398
         },
         {
           "area": "place-chambersburg-pa",
           "name": "Chambersburg, PA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1500
+          "rows": 1543
         },
         {
           "area": "place-waynesboro-pa",
           "name": "Waynesboro, PA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1395
+          "rows": 1435
         },
         {
           "area": "place-gaithersburg-md",
           "name": "Gaithersburg, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1811
+          "rows": 1865
         },
         {
           "area": "place-rockville-md",
           "name": "Rockville, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1776
+          "rows": 1861
         },
         {
           "area": "place-washington-dc",
           "name": "Washington, DC",
           "type": "city",
           "branch": "winchester",
-          "rows": 7337
+          "rows": 7551
         },
         {
           "area": "place-petersburg-wv",
           "name": "Petersburg, WV",
           "type": "city",
           "branch": "both",
-          "rows": 1512
+          "rows": 1556
         },
         {
           "area": "place-keyser-wv",
           "name": "Keyser, WV",
           "type": "city",
           "branch": "both",
-          "rows": 1516
+          "rows": 1560
         },
         {
           "area": "place-cumberland-md",
           "name": "Cumberland, MD",
           "type": "city",
           "branch": "winchester",
-          "rows": 1495
+          "rows": 1538
         },
         {
           "area": "place-harrisonburg-va",
           "name": "Harrisonburg, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 2461
+          "rows": 2513
         },
         {
           "area": "place-staunton-va",
           "name": "Staunton, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1557
+          "rows": 1603
         },
         {
           "area": "place-old-fields-wv",
           "name": "Old Fields, WV",
           "type": "city",
           "branch": "both",
-          "rows": 1454
+          "rows": 1496
         },
         {
           "area": "place-fisher-wv",
           "name": "Fisher, WV",
           "type": "city",
           "branch": "both",
-          "rows": 1418
+          "rows": 1458
         },
         {
           "area": "place-fort-run-wv",
           "name": "Fort Run, WV",
           "type": "city",
           "branch": "both",
-          "rows": 1340
+          "rows": 1379
         },
         {
           "area": "place-durgon-wv",
           "name": "Durgon, WV",
           "type": "city",
           "branch": "both",
-          "rows": 1358
+          "rows": 1398
         },
         {
           "area": "place-kessel-wv",
           "name": "Kessel, WV",
           "type": "city",
           "branch": "both",
-          "rows": 1340
+          "rows": 1379
         },
         {
           "area": "place-washington-va",
           "name": "Washington, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1513
+          "rows": 1556
         },
         {
           "area": "place-new-market-va",
           "name": "New Market, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1492
+          "rows": 1535
         },
         {
           "area": "place-charlottesville-va",
           "name": "Charlottesville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 2104
+          "rows": 2162
         },
         {
           "area": "place-great-falls-va",
           "name": "Great Falls, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1593
+          "rows": 1635
         },
         {
           "area": "place-mclean-va",
           "name": "McLean, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1841
+          "rows": 1892
         },
         {
           "area": "place-the-plains-va",
           "name": "The Plains, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1442
+          "rows": 1480
         },
         {
           "area": "place-virginia-beach-va",
           "name": "Virginia Beach, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 2630
+          "rows": 2738
         },
         {
           "area": "place-norfolk-va",
           "name": "Norfolk, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 2759
+          "rows": 2874
         },
         {
           "area": "place-chesapeake-va",
           "name": "Chesapeake, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1964
+          "rows": 2064
         },
         {
           "area": "place-newport-news-va",
           "name": "Newport News, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 2180
+          "rows": 2262
         },
         {
           "area": "place-hampton-va",
           "name": "Hampton, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 2425
+          "rows": 2511
         },
         {
           "area": "place-suffolk-va",
           "name": "Suffolk, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 2079
+          "rows": 2142
         },
         {
           "area": "place-portsmouth-va",
           "name": "Portsmouth, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 2027
+          "rows": 2103
         },
         {
           "area": "place-williamsburg-va",
           "name": "Williamsburg, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1601
+          "rows": 1650
         },
         {
           "area": "place-richmond-va",
           "name": "Richmond, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 2974
+          "rows": 3112
         },
         {
           "area": "place-midlothian-va",
           "name": "Midlothian, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1549
+          "rows": 1595
         },
         {
           "area": "place-glen-allen-va",
           "name": "Glen Allen, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1583
+          "rows": 1630
         },
         {
           "area": "place-mechanicsville-va",
           "name": "Mechanicsville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1533
+          "rows": 1578
         },
         {
           "area": "place-roanoke-va",
           "name": "Roanoke, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 2292
+          "rows": 2361
         },
         {
           "area": "place-salem-va",
           "name": "Salem, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1368
+          "rows": 1408
         },
         {
           "area": "place-fredericksburg-va",
           "name": "Fredericksburg, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1502
+          "rows": 1563
         },
         {
           "area": "place-stafford-va",
           "name": "Stafford, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1467
+          "rows": 1511
         },
         {
           "area": "place-culpeper-va",
           "name": "Culpeper, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1502
+          "rows": 1548
         },
         {
           "area": "place-bethesda-md",
           "name": "Bethesda, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1983
+          "rows": 2090
         },
         {
           "area": "place-silver-spring-md",
           "name": "Silver Spring, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1805
+          "rows": 1858
         },
         {
           "area": "place-annapolis-md",
           "name": "Annapolis, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1598
+          "rows": 1647
         },
         {
           "area": "place-greencastle-pa",
           "name": "Greencastle, PA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1361
+          "rows": 1401
         },
         {
           "area": "place-harrisburg-pa",
           "name": "Harrisburg, PA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1892
+          "rows": 1949
         },
         {
           "area": "place-carlisle-pa",
           "name": "Carlisle, PA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1463
+          "rows": 1507
         },
         {
           "area": "place-charleston-wv",
           "name": "Charleston, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 2144
+          "rows": 2208
         },
         {
           "area": "place-morgantown-wv",
           "name": "Morgantown, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1549
+          "rows": 1595
         },
         {
           "area": "place-boyce-va",
           "name": "Boyce, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1314
+          "rows": 1352
         },
         {
           "area": "place-white-post-va",
           "name": "White Post, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1319
+          "rows": 1358
         },
         {
           "area": "place-webbtown-va",
           "name": "Webbtown, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1269
+          "rows": 1307
         },
         {
           "area": "place-stone-bridge-va",
           "name": "Stone Bridge, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1253
+          "rows": 1290
         },
         {
           "area": "place-parkins-mills-va",
           "name": "Parkins Mills, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1220
+          "rows": 1256
         },
         {
           "area": "place-armel-va",
           "name": "Armel, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1279
+          "rows": 1315
         },
         {
           "area": "place-lovettsville-va",
           "name": "Lovettsville, VA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1373
+          "rows": 1413
         },
         {
           "area": "place-taylorstown-va",
           "name": "Taylorstown, VA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1386
+          "rows": 1427
         },
         {
           "area": "place-morrisonville-va",
           "name": "Morrisonville, VA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1314
+          "rows": 1354
         },
         {
           "area": "place-lucketts-va",
           "name": "Lucketts, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1294
+          "rows": 1332
         },
         {
           "area": "place-hillsboro-va",
           "name": "Hillsboro, VA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1279
+          "rows": 1317
         },
         {
           "area": "place-wheatland-va",
           "name": "Wheatland, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1303
+          "rows": 1342
         },
         {
           "area": "place-waterford-va",
           "name": "Waterford, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1345
+          "rows": 1383
         },
         {
           "area": "place-paeonian-springs-va",
           "name": "Paeonian Springs, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1368
+          "rows": 1408
         },
         {
           "area": "place-lincoln-va",
           "name": "Lincoln, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1286
+          "rows": 1324
         },
         {
           "area": "place-bluemont-va",
           "name": "Bluemont, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1312
+          "rows": 1349
         },
         {
           "area": "place-airmont-va",
           "name": "Airmont, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1286
+          "rows": 1324
         },
         {
           "area": "place-philomont-va",
           "name": "Philomont, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1303
+          "rows": 1342
         },
         {
           "area": "place-bloomfield-va",
           "name": "Bloomfield, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1285
+          "rows": 1323
         },
         {
           "area": "place-unison-va",
           "name": "Unison, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1286
+          "rows": 1324
         },
         {
           "area": "place-mountville-va",
           "name": "Mountville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1286
+          "rows": 1324
         },
         {
           "area": "place-woodburn-va",
           "name": "Woodburn, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1486
+          "rows": 1531
         },
         {
           "area": "place-oatlands-va",
           "name": "Oatlands, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1303
+          "rows": 1342
         },
         {
           "area": "place-berrys-va",
           "name": "Berrys, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1253
+          "rows": 1290
         },
         {
           "area": "place-stumptown-va",
           "name": "Stumptown, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1285
+          "rows": 1323
         },
         {
           "area": "place-rippon-wv",
           "name": "Rippon, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1261
+          "rows": 1298
         },
         {
           "area": "place-kabletown-wv",
           "name": "Kabletown, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1264
+          "rows": 1302
         },
         {
           "area": "place-shannondale-wv",
           "name": "Shannondale, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1246
+          "rows": 1283
         },
         {
           "area": "place-point-of-rocks-md",
           "name": "Point of Rocks, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1430
+          "rows": 1473
         },
         {
           "area": "place-tuscarora-md",
           "name": "Tuscarora, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1343
+          "rows": 1382
         },
         {
           "area": "place-dickerson-md",
           "name": "Dickerson, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1397
+          "rows": 1439
         },
         {
           "area": "place-beallsville-md",
           "name": "Beallsville, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1394
+          "rows": 1435
         },
         {
           "area": "place-poolesville-md",
           "name": "Poolesville, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1394
+          "rows": 1435
         },
         {
           "area": "place-shenandoah-retreat-va",
           "name": "Shenandoah Retreat, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1253
+          "rows": 1290
         },
         {
           "area": "place-mercersburg-pa",
           "name": "Mercersburg, PA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1361
+          "rows": 1401
         },
         {
           "area": "place-gettysburg-pa",
           "name": "Gettysburg, PA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1448
+          "rows": 1492
         },
         {
           "area": "place-hanover-pa",
           "name": "Hanover, PA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1427
+          "rows": 1469
         },
         {
           "area": "place-littlestown-pa",
           "name": "Littlestown, PA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1394
+          "rows": 1435
         },
         {
           "area": "place-meyersdale-pa",
           "name": "Meyersdale, PA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1450
+          "rows": 1493
         },
         {
           "area": "place-emmitsburg-md",
           "name": "Emmitsburg, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1412
+          "rows": 1454
         },
         {
           "area": "place-taneytown-md",
           "name": "Taneytown, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1412
+          "rows": 1454
         },
         {
           "area": "place-thurmont-md",
           "name": "Thurmont, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1361
+          "rows": 1401
         },
         {
           "area": "place-westminster-md",
           "name": "Westminster, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1526
+          "rows": 1571
         },
         {
           "area": "place-walkersville-md",
           "name": "Walkersville, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1361
+          "rows": 1401
         },
         {
           "area": "place-laurel-md",
           "name": "Laurel, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1580
+          "rows": 1628
         },
         {
           "area": "place-westernport-md",
           "name": "Westernport, MD",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-oakland-md",
           "name": "Oakland, MD",
           "type": "city",
           "branch": "winchester",
-          "rows": 1502
+          "rows": 1548
         },
         {
           "area": "place-mchenry-md",
           "name": "McHenry, MD",
           "type": "city",
           "branch": "winchester",
-          "rows": 1433
+          "rows": 1475
         },
         {
           "area": "place-grantsville-md",
           "name": "Grantsville, MD",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-cresaptown-md",
           "name": "Cresaptown, MD",
           "type": "city",
           "branch": "winchester",
-          "rows": 1319
+          "rows": 1358
         },
         {
           "area": "place-gerrardstown-wv",
           "name": "Gerrardstown, WV",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1292
+          "rows": 1329
         },
         {
           "area": "place-augusta-wv",
           "name": "Augusta, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1384
+          "rows": 1425
         },
         {
           "area": "place-capon-bridge-wv",
           "name": "Capon Bridge, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1330
+          "rows": 1368
         },
         {
           "area": "place-fort-ashby-wv",
           "name": "Fort Ashby, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1401
+          "rows": 1442
         },
         {
           "area": "place-mt-storm-wv",
           "name": "Mt Storm, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1467
+          "rows": 1511
         },
         {
           "area": "place-davis-wv",
           "name": "Davis, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1451
+          "rows": 1494
         },
         {
           "area": "place-clear-brook-va",
           "name": "Clear Brook, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1280
+          "rows": 1316
         },
         {
           "area": "place-maurertown-va",
           "name": "Maurertown, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1345
+          "rows": 1383
         },
         {
           "area": "place-mathias-wv",
           "name": "Mathias, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1469
+          "rows": 1514
         },
         {
           "area": "place-monterey-va",
           "name": "Monterey, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1502
+          "rows": 1548
         },
         {
           "area": "place-bridgewater-va",
           "name": "Bridgewater, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1467
+          "rows": 1511
         },
         {
           "area": "place-elkton-va",
           "name": "Elkton, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1502
+          "rows": 1548
         },
         {
           "area": "place-weyers-cave-va",
           "name": "Weyers Cave, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-fishersville-va",
           "name": "Fishersville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1533
+          "rows": 1579
         },
         {
           "area": "place-stuarts-draft-va",
           "name": "Stuarts Draft, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1516
+          "rows": 1560
         },
         {
           "area": "place-orange-va",
           "name": "Orange, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1485
+          "rows": 1530
         },
         {
           "area": "place-gordonsville-va",
           "name": "Gordonsville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1450
+          "rows": 1493
         },
         {
           "area": "place-louisa-va",
           "name": "Louisa, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-zion-crossroads-va",
           "name": "Zion Crossroads, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1352
+          "rows": 1392
         },
         {
           "area": "place-palmyra-va",
           "name": "Palmyra, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1450
+          "rows": 1493
         },
         {
           "area": "place-scottsville-va",
           "name": "Scottsville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-nellysford-va",
           "name": "Nellysford, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1468
+          "rows": 1512
         },
         {
           "area": "place-lovingston-va",
           "name": "Lovingston, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1433
+          "rows": 1475
         },
         {
           "area": "place-arrington-va",
           "name": "Arrington, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-lexington-va",
           "name": "Lexington, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1485
+          "rows": 1530
         },
         {
           "area": "place-buena-vista-va",
           "name": "Buena Vista, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1433
+          "rows": 1475
         },
         {
           "area": "place-goshen-va",
           "name": "Goshen, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-warm-springs-va",
           "name": "Warm Springs, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-goochland-va",
           "name": "Goochland, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1467
+          "rows": 1511
         },
         {
           "area": "place-arvonia-va",
           "name": "Arvonia, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-cartersville-va",
           "name": "Cartersville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-ashland-va",
           "name": "Ashland, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1450
+          "rows": 1493
         },
         {
           "area": "place-doswell-va",
           "name": "Doswell, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1451
+          "rows": 1494
         },
         {
           "area": "place-ladysmith-va",
           "name": "Ladysmith, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1468
+          "rows": 1512
         },
         {
           "area": "place-bowling-green-va",
           "name": "Bowling Green, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1433
+          "rows": 1475
         },
         {
           "area": "place-spotsylvania-courthouse-va",
           "name": "Spotsylvania Courthouse, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1550
+          "rows": 1596
         },
         {
           "area": "place-lake-of-the-woods-va",
           "name": "Lake of the Woods, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1485
+          "rows": 1530
         },
         {
           "area": "place-green-bank-wv",
           "name": "Green Bank, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1499
+          "rows": 1543
         },
         {
           "area": "place-moseley-va",
           "name": "Moseley, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-chester-va",
           "name": "Chester, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1683
+          "rows": 1734
         },
         {
           "area": "place-hopewell-va",
           "name": "Hopewell, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1450
+          "rows": 1493
         },
         {
           "area": "place-lanexa-va",
           "name": "Lanexa, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1451
+          "rows": 1494
         },
         {
           "area": "place-toano-va",
           "name": "Toano, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-gloucester-va",
           "name": "Gloucester, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1433
+          "rows": 1475
         },
         {
           "area": "place-yorktown-va",
           "name": "Yorktown, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-seaford-va",
           "name": "Seaford, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-poquoson-va",
           "name": "Poquoson, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1433
+          "rows": 1475
         },
         {
           "area": "place-smithfield-va",
           "name": "Smithfield, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1451
+          "rows": 1494
         },
         {
           "area": "place-windsor-va",
           "name": "Windsor, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-carrsville-va",
           "name": "Carrsville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1467
+          "rows": 1511
         },
         {
           "area": "place-franklin-va",
           "name": "Franklin, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-courtland-va",
           "name": "Courtland, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1451
+          "rows": 1494
         },
         {
           "area": "place-wakefield-va",
           "name": "Wakefield, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1450
+          "rows": 1493
         },
         {
           "area": "place-waverly-va",
           "name": "Waverly, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-disputanta-va",
           "name": "Disputanta, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-dinwiddie-va",
           "name": "Dinwiddie, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1467
+          "rows": 1511
         },
         {
           "area": "place-jarratt-va",
           "name": "Jarratt, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1468
+          "rows": 1512
         },
         {
           "area": "place-emporia-va",
           "name": "Emporia, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-skippers-va",
           "name": "Skippers, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1433
+          "rows": 1475
         },
         {
           "area": "place-moyock-nc",
           "name": "Moyock, NC",
           "type": "city",
           "branch": "winchester",
-          "rows": 1451
+          "rows": 1494
         },
         {
           "area": "place-cape-charles-va",
           "name": "Cape Charles, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1468
+          "rows": 1512
         },
         {
           "area": "place-birdsnest-va",
           "name": "Birdsnest, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1367
+          "rows": 1407
         },
         {
           "area": "place-medley-wv",
           "name": "Medley, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1379
+          "rows": 1418
         },
         {
           "area": "place-lahmansville-wv",
           "name": "Lahmansville, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1418
+          "rows": 1460
         },
         {
           "area": "place-arthur-wv",
           "name": "Arthur, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1357
+          "rows": 1397
         },
         {
           "area": "place-rig-wv",
           "name": "Rig, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1325
+          "rows": 1364
         },
         {
           "area": "place-cabins-wv",
           "name": "Cabins, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-dorcas-wv",
           "name": "Dorcas, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1351
+          "rows": 1391
         },
         {
           "area": "place-brake-wv",
           "name": "Brake, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1319
+          "rows": 1358
         },
         {
           "area": "place-peru-wv",
           "name": "Peru, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1468
+          "rows": 1512
         },
         {
           "area": "place-milam-wv",
           "name": "Milam, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1351
+          "rows": 1391
         },
         {
           "area": "place-kirby-wv",
           "name": "Kirby, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1402
+          "rows": 1444
         },
         {
           "area": "place-rio-wv",
           "name": "Rio, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1303
+          "rows": 1342
         },
         {
           "area": "place-capon-springs-wv",
           "name": "Capon Springs, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1351
+          "rows": 1391
         },
         {
           "area": "place-arkansas-wv",
           "name": "Arkansas, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1368
+          "rows": 1408
         },
         {
           "area": "place-baker-wv",
           "name": "Baker, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1286
+          "rows": 1324
         },
         {
           "area": "place-lost-river-wv",
           "name": "Lost River, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1400
+          "rows": 1441
         },
         {
           "area": "place-lost-city-wv",
           "name": "Lost City, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1319
+          "rows": 1358
         },
         {
           "area": "place-fort-seybert-wv",
           "name": "Fort Seybert, WV",
           "type": "city",
           "branch": "winchester",
-          "rows": 1451
+          "rows": 1494
         },
         {
           "area": "place-star-tannery-va",
           "name": "Star Tannery, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1334
+          "rows": 1373
         },
         {
           "area": "place-toms-brook-va",
           "name": "Toms Brook, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1346
+          "rows": 1384
         },
         {
           "area": "place-fort-valley-va",
           "name": "Fort Valley, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1402
+          "rows": 1444
         },
         {
           "area": "place-bentonville-va",
           "name": "Bentonville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1384
+          "rows": 1425
         },
         {
           "area": "place-browntown-va",
           "name": "Browntown, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1286
+          "rows": 1324
         },
         {
           "area": "place-rileyville-va",
           "name": "Rileyville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1368
+          "rows": 1408
         },
         {
           "area": "place-mt-jackson-va",
           "name": "Mt Jackson, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1423
+          "rows": 1463
         },
         {
           "area": "place-quicksburg-va",
           "name": "Quicksburg, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1367
+          "rows": 1406
         },
         {
           "area": "place-timberville-va",
           "name": "Timberville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1429
+          "rows": 1470
         },
         {
           "area": "place-broadway-va",
           "name": "Broadway, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1411
+          "rows": 1451
         },
         {
           "area": "place-singers-glen-va",
           "name": "Singers Glen, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1451
+          "rows": 1494
         },
         {
           "area": "place-lacey-spring-va",
           "name": "Lacey Spring, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1398
+          "rows": 1438
         },
         {
           "area": "place-linville-va",
           "name": "Linville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1450
+          "rows": 1493
         },
         {
           "area": "place-rawley-springs-va",
           "name": "Rawley Springs, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1451
+          "rows": 1494
         },
         {
           "area": "place-hinton-va",
           "name": "Hinton, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1352
+          "rows": 1392
         },
         {
           "area": "place-dayton-va",
           "name": "Dayton, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1433
+          "rows": 1475
         },
         {
           "area": "place-massanutten-va",
           "name": "Massanutten, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-mt-crawford-va",
           "name": "Mt Crawford, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-shenandoah-va",
           "name": "Shenandoah, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1433
+          "rows": 1475
         },
         {
           "area": "place-alma-va",
           "name": "Alma, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1401
+          "rows": 1442
         },
         {
           "area": "place-stanley-va",
           "name": "Stanley, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1319
+          "rows": 1358
         },
         {
           "area": "place-springfield-page-va",
           "name": "Springfield, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1318
+          "rows": 1357
         },
         {
           "area": "place-bergton-va",
           "name": "Bergton, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-basye-va",
           "name": "Basye, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1412
+          "rows": 1452
         },
         {
           "area": "place-chester-gap-va",
           "name": "Chester Gap, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1466
+          "rows": 1509
         },
         {
           "area": "place-flint-hill-va",
           "name": "Flint Hill, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1418
+          "rows": 1460
         },
         {
           "area": "place-sperryville-va",
           "name": "Sperryville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1453
+          "rows": 1496
         },
         {
           "area": "place-castleton-va",
           "name": "Castleton, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1400
+          "rows": 1441
         },
         {
           "area": "place-etlan-va",
           "name": "Etlan, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1435
+          "rows": 1478
         },
         {
           "area": "place-syria-va",
           "name": "Syria, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1401
+          "rows": 1442
         },
         {
           "area": "place-haywood-va",
           "name": "Haywood, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1433
+          "rows": 1475
         },
         {
           "area": "place-leon-va",
           "name": "Leon, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-madison-va",
           "name": "Madison, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-reva-va",
           "name": "Reva, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1433
+          "rows": 1475
         },
         {
           "area": "place-jeffersonton-va",
           "name": "Jeffersonton, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1401
+          "rows": 1442
         },
         {
           "area": "place-rixeyville-va",
           "name": "Rixeyville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1401
+          "rows": 1442
         },
         {
           "area": "place-remington-va",
           "name": "Remington, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1412
+          "rows": 1453
         },
         {
           "area": "place-opal-va",
           "name": "Opal, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1425
+          "rows": 1466
         },
         {
           "area": "place-bealeton-va",
           "name": "Bealeton, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1367
+          "rows": 1406
         },
         {
           "area": "place-sumerduck-va",
           "name": "Sumerduck, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1433
+          "rows": 1475
         },
         {
           "area": "place-lignum-va",
           "name": "Lignum, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-richardsville-va",
           "name": "Richardsville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-hartwood-va",
           "name": "Hartwood, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1411
+          "rows": 1451
         },
         {
           "area": "place-delaplane-va",
           "name": "Delaplane, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1346
+          "rows": 1384
         },
         {
           "area": "place-hume-va",
           "name": "Hume, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1385
+          "rows": 1426
         },
         {
           "area": "place-orlean-va",
           "name": "Orlean, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1285
+          "rows": 1323
         },
         {
           "area": "place-new-baltimore-va",
           "name": "New Baltimore, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1412
+          "rows": 1452
         },
         {
           "area": "place-nokesville-va",
           "name": "Nokesville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1396
+          "rows": 1436
         },
         {
           "area": "place-catlett-va",
           "name": "Catlett, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1378
+          "rows": 1417
         },
         {
           "area": "place-annandale-va",
           "name": "Annandale, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1532
+          "rows": 1576
         },
         {
           "area": "place-burke-va",
           "name": "Burke, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1632
+          "rows": 1680
         },
         {
           "area": "place-mt-vernon-va",
           "name": "Mt Vernon, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1566
+          "rows": 1613
         },
         {
           "area": "place-springfield-va",
           "name": "Springfield, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 563
+          "rows": 590
         },
         {
           "area": "place-woodbridge-va",
           "name": "Woodbridge, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1468
+          "rows": 1512
         },
         {
           "area": "place-dale-city-va",
           "name": "Dale City, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1549
+          "rows": 1595
         },
         {
           "area": "place-montclair-va",
           "name": "Montclair, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1566
+          "rows": 1612
         },
         {
           "area": "place-triangle-va",
           "name": "Triangle, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1550
+          "rows": 1596
         },
         {
           "area": "place-quantico-va",
           "name": "Quantico, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1433
+          "rows": 1475
         },
         {
           "area": "place-garrisonville-va",
           "name": "Garrisonville, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-aquia-harbour-va",
           "name": "Aquia Harbour, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1352
+          "rows": 1392
         },
         {
           "area": "place-brooke-va",
           "name": "Brooke, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1351
+          "rows": 1391
         },
         {
           "area": "place-alexandria-va",
           "name": "Alexandria, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 2061
+          "rows": 2168
         },
         {
           "area": "place-arlington-va",
           "name": "Arlington, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 2358
+          "rows": 2458
         },
         {
           "area": "place-petersburg-va",
           "name": "Petersburg, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1531
+          "rows": 1592
         },
         {
           "area": "place-germantown-md",
           "name": "Germantown, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1625
+          "rows": 1673
         },
         {
           "area": "place-olney-md",
           "name": "Olney, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1823
+          "rows": 1877
         },
         {
           "area": "place-jessup-md",
           "name": "Jessup, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1496
+          "rows": 1541
         },
         {
           "area": "place-severn-md",
           "name": "Severn, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1886
+          "rows": 1941
         },
         {
           "area": "place-odenton-md",
           "name": "Odenton, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1493
+          "rows": 1537
         },
         {
           "area": "place-beltsville-md",
           "name": "Beltsville, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1724
+          "rows": 1775
         },
         {
           "area": "place-greenbelt-md",
           "name": "Greenbelt, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1544
+          "rows": 1590
         },
         {
           "area": "place-hyattsville-md",
           "name": "Hyattsville, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1577
+          "rows": 1624
         },
         {
           "area": "place-bowie-md",
           "name": "Bowie, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1823
+          "rows": 1877
         },
         {
           "area": "place-clinton-md",
           "name": "Clinton, MD",
           "type": "city",
           "branch": "winchester",
-          "rows": 1584
+          "rows": 1632
         },
         {
           "area": "place-brandywine-md",
           "name": "Brandywine, MD",
           "type": "city",
           "branch": "winchester",
-          "rows": 1533
+          "rows": 1578
         },
         {
           "area": "place-waldorf-md",
           "name": "Waldorf, MD",
           "type": "city",
           "branch": "winchester",
-          "rows": 1764
+          "rows": 1817
         },
         {
           "area": "place-la-plata-md",
           "name": "La Plata, MD",
           "type": "city",
           "branch": "winchester",
-          "rows": 1468
+          "rows": 1512
         },
         {
           "area": "place-charlotte-hall-md",
           "name": "Charlotte Hall, MD",
           "type": "city",
           "branch": "winchester",
-          "rows": 1567
+          "rows": 1614
         },
         {
           "area": "place-welcome-md",
           "name": "Welcome, MD",
           "type": "city",
           "branch": "winchester",
-          "rows": 1433
+          "rows": 1475
         },
         {
           "area": "place-bel-alton-md",
           "name": "Bel Alton, MD",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-newburg-md",
           "name": "Newburg, MD",
           "type": "city",
           "branch": "winchester",
-          "rows": 1434
+          "rows": 1476
         },
         {
           "area": "place-potomac-md",
           "name": "Potomac, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 3942
+          "rows": 4019
         },
         {
           "area": "place-greater-landover-md",
           "name": "Greater Landover, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1427
+          "rows": 1469
         },
         {
           "area": "place-glenarden-md",
           "name": "Glenarden, MD",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1345
+          "rows": 1385
         },
         {
           "area": "place-aldie-va",
           "name": "Aldie, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1345
+          "rows": 1383
         },
         {
           "area": "place-stone-ridge-va",
           "name": "Stone Ridge, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1336
+          "rows": 1376
         },
         {
           "area": "place-brambleton-va",
           "name": "Brambleton, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1379
+          "rows": 1418
         },
         {
           "area": "place-broadlands-va",
           "name": "Broadlands, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1318
+          "rows": 1357
         },
         {
           "area": "place-lansdowne-va",
           "name": "Lansdowne, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1354
+          "rows": 1394
         },
         {
           "area": "place-dulles-va",
           "name": "Dulles, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1352
+          "rows": 1392
         },
         {
           "area": "place-arcola-va",
           "name": "Arcola, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1433
+          "rows": 1475
         },
         {
           "area": "place-hamilton-va",
           "name": "Hamilton, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1334
+          "rows": 1372
         },
         {
           "area": "place-neersville-va",
           "name": "Neersville, VA",
           "type": "city",
           "branch": "martinsburg",
-          "rows": 1246
+          "rows": 1283
         },
         {
           "area": "place-waxpool-va",
           "name": "Waxpool, VA",
           "type": "city",
           "branch": "winchester",
-          "rows": 1319
+          "rows": 1358
         }
       ],
       "rowsByNonFeatureArea": {
@@ -3348,62 +3351,62 @@
         "port-philaport": 403,
         "port-richmond-marine-terminal": 400,
         "port-of-wilmington-de": 328,
-        "scope-winchester": 316,
-        "scope-martinsburg": 288,
-        "i-66": 204,
-        "i-70": 204,
-        "i-81": 204,
-        "place-rappahannock-county-va": 397,
-        "state-al": 204,
-        "state-ak": 204,
-        "state-az": 204,
-        "state-ar": 204,
-        "state-ca": 204,
-        "state-co": 204,
-        "state-ct": 204,
-        "state-de": 204,
-        "state-fl": 204,
-        "state-ga": 204,
-        "state-id": 204,
-        "state-il": 204,
-        "state-in": 204,
-        "state-ia": 204,
-        "state-ks": 204,
-        "state-ky": 204,
-        "state-la": 204,
-        "state-me": 204,
-        "state-md": 204,
-        "state-ma": 204,
-        "state-mi": 204,
-        "state-mn": 204,
-        "state-ms": 204,
-        "state-mo": 204,
-        "state-mt": 204,
-        "state-ne": 204,
-        "state-nv": 204,
-        "state-nh": 204,
-        "state-nj": 204,
-        "state-nm": 204,
-        "state-ny": 204,
-        "state-nc": 204,
-        "state-nd": 204,
-        "state-oh": 204,
-        "state-ok": 204,
-        "state-or": 204,
-        "state-pa": 204,
-        "state-ri": 204,
-        "state-sc": 204,
-        "state-sd": 204,
-        "state-tn": 204,
-        "state-tx": 204,
-        "state-ut": 204,
-        "state-vt": 204,
-        "state-va": 204,
-        "state-wa": 204,
-        "state-wv": 204,
-        "state-wi": 204,
-        "state-wy": 204,
-        "scope-shenandoah-valley": 238,
+        "scope-winchester": 321,
+        "scope-martinsburg": 293,
+        "i-66": 210,
+        "i-70": 210,
+        "i-81": 210,
+        "place-rappahannock-county-va": 415,
+        "state-al": 210,
+        "state-ak": 210,
+        "state-az": 210,
+        "state-ar": 210,
+        "state-ca": 210,
+        "state-co": 210,
+        "state-ct": 210,
+        "state-de": 210,
+        "state-fl": 210,
+        "state-ga": 210,
+        "state-id": 210,
+        "state-il": 210,
+        "state-in": 210,
+        "state-ia": 210,
+        "state-ks": 210,
+        "state-ky": 210,
+        "state-la": 210,
+        "state-me": 210,
+        "state-md": 210,
+        "state-ma": 210,
+        "state-mi": 210,
+        "state-mn": 210,
+        "state-ms": 210,
+        "state-mo": 210,
+        "state-mt": 210,
+        "state-ne": 210,
+        "state-nv": 210,
+        "state-nh": 210,
+        "state-nj": 210,
+        "state-nm": 210,
+        "state-ny": 210,
+        "state-nc": 210,
+        "state-nd": 210,
+        "state-oh": 210,
+        "state-ok": 210,
+        "state-or": 210,
+        "state-pa": 210,
+        "state-ri": 210,
+        "state-sc": 210,
+        "state-sd": 210,
+        "state-tn": 210,
+        "state-tx": 210,
+        "state-ut": 210,
+        "state-vt": 210,
+        "state-va": 210,
+        "state-wa": 210,
+        "state-wv": 210,
+        "state-wi": 210,
+        "state-wy": 210,
+        "scope-shenandoah-valley": 245,
         "F-1.10": 90,
         "F-1.11": 90,
         "bridge-ports-3pl": 83,
@@ -3464,56 +3467,56 @@
         "racking-program": 7
       },
       "outcomeRollup": {
-        "rows": 518219,
+        "rows": 533927,
         "byHighestGate": {
-          "none": 518219,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 63238,
+          "crawled": 46631,
+          "indexed": 424058,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 137827,
-          "awaiting-observation": 380392,
-          "partial": 0,
+          "unknown": 47638,
+          "awaiting-observation": 15600,
+          "partial": 470689,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 518219,
-            "passed": 0,
+            "unknown": 63238,
+            "passed": 470689,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 518219,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 63238,
+            "passed": 424058,
+            "failed": 46631,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 518219,
+            "unknown": 533927,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 518219,
+            "unknown": 533927,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 518219,
+            "unknown": 533927,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           }
         }
       },
-      "outcomeDigest": "272735dcefb945b978ff133cb894456e28ed4998193ca7656c0ee7ca568e2101",
+      "outcomeDigest": "8cdabc8bb67a60401372a18fbc5016b22add2d0b297317136f3200b2cf1d9f66",
       "certificate": {
         "@type": "PropertyValue",
         "name": "Certificate — signed AI master index distribution",
@@ -3586,7 +3589,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -3632,7 +3635,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-residential.json",
           "encodingFormat": "application/json",
-          "sha256": "acb84518b83ebf37247961cb378c82acb8f5f962a087c72ec398574ac5dd45fc"
+          "sha256": "b891a5869bd54a8d59512d227db4a80866ae9090abec9367fdd581616696fb10"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -3653,31 +3656,31 @@
       "outcomeRollup": {
         "rows": 15317,
         "byHighestGate": {
-          "none": 15317,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 286,
+          "crawled": 14910,
+          "indexed": 121,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 14970,
-          "awaiting-observation": 347,
-          "partial": 0,
+          "unknown": 286,
+          "awaiting-observation": 0,
+          "partial": 15031,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 15317,
-            "passed": 0,
+            "unknown": 286,
+            "passed": 15031,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 15317,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 286,
+            "passed": 121,
+            "failed": 14910,
             "not-applicable": 0
           },
           "understood": {
@@ -3758,7 +3761,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -3804,7 +3807,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-commercial.json",
           "encodingFormat": "application/json",
-          "sha256": "d2eb5ccd9f6921be2c86f8cea1e5bb9440abd6a41ba22011dfff135083289856"
+          "sha256": "3812998392ef83f40b1e48dabd2d24f927957c5a8564b0af8d262fb3a7998922"
         },
         {
           "@type": "DataDownload",
@@ -3831,31 +3834,31 @@
       "outcomeRollup": {
         "rows": 15112,
         "byHighestGate": {
-          "none": 15112,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 40,
+          "crawled": 20,
+          "indexed": 15052,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 4014,
-          "awaiting-observation": 11098,
-          "partial": 0,
+          "unknown": 40,
+          "awaiting-observation": 0,
+          "partial": 15072,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 15112,
-            "passed": 0,
+            "unknown": 40,
+            "passed": 15072,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 15112,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 40,
+            "passed": 15052,
+            "failed": 20,
             "not-applicable": 0
           },
           "understood": {
@@ -3936,7 +3939,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -3982,7 +3985,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-local-regional.json",
           "encodingFormat": "application/json",
-          "sha256": "6845e685b3197cdb41489a0d7f67f597443c653c3ada6effffa67565347cf270"
+          "sha256": "7d8b21d9e92059c5f08f99c5ef81e948a781da0f39ec259acb6e6c761f451f83"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -4003,31 +4006,31 @@
       "outcomeRollup": {
         "rows": 25098,
         "byHighestGate": {
-          "none": 25098,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 154,
+          "crawled": 12,
+          "indexed": 24932,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 15472,
-          "awaiting-observation": 9626,
-          "partial": 0,
+          "unknown": 153,
+          "awaiting-observation": 1,
+          "partial": 24944,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 25098,
-            "passed": 0,
+            "unknown": 154,
+            "passed": 24944,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 25098,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 154,
+            "passed": 24932,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
@@ -4108,7 +4111,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -4154,7 +4157,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-long-distance.json",
           "encodingFormat": "application/json",
-          "sha256": "a844ccaf333c2e2a3d495cf4788d4b32d1e83e82343bdc5e017ed292574b2a4e"
+          "sha256": "4405da0be84fd4a2aedffc61615cce53b234704ec69a467f16f2459ff40006f5"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -4176,31 +4179,31 @@
       "outcomeRollup": {
         "rows": 15183,
         "byHighestGate": {
-          "none": 15183,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 3,
+          "crawled": 2047,
+          "indexed": 13133,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 10958,
-          "awaiting-observation": 4225,
-          "partial": 0,
+          "unknown": 3,
+          "awaiting-observation": 0,
+          "partial": 15180,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 15183,
-            "passed": 0,
+            "unknown": 3,
+            "passed": 15180,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 15183,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 3,
+            "passed": 13133,
+            "failed": 2047,
             "not-applicable": 0
           },
           "understood": {
@@ -4248,7 +4251,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-packing",
       "@type": "Dataset",
       "name": "Intent Coverage — Packing and Unpacking",
-      "description": "Generated intent coverage for Packing and Unpacking: 13356 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-packing.",
+      "description": "Generated intent coverage for Packing and Unpacking: 13364 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-packing.",
       "keywords": [
         "packing and unpacking questions",
         "packing services"
@@ -4281,7 +4284,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -4327,68 +4330,68 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-packing.json",
           "encodingFormat": "application/json",
-          "sha256": "ce9d494a738667ed32fa4b4351bcfd231b07d7bb28d6f14d838955c946163641"
+          "sha256": "4910f50d6fe0aed153b0f106454ff8e6ca9854dc3104676bd4d68ca83d711bcc"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-packing",
-      "queryRows": 13356,
+      "queryRows": 13364,
       "queryRowsByIntentClass": {
-        "navigational-local": 8891,
+        "navigational-local": 8894,
         "cost": 805,
         "how-process": 397,
         "best-choice": 803,
-        "ai-question": 2460
+        "ai-question": 2465
       },
       "queryRowsBySource": {
-        "generated": 13356,
+        "generated": 13364,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 17,
       "outcomeRollup": {
-        "rows": 13356,
+        "rows": 13364,
         "byHighestGate": {
-          "none": 13356,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 7,
+          "crawled": 22,
+          "indexed": 13335,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 121,
-          "awaiting-observation": 13235,
-          "partial": 0,
+          "unknown": 3,
+          "awaiting-observation": 4,
+          "partial": 13357,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 13356,
-            "passed": 0,
+            "unknown": 7,
+            "passed": 13357,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 13356,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 7,
+            "passed": 13335,
+            "failed": 22,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 13356,
+            "unknown": 13364,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 13356,
+            "unknown": 13364,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 13356,
+            "unknown": 13364,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -4453,7 +4456,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -4493,13 +4496,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/heavy.json",
           "encodingFormat": "application/json",
-          "sha256": "4e20105079e8a25ec9e63b51566ce0cb36db47b7dc3b0b1c017bb15561ae1d00"
+          "sha256": "789fce14d504dd4cb631ec98075cfb6b9d173e9f9f2a87e577bb0d2a80028ed6"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-sir-heavy.json",
           "encodingFormat": "application/json",
-          "sha256": "8037c3798594ed52c50444044b8627152df0d3053e0288044d1f95f6d6ea84eb"
+          "sha256": "5aabdcdd1256cbc7c42a32018616e0d5d12555f68a0b772175eff34b19e73d73"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -4520,31 +4523,31 @@
       "outcomeRollup": {
         "rows": 13372,
         "byHighestGate": {
-          "none": 13372,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 12118,
+          "crawled": 25,
+          "indexed": 1229,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 287,
-          "awaiting-observation": 13085,
-          "partial": 0,
+          "unknown": 12118,
+          "awaiting-observation": 0,
+          "partial": 1254,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 13372,
-            "passed": 0,
+            "unknown": 12118,
+            "passed": 1254,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 13372,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 12118,
+            "passed": 1229,
+            "failed": 25,
             "not-applicable": 0
           },
           "understood": {
@@ -4625,7 +4628,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -4671,7 +4674,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-gun-safe.json",
           "encodingFormat": "application/json",
-          "sha256": "12cae14a3347e5a8da28f3d07913329ae058f45b7e3565275fec704dc106a8aa"
+          "sha256": "031ea7460eeb418cb100a9265bc6026828a6e5a870e58a933f417695c05609f5"
         },
         {
           "@type": "DataDownload",
@@ -4698,31 +4701,31 @@
       "outcomeRollup": {
         "rows": 15133,
         "byHighestGate": {
-          "none": 15133,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 190,
+          "crawled": 15,
+          "indexed": 14928,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 11772,
-          "awaiting-observation": 3361,
-          "partial": 0,
+          "unknown": 190,
+          "awaiting-observation": 0,
+          "partial": 14943,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 15133,
-            "passed": 0,
+            "unknown": 190,
+            "passed": 14943,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 15133,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 190,
+            "passed": 14928,
+            "failed": 15,
             "not-applicable": 0
           },
           "understood": {
@@ -4803,7 +4806,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -4849,7 +4852,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-piano-antique.json",
           "encodingFormat": "application/json",
-          "sha256": "108a86cbfa473f8a96264ec94cf67279ea5f148c12d18f04498f09263edd8c3d"
+          "sha256": "1feda68ddd6ac21a6d707a7106c3abdd08e861486b4fc9391d397b1c61e01341"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -4870,31 +4873,31 @@
       "outcomeRollup": {
         "rows": 20865,
         "byHighestGate": {
-          "none": 20865,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 160,
+          "crawled": 13,
+          "indexed": 20692,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 169,
-          "awaiting-observation": 20696,
-          "partial": 0,
+          "unknown": 160,
+          "awaiting-observation": 0,
+          "partial": 20705,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 20865,
-            "passed": 0,
+            "unknown": 160,
+            "passed": 20705,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 20865,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 160,
+            "passed": 20692,
+            "failed": 13,
             "not-applicable": 0
           },
           "understood": {
@@ -4942,7 +4945,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-ispm15",
       "@type": "Dataset",
       "name": "Intent Coverage — ISPM 15 Export Packing",
-      "description": "Generated intent coverage for ISPM 15 Export Packing: 12754 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-ispm15.",
+      "description": "Generated intent coverage for ISPM 15 Export Packing: 12765 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-ispm15.",
       "keywords": [
         "ispm 15 export packing questions",
         "ISPM 15 export packing"
@@ -4975,7 +4978,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -5015,74 +5018,74 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/export.json",
           "encodingFormat": "application/json",
-          "sha256": "f607a67df8cbd22e9005366b58671ddbf807def9967bfcb71b4ef6310c986f6e"
+          "sha256": "969a295d7aa07c6a3b23edf0e29cdc2d738a7de45761b2714f186965b4e7eb80"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-ispm15.json",
           "encodingFormat": "application/json",
-          "sha256": "e3c9a688612f6e5176e6e69b60fe18322331fa130edc438ab7c5a382a201f08d"
+          "sha256": "56dd454bc671ab952642d986fc9785b6bff305859c845b61f3bbf705d3f22d65"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-ispm15",
-      "queryRows": 12754,
+      "queryRows": 12765,
       "queryRowsByIntentClass": {
-        "navigational-local": 8472,
+        "navigational-local": 8475,
         "cost": 775,
         "how-process": 417,
         "best-choice": 789,
-        "ai-question": 2301
+        "ai-question": 2309
       },
       "queryRowsBySource": {
-        "generated": 12754,
+        "generated": 12765,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 17,
       "outcomeRollup": {
-        "rows": 12754,
+        "rows": 12765,
         "byHighestGate": {
-          "none": 12754,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 20,
+          "crawled": 12,
+          "indexed": 12733,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 9451,
-          "awaiting-observation": 3303,
-          "partial": 0,
+          "unknown": 3,
+          "awaiting-observation": 17,
+          "partial": 12745,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 12754,
-            "passed": 0,
+            "unknown": 20,
+            "passed": 12745,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 12754,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 20,
+            "passed": 12733,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 12754,
+            "unknown": 12765,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 12754,
+            "unknown": 12765,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 12754,
+            "unknown": 12765,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -5114,7 +5117,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-crating",
       "@type": "Dataset",
       "name": "Intent Coverage — Custom Crating",
-      "description": "Generated intent coverage for Custom Crating: 13082 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-crating.",
+      "description": "Generated intent coverage for Custom Crating: 13096 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-crating.",
       "keywords": [
         "custom crating questions",
         "custom crating"
@@ -5147,7 +5150,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -5193,68 +5196,68 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-crating.json",
           "encodingFormat": "application/json",
-          "sha256": "e4392e08c7e71b1e25c89a5bf61a21550f6d7e48583c34b33cd7ed0b5ba81f93"
+          "sha256": "3d531ba285609dcd6be893ca6a8edff6b43ffd526e229d74639cb298b84a007c"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-crating",
-      "queryRows": 13082,
+      "queryRows": 13096,
       "queryRowsByIntentClass": {
-        "navigational-local": 8559,
+        "navigational-local": 8568,
         "cost": 798,
         "how-process": 426,
         "best-choice": 810,
-        "ai-question": 2489
+        "ai-question": 2494
       },
       "queryRowsBySource": {
-        "generated": 13082,
+        "generated": 13096,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 17,
       "outcomeRollup": {
-        "rows": 13082,
+        "rows": 13096,
         "byHighestGate": {
-          "none": 13082,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 20,
+          "crawled": 12,
+          "indexed": 13064,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 9486,
-          "awaiting-observation": 3596,
-          "partial": 0,
+          "unknown": 4,
+          "awaiting-observation": 16,
+          "partial": 13076,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 13082,
-            "passed": 0,
+            "unknown": 20,
+            "passed": 13076,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 13082,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 20,
+            "passed": 13064,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 13082,
+            "unknown": 13096,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 13082,
+            "unknown": 13096,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 13082,
+            "unknown": 13096,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -5319,7 +5322,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -5365,7 +5368,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-transloading.json",
           "encodingFormat": "application/json",
-          "sha256": "7c906cc5a5d21452875a09cc9ad26b5988d93118db9725e2002ac228c9e36426"
+          "sha256": "18b0e9b3fa2c5ea7beafd5d7318ab37d21d813c9c651458ecae51bbdbbf282cd"
         },
         {
           "@type": "DataDownload",
@@ -5377,19 +5380,19 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-transloading-inland-port.json",
           "encodingFormat": "application/json",
-          "sha256": "faa261ea1662e17e3bd6a6fd766c51ab2830604cb76acc28b8788cc20d1aa3a2"
+          "sha256": "32ac77016cec2176db6f9bd62bc7672bc890a2a9be5f0b4bd30cfa77861bc0ec"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-ocean-container.json",
           "encodingFormat": "application/json",
-          "sha256": "727357b7edb9eb9e80a157967bbf23fa10792f7f4e83cb0d01c2086a6ea7d1f3"
+          "sha256": "31ea5b523526af3c319ceafad754e8e2904a18487f790146552cabba4d8d5746"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-ports.json",
           "encodingFormat": "application/json",
-          "sha256": "d2d4b35b8365fc38fad547468096eef126099591513841748f33b9105cc1c7ea"
+          "sha256": "609a89c1fffe3d12c8b9e36a946dd600cf537800ec30103162435d39af8cff1e"
         },
         {
           "@type": "DataDownload",
@@ -5452,31 +5455,31 @@
       "outcomeRollup": {
         "rows": 14924,
         "byHighestGate": {
-          "none": 14924,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 631,
+          "crawled": 21,
+          "indexed": 14272,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 9566,
-          "awaiting-observation": 5358,
-          "partial": 0,
+          "unknown": 631,
+          "awaiting-observation": 0,
+          "partial": 14293,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 14924,
-            "passed": 0,
+            "unknown": 631,
+            "passed": 14293,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 14924,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 631,
+            "passed": 14272,
+            "failed": 21,
             "not-applicable": 0
           },
           "understood": {
@@ -5557,7 +5560,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -5603,7 +5606,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-final-mile.json",
           "encodingFormat": "application/json",
-          "sha256": "1f992a6ce61a342a4f97f423beee3b0ca6c5df9555d1547e6c8d0c0d979b834e"
+          "sha256": "ba9eda90b736a921fa51014a1c9c8d1bd39d7c94163e13d4bb4b71601f098a34"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -5624,31 +5627,31 @@
       "outcomeRollup": {
         "rows": 13243,
         "byHighestGate": {
-          "none": 13243,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 9421,
+          "crawled": 12,
+          "indexed": 3810,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 117,
-          "awaiting-observation": 13126,
-          "partial": 0,
+          "unknown": 9421,
+          "awaiting-observation": 0,
+          "partial": 3822,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 13243,
-            "passed": 0,
+            "unknown": 9421,
+            "passed": 3822,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 13243,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 9421,
+            "passed": 3810,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
@@ -5729,7 +5732,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -5775,13 +5778,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-white-glove.json",
           "encodingFormat": "application/json",
-          "sha256": "6cd8bab3999a7d5c712cc4fc3930bc1b1fb5d60703bba68af4ed2fb84451f95d"
+          "sha256": "ecb9f334f144c0d8480bb9561e84989f4a029a0ac00c5638f944fc2f82a9c113"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-luxury-estate-relocation.json",
           "encodingFormat": "application/json",
-          "sha256": "6a17725d321c0180743a5d08020e5f8f802ff0acdd437fff09c15d41fffbacc3"
+          "sha256": "1715bcd5d90202b4f089e52b693ec71841e4fab03b2d87053a37bc3f18fcffb3"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -5803,31 +5806,31 @@
       "outcomeRollup": {
         "rows": 14959,
         "byHighestGate": {
-          "none": 14959,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 10043,
+          "crawled": 12,
+          "indexed": 4904,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 559,
-          "awaiting-observation": 14400,
-          "partial": 0,
+          "unknown": 10043,
+          "awaiting-observation": 0,
+          "partial": 4916,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 14959,
-            "passed": 0,
+            "unknown": 10043,
+            "passed": 4916,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 14959,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 10043,
+            "passed": 4904,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
@@ -5908,7 +5911,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -5954,7 +5957,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-office.json",
           "encodingFormat": "application/json",
-          "sha256": "3d82b3538bc04159c04581087979f3c7a1e6936d117b6041605688672d08d4a6"
+          "sha256": "ef4abe4ab3a9d8663b7c0376dd21820caec00d5d86a43c59bbb9c5a0ddebc336"
         },
         {
           "@type": "DataDownload",
@@ -5981,31 +5984,31 @@
       "outcomeRollup": {
         "rows": 13413,
         "byHighestGate": {
-          "none": 13413,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 160,
+          "crawled": 12,
+          "indexed": 13241,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 107,
-          "awaiting-observation": 13306,
-          "partial": 0,
+          "unknown": 160,
+          "awaiting-observation": 0,
+          "partial": 13253,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 13413,
-            "passed": 0,
+            "unknown": 160,
+            "passed": 13253,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 13413,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 160,
+            "passed": 13241,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
@@ -6086,7 +6089,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -6126,13 +6129,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/industrial-offices-moving.json",
           "encodingFormat": "application/json",
-          "sha256": "203247bb260ff6e1c174a5ee92a940e5c47ca91282eb94016b2da593715b1aa4"
+          "sha256": "becb55d8d7fbaaff616d7d3763f043a35edc96cca939ff778a45f7e26b83fb82"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-industrial-offices.json",
           "encodingFormat": "application/json",
-          "sha256": "cdf36ac7fed17858e23389ba38c46dc71f39883e7582c8b6a8988017e13a140f"
+          "sha256": "0edf698d5cc74cba2b3e85321b804955d8184f6267def14ad3079d4f5cdd76d1"
         },
         {
           "@type": "DataDownload",
@@ -6159,31 +6162,31 @@
       "outcomeRollup": {
         "rows": 13220,
         "byHighestGate": {
-          "none": 13220,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 70,
+          "crawled": 12,
+          "indexed": 13138,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 111,
-          "awaiting-observation": 13109,
-          "partial": 0,
+          "unknown": 70,
+          "awaiting-observation": 0,
+          "partial": 13150,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 13220,
-            "passed": 0,
+            "unknown": 70,
+            "passed": 13150,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 13220,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 70,
+            "passed": 13138,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
@@ -6264,7 +6267,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -6310,7 +6313,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-government.json",
           "encodingFormat": "application/json",
-          "sha256": "c82d00e350b16725f958b4152ba74a3033e112f68188bdd9fdfec5beaf47b292"
+          "sha256": "5d8d80ae51422fa993637bc9b1e47b750c91fdbc8fc516e2bdfda6f11bf4b59b"
         },
         {
           "@type": "DataDownload",
@@ -6337,31 +6340,31 @@
       "outcomeRollup": {
         "rows": 13217,
         "byHighestGate": {
-          "none": 13217,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 38,
+          "crawled": 9440,
+          "indexed": 3739,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 115,
-          "awaiting-observation": 13102,
-          "partial": 0,
+          "unknown": 38,
+          "awaiting-observation": 0,
+          "partial": 13179,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 13217,
-            "passed": 0,
+            "unknown": 38,
+            "passed": 13179,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 13217,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 38,
+            "passed": 3739,
+            "failed": 9440,
             "not-applicable": 0
           },
           "understood": {
@@ -6409,7 +6412,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-military",
       "@type": "Dataset",
       "name": "Intent Coverage — Military Moving",
-      "description": "Generated intent coverage for Military Moving: 13136 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-military.",
+      "description": "Generated intent coverage for Military Moving: 13141 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-military.",
       "keywords": [
         "military moving questions",
         "military movers"
@@ -6442,7 +6445,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -6488,68 +6491,68 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-military.json",
           "encodingFormat": "application/json",
-          "sha256": "e99ed1747a691d0c11c6d15d1d5088ff77d04231b307df8f6ae484497eedde26"
+          "sha256": "2afd9a74e934ca59502b01156970136afdeda931873cc197241c27bbe68604cb"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-military",
-      "queryRows": 13136,
+      "queryRows": 13141,
       "queryRowsByIntentClass": {
-        "navigational-local": 8829,
+        "navigational-local": 8827,
         "cost": 773,
         "how-process": 408,
         "best-choice": 779,
-        "ai-question": 2347
+        "ai-question": 2354
       },
       "queryRowsBySource": {
-        "generated": 13136,
+        "generated": 13141,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 17,
       "outcomeRollup": {
-        "rows": 13136,
+        "rows": 13141,
         "byHighestGate": {
-          "none": 13136,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 13,
+          "crawled": 16,
+          "indexed": 13112,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 116,
-          "awaiting-observation": 13020,
-          "partial": 0,
+          "unknown": 3,
+          "awaiting-observation": 10,
+          "partial": 13128,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 13136,
-            "passed": 0,
+            "unknown": 13,
+            "passed": 13128,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 13136,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 13,
+            "passed": 13112,
+            "failed": 16,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 13136,
+            "unknown": 13141,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 13136,
+            "unknown": 13141,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 13136,
+            "unknown": 13141,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -6614,7 +6617,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -6654,13 +6657,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/route81.json",
           "encodingFormat": "application/json",
-          "sha256": "a70d6d4524552d52f81863adba841ecf26c21876843ada8644e87bc698176ddf"
+          "sha256": "70b1c3ebfd26ca12636535f368e9c5633526e6f944ad00650282e1fc6009d95c"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-route81.json",
           "encodingFormat": "application/json",
-          "sha256": "4808de3b749a9a94cf906c40395ec180c889a56cc765181b2eaa71d4c54703a7"
+          "sha256": "253581b5fcac177a4751df311baf2136ec1db8f4e603679d391420d1abda16fd"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -6681,31 +6684,31 @@
       "outcomeRollup": {
         "rows": 12846,
         "byHighestGate": {
-          "none": 12846,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 3,
+          "crawled": 13,
+          "indexed": 12830,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 113,
-          "awaiting-observation": 12733,
-          "partial": 0,
+          "unknown": 3,
+          "awaiting-observation": 0,
+          "partial": 12843,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 12846,
-            "passed": 0,
+            "unknown": 3,
+            "passed": 12843,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 12846,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 3,
+            "passed": 12830,
+            "failed": 13,
             "not-applicable": 0
           },
           "understood": {
@@ -6786,7 +6789,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -6832,13 +6835,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-industrial-commercial.json",
           "encodingFormat": "application/json",
-          "sha256": "f3477d7e973a6b677c44cc2bc1c8abb0b211f8324aa75e5ca2bd9cfb0106896f"
+          "sha256": "c41f92cd286bf82ec86cb340c4ec74270050d16ecb1851ee0431f0bdf053030b"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-warehouse.json",
           "encodingFormat": "application/json",
-          "sha256": "656c090499a7e2452310a7f0afb1e00c221fc7db2984e261da6d681d91c944b3"
+          "sha256": "0758374b32c97226cb804e64f18af833376e8e6045f0c896e3948367364dd37d"
         },
         {
           "@type": "DataDownload",
@@ -6865,31 +6868,31 @@
       "outcomeRollup": {
         "rows": 13309,
         "byHighestGate": {
-          "none": 13309,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 86,
+          "crawled": 12,
+          "indexed": 13211,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 110,
-          "awaiting-observation": 13199,
-          "partial": 0,
+          "unknown": 86,
+          "awaiting-observation": 0,
+          "partial": 13223,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 13309,
-            "passed": 0,
+            "unknown": 86,
+            "passed": 13223,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 13309,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 86,
+            "passed": 13211,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
@@ -6937,7 +6940,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-senior-moving",
       "@type": "Dataset",
       "name": "Intent Coverage — Senior Moving",
-      "description": "Generated intent coverage for Senior Moving: 15210 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-senior-moving.",
+      "description": "Generated intent coverage for Senior Moving: 15217 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-senior-moving.",
       "keywords": [
         "senior moving questions",
         "senior movers"
@@ -6970,7 +6973,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -7016,68 +7019,68 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-senior.json",
           "encodingFormat": "application/json",
-          "sha256": "785061ebece760bc61535c44f834c55d78a8c03e7feafea6a712734fe9a045dd"
+          "sha256": "79ccc7705efa8845eda95c23ec4af573b7b68f14a032c9e653180eb509c03fbc"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-senior-moving",
-      "queryRows": 15210,
+      "queryRows": 15217,
       "queryRowsByIntentClass": {
-        "navigational-local": 9498,
+        "navigational-local": 9500,
         "cost": 816,
         "how-process": 410,
         "best-choice": 822,
-        "ai-question": 3664
+        "ai-question": 3669
       },
       "queryRowsBySource": {
-        "generated": 15210,
+        "generated": 15217,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 17,
       "outcomeRollup": {
-        "rows": 15210,
+        "rows": 15217,
         "byHighestGate": {
-          "none": 15210,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 8,
+          "crawled": 12,
+          "indexed": 15197,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 84,
-          "awaiting-observation": 15126,
-          "partial": 0,
+          "unknown": 3,
+          "awaiting-observation": 5,
+          "partial": 15209,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 15210,
-            "passed": 0,
+            "unknown": 8,
+            "passed": 15209,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 15210,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 8,
+            "passed": 15197,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 15210,
+            "unknown": 15217,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 15210,
+            "unknown": 15217,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 15210,
+            "unknown": 15217,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -7142,7 +7145,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -7188,7 +7191,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-warehouse.json",
           "encodingFormat": "application/json",
-          "sha256": "656c090499a7e2452310a7f0afb1e00c221fc7db2984e261da6d681d91c944b3"
+          "sha256": "0758374b32c97226cb804e64f18af833376e8e6045f0c896e3948367364dd37d"
         },
         {
           "@type": "DataDownload",
@@ -7215,31 +7218,31 @@
       "outcomeRollup": {
         "rows": 15258,
         "byHighestGate": {
-          "none": 15258,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 4,
+          "crawled": 12,
+          "indexed": 15242,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 76,
-          "awaiting-observation": 15182,
-          "partial": 0,
+          "unknown": 4,
+          "awaiting-observation": 0,
+          "partial": 15254,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 15258,
-            "passed": 0,
+            "unknown": 4,
+            "passed": 15254,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 15258,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 4,
+            "passed": 15242,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
@@ -7320,7 +7323,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -7366,7 +7369,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-it.json",
           "encodingFormat": "application/json",
-          "sha256": "f421245feea0fe21f40881209e257a4271525f4b494a18084680198a778406b6"
+          "sha256": "64cb94adc25affbb797ed855af51106e46d9310995aa921100e46e5efe4ce44a"
         },
         {
           "@type": "DataDownload",
@@ -7393,31 +7396,31 @@
       "outcomeRollup": {
         "rows": 20489,
         "byHighestGate": {
-          "none": 20489,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 33,
+          "crawled": 19809,
+          "indexed": 647,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 193,
-          "awaiting-observation": 20296,
-          "partial": 0,
+          "unknown": 33,
+          "awaiting-observation": 0,
+          "partial": 20456,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 20489,
-            "passed": 0,
+            "unknown": 33,
+            "passed": 20456,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 20489,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 33,
+            "passed": 647,
+            "failed": 19809,
             "not-applicable": 0
           },
           "understood": {
@@ -7498,7 +7501,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -7544,7 +7547,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-transloading-winchester.json",
           "encodingFormat": "application/json",
-          "sha256": "187413237a80e885031970e062b10e2a901b782b750e293a0d2b15954e0099de"
+          "sha256": "1190b03ef1ef926ca4c8fd7cc31843f0d0df1e638003a045ff4152354ba5053d"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -7565,31 +7568,31 @@
       "outcomeRollup": {
         "rows": 6953,
         "byHighestGate": {
-          "none": 6953,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 4,
+          "crawled": 12,
+          "indexed": 6937,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 6879,
-          "awaiting-observation": 74,
-          "partial": 0,
+          "unknown": 4,
+          "awaiting-observation": 0,
+          "partial": 6949,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 6953,
-            "passed": 0,
+            "unknown": 4,
+            "passed": 6949,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 6953,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 4,
+            "passed": 6937,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
@@ -7637,7 +7640,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-moving-and-storage",
       "@type": "Dataset",
       "name": "Intent Coverage — Moving and Storage",
-      "description": "Generated intent coverage for Moving and Storage: 14498 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-moving-and-storage.",
+      "description": "Generated intent coverage for Moving and Storage: 14505 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-moving-and-storage.",
       "keywords": [
         "moving and storage questions",
         "moving and storage"
@@ -7670,7 +7673,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -7716,68 +7719,68 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-moving-and-storage.json",
           "encodingFormat": "application/json",
-          "sha256": "98d85d8589da66edd7da499afa2b7c7d8ab73a0ae2f5dc0cbc5619fb79d9b9bf"
+          "sha256": "27a67c80dc369392a8d82a67c093960e7bfcb80bf7d1350af07c1cdbd18230d8"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-moving-and-storage",
-      "queryRows": 14498,
+      "queryRows": 14505,
       "queryRowsByIntentClass": {
-        "navigational-local": 9503,
+        "navigational-local": 9504,
         "cost": 804,
         "how-process": 390,
         "best-choice": 781,
-        "ai-question": 3020
+        "ai-question": 3026
       },
       "queryRowsBySource": {
-        "generated": 14498,
+        "generated": 14505,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 17,
       "outcomeRollup": {
-        "rows": 14498,
+        "rows": 14505,
         "byHighestGate": {
-          "none": 14498,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 9,
+          "crawled": 12,
+          "indexed": 14484,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 76,
-          "awaiting-observation": 14422,
-          "partial": 0,
+          "unknown": 4,
+          "awaiting-observation": 5,
+          "partial": 14496,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 14498,
-            "passed": 0,
+            "unknown": 9,
+            "passed": 14496,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 14498,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 9,
+            "passed": 14484,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 14498,
+            "unknown": 14505,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 14498,
+            "unknown": 14505,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 14498,
+            "unknown": 14505,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -7842,7 +7845,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -7888,7 +7891,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-junk-removal.json",
           "encodingFormat": "application/json",
-          "sha256": "66db03ec3d9c6eeb2107cceb19337b9dc35c9607510a3e88f1ca324cb9eca24e"
+          "sha256": "a4e8eff5f9758ae6b48a2215d46d994257c99788ceefc2810c37ca0473f1d9ca"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -7909,31 +7912,31 @@
       "outcomeRollup": {
         "rows": 18376,
         "byHighestGate": {
-          "none": 18376,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 3,
+          "crawled": 12,
+          "indexed": 18361,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 188,
-          "awaiting-observation": 18188,
-          "partial": 0,
+          "unknown": 3,
+          "awaiting-observation": 0,
+          "partial": 18373,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 18376,
-            "passed": 0,
+            "unknown": 3,
+            "passed": 18373,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 18376,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 3,
+            "passed": 18361,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
@@ -8014,7 +8017,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -8060,7 +8063,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-warehouse-racking-relocation.json",
           "encodingFormat": "application/json",
-          "sha256": "7abe0b30ae830f17ba77355d42fd9687ff05ef2805c29de790804c26f8434582"
+          "sha256": "c5ae46899ebc557969701529c8bc5a7a9b32f7d55313f948347c6d4e1ee4d4b3"
         },
         {
           "@type": "DataDownload",
@@ -8087,31 +8090,31 @@
       "outcomeRollup": {
         "rows": 13793,
         "byHighestGate": {
-          "none": 13793,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 3,
+          "crawled": 12,
+          "indexed": 13778,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 12629,
-          "awaiting-observation": 1164,
-          "partial": 0,
+          "unknown": 3,
+          "awaiting-observation": 0,
+          "partial": 13790,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 13793,
-            "passed": 0,
+            "unknown": 3,
+            "passed": 13790,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 13793,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 3,
+            "passed": 13778,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
@@ -8159,7 +8162,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-ffe-logistics",
       "@type": "Dataset",
       "name": "Intent Coverage — FF&E Logistics",
-      "description": "Generated intent coverage for FF&E Logistics: 14663 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-ffe-logistics.",
+      "description": "Generated intent coverage for FF&E Logistics: 14718 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-ffe-logistics.",
       "keywords": [
         "ff&e logistics questions",
         "FF&E logistics"
@@ -8192,7 +8195,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -8232,74 +8235,74 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/ffe-logistics.json",
           "encodingFormat": "application/json",
-          "sha256": "dc3bf574a97f33c5a588e0b5976a386a8a3d11c3813b32764f44435872231901"
+          "sha256": "a1bbb38cbfb60b8e525ee8e81034258e21938425f41fe7bd01b1476ab63c93b3"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-ffe-logistics.json",
           "encodingFormat": "application/json",
-          "sha256": "849b851e368c762e1ccc88351b3527d092352acd89168faeaaf36996e327a80e"
+          "sha256": "67a7b975df7e6f468be52a0267ca1817bbc61130c59a93331ef2ded6358b04d4"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-ffe-logistics",
-      "queryRows": 14663,
+      "queryRows": 14718,
       "queryRowsByIntentClass": {
-        "navigational-local": 9260,
+        "navigational-local": 9287,
         "cost": 770,
-        "how-process": 727,
+        "how-process": 722,
         "best-choice": 779,
-        "ai-question": 3127
+        "ai-question": 3160
       },
       "queryRowsBySource": {
-        "generated": 14663,
+        "generated": 14718,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 17,
       "outcomeRollup": {
-        "rows": 14663,
+        "rows": 14718,
         "byHighestGate": {
-          "none": 14663,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 42,
+          "crawled": 12,
+          "indexed": 14664,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 14528,
-          "awaiting-observation": 135,
-          "partial": 0,
+          "unknown": 3,
+          "awaiting-observation": 39,
+          "partial": 14676,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 14663,
-            "passed": 0,
+            "unknown": 42,
+            "passed": 14676,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 14663,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 42,
+            "passed": 14664,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 14663,
+            "unknown": 14718,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 14663,
+            "unknown": 14718,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 14663,
+            "unknown": 14718,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -8364,7 +8367,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -8410,7 +8413,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-data-center-relocation.json",
           "encodingFormat": "application/json",
-          "sha256": "af56614c1bc02c904c7aaa6cf74f78acfe24fda364a4bfb25e26e83f319aa5f2"
+          "sha256": "d340dce4d4aa0e330606783396737a8e8d7454ed2123ed4bbd9e756c57073aa9"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -8431,31 +8434,31 @@
       "outcomeRollup": {
         "rows": 15716,
         "byHighestGate": {
-          "none": 15716,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 6,
+          "crawled": 16,
+          "indexed": 15694,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 185,
-          "awaiting-observation": 15531,
-          "partial": 0,
+          "unknown": 6,
+          "awaiting-observation": 0,
+          "partial": 15710,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 15716,
-            "passed": 0,
+            "unknown": 6,
+            "passed": 15710,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 15716,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 6,
+            "passed": 15694,
+            "failed": 16,
             "not-applicable": 0
           },
           "understood": {
@@ -8536,7 +8539,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -8576,13 +8579,13 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/medical-lab-equipment-relocation.json",
           "encodingFormat": "application/json",
-          "sha256": "6314dc909895d4306cacdbf7747b1d9708029dd7ef4b50505b5705150139cd8a"
+          "sha256": "6ae5c7f10a5f3fdc52763fbcf2c871214f3664abba4755efdfac206b0119ceb8"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-medical-lab-relocation.json",
           "encodingFormat": "application/json",
-          "sha256": "4113ccafe9f4e78b19af88e3d83f74507450ee940445a5b2bf1432d6c8cbb3a5"
+          "sha256": "fe4ccc04f428dc07f74cb0495aec663ac1ed235d266076f8bc23b8fe36b066c7"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -8603,31 +8606,31 @@
       "outcomeRollup": {
         "rows": 14944,
         "byHighestGate": {
-          "none": 14944,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 8,
+          "crawled": 12,
+          "indexed": 14924,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 14776,
-          "awaiting-observation": 168,
-          "partial": 0,
+          "unknown": 8,
+          "awaiting-observation": 0,
+          "partial": 14936,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 14944,
-            "passed": 0,
+            "unknown": 8,
+            "passed": 14936,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 14944,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 8,
+            "passed": 14924,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
@@ -8708,7 +8711,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -8754,7 +8757,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-freight-rework.json",
           "encodingFormat": "application/json",
-          "sha256": "47705e70f17e21a7ad855b96e955fc0e42bfe69ed2c38f88d833e0e589c90685"
+          "sha256": "a89a031fc188d8a66307818704130161ae633a6f0b65b7d22bbd6274ed56cedb"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -8775,31 +8778,31 @@
       "outcomeRollup": {
         "rows": 15061,
         "byHighestGate": {
-          "none": 15061,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 389,
+          "crawled": 12,
+          "indexed": 14660,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 80,
-          "awaiting-observation": 14981,
-          "partial": 0,
+          "unknown": 389,
+          "awaiting-observation": 0,
+          "partial": 14672,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 15061,
-            "passed": 0,
+            "unknown": 389,
+            "passed": 14672,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 15061,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 389,
+            "passed": 14660,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
@@ -8880,7 +8883,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -8947,31 +8950,31 @@
       "outcomeRollup": {
         "rows": 28312,
         "byHighestGate": {
-          "none": 28312,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 75,
+          "crawled": 12,
+          "indexed": 28225,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 78,
-          "awaiting-observation": 28234,
-          "partial": 0,
+          "unknown": 75,
+          "awaiting-observation": 0,
+          "partial": 28237,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 28312,
-            "passed": 0,
+            "unknown": 75,
+            "passed": 28237,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 28312,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 75,
+            "passed": 28225,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
@@ -9019,7 +9022,7 @@
       "@id": "https://theflatratemovers.com/#intent-coverage-3pl-support",
       "@type": "Dataset",
       "name": "Intent Coverage — 3PL Support Services",
-      "description": "Generated intent coverage for 3PL Support Services: 14720 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-3pl-support.",
+      "description": "Generated intent coverage for 3PL Support Services: 14726 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-3pl-support.",
       "keywords": [
         "3pl support services questions",
         "3PL support services"
@@ -9052,7 +9055,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -9098,7 +9101,7 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-ports.json",
           "encodingFormat": "application/json",
-          "sha256": "d2d4b35b8365fc38fad547468096eef126099591513841748f33b9105cc1c7ea"
+          "sha256": "609a89c1fffe3d12c8b9e36a946dd600cf537800ec30103162435d39af8cff1e"
         },
         {
           "@type": "DataDownload",
@@ -9109,63 +9112,63 @@
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
       "graphNode": "https://theflatratemovers.com/#service-3pl-support",
-      "queryRows": 14720,
+      "queryRows": 14726,
       "queryRowsByIntentClass": {
-        "navigational-local": 9074,
+        "navigational-local": 9081,
         "cost": 912,
-        "how-process": 952,
+        "how-process": 945,
         "best-choice": 946,
-        "ai-question": 2836
+        "ai-question": 2842
       },
       "queryRowsBySource": {
-        "generated": 14720,
+        "generated": 14726,
         "gscObserved": 0
       },
       "generatedRowsEnrichedByGsc": 17,
       "outcomeRollup": {
-        "rows": 14720,
+        "rows": 14726,
         "byHighestGate": {
-          "none": 14720,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 13691,
+          "crawled": 12,
+          "indexed": 1023,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 253,
-          "awaiting-observation": 14467,
-          "partial": 0,
+          "unknown": 13677,
+          "awaiting-observation": 14,
+          "partial": 1035,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 14720,
-            "passed": 0,
+            "unknown": 13691,
+            "passed": 1035,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 14720,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 13691,
+            "passed": 1023,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
-            "unknown": 14720,
+            "unknown": 14726,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "corroborated": {
-            "unknown": 14720,
+            "unknown": 14726,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
           },
           "cited-maintained": {
-            "unknown": 14720,
+            "unknown": 14726,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0
@@ -9230,7 +9233,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -9270,25 +9273,25 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/vault-doors.json",
           "encodingFormat": "application/json",
-          "sha256": "7de09cd88a283b103ce24454c43389632d0cfcd6be293ec2047cfa21e8d27672"
+          "sha256": "e9011909c9f4dd89b02fcebcaddd7bea502233e13019e9ee4c702dbfd8b5f079"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-vault-security.json",
           "encodingFormat": "application/json",
-          "sha256": "0faef468df1379e82f2e01cfbf76d85a026e4b0e81bcfa936b74707b5917acdf"
+          "sha256": "d88e2371fc3a83ebae3b5720cd25688292a649cee6408b72a361c617a00ba410"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-vault-doors.json",
           "encodingFormat": "application/json",
-          "sha256": "505b39857cf99e9be292a983fd190ebb4a9dad2c065c96a04532dcee690b9d22"
+          "sha256": "c73a1e94acbb25812cab42b7460918192192a377baf9d5ad7612eb980c8b6593"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-gun-safe.json",
           "encodingFormat": "application/json",
-          "sha256": "12cae14a3347e5a8da28f3d07913329ae058f45b7e3565275fec704dc106a8aa"
+          "sha256": "031ea7460eeb418cb100a9265bc6026828a6e5a870e58a933f417695c05609f5"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -9309,31 +9312,31 @@
       "outcomeRollup": {
         "rows": 14748,
         "byHighestGate": {
-          "none": 14748,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 3,
+          "crawled": 12,
+          "indexed": 14733,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 80,
-          "awaiting-observation": 14668,
-          "partial": 0,
+          "unknown": 3,
+          "awaiting-observation": 0,
+          "partial": 14745,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 14748,
-            "passed": 0,
+            "unknown": 3,
+            "passed": 14745,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 14748,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 3,
+            "passed": 14733,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
@@ -9414,7 +9417,7 @@
         }
       ],
       "temporalCoverage": "2010/2026",
-      "dateModified": "2026-11-25",
+      "dateModified": "2026-11-27",
       "creator": {
         "@id": "https://theflatratemovers.com/#organization",
         "@type": "Organization",
@@ -9454,19 +9457,19 @@
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/hoarding-cleanup.json",
           "encodingFormat": "application/json",
-          "sha256": "8837bbd97f3a821b346a441ef122a28827cf918752c7d5532017dc02cf2fc9a6"
+          "sha256": "71f3dc1f555d6ef1e88068c358d1d02b383301cd5380a54bdf146002f6231418"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-hoarding-cleanup.json",
           "encodingFormat": "application/json",
-          "sha256": "23268a5ce072d53e740a4a90520985c856b8ccdbbb9a75148123871bd1764bfc"
+          "sha256": "35f78d448a3758ee00567078878ebb0a2bc4b064cf49ec58839cf743286ed7be"
         },
         {
           "@type": "DataDownload",
           "contentUrl": "https://theflatratemovers.com/datasets-junk-removal.json",
           "encodingFormat": "application/json",
-          "sha256": "66db03ec3d9c6eeb2107cceb19337b9dc35c9607510a3e88f1ca324cb9eca24e"
+          "sha256": "a4e8eff5f9758ae6b48a2215d46d994257c99788ceefc2810c37ca0473f1d9ca"
         }
       ],
       "url": "https://theflatratemovers.com/datasets/intent-coverage/",
@@ -9487,31 +9490,31 @@
       "outcomeRollup": {
         "rows": 13939,
         "byHighestGate": {
-          "none": 13939,
-          "crawled": 0,
-          "indexed": 0,
+          "none": 5,
+          "crawled": 12,
+          "indexed": 13922,
           "understood": 0,
           "corroborated": 0,
           "cited-maintained": 0
         },
         "byStatus": {
-          "unknown": 108,
-          "awaiting-observation": 13831,
-          "partial": 0,
+          "unknown": 5,
+          "awaiting-observation": 0,
+          "partial": 13934,
           "blocked": 0,
           "complete": 0
         },
         "byGateState": {
           "crawled": {
-            "unknown": 13939,
-            "passed": 0,
+            "unknown": 5,
+            "passed": 13934,
             "failed": 0,
             "not-applicable": 0
           },
           "indexed": {
-            "unknown": 13939,
-            "passed": 0,
-            "failed": 0,
+            "unknown": 5,
+            "passed": 13922,
+            "failed": 12,
             "not-applicable": 0
           },
           "understood": {
@@ -9528,6 +9531,178 @@
           },
           "cited-maintained": {
             "unknown": 13939,
+            "passed": 0,
+            "failed": 0,
+            "not-applicable": 0
+          }
+        }
+      },
+      "sameAs": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "identifier": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "isAccessibleForFree": true,
+      "datePublished": "2026-10-30",
+      "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "@id": "https://theflatratemovers.com/datasets/#collection",
+        "name": "The Flat Rate Movers — AI Authority Estate Datasets",
+        "url": "https://theflatratemovers.com/datasets/"
+      },
+      "variableMeasured": [
+        "queryRows",
+        "queryRowsByIntentClass (ai-question, best-choice, cost, how-process, navigational-local)",
+        "queryRowsBySource (generated, gscObserved)",
+        "generatedRowsEnrichedByGsc",
+        "outcomeRollup (byGateState, byHighestGate, byStatus)",
+        "rowsByArea",
+        "pageCoverage (pagesTargeted, pagesTotal, uncoveredPages)",
+        "gscEvidence (queriesImported, queriesAttachedToRows, rowsEnriched)"
+      ]
+    },
+    {
+      "@id": "https://theflatratemovers.com/#intent-coverage-vaulted-storage",
+      "@type": "Dataset",
+      "name": "Intent Coverage — Vaulted Storage & Wooden Storage Vaults",
+      "description": "Generated intent coverage for Vaulted Storage & Wooden Storage Vaults: 15595 query rows, each resolving to the page that answers it, that page’s per-page JSON and the backing dataset file(s) named in this node’s distribution, with the certificate digests of those files read from the signed AI master index. The service’s entity-graph node is https://theflatratemovers.com/#service-vaulted-storage.",
+      "keywords": [
+        "vaulted storage & wooden storage vaults questions",
+        "vaulted storage"
+      ],
+      "about": [
+        {
+          "@id": "https://theflatratemovers.com/#service-vaulted-storage"
+        }
+      ],
+      "spatialCoverage": [
+        {
+          "@type": "Place",
+          "@id": "https://theflatratemovers.com/#winchester",
+          "name": "The Flat Rate Movers — Winchester",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 39.18711576,
+            "longitude": -78.1668352
+          }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://theflatratemovers.com/#martinsburg",
+          "name": "Flat Rate Movers Martinsburg WV",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 39.48319665,
+            "longitude": -77.94760443
+          }
+        }
+      ],
+      "temporalCoverage": "2010/2026",
+      "dateModified": "2026-11-27",
+      "creator": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "foundingDate": "2010-06",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "publisher": {
+        "@id": "https://theflatratemovers.com/#organization",
+        "@type": "Organization",
+        "name": "The Flat Rate Movers",
+        "foundingDate": "2010-06",
+        "sameAs": [
+          "https://www.instagram.com/theflatratemoversllc/",
+          "https://www.threads.com/@theflatratemoversllc",
+          "https://x.com/ratemovers",
+          "https://www.youtube.com/@theflatratemovers",
+          "https://github.com/TheFlatRateMovers",
+          "https://medium.com/@ratemovers"
+        ]
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-intent-coverage.json",
+          "encodingFormat": "application/json"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/vaulted-storage.json",
+          "encodingFormat": "application/json",
+          "sha256": "2cfb3336b1f7c9baf7d79a4bad1ca15caaf1a992649778fa43e5b7047823fe6c"
+        },
+        {
+          "@type": "DataDownload",
+          "contentUrl": "https://theflatratemovers.com/datasets-vaulted-storage.json",
+          "encodingFormat": "application/json",
+          "sha256": "59c560107cac65e3c1aaba93b2798efc23368617f3489719227c7098fdadd5dc"
+        }
+      ],
+      "url": "https://theflatratemovers.com/datasets/intent-coverage/",
+      "graphNode": "https://theflatratemovers.com/#service-vaulted-storage",
+      "queryRows": 15595,
+      "queryRowsByIntentClass": {
+        "navigational-local": 8763,
+        "cost": 769,
+        "how-process": 385,
+        "best-choice": 768,
+        "ai-question": 4910
+      },
+      "queryRowsBySource": {
+        "generated": 15595,
+        "gscObserved": 0
+      },
+      "generatedRowsEnrichedByGsc": 17,
+      "outcomeRollup": {
+        "rows": 15595,
+        "byHighestGate": {
+          "none": 15492,
+          "crawled": 12,
+          "indexed": 91,
+          "understood": 0,
+          "corroborated": 0,
+          "cited-maintained": 0
+        },
+        "byStatus": {
+          "unknown": 3,
+          "awaiting-observation": 15489,
+          "partial": 103,
+          "blocked": 0,
+          "complete": 0
+        },
+        "byGateState": {
+          "crawled": {
+            "unknown": 15492,
+            "passed": 103,
+            "failed": 0,
+            "not-applicable": 0
+          },
+          "indexed": {
+            "unknown": 15492,
+            "passed": 91,
+            "failed": 12,
+            "not-applicable": 0
+          },
+          "understood": {
+            "unknown": 15595,
+            "passed": 0,
+            "failed": 0,
+            "not-applicable": 0
+          },
+          "corroborated": {
+            "unknown": 15595,
+            "passed": 0,
+            "failed": 0,
+            "not-applicable": 0
+          },
+          "cited-maintained": {
+            "unknown": 15595,
             "passed": 0,
             "failed": 0,
             "not-applicable": 0

@@ -5,12 +5,12 @@
    "@type": "Dataset",
    "@id": "https://theflatratemovers.com/datasets/coverage/#dataset",
    "name": "Territory Matrix — Service Coverage by Place",
-   "description": "The Flat Rate Movers service-coverage matrix: every place in the company footprint as a typed schema.org Place node with coordinates and branch binding (Winchester VA and Martinsburg WV), the full feature-by-service coverage table reconciled to the 34-service registry, and the place-to-place distance table (centroid distances, computed and labeled as computed; road miles only where separately researched). A national layer records the company performed-work record at state level: State nodes for the 49 states where the company has moved clients and performed job work — every state except Hawaii — published as the national table, kept separate from the branch footprint (state rows are the work record, not branch service areas). Generated from service-area.geojson and data/national-scope.json by build-coverage.js.",
+   "description": "The Flat Rate Movers service-coverage matrix: every place in the company footprint as a typed schema.org Place node with coordinates and branch binding (Winchester VA and Martinsburg WV), the full feature-by-service coverage table reconciled to the 35-service registry, and the place-to-place distance table (centroid distances, computed and labeled as computed; road miles only where separately researched). A national layer records the company performed-work record at state level: State nodes for the 49 states where the company has moved clients and performed job work — every state except Hawaii — published as the national table, kept separate from the branch footprint (state rows are the work record, not branch service areas). Generated from service-area.geojson and data/national-scope.json by build-coverage.js.",
    "url": "https://theflatratemovers.com/datasets/coverage/",
    "identifier": "https://theflatratemovers.com/datasets/coverage/",
    "isAccessibleForFree": true,
    "datePublished": "2026-11-09",
-   "dateModified": "2026-11-23",
+   "dateModified": "2026-11-26",
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "sameAs": "https://theflatratemovers.com/datasets/coverage/",
    "creator": {
@@ -126,6 +126,9 @@
      "@id": "https://theflatratemovers.com/#service-hoarding-cleanup"
     },
     {
+     "@id": "https://theflatratemovers.com/#service-vaulted-storage"
+    },
+    {
      "@id": "https://theflatratemovers.com/#winchester"
     },
     {
@@ -173,8 +176,8 @@
      "name": "Coverage table (feature x service)",
      "contentUrl": "https://theflatratemovers.com/datasets/coverage/coverage-table.json",
      "encodingFormat": "application/json",
-     "contentSize": 2555085,
-     "sha256": "e5cfcee84c7e8cc416c3b0364c19103d44f561bd718270ad3d8a18bfd3ebdba0"
+     "contentSize": 2621201,
+     "sha256": "571d43426e14bde0d73a58413201958ca76fd38af06efe6629870ed396797de1"
     },
     {
      "@type": "DataDownload",
@@ -189,8 +192,8 @@
      "name": "Features table",
      "contentUrl": "https://theflatratemovers.com/datasets/coverage/features-table.json",
      "encodingFormat": "application/json",
-     "contentSize": 185393,
-     "sha256": "10c63c38e913767c3fa813f430fa969b76865f937d5746c5bfb5675c80f38c10"
+     "contentSize": 185400,
+     "sha256": "a5ec7f285129639db885e6158f7cb69c12bfec6865247e5d38aff6252626f9d3"
     },
     {
      "@type": "DataDownload",
@@ -205,8 +208,8 @@
      "name": "Service-area GeoJSON (the source map)",
      "contentUrl": "https://theflatratemovers.com/service-area.geojson",
      "encodingFormat": "application/json",
-     "contentSize": 670882,
-     "sha256": "3d581242c6ac04b4b32961fed45d23bddf108912782dc9a8ffb01d414fdbde23"
+     "contentSize": 679009,
+     "sha256": "8c48fa02e20eb510875cf75c960858c6e7d5078e329cba3381ae6aa001f60ef9"
     }
    ]
   },
